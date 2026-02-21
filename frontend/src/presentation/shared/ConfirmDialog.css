@@ -1,0 +1,340 @@
+.confirm-dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.7) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  animation: overlayFadeIn 0.4s ease-out;
+  padding: 20px;
+}
+
+@keyframes overlayFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.confirm-dialog {
+  background: linear-gradient(135deg, #0A1A3A 0%, #1a2847 50%, #2d265f 100%);
+  border-radius: 24px;
+  border: 2px solid rgba(212, 175, 55, 0.4);
+  box-shadow: 
+    0 0 60px rgba(212, 175, 55, 0.2),
+    0 20px 80px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  max-width: 480px;
+  width: 100%;
+  overflow: hidden;
+  animation: dialogSlideUp 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 32px;
+  text-align: center;
+  position: relative;
+}
+
+.confirm-dialog::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.5) 50%, transparent 100%);
+}
+
+@keyframes dialogSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.confirm-dialog.danger {
+  border-color: rgba(239, 83, 80, 0.5);
+  box-shadow: 
+    0 0 60px rgba(239, 83, 80, 0.2),
+    0 20px 80px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+}
+
+.confirm-dialog-visual {
+  margin-bottom: 28px;
+  animation: iconPulse 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes iconPulse {
+  0% {
+    transform: scale(0) rotate(-10deg);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1) rotate(0);
+    opacity: 1;
+  }
+}
+
+.dialog-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(212, 175, 55, 0.08) 100%);
+  border: 2px solid rgba(212, 175, 55, 0.3);
+  border-radius: 50%;
+  color: var(--accent-gold);
+  position: relative;
+}
+
+.dialog-icon-wrapper::before {
+  content: '';
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  right: -8px;
+  bottom: -8px;
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 50%;
+  animation: spinRing 3s linear infinite;
+}
+
+@keyframes spinRing {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dialog-icon-wrapper.danger {
+  background: linear-gradient(135deg, rgba(239, 83, 80, 0.15) 0%, rgba(239, 83, 80, 0.08) 100%);
+  border-color: rgba(239, 83, 80, 0.3);
+  color: #EF5350;
+}
+
+.dialog-icon-wrapper.danger::before {
+  border-color: rgba(239, 83, 80, 0.15);
+}
+
+.dialog-icon-svg {
+  position: relative;
+  z-index: 2;
+}
+
+.confirm-dialog-content-wrapper {
+  margin-bottom: 32px;
+}
+
+.confirm-dialog-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 12px 0;
+  font-family: var(--font-display);
+  letter-spacing: -0.5px;
+  animation: titleFadeIn 0.6s ease-out 0.2s backwards;
+}
+
+@keyframes titleFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirm-dialog-message {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin: 0;
+  font-family: var(--font-body);
+  animation: messageFadeIn 0.6s ease-out 0.3s backwards;
+}
+
+@keyframes messageFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirm-dialog-actions {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  animation: actionsFadeIn 0.6s ease-out 0.4s backwards;
+}
+
+@keyframes actionsFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirm-dialog-btn {
+  flex: 1;
+  padding: 14px 24px;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  border: 1.5px solid transparent;
+  font-family: var(--font-body);
+  letter-spacing: 0.3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.confirm-dialog-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.2) 50%, transparent 100%);
+  transition: left 0.5s ease;
+}
+
+.confirm-dialog-btn:hover::before {
+  left: 100%;
+}
+
+.cancel-btn {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cancel-btn:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.4);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 255, 255, 0.1);
+}
+
+.cancel-btn:active {
+  transform: translateY(0);
+}
+
+.confirm-btn {
+  background: linear-gradient(135deg, var(--accent-gold) 0%, #F4CF57 100%);
+  border-color: var(--accent-gold);
+  color: #0A1A3A;
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.25);
+}
+
+.confirm-btn:hover {
+  background: linear-gradient(135deg, #F4CF57 0%, #FFE58F 100%);
+  border-color: #FFE58F;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(212, 175, 55, 0.4);
+}
+
+.confirm-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+}
+
+.confirm-btn.danger {
+  background: linear-gradient(135deg, #EF5350 0%, #E53935 100%);
+  border-color: #EF5350;
+  color: white;
+  box-shadow: 0 4px 16px rgba(239, 83, 80, 0.25);
+}
+
+.confirm-btn.danger:hover {
+  background: linear-gradient(135deg, #F44336 0%, #D32F2F 100%);
+  border-color: #F44336;
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(239, 83, 80, 0.4);
+}
+
+.confirm-btn.danger:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(239, 83, 80, 0.2);
+}
+
+@media (max-width: 640px) {
+  .confirm-dialog {
+    padding: 32px 24px;
+    border-radius: 20px;
+  }
+
+  .confirm-dialog-title {
+    font-size: 22px;
+  }
+
+  .confirm-dialog-message {
+    font-size: 14px;
+  }
+
+  .dialog-icon-wrapper {
+    width: 70px;
+    height: 70px;
+  }
+
+  .confirm-dialog-actions {
+    gap: 12px;
+  }
+
+  .confirm-dialog-btn {
+    padding: 12px 20px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .confirm-dialog {
+    padding: 28px 20px;
+  }
+
+  .confirm-dialog-actions {
+    flex-direction: column;
+  }
+
+  .confirm-dialog-btn {
+    width: 100%;
+  }
+}

@@ -1,0 +1,72 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  text-decoration: none;
+  transition: transform var(--transition-base);
+  background: transparent;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.logo-icon img {
+  display: block;
+  background: transparent;
+}
+
+.logo-image {
+  background: transparent;
+}
+
+.logo-text {
+  font-family: var(--font-display);
+  font-weight: var(--font-extrabold);
+  color: var(--text-dark);
+  letter-spacing: -0.02em;
+}
+
+/* Sizes */
+.logo-small .logo-icon img {
+  width: 32px;
+  height: 32px;
+}
+
+.logo-small .logo-text {
+  font-size: var(--text-lg);
+}
+
+.logo-medium .logo-icon img {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-medium .logo-text {
+  font-size: var(--text-2xl);
+}
+
+.logo-large .logo-icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.logo-large .logo-text {
+  font-size: var(--text-2xl);
+}
+
+.logo-xlarge .logo-icon img {
+  width: 64px;
+  height: 64px;
+}
+
+.logo-xlarge .logo-text {
+  font-size: 1.75rem;
+}

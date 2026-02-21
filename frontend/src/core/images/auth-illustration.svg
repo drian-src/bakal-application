@@ -1,0 +1,62 @@
+<svg width="600" height="500" viewBox="0 0 600 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="600" height="500" rx="20" fill="url(#hero-bg)"/>
+  
+  <!-- Shopping bag icon -->
+  <g transform="translate(250, 150)">
+    <rect x="10" y="30" width="80" height="100" rx="8" fill="white" fill-opacity="0.9"/>
+    <path d="M30 30 Q50 10 70 30" stroke="white" stroke-width="4" fill="none"/>
+    <circle cx="40" cy="60" r="4" fill="#806286"/>
+    <circle cx="60" cy="60" r="4" fill="#806286"/>
+    <circle cx="40" cy="85" r="4" fill="#806286"/>
+    <circle cx="60" cy="85" r="4" fill="#806286"/>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="150" cy="100" r="30" fill="white" fill-opacity="0.2"/>
+  <circle cx="450" cy="380" r="40" fill="white" fill-opacity="0.15"/>
+  <rect x="80" y="350" width="60" height="60" rx="12" fill="white" fill-opacity="0.2"/>
+  <rect x="460" y="120" width="50" height="50" rx="10" fill="white" fill-opacity="0.2"/>
+  
+  <defs>
+    <linearGradient id="hero-bg" x1="0" y1="0" x2="600" y2="500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0a1a3a"/>
+      <stop offset="1" stop-color="#806286"/>
+    </linearGradient>
+  </defs><svg width="400" height="500" viewBox="0 0 400 500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Modern illustration for auth pages -->
+  
+  <!-- Background glow -->
+  <circle cx="200" cy="250" r="180" fill="white" fill-opacity="0.1"/>
+  
+  <!-- Mobile device -->
+  <rect x="120" y="80" width="160" height="280" rx="20" fill="white" fill-opacity="0.95"/>
+  <rect x="130" y="100" width="140" height="220" rx="8" fill="rgba(255,255,255,0.5)"/>
+  
+  <!-- Screen content - shopping items -->
+  <circle cx="170" cy="160" r="20" fill="#806286"/>
+  <rect x="200" y="145" width="60" height="8" rx="4" fill="white"/>
+  <rect x="200" y="160" width="40" height="6" rx="3" fill="white" fill-opacity="0.7"/>
+  
+  <circle cx="170" cy="220" r="20" fill="#806286"/>
+  <rect x="200" y="205" width="60" height="8" rx="4" fill="white"/>
+  <rect x="200" y="220" width="40" height="6" rx="3" fill="white" fill-opacity="0.7"/>
+  
+  <circle cx="170" cy="280" r="20" fill="#806286"/>
+  <rect x="200" y="265" width="60" height="8" rx="4" fill="white"/>
+  <rect x="200" y="280" width="40" height="6" rx="3" fill="white" fill-opacity="0.7"/>
+  
+  <!-- Shopping cart icon -->
+  <g transform="translate(160, 380)">
+    <circle cx="20" cy="20" r="35" fill="white" fill-opacity="0.9"/>
+    <path d="M10 15 L15 15 L18 25 L30 25" stroke="#806286" stroke-width="2" fill="none"/>
+    <circle cx="20" cy="28" r="2" fill="#806286"/>
+    <circle cx="28" cy="28" r="2" fill="#806286"/>
+  </g>
+  
+  <!-- Decorative dots -->
+  <circle cx="80" cy="150" r="8" fill="white" fill-opacity="0.3"/>
+  <circle cx="320" cy="200" r="12" fill="white" fill-opacity="0.25"/>
+  <circle cx="90" cy="350" r="10" fill="white" fill-opacity="0.2"/>
+  <circle cx="310" cy="380" r="15" fill="white" fill-opacity="0.2"/>
+</svg>
+</svg>

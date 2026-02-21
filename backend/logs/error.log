@@ -1,0 +1,19 @@
+2026-02-18 11:57:33 [error]: [DB] Supabase connection failed:
+2026-02-18 12:46:43 [error]: [Retry] GoogleScraper.search failed after 3 attempts.
+2026-02-18 12:46:43 [error]: [SearchService] Google scraper failed:
+2026-02-18 12:48:14 [error]: [Retry] GoogleScraper.search failed after 3 attempts.
+2026-02-18 12:48:14 [error]: [SearchService] Google scraper failed:
+2026-02-18 12:50:01 [error]: [Retry] GoogleScraper.search failed after 3 attempts.
+2026-02-18 12:50:01 [error]: [SearchService] Google scraper failed:
+2026-02-18 19:10:57 [error]: [Retry] ArgomallScraper.search failed after 3 attempts.
+2026-02-21 07:14:30 [error]: [DB] Supabase connection failed:
+2026-02-21 07:14:53 [error]: [DB] Supabase connection failed:
+2026-02-21 07:18:48 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at Function.listen (C:\Users\L. L490\OneDrive\Desktop\bakal-application\bakal-dev\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\L. L490\OneDrive\Desktop\bakal-application\bakal-dev\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-02-21 07:58:09 [error]: [DB] Supabase connection failed:
+2026-02-21 07:58:58 [error]: [DB] Supabase connection failed:

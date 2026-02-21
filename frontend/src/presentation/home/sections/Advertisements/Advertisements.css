@@ -1,0 +1,67 @@
+.advertisement-section {
+  margin: var(--spacing-xl) auto;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.ads-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-lg);
+  justify-items: center;
+}
+
+.ad-card {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08) 0%, rgba(128, 98, 134, 0.04) 100%);
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.08);
+  width: 100%;
+  max-width: 400px;
+}
+
+.ad-card:hover {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.15) 0%, rgba(128, 98, 134, 0.08) 100%);
+  border-color: var(--accent-gold);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+  transform: translateY(-2px);
+}
+
+.ad-content {
+  flex: 1;
+}
+
+.ad-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
+}
+
+.ad-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.ad-badge {
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+  .ads-container {
+    grid-template-columns: 1fr;
+  }
+}
