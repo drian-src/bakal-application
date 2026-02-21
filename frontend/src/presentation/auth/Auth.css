@@ -1,0 +1,4 @@
+/* Import the shared auth styles */
+@import '../../styles/auth.css';
+
+/* Additional auth page specific styles */
