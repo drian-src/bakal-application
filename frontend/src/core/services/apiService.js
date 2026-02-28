@@ -3,6 +3,8 @@
  * This module handles all HTTP requests to the Bakàl backend
  */
 
+import { searchCache } from './searchCache';
+
 /**
  * Backend API base URL from environment variable (Vite convention)
  * Configure in frontend/.env: VITE_API_URL=http://localhost:3000/api
@@ -50,10 +52,30 @@ const apiCall = async (endpoint, options = {}) => {
 
 export const searchProducts = async (query, platform = 'all') => {
   try {
+    const normalizedQuery = query.toLowerCase().trim();
+    
+    // ✅ Check if results are already cached
+    const cached = searchCache.get(normalizedQuery, platform);
+    if (cached) {
+      console.log(`[Cache HIT] Returning cached results for: "${normalizedQuery}" (platform: "${platform}")`);
+      return cached;
+    }
+
+    // 🔄 No cache — fetch from backend (triggers scraping)
+    console.log(`[Cache MISS] Fetching fresh results for: "${normalizedQuery}" (platform: "${platform}")`);
     const response = await apiCall(
-      `/search?q=${encodeURIComponent(query)}${platform !== 'all' ? `&platform=${platform}` : ''}`
+      `/search?q=${encodeURIComponent(normalizedQuery)}${platform !== 'all' ? `&platform=${platform}` : ''}`
     );
-    return response.data || [];
+    
+    const data = response.data || [];
+    
+    // ✅ Store result in cache before returning
+    searchCache.set(normalizedQuery, platform, data);
+    
+    // ✅ Persist cache to sessionStorage
+    searchCache.saveToSession();
+    
+    return data;
   } catch (error) {
     console.error('Search failed:', error);
     return [];

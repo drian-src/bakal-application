@@ -5,6 +5,7 @@ import FilterPanel from './Filters/FilterPanel';
 import PlatformTabs from './PlatformSelector/PlatformTabs';
 import RecommendedSection from './RecommendedProducts/RecommendedSection';
 import { searchProducts } from '@/core/services/apiService';
+import { searchCache } from '@/core/services/searchCache';
 import './SearchResultPage.css';
 
 const SearchResultPage = () => {
@@ -15,6 +16,7 @@ const SearchResultPage = () => {
   const [filteredProducts, setFilteredProducts] = useState({});
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [fromCache, setFromCache] = useState(false);
   const [filters, setFilters] = useState({
     price: [],
     rating: [],
@@ -32,7 +34,15 @@ const SearchResultPage = () => {
       }
       
       try {
-        setLoading(true);
+        // Check if results are cached before setting loading state
+        const isCached = searchCache.has(query, activePlatform);
+        setFromCache(isCached);
+        
+        // Only show loading spinner if NOT cached
+        if (!isCached) {
+          setLoading(true);
+        }
+        
         const response = await searchProducts(query, activePlatform);
         
         // Transform flat products array into grouped-by-platform structure
@@ -71,6 +81,57 @@ const SearchResultPage = () => {
   return (
     <div className="search-result-page">
       <SearchSummaryHeader query={query} />
+      
+      {/* Cache indicator - shows when results are from cache */}
+      {fromCache && (
+        <div className="cache-indicator">
+          <span className="cache-indicator-content">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style={{ marginRight: '4px' }}>
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+            </svg>
+            Results from cache
+            <button
+              className="cache-refresh-btn"
+              onClick={() => {
+                searchCache.invalidate(query, activePlatform);
+                setFromCache(false);
+                // Re-fetch by calling searchProducts again
+                const fetchFresh = async () => {
+                  try {
+                    setLoading(true);
+                    const response = await searchProducts(query, activePlatform);
+                    if (response && response.products && Array.isArray(response.products)) {
+                      const groupedByPlatform = response.products.reduce((acc, product) => {
+                        const platformKey = product.platform?.toLowerCase() || 'other';
+                        if (!acc[platformKey]) {
+                          acc[platformKey] = [];
+                        }
+                        acc[platformKey].push(product);
+                        return acc;
+                      }, {});
+                      setFilteredProducts(groupedByPlatform);
+                    }
+                  } catch (err) {
+                    setError(err.message);
+                  } finally {
+                    setLoading(false);
+                  }
+                };
+                fetchFresh();
+              }}
+              title="Force fresh scrape"
+            >
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+                <path d="M21 3v5h-5"/>
+                <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+                <path d="M3 21v-5h5"/>
+              </svg>
+              Refresh
+            </button>
+          </span>
+        </div>
+      )}
       
       <div className="search-content">
         <aside className="search-sidebar">

@@ -4280,3 +4280,276 @@ Call log:
 2026-02-28 17:07:58 [info]: [SearchService] Raw products scraped: 15
 2026-02-28 17:07:58 [info]: [SearchService] Relevance filter: 15/15 products kept
 2026-02-28 17:08:00 [info]: [SearchService] Saved 15 products for search #bae86566-80bd-4c2d-add1-cf465b716dee
+2026-02-28 17:09:39 [info]: [DB] Supabase connection verified.
+2026-02-28 17:09:40 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:09:40 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:09:40 [debug]: → GET /api/cart
+2026-02-28 17:11:38 [debug]: → GET /api/cart
+2026-02-28 17:11:38 [debug]: → GET /api/products/pcworx/5ee7548f-3dae-474a-83ba-4b0e35a55fc1
+2026-02-28 17:11:39 [debug]: → GET /api/products/pcworx/5ee7548f-3dae-474a-83ba-4b0e35a55fc1
+2026-02-28 17:11:39 [debug]: → GET /api/cart
+2026-02-28 17:11:39 [debug]: → GET /api/cart
+2026-02-28 17:11:39 [debug]: → GET /api/cart
+2026-02-28 17:11:52 [debug]: → GET /api/cart
+2026-02-28 17:11:52 [debug]: → GET /api/search
+2026-02-28 17:11:52 [info]: [SearchService] Search #f53ab210-66a6-49b1-b0fb-bc9ac21bf945 - "keyboard"
+2026-02-28 17:11:52 [debug]: → GET /api/cart
+2026-02-28 17:11:53 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:11:53 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:11:53 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:11:53 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:11:54 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:11:54 [debug]: → GET /api/cart
+2026-02-28 17:11:54 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:11:54 [debug]: → GET /api/cart
+2026-02-28 17:11:55 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:11:55 [debug]: → GET /api/cart
+2026-02-28 17:11:55 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:11:55 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:11:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:11:55 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:11:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:11:55 [debug]: → GET /api/cart
+2026-02-28 17:11:55 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:11:55 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:11:55 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:11:55 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:11:56 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:11:56 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:11:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:11:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:11:58 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:11:58 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:11:58 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:11:58 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:11:59 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:11:59 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:12:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:12:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:12:00 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:12:00 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:12:02 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:12:02 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:12:02 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:12:02 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:12:04 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:12:04 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:12:06 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 17:12:06 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:12:08 [info]: [SearchService] Saved 15 products for search #f53ab210-66a6-49b1-b0fb-bc9ac21bf945
+2026-02-28 17:12:08 [debug]: → GET /api/search
+2026-02-28 17:12:09 [info]: [SearchService] Search #ca571e4d-2498-410b-b532-2f2394870d76 - "keyboard"
+2026-02-28 17:12:09 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:12:09 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:12:09 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:12:10 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:12:10 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:12:10 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:12:11 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:12:11 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:12:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:12:11 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:12:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:12:11 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:12:11 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:12:12 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:12:12 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:12:12 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:12:12 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:12:12 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:12:14 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:12:14 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:12:15 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:12:15 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:12:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:12:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:12:16 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:12:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:12:16 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:12:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:12:17 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:12:17 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:12:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:12:19 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:12:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:12:20 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:12:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:12:21 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:12:24 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 17:12:24 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:12:26 [info]: [SearchService] Saved 15 products for search #ca571e4d-2498-410b-b532-2f2394870d76
+2026-02-28 17:14:29 [info]: [DB] Supabase connection verified.
+2026-02-28 17:14:29 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:14:29 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:14:45 [info]: [DB] Supabase connection verified.
+2026-02-28 17:14:46 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:14:46 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:14:48 [debug]: → GET /api/cart
+2026-02-28 17:14:49 [debug]: → GET /api/cart
+2026-02-28 17:14:49 [debug]: → GET /api/cart
+2026-02-28 17:14:49 [debug]: → GET /api/cart
+2026-02-28 17:16:49 [debug]: → GET /api/cart
+2026-02-28 17:16:49 [debug]: → GET /api/search
+2026-02-28 17:16:50 [info]: [SearchService] Search #0e2378ce-5730-415f-8897-5c3379053b5a - "keyboard"
+2026-02-28 17:16:50 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-02-28 17:16:50 [debug]: → GET /api/cart
+2026-02-28 17:16:50 [debug]: → GET /api/cart
+2026-02-28 17:16:50 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:16:50 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:16:50 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:16:51 [debug]: → GET /api/cart
+2026-02-28 17:16:51 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:16:51 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:16:51 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:16:52 [debug]: → GET /api/cart
+2026-02-28 17:16:52 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:16:52 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:16:52 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:16:52 [debug]: → GET /api/cart
+2026-02-28 17:16:52 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:16:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:16:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:16:53 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:16:53 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:16:53 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:16:53 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:16:53 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:16:53 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:16:56 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:16:56 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:16:56 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:16:57 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:16:57 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:16:57 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:16:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:16:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:16:58 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:16:58 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:16:58 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:16:58 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:17:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:17:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:17:00 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:17:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:17:01 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:17:01 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:17:04 [info]: [SearchService] Raw products: 15
+2026-02-28 17:17:04 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:17:07 [info]: [SearchService] Saved 15 products for search #0e2378ce-5730-415f-8897-5c3379053b5a
+2026-02-28 17:17:07 [debug]: → GET /api/search
+2026-02-28 17:17:07 [info]: [SearchService] Search #2197d853-5e90-4ef4-a2e8-ade18062ba4d - "keyboard"
+2026-02-28 17:17:07 [info]: [Backend Cache HIT] Query: "keyboard"
+2026-02-28 17:17:07 [info]: [SearchService] Raw products: 15
+2026-02-28 17:17:07 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:17:09 [info]: [SearchService] Saved 15 products for search #2197d853-5e90-4ef4-a2e8-ade18062ba4d
+2026-02-28 17:17:18 [debug]: → GET /api/cart
+2026-02-28 17:17:18 [debug]: → GET /api/cart
+2026-02-28 17:17:18 [debug]: → GET /api/cart
+2026-02-28 17:17:19 [debug]: → GET /api/cart
+2026-02-28 17:17:19 [debug]: → GET /api/cart
+2026-02-28 17:17:19 [debug]: → GET /api/cart
+2026-02-28 17:17:24 [debug]: → GET /api/cart
+2026-02-28 17:17:24 [debug]: → GET /api/cart
+2026-02-28 17:17:51 [debug]: → GET /api/search
+2026-02-28 17:17:51 [info]: [SearchService] Search #3841b8dd-9222-4fd9-bf7f-40f6b15cbdd4 - "television"
+2026-02-28 17:17:51 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 17:17:52 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:17:52 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:17:52 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:17:52 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 17:17:52 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 17:17:52 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 17:17:52 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 17:17:52 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 17:17:52 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 17:18:17 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 17:18:18 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 17:18:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-display-port-male-to-hdmi-male-cable-2m-black-dp101-10202.json
+2026-02-28 17:18:18 [debug]: [VillmanScraper] JSON success: UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)
+2026-02-28 17:18:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-z313-2-1-speaker-system-with-subwoofer-black.json
+2026-02-28 17:18:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 17:18:20 [debug]: [PcExpressScraper] JSON success: LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)
+2026-02-28 17:18:20 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 17:18:21 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-28 17:18:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/generic-hd15male-hd15male-vga-cable-5-meter-ordinary.json
+2026-02-28 17:18:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp101-10202-display-port-male-to-hdmi-male-cable-2meters-black.json
+2026-02-28 17:18:22 [debug]: [PcWorxScraper] JSON success: Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black
+2026-02-28 17:18:22 [debug]: [PcWorxScraper] JSON success: Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary
+2026-02-28 17:18:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 17:18:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 17:18:23 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 17:18:23 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 17:18:25 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp114-80392-dp-m-m-cable-2-0m-bk.json
+2026-02-28 17:18:25 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/vention-aljbh-hdmi-2meters-black.json
+2026-02-28 17:18:25 [debug]: [PcWorxScraper] JSON success: Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K
+2026-02-28 17:18:25 [debug]: [PcWorxScraper] JSON success: Vention ALJBH HDMI 2Meters Black
+2026-02-28 17:18:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/north-bayou-nb-ava1800-70-1p-55-90-inch-tv-cart-mount-tv-stand-55-90-inch-tv-stand-cart-tv-floor-stand.json
+2026-02-28 17:18:27 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 17:18:28 [debug]: [PcWorxScraper] JSON success: North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand
+2026-02-28 17:18:28 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 17:18:31 [info]: [SearchService] Raw products: 11
+2026-02-28 17:18:31 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-02-28 17:18:31 [info]: [SearchService] Saved 0 products for search #3841b8dd-9222-4fd9-bf7f-40f6b15cbdd4
+2026-02-28 17:20:39 [info]: [DB] Supabase connection verified.
+2026-02-28 17:20:39 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:20:39 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:22:07 [debug]: → GET /api/cart
+2026-02-28 17:22:07 [debug]: → GET /api/search
+2026-02-28 17:22:07 [info]: [SearchService] Search #04e431cd-cac4-49ee-8e01-105a062e6e90 - "television"
+2026-02-28 17:22:07 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 17:22:07 [debug]: → GET /api/cart
+2026-02-28 17:22:08 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:22:08 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:22:08 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:22:08 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 17:22:08 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 17:22:08 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 17:22:08 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 17:22:08 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 17:22:08 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 17:22:16 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 17:22:23 [info]: [DB] Supabase connection verified.
+2026-02-28 17:22:24 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:22:24 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:23:09 [debug]: → GET /api/cart
+2026-02-28 17:23:09 [debug]: → GET /api/search
+2026-02-28 17:23:10 [info]: [SearchService] Search #0c49c9f0-be30-4e1a-8d4d-c08f7839df13 - "television"
+2026-02-28 17:23:10 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 17:23:10 [debug]: → GET /api/cart
+2026-02-28 17:23:10 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:23:10 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:23:10 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:23:11 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 17:23:11 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 17:23:11 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 17:23:11 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 17:23:11 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 17:23:11 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 17:23:27 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 17:23:28 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-display-port-male-to-hdmi-male-cable-2m-black-dp101-10202.json
+2026-02-28 17:23:28 [debug]: [VillmanScraper] JSON success: UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)
+2026-02-28 17:23:31 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 17:23:31 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-28 17:23:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-z313-2-1-speaker-system-with-subwoofer-black.json
+2026-02-28 17:23:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 17:23:33 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp101-10202-display-port-male-to-hdmi-male-cable-2meters-black.json
+2026-02-28 17:23:33 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/generic-hd15male-hd15male-vga-cable-5-meter-ordinary.json
+2026-02-28 17:23:33 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 17:23:33 [debug]: [PcExpressScraper] JSON success: LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)
+2026-02-28 17:23:33 [debug]: [PcWorxScraper] JSON success: Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary
+2026-02-28 17:23:33 [debug]: [PcWorxScraper] JSON success: Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black
+2026-02-28 17:23:36 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 17:23:36 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 17:23:36 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 17:23:36 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 17:23:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp114-80392-dp-m-m-cable-2-0m-bk.json
+2026-02-28 17:23:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/vention-aljbh-hdmi-2meters-black.json
+2026-02-28 17:23:37 [debug]: [PcWorxScraper] JSON success: Vention ALJBH HDMI 2Meters Black
+2026-02-28 17:23:38 [debug]: [PcWorxScraper] JSON success: Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K
+2026-02-28 17:23:39 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 17:23:39 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 17:23:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/north-bayou-nb-ava1800-70-1p-55-90-inch-tv-cart-mount-tv-stand-55-90-inch-tv-stand-cart-tv-floor-stand.json
+2026-02-28 17:23:41 [debug]: [PcWorxScraper] JSON success: North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand
+2026-02-28 17:23:45 [info]: [SearchService] Raw products: 11
+2026-02-28 17:23:45 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-02-28 17:23:45 [info]: [SearchService] Saved 0 products for search #0c49c9f0-be30-4e1a-8d4d-c08f7839df13
