@@ -4,6 +4,7 @@ import SearchSummaryHeader from './SearchSummary/SearchSummaryHeader';
 import FilterPanel from './Filters/FilterPanel';
 import PlatformTabs from './PlatformSelector/PlatformTabs';
 import RecommendedSection from './RecommendedProducts/RecommendedSection';
+import ScrapingLoader from '../../shared/ScrapingLoader';
 import { searchProducts } from '@/core/services/apiService';
 import { searchCache } from '@/core/services/searchCache';
 import './SearchResultPage.css';
@@ -133,6 +134,11 @@ const SearchResultPage = () => {
         </div>
       )}
       
+      {/* Show scraping loader only when actively fetching (not from cache) */}
+      {loading && !fromCache && <ScrapingLoader query={query} />}
+      
+      {/* Show search results when loading is done */}
+      {!loading && (
       <div className="search-content">
         <aside className="search-sidebar">
           <FilterPanel onFilterChange={handleFilterChange} />
@@ -147,6 +153,7 @@ const SearchResultPage = () => {
           />
         </main>
       </div>
+      )}
     </div>
   );
 };
