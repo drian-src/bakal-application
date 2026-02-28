@@ -50,7 +50,7 @@ async function getCartByUserId(userId) {
     
     const { data: products, error: productsError } = await supabase
       .from('products')
-      .select('id, title, price, image_url, platform_id, platforms(name)')
+      .select('id, title, price, image_url, product_url, platform_id, platforms(id, name)')
       .in('id', productIds);
 
     if (productsError) throw productsError;
@@ -60,8 +60,13 @@ async function getCartByUserId(userId) {
     // Create a product map for quick lookup
     const productMap = {};
     (products || []).forEach(p => {
-      productMap[p.id] = p;
-      logger.debug(`[Cart] Mapped product ${p.id}: ${p.title}`);
+      // Supabase returns to-one FK joins as a plain object, not an array.
+      // Wrap platforms in an array so cartController.js can read platforms[0] safely.
+      productMap[p.id] = {
+        ...p,
+        platforms: p.platforms ? [p.platforms] : [],
+      };
+      logger.debug(`[Cart] Mapped product ${p.id}: ${p.title}, platform: ${p.platforms?.name}`);
     });
 
     // Merge cart items with product data
@@ -236,8 +241,9 @@ async function getCartItem(cartItemId) {
         title,
         price,
         image_url,
+        product_url,
         platform_id,
-        platforms(name)
+        platforms(id, name)
       )
       `
     )

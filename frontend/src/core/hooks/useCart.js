@@ -1,4 +1,4 @@
-import { useState, useEffect, useContext, useCallback } from 'react';
+import { useState, useEffect, useContext, useCallback, useMemo } from 'react';
 import {
   getCart,
   addToCart as addToCartAPI,
@@ -34,11 +34,19 @@ export const useCart = () => {
   
   // Get notification context
   const notificationContext = useContext(NotificationContext);
-  const notify = notificationContext || {
-    success: (msg) => console.log('✓', msg),
-    error: (msg) => console.error('✕', msg),
-    info: (msg) => console.log('ℹ', msg),
-  };
+
+  // useMemo keeps the fallback object reference stable across renders.
+  // Without this, a new object is created every render → fetchCart's useCallback
+  // dependency changes every render → useEffect fires every render → infinite loop.
+  const notify = useMemo(
+    () =>
+      notificationContext || {
+        success: (msg) => console.log('✓', msg),
+        error: (msg) => console.error('✕', msg),
+        info: (msg) => console.log('ℹ', msg),
+      },
+    [notificationContext]
+  );
 
   /**
    * Fetch cart data from backend

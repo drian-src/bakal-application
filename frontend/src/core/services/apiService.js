@@ -31,10 +31,17 @@ const apiCall = async (endpoint, options = {}) => {
   }
 
   try {
+    console.log(`[API] Calling ${options.method || 'GET'} ${url}`, { hasToken: !!token });
+    
     const response = await fetch(url, {
       ...options,
+      method: options.method || 'GET',
       headers,
+      credentials: 'include',
+      mode: 'cors',
     });
+
+    console.log(`[API] Response status: ${response.status}`);
 
     if (!response.ok) {
       const error = await response.json().catch(() => ({ message: 'API Error' }));
@@ -43,7 +50,7 @@ const apiCall = async (endpoint, options = {}) => {
 
     return await response.json();
   } catch (error) {
-    console.error(`API Call Error [${endpoint}]:`, error);
+    console.error(`API Call Error [${endpoint}]:`, error.message || error);
     throw error;
   }
 };

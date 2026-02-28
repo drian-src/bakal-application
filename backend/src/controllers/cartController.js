@@ -56,6 +56,7 @@ async function getCart(req, res, next) {
           title: product.title,
           price: product.price,
           imageUrl: product.image_url,
+          productUrl: product.product_url,
           platformId: product.platform_id,
           platform: platformData ? platformData.name : null,
         } : null,

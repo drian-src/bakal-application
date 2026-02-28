@@ -56,7 +56,7 @@ let PLATFORM_IDS = {};
 async function loadPlatformIds() {
   const { data, error } = await supabase.from('platforms').select('id, name');
   if (error) throw error;
-  for (const p of data) PLATFORM_IDS[p.name] = p.id;
+  for (const p of data) PLATFORM_IDS[p.name.toLowerCase().trim()] = p.id;
   logger.info(`[SearchService] Platform IDs loaded: ${JSON.stringify(PLATFORM_IDS)}`);
 }
 
