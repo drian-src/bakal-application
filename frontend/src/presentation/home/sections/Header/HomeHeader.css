@@ -1,21 +1,21 @@
 .home-header {
-  background: var(--bg-gradient);
-  border-bottom: 1px solid var(--card-border);
+  background: var(--primary-gradient);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
   position: sticky;
   top: 0;
   z-index: 100;
   backdrop-filter: blur(10px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
 }
 
 .header-container {
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  padding: 8px var(--spacing-md);
+  padding: 12px var(--spacing-md);
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
+  gap: 12px;
   justify-content: space-between;
 }
 
@@ -24,22 +24,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--card-border);
-  border-radius: 50%;
-  color: var(--accent-gold);
-  transition: all 0.3s ease;
+  width: 32px;
+  height: 32px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 6px;
+  color: #FFD700;
+  transition: all 0.2s ease;
   cursor: pointer;
-  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.05);
+  backdrop-filter: blur(4px);
 }
 
 .back-button:hover {
-  background: rgba(212, 175, 55, 0.08);
-  border-color: var(--accent-gold);
-  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.1), 0 2px 8px rgba(212, 175, 55, 0.15);
-  transform: translateX(-2px);
+  background: rgba(255, 255, 255, 0.25);
+  color: #FFE55C;
 }
 
 .header-logo {
@@ -50,18 +48,18 @@
 }
 
 .logo-text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  color: var(--accent-gold);
-  letter-spacing: 0px;
-  text-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+  color: #FFD700;
+  letter-spacing: -0.5px;
+  text-shadow: none;
   font-family: var(--font-display);
 }
 
 .logo-subtitle {
-  font-size: 9px;
-  color: var(--text-muted);
-  letter-spacing: 1.2px;
+  font-size: 8px;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.8px;
   text-transform: uppercase;
   font-weight: 600;
   font-family: var(--font-body);
@@ -86,26 +84,27 @@
 
 .search-input {
   width: 100%;
-  padding: 12px 44px 12px 18px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid var(--card-border);
-  border-radius: var(--radius-md);
-  color: var(--text-primary);
-  font-size: 1.15rem;
-  transition: all 0.3s ease;
+  padding: 10px 40px 10px 16px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1.5px solid rgba(212, 175, 55, 0.5);
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 14px;
+  transition: all 0.2s ease;
   letter-spacing: 0.2px;
   font-family: var(--font-body);
+  backdrop-filter: blur(4px);
 }
 
 .search-input::placeholder {
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .search-input:focus {
   outline: none;
   border-color: var(--accent-gold);
-  background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 16px rgba(212, 175, 55, 0.15);
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 0 4px rgba(212, 175, 55, 0.3);
 }
 
 .search-button {
@@ -113,14 +112,14 @@
   right: 6px;
   top: 50%;
   transform: translateY(-50%);
-  padding: 6px 10px;
+  padding: 6px 12px;
   background: var(--accent-gold);
-  color: var(--bg-primary);
-  border-radius: calc(var(--radius-md) - 2px);
-  transition: all 0.3s ease;
+  color: var(--primary);
+  border-radius: 4px;
+  transition: all 0.2s ease;
   font-weight: 600;
-  font-size: 11px;
-  letter-spacing: 0.2px;
+  font-size: 12px;
+  letter-spacing: 0.3px;
   border: none;
   cursor: pointer;
   font-family: var(--font-body);
@@ -130,9 +129,9 @@
 }
 
 .search-button:hover {
-  background: var(--accent-gold-hover);
-  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
-  transform: translateY(-50%) scale(1.05);
+  background: #FFE55C;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.4);
+  transform: translateY(-50%);
 }
 
 .header-profile {
@@ -146,22 +145,20 @@
   position: relative;
   width: 36px;
   height: 36px;
-  background: rgba(255, 255, 255, 0.02);
-  border: 1px solid var(--card-border);
-  border-radius: 50%;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--accent-gold);
-  transition: all 0.3s ease;
+  color: #FFD700;
+  transition: all 0.2s ease;
   cursor: pointer;
-  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.05);
 }
 
 .cart-icon-wrapper:hover {
-  background: rgba(212, 175, 55, 0.08);
-  border-color: var(--accent-gold);
-  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.1), 0 2px 8px rgba(212, 175, 55, 0.15);
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFE55C;
 }
 
 .cart-badge {
@@ -229,5 +226,69 @@
 
   .header-profile {
     order: 4;
+  }
+}
+
+/* Profile pill — avatar + name */
+.profile-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1.5px solid rgba(212, 175, 55, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+  user-select: none;
+  backdrop-filter: blur(4px);
+}
+
+.profile-pill:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--accent-gold);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.profile-avatar {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.profile-avatar-letter {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hide name text on small screens, show avatar only */
+@media (max-width: 640px) {
+  .profile-pill {
+    padding: 2px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(212, 175, 55, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .profile-name {
+    display: none;
   }
 }

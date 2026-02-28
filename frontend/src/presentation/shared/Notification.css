@@ -1,25 +1,36 @@
 .notifications-container {
   position: fixed;
-  top: 20px;
-  right: 20px;
+  top: 72px;
+  right: 16px;
+  bottom: auto;
+  left: auto;
   z-index: 9999;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  max-width: 400px;
+  gap: 8px;
+  align-items: flex-end;
+  pointer-events: none;
+  max-width: 360px;
+  width: 100%;
 }
 
 .notification {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 14px 16px;
-  border-radius: 8px;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: 10px;
   font-size: 14px;
   font-weight: 500;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  animation: slideInRight 0.3s ease-out;
-  max-width: 100%;
+  line-height: 1.4;
+  color: #ffffff;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15), 0 1px 4px rgba(0, 0, 0, 0.1);
+  min-width: 220px;
+  max-width: 340px;
+  animation: toast-slide-up 0.22s ease forwards;
+  cursor: default;
+  pointer-events: all;
+  justify-content: space-between;
 }
 
 .notification-content {
@@ -64,30 +75,33 @@
 
 /* Success notification */
 .notification-success {
-  background: linear-gradient(135deg, #4CAF50 0%, #45a049 100%);
-  color: white;
-  border-left: 4px solid #388E3C;
+  background: #16a34a;
 }
 
 /* Error notification */
 .notification-error {
-  background: linear-gradient(135deg, #F44336 0%, #DA190B 100%);
-  color: white;
-  border-left: 4px solid #C62828;
+  background: #dc2626;
 }
 
 /* Warning notification */
 .notification-warning {
-  background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
-  color: white;
-  border-left: 4px solid #E65100;
+  background: #d97706;
 }
 
 /* Info notification */
 .notification-info {
-  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
-  color: white;
-  border-left: 4px solid #1565C0;
+  background: #2563eb;
+}
+
+@keyframes toast-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideInRight {
@@ -108,14 +122,29 @@
 /* Responsive design */
 @media (max-width: 640px) {
   .notifications-container {
-    top: 10px;
-    right: 10px;
-    left: 10px;
-    max-width: none;
+    top: auto;
+    bottom: 16px;
+    right: 12px;
+    left: 12px;
+    align-items: center;
+    max-width: unset;
+    width: unset;
   }
 
   .notification {
     font-size: 13px;
     padding: 12px 14px;
+  }
+}
+
+/* Extra small screens - stack toasts at bottom-center */
+@media (max-width: 480px) {
+  .notifications-container {
+    top: auto;
+    bottom: 16px;
+    right: 0;
+    left: 0;
+    align-items: center;
+    padding: 0 12px;
   }
 }

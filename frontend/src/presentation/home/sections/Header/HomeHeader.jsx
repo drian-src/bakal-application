@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Logo } from '../../../shared';
 import { useCart } from '../../../../core/hooks/useCart';
+import { getCurrentUser } from '../../../../core/services/authService';
 import './HomeHeader.css';
 
 const HomeHeader = ({ hideSearch = false }) => {
@@ -10,6 +11,15 @@ const HomeHeader = ({ hideSearch = false }) => {
   const location = useLocation();
   const isSearchPage = location.pathname === '/search';
   const { cartCount } = useCart();
+
+  // Get current user and derive display name
+  const user = getCurrentUser();
+  const displayName = user?.name
+    ?? user?.displayName
+    ?? user?.user_metadata?.full_name
+    ?? user?.email?.split('@')[0]
+    ?? null;
+  const firstName = displayName ? displayName.split(' ')[0] : null;
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -73,11 +83,17 @@ const HomeHeader = ({ hideSearch = false }) => {
               </span>
             )}
           </div>
-          <div className="profile-icon" onClick={handleProfileClick} title="View Profile">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-              <circle cx="12" cy="8" r="4"/>
-              <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
-            </svg>
+
+          {/* Profile pill — avatar + name */}
+          <div className="profile-pill" onClick={handleProfileClick} title={displayName ? `${displayName} - View Profile` : 'View Profile'}>
+            <div className="profile-avatar">
+              <span className="profile-avatar-letter">
+                {firstName ? firstName.charAt(0).toUpperCase() : '?'}
+              </span>
+            </div>
+            {firstName && (
+              <span className="profile-name">{firstName}</span>
+            )}
           </div>
         </div>
       </div>
