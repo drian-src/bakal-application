@@ -12,6 +12,7 @@ import HomePage from '../presentation/home/HomePage';
 import SearchResultPage from '../presentation/home/search/SearchResultPage';
 import ProductDetailPage from '../presentation/product/ProductDetailPage';
 import ProfilePage from '../presentation/profile/ProfilePage';
+import CartPage from '../presentation/cart/CartPage';
 import NotFound from '../presentation/shared/NotFound';
 import HomeHeader from '../presentation/home/sections/Header/HomeHeader';
 import { ProtectedRoute } from '../core/services/authUtils.jsx';
@@ -34,6 +35,7 @@ const AppRoutes = () => {
       <Route path="/search" element={<ProtectedRoute><><HomeHeader /><SearchResultPage /></></ProtectedRoute>} />
       <Route path="/product/:platform/:productId" element={<ProtectedRoute><ProductDetailPage /></ProtectedRoute>} />
       <Route path="/profile" element={<ProtectedRoute><ProfilePage /></ProtectedRoute>} />
+      <Route path="/cart" element={<ProtectedRoute><CartPage /></ProtectedRoute>} />
       
       {/* 404 Not Found */}
       <Route path="*" element={<NotFound />} />

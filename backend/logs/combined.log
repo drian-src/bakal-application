@@ -2302,3 +2302,1981 @@ Call log:
 2026-02-21 07:28:55 [debug]: → GET /api/search/history
 2026-02-21 07:58:09 [error]: [DB] Supabase connection failed:
 2026-02-21 07:58:58 [error]: [DB] Supabase connection failed:
+2026-02-21 15:13:01 [info]: [DB] Supabase connection verified.
+2026-02-21 15:13:02 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"993de2ca-56cb-4e0f-81cd-2dfe02a42a05","villman":"0b0c896a-5701-4322-9868-11a410385b7c","pcworx":"65a83309-9bea-47ac-9630-0f4596443655"}
+2026-02-21 15:13:02 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-21 15:14:07 [debug]: → GET /api/search
+2026-02-21 15:14:09 [info]: [SearchService] Search #17661b19-cf09-4cd4-a217-f50766c611db - "egg"
+2026-02-21 15:14:11 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:11 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:11 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:14 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:14:14 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-02-21 15:14:14 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:14:14 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-21 15:14:14 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:14:14 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-02-21 15:14:28 [debug]: → GET /api/search
+2026-02-21 15:14:28 [info]: [SearchService] Search #8da500e6-c167-49ad-8bed-41bdb6e7412c - "egg"
+2026-02-21 15:14:30 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-02-21 15:14:30 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:30 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:31 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:31 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:14:31 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-02-21 15:14:31 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:14:31 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-02-21 15:14:31 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:14:31 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-21 15:14:34 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:14:42 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-02-21 15:14:42 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-02-21 15:14:44 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-21 15:14:44 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-21 15:14:45 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2195ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:14:48 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-02-21 15:14:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-21 15:14:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-21 15:14:50 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:50 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-21 15:14:50 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-21 15:14:51 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:14:51 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-21 15:14:51 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-21 15:14:51 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-02-21 15:14:52 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-02-21 15:14:52 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-21 15:14:53 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2328ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:14:53 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:14:55 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-02-21 15:14:56 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-21 15:14:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-21 15:14:57 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-02-21 15:14:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-21 15:14:58 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-21 15:14:58 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-21 15:14:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-21 15:14:58 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:14:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-21 15:14:58 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-21 15:14:59 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-21 15:14:59 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:14:59 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-21 15:14:59 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-21 15:14:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-21 15:15:00 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-21 15:15:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-21 15:15:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-21 15:15:07 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-21 15:15:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-21 15:15:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-02-21 15:15:07 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-21 15:15:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-21 15:15:08 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-21 15:15:08 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-02-21 15:15:08 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-21 15:15:11 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4121ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:15:13 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-21 15:15:13 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-21 15:15:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-21 15:15:15 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-21 15:15:16 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-21 15:15:16 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:15:16 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-21 15:15:35 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-02-21 15:15:36 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-02-21 15:15:36 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-02-21 15:15:38 [info]: [SearchService] Raw products scraped: 11
+2026-02-21 15:15:38 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-02-21 15:15:38 [info]: [SearchService] Saved 0 products for search #8da500e6-c167-49ad-8bed-41bdb6e7412c
+2026-02-21 15:15:44 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-02-21 15:15:45 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-02-21 15:15:45 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-02-21 15:15:48 [info]: [SearchService] Raw products scraped: 11
+2026-02-21 15:15:48 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-02-21 15:15:48 [info]: [SearchService] Saved 0 products for search #17661b19-cf09-4cd4-a217-f50766c611db
+2026-02-21 15:15:53 [debug]: → GET /api/search
+2026-02-21 15:15:54 [info]: [SearchService] Search #4fa5eb53-ddb9-4071-b9b6-4646f697b30a - "lenovo l490"
+2026-02-21 15:15:56 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:15:56 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:15:56 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:15:56 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:15:56 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:15:56 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:15:56 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:15:56 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:15:56 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:16:11 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-21 15:16:13 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:16:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-5-15ahp10-83m0003fph-geforce-rtx-5060-amd-ryzen-7-laptop-eclipse-black.json
+2026-02-21 15:16:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00bbph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:16:15 [debug]: [PcExpressScraper] JSON success: LENOVO Legion 5 15AHP10 (83M0003FPH) GeForce RTX™ 5060 AMD Ryzen™ 7 Laptop (Eclipse Black)
+2026-02-21 15:16:15 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00BBPH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:16:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15irx10-83je00gbph-geforce-rtx-5050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:16:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16irx10-83nn003tph-geforce-rtx-5070-intel-core-i9-laptop-eclipse-black.json
+2026-02-21 15:16:21 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IRX10 (83JE00GBPH) GeForce RTX™ 5050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:16:21 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16IRX10 (83NN003TPH) GeForce RTX™ 5070 Intel® Core™ i9 Laptop (Eclipse Black)
+2026-02-21 15:16:25 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16afr10-83f2000nph-geforce-rtx-5070-amd-ryzen-9-laptop-eclipse-black.json
+2026-02-21 15:16:26 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16AFR10 (83F2000NPH) GeForce RTX™ 5070 AMD Ryzen™ 9 Laptop (Eclipse Black)
+2026-02-21 15:16:29 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-21 15:16:30 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/lenovo-loq-isirx9-i5-13450hx-8gb-512gb-15-6-rtx4050-6gb-w11-h-s-83dv016rph.json
+2026-02-21 15:16:30 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/lenovo-loq-15iax9e-i5-12450hx-8gb-512gb-ssd-15-6-rtx2050-4gb-win11-83lk000uph.json
+2026-02-21 15:16:30 [debug]: [PcWorxScraper] JSON success: Lenovo LOQ ISIRX9 i5-13450HX 8GB 512GB 15.6" RTX4050 6GB W11 H&S 83DV016RPH
+2026-02-21 15:16:30 [debug]: [PcWorxScraper] JSON success: Lenovo LOQ 15IAX9E i5-12450HX 8GB 512GB SSD 15.6" RTX2050 4GB Win11 83LK000UPH
+2026-02-21 15:16:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/lenovo-loq-15irh8-i5-12450h-8gb-512gb-ssd-15-6-rtx3050-6gb-w11-h-s-82xv00bwph.json
+2026-02-21 15:16:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/lenovo-ip-slim-3-15irh8-i5-13420h-16gb-512gb-15-6-shared-w11-h-s-83em000eph-1.json
+2026-02-21 15:16:34 [debug]: [PcWorxScraper] JSON success: Lenovo IP Slim 3-15IRH8 i5-13420H 16GB 512GB 15.6" Shared W11 H&S 83EM000EPH
+2026-02-21 15:16:34 [debug]: [PcWorxScraper] JSON success: Lenovo LOQ 15IRH8 i5-12450H 8GB 512GB SSD 15.6" RTX3050 6GB W11 H&S 82XV00BWPH
+2026-02-21 15:16:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/lenovo-loq-x90-15irx9-i5-13450hx-8gb-512gb-15-6-rtx3050-6gb-w11-h-s-83dv0013ph-free-gaming-bag-gaming-mouse-and-mousepad-laptop-cooler.json
+2026-02-21 15:16:37 [debug]: [PcWorxScraper] JSON success: Lenovo LOQ x90 15IRX9 i5-13450HX 8GB 512GB 15.6" RTX3050 6GB W11 H&S 83DV0013PH
+2026-02-21 15:16:41 [info]: [SearchService] Raw products scraped: 10
+2026-02-21 15:16:41 [info]: [SearchService] Relevance filter: 10/10 products kept
+2026-02-21 15:16:44 [info]: [SearchService] Saved 10 products for search #4fa5eb53-ddb9-4071-b9b6-4646f697b30a
+2026-02-21 15:16:50 [debug]: → GET /api/search
+2026-02-21 15:16:51 [info]: [SearchService] Search #59b5a066-726f-4e91-b20f-d08031fbaa54 - "lenovo l490"
+2026-02-21 15:16:52 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:16:52 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:16:52 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:16:52 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:16:52 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:16:52 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:16:52 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:16:52 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:16:52 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:16:53 [debug]: → GET /api/search
+2026-02-21 15:16:53 [info]: [SearchService] Search #56cd2a8e-c9a7-41e0-806a-a9d560c725c7 - "lenovo l490"
+2026-02-21 15:16:55 [debug]: → GET /api/search
+2026-02-21 15:16:58 [info]: [SearchService] Search #ee154a7b-7bce-4aac-a15d-0921c16243e7 - "lenovo l490"
+2026-02-21 15:17:02 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:02 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:02 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:03 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:17:03 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:03 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:17:03 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:03 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:17:03 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:04 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:09 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:09 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:15 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:17:15 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:18 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:17:19 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:21 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:17:21 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:24 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-21 15:17:26 [debug]: → GET /api/search
+2026-02-21 15:17:28 [info]: [SearchService] Search #ba30150c-4fdd-40cd-a218-36973dc4bd8f - "lenovo l490"
+2026-02-21 15:17:31 [debug]: → GET /api/search
+2026-02-21 15:17:32 [info]: [SearchService] Search #04d8d862-6806-4b88-92cb-d1cf8bb9786a - "lenovo l490"
+2026-02-21 15:17:36 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:17:37 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-21 15:17:39 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:39 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:39 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:39 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:39 [debug]: → GET /api/search
+2026-02-21 15:17:39 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:17:40 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:17:40 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:40 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:17:40 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:40 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:17:40 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:17:40 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:17:40 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:18:03 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:18:03 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:18:14 [info]: [SearchService] Search #33707fdb-ee92-46a6-9ebe-49f442d6b6e9 - "lenovo l490"
+2026-02-21 15:18:15 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:18:20 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:18:20 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:18:22 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2146ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:18:22 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2264ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=lenovo%20l490", waiting until "load"[22m
+
+2026-02-21 15:18:24 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:18:24 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:18:24 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:18:32 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:18:32 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:18:32 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:18:32 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:18:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-5-15ahp10-83m0003fph-geforce-rtx-5060-amd-ryzen-7-laptop-eclipse-black.json
+2026-02-21 15:18:40 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:18:40 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:18:41 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-21 15:19:09 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:19:09 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:19:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00bbph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:19:10 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-21 15:19:16 [debug]: [PcExpressScraper] JSON success: LENOVO Legion 5 15AHP10 (83M0003FPH) GeForce RTX™ 5060 AMD Ryzen™ 7 Laptop (Eclipse Black)
+2026-02-21 15:19:17 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2473ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:19:18 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:19:18 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:19:19 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:19:19 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:19:19 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:19:19 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00BBPH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:19:35 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:19:36 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-21 15:19:37 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:19:44 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:19:44 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:19:44 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2054ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/search?type=product&q=lenovo%20l490", waiting until "load"[22m
+
+2026-02-21 15:19:44 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2323ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=lenovo%20l490", waiting until "load"[22m
+
+2026-02-21 15:19:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-5-15ahp10-83m0003fph-geforce-rtx-5060-amd-ryzen-7-laptop-eclipse-black.json
+2026-02-21 15:19:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00bbph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:19:48 [debug]: [PcExpressScraper] JSON success: LENOVO Legion 5 15AHP10 (83M0003FPH) GeForce RTX™ 5060 AMD Ryzen™ 7 Laptop (Eclipse Black)
+2026-02-21 15:19:51 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:19:51 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00BBPH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:19:52 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:19:52 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-21 15:19:52 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=lenovo%20l490
+2026-02-21 15:19:52 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2126ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:19:54 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:19:54 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:19:54 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:20:09 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:20:10 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:20:10 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:20:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16irx10-83nn003tph-geforce-rtx-5070-intel-core-i9-laptop-eclipse-black.json
+2026-02-21 15:20:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00bbph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:20:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15irx10-83je00gbph-geforce-rtx-5050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:20:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-5-15ahp10-83m0003fph-geforce-rtx-5060-amd-ryzen-7-laptop-eclipse-black.json
+2026-02-21 15:20:20 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IRX10 (83JE00GBPH) GeForce RTX™ 5050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:20:20 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16IRX10 (83NN003TPH) GeForce RTX™ 5070 Intel® Core™ i9 Laptop (Eclipse Black)
+2026-02-21 15:20:20 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00BBPH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:20:20 [debug]: [PcExpressScraper] JSON success: LENOVO Legion 5 15AHP10 (83M0003FPH) GeForce RTX™ 5060 AMD Ryzen™ 7 Laptop (Eclipse Black)
+2026-02-21 15:20:23 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2155ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:20:23 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2141ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:20:23 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2132ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:20:23 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2385ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=lenovo%20l490", waiting until "load"[22m
+
+2026-02-21 15:20:25 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-21 15:20:26 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4035ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:20:27 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:20:29 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:20:30 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:20:30 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:20:31 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:20:31 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:20:31 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:20:31 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:20:31 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:20:31 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:20:34 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:20:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15irx10-83je00gbph-geforce-rtx-5050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:20:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16irx10-83nn003tph-geforce-rtx-5070-intel-core-i9-laptop-eclipse-black.json
+2026-02-21 15:20:47 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:20:47 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:20:50 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16IRX10 (83NN003TPH) GeForce RTX™ 5070 Intel® Core™ i9 Laptop (Eclipse Black)
+2026-02-21 15:21:21 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IRX10 (83JE00GBPH) GeForce RTX™ 5050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:21:22 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:21:22 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4411ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:21:22 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4471ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:21:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-5-15ahp10-83m0003fph-geforce-rtx-5060-amd-ryzen-7-laptop-eclipse-black.json
+2026-02-21 15:21:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00bbph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:21:22 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:21:22 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:21:23 [debug]: [PcExpressScraper] JSON success: LENOVO Legion 5 15AHP10 (83M0003FPH) GeForce RTX™ 5060 AMD Ryzen™ 7 Laptop (Eclipse Black)
+2026-02-21 15:21:23 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00BBPH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:21:25 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00bbph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:21:25 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-5-15ahp10-83m0003fph-geforce-rtx-5060-amd-ryzen-7-laptop-eclipse-black.json
+2026-02-21 15:21:26 [debug]: [PcExpressScraper] JSON success: LENOVO Legion 5 15AHP10 (83M0003FPH) GeForce RTX™ 5060 AMD Ryzen™ 7 Laptop (Eclipse Black)
+2026-02-21 15:21:26 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00BBPH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:21:31 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:21:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15irx10-83je00gbph-geforce-rtx-5050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:21:31 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:21:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16irx10-83nn003tph-geforce-rtx-5070-intel-core-i9-laptop-eclipse-black.json
+2026-02-21 15:21:34 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:21:34 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:21:34 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IRX10 (83JE00GBPH) GeForce RTX™ 5050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:21:34 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:21:34 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:21:34 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16IRX10 (83NN003TPH) GeForce RTX™ 5070 Intel® Core™ i9 Laptop (Eclipse Black)
+2026-02-21 15:21:34 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4357ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:21:50 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16afr10-83f2000nph-geforce-rtx-5070-amd-ryzen-9-laptop-eclipse-black.json
+2026-02-21 15:21:58 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:21:58 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16AFR10 (83F2000NPH) GeForce RTX™ 5070 AMD Ryzen™ 9 Laptop (Eclipse Black)
+2026-02-21 15:21:58 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:21:58 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:21:59 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4169ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:21:59 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4236ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:00 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4153ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=lenovo%20l490", waiting until "load"[22m
+
+2026-02-21 15:22:01 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:03 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15irx10-83je00gbph-geforce-rtx-5050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:22:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16afr10-83f2000nph-geforce-rtx-5070-amd-ryzen-9-laptop-eclipse-black.json
+2026-02-21 15:22:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16irx10-83nn003tph-geforce-rtx-5070-intel-core-i9-laptop-eclipse-black.json
+2026-02-21 15:22:07 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IRX10 (83JE00GBPH) GeForce RTX™ 5050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:22:07 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16AFR10 (83F2000NPH) GeForce RTX™ 5070 AMD Ryzen™ 9 Laptop (Eclipse Black)
+2026-02-21 15:22:07 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16IRX10 (83NN003TPH) GeForce RTX™ 5070 Intel® Core™ i9 Laptop (Eclipse Black)
+2026-02-21 15:22:08 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:08 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16afr10-83f2000nph-geforce-rtx-5070-amd-ryzen-9-laptop-eclipse-black.json
+2026-02-21 15:22:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15irx10-83je00gbph-geforce-rtx-5050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:22:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16irx10-83nn003tph-geforce-rtx-5070-intel-core-i9-laptop-eclipse-black.json
+2026-02-21 15:22:09 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:22:09 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:22:09 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-21 15:22:09 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:22:09 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16AFR10 (83F2000NPH) GeForce RTX™ 5070 AMD Ryzen™ 9 Laptop (Eclipse Black)
+2026-02-21 15:22:10 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IRX10 (83JE00GBPH) GeForce RTX™ 5050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:22:10 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16IRX10 (83NN003TPH) GeForce RTX™ 5070 Intel® Core™ i9 Laptop (Eclipse Black)
+2026-02-21 15:22:11 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=lenovo%20l490&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:14 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-21 15:22:14 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=lenovo%20l490
+2026-02-21 15:22:33 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:33 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:34 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:34 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:35 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:35 [info]: [SearchService] Raw products scraped: 5
+2026-02-21 15:22:35 [info]: [SearchService] Relevance filter: 5/5 products kept
+2026-02-21 15:22:36 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:36 [info]: [SearchService] Raw products scraped: 5
+2026-02-21 15:22:36 [info]: [SearchService] Relevance filter: 5/5 products kept
+2026-02-21 15:22:36 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16afr10-83f2000nph-geforce-rtx-5070-amd-ryzen-9-laptop-eclipse-black.json
+2026-02-21 15:22:36 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:36 [info]: [SearchService] Raw products scraped: 5
+2026-02-21 15:22:36 [info]: [SearchService] Relevance filter: 5/5 products kept
+2026-02-21 15:22:37 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16AFR10 (83F2000NPH) GeForce RTX™ 5070 AMD Ryzen™ 9 Laptop (Eclipse Black)
+2026-02-21 15:22:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16afr10-83f2000nph-geforce-rtx-5070-amd-ryzen-9-laptop-eclipse-black.json
+2026-02-21 15:22:38 [info]: [SearchService] Saved 5 products for search #04d8d862-6806-4b88-92cb-d1cf8bb9786a
+2026-02-21 15:22:39 [info]: [SearchService] Saved 5 products for search #ba30150c-4fdd-40cd-a218-36973dc4bd8f
+2026-02-21 15:22:39 [debug]: → GET /api/search
+2026-02-21 15:22:39 [debug]: → GET /api/search
+2026-02-21 15:22:39 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16AFR10 (83F2000NPH) GeForce RTX™ 5070 AMD Ryzen™ 9 Laptop (Eclipse Black)
+2026-02-21 15:22:39 [info]: [SearchService] Saved 5 products for search #59b5a066-726f-4e91-b20f-d08031fbaa54
+2026-02-21 15:22:39 [debug]: → GET /api/search/history
+2026-02-21 15:22:39 [info]: [SearchService] Search #540e1ddc-1679-4717-b9fb-2919bb7a66a8 - "mechanicla keyboard"
+2026-02-21 15:22:39 [info]: [SearchService] Search #b07ed774-82bd-4a61-9aa1-90488bf4cab7 - "keyboard"
+2026-02-21 15:22:41 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:41 [info]: [SearchService] Raw products scraped: 5
+2026-02-21 15:22:41 [info]: [SearchService] Relevance filter: 5/5 products kept
+2026-02-21 15:22:42 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=mechanicla%20keyboard&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:43 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:43 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=mechanicla%20keyboard&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:43 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=mechanicla%20keyboard&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:43 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:43 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-21 15:22:44 [info]: [SearchService] Saved 5 products for search #ee154a7b-7bce-4aac-a15d-0921c16243e7
+2026-02-21 15:22:44 [info]: [PcExpressScraper] API found 4 product URLs
+2026-02-21 15:22:44 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-21 15:22:44 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-21 15:22:44 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-21 15:22:44 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:44 [info]: [SearchService] Raw products scraped: 5
+2026-02-21 15:22:44 [info]: [SearchService] Relevance filter: 5/5 products kept
+2026-02-21 15:22:44 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-21 15:22:45 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-21 15:22:45 [info]: [SearchService] Saved 5 products for search #56cd2a8e-c9a7-41e0-806a-a9d560c725c7
+2026-02-21 15:22:46 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-21 15:22:48 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-21 15:22:48 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-21 15:22:49 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-21 15:22:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aula-s2022-mechanical-gaming-keyboard-green.json
+2026-02-21 15:22:50 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-21 15:22:50 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g413-se-mechanical-keyboard.json
+2026-02-21 15:22:50 [debug]: [PcExpressScraper] JSON success: AULA S2022 Mechanical Gaming Keyboard - Green
+2026-02-21 15:22:51 [debug]: [PcExpressScraper] JSON success: LOGITECH G413 SE Mechanical Keyboard
+2026-02-21 15:22:54 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-21 15:22:54 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-21 15:22:54 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-21 15:22:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-21 15:22:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-21 15:22:55 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-21 15:22:55 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-21 15:22:55 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-21 15:22:55 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-21 15:22:55 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-21 15:22:56 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-21 15:22:56 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-21 15:22:56 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-21 15:22:56 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-21 15:22:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-21 15:22:57 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-21 15:22:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00bbph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:22:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-5-15ahp10-83m0003fph-geforce-rtx-5060-amd-ryzen-7-laptop-eclipse-black.json
+2026-02-21 15:22:59 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00BBPH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:22:59 [debug]: [PcExpressScraper] JSON success: LENOVO Legion 5 15AHP10 (83M0003FPH) GeForce RTX™ 5060 AMD Ryzen™ 7 Laptop (Eclipse Black)
+2026-02-21 15:23:05 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-21 15:23:06 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-bs-8773-2-4g-wireless-mechanical-keyboard-mouse-bundle-black.json
+2026-02-21 15:23:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-21 15:23:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-21 15:23:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f3050-2-in-1-gaming-mechanical-keyboard-copy.json
+2026-02-21 15:23:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd100-mechanical-keyboard-brown-sugar-k-yellow.json
+2026-02-21 15:23:09 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-21 15:23:09 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-21 15:23:09 [debug]: [PcWorxScraper] JSON success: Redragon BS-8773 2.4G Wireless Mechanical Keyboard & Mouse Bundle Black
+2026-02-21 15:23:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aula-f87-wilderness-oasis-wired-mechanical-gaming-keyboard.json
+2026-02-21 15:23:10 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-21 15:23:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-21 15:23:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g512-carbon-rgb-mechanical-gx-blue-switch-clicky-gaming-keyboard.json
+2026-02-21 15:23:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-21 15:23:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-21 15:23:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15irx10-83je00gbph-geforce-rtx-5050-intel-core-i5-laptop-luna-grey.json
+2026-02-21 15:23:10 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-21 15:23:10 [debug]: [PcExpressScraper] JSON success: AULA F87 WILDERNESS OASIS Wired Mechanical Gaming Keyboard
+2026-02-21 15:23:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16irx10-83nn003tph-geforce-rtx-5070-intel-core-i9-laptop-eclipse-black.json
+2026-02-21 15:23:11 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-21 15:23:11 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-21 15:23:11 [debug]: [PcExpressScraper] JSON success: LOGITECH G512 Carbon RGB Mechanical GX Blue Switch (CLICKY) Gaming Keyboard
+2026-02-21 15:23:11 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-21 15:23:11 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IRX10 (83JE00GBPH) GeForce RTX™ 5050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-02-21 15:23:12 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-21 15:23:12 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16IRX10 (83NN003TPH) GeForce RTX™ 5070 Intel® Core™ i9 Laptop (Eclipse Black)
+2026-02-21 15:23:12 [debug]: [PcWorxScraper] JSON success: DarkFlash GD100 Mechanical Keyboard Brown Sugar K. Yellow
+2026-02-21 15:23:12 [debug]: [VillmanScraper] JSON success: Aula F2088 (Black) Wired Mechanical Gaming Keyboard
+2026-02-21 15:23:17 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2066-ii-wired-mechanical-gaming-keyboard-copy.json
+2026-02-21 15:23:18 [debug]: [VillmanScraper] JSON success: Aula S2022 Wired Mechanical Gaming Keyboard
+2026-02-21 15:23:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k717-alcor-rgb-wireless-gaming-keyboard.json
+2026-02-21 15:23:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k606-lakshmi-mechanical-keyboard.json
+2026-02-21 15:23:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-pro-5-16afr10-83f2000nph-geforce-rtx-5070-amd-ryzen-9-laptop-eclipse-black.json
+2026-02-21 15:23:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-21 15:23:20 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-21 15:23:20 [debug]: [PcWorxScraper] JSON success: Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red,Blue Switch
+2026-02-21 15:23:20 [debug]: [PcWorxScraper] JSON success: Redragon K717 ALCOR RGB Wireless Gaming Keyboard
+2026-02-21 15:23:20 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Pro 5 16AFR10 (83F2000NPH) GeForce RTX™ 5070 AMD Ryzen™ 9 Laptop (Eclipse Black)
+2026-02-21 15:23:21 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-21 15:23:21 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-21 15:23:24 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:23:24 [info]: [SearchService] Raw products scraped: 5
+2026-02-21 15:23:24 [info]: [SearchService] Relevance filter: 5/5 products kept
+2026-02-21 15:23:24 [info]: [SearchService] Raw products scraped: 15
+2026-02-21 15:23:24 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-21 15:23:25 [info]: [SearchService] Raw products scraped: 14
+2026-02-21 15:23:25 [info]: [SearchService] Relevance filter: 14/14 products kept
+2026-02-21 15:23:25 [info]: [SearchService] Saved 5 products for search #33707fdb-ee92-46a6-9ebe-49f442d6b6e9
+2026-02-21 15:23:27 [info]: [SearchService] Saved 15 products for search #b07ed774-82bd-4a61-9aa1-90488bf4cab7
+2026-02-21 15:23:28 [info]: [SearchService] Saved 14 products for search #540e1ddc-1679-4717-b9fb-2919bb7a66a8
+2026-02-21 15:23:38 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 16:28:41 [error]: [DB] Supabase connection failed:
+2026-02-28 16:29:07 [error]: [DB] Supabase connection failed:
+2026-02-28 16:30:40 [error]: [DB] Supabase connection failed:
+2026-02-28 16:31:53 [info]: [DB] Supabase connection verified.
+2026-02-28 16:31:53 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 16:31:53 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 16:33:03 [debug]: → GET /api/search
+2026-02-28 16:33:03 [debug]: → GET /api/search
+2026-02-28 16:33:46 [debug]: → GET /api/search
+2026-02-28 16:35:29 [debug]: → POST /api/auth/login
+2026-02-28 16:35:31 [warn]: [ErrorHandler] 401 POST /api/auth/login - Invalid email or password.
+2026-02-28 16:37:26 [debug]: → POST /api/auth/register
+2026-02-28 16:37:37 [debug]: → POST /api/auth/register
+2026-02-28 16:37:46 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 16:37:56 [info]: [DB] Supabase connection verified.
+2026-02-28 16:37:57 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 16:37:57 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 16:37:57 [debug]: → POST /api/auth/register
+2026-02-28 16:37:57 [warn]: [ErrorHandler] 409 POST /api/auth/register - Email already in use.
+2026-02-28 16:38:02 [debug]: → POST /api/auth/register
+2026-02-28 16:38:10 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 16:38:18 [info]: [DB] Supabase connection verified.
+2026-02-28 16:38:19 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 16:38:19 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 16:38:20 [debug]: → POST /api/auth/register
+2026-02-28 16:38:20 [warn]: [ErrorHandler] 409 POST /api/auth/register - Email already in use.
+2026-02-28 16:38:39 [debug]: → GET /api/search
+2026-02-28 16:38:39 [info]: [SearchService] Search #b0661acf-6ec4-416f-913b-667454b093ad - "keyboard"
+2026-02-28 16:38:40 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:38:40 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:38:40 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:38:44 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 16:38:44 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 16:38:44 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 16:38:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 16:38:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 16:38:44 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 16:38:45 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 16:38:45 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 16:38:45 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 16:38:45 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 16:38:45 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 16:38:45 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 16:38:45 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 16:38:45 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 16:38:45 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 16:38:49 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 16:38:49 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 16:38:49 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 16:38:49 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 16:38:49 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 16:38:49 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 16:38:50 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 16:38:50 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 16:38:50 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 16:38:50 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 16:38:50 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 16:38:50 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 16:38:52 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 16:38:52 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 16:38:52 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 16:38:52 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 16:38:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 16:38:54 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 16:38:57 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 16:38:57 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 16:38:59 [debug]: → GET /api/search
+2026-02-28 16:38:59 [info]: [SearchService] Search #c044e052-2e3e-46a4-b36c-03e6fa3f0e95 - "keyboard"
+2026-02-28 16:39:00 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:39:00 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:39:00 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:39:00 [info]: [SearchService] Saved 15 products for search #b0661acf-6ec4-416f-913b-667454b093ad
+2026-02-28 16:39:00 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 16:39:00 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 16:39:00 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 16:39:01 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 16:39:02 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 16:39:02 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 16:39:02 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 16:39:02 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 16:39:02 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 16:39:02 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 16:39:02 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 16:39:02 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 16:39:02 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 16:39:02 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 16:39:02 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 16:39:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 16:39:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 16:39:05 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 16:39:05 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 16:39:06 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 16:39:06 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 16:39:06 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 16:39:06 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 16:39:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 16:39:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 16:39:07 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 16:39:07 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 16:39:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 16:39:08 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 16:39:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 16:39:11 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 16:39:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 16:39:12 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 16:39:16 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 16:39:16 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 16:39:18 [info]: [SearchService] Saved 15 products for search #c044e052-2e3e-46a4-b36c-03e6fa3f0e95
+2026-02-28 16:45:55 [debug]: → GET /api/search/history
+2026-02-28 16:47:19 [info]: [DB] Supabase connection verified.
+2026-02-28 16:47:19 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 16:47:19 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 16:47:37 [info]: [DB] Supabase connection verified.
+2026-02-28 16:47:41 [info]: [DB] Supabase connection verified.
+2026-02-28 16:47:44 [info]: [DB] Supabase connection verified.
+2026-02-28 16:47:45 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 16:47:45 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 16:47:50 [info]: [DB] Supabase connection verified.
+2026-02-28 16:47:51 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 16:47:51 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 16:47:55 [info]: [DB] Supabase connection verified.
+2026-02-28 16:47:56 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 16:47:56 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 16:49:09 [debug]: → GET /api/search
+2026-02-28 16:49:09 [info]: [SearchService] Search #a7c47548-1bfe-4022-b233-57e7030e53ac - "cvdfs"
+2026-02-28 16:49:11 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:11 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:11 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:14 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 16:49:14 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cvdfs
+2026-02-28 16:49:14 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:49:14 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:49:14 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 16:49:14 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=cvdfs
+2026-02-28 16:49:24 [debug]: → GET /api/search
+2026-02-28 16:49:25 [debug]: → GET /api/search
+2026-02-28 16:49:26 [info]: [SearchService] Search #0b6051d7-7be8-4b52-afd6-b0c8f2ea4439 - "cvdfs"
+2026-02-28 16:49:28 [info]: [SearchService] Search #afb230a8-adb3-4b2d-b322-670e8bb8b316 - "cvdfs"
+2026-02-28 16:49:28 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:28 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:30 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:30 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:30 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:31 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:49:31 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 16:49:31 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cvdfs
+2026-02-28 16:49:31 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:49:31 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:49:33 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:49:33 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:49:33 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 16:49:33 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=cvdfs
+2026-02-28 16:49:34 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 16:49:34 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cvdfs
+2026-02-28 16:49:34 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 16:49:34 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=cvdfs
+2026-02-28 16:49:48 [debug]: → GET /api/search
+2026-02-28 16:49:51 [debug]: → GET /api/search
+2026-02-28 16:50:09 [info]: [SearchService] Search #e545d984-17ad-4c32-b984-4ae63a8d78fc - "cvdfs"
+2026-02-28 16:50:09 [info]: [SearchService] Search #dd9f1cff-289b-4863-bc4e-d18f89041d89 - "keyboard"
+2026-02-28 16:50:10 [debug]: → GET /api/search
+2026-02-28 16:50:11 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-28 16:50:12 [info]: [SearchService] Search #73d92a9f-3666-4b76-90eb-068c536cd6ea - "keyboard"
+2026-02-28 16:50:13 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:13 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:13 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:14 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:14 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:14 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:15 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 16:50:15 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=cvdfs
+2026-02-28 16:50:15 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 16:50:15 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cvdfs
+2026-02-28 16:50:15 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:50:15 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:50:15 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 16:50:15 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:15 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:15 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:15 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 16:50:15 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 16:50:16 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 16:50:16 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 16:50:17 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 16:50:17 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-28 16:50:27 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 16:50:29 [debug]: → GET /api/cart
+2026-02-28 16:50:33 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:34 [debug]: → GET /api/cart
+2026-02-28 16:50:35 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 16:50:36 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 16:50:36 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 16:50:36 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-28 16:50:36 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 16:50:36 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 16:50:37 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-02-28 16:50:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 16:50:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:41 [debug]: → GET /api/cart
+2026-02-28 16:50:41 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 16:50:41 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 16:50:41 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 16:50:41 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 16:50:41 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 16:50:41 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 16:50:41 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 16:50:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:42 [debug]: → GET /api/cart
+2026-02-28 16:50:42 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 16:50:42 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 16:50:42 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2369ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/search?type=product&q=cvdfs", waiting until "load"[22m
+
+2026-02-28 16:50:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:43 [debug]: → GET /api/cart
+2026-02-28 16:50:43 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2428ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:50:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:43 [debug]: → GET /api/cart
+2026-02-28 16:50:43 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 16:50:43 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 16:50:43 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2257ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=cvdfs", waiting until "load"[22m
+
+2026-02-28 16:50:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:43 [debug]: → GET /api/cart
+2026-02-28 16:50:43 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2377ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:50:43 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2223ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:50:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:44 [debug]: → GET /api/cart
+2026-02-28 16:50:45 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 16:50:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:45 [debug]: → GET /api/cart
+2026-02-28 16:50:45 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 16:50:45 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 16:50:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:46 [debug]: → GET /api/cart
+2026-02-28 16:50:47 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 16:50:47 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 16:50:47 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 16:50:47 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 16:50:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:47 [debug]: → GET /api/cart
+2026-02-28 16:50:48 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:48 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:48 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:48 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:48 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 16:50:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:49 [debug]: → GET /api/cart
+2026-02-28 16:50:49 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:50:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:49 [debug]: → GET /api/cart
+2026-02-28 16:50:49 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 16:50:49 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cvdfs
+2026-02-28 16:50:49 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:50:49 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:50:49 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:50:49 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:50:49 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:50:49 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:50:50 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:52 [debug]: → GET /api/cart
+2026-02-28 16:50:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 16:50:59 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 16:50:59 [debug]: → GET /api/cart
+2026-02-28 16:51:00 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:51:00 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:51:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:51:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 16:51:04 [debug]: → GET /api/cart
+2026-02-28 16:51:04 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 16:51:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 16:51:04 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 16:53:39 [debug]: → GET /api/cart
+2026-02-28 16:53:47 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 16:53:47 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 16:53:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:50 [debug]: → GET /api/cart
+2026-02-28 16:53:51 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:52 [debug]: → GET /api/cart
+2026-02-28 16:53:52 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2487ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=cvdfs", waiting until "load"[22m
+
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [debug]: → GET /api/cart
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [debug]: → GET /api/cart
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [debug]: → GET /api/cart
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [debug]: → GET /api/cart
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [debug]: → GET /api/cart
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [debug]: → GET /api/cart
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [debug]: → GET /api/cart
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [debug]: → GET /api/cart
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [debug]: → GET /api/cart
+2026-02-28 16:53:55 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:55 [debug]: → GET /api/cart
+2026-02-28 16:53:56 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:58 [debug]: → GET /api/cart
+2026-02-28 16:53:59 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:59 [debug]: → GET /api/cart
+2026-02-28 16:54:00 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:00 [debug]: → GET /api/cart
+2026-02-28 16:54:01 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:02 [debug]: → GET /api/cart
+2026-02-28 16:54:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 16:54:03 [debug]: → GET /api/cart
+2026-02-28 16:54:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:03 [debug]: → GET /api/cart
+2026-02-28 16:54:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 16:54:03 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-02-28 16:54:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 16:54:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 16:54:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:04 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-02-28 16:54:04 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 16:54:04 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:54:05 [debug]: → GET /api/cart
+2026-02-28 16:54:05 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 16:54:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 16:54:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 16:54:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 16:54:05 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 16:54:05 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 16:54:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:06 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 16:54:06 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 16:54:06 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cvdfs
+2026-02-28 16:54:06 [debug]: → GET /api/cart
+2026-02-28 16:54:06 [debug]: → GET /api/search/history
+2026-02-28 16:54:06 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 16:54:06 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 16:54:06 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 16:54:07 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 16:54:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:07 [debug]: → GET /api/cart
+2026-02-28 16:54:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:07 [debug]: → GET /api/cart
+2026-02-28 16:54:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:08 [debug]: → GET /api/cart
+2026-02-28 16:54:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:08 [debug]: → GET /api/cart
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:09 [debug]: → GET /api/cart
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:09 [debug]: → GET /api/cart
+2026-02-28 16:54:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:09 [debug]: → GET /api/cart
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:10 [debug]: → GET /api/cart
+2026-02-28 16:54:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 16:54:13 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:13 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 16:54:13 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 16:54:17 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 16:54:17 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 16:54:19 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 16:54:19 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 16:54:23 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 16:54:24 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 16:54:24 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 16:54:25 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 16:54:25 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 16:54:25 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 16:54:26 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 16:54:26 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 16:54:26 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 16:54:27 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4363ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:54:28 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4030ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=cvdfs", waiting until "load"[22m
+
+2026-02-28 16:54:29 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4449ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:54:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 16:54:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 16:54:33 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 16:54:33 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 16:54:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 16:54:34 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 16:54:35 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:54:35 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 16:54:36 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:54:36 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:54:36 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 16:54:37 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-28 16:54:37 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 16:54:37 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:54:37 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-28 16:54:37 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 16:54:38 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 16:54:38 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 16:54:38 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cvdfs
+2026-02-28 16:54:38 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cvdfs&resources[type]=product&resources[limit]=10
+2026-02-28 16:54:39 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 16:54:39 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-28 16:54:39 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 16:54:39 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-28 16:54:39 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 16:54:40 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 16:54:40 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 16:54:40 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cvdfs
+2026-02-28 16:54:40 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 16:54:41 [debug]: → GET /api/cart
+2026-02-28 16:54:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:43 [debug]: → GET /api/cart
+2026-02-28 16:54:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:45 [debug]: → GET /api/cart
+2026-02-28 16:54:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:47 [debug]: → GET /api/cart
+2026-02-28 16:54:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:48 [debug]: → GET /api/cart
+2026-02-28 16:54:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:48 [debug]: → GET /api/cart
+2026-02-28 16:54:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:50 [debug]: → GET /api/cart
+2026-02-28 16:54:50 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:50 [debug]: → GET /api/cart
+2026-02-28 16:54:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:54 [debug]: → GET /api/cart
+2026-02-28 16:54:56 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:56 [debug]: → GET /api/cart
+2026-02-28 16:54:58 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:58 [debug]: → GET /api/cart
+2026-02-28 16:55:00 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:00 [debug]: → GET /api/cart
+2026-02-28 16:55:01 [debug]: → GET /api/cart
+2026-02-28 16:55:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:02 [debug]: → GET /api/cart
+2026-02-28 16:55:02 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 16:55:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:02 [debug]: → GET /api/cart
+2026-02-28 16:55:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:02 [debug]: → GET /api/cart
+2026-02-28 16:55:03 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-28 16:55:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:03 [debug]: → GET /api/cart
+2026-02-28 16:55:03 [debug]: → GET /api/cart
+2026-02-28 16:55:04 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 16:55:04 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 16:55:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:04 [debug]: → GET /api/cart
+2026-02-28 16:55:04 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-28 16:55:05 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:05 [debug]: → GET /api/cart
+2026-02-28 16:55:05 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:05 [debug]: → GET /api/cart
+2026-02-28 16:55:05 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:55:05 [info]: [SearchService] Raw products scraped: 5
+2026-02-28 16:55:06 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-02-28 16:55:06 [info]: [SearchService] Saved 0 products for search #e545d984-17ad-4c32-b984-4ae63a8d78fc
+2026-02-28 16:55:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:06 [debug]: → GET /api/cart
+2026-02-28 16:55:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 16:55:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 16:55:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:06 [debug]: → GET /api/cart
+2026-02-28 16:55:06 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 16:55:06 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 16:55:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:06 [debug]: → GET /api/cart
+2026-02-28 16:55:07 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 16:55:07 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 16:55:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:07 [debug]: → GET /api/cart
+2026-02-28 16:55:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:07 [debug]: → GET /api/cart
+2026-02-28 16:55:07 [info]: [SearchService] Saved 15 products for search #dd9f1cff-289b-4863-bc4e-d18f89041d89
+2026-02-28 16:55:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:07 [debug]: → GET /api/cart
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [debug]: → GET /api/cart
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [debug]: → GET /api/cart
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [debug]: → GET /api/cart
+2026-02-28 16:55:08 [info]: [SearchService] Raw products scraped: 5
+2026-02-28 16:55:08 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-02-28 16:55:08 [info]: [SearchService] Saved 0 products for search #a7c47548-1bfe-4022-b233-57e7030e53ac
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [info]: [SearchService] Saved 15 products for search #73d92a9f-3666-4b76-90eb-068c536cd6ea
+2026-02-28 16:55:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 16:55:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 16:55:10 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 16:55:11 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 16:55:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 16:55:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 16:55:12 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 16:55:12 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 16:55:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-28 16:55:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-28 16:55:17 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-28 16:55:17 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-28 16:55:19 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:55:19 [info]: [SearchService] Raw products scraped: 5
+2026-02-28 16:55:19 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-02-28 16:55:19 [info]: [SearchService] Saved 0 products for search #0b6051d7-7be8-4b52-afd6-b0c8f2ea4439
+2026-02-28 16:55:20 [info]: [SearchService] Raw products scraped: 5
+2026-02-28 16:55:20 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-02-28 16:55:20 [info]: [SearchService] Saved 0 products for search #afb230a8-adb3-4b2d-b322-670e8bb8b316
+2026-02-28 16:55:41 [debug]: → GET /api/cart
+2026-02-28 16:55:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:41 [debug]: → GET /api/cart
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [debug]: → GET /api/cart
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [debug]: → GET /api/cart
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [debug]: → GET /api/cart
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [debug]: → GET /api/cart
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [debug]: → GET /api/cart
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [debug]: → GET /api/cart
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [debug]: → GET /api/cart
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [debug]: → GET /api/cart
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [debug]: → GET /api/cart
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [debug]: → GET /api/cart
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [debug]: → GET /api/cart
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [debug]: → GET /api/cart
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [debug]: → GET /api/cart
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [debug]: → GET /api/cart
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [debug]: → GET /api/cart
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [debug]: → GET /api/cart
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [debug]: → GET /api/cart
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [debug]: → GET /api/cart
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [debug]: → GET /api/cart
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [debug]: → GET /api/cart
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [debug]: → GET /api/cart
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [debug]: → GET /api/cart
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [debug]: → GET /api/cart
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [debug]: → GET /api/cart
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [debug]: → GET /api/cart
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:48 [debug]: → GET /api/cart
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:48 [debug]: → GET /api/cart
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:48 [debug]: → GET /api/cart
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:41 [debug]: → GET /api/cart
+2026-02-28 16:56:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:41 [debug]: → GET /api/cart
+2026-02-28 16:56:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:41 [debug]: → GET /api/cart
+2026-02-28 16:56:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:42 [debug]: → GET /api/cart
+2026-02-28 16:56:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:42 [debug]: → GET /api/cart
+2026-02-28 16:56:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:42 [debug]: → GET /api/cart
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [debug]: → GET /api/cart
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [debug]: → GET /api/cart
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [debug]: → GET /api/cart
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [debug]: → GET /api/cart
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [debug]: → GET /api/cart
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [debug]: → GET /api/cart
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [debug]: → GET /api/cart
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [debug]: → GET /api/cart
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [debug]: → GET /api/cart
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [debug]: → GET /api/cart
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [debug]: → GET /api/cart
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [debug]: → GET /api/cart
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [debug]: → GET /api/cart
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [debug]: → GET /api/cart
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [debug]: → GET /api/cart
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [debug]: → GET /api/cart
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [debug]: → GET /api/cart
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [debug]: → GET /api/cart
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [debug]: → GET /api/cart
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [debug]: → GET /api/cart
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [debug]: → GET /api/cart
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:48 [debug]: → GET /api/cart
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:48 [debug]: → GET /api/cart
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:48 [debug]: → GET /api/cart
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:41 [debug]: → GET /api/cart
+2026-02-28 16:57:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:41 [debug]: → GET /api/cart
+2026-02-28 16:57:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:41 [debug]: → GET /api/cart
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [debug]: → GET /api/cart
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [debug]: → GET /api/cart
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [debug]: → GET /api/cart
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [debug]: → GET /api/cart
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [debug]: → GET /api/cart
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [debug]: → GET /api/cart
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [debug]: → GET /api/cart
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [debug]: → GET /api/cart
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [debug]: → GET /api/cart
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [debug]: → GET /api/cart
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [debug]: → GET /api/cart
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [debug]: → GET /api/cart
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [debug]: → GET /api/cart
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [debug]: → GET /api/cart
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [debug]: → GET /api/cart
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [debug]: → GET /api/cart
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [debug]: → GET /api/cart
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [debug]: → GET /api/cart
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [debug]: → GET /api/cart
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [debug]: → GET /api/cart
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [debug]: → GET /api/cart
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [debug]: → GET /api/cart
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [debug]: → GET /api/cart
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [debug]: → GET /api/cart
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [debug]: → GET /api/cart
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [debug]: → GET /api/cart
+2026-02-28 16:57:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:48 [debug]: → GET /api/cart
+2026-02-28 16:57:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:41 [debug]: → GET /api/cart
+2026-02-28 16:58:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:41 [debug]: → GET /api/cart
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [debug]: → GET /api/cart
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [debug]: → GET /api/cart
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [debug]: → GET /api/cart
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [debug]: → GET /api/cart
+2026-02-28 16:58:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:43 [debug]: → GET /api/cart
+2026-02-28 16:58:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:43 [debug]: → GET /api/cart
+2026-02-28 16:58:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:43 [debug]: → GET /api/cart
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [debug]: → GET /api/cart
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [debug]: → GET /api/cart
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [debug]: → GET /api/cart
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [debug]: → GET /api/cart
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [debug]: → GET /api/cart
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [debug]: → GET /api/cart
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [debug]: → GET /api/cart
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [debug]: → GET /api/cart
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [debug]: → GET /api/cart
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [debug]: → GET /api/cart
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [debug]: → GET /api/cart
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [debug]: → GET /api/cart
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [debug]: → GET /api/cart
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [debug]: → GET /api/cart
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [debug]: → GET /api/cart
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [debug]: → GET /api/cart
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [debug]: → GET /api/cart
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [debug]: → GET /api/cart
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [debug]: → GET /api/cart
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [debug]: → GET /api/cart
+2026-02-28 16:58:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:49 [debug]: → GET /api/cart
+2026-02-28 16:58:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:41 [debug]: → GET /api/cart
+2026-02-28 16:59:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:41 [debug]: → GET /api/cart
+2026-02-28 16:59:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:42 [debug]: → GET /api/cart
+2026-02-28 16:59:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:42 [debug]: → GET /api/cart
+2026-02-28 16:59:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:42 [debug]: → GET /api/cart
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [debug]: → GET /api/cart
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [debug]: → GET /api/cart
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [debug]: → GET /api/cart
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [debug]: → GET /api/cart
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [debug]: → GET /api/cart
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [debug]: → GET /api/cart
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [debug]: → GET /api/cart
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [debug]: → GET /api/cart
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [debug]: → GET /api/cart
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:45 [debug]: → GET /api/cart
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:45 [debug]: → GET /api/cart
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:45 [debug]: → GET /api/cart
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:46 [debug]: → GET /api/cart
+2026-02-28 16:59:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:46 [debug]: → GET /api/cart
+2026-02-28 16:59:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:46 [debug]: → GET /api/cart
+2026-02-28 16:59:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:46 [debug]: → GET /api/cart
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [debug]: → GET /api/cart
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [debug]: → GET /api/cart
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [debug]: → GET /api/cart
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [debug]: → GET /api/cart
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [debug]: → GET /api/cart
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [debug]: → GET /api/cart
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [debug]: → GET /api/cart
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [debug]: → GET /api/cart
+2026-02-28 16:59:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:49 [debug]: → GET /api/cart
+2026-02-28 16:59:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:41 [debug]: → GET /api/cart
+2026-02-28 17:00:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:41 [debug]: → GET /api/cart
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [debug]: → GET /api/cart
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [debug]: → GET /api/cart
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [debug]: → GET /api/cart
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [debug]: → GET /api/cart
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [debug]: → GET /api/cart
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [debug]: → GET /api/cart
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [debug]: → GET /api/cart
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [debug]: → GET /api/cart
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [debug]: → GET /api/cart
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [debug]: → GET /api/cart
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [debug]: → GET /api/cart
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [debug]: → GET /api/cart
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [debug]: → GET /api/cart
+2026-02-28 17:00:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:45 [debug]: → GET /api/cart
+2026-02-28 17:00:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:45 [debug]: → GET /api/cart
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [debug]: → GET /api/cart
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [debug]: → GET /api/cart
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [debug]: → GET /api/cart
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [debug]: → GET /api/cart
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [debug]: → GET /api/cart
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [debug]: → GET /api/cart
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [debug]: → GET /api/cart
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [debug]: → GET /api/cart
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [debug]: → GET /api/cart
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [debug]: → GET /api/cart
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [debug]: → GET /api/cart
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [debug]: → GET /api/cart
+2026-02-28 17:00:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:49 [debug]: → GET /api/cart
+2026-02-28 17:00:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:41 [debug]: → GET /api/cart
+2026-02-28 17:01:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:41 [debug]: → GET /api/cart
+2026-02-28 17:01:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:42 [debug]: → GET /api/cart
+2026-02-28 17:01:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:42 [debug]: → GET /api/cart
+2026-02-28 17:01:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:42 [debug]: → GET /api/cart
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [debug]: → GET /api/cart
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [debug]: → GET /api/cart
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [debug]: → GET /api/cart
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [debug]: → GET /api/cart
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [debug]: → GET /api/cart
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [debug]: → GET /api/cart
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [debug]: → GET /api/cart
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [debug]: → GET /api/cart
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [debug]: → GET /api/cart
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [debug]: → GET /api/cart
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [debug]: → GET /api/cart
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [debug]: → GET /api/cart
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [debug]: → GET /api/cart
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [debug]: → GET /api/cart
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [debug]: → GET /api/cart
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [debug]: → GET /api/cart
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [debug]: → GET /api/cart
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [debug]: → GET /api/cart
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [debug]: → GET /api/cart
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [debug]: → GET /api/cart
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [debug]: → GET /api/cart
+2026-02-28 17:01:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:48 [debug]: → GET /api/cart
+2026-02-28 17:01:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:48 [debug]: → GET /api/cart
+2026-02-28 17:01:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:48 [debug]: → GET /api/cart
+2026-02-28 17:01:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:49 [debug]: → GET /api/cart
+2026-02-28 17:01:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:41 [debug]: → GET /api/cart
+2026-02-28 17:02:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:41 [debug]: → GET /api/cart
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [debug]: → GET /api/cart
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [debug]: → GET /api/cart
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [debug]: → GET /api/cart
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [debug]: → GET /api/cart
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [debug]: → GET /api/cart
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [debug]: → GET /api/cart
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [debug]: → GET /api/cart
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [debug]: → GET /api/cart
+2026-02-28 17:02:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:44 [debug]: → GET /api/cart
+2026-02-28 17:02:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:44 [debug]: → GET /api/cart
+2026-02-28 17:02:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:44 [debug]: → GET /api/cart
+2026-02-28 17:02:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:45 [debug]: → GET /api/cart
+2026-02-28 17:02:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:45 [debug]: → GET /api/cart
+2026-02-28 17:02:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:45 [debug]: → GET /api/cart
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [debug]: → GET /api/cart
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [debug]: → GET /api/cart
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [debug]: → GET /api/cart
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [debug]: → GET /api/cart
+2026-02-28 17:02:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:47 [debug]: → GET /api/cart
+2026-02-28 17:02:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:47 [debug]: → GET /api/cart
+2026-02-28 17:02:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:47 [debug]: → GET /api/cart
+2026-02-28 17:02:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:48 [debug]: → GET /api/cart
+2026-02-28 17:02:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:48 [debug]: → GET /api/cart
+2026-02-28 17:02:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:48 [debug]: → GET /api/cart
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [debug]: → GET /api/cart
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [debug]: → GET /api/cart
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [debug]: → GET /api/cart
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [debug]: → GET /api/cart
+2026-02-28 17:02:50 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:41 [debug]: → GET /api/cart
+2026-02-28 17:03:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:41 [debug]: → GET /api/cart
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [debug]: → GET /api/cart
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [debug]: → GET /api/cart
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [debug]: → GET /api/cart
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [debug]: → GET /api/cart
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [debug]: → GET /api/cart
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [debug]: → GET /api/cart
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [debug]: → GET /api/cart
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [debug]: → GET /api/cart
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [debug]: → GET /api/cart
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [debug]: → GET /api/cart
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [debug]: → GET /api/cart
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [debug]: → GET /api/cart
+2026-02-28 17:03:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:45 [debug]: → GET /api/cart
+2026-02-28 17:03:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:45 [debug]: → GET /api/cart
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [debug]: → GET /api/cart
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [debug]: → GET /api/cart
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [debug]: → GET /api/cart
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [debug]: → GET /api/cart
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [debug]: → GET /api/cart
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [debug]: → GET /api/cart
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [debug]: → GET /api/cart
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [debug]: → GET /api/cart
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [debug]: → GET /api/cart
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [debug]: → GET /api/cart
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [debug]: → GET /api/cart
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [debug]: → GET /api/cart
+2026-02-28 17:03:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:49 [debug]: → GET /api/cart
+2026-02-28 17:03:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:49 [debug]: → GET /api/cart
+2026-02-28 17:03:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:04:08 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 17:04:24 [info]: [DB] Supabase connection verified.
+2026-02-28 17:04:24 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:04:24 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:04:24 [debug]: → GET /api/cart
+2026-02-28 17:04:25 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:25 [debug]: → GET /api/cart
+2026-02-28 17:04:25 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:25 [debug]: → GET /api/cart
+2026-02-28 17:04:26 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:26 [debug]: → GET /api/cart
+2026-02-28 17:04:26 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:26 [debug]: → GET /api/cart
+2026-02-28 17:04:26 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:26 [debug]: → GET /api/cart
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [debug]: → GET /api/cart
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [debug]: → GET /api/cart
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [debug]: → GET /api/cart
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [debug]: → GET /api/cart
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:28 [debug]: → GET /api/cart
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:28 [debug]: → GET /api/cart
+2026-02-28 17:04:28 [debug]: → GET /api/cart
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:29 [debug]: → GET /api/cart
+2026-02-28 17:04:29 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:29 [debug]: → GET /api/cart
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [debug]: → GET /api/cart
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [debug]: → GET /api/cart
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [debug]: → GET /api/cart
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [debug]: → GET /api/cart
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [debug]: → GET /api/cart
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [debug]: → GET /api/cart
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [debug]: → GET /api/cart
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [debug]: → GET /api/cart
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [debug]: → GET /api/cart
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [debug]: → GET /api/cart
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [debug]: → GET /api/cart
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [debug]: → GET /api/cart
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [debug]: → GET /api/cart
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [debug]: → GET /api/cart
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [debug]: → GET /api/cart
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [debug]: → GET /api/cart
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [debug]: → GET /api/cart
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [debug]: → GET /api/cart
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [debug]: → GET /api/cart
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [debug]: → GET /api/cart
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [debug]: → GET /api/cart
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [debug]: → GET /api/cart
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [debug]: → GET /api/cart
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [debug]: → GET /api/cart
+2026-02-28 17:04:36 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:36 [debug]: → GET /api/cart
+2026-02-28 17:04:36 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:36 [debug]: → GET /api/cart
+2026-02-28 17:04:36 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:36 [debug]: → GET /api/cart
+2026-02-28 17:04:37 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:37 [debug]: → GET /api/cart
+2026-02-28 17:04:37 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:05:26 [info]: [DB] Supabase connection verified.
+2026-02-28 17:05:26 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:05:26 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:05:26 [debug]: → GET /api/cart
+2026-02-28 17:05:26 [debug]: → GET /api/cart
+2026-02-28 17:05:27 [debug]: → GET /api/cart
+2026-02-28 17:05:27 [debug]: → GET /api/cart
+2026-02-28 17:05:27 [debug]: → GET /api/cart
+2026-02-28 17:05:28 [debug]: → GET /api/cart
+2026-02-28 17:05:28 [debug]: → GET /api/cart
+2026-02-28 17:05:28 [debug]: → GET /api/cart
+2026-02-28 17:05:28 [debug]: → GET /api/cart
+2026-02-28 17:05:29 [debug]: → GET /api/cart
+2026-02-28 17:05:29 [debug]: → GET /api/cart
+2026-02-28 17:05:29 [debug]: → GET /api/cart
+2026-02-28 17:05:30 [debug]: → GET /api/cart
+2026-02-28 17:05:30 [debug]: → GET /api/cart
+2026-02-28 17:05:30 [debug]: → GET /api/cart
+2026-02-28 17:05:30 [debug]: → GET /api/cart
+2026-02-28 17:05:31 [debug]: → GET /api/cart
+2026-02-28 17:05:31 [debug]: → GET /api/cart
+2026-02-28 17:05:31 [debug]: → GET /api/cart
+2026-02-28 17:05:32 [debug]: → GET /api/cart
+2026-02-28 17:05:32 [debug]: → GET /api/cart
+2026-02-28 17:05:32 [debug]: → GET /api/cart
+2026-02-28 17:05:33 [debug]: → GET /api/cart
+2026-02-28 17:05:33 [debug]: → GET /api/cart
+2026-02-28 17:05:33 [debug]: → GET /api/cart
+2026-02-28 17:05:33 [debug]: → GET /api/cart
+2026-02-28 17:05:40 [info]: [DB] Supabase connection verified.
+2026-02-28 17:05:40 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:05:40 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:05:40 [debug]: → GET /api/cart
+2026-02-28 17:05:40 [debug]: → GET /api/cart
+2026-02-28 17:05:41 [debug]: → GET /api/cart
+2026-02-28 17:05:41 [debug]: → GET /api/cart
+2026-02-28 17:05:41 [debug]: → GET /api/cart
+2026-02-28 17:05:43 [debug]: → GET /api/cart
+2026-02-28 17:05:45 [debug]: → GET /api/cart
+2026-02-28 17:05:45 [debug]: → GET /api/cart
+2026-02-28 17:05:45 [debug]: → GET /api/cart
+2026-02-28 17:05:46 [debug]: → GET /api/cart
+2026-02-28 17:05:52 [debug]: → GET /api/cart
+2026-02-28 17:05:53 [debug]: → GET /api/cart
+2026-02-28 17:05:59 [debug]: → GET /api/cart
+2026-02-28 17:05:59 [debug]: → GET /api/search
+2026-02-28 17:05:59 [debug]: → GET /api/cart
+2026-02-28 17:05:59 [info]: [SearchService] Search #a8ddad5d-8d8c-4c53-a7d7-a2dc1081a55e - "keyboard"
+2026-02-28 17:06:01 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:06:01 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:06:01 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:06:04 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:06:04 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:06:04 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:06:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:06:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:06:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:06:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:06:06 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:06:06 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:06:06 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:06:06 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:06:06 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:06:06 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:06:06 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:06:07 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:06:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:06:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:06:11 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:06:11 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:06:11 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:06:11 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:06:11 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:06:11 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:06:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:06:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:06:12 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:06:12 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:06:15 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:06:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:06:15 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:06:16 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:06:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:06:16 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:06:19 [debug]: → GET /api/search
+2026-02-28 17:06:19 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 17:06:19 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:06:19 [info]: [SearchService] Search #73a52841-8f80-486d-8cb7-7f7bdeefa6e1 - "keyboard"
+2026-02-28 17:06:20 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:06:20 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:06:20 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:06:20 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:06:20 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:06:20 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:06:22 [info]: [SearchService] Saved 15 products for search #a8ddad5d-8d8c-4c53-a7d7-a2dc1081a55e
+2026-02-28 17:06:22 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:06:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:06:22 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:06:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:06:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:06:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:06:23 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:06:23 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:06:23 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:06:23 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:06:23 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:06:23 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:06:25 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:06:26 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:06:26 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:06:26 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:06:26 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:06:26 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:06:26 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:06:26 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:06:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:06:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:06:28 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:06:28 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:06:29 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:06:30 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:06:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:06:30 [debug]: → GET /api/cart
+2026-02-28 17:06:30 [debug]: → GET /api/products/pcexpress/583c8724-56f9-4ec8-8d77-11a5e45b5c16
+2026-02-28 17:06:30 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:06:31 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:06:31 [debug]: → GET /api/cart
+2026-02-28 17:06:31 [debug]: → GET /api/products/pcexpress/583c8724-56f9-4ec8-8d77-11a5e45b5c16
+2026-02-28 17:06:31 [debug]: → GET /api/cart
+2026-02-28 17:06:31 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:06:31 [debug]: → GET /api/cart
+2026-02-28 17:06:34 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 17:06:34 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:06:36 [info]: [SearchService] Saved 15 products for search #73a52841-8f80-486d-8cb7-7f7bdeefa6e1
+2026-02-28 17:06:38 [debug]: → POST /api/cart
+2026-02-28 17:06:39 [debug]: → GET /api/cart
+2026-02-28 17:06:39 [debug]: → GET /api/cart
+2026-02-28 17:06:42 [debug]: → GET /api/cart
+2026-02-28 17:06:42 [debug]: → GET /api/cart
+2026-02-28 17:06:43 [debug]: → GET /api/cart
+2026-02-28 17:06:43 [debug]: → GET /api/cart
+2026-02-28 17:06:44 [debug]: → GET /api/cart
+2026-02-28 17:06:44 [debug]: → GET /api/cart
+2026-02-28 17:06:44 [debug]: → GET /api/cart
+2026-02-28 17:06:45 [debug]: → GET /api/cart
+2026-02-28 17:07:00 [debug]: → PUT /api/cart/969c3a67-bcf4-4312-aecb-3a136f9c48a2
+2026-02-28 17:07:01 [debug]: → GET /api/cart
+2026-02-28 17:07:01 [debug]: → GET /api/cart
+2026-02-28 17:07:05 [debug]: → GET /api/cart
+2026-02-28 17:07:05 [debug]: → GET /api/cart
+2026-02-28 17:07:10 [debug]: → GET /api/cart
+2026-02-28 17:07:10 [debug]: → GET /api/products/pcexpress/583c8724-56f9-4ec8-8d77-11a5e45b5c16
+2026-02-28 17:07:10 [debug]: → GET /api/search
+2026-02-28 17:07:10 [debug]: → GET /api/cart
+2026-02-28 17:07:10 [debug]: → GET /api/products/pcexpress/583c8724-56f9-4ec8-8d77-11a5e45b5c16
+2026-02-28 17:07:10 [info]: [SearchService] Search #bb4f852a-5794-42d5-9abf-8df98d6eb17c - "keyboard"
+2026-02-28 17:07:11 [debug]: → GET /api/cart
+2026-02-28 17:07:11 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:11 [debug]: → GET /api/cart
+2026-02-28 17:07:11 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:11 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:11 [debug]: → GET /api/cart
+2026-02-28 17:07:11 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:07:11 [debug]: → GET /api/cart
+2026-02-28 17:07:11 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:07:12 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:07:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:07:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:07:12 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:07:12 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:07:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:07:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:07:13 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:07:13 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:07:13 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:07:14 [debug]: → GET /api/cart
+2026-02-28 17:07:14 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:07:14 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:07:14 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:07:14 [debug]: → GET /api/cart
+2026-02-28 17:07:14 [debug]: → GET /api/cart
+2026-02-28 17:07:14 [debug]: → GET /api/cart
+2026-02-28 17:07:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:07:16 [debug]: → GET /api/cart
+2026-02-28 17:07:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:07:16 [debug]: → GET /api/cart
+2026-02-28 17:07:16 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:07:16 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:07:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:07:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:07:18 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:07:18 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:07:18 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:07:18 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:07:18 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:07:18 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:07:20 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:07:21 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:07:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:07:22 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:07:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:07:23 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:07:26 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 17:07:26 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:07:29 [info]: [SearchService] Saved 15 products for search #bb4f852a-5794-42d5-9abf-8df98d6eb17c
+2026-02-28 17:07:29 [debug]: → GET /api/search
+2026-02-28 17:07:29 [info]: [SearchService] Search #789e6533-36e3-47ef-b39b-d91de99e2d59 - "keyboard"
+2026-02-28 17:07:30 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:30 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:30 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:30 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:07:30 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:07:31 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:07:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:07:31 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:07:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:07:32 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:07:32 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:07:32 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:07:32 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:07:32 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:07:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:07:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:07:33 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:07:33 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:07:36 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:07:36 [debug]: → GET /api/search
+2026-02-28 17:07:36 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:07:37 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:07:37 [info]: [SearchService] Search #bae86566-80bd-4c2d-add1-cf465b716dee - "keyboard"
+2026-02-28 17:07:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:07:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:07:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:07:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:07:38 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:07:38 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:07:39 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:07:39 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:39 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:07:39 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:39 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-02-28 17:07:39 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:07:39 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 17:07:40 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 17:07:40 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 17:07:42 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-02-28 17:07:42 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k617-fizz-60-wired-rgb-gaming-keyboard-61-keys-compact-mechanical.json
+2026-02-28 17:07:42 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-02-28 17:07:42 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:07:42 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-02-28 17:07:42 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-02-28 17:07:42 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-02-28 17:07:43 [debug]: [PcWorxScraper] JSON success: Redragon K617 Fizz 60% Wired Rgb Gaming Keyboard 61 Keys Compact Mechanical
+2026-02-28 17:07:43 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-02-28 17:07:43 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:07:43 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-02-28 17:07:43 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-02-28 17:07:43 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:07:44 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:07:44 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:07:44 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:07:44 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:07:45 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:07:47 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3-multimedia-fn-wired-keyboard-1.json
+2026-02-28 17:07:47 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-02-28 17:07:47 [debug]: [PcWorxScraper] JSON success: A4Tech KK-3 Multimedia FN Wired Keyboard
+2026-02-28 17:07:48 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-02-28 17:07:48 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nx1600-usb-keyboard-and-mouse-combo.json
+2026-02-28 17:07:48 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-02-28 17:07:49 [debug]: [PcExpressScraper] JSON success: RAPOO NX1600 USB Keyboard and Mouse Combo
+2026-02-28 17:07:49 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-02-28 17:07:49 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 17:07:49 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:07:49 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/alienware-advanced-gaming-keyboard-aw568.json
+2026-02-28 17:07:49 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-02-28 17:07:49 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-02-28 17:07:50 [debug]: [VillmanScraper] JSON success: Alienware Advanced Gaming Keyboard – AW568
+2026-02-28 17:07:51 [info]: [SearchService] Saved 15 products for search #789e6533-36e3-47ef-b39b-d91de99e2d59
+2026-02-28 17:07:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-02-28 17:07:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-85-comfortable-a-shape-ps2.json
+2026-02-28 17:07:53 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-02-28 17:07:54 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-85 Comfortable A-Shape PS2 keyboard
+2026-02-28 17:07:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-02-28 17:07:54 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-02-28 17:07:58 [info]: [SearchService] Raw products scraped: 15
+2026-02-28 17:07:58 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 17:08:00 [info]: [SearchService] Saved 15 products for search #bae86566-80bd-4c2d-add1-cf465b716dee

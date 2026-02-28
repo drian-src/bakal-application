@@ -17,3 +17,434 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2026-02-21 07:58:09 [error]: [DB] Supabase connection failed:
 2026-02-21 07:58:58 [error]: [DB] Supabase connection failed:
+2026-02-21 15:22:01 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:03 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:33 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:33 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:34 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:34 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-21 15:22:35 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:36 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:36 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:41 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:22:44 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-21 15:23:24 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:28:41 [error]: [DB] Supabase connection failed:
+2026-02-28 16:29:07 [error]: [DB] Supabase connection failed:
+2026-02-28 16:30:40 [error]: [DB] Supabase connection failed:
+2026-02-28 16:50:33 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:50 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:50:59 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:51:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:51 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:53 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:55 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:56 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:53:59 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:00 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:01 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:09 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:13 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:50 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:54 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:56 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:54:58 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:00 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:02 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:03 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-28 16:55:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:03 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:04 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:04 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-02-28 16:55:05 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:05 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:05 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:55:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:06 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:07 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:08 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:19 [error]: [SearchService] PC Worx failed: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-02-28 16:55:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:55:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:56:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:57:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:58:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 16:59:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:00:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:01:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:02:50 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:41 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:42 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:43 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:44 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:45 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:46 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:47 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:48 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:03:49 [error]: [ErrorHandler] 500 GET /api/cart - Could not find the table 'public.cart' in the schema cache
+2026-02-28 17:04:25 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:25 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:26 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:26 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:26 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:27 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:28 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:29 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:30 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:31 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:32 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:33 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:34 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:35 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:36 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:36 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:36 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:37 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist
+2026-02-28 17:04:37 [error]: [ErrorHandler] 500 GET /api/cart - column products_2.platform does not exist

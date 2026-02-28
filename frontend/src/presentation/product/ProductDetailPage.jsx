@@ -3,11 +3,13 @@ import { useParams, useNavigate } from 'react-router-dom';
 import HomeHeader from '../home/sections/Header/HomeHeader';
 import { getCurrentUser, isAuthenticated } from '../../core/services/authService';
 import { getProductDetail } from '@/core/services/apiService';
+import { useCart } from '../../core/hooks/useCart';
 import './ProductDetailPage.css';
 
 const ProductDetailPage = () => {
   const { productId, platform } = useParams();
   const navigate = useNavigate();
+  const { addToCart, loading: cartLoading } = useCart();
   const [isLoading, setIsLoading] = useState(false);
   const [addedToCart, setAddedToCart] = useState(false);
   const [product, setProduct] = useState(null);
@@ -64,7 +66,7 @@ const ProductDetailPage = () => {
     return '#D4AF37';
   };
 
-  const handleAddToCart = () => {
+  const handleAddToCart = async () => {
     // Check if user is authenticated
     if (!isAuthenticated()) {
       alert('Please log in first to add items to cart.');
@@ -80,24 +82,19 @@ const ProductDetailPage = () => {
     }
 
     setIsLoading(true);
-    setTimeout(() => {
+    const success = await addToCart(product.id, 1);
+    
+    if (success) {
       setAddedToCart(true);
       setIsLoading(false);
-
-      // Prepare platform URLs with user info
-      const platformUrls = {
-        'PCExpress': 'https://pcexpress.com/search?keyword=' + encodeURIComponent(product.title),
-        'VillMan': 'https://villman.com.ph/search?q=' + encodeURIComponent(product.title),
-        'PCWorx': 'https://pcworx.com/search?query=' + encodeURIComponent(product.title)
-      };
-
-      const url = platformUrls[product.platform] || 'https://pcexpress.com';
       
+      // Reset UI after 2 seconds
       setTimeout(() => {
-        window.open(url, '_blank');
         setAddedToCart(false);
-      }, 800);
-    }, 800);
+      }, 2000);
+    } else {
+      setIsLoading(false);
+    }
   };
 
 
@@ -145,8 +142,8 @@ const ProductDetailPage = () => {
               </div>
               {/* Free shipping badge removed per design request */}
               <div className="action-buttons">
-                <button className={`add-to-cart-btn ${addedToCart ? 'added' : ''}`} onClick={handleAddToCart} disabled={isLoading}>
-                  {isLoading ? '⏳ Processing...' : addedToCart ? '✓ Added to Cart' : '🛒 Add to Cart'}
+                <button className={`add-to-cart-btn ${addedToCart ? 'added' : ''}`} onClick={handleAddToCart} disabled={isLoading || cartLoading}>
+                  {isLoading || cartLoading ? '⏳ Processing...' : addedToCart ? '✓ Added to Cart' : '🛒 Add to Cart'}
                 </button>
               </div>
             </div>
