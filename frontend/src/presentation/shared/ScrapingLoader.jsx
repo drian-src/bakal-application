@@ -1,12 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Search, Cpu, Zap, Loader } from 'lucide-react';
 
-const STORES = [
-  { name: 'PCExpress', icon: '🖥️' },
-  { name: 'VillMan', icon: '🛒' },
-  { name: 'PCWorx', icon: '⚙️' },
-];
-
 // Rotating messages shown during scraping — feel dynamic and real
 const SCRAPING_MESSAGES = [
   'Scanning product listings...',
@@ -17,7 +11,7 @@ const SCRAPING_MESSAGES = [
   'Sorting by relevance and rating...',
 ];
 
-export default function ScrapingLoader({ query = '', stores = STORES }) {
+export default function ScrapingLoader({ query = '', stores = [] }) {
   const [currentMessage, setCurrentMessage] = useState(0);
   const [storeProgress, setStoreProgress] = useState(
     stores.map((s) => ({ ...s, done: false, items: 0 }))
@@ -188,7 +182,7 @@ export default function ScrapingLoader({ query = '', stores = STORES }) {
               borderRadius: 'var(--radius-lg, 12px)',
               background: 'var(--bg-white, #fff)',
               border: store.done
-                ? `2px solid ${getStoreColor(store.name)}`
+                ? `2px solid ${store.color}`
                 : '2px solid var(--border, #E5E7EB)',
               display: 'flex',
               flexDirection: 'column',
@@ -197,7 +191,7 @@ export default function ScrapingLoader({ query = '', stores = STORES }) {
               transition: 'all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1)',
               transform: store.done ? 'translateY(-3px)' : 'translateY(0)',
               boxShadow: store.done
-                ? `0 4px 20px ${getStoreColor(store.name)}22`
+                ? `0 4px 20px ${store.color}22`
                 : 'var(--shadow-sm, 0 1px 2px rgba(0,0,0,0.05))',
               animation: !store.done
                 ? `storeSkeleton 1.5s ease-in-out infinite ${index * 0.3}s`
@@ -210,7 +204,7 @@ export default function ScrapingLoader({ query = '', stores = STORES }) {
                 fontSize: '13px',
                 fontWeight: '600',
                 color: store.done
-                  ? getStoreColor(store.name)
+                  ? store.color
                   : 'var(--text-light, #6B7280)',
               }}
             >
@@ -224,7 +218,7 @@ export default function ScrapingLoader({ query = '', stores = STORES }) {
                     height="14"
                     viewBox="0 0 24 24"
                     fill="none"
-                    stroke={getStoreColor(store.name)}
+                    stroke={store.color}
                     strokeWidth="2"
                   >
                     <polyline points="20 6 9 17 4 12" />
@@ -232,7 +226,7 @@ export default function ScrapingLoader({ query = '', stores = STORES }) {
                   <span
                     style={{
                       fontSize: '12px',
-                      color: getStoreColor(store.name),
+                      color: store.color,
                       fontWeight: '600',
                     }}
                   >
@@ -405,12 +399,3 @@ export default function ScrapingLoader({ query = '', stores = STORES }) {
   );
 }
 
-// Helper function to get store colors matching the platform colors in the app
-function getStoreColor(storeName) {
-  const colors = {
-    PCExpress: '#004080',
-    VillMan: '#008000',
-    PCWorx: '#800080',
-  };
-  return colors[storeName] || '#0a1a3a';
-}

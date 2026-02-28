@@ -1,7 +1,15 @@
 import React from 'react';
 import './SearchSummaryHeader.css';
 
-const SearchSummaryHeader = ({ query }) => {
+const SearchSummaryHeader = ({ query, stores = [] }) => {
+  // Format store names dynamically
+  const getStoreDescription = () => {
+    if (stores.length === 0) return 'multiple stores';
+    if (stores.length === 1) return stores[0].name;
+    const names = stores.map(s => s.name);
+    return `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`;
+  };
+
   return (
     <div className="search-summary-header">
       <div className="summary-container">
@@ -13,7 +21,7 @@ const SearchSummaryHeader = ({ query }) => {
         </div>
         <h1 className="search-query">"{query}"</h1>
         <p className="search-description">
-          Showing AI-curated recommendations from PCExpress, VillMan, and PCWorx
+          Showing AI-curated recommendations from {getStoreDescription()}
         </p>
       </div>
     </div>

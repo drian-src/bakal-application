@@ -10,8 +10,10 @@ const logger = require('../config/logger');
 async function getCart(req, res, next) {
   try {
     const userId = req.user.id;
+    logger.info(`[CartController] Getting cart for user: ${userId}`);
     
     const cart = await cartRepo.getCartByUserId(userId);
+    logger.info(`[CartController] Cart retrieved: ${cart ? cart.id : 'null'}`);
     
     // If no cart exists, return empty cart response
     if (!cart) {
@@ -28,11 +30,21 @@ async function getCart(req, res, next) {
 
     // Calculate total price and map items
     const items = cart.cart_items || [];
+    logger.info(`[CartController] Processing ${items.length} cart items`);
+    
     const mappedItems = items.map(item => {
+      logger.debug(`[CartController] Processing item ${item.id}, products array length: ${item.products ? item.products.length : 0}`);
+      
       const product = item.products && item.products[0] ? item.products[0] : null;
       const platformData = product && product.platforms && product.platforms[0] 
         ? product.platforms[0] 
         : null;
+      
+      if (product) {
+        logger.debug(`[CartController] Item ${item.id} has product: ${product.title}`);
+      } else {
+        logger.warn(`[CartController] Item ${item.id} has NO product data`);
+      }
       
       return {
         id: item.id,
@@ -56,6 +68,8 @@ async function getCart(req, res, next) {
         : 0;
       return sum + itemPrice;
     }, 0);
+
+    logger.info(`[CartController] Returning ${mappedItems.length} items with total price: ${totalPrice}`);
 
     return res.status(200).json({
       success: true,

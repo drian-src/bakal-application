@@ -1,24 +1,33 @@
 import React, { useEffect, useState } from 'react';
 import './AdvertSlider.css';
 
+const getStoreIcon = (text, color = '#666') => (
+  <svg width="100" height="100" viewBox="0 0 100 100" style={{ background: color, borderRadius: '8px' }}>
+    <rect width="100" height="100" fill={color}/>
+    <text x="50" y="55" textAnchor="middle" fontSize="48" fontWeight="700" fill="white" fontFamily="sans-serif">
+      {text.charAt(0).toUpperCase()}
+    </text>
+  </svg>
+);
+
 const slides = [
   {
     id: 'pcexpress',
     title: 'PCExpress',
     desc: 'Your go‑to electronics superstore',
-    logo: 'https://via.placeholder.com/100?text=PCExpress'
+    color: '#004080'
   },
   {
     id: 'villman',
     title: 'VillMan',
     desc: 'Reliable gadgets & devices',
-    logo: 'https://via.placeholder.com/100?text=VillMan'
+    color: '#008000'
   },
   {
     id: 'pcworx',
     title: 'PCWorx',
     desc: 'Quality computers and accessories',
-    logo: 'https://via.placeholder.com/100?text=PCWorx'
+    color: '#800080'
   }
 ];
 
@@ -37,7 +46,7 @@ const AdvertSlider = ({ interval = 3000 }) => {
       <div className="advert-track" style={{ transform: `translateX(-${index * 100}%)` }}>
         {slides.map((s) => (
           <div className="advert-slide" key={s.id}>
-            <img src={s.logo} alt={s.title} className="advert-logo" />
+            {getStoreIcon(s.id, s.color)}
             <h3 className="advert-title">{s.title}</h3>
             <p className="advert-desc">{s.desc}</p>
           </div>

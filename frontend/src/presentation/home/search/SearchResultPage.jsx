@@ -5,7 +5,7 @@ import FilterPanel from './Filters/FilterPanel';
 import PlatformTabs from './PlatformSelector/PlatformTabs';
 import RecommendedSection from './RecommendedProducts/RecommendedSection';
 import ScrapingLoader from '../../shared/ScrapingLoader';
-import { searchProducts } from '@/core/services/apiService';
+import { searchProducts, getStores } from '@/core/services/apiService';
 import { searchCache } from '@/core/services/searchCache';
 import './SearchResultPage.css';
 
@@ -18,6 +18,7 @@ const SearchResultPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [fromCache, setFromCache] = useState(false);
+  const [stores, setStores] = useState([]);
   const [filters, setFilters] = useState({
     price: [],
     rating: [],
@@ -25,6 +26,16 @@ const SearchResultPage = () => {
     shipping: [],
     availability: []
   });
+
+  // Fetch available stores on component mount
+  useEffect(() => {
+    getStores()
+      .then(setStores)
+      .catch((err) => {
+        console.error('Failed to fetch stores:', err);
+        setStores([]);
+      });
+  }, []);
 
   // Fetch search results from backend API
   useEffect(() => {
@@ -49,7 +60,12 @@ const SearchResultPage = () => {
         // Transform flat products array into grouped-by-platform structure
         // Backend returns: { search_id, query, total, products: [...] }
         // Frontend expects: { pcexpress: [...], villman: [...], pcworx: [...] }
+        console.log('[SearchResultPage] API Response:', response);
+        console.log('[SearchResultPage] Response keys:', Object.keys(response || {}));
+        console.log('[SearchResultPage] response.products:', response?.products);
+        
         if (response && response.products && Array.isArray(response.products)) {
+          console.log(`[SearchResultPage] Found ${response.products.length} products`);
           const groupedByPlatform = response.products.reduce((acc, product) => {
             const platformKey = product.platform?.toLowerCase() || 'other';
             if (!acc[platformKey]) {
@@ -58,8 +74,10 @@ const SearchResultPage = () => {
             acc[platformKey].push(product);
             return acc;
           }, {});
+          console.log('[SearchResultPage] Grouped by platform:', groupedByPlatform);
           setFilteredProducts(groupedByPlatform);
         } else {
+          console.warn('[SearchResultPage] No products in response or invalid format');
           setFilteredProducts({});
         }
       } catch (err) {
@@ -81,7 +99,7 @@ const SearchResultPage = () => {
 
   return (
     <div className="search-result-page">
-      <SearchSummaryHeader query={query} />
+      <SearchSummaryHeader query={query} stores={stores} />
       
       {/* Cache indicator - shows when results are from cache */}
       {fromCache && (
@@ -135,8 +153,7 @@ const SearchResultPage = () => {
       )}
       
       {/* Show scraping loader only when actively fetching (not from cache) */}
-      {loading && !fromCache && <ScrapingLoader query={query} />}
-      
+      {loading && !fromCache && <ScrapingLoader query={query} stores={stores} />}
       {/* Show search results when loading is done */}
       {!loading && (
       <div className="search-content">

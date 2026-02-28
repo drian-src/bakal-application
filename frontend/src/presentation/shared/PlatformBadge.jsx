@@ -1,14 +1,14 @@
 import React from 'react';
+import { getStoreConfig } from '@/core/config/storeConfig';
 
 const PlatformBadge = ({ platform, variant = 'default' }) => {
-  const platformColors = {
-    pcexpress: { bg: '#004080', text: 'white' },
-    villman: { bg: '#008000', text: 'white' },
-    pcworx: { bg: '#800080', text: 'white' },
-    default: { bg: '#E0E0E0', text: '#333' }
-  };
-
-  const colors = platformColors[platform?.toLowerCase()] || platformColors.default;
+  // Get store config by platform name
+  const storeConfig = getStoreConfig(platform);
+  
+  // Build color object with fallback
+  const colors = storeConfig 
+    ? { bg: storeConfig.color, text: 'white' }
+    : { bg: '#E0E0E0', text: '#333' };
 
   return (
     <div 

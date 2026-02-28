@@ -50,6 +50,16 @@ const apiCall = async (endpoint, options = {}) => {
 
 // ─── SEARCH ENDPOINTS ───────────────────────────────────────────────────────
 
+export const getStores = async () => {
+  try {
+    const response = await apiCall('/search/stores');
+    return response.data?.stores || [];
+  } catch (error) {
+    console.error('Fetch stores failed:', error);
+    return [];
+  }
+};
+
 export const searchProducts = async (query, platform = 'all') => {
   try {
     const normalizedQuery = query.toLowerCase().trim();
@@ -67,7 +77,19 @@ export const searchProducts = async (query, platform = 'all') => {
       `/search?q=${encodeURIComponent(normalizedQuery)}${platform !== 'all' ? `&platform=${platform}` : ''}`
     );
     
-    const data = response.data || [];
+    console.log('[apiService] Full API Response object:', response);
+    console.log('[apiService] response.success:', response?.success);
+    console.log('[apiService] response.data type:', typeof response?.data);
+    console.log('[apiService] response.data:', response?.data);
+    
+    // Handle both response structures:
+    // Structure 1 (if response.data is the full result object): { success: true, data: { search_id, query, total, products: [...], stores: [...] } }
+    // Structure 2 (if response is the full result object): { success: true, search_id, query, total, products: [...], stores: [...] }
+    const data = response.data || response || {};
+    console.log('[apiService] Extracted data:', data);
+    console.log('[apiService] data.search_id:', data?.search_id);
+    console.log('[apiService] data.products length:', data?.products?.length);
+    console.log('[apiService] data.stores length:', data?.stores?.length);
     
     // ✅ Store result in cache before returning
     searchCache.set(normalizedQuery, platform, data);
@@ -78,6 +100,10 @@ export const searchProducts = async (query, platform = 'all') => {
     return data;
   } catch (error) {
     console.error('Search failed:', error);
+    console.error('[apiService.searchProducts] Error details:', {
+      message: error.message,
+      stack: error.stack
+    });
     return [];
   }
 };
