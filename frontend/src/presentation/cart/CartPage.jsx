@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import HomeHeader from '../home/sections/Header/HomeHeader';
 import { useCart } from '../../core/hooks/useCart';
 import { ConfirmDialog } from '../shared';
@@ -18,6 +18,7 @@ import './CartPage.css';
 const CartPage = () => {
   const { cart, loading, removeFromCart, clearCart } = useCart();
   const [showClearConfirm, setShowClearConfirm] = useState(false);
+  const navigate = useNavigate();
 
   console.log('[CartPage] cart:', cart);
   console.log('[CartPage] cart.items:', cart?.items);
@@ -78,6 +79,33 @@ const CartPage = () => {
       
       <main className="cart-content">
         <div className="cart-container">
+          {/* Minimalist back button — using CSS class */}
+          <button
+            onClick={() => navigate(-1)}
+            className="back-button"
+            title="Go back"
+            style={{
+              marginBottom: '12px',
+              display: 'inline-flex',
+              width: '32px',
+              height: '32px',
+            }}
+          >
+            {/* Left arrow SVG — inline, no package needed */}
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+          </button>
+
           {/* Page Header */}
           <div style={{
             display: 'flex',

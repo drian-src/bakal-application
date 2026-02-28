@@ -5,6 +5,35 @@
   flex-direction: column;
 }
 
+/* Back Button — minimalist design */
+.back-button {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 6px;
+  color: #4b5563;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 0;
+  min-width: 32px;
+  line-height: 1;
+}
+
+.back-button:hover {
+  background: #e5e7eb;
+  color: var(--accent-gold, #D4AF37);
+}
+
+.back-button:active {
+  background: #d1d5db;
+  transform: scale(0.95);
+}
+
 .cart-content {
   max-width: 1200px;
   width: 100%;
