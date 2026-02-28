@@ -6348,3 +6348,111 @@ Call log:
 2026-02-28 21:58:51 [info]: [DB] Supabase connection verified.
 2026-02-28 21:58:52 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
 2026-02-28 21:58:52 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 22:08:36 [info]: [DB] Supabase connection verified.
+2026-02-28 22:08:37 [info]: [SearchService] Platform IDs loaded: {"PCExpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","VillMan":"13a93343-26ab-4e7c-ba20-2f38e7649d19","PCWorx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-02-28 22:09:50 [info]: [DB] Supabase connection verified.
+2026-02-28 22:09:50 [info]: [SearchService] Platform IDs loaded: {"PCExpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","VillMan":"13a93343-26ab-4e7c-ba20-2f38e7649d19","PCWorx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-02-28 22:09:50 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 22:10:05 [info]: [DB] Supabase connection verified.
+2026-02-28 22:10:06 [info]: [SearchService] Platform IDs loaded: {"PCExpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","VillMan":"13a93343-26ab-4e7c-ba20-2f38e7649d19","PCWorx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-02-28 22:13:10 [info]: [DB] Supabase connection verified.
+2026-02-28 22:13:10 [info]: [SearchService] Platform IDs loaded: {"PCExpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","VillMan":"13a93343-26ab-4e7c-ba20-2f38e7649d19","PCWorx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-02-28 22:13:10 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 22:13:10 [debug]: → GET /api/cart
+2026-02-28 22:13:10 [debug]: → GET /api/cart
+2026-02-28 22:13:10 [debug]: → GET /api/cart
+2026-02-28 22:13:11 [debug]: → GET /api/cart
+2026-02-28 22:13:11 [debug]: → GET /api/cart
+2026-02-28 22:13:11 [debug]: → GET /api/cart
+2026-02-28 22:13:11 [debug]: → GET /api/cart
+2026-02-28 22:13:12 [debug]: → GET /api/cart
+2026-02-28 22:13:12 [debug]: → GET /api/cart
+2026-02-28 22:13:12 [debug]: → GET /api/cart
+2026-02-28 22:13:12 [debug]: → GET /api/cart
+2026-02-28 22:13:13 [debug]: → GET /api/cart
+2026-02-28 22:13:13 [debug]: → GET /api/cart
+2026-02-28 22:13:13 [debug]: → GET /api/cart
+2026-02-28 22:13:13 [debug]: → GET /api/cart
+2026-02-28 22:13:13 [debug]: → GET /api/cart
+2026-02-28 22:13:14 [debug]: → GET /api/cart
+2026-02-28 22:13:14 [debug]: → GET /api/cart
+2026-02-28 22:13:14 [debug]: → GET /api/cart
+2026-02-28 22:13:14 [debug]: → GET /api/cart
+2026-02-28 22:13:15 [debug]: → GET /api/cart
+2026-02-28 22:13:15 [debug]: → GET /api/cart
+2026-02-28 22:13:15 [debug]: → GET /api/cart
+2026-02-28 22:13:15 [debug]: → GET /api/cart
+2026-02-28 22:13:15 [debug]: → GET /api/cart
+2026-02-28 22:13:16 [debug]: → GET /api/cart
+2026-02-28 22:13:16 [debug]: → GET /api/cart
+2026-02-28 22:13:16 [debug]: → GET /api/cart
+2026-02-28 22:13:16 [debug]: → GET /api/cart
+2026-02-28 22:13:17 [debug]: → GET /api/cart
+2026-02-28 22:14:10 [debug]: → GET /api/cart
+2026-02-28 22:14:11 [debug]: → GET /api/cart
+2026-02-28 22:14:11 [debug]: → GET /api/cart
+2026-02-28 22:14:11 [debug]: → GET /api/cart
+2026-02-28 22:14:11 [debug]: → GET /api/cart
+2026-02-28 22:14:12 [debug]: → GET /api/cart
+2026-02-28 22:14:12 [debug]: → GET /api/cart
+2026-02-28 22:14:12 [debug]: → GET /api/cart
+2026-02-28 22:14:13 [debug]: → GET /api/cart
+2026-02-28 22:14:13 [debug]: → GET /api/cart
+2026-02-28 22:14:13 [debug]: → GET /api/cart
+2026-02-28 22:14:13 [debug]: → GET /api/cart
+2026-02-28 22:14:14 [debug]: → GET /api/cart
+2026-02-28 22:14:14 [debug]: → GET /api/cart
+2026-02-28 22:14:14 [debug]: → GET /api/cart
+2026-02-28 22:14:14 [debug]: → GET /api/cart
+2026-02-28 22:14:15 [debug]: → GET /api/cart
+2026-02-28 22:14:15 [debug]: → GET /api/cart
+2026-02-28 22:14:15 [debug]: → GET /api/cart
+2026-02-28 22:14:15 [debug]: → GET /api/cart
+2026-02-28 22:14:15 [debug]: → GET /api/cart
+2026-02-28 22:14:16 [debug]: → GET /api/cart
+2026-02-28 22:14:16 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 22:18:47 [info]: [DB] Supabase connection verified.
+2026-02-28 22:18:48 [info]: [SearchService] Platform IDs loaded: {"PCExpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","VillMan":"13a93343-26ab-4e7c-ba20-2f38e7649d19","PCWorx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-02-28 22:18:48 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 22:18:48 [debug]: → GET /api/cart
+2026-02-28 22:18:48 [debug]: → GET /api/cart
+2026-02-28 22:18:49 [debug]: → GET /api/cart
+2026-02-28 22:18:49 [debug]: → GET /api/cart
+2026-02-28 22:18:49 [debug]: → GET /api/cart
+2026-02-28 22:18:50 [debug]: → GET /api/cart
+2026-02-28 22:18:50 [debug]: → GET /api/cart
+2026-02-28 22:18:50 [debug]: → GET /api/cart
+2026-02-28 22:18:50 [debug]: → GET /api/cart
+2026-02-28 22:18:50 [debug]: → GET /api/cart
+2026-02-28 22:18:51 [debug]: → GET /api/cart
+2026-02-28 22:18:51 [debug]: → GET /api/cart
+2026-02-28 22:18:51 [debug]: → GET /api/cart
+2026-02-28 22:18:52 [debug]: → GET /api/cart
+2026-02-28 22:18:52 [debug]: → GET /api/cart
+2026-02-28 22:18:52 [debug]: → GET /api/cart
+2026-02-28 22:18:52 [debug]: → GET /api/cart
+2026-02-28 22:18:52 [debug]: → GET /api/cart
+2026-02-28 22:18:53 [debug]: → GET /api/cart
+2026-02-28 22:18:53 [debug]: → GET /api/cart
+2026-02-28 22:18:54 [debug]: → GET /api/cart
+2026-02-28 22:19:12 [debug]: → GET /api/cart
+2026-02-28 22:19:12 [debug]: → GET /api/search
+2026-02-28 22:19:12 [debug]: → GET /api/search/stores
+2026-02-28 22:19:12 [debug]: → GET /api/search/stores
+2026-02-28 22:19:12 [debug]: → GET /api/cart
+2026-02-28 22:19:13 [debug]: → GET /api/cart
+2026-02-28 22:19:13 [debug]: → GET /api/search
+2026-02-28 22:19:13 [debug]: → GET /api/cart
+2026-02-28 22:19:13 [debug]: → GET /api/cart
+2026-02-28 22:19:13 [debug]: → GET /api/cart
+2026-02-28 22:19:13 [debug]: → GET /api/cart
+2026-02-28 22:19:13 [debug]: → GET /api/cart
+2026-02-28 22:19:14 [debug]: → GET /api/cart
+2026-02-28 22:19:14 [debug]: → GET /api/cart
+2026-02-28 22:19:14 [debug]: → GET /api/cart
+2026-02-28 22:19:14 [debug]: → GET /api/cart
+2026-02-28 22:19:14 [debug]: → GET /api/cart
+2026-02-28 22:19:15 [debug]: → GET /api/cart
+2026-02-28 22:19:15 [debug]: → GET /api/cart
+2026-02-28 22:19:15 [debug]: → GET /api/cart
+2026-02-28 22:19:34 [info]: [Server] SIGINT received. Shutting down gracefully...
