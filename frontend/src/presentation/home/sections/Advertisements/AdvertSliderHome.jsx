@@ -2,26 +2,32 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './AdvertSliderHome.css';
 
+const getStoreIconLarge = (text, color = '#666') => (
+  <svg width="120" height="120" viewBox="0 0 120 120" style={{ background: color, borderRadius: '8px' }}>
+    <rect width="120" height="120" fill={color}/>
+    <text x="60" y="70" textAnchor="middle" fontSize="56" fontWeight="700" fill="white" fontFamily="sans-serif">
+      {text.charAt(0).toUpperCase()}
+    </text>
+  </svg>
+);
+
 const slides = [
   {
     id: 'pcexpress',
     title: 'PCExpress',
     desc: 'Electronics deals at unbeatable prices',
-    logo: 'https://via.placeholder.com/120?text=PCExpress',
     bgColor: '#004080'
   },
   {
     id: 'villman',
     title: 'VillMan',
     desc: 'Trusted source for gadgets & devices',
-    logo: 'https://via.placeholder.com/120?text=VillMan',
     bgColor: '#008000'
   },
   {
     id: 'pcworx',
     title: 'PCWorx',
     desc: 'Your computer and accessory hub',
-    logo: 'https://via.placeholder.com/120?text=PCWorx',
     bgColor: '#800080'
   }
 ];
@@ -58,7 +64,7 @@ const AdvertSliderHome = () => {
       <div className="advert-track-home" style={{ transform: `translateX(-${index * 100}%)` }}>
         {slides.map((s) => (
           <div className="advert-slide-home" key={s.id} style={{ backgroundColor: s.bgColor }} onClick={() => handleSlideClick(s.id)}>
-            <img src={s.logo} alt={s.title} className="advert-logo-home" />
+            {getStoreIconLarge(s.id, s.bgColor)}
             <h3 className="advert-title-home">{s.title}</h3>
             <p className="advert-desc-home">{s.desc}</p>
           </div>

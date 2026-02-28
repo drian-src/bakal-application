@@ -81,7 +81,10 @@ const LandingPage = () => {
                   <div className="platform-card-hero pcexpress">
                     <div className="platform-badge-top">PCExpress</div>
                     <div className="platform-header-hero">
-                      <img src="https://via.placeholder.com/60?text=PCExpress" alt="PCExpress" className="platform-icon-hero" />
+                      <svg width="60" height="60" viewBox="0 0 60 60" className="platform-icon-hero" style={{ background: '#004080', borderRadius: '6px' }}>
+                        <rect width="60" height="60" fill="#004080"/>
+                        <text x="30" y="38" textAnchor="middle" fontSize="28" fontWeight="700" fill="white" fontFamily="sans-serif">P</text>
+                      </svg>
                     </div>
                     <div className="platform-info-hero">
                       <h3>PCExpress</h3>
@@ -94,7 +97,10 @@ const LandingPage = () => {
                   <div className="platform-card-hero villman">
                     <div className="platform-badge-top">VillMan</div>
                     <div className="platform-header-hero">
-                      <img src="https://via.placeholder.com/60?text=VillMan" alt="VillMan" className="platform-icon-hero" />
+                      <svg width="60" height="60" viewBox="0 0 60 60" className="platform-icon-hero" style={{ background: '#008000', borderRadius: '6px' }}>
+                        <rect width="60" height="60" fill="#008000"/>
+                        <text x="30" y="38" textAnchor="middle" fontSize="28" fontWeight="700" fill="white" fontFamily="sans-serif">V</text>
+                      </svg>
                     </div>
                     <div className="platform-info-hero">
                       <h3>VillMan</h3>
@@ -107,7 +113,10 @@ const LandingPage = () => {
                   <div className="platform-card-hero pcworx">
                     <div className="platform-badge-top">PCWorx</div>
                     <div className="platform-header-hero">
-                      <img src="https://via.placeholder.com/60?text=PCWorx" alt="PCWorx" className="platform-icon-hero" />
+                      <svg width="60" height="60" viewBox="0 0 60 60" className="platform-icon-hero" style={{ background: '#800080', borderRadius: '6px' }}>
+                        <rect width="60" height="60" fill="#800080"/>
+                        <text x="30" y="38" textAnchor="middle" fontSize="28" fontWeight="700" fill="white" fontFamily="sans-serif">P</text>
+                      </svg>
                     </div>
                     <div className="platform-info-hero">
                       <h3>PCWorx</h3>

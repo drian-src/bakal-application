@@ -4,6 +4,7 @@ import HomeHeader from '../home/sections/Header/HomeHeader';
 import { getCurrentUser, isAuthenticated } from '../../core/services/authService';
 import { getProductDetail } from '@/core/services/apiService';
 import { useCart } from '../../core/hooks/useCart';
+import { getStoreColor } from '@/core/config/storeConfig';
 import './ProductDetailPage.css';
 
 const ProductDetailPage = () => {
@@ -60,10 +61,7 @@ const ProductDetailPage = () => {
   }
 
   const getPlatformColor = (platform) => {
-    if (platform === 'PCExpress') return '#004080';
-    if (platform === 'VillMan') return '#008000';
-    if (platform === 'PCWorx') return '#800080';
-    return '#D4AF37';
+    return getStoreColor(platform) || '#D4AF37';
   };
 
   const handleAddToCart = async () => {
@@ -107,7 +105,65 @@ const ProductDetailPage = () => {
           <button onClick={() => navigate(-1)} className="back-button-detail">← Back</button>
           <div className="product-detail-wrapper">
             <div className="detail-image-section">
-              <img src={product.image_url || 'https://via.placeholder.com/400'} alt={product.title} className="detail-product-image" />
+              <div style={{
+                width: '100%',
+                maxWidth: '400px',
+                borderRadius: '12px',
+                overflow: 'hidden',
+                border: '1px solid var(--border-color, #d1d5db)',
+                background: 'var(--image-bg, #f9fafb)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                position: 'relative',
+                aspectRatio: '1',
+              }}>
+                {product?.image_url ? (
+                  <img
+                    src={product.image_url}
+                    alt={product.title}
+                    className="detail-product-image"
+                    style={{ width: '100%', height: '100%', objectFit: 'contain' }}
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                      const fallback = e.currentTarget.parentElement?.querySelector('.product-image-fallback');
+                      if (fallback) fallback.style.display = 'flex';
+                    }}
+                  />
+                ) : null}
+                <div
+                  className="product-image-fallback"
+                  style={{
+                    display: product?.image_url ? 'none' : 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    width: '100%',
+                    height: '100%',
+                    gap: '8px',
+                    position: 'absolute',
+                    inset: 0,
+                  }}
+                >
+                  <svg
+                    width="48"
+                    height="48"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="var(--text-muted, #9ca3af)"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  >
+                    <rect x="2" y="3" width="20" height="14" rx="2"/>
+                    <line x1="8" y1="21" x2="16" y2="21"/>
+                    <line x1="12" y1="17" x2="12" y2="21"/>
+                  </svg>
+                  <span style={{ fontSize: '12px', color: 'var(--text-muted, #9ca3af)', fontWeight: '500' }}>
+                    No image available
+                  </span>
+                </div>
+              </div>
               <div className="platform-badge-detail" style={{ backgroundColor: getPlatformColor(product.platform) }}>
                 {product.platform}
               </div>

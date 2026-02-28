@@ -6,9 +6,16 @@ const RecommendedSection = ({ products, query, activePlatform }) => {
   // Ensure products is an object, default to empty object
   const safeProducts = products && typeof products === 'object' ? products : {};
   
+  console.log('[RecommendedSection] Received products:', products);
+  console.log('[RecommendedSection] Safe products:', safeProducts);
+  console.log('[RecommendedSection] Product keys:', Object.keys(safeProducts));
+  console.log('[RecommendedSection] Active platform:', activePlatform);
+  
   const displayProducts = activePlatform === 'all' 
     ? safeProducts 
     : { [activePlatform]: safeProducts[activePlatform] };
+  
+  console.log('[RecommendedSection] Display products:', displayProducts);
 
   return (
     <section className="recommended-section">

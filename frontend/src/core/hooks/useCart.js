@@ -46,12 +46,15 @@ export const useCart = () => {
   const fetchCart = useCallback(async () => {
     try {
       if (!isAuthenticated()) {
+        console.log('[useCart] Not authenticated - setting empty cart');
         setCart({ id: null, items: [], count: 0, totalPrice: 0 });
         setInitialLoading(false);
         return;
       }
 
       const data = await getCart();
+      console.log('[useCart] Fetched cart:', data);
+      console.log('[useCart] Cart items:', data?.items?.length || 0);
       setCart(data);
     } catch (error) {
       console.error('Failed to fetch cart:', error);

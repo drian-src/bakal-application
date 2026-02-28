@@ -1,6 +1,7 @@
 'use strict';
 
 const { supabase } = require('../config/db');
+const logger = require('../config/logger');
 
 const CART_TABLE = 'cart';
 const CART_ITEMS_TABLE = 'cart_items';
@@ -9,34 +10,78 @@ const CART_ITEMS_TABLE = 'cart_items';
  * Get cart for a user, including populated product details
  */
 async function getCartByUserId(userId) {
-  const { data, error } = await supabase
-    .from(CART_TABLE)
-    .select(
-      `
-      id,
-      user_id,
-      updated_at,
-      ${CART_ITEMS_TABLE}(
-        id,
-        product_id,
-        quantity,
-        added_at,
-        products(
-          id,
-          title,
-          price,
-          image_url,
-          platform_id,
-          platforms(name)
-        )
-      )
-      `
-    )
-    .eq('user_id', userId)
-    .maybeSingle();
+  try {
+    logger.info(`[Cart] Fetching cart for user: ${userId}`);
+    
+    // First, get the cart
+    const { data: cart, error: cartError } = await supabase
+      .from(CART_TABLE)
+      .select('id, user_id, updated_at')
+      .eq('user_id', userId)
+      .maybeSingle();
 
-  if (error && error.code !== 'PGRST116') throw error;
-  return data;
+    if (cartError && cartError.code !== 'PGRST116') throw cartError;
+    
+    if (!cart) {
+      logger.info(`[Cart] No cart found for user: ${userId}`);
+      return null;
+    }
+    
+    logger.info(`[Cart] Found cart: ${cart.id}`);
+
+    // Then, get cart items with product IDs
+    const { data: items, error: itemsError } = await supabase
+      .from(CART_ITEMS_TABLE)
+      .select('id, product_id, quantity, added_at')
+      .eq('cart_id', cart.id);
+
+    if (itemsError) throw itemsError;
+
+    logger.info(`[Cart] Found ${items ? items.length : 0} items in cart`);
+
+    // For each product ID, fetch the product with platform info
+    if (!items || items.length === 0) {
+      logger.info(`[Cart] Cart is empty, returning empty items array`);
+      return { ...cart, cart_items: [] };
+    }
+
+    const productIds = items.map(i => i.product_id);
+    logger.info(`[Cart] Fetching products: ${productIds.join(',')}`);
+    
+    const { data: products, error: productsError } = await supabase
+      .from('products')
+      .select('id, title, price, image_url, platform_id, platforms(name)')
+      .in('id', productIds);
+
+    if (productsError) throw productsError;
+
+    logger.info(`[Cart] Found ${products ? products.length : 0} products`);
+
+    // Create a product map for quick lookup
+    const productMap = {};
+    (products || []).forEach(p => {
+      productMap[p.id] = p;
+      logger.debug(`[Cart] Mapped product ${p.id}: ${p.title}`);
+    });
+
+    // Merge cart items with product data
+    const cartItemsWithProducts = items.map(item => {
+      const product = productMap[item.product_id];
+      if (!product) {
+        logger.warn(`[Cart] Product ${item.product_id} not found for cart item ${item.id}`);
+      }
+      return {
+        ...item,
+        products: product ? [product] : []
+      };
+    });
+
+    logger.info(`[Cart] Returning cart with ${cartItemsWithProducts.length} items`);
+    return { ...cart, cart_items: cartItemsWithProducts };
+  } catch (err) {
+    logger.error('[getCartByUserId] Error:', err);
+    throw err;
+  }
 }
 
 /**

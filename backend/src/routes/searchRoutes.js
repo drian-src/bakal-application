@@ -7,6 +7,9 @@ const { searchLimiter } = require('../middleware/rateLimiter');
 
 const router = express.Router();
 
+// GET available stores (no auth required)
+router.get('/stores', searchController.getStores);
+
 // GET search history (requires auth)
 router.get('/history', requireAuth, searchController.getSearchHistory);
 

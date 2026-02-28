@@ -4853,3 +4853,1498 @@ Call log:
 2026-02-28 17:36:24 [debug]: → GET /api/cart
 2026-02-28 17:36:24 [debug]: → GET /api/cart
 2026-02-28 17:36:24 [debug]: → GET /api/cart
+2026-02-28 17:40:51 [debug]: → GET /api/cart
+2026-02-28 17:40:51 [debug]: → GET /api/products/pcexpress/8491bca6-92ae-496b-a4ee-efaba6a5506a
+2026-02-28 17:40:52 [debug]: → GET /api/cart
+2026-02-28 17:40:52 [debug]: → GET /api/products/pcexpress/8491bca6-92ae-496b-a4ee-efaba6a5506a
+2026-02-28 17:40:52 [debug]: → GET /api/cart
+2026-02-28 17:40:53 [debug]: → GET /api/cart
+2026-02-28 17:40:55 [debug]: → GET /api/cart
+2026-02-28 17:40:55 [debug]: → GET /api/cart
+2026-02-28 17:41:04 [debug]: → GET /api/search
+2026-02-28 17:41:05 [info]: [SearchService] Search #40e4f673-5ba4-45de-a5f7-e21ab7b74db6 - "television"
+2026-02-28 17:41:05 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 17:41:05 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:41:05 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:41:05 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:41:06 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 17:41:06 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 17:41:06 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 17:41:06 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 17:41:06 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 17:41:06 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 17:41:34 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 17:41:36 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-display-port-male-to-hdmi-male-cable-2m-black-dp101-10202.json
+2026-02-28 17:41:36 [debug]: [VillmanScraper] JSON success: UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)
+2026-02-28 17:41:39 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 17:41:40 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-z313-2-1-speaker-system-with-subwoofer-black.json
+2026-02-28 17:41:40 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 17:41:40 [debug]: [PcExpressScraper] JSON success: LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)
+2026-02-28 17:41:41 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 17:41:42 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-28 17:41:43 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/generic-hd15male-hd15male-vga-cable-5-meter-ordinary.json
+2026-02-28 17:41:43 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp101-10202-display-port-male-to-hdmi-male-cable-2meters-black.json
+2026-02-28 17:41:44 [debug]: [PcWorxScraper] JSON success: Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black
+2026-02-28 17:41:44 [debug]: [PcWorxScraper] JSON success: Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary
+2026-02-28 17:41:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 17:41:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 17:41:44 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 17:41:44 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 17:41:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp114-80392-dp-m-m-cable-2-0m-bk.json
+2026-02-28 17:41:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/vention-aljbh-hdmi-2meters-black.json
+2026-02-28 17:41:47 [debug]: [PcWorxScraper] JSON success: Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K
+2026-02-28 17:41:47 [debug]: [PcWorxScraper] JSON success: Vention ALJBH HDMI 2Meters Black
+2026-02-28 17:41:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 17:41:49 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 17:41:49 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/north-bayou-nb-ava1800-70-1p-55-90-inch-tv-cart-mount-tv-stand-55-90-inch-tv-stand-cart-tv-floor-stand.json
+2026-02-28 17:41:50 [debug]: [PcWorxScraper] JSON success: North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand
+2026-02-28 17:41:53 [info]: [SearchService] Raw products: 11
+2026-02-28 17:41:53 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-02-28 17:41:53 [info]: [SearchService] Saved 0 products for search #40e4f673-5ba4-45de-a5f7-e21ab7b74db6
+2026-02-28 17:49:45 [info]: [DB] Supabase connection verified.
+2026-02-28 17:49:45 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:49:45 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:49:57 [info]: [DB] Supabase connection verified.
+2026-02-28 17:49:58 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:49:58 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:50:25 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 17:50:33 [info]: [DB] Supabase connection verified.
+2026-02-28 17:50:33 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:50:33 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:50:44 [debug]: → GET /api/cart
+2026-02-28 17:50:44 [debug]: → GET /api/search
+2026-02-28 17:50:45 [info]: [SearchService] Search #942e7376-55ce-425c-86a6-f2ec112b265a - "television"
+2026-02-28 17:50:45 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 17:50:45 [debug]: → GET /api/cart
+2026-02-28 17:50:46 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:50:46 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:50:46 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:50:49 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 17:50:49 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 17:50:49 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 17:50:49 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 17:50:49 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 17:50:49 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 17:51:10 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 17:51:11 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 17:51:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-z313-2-1-speaker-system-with-subwoofer-black.json
+2026-02-28 17:51:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 17:51:12 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-28 17:51:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-display-port-male-to-hdmi-male-cable-2m-black-dp101-10202.json
+2026-02-28 17:51:12 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 17:51:12 [debug]: [PcExpressScraper] JSON success: LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)
+2026-02-28 17:51:13 [debug]: [VillmanScraper] JSON success: UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)
+2026-02-28 17:51:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/generic-hd15male-hd15male-vga-cable-5-meter-ordinary.json
+2026-02-28 17:51:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp101-10202-display-port-male-to-hdmi-male-cable-2meters-black.json
+2026-02-28 17:51:14 [debug]: [PcWorxScraper] JSON success: Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary
+2026-02-28 17:51:14 [debug]: [PcWorxScraper] JSON success: Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black
+2026-02-28 17:51:14 [debug]: → GET /api/search
+2026-02-28 17:51:14 [info]: [SearchService] Search #8551beb2-0fd5-4e7a-996d-ea33eb11c399 - "television"
+2026-02-28 17:51:14 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 17:51:15 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:51:15 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:51:15 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 17:51:15 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 17:51:15 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 17:51:15 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 17:51:15 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 17:51:15 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 17:51:15 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 17:51:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 17:51:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 17:51:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp114-80392-dp-m-m-cable-2-0m-bk.json
+2026-02-28 17:51:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/vention-aljbh-hdmi-2meters-black.json
+2026-02-28 17:51:23 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 17:51:23 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 17:51:23 [debug]: [PcWorxScraper] JSON success: Vention ALJBH HDMI 2Meters Black
+2026-02-28 17:51:23 [debug]: [PcWorxScraper] JSON success: Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K
+2026-02-28 17:51:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/north-bayou-nb-ava1800-70-1p-55-90-inch-tv-cart-mount-tv-stand-55-90-inch-tv-stand-cart-tv-floor-stand.json
+2026-02-28 17:51:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 17:51:30 [debug]: [PcWorxScraper] JSON success: North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand
+2026-02-28 17:51:30 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 17:51:34 [info]: [SearchService] Raw products: 11
+2026-02-28 17:51:34 [info]: [SearchService] Unique products after dedup: 11
+2026-02-28 17:51:34 [debug]: [SearchService] ✗ REJECTED: "LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)" (pcexpress)
+2026-02-28 17:51:34 [debug]: [SearchService] ✗ REJECTED: "LOGITECH H390 USB W/ Mic Headset" (pcexpress)
+2026-02-28 17:51:34 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (pcexpress)
+2026-02-28 17:51:34 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (pcexpress)
+2026-02-28 17:51:34 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (pcexpress)
+2026-02-28 17:51:34 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)" (villman)
+2026-02-28 17:51:34 [debug]: [SearchService] ✗ REJECTED: "Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary" (pcworx)
+2026-02-28 17:51:34 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black" (pcworx)
+2026-02-28 17:51:34 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K" (pcworx)
+2026-02-28 17:51:34 [debug]: [SearchService] ✗ REJECTED: "Vention ALJBH HDMI 2Meters Black" (pcworx)
+2026-02-28 17:51:34 [debug]: [SearchService] ✓ ACCEPTED: "North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand" (pcworx)
+2026-02-28 17:51:34 [info]: [SearchService] Relevance filter: 5/11 products kept
+2026-02-28 17:51:35 [info]: [SearchService] Saved 5 products for search #942e7376-55ce-425c-86a6-f2ec112b265a
+2026-02-28 17:51:39 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 17:51:40 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-display-port-male-to-hdmi-male-cable-2m-black-dp101-10202.json
+2026-02-28 17:51:40 [debug]: [VillmanScraper] JSON success: UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)
+2026-02-28 17:51:43 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-28 17:51:44 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp101-10202-display-port-male-to-hdmi-male-cable-2meters-black.json
+2026-02-28 17:51:44 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/generic-hd15male-hd15male-vga-cable-5-meter-ordinary.json
+2026-02-28 17:51:44 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 17:51:44 [debug]: [PcWorxScraper] JSON success: Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black
+2026-02-28 17:51:45 [debug]: [PcWorxScraper] JSON success: Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary
+2026-02-28 17:51:46 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-z313-2-1-speaker-system-with-subwoofer-black.json
+2026-02-28 17:51:46 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 17:51:46 [debug]: [PcExpressScraper] JSON success: LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)
+2026-02-28 17:51:46 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 17:51:49 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp114-80392-dp-m-m-cable-2-0m-bk.json
+2026-02-28 17:51:49 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/vention-aljbh-hdmi-2meters-black.json
+2026-02-28 17:51:50 [debug]: [PcWorxScraper] JSON success: Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K
+2026-02-28 17:51:50 [debug]: [PcWorxScraper] JSON success: Vention ALJBH HDMI 2Meters Black
+2026-02-28 17:51:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 17:51:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 17:51:51 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 17:51:51 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 17:51:52 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/north-bayou-nb-ava1800-70-1p-55-90-inch-tv-cart-mount-tv-stand-55-90-inch-tv-stand-cart-tv-floor-stand.json
+2026-02-28 17:51:52 [debug]: [PcWorxScraper] JSON success: North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand
+2026-02-28 17:51:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 17:51:54 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 17:51:58 [info]: [SearchService] Raw products: 11
+2026-02-28 17:51:58 [info]: [SearchService] Unique products after dedup: 11
+2026-02-28 17:51:58 [debug]: [SearchService] ✗ REJECTED: "LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)" (pcexpress)
+2026-02-28 17:51:58 [debug]: [SearchService] ✗ REJECTED: "LOGITECH H390 USB W/ Mic Headset" (pcexpress)
+2026-02-28 17:51:58 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (pcexpress)
+2026-02-28 17:51:58 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (pcexpress)
+2026-02-28 17:51:58 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (pcexpress)
+2026-02-28 17:51:58 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)" (villman)
+2026-02-28 17:51:58 [debug]: [SearchService] ✗ REJECTED: "Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary" (pcworx)
+2026-02-28 17:51:58 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black" (pcworx)
+2026-02-28 17:51:58 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K" (pcworx)
+2026-02-28 17:51:58 [debug]: [SearchService] ✗ REJECTED: "Vention ALJBH HDMI 2Meters Black" (pcworx)
+2026-02-28 17:51:58 [debug]: [SearchService] ✓ ACCEPTED: "North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand" (pcworx)
+2026-02-28 17:51:58 [info]: [SearchService] Relevance filter: 5/11 products kept
+2026-02-28 17:51:59 [info]: [SearchService] Saved 5 products for search #8551beb2-0fd5-4e7a-996d-ea33eb11c399
+2026-02-28 17:52:52 [debug]: → GET /api/search
+2026-02-28 17:52:52 [info]: [SearchService] Search #0949cb0d-626f-41c8-a08d-d9c0533807e9 - "worm"
+2026-02-28 17:52:52 [info]: [Backend Cache MISS] Scraping: "worm"...
+2026-02-28 17:52:53 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=worm&resources[type]=product&resources[limit]=10
+2026-02-28 17:52:53 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=worm&resources[type]=product&resources[limit]=10
+2026-02-28 17:52:53 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=worm&resources[type]=product&resources[limit]=10
+2026-02-28 17:52:53 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 17:52:53 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=worm
+2026-02-28 17:52:53 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 17:52:53 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=worm
+2026-02-28 17:52:53 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 17:52:53 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=worm
+2026-02-28 17:53:10 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-02-28 17:53:10 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 17:53:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-pavilion-15-eh3052au.json
+2026-02-28 17:53:11 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-pavilion-15-eg3126tu.json
+2026-02-28 17:53:11 [debug]: [VillmanScraper] JSON success: HP Pavilion 15-EH3052AU (Warm Gold) 15.6inch FHD | AMD Ryzen 5-7530U | 16GB RAM | 512GB SSD | AMD Radeon Graphics | Windows 11 Home
+2026-02-28 17:53:11 [debug]: [VillmanScraper] JSON success: HP Pavilion 15-eg3126TU (Warm Gold) 15.6inch FHD | Intel Core i5-1335U | 16GB RAM | 512GB SSD | Intel Iris Xe Graphics | Windows 11
+2026-02-28 17:53:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/nintendo-switch-2-mario-kart-world-bundle.json
+2026-02-28 17:53:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 17:53:12 [debug]: [PcExpressScraper] JSON success: NINTENDO Switch™ 2 + Mario Kart™ World Bundle
+2026-02-28 17:53:12 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 17:53:13 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-02-28 17:53:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/qnap-ts-664-4g-4-bay-desktop-nas.json
+2026-02-28 17:53:14 [debug]: [PcWorxScraper] JSON success: Qnap TS-664-4G 4-Bay Desktop NAS
+2026-02-28 17:53:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 17:53:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 17:53:15 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 17:53:15 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 17:53:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-pavilion-pavilion-15-eg3025tx.json
+2026-02-28 17:53:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/officehs2021.json
+2026-02-28 17:53:16 [debug]: [VillmanScraper] JSON success: HP Pavilion 15-EG3025TX (Warm Gold) 15.6inch FHD | Intel Core i5-1335U | 8GB RAM | 512GB SSD | NVIDIA Geforce MX550 2GB | Windows 11 Home
+2026-02-28 17:53:16 [debug]: [VillmanScraper] JSON success: Microsoft Office Home and Student 2021
+2026-02-28 17:53:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 17:53:18 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 17:53:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-02-28 17:53:19 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-02-28 17:53:21 [info]: [SearchService] Raw products: 11
+2026-02-28 17:53:21 [info]: [SearchService] Unique products after dedup: 11
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "NINTENDO Switch™ 2 + Mario Kart™ World Bundle" (pcexpress)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "LOGITECH H390 USB W/ Mic Headset" (pcexpress)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (pcexpress)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (pcexpress)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (pcexpress)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "HP Pavilion 15-eg3126TU (Warm Gold) 15.6inch FHD | Intel Core i5-1335U | 16GB RAM | 512GB SSD | Intel Iris Xe Graphics | Windows 11" (villman)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "HP Pavilion 15-EH3052AU (Warm Gold) 15.6inch FHD | AMD Ryzen 5-7530U | 16GB RAM | 512GB SSD | AMD Radeon Graphics | Windows 11 Home" (villman)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "HP Pavilion 15-EG3025TX (Warm Gold) 15.6inch FHD | Intel Core i5-1335U | 8GB RAM | 512GB SSD | NVIDIA Geforce MX550 2GB | Windows 11 Home" (villman)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "Microsoft Office Home and Student 2021" (villman)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "Aula AWK310 Bluetooth Keyboard" (villman)
+2026-02-28 17:53:21 [debug]: [SearchService] ✗ REJECTED: "Qnap TS-664-4G 4-Bay Desktop NAS" (pcworx)
+2026-02-28 17:53:21 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-02-28 17:53:21 [info]: [SearchService] Saved 0 products for search #0949cb0d-626f-41c8-a08d-d9c0533807e9
+2026-02-28 17:55:46 [info]: [DB] Supabase connection verified.
+2026-02-28 17:55:46 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:55:46 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:55:53 [info]: [DB] Supabase connection verified.
+2026-02-28 17:55:53 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:55:53 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:56:01 [info]: [DB] Supabase connection verified.
+2026-02-28 17:56:01 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:56:01 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:56:22 [info]: [DB] Supabase connection verified.
+2026-02-28 17:56:22 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:56:22 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:56:32 [info]: [DB] Supabase connection verified.
+2026-02-28 17:56:32 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:56:32 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:56:37 [info]: [DB] Supabase connection verified.
+2026-02-28 17:56:37 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:56:37 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:56:42 [info]: [DB] Supabase connection verified.
+2026-02-28 17:56:42 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 17:56:42 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 17:58:39 [debug]: → GET /api/search/stores
+2026-02-28 17:58:40 [debug]: → GET /api/search/stores
+2026-02-28 17:58:47 [debug]: → GET /api/search/stores
+2026-02-28 17:59:33 [debug]: → GET /api/cart
+2026-02-28 18:00:38 [debug]: → GET /api/search/stores
+2026-02-28 18:01:45 [debug]: → GET /api/search
+2026-02-28 18:01:46 [info]: [SearchService] Search #82e1e2d2-1125-4046-87a7-27df3799a26e - "egg"
+2026-02-28 18:01:46 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-02-28 18:01:47 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:01:47 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:01:47 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:01:50 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 18:01:50 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-02-28 18:01:50 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 18:01:50 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-28 18:01:50 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:01:50 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-02-28 18:01:56 [warn]: [SearchService] PCExpress: PCExpress timed out after 10000ms
+2026-02-28 18:01:56 [warn]: [SearchService] VillMan: VillMan timed out after 10000ms
+2026-02-28 18:01:56 [warn]: [SearchService] PCWorx: PCWorx timed out after 10000ms
+2026-02-28 18:01:56 [info]: [SearchService] Raw products: 0
+2026-02-28 18:01:56 [info]: [SearchService] Unique products after dedup: 0
+2026-02-28 18:01:56 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-02-28 18:01:56 [info]: [SearchService] Saved 0 products for search #82e1e2d2-1125-4046-87a7-27df3799a26e
+2026-02-28 18:02:10 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 18:02:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 18:02:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 18:02:11 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-02-28 18:02:12 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 18:02:12 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 18:02:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-02-28 18:02:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-02-28 18:02:13 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-28 18:02:13 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-28 18:02:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-28 18:02:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-02-28 18:02:16 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-02-28 18:02:16 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-28 18:02:16 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-02-28 18:02:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 18:02:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 18:02:17 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 18:02:17 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 18:02:18 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-02-28 18:02:18 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-02-28 18:02:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-28 18:02:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-28 18:02:22 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-28 18:02:22 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-28 18:02:27 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 18:02:36 [info]: [DB] Supabase connection verified.
+2026-02-28 18:02:36 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:02:36 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:02:56 [debug]: → GET /api/search
+2026-02-28 18:02:57 [info]: [SearchService] Search #53bca9fc-c6ce-432e-9b46-a41f45e4e459 - "charger"
+2026-02-28 18:02:57 [info]: [Backend Cache MISS] Scraping: "charger"...
+2026-02-28 18:02:57 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=charger&resources[type]=product&resources[limit]=10
+2026-02-28 18:02:58 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=charger&resources[type]=product&resources[limit]=10
+2026-02-28 18:02:58 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=charger&resources[type]=product&resources[limit]=10
+2026-02-28 18:02:58 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 18:02:58 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 18:02:58 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 18:02:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/ugreen-cd359-15550-mini-robot-nexode-30w-usb-c-fast-charger-space-grey.json
+2026-02-28 18:02:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/vention-feb0-us-65w-usb-c-3-ports-gan-wall-charger-pd-3-0-fast-charger-usb-c-power-adapter.json
+2026-02-28 18:03:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-nexode-4-port-gan-fast-charger-100w-black-cd226-40737.json
+2026-02-28 18:03:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/ugreen-cd319-90901-30w-gan-charger-space-gray.json
+2026-02-28 18:03:00 [debug]: [PcExpressScraper] JSON success: UGREEN (CD359/15550) Mini Robot Nexode 30W USB-C Fast Charger (Space Grey)
+2026-02-28 18:03:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cd359-15550-nexode-mini-30w-pd-gan-tech-charger-space-gray-1.json
+2026-02-28 18:03:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cd361-35314-mini-robot-65w-3-port-pd-gan-fast-charger-purple.json
+2026-02-28 18:03:00 [debug]: [VillmanScraper] JSON success: Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter
+2026-02-28 18:03:00 [debug]: [VillmanScraper] JSON success: UGREEN Nexode 4-Port Gan Fast Charger 100w (Black) (CD226/40737)
+2026-02-28 18:03:00 [debug]: [PcExpressScraper] JSON success: UGREEN CD319/90901 30W GAN Charger (Space Gray)
+2026-02-28 18:03:00 [debug]: [PcWorxScraper] JSON success: Ugreen CD359 15550 Nexode Mini 30W PD Gan Tech Charger Space Gray
+2026-02-28 18:03:00 [debug]: [PcWorxScraper] JSON success: Ugreen CD361/35314 Mini Robot 65W 3-Port PD GaN Fast Charger Purple
+2026-02-28 18:03:03 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cd319-15329-nexode-mini-30w-usb-c-pd-gan-tech-fast-charger-white.json
+2026-02-28 18:03:03 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/mcdodo-cc-2320-33w-1c-1a-pd-fast-car-charger-with-led-1.json
+2026-02-28 18:03:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-mini-robot-nexode-30w-usb-c-pd-gan-fast-charger-purple-cd359-25036.json
+2026-02-28 18:03:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-mini-robot-65w-3-port-pd-gan-fast-charger-space-grey-cd361-15570.json
+2026-02-28 18:03:04 [debug]: [PcWorxScraper] JSON success: Ugreen CD319/15329 Nexode Mini 30w USB-C PD GAN Tech Fast Charger White
+2026-02-28 18:03:04 [debug]: [PcWorxScraper] JSON success: Mcdodo CC-2320 33w 1C+1A PD Fast Car Charger with LED
+2026-02-28 18:03:04 [debug]: [VillmanScraper] JSON success: UGREEN Mini Robot Nexode 30W USB-C PD Gan Fast Charger (Purple) (CD359/25036)
+2026-02-28 18:03:04 [debug]: [VillmanScraper] JSON success: UGREEN Mini Robot 65W 3-Port PD GAN Fast Charger (Space Grey) (CD361/15570)
+2026-02-28 18:03:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/jbl-charge-5-portable-waterproof-speaker-gray.json
+2026-02-28 18:03:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/jbl-charge-6-portable-waterproof-and-drop-proof-bluetooth-speaker-sand.json
+2026-02-28 18:03:05 [debug]: [PcExpressScraper] JSON success: JBL Charge 5 Portable Waterproof Bluetooth Speaker (Gray)
+2026-02-28 18:03:05 [debug]: [PcExpressScraper] JSON success: JBL Charge 6 Portable Waterproof and Drop-Proof Bluetooth Speaker - Sand
+2026-02-28 18:03:06 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aukey-cc-t7-2-port-33w-car-charger.json
+2026-02-28 18:03:07 [debug]: [PcWorxScraper] JSON success: Aukey CC-T7 2-Port 33W Car Charger
+2026-02-28 18:03:07 [warn]: [SearchService] PCExpress: PCExpress timed out after 10000ms
+2026-02-28 18:03:07 [warn]: [SearchService] VillMan: VillMan timed out after 10000ms
+2026-02-28 18:03:07 [warn]: [SearchService] PCWorx: PCWorx timed out after 10000ms
+2026-02-28 18:03:07 [info]: [SearchService] Raw products: 0
+2026-02-28 18:03:07 [info]: [SearchService] Unique products after dedup: 0
+2026-02-28 18:03:07 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-02-28 18:03:07 [info]: [SearchService] Saved 0 products for search #53bca9fc-c6ce-432e-9b46-a41f45e4e459
+2026-02-28 18:03:08 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/vention-tavhf-1m-type-c-pd-100w-5a-qc-fast-charger-cable.json
+2026-02-28 18:03:09 [debug]: [VillmanScraper] JSON success: Vention TAVHF 1M TYPE-C PD 100W 5A QC Fast Charger Cable
+2026-02-28 18:03:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/jbl-charge-6-portable-waterproof-and-drop-proof-bluetooth-speaker-black.json
+2026-02-28 18:03:09 [debug]: [PcExpressScraper] JSON success: JBL Charge 6 Portable Waterproof and Drop-Proof Bluetooth Speaker - Black
+2026-02-28 18:03:37 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 18:03:45 [info]: [DB] Supabase connection verified.
+2026-02-28 18:03:46 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:03:46 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:04:09 [debug]: → GET /api/search
+2026-02-28 18:04:10 [info]: [SearchService] Search #b62424b3-38dd-4f25-b3f3-16a2acf6fba7 - "adapter"
+2026-02-28 18:04:10 [info]: [Backend Cache MISS] Scraping: "adapter"...
+2026-02-28 18:04:10 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:04:10 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:04:10 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:04:12 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 18:04:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/sandisk-micro-sd-256gb-class-10-ultra-a1-flash-memory-without-adapter.json
+2026-02-28 18:04:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-ub500-bluetooth-5-0-nano-usb-adapter.json
+2026-02-28 18:04:12 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 18:04:12 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 18:04:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm380-80856-dual-usb-multifunctional-adapter.json
+2026-02-28 18:04:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tg-3468-32bit-gigabit-pcie-network-adapter.json
+2026-02-28 18:04:13 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-usb-ax56-dual-band-ax1800-usb-wifi-adapter.json
+2026-02-28 18:04:13 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/dell-da310-usb-c-mobile-adapter.json
+2026-02-28 18:04:15 [debug]: [PcExpressScraper] JSON success: TP-LINK UB500 Bluetooth 5.0 Nano USB Adapter
+2026-02-28 18:04:15 [debug]: [PcExpressScraper] JSON success: SANDISK Micro SD 256GB Class 10 Ultra A1 Flash Memory Without Adapter
+2026-02-28 18:04:15 [debug]: [PcWorxScraper] JSON success: Ugreen CM380/80856 Dual Usb Multifunctional Adapter
+2026-02-28 18:04:15 [debug]: [PcWorxScraper] JSON success: TP-Link TG-3468 32Bit Gigabit PCIe Network Adapter
+2026-02-28 18:04:15 [debug]: [VillmanScraper] JSON success: Asus USB-AX56 Dual Band AX1800 USB WiFi Adapter
+2026-02-28 18:04:15 [debug]: [VillmanScraper] JSON success: Dell DA310 USB-C Mobile Adapter
+2026-02-28 18:04:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-a-3-0-to-gigabit-ethernet-adapter-10cm-black-cr111-20256.json
+2026-02-28 18:04:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/vention-feb0-us-65w-usb-c-3-ports-gan-wall-charger-pd-3-0-fast-charger-usb-c-power-adapter.json
+2026-02-28 18:04:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/vention-7-in-1-usb-c-tojhb-docking-station.json
+2026-02-28 18:04:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-archer-t3u-plus-ac1300-high-gain-wireless-dual-band-usb-adapter.json
+2026-02-28 18:04:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tl-wn725n-excellent-n-150mbps-adaptor.json
+2026-02-28 18:04:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-archer-t2u-nano-ac600-nano-wi-fi-usb-adapter.json
+2026-02-28 18:04:19 [debug]: [VillmanScraper] JSON success: UGREEN USB-A 3.0 To Gigabit Ethernet Adapter 10cm (Black) (CR111/20256)
+2026-02-28 18:04:19 [debug]: [VillmanScraper] JSON success: Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter
+2026-02-28 18:04:19 [debug]: [PcExpressScraper] JSON success: VENTION 7-in-1 USB-C (TOJHB) Docking Station
+2026-02-28 18:04:20 [warn]: [SearchService] PCExpress: PCExpress timed out after 10000ms
+2026-02-28 18:04:20 [warn]: [SearchService] VillMan: VillMan timed out after 10000ms
+2026-02-28 18:04:20 [warn]: [SearchService] PCWorx: PCWorx timed out after 10000ms
+2026-02-28 18:04:20 [info]: [SearchService] Raw products: 0
+2026-02-28 18:04:20 [info]: [SearchService] Unique products after dedup: 0
+2026-02-28 18:04:20 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-02-28 18:04:20 [info]: [SearchService] Saved 0 products for search #b62424b3-38dd-4f25-b3f3-16a2acf6fba7
+2026-02-28 18:04:20 [debug]: [PcExpressScraper] JSON success: TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter
+2026-02-28 18:04:20 [debug]: [PcWorxScraper] JSON success: TP-Link Archer T2U Nano AC600 Nano Wi-Fi USB Adapter
+2026-02-28 18:04:20 [debug]: [PcWorxScraper] JSON success: Tp-Link WN725N Excellent N 150Mbps Wireless Adapter
+2026-02-28 18:04:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm498-15375-usbc-multiadapter.json
+2026-02-28 18:04:23 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-6-in-1-multifunction-adapter-15cm-cm512-15598.json
+2026-02-28 18:04:23 [debug]: [PcWorxScraper] JSON success: UGREEN CM498/15375 USBC MULTI ADAPTER
+2026-02-28 18:04:24 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-archer-t2ub-nano-ac600-wi-fi-bluetooth-4-2-usb-adapter.json
+2026-02-28 18:04:24 [debug]: [VillmanScraper] JSON success: UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)
+2026-02-28 18:04:25 [debug]: [PcExpressScraper] JSON success: TP-LINK Archer T2UB Nano AC600 Wi-Fi Bluetooth 4.2 USB Adapter
+2026-02-28 18:05:13 [info]: [DB] Supabase connection verified.
+2026-02-28 18:05:13 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:05:13 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:05:32 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 18:05:40 [info]: [DB] Supabase connection verified.
+2026-02-28 18:05:40 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:05:40 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:05:42 [debug]: → GET /api/cart
+2026-02-28 18:05:42 [debug]: → GET /api/search/stores
+2026-02-28 18:05:42 [debug]: → GET /api/search
+2026-02-28 18:05:42 [debug]: → GET /api/search/stores
+2026-02-28 18:05:43 [info]: [SearchService] Search #bf240883-56b3-4cc1-90a1-78523d499a05 - "adapter"
+2026-02-28 18:05:43 [info]: [Backend Cache MISS] Scraping: "adapter"...
+2026-02-28 18:05:43 [debug]: → GET /api/cart
+2026-02-28 18:05:43 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:05:43 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:05:43 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:05:44 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 18:05:44 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 18:05:44 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 18:05:45 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-ub500-bluetooth-5-0-nano-usb-adapter.json
+2026-02-28 18:05:45 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/sandisk-micro-sd-256gb-class-10-ultra-a1-flash-memory-without-adapter.json
+2026-02-28 18:05:45 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm380-80856-dual-usb-multifunctional-adapter.json
+2026-02-28 18:05:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tg-3468-32bit-gigabit-pcie-network-adapter.json
+2026-02-28 18:05:46 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/dell-da310-usb-c-mobile-adapter.json
+2026-02-28 18:05:46 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-usb-ax56-dual-band-ax1800-usb-wifi-adapter.json
+2026-02-28 18:05:46 [debug]: [PcWorxScraper] JSON success: Ugreen CM380/80856 Dual Usb Multifunctional Adapter
+2026-02-28 18:05:46 [debug]: [PcExpressScraper] JSON success: SANDISK Micro SD 256GB Class 10 Ultra A1 Flash Memory Without Adapter
+2026-02-28 18:05:46 [debug]: [PcExpressScraper] JSON success: TP-LINK UB500 Bluetooth 5.0 Nano USB Adapter
+2026-02-28 18:05:46 [debug]: [PcWorxScraper] JSON success: TP-Link TG-3468 32Bit Gigabit PCIe Network Adapter
+2026-02-28 18:05:46 [debug]: [VillmanScraper] JSON success: Dell DA310 USB-C Mobile Adapter
+2026-02-28 18:05:46 [debug]: [VillmanScraper] JSON success: Asus USB-AX56 Dual Band AX1800 USB WiFi Adapter
+2026-02-28 18:05:48 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/vention-7-in-1-usb-c-tojhb-docking-station.json
+2026-02-28 18:05:48 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-archer-t3u-plus-ac1300-high-gain-wireless-dual-band-usb-adapter.json
+2026-02-28 18:05:48 [debug]: [PcExpressScraper] JSON success: VENTION 7-in-1 USB-C (TOJHB) Docking Station
+2026-02-28 18:05:48 [debug]: [PcExpressScraper] JSON success: TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter
+2026-02-28 18:05:49 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-a-3-0-to-gigabit-ethernet-adapter-10cm-black-cr111-20256.json
+2026-02-28 18:05:49 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/vention-feb0-us-65w-usb-c-3-ports-gan-wall-charger-pd-3-0-fast-charger-usb-c-power-adapter.json
+2026-02-28 18:05:49 [debug]: [VillmanScraper] JSON success: UGREEN USB-A 3.0 To Gigabit Ethernet Adapter 10cm (Black) (CR111/20256)
+2026-02-28 18:05:49 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tl-wn725n-excellent-n-150mbps-adaptor.json
+2026-02-28 18:05:49 [debug]: [VillmanScraper] JSON success: Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter
+2026-02-28 18:05:49 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-archer-t2u-nano-ac600-nano-wi-fi-usb-adapter.json
+2026-02-28 18:05:50 [debug]: [PcWorxScraper] JSON success: Tp-Link WN725N Excellent N 150Mbps Wireless Adapter
+2026-02-28 18:05:50 [debug]: [PcWorxScraper] JSON success: TP-Link Archer T2U Nano AC600 Nano Wi-Fi USB Adapter
+2026-02-28 18:05:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-archer-t2ub-nano-ac600-wi-fi-bluetooth-4-2-usb-adapter.json
+2026-02-28 18:05:52 [debug]: [PcExpressScraper] JSON success: TP-LINK Archer T2UB Nano AC600 Wi-Fi Bluetooth 4.2 USB Adapter
+2026-02-28 18:05:52 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm498-15375-usbc-multiadapter.json
+2026-02-28 18:05:53 [debug]: [PcWorxScraper] JSON success: UGREEN CM498/15375 USBC MULTI ADAPTER
+2026-02-28 18:05:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-6-in-1-multifunction-adapter-15cm-cm512-15598.json
+2026-02-28 18:05:54 [debug]: [VillmanScraper] JSON success: UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)
+2026-02-28 18:05:57 [info]: [SearchService] Raw products: 15
+2026-02-28 18:05:57 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 18:05:57 [debug]: [SearchService] ✓ ACCEPTED: "SANDISK Micro SD 256GB Class 10 Ultra A1 Flash Memory Without Adapter" (PCExpress)
+2026-02-28 18:05:57 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK UB500 Bluetooth 5.0 Nano USB Adapter" (PCExpress)
+2026-02-28 18:05:57 [debug]: [SearchService] ✗ REJECTED: "VENTION 7-in-1 USB-C (TOJHB) Docking Station" (PCExpress)
+2026-02-28 18:05:57 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter" (PCExpress)
+2026-02-28 18:05:57 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T2UB Nano AC600 Wi-Fi Bluetooth 4.2 USB Adapter" (PCExpress)
+2026-02-28 18:05:57 [debug]: [SearchService] ✓ ACCEPTED: "Asus USB-AX56 Dual Band AX1800 USB WiFi Adapter" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Dell DA310 USB-C Mobile Adapter" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-A 3.0 To Gigabit Ethernet Adapter 10cm (Black) (CR111/20256)" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM380/80856 Dual Usb Multifunctional Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link TG-3468 32Bit Gigabit PCIe Network Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Tp-Link WN725N Excellent N 150Mbps Wireless Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link Archer T2U Nano AC600 Nano Wi-Fi USB Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN CM498/15375 USBC MULTI ADAPTER" (PCWorx)
+2026-02-28 18:05:58 [info]: [SearchService] Relevance filter: 14/15 products kept
+2026-02-28 18:05:58 [info]: [SearchService] Sample rejected products for query "adapter":
+2026-02-28 18:05:58 [info]:   - VENTION 7-in-1 USB-C (TOJHB) Docking Station
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [info]: [SearchService] Saved 0 products for search #bf240883-56b3-4cc1-90a1-78523d499a05
+2026-02-28 18:05:58 [debug]: → GET /api/search
+2026-02-28 18:05:58 [info]: [SearchService] Search #b4e70228-57a8-480d-bf7d-cf1a5c9edd6a - "adapter"
+2026-02-28 18:05:58 [info]: [Backend Cache HIT] Query: "adapter"
+2026-02-28 18:05:58 [info]: [SearchService] Raw products: 15
+2026-02-28 18:05:58 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "SANDISK Micro SD 256GB Class 10 Ultra A1 Flash Memory Without Adapter" (PCExpress)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK UB500 Bluetooth 5.0 Nano USB Adapter" (PCExpress)
+2026-02-28 18:05:58 [debug]: [SearchService] ✗ REJECTED: "VENTION 7-in-1 USB-C (TOJHB) Docking Station" (PCExpress)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter" (PCExpress)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T2UB Nano AC600 Wi-Fi Bluetooth 4.2 USB Adapter" (PCExpress)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Asus USB-AX56 Dual Band AX1800 USB WiFi Adapter" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Dell DA310 USB-C Mobile Adapter" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-A 3.0 To Gigabit Ethernet Adapter 10cm (Black) (CR111/20256)" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)" (VillMan)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM380/80856 Dual Usb Multifunctional Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link TG-3468 32Bit Gigabit PCIe Network Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "Tp-Link WN725N Excellent N 150Mbps Wireless Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link Archer T2U Nano AC600 Nano Wi-Fi USB Adapter" (PCWorx)
+2026-02-28 18:05:58 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN CM498/15375 USBC MULTI ADAPTER" (PCWorx)
+2026-02-28 18:05:58 [info]: [SearchService] Relevance filter: 14/15 products kept
+2026-02-28 18:05:58 [info]: [SearchService] Sample rejected products for query "adapter":
+2026-02-28 18:05:58 [info]:   - VENTION 7-in-1 USB-C (TOJHB) Docking Station
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCExpress
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: VillMan
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [warn]: [SearchService] Unknown platform: PCWorx
+2026-02-28 18:05:58 [info]: [SearchService] Saved 0 products for search #b4e70228-57a8-480d-bf7d-cf1a5c9edd6a
+2026-02-28 18:08:55 [info]: [DB] Supabase connection verified.
+2026-02-28 18:08:55 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:08:55 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:11:11 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 18:11:21 [info]: [DB] Supabase connection verified.
+2026-02-28 18:11:22 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:11:22 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:11:28 [debug]: → GET /api/search/stores
+2026-02-28 18:11:28 [debug]: → GET /api/cart
+2026-02-28 18:11:28 [debug]: → GET /api/search
+2026-02-28 18:11:28 [debug]: → GET /api/search/stores
+2026-02-28 18:11:29 [debug]: → GET /api/cart
+2026-02-28 18:11:29 [info]: [SearchService] Search #3389a44e-ff38-4e16-8e23-2bab26ece56a - "adapter"
+2026-02-28 18:11:29 [info]: [Backend Cache MISS] Scraping: "adapter"...
+2026-02-28 18:11:29 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:11:29 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:11:29 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=adapter&resources[type]=product&resources[limit]=10
+2026-02-28 18:11:30 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 18:11:30 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 18:11:30 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 18:11:31 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-usb-ax56-dual-band-ax1800-usb-wifi-adapter.json
+2026-02-28 18:11:31 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/dell-da310-usb-c-mobile-adapter.json
+2026-02-28 18:11:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/sandisk-micro-sd-256gb-class-10-ultra-a1-flash-memory-without-adapter.json
+2026-02-28 18:11:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-ub500-bluetooth-5-0-nano-usb-adapter.json
+2026-02-28 18:11:31 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm380-80856-dual-usb-multifunctional-adapter.json
+2026-02-28 18:11:31 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tg-3468-32bit-gigabit-pcie-network-adapter.json
+2026-02-28 18:11:31 [debug]: [VillmanScraper] JSON success: Asus USB-AX56 Dual Band AX1800 USB WiFi Adapter
+2026-02-28 18:11:31 [debug]: [VillmanScraper] JSON success: Dell DA310 USB-C Mobile Adapter
+2026-02-28 18:11:31 [debug]: [PcExpressScraper] JSON success: TP-LINK UB500 Bluetooth 5.0 Nano USB Adapter
+2026-02-28 18:11:31 [debug]: [PcExpressScraper] JSON success: SANDISK Micro SD 256GB Class 10 Ultra A1 Flash Memory Without Adapter
+2026-02-28 18:11:32 [debug]: [PcWorxScraper] JSON success: TP-Link TG-3468 32Bit Gigabit PCIe Network Adapter
+2026-02-28 18:11:32 [debug]: [PcWorxScraper] JSON success: Ugreen CM380/80856 Dual Usb Multifunctional Adapter
+2026-02-28 18:11:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/vention-7-in-1-usb-c-tojhb-docking-station.json
+2026-02-28 18:11:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-archer-t3u-plus-ac1300-high-gain-wireless-dual-band-usb-adapter.json
+2026-02-28 18:11:35 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-a-3-0-to-gigabit-ethernet-adapter-10cm-black-cr111-20256.json
+2026-02-28 18:11:35 [debug]: [PcExpressScraper] JSON success: VENTION 7-in-1 USB-C (TOJHB) Docking Station
+2026-02-28 18:11:35 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/vention-feb0-us-65w-usb-c-3-ports-gan-wall-charger-pd-3-0-fast-charger-usb-c-power-adapter.json
+2026-02-28 18:11:35 [debug]: [PcExpressScraper] JSON success: TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter
+2026-02-28 18:11:36 [debug]: [VillmanScraper] JSON success: Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter
+2026-02-28 18:11:36 [debug]: [VillmanScraper] JSON success: UGREEN USB-A 3.0 To Gigabit Ethernet Adapter 10cm (Black) (CR111/20256)
+2026-02-28 18:11:36 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tl-wn725n-excellent-n-150mbps-adaptor.json
+2026-02-28 18:11:36 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-archer-t2u-nano-ac600-nano-wi-fi-usb-adapter.json
+2026-02-28 18:11:36 [debug]: [PcWorxScraper] JSON success: Tp-Link WN725N Excellent N 150Mbps Wireless Adapter
+2026-02-28 18:11:36 [debug]: [PcWorxScraper] JSON success: TP-Link Archer T2U Nano AC600 Nano Wi-Fi USB Adapter
+2026-02-28 18:11:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-archer-t2ub-nano-ac600-wi-fi-bluetooth-4-2-usb-adapter.json
+2026-02-28 18:11:39 [debug]: [PcExpressScraper] JSON success: TP-LINK Archer T2UB Nano AC600 Wi-Fi Bluetooth 4.2 USB Adapter
+2026-02-28 18:11:39 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm498-15375-usbc-multiadapter.json
+2026-02-28 18:11:39 [debug]: [PcWorxScraper] JSON success: UGREEN CM498/15375 USBC MULTI ADAPTER
+2026-02-28 18:11:40 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-6-in-1-multifunction-adapter-15cm-cm512-15598.json
+2026-02-28 18:11:40 [debug]: [VillmanScraper] JSON success: UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)
+2026-02-28 18:11:43 [info]: [SearchService] Raw products: 15
+2026-02-28 18:11:43 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "SANDISK Micro SD 256GB Class 10 Ultra A1 Flash Memory Without Adapter" (PCExpress)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK UB500 Bluetooth 5.0 Nano USB Adapter" (PCExpress)
+2026-02-28 18:11:43 [debug]: [SearchService] ✗ REJECTED: "VENTION 7-in-1 USB-C (TOJHB) Docking Station" (PCExpress)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter" (PCExpress)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T2UB Nano AC600 Wi-Fi Bluetooth 4.2 USB Adapter" (PCExpress)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "Asus USB-AX56 Dual Band AX1800 USB WiFi Adapter" (VillMan)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "Dell DA310 USB-C Mobile Adapter" (VillMan)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-A 3.0 To Gigabit Ethernet Adapter 10cm (Black) (CR111/20256)" (VillMan)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter" (VillMan)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)" (VillMan)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM380/80856 Dual Usb Multifunctional Adapter" (PCWorx)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link TG-3468 32Bit Gigabit PCIe Network Adapter" (PCWorx)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "Tp-Link WN725N Excellent N 150Mbps Wireless Adapter" (PCWorx)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link Archer T2U Nano AC600 Nano Wi-Fi USB Adapter" (PCWorx)
+2026-02-28 18:11:43 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN CM498/15375 USBC MULTI ADAPTER" (PCWorx)
+2026-02-28 18:11:43 [info]: [SearchService] Relevance filter: 14/15 products kept
+2026-02-28 18:11:43 [info]: [SearchService] Sample rejected products for query "adapter":
+2026-02-28 18:11:43 [info]:   - VENTION 7-in-1 USB-C (TOJHB) Docking Station
+2026-02-28 18:11:43 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:43 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:44 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:44 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:44 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:44 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:44 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:44 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:44 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:45 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:45 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:45 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:45 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:45 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:45 [info]: [SearchService] Saved 14 products for search #3389a44e-ff38-4e16-8e23-2bab26ece56a
+2026-02-28 18:11:45 [debug]: → GET /api/search
+2026-02-28 18:11:46 [info]: [SearchService] Search #a108ee3a-5e6f-496f-9989-4754fde2cc7d - "adapter"
+2026-02-28 18:11:46 [info]: [Backend Cache HIT] Query: "adapter"
+2026-02-28 18:11:46 [info]: [SearchService] Raw products: 15
+2026-02-28 18:11:46 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "SANDISK Micro SD 256GB Class 10 Ultra A1 Flash Memory Without Adapter" (PCExpress)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK UB500 Bluetooth 5.0 Nano USB Adapter" (PCExpress)
+2026-02-28 18:11:46 [debug]: [SearchService] ✗ REJECTED: "VENTION 7-in-1 USB-C (TOJHB) Docking Station" (PCExpress)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter" (PCExpress)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T2UB Nano AC600 Wi-Fi Bluetooth 4.2 USB Adapter" (PCExpress)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "Asus USB-AX56 Dual Band AX1800 USB WiFi Adapter" (VillMan)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "Dell DA310 USB-C Mobile Adapter" (VillMan)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-A 3.0 To Gigabit Ethernet Adapter 10cm (Black) (CR111/20256)" (VillMan)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "Vention FEB0-US 65W USB C 3 Ports GaN Wall Charger PD 3.0 Fast Charger USB C Power Adapter" (VillMan)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)" (VillMan)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM380/80856 Dual Usb Multifunctional Adapter" (PCWorx)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link TG-3468 32Bit Gigabit PCIe Network Adapter" (PCWorx)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "Tp-Link WN725N Excellent N 150Mbps Wireless Adapter" (PCWorx)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link Archer T2U Nano AC600 Nano Wi-Fi USB Adapter" (PCWorx)
+2026-02-28 18:11:46 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN CM498/15375 USBC MULTI ADAPTER" (PCWorx)
+2026-02-28 18:11:46 [info]: [SearchService] Relevance filter: 14/15 products kept
+2026-02-28 18:11:46 [info]: [SearchService] Sample rejected products for query "adapter":
+2026-02-28 18:11:46 [info]:   - VENTION 7-in-1 USB-C (TOJHB) Docking Station
+2026-02-28 18:11:46 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:46 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:46 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:46 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:11:46 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:46 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:46 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:47 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:47 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:11:47 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:47 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:47 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:47 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:47 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:11:48 [info]: [SearchService] Saved 14 products for search #a108ee3a-5e6f-496f-9989-4754fde2cc7d
+2026-02-28 18:12:12 [debug]: → GET /api/search
+2026-02-28 18:12:12 [info]: [SearchService] Search #ce07d424-1b63-4247-812c-d439a16543cd - "television"
+2026-02-28 18:12:12 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 18:12:13 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:12:13 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:12:13 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:12:13 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:12:13 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 18:12:13 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 18:12:13 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 18:12:13 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 18:12:13 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 18:12:43 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2038ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=television", waiting until "load"[22m
+
+2026-02-28 18:12:46 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:12:46 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:12:46 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 18:12:48 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 18:12:48 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-display-port-male-to-hdmi-male-cable-2m-black-dp101-10202.json
+2026-02-28 18:12:50 [debug]: [VillmanScraper] JSON success: UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)
+2026-02-28 18:12:51 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-28 18:12:51 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/generic-hd15male-hd15male-vga-cable-5-meter-ordinary.json
+2026-02-28 18:12:52 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp101-10202-display-port-male-to-hdmi-male-cable-2meters-black.json
+2026-02-28 18:12:53 [debug]: [PcWorxScraper] JSON success: Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black
+2026-02-28 18:12:53 [debug]: [PcWorxScraper] JSON success: Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary
+2026-02-28 18:12:56 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp114-80392-dp-m-m-cable-2-0m-bk.json
+2026-02-28 18:12:56 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/vention-aljbh-hdmi-2meters-black.json
+2026-02-28 18:12:56 [debug]: [PcWorxScraper] JSON success: Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K
+2026-02-28 18:12:56 [debug]: [PcWorxScraper] JSON success: Vention ALJBH HDMI 2Meters Black
+2026-02-28 18:12:57 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-02-28 18:12:57 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-02-28 18:12:57 [info]: [SearchService] Raw products: 1
+2026-02-28 18:12:57 [info]: [SearchService] Unique products after dedup: 1
+2026-02-28 18:12:57 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)" (VillMan)
+2026-02-28 18:12:57 [info]: [SearchService] Relevance filter: 1/1 products kept
+2026-02-28 18:12:57 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:12:58 [info]: [SearchService] Saved 1 products for search #ce07d424-1b63-4247-812c-d439a16543cd
+2026-02-28 18:12:59 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/north-bayou-nb-ava1800-70-1p-55-90-inch-tv-cart-mount-tv-stand-55-90-inch-tv-stand-cart-tv-floor-stand.json
+2026-02-28 18:12:59 [debug]: [PcWorxScraper] JSON success: North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand
+2026-02-28 18:13:00 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 18:13:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-z313-2-1-speaker-system-with-subwoofer-black.json
+2026-02-28 18:13:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 18:13:01 [debug]: [PcExpressScraper] JSON success: LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)
+2026-02-28 18:13:01 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 18:13:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 18:13:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 18:13:05 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 18:13:05 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 18:13:07 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 18:13:08 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 18:13:57 [debug]: → GET /api/search
+2026-02-28 18:13:58 [info]: [SearchService] Search #a73ea71a-03f1-4d9f-8891-bc24a588922b - "monitor"
+2026-02-28 18:13:58 [info]: [Backend Cache MISS] Scraping: "monitor"...
+2026-02-28 18:13:59 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:13:59 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:13:59 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:14:00 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 18:14:00 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 18:14:00 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 18:14:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 18:14:01 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-vg259q5a-24-5-ips-200hz-fhd-tuf-gaming-monitor.json
+2026-02-28 18:14:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-27-xg27acs-rog-strix-ips-gaming-monitor.json
+2026-02-28 18:14:01 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-27g42e-27-ips-180hz-fhd-adaptive-sync-gaming-monitor.json
+2026-02-28 18:14:01 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 18:14:01 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-ka252q-g0bi.json
+2026-02-28 18:14:01 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-x34-x-34inch-uwqhd-oled-240hz-0-01ms-curved-gaming-monitor.json
+2026-02-28 18:14:01 [debug]: [PcExpressScraper] JSON success: ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor
+2026-02-28 18:14:01 [debug]: [PcWorxScraper] JSON success: AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor
+2026-02-28 18:14:01 [debug]: [PcWorxScraper] JSON success: Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor
+2026-02-28 18:14:02 [debug]: [VillmanScraper] JSON success: Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor
+2026-02-28 18:14:02 [debug]: [VillmanScraper] JSON success: Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor
+2026-02-28 18:14:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hp-23-8-524sf-94c18aa-ips-monitor.json
+2026-02-28 18:14:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aopen-27-27sa3-g0bi-ips-monitor.json
+2026-02-28 18:14:05 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aopen-24cl1y-g-monitor.json
+2026-02-28 18:14:05 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-va24ehf-monitor.json
+2026-02-28 18:14:05 [debug]: [PcExpressScraper] JSON success: HP 23.8" 524SF (94C18AA) IPS Monitor
+2026-02-28 18:14:05 [debug]: [PcExpressScraper] JSON success: AOPEN 27" 27SA3 G0BI IPS Monitor
+2026-02-28 18:14:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-22b15hn-21-45-va-100hz-fhd-vga-hdmi-monitor.json
+2026-02-28 18:14:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/samsung-ls27dm500eexxp-27-smart-monitor-m5-m50d-fhd-monitor.json
+2026-02-28 18:14:05 [debug]: [VillmanScraper] JSON success: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor
+2026-02-28 18:14:06 [debug]: [PcWorxScraper] JSON success: AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor
+2026-02-28 18:14:06 [debug]: [VillmanScraper] JSON success: Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor
+2026-02-28 18:14:06 [debug]: [PcWorxScraper] JSON success: Samsung LS27DM500EEXXP 27" Smart Monitor M5 M50D FHD Monitor
+2026-02-28 18:14:08 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-24b3ca2-23-8-ips-100hz-fhd-monitor.json
+2026-02-28 18:14:09 [debug]: [PcWorxScraper] JSON success: AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor
+2026-02-28 18:14:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-02-28 18:14:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-modern-md272qpw-wqhd-ips-75hz-4ms-monitor.json
+2026-02-28 18:14:10 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-02-28 18:14:10 [debug]: [VillmanScraper] JSON success: MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor
+2026-02-28 18:14:13 [info]: [SearchService] Raw products: 15
+2026-02-28 18:14:13 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor" (PCExpress)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "HP 23.8" 524SF (94C18AA) IPS Monitor" (PCExpress)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 27" 27SA3 G0BI IPS Monitor" (PCExpress)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "MSI 21.5" MP225V PRO Monitor" (PCExpress)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor" (VillMan)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor" (VillMan)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor" (VillMan)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor" (VillMan)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor" (VillMan)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor" (PCWorx)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor" (PCWorx)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor" (PCWorx)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "Samsung LS27DM500EEXXP 27" Smart Monitor M5 M50D FHD Monitor" (PCWorx)
+2026-02-28 18:14:13 [debug]: [SearchService] ✓ ACCEPTED: "AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor" (PCWorx)
+2026-02-28 18:14:13 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 18:14:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:14:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:14:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:14:14 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:14:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:14:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:14:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:14:16 [info]: [SearchService] Saved 15 products for search #a73ea71a-03f1-4d9f-8891-bc24a588922b
+2026-02-28 18:14:50 [debug]: → GET /api/cart
+2026-02-28 18:14:50 [debug]: → GET /api/products/PCWorx/3c40df63-79c6-4be0-a864-bb26a797bce4
+2026-02-28 18:14:50 [debug]: → GET /api/products/PCWorx/3c40df63-79c6-4be0-a864-bb26a797bce4
+2026-02-28 18:14:50 [debug]: → GET /api/cart
+2026-02-28 18:14:51 [debug]: → GET /api/cart
+2026-02-28 18:14:51 [debug]: → GET /api/cart
+2026-02-28 18:14:56 [debug]: → GET /api/cart
+2026-02-28 18:14:56 [debug]: → GET /api/search/stores
+2026-02-28 18:14:56 [debug]: → GET /api/search/stores
+2026-02-28 18:14:56 [debug]: → GET /api/cart
+2026-02-28 18:15:00 [debug]: → GET /api/cart
+2026-02-28 18:15:00 [debug]: → GET /api/cart
+2026-02-28 18:15:02 [debug]: → GET /api/cart
+2026-02-28 18:15:03 [debug]: → GET /api/cart
+2026-02-28 18:15:03 [debug]: → GET /api/cart
+2026-02-28 18:15:03 [debug]: → GET /api/cart
+2026-02-28 18:19:59 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 18:20:05 [info]: [DB] Supabase connection verified.
+2026-02-28 18:20:06 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:20:06 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:20:11 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 18:20:18 [info]: [DB] Supabase connection verified.
+2026-02-28 18:20:18 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:20:18 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:20:19 [debug]: → GET /api/cart
+2026-02-28 18:20:19 [debug]: → GET /api/cart
+2026-02-28 18:20:19 [debug]: → GET /api/cart
+2026-02-28 18:20:20 [debug]: → GET /api/cart
+2026-02-28 18:20:27 [debug]: → GET /api/cart
+2026-02-28 18:20:28 [debug]: → GET /api/cart
+2026-02-28 18:20:29 [debug]: → GET /api/cart
+2026-02-28 18:20:29 [debug]: → GET /api/cart
+2026-02-28 18:20:30 [debug]: → GET /api/cart
+2026-02-28 18:20:30 [debug]: → GET /api/cart
+2026-02-28 18:20:33 [debug]: → GET /api/cart
+2026-02-28 18:20:33 [debug]: → GET /api/cart
+2026-02-28 18:20:39 [debug]: → GET /api/cart
+2026-02-28 18:20:39 [debug]: → GET /api/search/stores
+2026-02-28 18:20:39 [debug]: → GET /api/search/stores
+2026-02-28 18:20:40 [debug]: → GET /api/cart
+2026-02-28 18:20:41 [debug]: → GET /api/search
+2026-02-28 18:20:41 [info]: [SearchService] Search #f4d802ca-8c7f-4ddf-bbd0-ae0c03e0d04a - "television"
+2026-02-28 18:20:41 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 18:20:42 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:20:42 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:20:42 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:20:43 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:20:43 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 18:20:43 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 18:20:43 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 18:20:43 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 18:20:43 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 18:21:02 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 18:21:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-display-port-male-to-hdmi-male-cable-2m-black-dp101-10202.json
+2026-02-28 18:21:03 [debug]: [VillmanScraper] JSON success: UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)
+2026-02-28 18:21:04 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 18:21:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-z313-2-1-speaker-system-with-subwoofer-black.json
+2026-02-28 18:21:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 18:21:05 [debug]: [PcExpressScraper] JSON success: LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)
+2026-02-28 18:21:05 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 18:21:06 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-02-28 18:21:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/generic-hd15male-hd15male-vga-cable-5-meter-ordinary.json
+2026-02-28 18:21:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp101-10202-display-port-male-to-hdmi-male-cable-2meters-black.json
+2026-02-28 18:21:07 [debug]: [PcWorxScraper] JSON success: Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary
+2026-02-28 18:21:07 [debug]: [PcWorxScraper] JSON success: Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black
+2026-02-28 18:21:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 18:21:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 18:21:10 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 18:21:10 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 18:21:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-dp114-80392-dp-m-m-cable-2-0m-bk.json
+2026-02-28 18:21:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/vention-aljbh-hdmi-2meters-black.json
+2026-02-28 18:21:11 [debug]: [PcWorxScraper] JSON success: Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K
+2026-02-28 18:21:11 [debug]: [PcWorxScraper] JSON success: Vention ALJBH HDMI 2Meters Black
+2026-02-28 18:21:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 18:21:13 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 18:21:14 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/north-bayou-nb-ava1800-70-1p-55-90-inch-tv-cart-mount-tv-stand-55-90-inch-tv-stand-cart-tv-floor-stand.json
+2026-02-28 18:21:14 [debug]: [PcWorxScraper] JSON success: North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand
+2026-02-28 18:21:17 [info]: [SearchService] Raw products: 11
+2026-02-28 18:21:17 [info]: [SearchService] Unique products after dedup: 11
+2026-02-28 18:21:17 [debug]: [SearchService] ✗ REJECTED: "LOGITECH Z313 2.1 Speaker System with Subwoofer (Black)" (PCExpress)
+2026-02-28 18:21:17 [debug]: [SearchService] ✗ REJECTED: "LOGITECH H390 USB W/ Mic Headset" (PCExpress)
+2026-02-28 18:21:17 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-02-28 18:21:17 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-02-28 18:21:17 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-02-28 18:21:17 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN Display Port Male To HDMI Male Cable 2m (Black) (DP101/10202)" (VillMan)
+2026-02-28 18:21:17 [debug]: [SearchService] ✗ REJECTED: "Generic HD15Male - HD15Male VGA Cable 5 Meter Ordinary" (PCWorx)
+2026-02-28 18:21:17 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen DP101/10202 Display port Male To HDMI Male Cable 2Meters Black" (PCWorx)
+2026-02-28 18:21:17 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen MM137/40363 DisplayPort to HDMI Female Converter 4K" (PCWorx)
+2026-02-28 18:21:17 [debug]: [SearchService] ✗ REJECTED: "Vention ALJBH HDMI 2Meters Black" (PCWorx)
+2026-02-28 18:21:17 [debug]: [SearchService] ✓ ACCEPTED: "North Bayou NB-AVA1800-70-1P 55"-90" Inch TV Cart Mount | TV Stand | 55"-90" Inch TV Stand Cart | TV Floor Stand" (PCWorx)
+2026-02-28 18:21:17 [info]: [SearchService] Relevance filter: 5/11 products kept
+2026-02-28 18:21:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:21:18 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:21:18 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:21:18 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:21:18 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:21:18 [info]: [SearchService] Saved 5 products for search #f4d802ca-8c7f-4ddf-bbd0-ae0c03e0d04a
+2026-02-28 18:21:59 [debug]: → GET /api/cart
+2026-02-28 18:22:00 [debug]: → GET /api/cart
+2026-02-28 18:22:01 [debug]: → GET /api/cart
+2026-02-28 18:22:02 [debug]: → GET /api/cart
+2026-02-28 18:22:02 [debug]: → GET /api/cart
+2026-02-28 18:22:02 [debug]: → GET /api/cart
+2026-02-28 18:23:17 [debug]: → GET /api/cart
+2026-02-28 18:23:18 [debug]: → GET /api/cart
+2026-02-28 18:23:18 [debug]: → GET /api/cart
+2026-02-28 18:23:19 [debug]: → GET /api/cart
+2026-02-28 18:25:51 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-02-28 18:26:00 [info]: [DB] Supabase connection verified.
+2026-02-28 18:26:00 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:26:00 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:26:00 [debug]: → GET /api/cart
+2026-02-28 18:26:01 [debug]: → GET /api/cart
+2026-02-28 18:26:01 [debug]: → GET /api/cart
+2026-02-28 18:26:01 [debug]: → GET /api/cart
+2026-02-28 18:26:03 [debug]: → GET /api/cart
+2026-02-28 18:26:03 [debug]: → GET /api/cart
+2026-02-28 18:26:03 [debug]: → GET /api/cart
+2026-02-28 18:26:04 [debug]: → GET /api/cart
+2026-02-28 18:26:51 [debug]: → GET /api/cart
+2026-02-28 18:26:52 [debug]: → GET /api/cart
+2026-02-28 18:26:56 [debug]: → GET /api/cart
+2026-02-28 18:27:04 [debug]: → GET /api/cart
+2026-02-28 18:27:05 [debug]: → GET /api/cart
+2026-02-28 18:27:05 [debug]: → GET /api/cart
+2026-02-28 18:27:05 [debug]: → GET /api/cart
+2026-02-28 18:28:08 [debug]: → GET /api/cart
+2026-02-28 18:28:08 [debug]: → GET /api/cart
+2026-02-28 18:28:10 [debug]: → GET /api/cart
+2026-02-28 18:28:10 [debug]: → GET /api/search/stores
+2026-02-28 18:28:10 [debug]: → GET /api/search
+2026-02-28 18:28:10 [debug]: → GET /api/search/stores
+2026-02-28 18:28:11 [debug]: → GET /api/cart
+2026-02-28 18:28:11 [info]: [SearchService] Search #c37e52bc-32eb-4e7c-96ab-564d2d3a317b - "egg"
+2026-02-28 18:28:11 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-02-28 18:28:12 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:12 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:12 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:12 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 18:28:12 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-02-28 18:28:12 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:28:12 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-02-28 18:28:12 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 18:28:12 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-28 18:28:16 [debug]: → GET /api/search
+2026-02-28 18:28:21 [info]: [SearchService] Search #f12eb586-b2e7-4245-9a8c-3466f824e8c7 - "television"
+2026-02-28 18:28:21 [info]: [Backend Cache MISS] Scraping: "television"...
+2026-02-28 18:28:21 [debug]: → GET /api/search
+2026-02-28 18:28:22 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:22 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:23 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:25 [info]: [SearchService] Search #153d84e1-a44e-4e9d-aec7-c7ec6998a750 - "monitor"
+2026-02-28 18:28:25 [info]: [Backend Cache MISS] Scraping: "monitor"...
+2026-02-28 18:28:26 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:26 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:26 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:27 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:28:27 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 18:28:27 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 18:28:27 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=television
+2026-02-28 18:28:27 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 18:28:27 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=television
+2026-02-28 18:28:29 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 18:28:29 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 18:28:29 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 18:28:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-ka252q-g0bi.json
+2026-02-28 18:28:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-x34-x-34inch-uwqhd-oled-240hz-0-01ms-curved-gaming-monitor.json
+2026-02-28 18:28:30 [debug]: → GET /api/search
+2026-02-28 18:28:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-27-xg27acs-rog-strix-ips-gaming-monitor.json
+2026-02-28 18:28:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-vg259q5a-24-5-ips-200hz-fhd-tuf-gaming-monitor.json
+2026-02-28 18:28:33 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 18:28:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-27g42e-27-ips-180hz-fhd-adaptive-sync-gaming-monitor.json
+2026-02-28 18:28:42 [info]: [SearchService] Search #0403b58b-b970-4b43-a2aa-02467d1f8697 - "egg"
+2026-02-28 18:28:42 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-02-28 18:28:42 [debug]: [VillmanScraper] JSON success: Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor
+2026-02-28 18:28:43 [debug]: [VillmanScraper] JSON success: Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor
+2026-02-28 18:28:44 [debug]: [PcExpressScraper] JSON success: ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor
+2026-02-28 18:28:44 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 18:28:45 [debug]: [PcWorxScraper] JSON success: Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor
+2026-02-28 18:28:47 [debug]: [PcWorxScraper] JSON success: AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor
+2026-02-28 18:28:47 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:47 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:47 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:48 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2277ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=egg", waiting until "load"[22m
+
+2026-02-28 18:28:49 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 18:28:49 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-02-28 18:28:49 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:28:49 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-02-28 18:28:49 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 18:28:49 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-28 18:28:52 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-02-28 18:28:55 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-02-28 18:28:56 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hp-23-8-524sf-94c18aa-ips-monitor.json
+2026-02-28 18:28:56 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aopen-27-27sa3-g0bi-ips-monitor.json
+2026-02-28 18:28:56 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-02-28 18:28:56 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-02-28 18:28:56 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-02-28 18:28:56 [info]: [SearchService] Raw products: 0
+2026-02-28 18:28:56 [info]: [SearchService] Unique products after dedup: 0
+2026-02-28 18:28:56 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-02-28 18:28:56 [info]: [SearchService] Saved 0 products for search #c37e52bc-32eb-4e7c-96ab-564d2d3a317b
+2026-02-28 18:28:56 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 18:28:57 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-va24ehf-monitor.json
+2026-02-28 18:28:57 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aopen-24cl1y-g-monitor.json
+2026-02-28 18:28:57 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-22b15hn-21-45-va-100hz-fhd-vga-hdmi-monitor.json
+2026-02-28 18:28:57 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/samsung-ls27dm500eexxp-27-smart-monitor-m5-m50d-fhd-monitor.json
+2026-02-28 18:28:58 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2170ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=television", waiting until "load"[22m
+
+2026-02-28 18:29:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-02-28 18:29:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-02-28 18:29:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-02-28 18:29:06 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-02-28 18:29:06 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-02-28 18:29:06 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-02-28 18:29:06 [info]: [SearchService] Raw products: 0
+2026-02-28 18:29:06 [info]: [SearchService] Unique products after dedup: 0
+2026-02-28 18:29:06 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-02-28 18:29:07 [info]: [SearchService] Saved 0 products for search #f12eb586-b2e7-4245-9a8c-3466f824e8c7
+2026-02-28 18:29:08 [debug]: [PcWorxScraper] JSON success: AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor
+2026-02-28 18:29:08 [debug]: [VillmanScraper] JSON success: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor
+2026-02-28 18:29:08 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-28 18:29:08 [debug]: [PcWorxScraper] JSON success: Samsung LS27DM500EEXXP 27" Smart Monitor M5 M50D FHD Monitor
+2026-02-28 18:29:08 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-02-28 18:29:08 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:29:08 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-02-28 18:29:08 [debug]: [PcExpressScraper] JSON success: HP 23.8" 524SF (94C18AA) IPS Monitor
+2026-02-28 18:29:08 [debug]: [VillmanScraper] JSON success: Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor
+2026-02-28 18:29:08 [debug]: [PcExpressScraper] JSON success: AOPEN 27" 27SA3 G0BI IPS Monitor
+2026-02-28 18:29:09 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-28 18:29:09 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=television&resources[type]=product&resources[limit]=10
+2026-02-28 18:29:10 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-02-28 18:29:10 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-02-28 18:29:10 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-02-28 18:29:10 [info]: [SearchService] Raw products: 0
+2026-02-28 18:29:10 [info]: [SearchService] Unique products after dedup: 0
+2026-02-28 18:29:10 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-02-28 18:29:10 [info]: [SearchService] Saved 0 products for search #153d84e1-a44e-4e9d-aec7-c7ec6998a750
+2026-02-28 18:29:12 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 18:29:12 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=television
+2026-02-28 18:29:14 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-02-28 18:30:02 [info]: [DB] Supabase connection verified.
+2026-02-28 18:30:02 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 18:30:02 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 18:30:40 [debug]: → GET /api/cart
+2026-02-28 18:30:41 [debug]: → GET /api/cart
+2026-02-28 18:30:42 [debug]: → GET /api/cart
+2026-02-28 18:30:42 [debug]: → GET /api/cart
+2026-02-28 18:30:42 [debug]: → GET /api/cart
+2026-02-28 18:30:43 [debug]: → GET /api/cart
+2026-02-28 18:30:49 [debug]: → GET /api/cart
+2026-02-28 18:30:49 [debug]: → GET /api/cart
+2026-02-28 18:30:55 [debug]: → GET /api/cart
+2026-02-28 18:30:55 [debug]: → GET /api/search/stores
+2026-02-28 18:30:55 [debug]: → GET /api/search
+2026-02-28 18:30:55 [debug]: → GET /api/search/stores
+2026-02-28 18:30:56 [debug]: → GET /api/cart
+2026-02-28 18:30:56 [info]: [SearchService] Search #50c6dddf-6ebc-4d1d-a199-394264360278 - "monitor"
+2026-02-28 18:30:56 [info]: [Backend Cache MISS] Scraping: "monitor"...
+2026-02-28 18:30:56 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:30:56 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:30:56 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-02-28 18:30:57 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 18:30:57 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 18:30:57 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 18:30:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-x34-x-34inch-uwqhd-oled-240hz-0-01ms-curved-gaming-monitor.json
+2026-02-28 18:30:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-ka252q-g0bi.json
+2026-02-28 18:30:58 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-vg259q5a-24-5-ips-200hz-fhd-tuf-gaming-monitor.json
+2026-02-28 18:30:58 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-27g42e-27-ips-180hz-fhd-adaptive-sync-gaming-monitor.json
+2026-02-28 18:30:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-27-xg27acs-rog-strix-ips-gaming-monitor.json
+2026-02-28 18:30:59 [debug]: [VillmanScraper] JSON success: Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor
+2026-02-28 18:30:59 [debug]: [VillmanScraper] JSON success: Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor
+2026-02-28 18:30:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 18:30:59 [debug]: [PcWorxScraper] JSON success: Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor
+2026-02-28 18:30:59 [debug]: [PcWorxScraper] JSON success: AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor
+2026-02-28 18:30:59 [debug]: [PcExpressScraper] JSON success: ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor
+2026-02-28 18:30:59 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 18:31:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hp-23-8-524sf-94c18aa-ips-monitor.json
+2026-02-28 18:31:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aopen-27-27sa3-g0bi-ips-monitor.json
+2026-02-28 18:31:01 [debug]: [PcExpressScraper] JSON success: HP 23.8" 524SF (94C18AA) IPS Monitor
+2026-02-28 18:31:02 [debug]: [PcExpressScraper] JSON success: AOPEN 27" 27SA3 G0BI IPS Monitor
+2026-02-28 18:31:02 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-va24ehf-monitor.json
+2026-02-28 18:31:02 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aopen-24cl1y-g-monitor.json
+2026-02-28 18:31:02 [debug]: [VillmanScraper] JSON success: Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor
+2026-02-28 18:31:02 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-22b15hn-21-45-va-100hz-fhd-vga-hdmi-monitor.json
+2026-02-28 18:31:02 [debug]: [VillmanScraper] JSON success: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor
+2026-02-28 18:31:02 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/samsung-ls27dm500eexxp-27-smart-monitor-m5-m50d-fhd-monitor.json
+2026-02-28 18:31:03 [debug]: [PcWorxScraper] JSON success: AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor
+2026-02-28 18:31:03 [debug]: [PcWorxScraper] JSON success: Samsung LS27DM500EEXXP 27" Smart Monitor M5 M50D FHD Monitor
+2026-02-28 18:31:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-02-28 18:31:05 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-02-28 18:31:06 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-modern-md272qpw-wqhd-ips-75hz-4ms-monitor.json
+2026-02-28 18:31:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-24b3ca2-23-8-ips-100hz-fhd-monitor.json
+2026-02-28 18:31:07 [debug]: [VillmanScraper] JSON success: MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor
+2026-02-28 18:31:07 [debug]: [PcWorxScraper] JSON success: AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor
+2026-02-28 18:31:10 [info]: [SearchService] Raw products: 15
+2026-02-28 18:31:10 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor" (PCExpress)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "HP 23.8" 524SF (94C18AA) IPS Monitor" (PCExpress)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 27" 27SA3 G0BI IPS Monitor" (PCExpress)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "MSI 21.5" MP225V PRO Monitor" (PCExpress)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor" (VillMan)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor" (VillMan)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor" (VillMan)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor" (VillMan)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor" (VillMan)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor" (PCWorx)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor" (PCWorx)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor" (PCWorx)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "Samsung LS27DM500EEXXP 27" Smart Monitor M5 M50D FHD Monitor" (PCWorx)
+2026-02-28 18:31:10 [debug]: [SearchService] ✓ ACCEPTED: "AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor" (PCWorx)
+2026-02-28 18:31:10 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 18:31:10 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:11 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:11 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:11 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:11 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:12 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:12 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:13 [info]: [SearchService] Saved 15 products for search #50c6dddf-6ebc-4d1d-a199-394264360278
+2026-02-28 18:31:13 [debug]: → GET /api/search
+2026-02-28 18:31:13 [info]: [SearchService] Search #530bf5fd-dc27-4f76-8956-a2d700b69339 - "monitor"
+2026-02-28 18:31:13 [info]: [Backend Cache HIT] Query: "monitor"
+2026-02-28 18:31:13 [info]: [SearchService] Raw products: 15
+2026-02-28 18:31:13 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor" (PCExpress)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "HP 23.8" 524SF (94C18AA) IPS Monitor" (PCExpress)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 27" 27SA3 G0BI IPS Monitor" (PCExpress)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "MSI 21.5" MP225V PRO Monitor" (PCExpress)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor" (VillMan)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor" (VillMan)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor" (VillMan)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor" (VillMan)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor" (VillMan)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor" (PCWorx)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor" (PCWorx)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor" (PCWorx)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "Samsung LS27DM500EEXXP 27" Smart Monitor M5 M50D FHD Monitor" (PCWorx)
+2026-02-28 18:31:13 [debug]: [SearchService] ✓ ACCEPTED: "AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor" (PCWorx)
+2026-02-28 18:31:13 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 18:31:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:14 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 18:31:15 [info]: [SearchService] Saved 15 products for search #530bf5fd-dc27-4f76-8956-a2d700b69339
+2026-02-28 18:31:22 [debug]: → GET /api/cart
+2026-02-28 18:31:22 [debug]: → GET /api/products/PCExpress/4c7509d0-20af-4d40-856c-77e7053c723d
+2026-02-28 18:31:22 [debug]: → GET /api/cart
+2026-02-28 18:31:23 [debug]: → GET /api/products/PCExpress/4c7509d0-20af-4d40-856c-77e7053c723d
+2026-02-28 18:31:23 [debug]: → GET /api/cart
+2026-02-28 18:31:23 [debug]: → GET /api/cart
+2026-02-28 18:31:24 [debug]: → POST /api/cart
+2026-02-28 18:31:25 [debug]: → GET /api/cart
+2026-02-28 18:31:25 [debug]: → GET /api/cart
+2026-02-28 18:31:27 [debug]: → GET /api/cart
+2026-02-28 18:31:28 [debug]: → GET /api/cart
+2026-02-28 18:31:28 [debug]: → GET /api/cart
+2026-02-28 18:31:28 [debug]: → GET /api/cart
+2026-02-28 18:31:29 [debug]: → GET /api/cart
+2026-02-28 18:31:29 [debug]: → GET /api/cart
+2026-02-28 18:31:29 [debug]: → GET /api/cart
+2026-02-28 18:31:40 [debug]: → GET /api/cart
+2026-02-28 18:31:41 [debug]: → GET /api/cart
+2026-02-28 18:31:41 [debug]: → GET /api/cart
+2026-02-28 18:31:41 [debug]: → GET /api/cart
+2026-02-28 18:31:41 [debug]: → GET /api/cart
+2026-02-28 18:31:42 [debug]: → GET /api/cart
+2026-02-28 18:31:42 [debug]: → GET /api/cart
+2026-02-28 18:31:42 [debug]: → GET /api/cart
+2026-02-28 18:31:42 [debug]: → GET /api/cart
+2026-02-28 18:31:43 [debug]: → GET /api/cart
+2026-02-28 18:31:43 [debug]: → GET /api/cart
+2026-02-28 18:31:43 [debug]: → GET /api/cart
+2026-02-28 18:31:43 [debug]: → GET /api/cart
+2026-02-28 18:31:44 [debug]: → GET /api/cart
+2026-02-28 18:31:44 [debug]: → GET /api/cart
+2026-02-28 18:31:45 [debug]: → GET /api/cart
+2026-02-28 18:31:45 [debug]: → GET /api/cart
+2026-02-28 18:31:45 [debug]: → GET /api/cart
+2026-02-28 18:31:45 [debug]: → GET /api/cart
+2026-02-28 18:31:46 [debug]: → GET /api/cart
+2026-02-28 18:31:46 [debug]: → GET /api/cart
+2026-02-28 18:31:46 [debug]: → GET /api/cart
+2026-02-28 18:31:46 [debug]: → GET /api/cart
+2026-02-28 18:31:47 [debug]: → GET /api/cart
+2026-02-28 18:31:47 [debug]: → GET /api/cart
+2026-02-28 18:31:47 [debug]: → GET /api/cart
+2026-02-28 18:31:48 [debug]: → GET /api/cart
+2026-02-28 18:31:48 [debug]: → GET /api/cart
+2026-02-28 18:31:48 [debug]: → GET /api/cart
+2026-02-28 18:31:49 [debug]: → GET /api/cart
+2026-02-28 18:32:40 [debug]: → GET /api/cart
+2026-02-28 18:32:41 [debug]: → GET /api/cart
+2026-02-28 18:32:42 [debug]: → GET /api/cart
+2026-02-28 18:32:42 [debug]: → GET /api/cart
+2026-02-28 18:32:42 [debug]: → GET /api/cart
+2026-02-28 18:32:43 [debug]: → GET /api/cart
+2026-02-28 18:32:43 [debug]: → GET /api/cart
+2026-02-28 18:32:43 [debug]: → GET /api/cart
+2026-02-28 18:32:43 [debug]: → GET /api/cart
+2026-02-28 18:32:44 [debug]: → GET /api/cart
+2026-02-28 18:32:44 [debug]: → GET /api/cart
+2026-02-28 18:32:44 [debug]: → GET /api/cart
+2026-02-28 18:32:45 [debug]: → GET /api/cart
+2026-02-28 18:32:45 [debug]: → GET /api/cart
+2026-02-28 18:32:46 [debug]: → GET /api/cart
+2026-02-28 18:32:46 [debug]: → GET /api/cart
+2026-02-28 18:32:46 [debug]: → GET /api/cart
+2026-02-28 18:32:46 [debug]: → GET /api/cart
+2026-02-28 18:32:47 [debug]: → GET /api/cart
+2026-02-28 18:32:47 [debug]: → GET /api/cart
+2026-02-28 18:32:47 [debug]: → GET /api/cart
+2026-02-28 18:32:48 [debug]: → GET /api/cart
+2026-02-28 18:32:48 [debug]: → GET /api/cart
+2026-02-28 18:32:48 [debug]: → GET /api/cart
+2026-02-28 18:32:48 [debug]: → GET /api/cart
+2026-02-28 18:32:49 [debug]: → GET /api/cart
+2026-02-28 18:32:49 [debug]: → GET /api/cart
+2026-02-28 18:32:49 [debug]: → GET /api/cart
+2026-02-28 18:32:59 [debug]: → GET /api/cart
+2026-02-28 18:32:59 [debug]: → GET /api/products/PCExpress/4c7509d0-20af-4d40-856c-77e7053c723d
+2026-02-28 18:33:40 [debug]: → GET /api/cart
+2026-02-28 18:33:41 [debug]: → GET /api/cart
+2026-02-28 18:33:41 [debug]: → GET /api/cart
+2026-02-28 18:33:41 [debug]: → GET /api/cart
+2026-02-28 18:33:41 [debug]: → GET /api/cart
+2026-02-28 18:33:42 [debug]: → GET /api/cart
+2026-02-28 18:33:42 [debug]: → GET /api/cart
+2026-02-28 18:33:42 [debug]: → GET /api/cart
+2026-02-28 18:33:42 [debug]: → GET /api/cart
+2026-02-28 18:33:43 [debug]: → GET /api/cart
+2026-02-28 18:33:43 [debug]: → GET /api/cart
+2026-02-28 18:33:43 [debug]: → GET /api/cart
+2026-02-28 18:33:43 [debug]: → GET /api/cart
+2026-02-28 18:33:44 [debug]: → GET /api/cart
+2026-02-28 18:33:44 [debug]: → GET /api/cart
+2026-02-28 18:33:44 [debug]: → GET /api/cart
+2026-02-28 18:33:45 [debug]: → GET /api/cart
+2026-02-28 18:33:45 [debug]: → GET /api/cart
+2026-02-28 18:33:45 [debug]: → GET /api/cart
+2026-02-28 18:33:45 [debug]: → GET /api/cart
+2026-02-28 18:33:46 [debug]: → GET /api/cart
+2026-02-28 18:33:46 [debug]: → GET /api/cart
+2026-02-28 18:33:46 [debug]: → GET /api/cart
+2026-02-28 18:33:46 [debug]: → GET /api/cart
+2026-02-28 18:33:47 [debug]: → GET /api/cart
+2026-02-28 18:33:47 [debug]: → GET /api/cart
+2026-02-28 18:33:47 [debug]: → GET /api/cart
+2026-02-28 18:33:47 [debug]: → GET /api/cart
+2026-02-28 18:35:46 [debug]: → GET /api/cart
+2026-02-28 18:35:47 [debug]: → GET /api/cart
+2026-02-28 18:39:43 [debug]: → GET /api/cart
+2026-02-28 18:39:44 [debug]: → GET /api/cart
+2026-02-28 18:39:45 [debug]: → GET /api/cart
+2026-02-28 18:39:45 [debug]: → GET /api/cart
+2026-02-28 18:39:45 [debug]: → GET /api/cart
+2026-02-28 18:39:46 [debug]: → GET /api/cart
+2026-02-28 18:40:15 [debug]: → GET /api/cart
+2026-02-28 18:40:29 [debug]: → DELETE /api/cart/969c3a67-bcf4-4312-aecb-3a136f9c48a2
+2026-02-28 18:40:29 [debug]: → DELETE /api/cart/bd45549e-52ef-4c64-889d-cc5525652598
+2026-02-28 18:40:29 [debug]: → GET /api/cart
+2026-02-28 18:40:30 [debug]: → GET /api/cart
+2026-02-28 18:40:30 [debug]: → GET /api/cart
+2026-02-28 18:40:30 [debug]: → GET /api/cart
+2026-02-28 18:40:32 [debug]: → DELETE /api/cart/8b9fb9d1-4950-4e87-9ed6-23ca0329e535
+2026-02-28 18:40:32 [debug]: → GET /api/cart
+2026-02-28 18:40:33 [debug]: → GET /api/cart
+2026-02-28 18:40:33 [debug]: → GET /api/cart
+2026-02-28 18:40:34 [debug]: → GET /api/cart
+2026-02-28 18:40:34 [debug]: → GET /api/cart
+2026-02-28 18:40:34 [debug]: → GET /api/cart
+2026-02-28 18:40:36 [debug]: → GET /api/cart
+2026-02-28 18:40:37 [debug]: → GET /api/cart
+2026-02-28 21:52:20 [debug]: → GET /api/cart
+2026-02-28 21:52:22 [debug]: → GET /api/cart
+2026-02-28 21:52:22 [debug]: → GET /api/search/stores
+2026-02-28 21:52:22 [debug]: → GET /api/search/stores
+2026-02-28 21:52:22 [debug]: → GET /api/cart
+2026-02-28 21:52:22 [debug]: → GET /api/cart
+2026-02-28 21:52:23 [debug]: → GET /api/cart
+2026-02-28 21:52:23 [debug]: → GET /api/cart
+2026-02-28 21:52:26 [debug]: → GET /api/search
+2026-02-28 21:52:26 [info]: [SearchService] Search #fe9399bb-60ed-43bd-ad9c-b3647ef455c8 - "egg"
+2026-02-28 21:52:26 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-02-28 21:52:27 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 21:52:27 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 21:52:27 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-02-28 21:52:31 [info]: [PcExpressScraper] API found 0 product URLs
+2026-02-28 21:52:31 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-02-28 21:52:31 [info]: [PcWorxScraper] API found 0 product URLs
+2026-02-28 21:52:31 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-02-28 21:52:31 [info]: [VillmanScraper] API found 0 product URLs
+2026-02-28 21:52:31 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-02-28 21:52:49 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-02-28 21:52:49 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-02-28 21:52:52 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-02-28 21:52:52 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-02-28 21:52:52 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-02-28 21:52:53 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-02-28 21:52:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-02-28 21:52:53 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-02-28 21:52:53 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-28 21:52:54 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-02-28 21:52:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-28 21:53:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-02-28 21:53:00 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-28 21:53:01 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-02-28 21:53:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-02-28 21:53:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-02-28 21:53:02 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-02-28 21:53:02 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-02-28 21:53:06 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-02-28 21:53:06 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-02-28 21:53:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-02-28 21:53:07 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-02-28 21:53:07 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-02-28 21:53:07 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-02-28 21:53:08 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-02-28 21:53:11 [info]: [SearchService] Raw products: 11
+2026-02-28 21:53:11 [info]: [SearchService] Unique products after dedup: 11
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "LOGITECH H390 USB W/ Mic Headset" (PCExpress)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win" (VillMan)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-02-28 21:53:11 [debug]: [SearchService] ✗ REJECTED: "Simplus Air Fryer 4L Electric Fryer 2 Knobs Black" (PCWorx)
+2026-02-28 21:53:11 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-02-28 21:53:11 [info]: [SearchService] Saved 0 products for search #fe9399bb-60ed-43bd-ad9c-b3647ef455c8
+2026-02-28 21:53:38 [debug]: → GET /api/cart
+2026-02-28 21:53:39 [debug]: → GET /api/cart
+2026-02-28 21:53:39 [debug]: → GET /api/cart
+2026-02-28 21:53:39 [debug]: → GET /api/search/stores
+2026-02-28 21:53:39 [debug]: → GET /api/search/stores
+2026-02-28 21:53:39 [debug]: → GET /api/cart
+2026-02-28 21:53:40 [debug]: → GET /api/cart
+2026-02-28 21:53:40 [debug]: → GET /api/cart
+2026-02-28 21:53:47 [debug]: → GET /api/search
+2026-02-28 21:53:48 [info]: [SearchService] Search #fc65b3e9-de06-4ebc-ab59-1ee9bfa7f37a - "cpu"
+2026-02-28 21:53:48 [info]: [Backend Cache MISS] Scraping: "cpu"...
+2026-02-28 21:53:48 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-02-28 21:53:48 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-02-28 21:53:48 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-02-28 21:53:49 [info]: [PcExpressScraper] API found 5 product URLs
+2026-02-28 21:53:49 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 21:53:49 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 21:53:50 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-02-28 21:53:50 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-02-28 21:53:50 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-02-28 21:53:50 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-02-28 21:53:50 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-02-28 21:53:50 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-02-28 21:53:50 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-02-28 21:53:50 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-02-28 21:53:50 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-02-28 21:53:50 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-02-28 21:53:50 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-02-28 21:53:50 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-02-28 21:53:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-02-28 21:53:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-02-28 21:53:54 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-02-28 21:53:54 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/deepcool-gammaxx-ag400-bk-argb-cpu-air-cooler.json
+2026-02-28 21:53:54 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-02-28 21:53:54 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-02-28 21:53:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-02-28 21:53:54 [debug]: [VillmanScraper] JSON success: DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER
+2026-02-28 21:53:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-prime-lc-240-argb-all-in-one-cpu-liquid-cooler-fan.json
+2026-02-28 21:53:55 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-02-28 21:53:55 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-02-28 21:53:55 [debug]: [PcExpressScraper] JSON success: ASUS Prime LC 240 ARGB All-in-One CPU Liquid Cooler Fan
+2026-02-28 21:53:56 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-02-28 21:53:57 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-02-28 21:53:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-mag-coreliquid-i240-aio-lc-argb-cpu-liquid-cooler-fan-black.json
+2026-02-28 21:53:58 [debug]: [PcExpressScraper] JSON success: MSI MAG CORELIQUID I240 AIO LC ARGB CPU Liquid Cooler Fan (Black)
+2026-02-28 21:53:58 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-02-28 21:53:59 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-02-28 21:54:02 [info]: [SearchService] Raw products: 15
+2026-02-28 21:54:02 [info]: [SearchService] Unique products after dedup: 15
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "ASUS Prime LC 240 ARGB All-in-One CPU Liquid Cooler Fan" (PCExpress)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID I240 AIO LC ARGB CPU Liquid Cooler Fan (Black)" (PCExpress)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER" (VillMan)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-02-28 21:54:02 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-02-28 21:54:02 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-02-28 21:54:02 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 21:54:02 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 21:54:02 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 21:54:02 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:54:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:54:04 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:54:04 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:54:04 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:54:04 [info]: [SearchService] Saved 15 products for search #fc65b3e9-de06-4ebc-ab59-1ee9bfa7f37a
+2026-02-28 21:54:18 [debug]: → GET /api/cart
+2026-02-28 21:54:18 [debug]: → GET /api/products/PCExpress/32a278ec-13f3-41e9-b204-b4073e6b7b28
+2026-02-28 21:54:18 [debug]: → GET /api/cart
+2026-02-28 21:54:18 [debug]: → GET /api/products/PCExpress/32a278ec-13f3-41e9-b204-b4073e6b7b28
+2026-02-28 21:54:18 [debug]: → GET /api/cart
+2026-02-28 21:54:19 [debug]: → GET /api/cart
+2026-02-28 21:54:20 [debug]: → POST /api/cart
+2026-02-28 21:54:21 [debug]: → GET /api/cart
+2026-02-28 21:54:21 [debug]: → GET /api/cart
+2026-02-28 21:54:24 [debug]: → GET /api/cart
+2026-02-28 21:54:24 [debug]: → GET /api/cart
+2026-02-28 21:54:25 [debug]: → GET /api/cart
+2026-02-28 21:54:25 [debug]: → GET /api/cart
+2026-02-28 21:54:25 [debug]: → GET /api/cart
+2026-02-28 21:54:25 [debug]: → GET /api/cart
+2026-02-28 21:54:26 [debug]: → GET /api/cart
+2026-02-28 21:54:26 [debug]: → GET /api/cart
+2026-02-28 21:55:12 [debug]: → DELETE /api/cart/525c3c07-a758-4070-831f-344f754452a9
+2026-02-28 21:55:13 [debug]: → GET /api/cart
+2026-02-28 21:55:14 [debug]: → GET /api/cart
+2026-02-28 21:55:16 [debug]: → GET /api/cart
+2026-02-28 21:55:17 [debug]: → GET /api/cart
+2026-02-28 21:55:17 [debug]: → GET /api/cart
+2026-02-28 21:55:18 [debug]: → GET /api/cart
+2026-02-28 21:55:46 [info]: [DB] Supabase connection verified.
+2026-02-28 21:55:47 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 21:55:47 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 21:55:52 [info]: [DB] Supabase connection verified.
+2026-02-28 21:55:52 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 21:55:52 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 21:56:04 [info]: [DB] Supabase connection verified.
+2026-02-28 21:56:04 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 21:56:04 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 21:57:13 [info]: [DB] Supabase connection verified.
+2026-02-28 21:57:13 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 21:57:13 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-02-28 21:58:17 [debug]: → GET /api/cart
+2026-02-28 21:58:17 [debug]: → GET /api/search/stores
+2026-02-28 21:58:17 [debug]: → GET /api/search/stores
+2026-02-28 21:58:18 [debug]: → GET /api/cart
+2026-02-28 21:58:27 [debug]: → GET /api/search
+2026-02-28 21:58:27 [info]: [SearchService] Search #891638cf-aed6-4185-bfb5-cafa4f89a52c - "processor"
+2026-02-28 21:58:27 [info]: [Backend Cache MISS] Scraping: "processor"...
+2026-02-28 21:58:28 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-02-28 21:58:28 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-02-28 21:58:28 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-02-28 21:58:28 [info]: [PcExpressScraper] API found 1 product URLs
+2026-02-28 21:58:29 [info]: [VillmanScraper] API found 5 product URLs
+2026-02-28 21:58:29 [info]: [PcWorxScraper] API found 5 product URLs
+2026-02-28 21:58:29 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/intel-core-i7-14700f-desktop-processor.json
+2026-02-28 21:58:29 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i5-13400-processor.json
+2026-02-28 21:58:29 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i3-12100-processor.json
+2026-02-28 21:58:30 [debug]: [PcExpressScraper] JSON success: Intel® Core™ I7-14700F Desktop Processor
+2026-02-28 21:58:30 [debug]: [VillmanScraper] JSON success: Intel Core i5-13400 Processor
+2026-02-28 21:58:30 [debug]: [VillmanScraper] JSON success: Intel Core i3-12100 Processor
+2026-02-28 21:58:30 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-02-28 21:58:30 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700g-3-8ghz-65w-am4-processor.json
+2026-02-28 21:58:30 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-02-28 21:58:31 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 7 5700G 3.8GHz 65W AM4 Processor
+2026-02-28 21:58:33 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i7-12700-2-1ghz-12-core-20-threads-25m-cache-lga1700-processor.json
+2026-02-28 21:58:33 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-5600-3-5ghz-65w-am4-processor-no-built-in-graphics.json
+2026-02-28 21:58:34 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 5 5600 3.5GHz 65W AM4 Processor (no built in graphics)
+2026-02-28 21:58:34 [debug]: [PcWorxScraper] JSON success: Intel i7-12700 2.1GHZ 12 Core 20 Threads 25M Cache LGA1700 Processor
+2026-02-28 21:58:34 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i7-13700k-processor.json
+2026-02-28 21:58:34 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i9-13900k-processor.json
+2026-02-28 21:58:35 [debug]: [VillmanScraper] JSON success: Intel Core i7-13700K Processor
+2026-02-28 21:58:35 [debug]: [VillmanScraper] JSON success: Intel Core i9-13900K Processor
+2026-02-28 21:58:38 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700x-3-4ghz-65w-am4-processor-no-built-in-graphics-fan.json
+2026-02-28 21:58:38 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 7 5700X 3.4GHz 65W AM4 Processor (no built in graphics/fan)
+2026-02-28 21:58:39 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/product.json
+2026-02-28 21:58:40 [debug]: [VillmanScraper] JSON success: Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)
+2026-02-28 21:58:42 [info]: [SearchService] Raw products: 11
+2026-02-28 21:58:42 [info]: [SearchService] Unique products after dedup: 11
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "Intel® Core™ I7-14700F Desktop Processor" (PCExpress)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13400 Processor" (VillMan)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i3-12100 Processor" (VillMan)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i7-13700K Processor" (VillMan)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i9-13900K Processor" (VillMan)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)" (VillMan)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 7 5700G 3.8GHz 65W AM4 Processor" (PCWorx)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "Intel i7-12700 2.1GHZ 12 Core 20 Threads 25M Cache LGA1700 Processor" (PCWorx)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "AMD RYZEN 5 5600 3.5GHz 65W AM4 Processor (no built in graphics)" (PCWorx)
+2026-02-28 21:58:42 [debug]: [SearchService] ✓ ACCEPTED: "AMD RYZEN 7 5700X 3.4GHz 65W AM4 Processor (no built in graphics/fan)" (PCWorx)
+2026-02-28 21:58:42 [info]: [SearchService] Relevance filter: 11/11 products kept
+2026-02-28 21:58:42 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: 23dfd2d7-dc9d-43b4-aab9-ab500241b0aa
+2026-02-28 21:58:42 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 4bb2b418-2f2f-4b8c-9379-1e874aaf0906
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:58:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:58:44 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: baa131a0-a8ad-43c6-9e37-521bdb43974f
+2026-02-28 21:58:51 [info]: [DB] Supabase connection verified.
+2026-02-28 21:58:52 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"23dfd2d7-dc9d-43b4-aab9-ab500241b0aa","villman":"4bb2b418-2f2f-4b8c-9379-1e874aaf0906","pcworx":"baa131a0-a8ad-43c6-9e37-521bdb43974f"}
+2026-02-28 21:58:52 [info]: 🚀 Bakàl backend running on port 3000 [development]
