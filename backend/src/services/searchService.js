@@ -9,6 +9,27 @@ const searchRepo = require('../repositories/searchRepository');
 const productRepo = require('../repositories/productRepository');
 const productSourceRepo = require('../repositories/productSourceRepository');
 
+// ============================================================
+// BACKEND SEARCH CACHE — Prevent re-scraping same query
+// ============================================================
+const scrapeCache = new Map();
+const BACKEND_CACHE_MS = 15 * 60 * 1000; // 15 minutes
+
+const getCachedOrScrape = async (query, scrapeFn) => {
+  const key = query.toLowerCase().trim();
+  const cached = scrapeCache.get(key);
+  
+  if (cached && Date.now() - cached.timestamp < BACKEND_CACHE_MS) {
+    logger.info(`[Backend Cache HIT] Query: "${key}"`);
+    return cached.data;
+  }
+
+  logger.info(`[Backend Cache MISS] Scraping: "${key}"...`);
+  const result = await scrapeFn();
+  scrapeCache.set(key, { data: result, timestamp: Date.now() });
+  return result;
+};
+
 let PLATFORM_IDS = {};
 
 async function loadPlatformIds() {
@@ -23,9 +44,17 @@ async function loadPlatformIds() {
  * At least ONE query word must appear in the product title or URL.
  */
 function isRelevantProduct(product, query) {
-  const queryWords = query.toLowerCase().split(' ').filter(w => w.length > 2);
+  // Split query into words, trim, and remove empty strings
+  // Don't filter by length — keep all words (even 1-2 char like "tv", "4k", "pc")
+  const queryWords = query.toLowerCase().split(/\s+/).filter(w => w.length > 0);
+  
+  // If no query words, accept all products (shouldn't happen)
+  if (queryWords.length === 0) return true;
+  
   const titleLower = (product.title || '').toLowerCase();
   const urlLower = (product.product_url || '').toLowerCase();
+  
+  // At least ONE query word must appear in title or URL
   return queryWords.some(word => titleLower.includes(word) || urlLower.includes(word));
 }
 
@@ -35,27 +64,30 @@ async function search(query, userId = null, maxPerPlatform = 5) {
   const searchRecord = await searchRepo.create(userId, query);
   logger.info(`[SearchService] Search #${searchRecord.id} - "${query}"`);
 
-  // Search all 3 platforms in parallel
-  const [pcexpressResults, villmanResults, pcworxResults] = await Promise.allSettled([
-    pcexpressScraper.search(query, maxPerPlatform),
-    villmanScraper.search(query, maxPerPlatform),
-    pcworxScraper.search(query, maxPerPlatform),
-  ]);
+  // Use backend cache to avoid re-scraping
+  const rawProducts = await getCachedOrScrape(query, async () => {
+    // Search all 3 platforms in parallel
+    const [pcexpressResults, villmanResults, pcworxResults] = await Promise.allSettled([
+      pcexpressScraper.search(query, maxPerPlatform),
+      villmanScraper.search(query, maxPerPlatform),
+      pcworxScraper.search(query, maxPerPlatform),
+    ]);
 
-  if (pcexpressResults.status === 'rejected')
-    logger.error(`[SearchService] PC Express failed: ${pcexpressResults.reason?.message}`);
-  if (villmanResults.status === 'rejected')
-    logger.error(`[SearchService] Villman failed: ${villmanResults.reason?.message}`);
-  if (pcworxResults.status === 'rejected')
-    logger.error(`[SearchService] PC Worx failed: ${pcworxResults.reason?.message}`);
+    if (pcexpressResults.status === 'rejected')
+      logger.error(`[SearchService] PC Express failed: ${pcexpressResults.reason?.message}`);
+    if (villmanResults.status === 'rejected')
+      logger.error(`[SearchService] Villman failed: ${villmanResults.reason?.message}`);
+    if (pcworxResults.status === 'rejected')
+      logger.error(`[SearchService] PC Worx failed: ${pcworxResults.reason?.message}`);
 
-  const rawProducts = [
-    ...(pcexpressResults.status === 'fulfilled' ? pcexpressResults.value : []),
-    ...(villmanResults.status === 'fulfilled' ? villmanResults.value : []),
-    ...(pcworxResults.status === 'fulfilled' ? pcworxResults.value : []),
-  ];
+    return [
+      ...(pcexpressResults.status === 'fulfilled' ? pcexpressResults.value : []),
+      ...(villmanResults.status === 'fulfilled' ? villmanResults.value : []),
+      ...(pcworxResults.status === 'fulfilled' ? pcworxResults.value : []),
+    ];
+  });
 
-  logger.info(`[SearchService] Raw products scraped: ${rawProducts.length}`);
+  logger.info(`[SearchService] Raw products: ${rawProducts.length}`);
 
   // Step 1 — Deduplicate by product_url
   const seen = new Set();
