@@ -105,3 +105,9 @@
   --z-popover: 1500;
   --z-tooltip: 1600;
 }
+
+/* Scraping Loader specific variables */
+:root {
+  --scraping-badge-bg: rgba(10, 26, 58, 0.08);
+  --scraping-skeleton: #f3f4f6;
+}
