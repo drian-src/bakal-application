@@ -10,6 +10,7 @@ const { Strategy: GoogleStrategy } = require('passport-google-oauth20');
 const config = require('./config/dotenv');
 const logger = require('./config/logger');
 const errorHandler = require('./middleware/errorHandler');
+const { requireAuth } = require('./middleware/authMiddleware');
 const { globalLimiter } = require('./middleware/rateLimiter');
 
 const authRoutes = require('./routes/authRoutes');
@@ -17,6 +18,7 @@ const searchRoutes = require('./routes/searchRoutes');
 const recommendationRoutes = require('./routes/recommendationRoutes');
 const productRoutes = require('./routes/productRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
+const cartRoutes = require('./routes/cartRoutes');
 
 const app = express();
 
@@ -75,6 +77,7 @@ app.use('/api/search', searchRoutes);
 app.use('/api/recommendations', recommendationRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/categories', categoryRoutes);
+app.use('/api/cart', requireAuth, cartRoutes);
 
 // Health check
 app.get('/health', (_req, res) => res.json({ status: 'ok', timestamp: new Date().toISOString() }));
