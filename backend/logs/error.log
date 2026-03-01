@@ -462,3 +462,4 @@ Call log:
     at Function.listen (C:\Users\L. L490\OneDrive\Desktop\BAKAL-APP\bakal-application\backend\node_modules\express\lib\application.js:635:24)
     at bootstrap (C:\Users\L. L490\OneDrive\Desktop\BAKAL-APP\bakal-application\backend\src\server.js:13:22)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-01 00:36:14 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
