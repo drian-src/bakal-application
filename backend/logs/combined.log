@@ -10059,3 +10059,234 @@ Call log:
 2026-03-01 00:45:35 [info]: [CartController] Cart retrieved: 4ddb0cbe-72c5-4ee2-aa58-f1faf4f381ad
 2026-03-01 00:45:35 [info]: [CartController] Processing 0 cart items
 2026-03-01 00:45:35 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-01 08:19:38 [info]: [DB] Supabase connection verified.
+2026-03-01 08:19:38 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-01 08:19:38 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-01 08:21:27 [debug]: → POST /api/auth/register
+2026-03-01 08:22:23 [debug]: → GET /api/search/stores
+2026-03-01 08:22:23 [debug]: → GET /api/search
+2026-03-01 08:22:23 [debug]: → GET /api/search/stores
+2026-03-01 08:22:24 [info]: [SearchService] Search #a36d538f-49ce-426d-b939-f769f3113881 - "rj45"
+2026-03-01 08:22:24 [info]: [Backend Cache MISS] Scraping: "rj45"...
+2026-03-01 08:22:24 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-01 08:22:24 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-01 08:22:24 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-01 08:22:28 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-01 08:22:28 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=rj45
+2026-03-01 08:22:28 [info]: [VillmanScraper] API found 1 product URLs
+2026-03-01 08:22:28 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-01 08:22:28 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-to-2xusb-3-0-hdmi-rj45-sd-tf-pd-converter-7-in-1-multifunction-adapter-cm512-60515.json
+2026-03-01 08:22:28 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adlink-rj45-connector-classic-for-cat6.json
+2026-03-01 08:22:28 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amp-rj45-connector-for-cat6.json
+2026-03-01 08:22:30 [debug]: [PcWorxScraper] JSON success: Adlink RJ45 Connector Classic for Cat6 (100/box)
+2026-03-01 08:22:30 [debug]: [VillmanScraper] JSON success: UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)
+2026-03-01 08:22:30 [debug]: [PcWorxScraper] JSON success: AMP RJ45 Connector for Cat6 / PER PIECE
+2026-03-01 08:22:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm498-15601-10in1-usb-c-to-3usb-3-0-a-hdmi-vga-rj45-gigabit-sd-tf-aux3-5m.json
+2026-03-01 08:22:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adlink-rj45-connector-shielded-for-cat6-100pcs-per-jar-box.json
+2026-03-01 08:22:35 [debug]: [PcWorxScraper] JSON success: Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)
+2026-03-01 08:22:35 [debug]: [PcWorxScraper] JSON success: Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m
+2026-03-01 08:22:38 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/orico-pw3ur-c3-015-bk-ep-type-c-4port-usb-3-0-hub-with-1000mbps-rj45.json
+2026-03-01 08:22:39 [debug]: [PcWorxScraper] JSON success: Orico PW3UR-C3-015-BK-EP Type C 4port USB 3.0 Hub with 1000Mbps RJ45
+2026-03-01 08:22:43 [debug]: → GET /api/search
+2026-03-01 08:22:44 [info]: [SearchService] Search #25f4e1e7-e281-4fc6-8bc4-249c1ff6bad8 - "rj45"
+2026-03-01 08:22:44 [info]: [Backend Cache MISS] Scraping: "rj45"...
+2026-03-01 08:22:45 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-01 08:22:45 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-01 08:22:45 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-01 08:22:45 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-01 08:22:45 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=rj45
+2026-03-01 08:22:45 [info]: [VillmanScraper] API found 1 product URLs
+2026-03-01 08:22:45 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-01 08:22:46 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-to-2xusb-3-0-hdmi-rj45-sd-tf-pd-converter-7-in-1-multifunction-adapter-cm512-60515.json
+2026-03-01 08:22:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adlink-rj45-connector-classic-for-cat6.json
+2026-03-01 08:22:46 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-01 08:22:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amp-rj45-connector-for-cat6.json
+2026-03-01 08:22:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-cubi-5-12m-026bph-936-b0a811-027-barebone-intel-core-i5-mini-desktop.json
+2026-03-01 08:22:47 [debug]: [VillmanScraper] JSON success: UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)
+2026-03-01 08:22:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-tl-ue300-usb-3-0-to-gigabit-ethernet-network-adapter.json
+2026-03-01 08:22:47 [debug]: [PcWorxScraper] JSON success: AMP RJ45 Connector for Cat6 / PER PIECE
+2026-03-01 08:22:47 [debug]: [PcWorxScraper] JSON success: Adlink RJ45 Connector Classic for Cat6 (100/box)
+2026-03-01 08:22:48 [debug]: [PcExpressScraper] JSON success: TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter
+2026-03-01 08:22:48 [debug]: [PcExpressScraper] JSON success: MSI CUBI 5 12M-026BPH (936-B0A811-027) Barebone Intel® Core™ i5 Mini Desktop
+2026-03-01 08:22:50 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adlink-rj45-connector-shielded-for-cat6-100pcs-per-jar-box.json
+2026-03-01 08:22:50 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm498-15601-10in1-usb-c-to-3usb-3-0-a-hdmi-vga-rj45-gigabit-sd-tf-aux3-5m.json
+2026-03-01 08:22:50 [debug]: [PcWorxScraper] JSON success: Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)
+2026-03-01 08:22:51 [debug]: [PcWorxScraper] JSON success: Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m
+2026-03-01 08:22:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-cubi-5-12m-026bph-936-b0a811-026-barebone-intel-core-i3-mini-desktop.json
+2026-03-01 08:22:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-tl-wa855re-300mbps-wi-fi-range-extender.json
+2026-03-01 08:22:52 [debug]: [PcExpressScraper] JSON success: MSI CUBI 5 12M-026BPH (936-B0A811-026) Barebone Intel® Core™ i3 Mini Desktop
+2026-03-01 08:22:52 [debug]: [PcExpressScraper] JSON success: TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender
+2026-03-01 08:22:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/orico-pw3ur-c3-015-bk-ep-type-c-4port-usb-3-0-hub-with-1000mbps-rj45.json
+2026-03-01 08:22:54 [debug]: [PcWorxScraper] JSON success: Orico PW3UR-C3-015-BK-EP Type C 4port USB 3.0 Hub with 1000Mbps RJ45
+2026-03-01 08:22:55 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-cubi-5-12m-026bph-9s6-b0a811-474-intel-core-i5-mini-desktop.json
+2026-03-01 08:22:55 [debug]: [PcExpressScraper] JSON success: MSI CUBI 5 12M-026BPH (9S6-B0A811-474) Intel® Core™ i5 Mini Desktop
+2026-03-01 08:22:59 [info]: [SearchService] Raw products: 11
+2026-03-01 08:22:59 [info]: [SearchService] Unique products after dedup: 11
+2026-03-01 08:22:59 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter" (PCExpress)
+2026-03-01 08:22:59 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-027) Barebone Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:22:59 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-026) Barebone Intel® Core™ i3 Mini Desktop" (PCExpress)
+2026-03-01 08:22:59 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender" (PCExpress)
+2026-03-01 08:22:59 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (9S6-B0A811-474) Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:22:59 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)" (VillMan)
+2026-03-01 08:22:59 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Classic for Cat6 (100/box)" (PCWorx)
+2026-03-01 08:22:59 [debug]: [SearchService] ✓ ACCEPTED: "AMP RJ45 Connector for Cat6 / PER PIECE" (PCWorx)
+2026-03-01 08:22:59 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)" (PCWorx)
+2026-03-01 08:22:59 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m" (PCWorx)
+2026-03-01 08:22:59 [debug]: [SearchService] ✓ ACCEPTED: "Orico PW3UR-C3-015-BK-EP Type C 4port USB 3.0 Hub with 1000Mbps RJ45" (PCWorx)
+2026-03-01 08:22:59 [info]: [SearchService] Relevance filter: 6/11 products kept
+2026-03-01 08:22:59 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-01 08:22:59 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:22:59 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:00 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:00 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:00 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:00 [info]: [SearchService] Saved 6 products for search #a36d538f-49ce-426d-b939-f769f3113881
+2026-03-01 08:23:03 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-01 08:23:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-tl-ue300-usb-3-0-to-gigabit-ethernet-network-adapter.json
+2026-03-01 08:23:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-cubi-5-12m-026bph-936-b0a811-027-barebone-intel-core-i5-mini-desktop.json
+2026-03-01 08:23:04 [debug]: [PcExpressScraper] JSON success: TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter
+2026-03-01 08:23:04 [debug]: [PcExpressScraper] JSON success: MSI CUBI 5 12M-026BPH (936-B0A811-027) Barebone Intel® Core™ i5 Mini Desktop
+2026-03-01 08:23:07 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-cubi-5-12m-026bph-936-b0a811-026-barebone-intel-core-i3-mini-desktop.json
+2026-03-01 08:23:07 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-tl-wa855re-300mbps-wi-fi-range-extender.json
+2026-03-01 08:23:08 [debug]: [PcExpressScraper] JSON success: MSI CUBI 5 12M-026BPH (936-B0A811-026) Barebone Intel® Core™ i3 Mini Desktop
+2026-03-01 08:23:08 [debug]: [PcExpressScraper] JSON success: TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender
+2026-03-01 08:23:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-cubi-5-12m-026bph-9s6-b0a811-474-intel-core-i5-mini-desktop.json
+2026-03-01 08:23:10 [debug]: [PcExpressScraper] JSON success: MSI CUBI 5 12M-026BPH (9S6-B0A811-474) Intel® Core™ i5 Mini Desktop
+2026-03-01 08:23:11 [debug]: → GET /api/search
+2026-03-01 08:23:11 [info]: [SearchService] Search #85e66ccc-18fa-4a47-800b-a3ee39ae1685 - "rj45"
+2026-03-01 08:23:11 [info]: [Backend Cache HIT] Query: "rj45"
+2026-03-01 08:23:11 [info]: [SearchService] Raw products: 11
+2026-03-01 08:23:11 [info]: [SearchService] Unique products after dedup: 11
+2026-03-01 08:23:11 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter" (PCExpress)
+2026-03-01 08:23:11 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-027) Barebone Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:23:11 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-026) Barebone Intel® Core™ i3 Mini Desktop" (PCExpress)
+2026-03-01 08:23:11 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender" (PCExpress)
+2026-03-01 08:23:11 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (9S6-B0A811-474) Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:23:11 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)" (VillMan)
+2026-03-01 08:23:11 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Classic for Cat6 (100/box)" (PCWorx)
+2026-03-01 08:23:11 [debug]: [SearchService] ✓ ACCEPTED: "AMP RJ45 Connector for Cat6 / PER PIECE" (PCWorx)
+2026-03-01 08:23:11 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)" (PCWorx)
+2026-03-01 08:23:11 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m" (PCWorx)
+2026-03-01 08:23:11 [debug]: [SearchService] ✓ ACCEPTED: "Orico PW3UR-C3-015-BK-EP Type C 4port USB 3.0 Hub with 1000Mbps RJ45" (PCWorx)
+2026-03-01 08:23:11 [info]: [SearchService] Relevance filter: 6/11 products kept
+2026-03-01 08:23:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-01 08:23:11 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:13 [info]: [SearchService] Saved 6 products for search #85e66ccc-18fa-4a47-800b-a3ee39ae1685
+2026-03-01 08:23:14 [info]: [SearchService] Raw products: 11
+2026-03-01 08:23:14 [info]: [SearchService] Unique products after dedup: 11
+2026-03-01 08:23:14 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter" (PCExpress)
+2026-03-01 08:23:14 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-027) Barebone Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:23:14 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-026) Barebone Intel® Core™ i3 Mini Desktop" (PCExpress)
+2026-03-01 08:23:14 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender" (PCExpress)
+2026-03-01 08:23:14 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (9S6-B0A811-474) Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:23:14 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)" (VillMan)
+2026-03-01 08:23:14 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Classic for Cat6 (100/box)" (PCWorx)
+2026-03-01 08:23:14 [debug]: [SearchService] ✓ ACCEPTED: "AMP RJ45 Connector for Cat6 / PER PIECE" (PCWorx)
+2026-03-01 08:23:14 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)" (PCWorx)
+2026-03-01 08:23:14 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m" (PCWorx)
+2026-03-01 08:23:14 [debug]: [SearchService] ✓ ACCEPTED: "Orico PW3UR-C3-015-BK-EP Type C 4port USB 3.0 Hub with 1000Mbps RJ45" (PCWorx)
+2026-03-01 08:23:14 [info]: [SearchService] Relevance filter: 6/11 products kept
+2026-03-01 08:23:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-01 08:23:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:15 [debug]: → GET /api/search
+2026-03-01 08:23:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:16 [info]: [SearchService] Search #7a20b2e8-5e25-43fd-9587-249437710ad2 - "rj45"
+2026-03-01 08:23:16 [info]: [Backend Cache HIT] Query: "rj45"
+2026-03-01 08:23:16 [info]: [SearchService] Raw products: 11
+2026-03-01 08:23:16 [info]: [SearchService] Unique products after dedup: 11
+2026-03-01 08:23:16 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter" (PCExpress)
+2026-03-01 08:23:16 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-027) Barebone Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:23:16 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (936-B0A811-026) Barebone Intel® Core™ i3 Mini Desktop" (PCExpress)
+2026-03-01 08:23:16 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender" (PCExpress)
+2026-03-01 08:23:16 [debug]: [SearchService] ✗ REJECTED: "MSI CUBI 5 12M-026BPH (9S6-B0A811-474) Intel® Core™ i5 Mini Desktop" (PCExpress)
+2026-03-01 08:23:16 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)" (VillMan)
+2026-03-01 08:23:16 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Classic for Cat6 (100/box)" (PCWorx)
+2026-03-01 08:23:16 [debug]: [SearchService] ✓ ACCEPTED: "AMP RJ45 Connector for Cat6 / PER PIECE" (PCWorx)
+2026-03-01 08:23:16 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)" (PCWorx)
+2026-03-01 08:23:16 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m" (PCWorx)
+2026-03-01 08:23:16 [debug]: [SearchService] ✓ ACCEPTED: "Orico PW3UR-C3-015-BK-EP Type C 4port USB 3.0 Hub with 1000Mbps RJ45" (PCWorx)
+2026-03-01 08:23:16 [info]: [SearchService] Relevance filter: 6/11 products kept
+2026-03-01 08:23:16 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-01 08:23:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:16 [info]: [SearchService] Saved 6 products for search #25f4e1e7-e281-4fc6-8bc4-249c1ff6bad8
+2026-03-01 08:23:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:17 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:17 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:17 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-01 08:23:18 [info]: [SearchService] Saved 6 products for search #7a20b2e8-5e25-43fd-9587-249437710ad2
+2026-03-01 08:23:24 [debug]: → GET /api/products/PCWorx/4a1875d0-6156-4f9f-bf54-6c6d56c9b856
+2026-03-01 08:23:24 [debug]: → GET /api/products/PCWorx/4a1875d0-6156-4f9f-bf54-6c6d56c9b856
+2026-03-01 08:23:28 [debug]: → POST /api/cart
+2026-03-01 08:23:29 [info]: [Cart] Fetching cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:23:29 [info]: [Cart] No cart found for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:23:30 [info]: [Cart] Fetching cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:23:30 [info]: [Cart] Found cart: f358cc91-c333-4ac3-954a-289f3ef8d93f
+2026-03-01 08:23:30 [info]: [Cart] Found 1 items in cart
+2026-03-01 08:23:30 [info]: [Cart] Fetching products: 4a1875d0-6156-4f9f-bf54-6c6d56c9b856
+2026-03-01 08:23:31 [info]: [Cart] Found 1 products
+2026-03-01 08:23:31 [debug]: [Cart] Mapped product 4a1875d0-6156-4f9f-bf54-6c6d56c9b856: Adlink RJ45 Connector Classic for Cat6 (100/box), platform: PCWorx
+2026-03-01 08:23:31 [info]: [Cart] Returning cart with 1 items
+2026-03-01 08:23:31 [debug]: → GET /api/cart
+2026-03-01 08:23:31 [info]: [CartController] Getting cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:23:31 [info]: [Cart] Fetching cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:23:31 [info]: [Cart] Found cart: f358cc91-c333-4ac3-954a-289f3ef8d93f
+2026-03-01 08:23:31 [info]: [Cart] Found 1 items in cart
+2026-03-01 08:23:31 [info]: [Cart] Fetching products: 4a1875d0-6156-4f9f-bf54-6c6d56c9b856
+2026-03-01 08:23:31 [info]: [Cart] Found 1 products
+2026-03-01 08:23:31 [debug]: [Cart] Mapped product 4a1875d0-6156-4f9f-bf54-6c6d56c9b856: Adlink RJ45 Connector Classic for Cat6 (100/box), platform: PCWorx
+2026-03-01 08:23:31 [info]: [Cart] Returning cart with 1 items
+2026-03-01 08:23:31 [info]: [CartController] Cart retrieved: f358cc91-c333-4ac3-954a-289f3ef8d93f
+2026-03-01 08:23:31 [info]: [CartController] Processing 1 cart items
+2026-03-01 08:23:31 [debug]: [CartController] Processing item 396e99b1-09d8-4fa9-af31-53ef7403574c, products array length: 1
+2026-03-01 08:23:31 [debug]: [CartController] Item 396e99b1-09d8-4fa9-af31-53ef7403574c has product: Adlink RJ45 Connector Classic for Cat6 (100/box)
+2026-03-01 08:23:31 [info]: [CartController] Returning 1 items with total price: 1.84
+2026-03-01 08:24:35 [debug]: → GET /api/products/PCWorx/4a1875d0-6156-4f9f-bf54-6c6d56c9b856
+2026-03-01 08:24:36 [debug]: → GET /api/products/PCWorx/4a1875d0-6156-4f9f-bf54-6c6d56c9b856
+2026-03-01 08:24:40 [debug]: → GET /api/search/stores
+2026-03-01 08:24:40 [debug]: → GET /api/search/stores
+2026-03-01 08:25:00 [debug]: → GET /api/products/PCWorx/4e17d615-ab27-400b-9eb9-614d0c7dc47b
+2026-03-01 08:25:01 [debug]: → GET /api/products/PCWorx/4e17d615-ab27-400b-9eb9-614d0c7dc47b
+2026-03-01 08:25:05 [debug]: → POST /api/cart
+2026-03-01 08:25:06 [info]: [Cart] Fetching cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:25:06 [info]: [Cart] Found cart: f358cc91-c333-4ac3-954a-289f3ef8d93f
+2026-03-01 08:25:06 [info]: [Cart] Found 1 items in cart
+2026-03-01 08:25:06 [info]: [Cart] Fetching products: 4a1875d0-6156-4f9f-bf54-6c6d56c9b856
+2026-03-01 08:25:07 [info]: [Cart] Found 1 products
+2026-03-01 08:25:07 [debug]: [Cart] Mapped product 4a1875d0-6156-4f9f-bf54-6c6d56c9b856: Adlink RJ45 Connector Classic for Cat6 (100/box), platform: PCWorx
+2026-03-01 08:25:07 [info]: [Cart] Returning cart with 1 items
+2026-03-01 08:25:07 [info]: [Cart] Fetching cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:25:07 [info]: [Cart] Found cart: f358cc91-c333-4ac3-954a-289f3ef8d93f
+2026-03-01 08:25:08 [info]: [Cart] Found 2 items in cart
+2026-03-01 08:25:08 [info]: [Cart] Fetching products: 4a1875d0-6156-4f9f-bf54-6c6d56c9b856,4e17d615-ab27-400b-9eb9-614d0c7dc47b
+2026-03-01 08:25:08 [info]: [Cart] Found 2 products
+2026-03-01 08:25:08 [debug]: [Cart] Mapped product 4a1875d0-6156-4f9f-bf54-6c6d56c9b856: Adlink RJ45 Connector Classic for Cat6 (100/box), platform: PCWorx
+2026-03-01 08:25:08 [debug]: [Cart] Mapped product 4e17d615-ab27-400b-9eb9-614d0c7dc47b: Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m, platform: PCWorx
+2026-03-01 08:25:08 [info]: [Cart] Returning cart with 2 items
+2026-03-01 08:25:08 [debug]: → GET /api/cart
+2026-03-01 08:25:08 [info]: [CartController] Getting cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:25:08 [info]: [Cart] Fetching cart for user: aa25d574-63b7-4e5a-801d-c7fa73461bfb
+2026-03-01 08:25:08 [info]: [Cart] Found cart: f358cc91-c333-4ac3-954a-289f3ef8d93f
+2026-03-01 08:25:08 [info]: [Cart] Found 2 items in cart
+2026-03-01 08:25:08 [info]: [Cart] Fetching products: 4a1875d0-6156-4f9f-bf54-6c6d56c9b856,4e17d615-ab27-400b-9eb9-614d0c7dc47b
+2026-03-01 08:25:09 [info]: [Cart] Found 2 products
+2026-03-01 08:25:09 [debug]: [Cart] Mapped product 4a1875d0-6156-4f9f-bf54-6c6d56c9b856: Adlink RJ45 Connector Classic for Cat6 (100/box), platform: PCWorx
+2026-03-01 08:25:09 [debug]: [Cart] Mapped product 4e17d615-ab27-400b-9eb9-614d0c7dc47b: Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m, platform: PCWorx
+2026-03-01 08:25:09 [info]: [Cart] Returning cart with 2 items
+2026-03-01 08:25:09 [info]: [CartController] Cart retrieved: f358cc91-c333-4ac3-954a-289f3ef8d93f
+2026-03-01 08:25:09 [info]: [CartController] Processing 2 cart items
+2026-03-01 08:25:09 [debug]: [CartController] Processing item 396e99b1-09d8-4fa9-af31-53ef7403574c, products array length: 1
+2026-03-01 08:25:09 [debug]: [CartController] Item 396e99b1-09d8-4fa9-af31-53ef7403574c has product: Adlink RJ45 Connector Classic for Cat6 (100/box)
+2026-03-01 08:25:09 [debug]: [CartController] Processing item 39bbb84b-68ea-475b-8c01-48c4db1badbf, products array length: 1
+2026-03-01 08:25:09 [debug]: [CartController] Item 39bbb84b-68ea-475b-8c01-48c4db1badbf has product: Ugreen CM498/15601 10in1 USB-C To 3USB 3.0 A+HDMI+VGA+RJ45 Gigabit+SD/TF+AUX3.5m
+2026-03-01 08:25:09 [info]: [CartController] Returning 2 items with total price: 1956.84
+2026-03-01 08:25:15 [debug]: → GET /api/products/PCWorx/4e17d615-ab27-400b-9eb9-614d0c7dc47b
+2026-03-01 08:25:16 [debug]: → GET /api/products/PCWorx/4e17d615-ab27-400b-9eb9-614d0c7dc47b
+2026-03-01 08:28:52 [debug]: → GET /api/search/history
+2026-03-01 08:33:18 [info]: [Server] SIGINT received. Shutting down gracefully...
