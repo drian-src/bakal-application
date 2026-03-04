@@ -10852,3 +10852,586 @@ Call log:
 2026-03-05 07:13:41 [debug]: [SearchService] ✗ REJECTED: "Coolman Spectra M-ATX  Gaming PC Chassis - Black" (PCWorx)
 2026-03-05 07:13:41 [info]: [SearchService] Relevance filter: 0/15 products kept
 2026-03-05 07:13:41 [info]: [SearchService] Saved 0 products for search #1f90d259-3b00-4f85-8ba2-ca8683654b8e
+2026-03-05 07:19:06 [debug]: → GET /api/search/stores
+2026-03-05 07:19:06 [debug]: → GET /api/search
+2026-03-05 07:19:06 [debug]: → GET /api/search/stores
+2026-03-05 07:19:08 [info]: [SearchService] Search #7d6354af-8d5c-423c-bedf-1b0ef56f2585 - "zczczc"
+2026-03-05 07:19:08 [info]: [Backend Cache MISS] Scraping: "zczczc"...
+2026-03-05 07:19:11 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:19:11 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:19:11 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:19:12 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:19:12 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zczczc
+2026-03-05 07:19:12 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:19:12 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zczczc
+2026-03-05 07:19:12 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:19:12 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=zczczc
+2026-03-05 07:19:26 [debug]: → GET /api/search
+2026-03-05 07:19:27 [info]: [SearchService] Search #615dcbf6-ac88-4902-ac6f-3e44c9b563d0 - "zczczc"
+2026-03-05 07:19:27 [info]: [Backend Cache MISS] Scraping: "zczczc"...
+2026-03-05 07:19:33 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:19:35 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:19:41 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:19:41 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:19:41 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zczczc
+2026-03-05 07:19:45 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:19:45 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=zczczc
+2026-03-05 07:19:47 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:19:47 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zczczc
+2026-03-05 07:19:51 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-05 07:19:53 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-05 07:19:53 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:19:53 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-05 07:19:53 [info]: [SearchService] Raw products: 0
+2026-03-05 07:19:53 [info]: [SearchService] Unique products after dedup: 0
+2026-03-05 07:19:53 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-05 07:19:53 [info]: [SearchService] Saved 0 products for search #7d6354af-8d5c-423c-bedf-1b0ef56f2585
+2026-03-05 07:20:17 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-05 07:20:17 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:20:17 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-05 07:20:17 [info]: [SearchService] Raw products: 0
+2026-03-05 07:20:17 [info]: [SearchService] Unique products after dedup: 0
+2026-03-05 07:20:17 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-05 07:20:17 [info]: [SearchService] Saved 0 products for search #615dcbf6-ac88-4902-ac6f-3e44c9b563d0
+2026-03-05 07:20:20 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2356ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:20:23 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2057ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=zczczc", waiting until "load"[22m
+
+2026-03-05 07:20:23 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2226ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:20:23 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2460ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=zczczc", waiting until "load"[22m
+
+2026-03-05 07:20:25 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:20:25 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:20:25 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zczczc
+2026-03-05 07:20:25 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-05 07:20:30 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:20:32 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:20:32 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:20:32 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:20:32 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zczczc
+2026-03-05 07:20:34 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:20:34 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zczczc
+2026-03-05 07:20:34 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:20:34 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zczczc
+2026-03-05 07:21:08 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4192ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:21:08 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-05 07:21:08 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-05 07:21:10 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4115ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:21:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-05 07:21:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-05 07:21:12 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-05 07:21:14 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:21:15 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:21:15 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zczczc
+2026-03-05 07:21:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-05 07:21:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-05 07:21:16 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-05 07:21:16 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-05 07:21:17 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zczczc&resources[type]=product&resources[limit]=10
+2026-03-05 07:21:17 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-05 07:21:17 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:21:17 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zczczc
+2026-03-05 07:21:46 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:21:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-05 07:21:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-05 07:21:50 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-05 07:21:50 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-05 07:21:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-05 07:21:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-05 07:21:51 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-05 07:21:52 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-05 07:21:53 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:21:54 [debug]: → GET /api/search/stores
+2026-03-05 07:21:54 [debug]: → GET /api/search
+2026-03-05 07:21:54 [debug]: → GET /api/search/stores
+2026-03-05 07:21:55 [info]: [SearchService] Search #e60c10fd-0e99-4b0f-85fe-5efaa89b81e6 - "zxczxcxz"
+2026-03-05 07:21:55 [info]: [Backend Cache MISS] Scraping: "zxczxcxz"...
+2026-03-05 07:21:58 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:21:59 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:21:59 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:21:59 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:21:59 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:22:00 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:22:00 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=zxczxcxz
+2026-03-05 07:22:02 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:22:02 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:22:02 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-05 07:22:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-05 07:22:10 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-05 07:22:13 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-05 07:22:14 [debug]: → GET /api/search
+2026-03-05 07:22:17 [info]: [SearchService] Search #ce934528-d8e2-4017-bdb0-ad60e3c5623e - "zxczxcxz"
+2026-03-05 07:22:17 [info]: [Backend Cache MISS] Scraping: "zxczxcxz"...
+2026-03-05 07:22:26 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:22:26 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:22:26 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2181ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:22:26 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:22:27 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:22:27 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:22:27 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:22:27 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=zxczxcxz
+2026-03-05 07:22:29 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:22:29 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:22:37 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-05 07:22:42 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-05 07:22:43 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:22:43 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-05 07:22:43 [info]: [SearchService] Raw products: 0
+2026-03-05 07:22:43 [info]: [SearchService] Unique products after dedup: 0
+2026-03-05 07:22:43 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-05 07:22:43 [info]: [SearchService] Saved 0 products for search #e60c10fd-0e99-4b0f-85fe-5efaa89b81e6
+2026-03-05 07:22:54 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-05 07:22:55 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:22:55 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:22:55 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:22:56 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2325ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:23:02 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-05 07:23:02 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:23:02 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-05 07:23:02 [info]: [SearchService] Raw products: 0
+2026-03-05 07:23:03 [info]: [SearchService] Unique products after dedup: 0
+2026-03-05 07:23:03 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-05 07:23:03 [info]: [SearchService] Saved 0 products for search #ce934528-d8e2-4017-bdb0-ad60e3c5623e
+2026-03-05 07:23:03 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-05 07:23:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-05 07:23:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-05 07:23:04 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-05 07:23:05 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:23:10 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-05 07:23:10 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:23:10 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:23:10 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-05 07:23:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-05 07:23:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-05 07:23:23 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-05 07:23:23 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-05 07:23:24 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4320ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:23:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-05 07:23:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-05 07:23:32 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:23:33 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:23:33 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:23:33 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-05 07:23:33 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-05 07:23:38 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4497ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:23:42 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-05 07:23:43 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-05 07:23:45 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-05 07:23:46 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-05 07:23:48 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-05 07:23:48 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxczxcxz&resources[type]=product&resources[limit]=10
+2026-03-05 07:23:52 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-05 07:23:52 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:23:52 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxczxcxz
+2026-03-05 07:23:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-05 07:23:59 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-05 07:24:13 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:24:14 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:24:55 [debug]: → GET /api/search/stores
+2026-03-05 07:24:55 [debug]: → GET /api/search
+2026-03-05 07:24:55 [debug]: → GET /api/search/stores
+2026-03-05 07:24:57 [info]: [SearchService] Search #7fce7b3c-34b8-41f3-9e3f-8a510d4b3aaa - "hello."
+2026-03-05 07:24:57 [info]: [Backend Cache MISS] Scraping: "hello."...
+2026-03-05 07:25:00 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=hello.&resources[type]=product&resources[limit]=10
+2026-03-05 07:25:00 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=hello.&resources[type]=product&resources[limit]=10
+2026-03-05 07:25:00 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=hello.&resources[type]=product&resources[limit]=10
+2026-03-05 07:25:01 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:25:01 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=hello.
+2026-03-05 07:25:01 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:25:01 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=hello.
+2026-03-05 07:25:01 [info]: [PcWorxScraper] API found 1 product URLs
+2026-03-05 07:25:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/fantech-gs205-hellscream-rgb-led-360-speaker-black.json
+2026-03-05 07:25:06 [debug]: [PcWorxScraper] JSON success: Fantech GS205 Hellscream RGB LED 360 Speaker Black
+2026-03-05 07:25:15 [debug]: → GET /api/search
+2026-03-05 07:25:17 [info]: [SearchService] Search #cdfd8b5a-3c38-4d7c-b254-9d51c8678473 - "hello."
+2026-03-05 07:25:17 [info]: [Backend Cache MISS] Scraping: "hello."...
+2026-03-05 07:25:20 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=hello.&resources[type]=product&resources[limit]=10
+2026-03-05 07:25:22 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=hello.&resources[type]=product&resources[limit]=10
+2026-03-05 07:25:22 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:25:22 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=hello.
+2026-03-05 07:25:23 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=hello.&resources[type]=product&resources[limit]=10
+2026-03-05 07:25:25 [info]: [PcWorxScraper] API found 1 product URLs
+2026-03-05 07:25:26 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-05 07:25:31 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:25:31 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=hello.
+2026-03-05 07:25:34 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-05 07:25:34 [debug]: → GET /api/search/history
+2026-03-05 07:25:37 [debug]: → GET /api/search/history
+2026-03-05 07:25:42 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/fantech-gs205-hellscream-rgb-led-360-speaker-black.json
+2026-03-05 07:25:42 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-05 07:25:42 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:25:42 [info]: [SearchService] Raw products: 1
+2026-03-05 07:25:43 [info]: [SearchService] Unique products after dedup: 1
+2026-03-05 07:25:43 [debug]: [SearchService] ✗ REJECTED: "Fantech GS205 Hellscream RGB LED 360 Speaker Black" (PCWorx)
+2026-03-05 07:25:43 [info]: [SearchService] Relevance filter: 0/1 products kept
+2026-03-05 07:25:43 [info]: [SearchService] Sample rejected products for query "hello.":
+2026-03-05 07:25:43 [info]:   - Fantech GS205 Hellscream RGB LED 360 Speaker Black
+2026-03-05 07:25:43 [info]: [SearchService] Saved 0 products for search #7fce7b3c-34b8-41f3-9e3f-8a510d4b3aaa
+2026-03-05 07:25:45 [debug]: [PcWorxScraper] JSON success: Fantech GS205 Hellscream RGB LED 360 Speaker Black
+2026-03-05 07:25:53 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-05 07:25:56 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-05 07:25:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-11inch-wuxga-ips-400nits-90hz-touch-mediatek-helio-g88-8gb-128gb-arm-mali-g52-mc2-gpu-android-13.json
+2026-03-05 07:25:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-zadb0149ph-11inch-wuxga-ips-400nits-90hz-mediatek-helio-g88-8gb-128gb-mali-g52-mc2-gpu-android-13.json
+2026-03-05 07:25:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-vivobook-s14-s3407va-ly088wsm-intel%C2%AE-core%E2%84%A2-5-laptop-cool-silver.json
+2026-03-05 07:25:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-aspire-a15-51m-56e2-intel-core-5-laptop-steel-gray.json
+2026-03-05 07:26:00 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11  11inch WUXGA IPS 400nits 90Hz Touch | MediaTek Helio G88 | 8GB | 128GB | ARM Mali-G52 MC2 GPU | Android 13
+2026-03-05 07:26:00 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11 ZADB0149PH 11inch WUXGA IPS 400nits 90Hz | MediaTek Helio G88 | 8GB | 128GB | Mali-G52 MC2 GPU | Android 13
+2026-03-05 07:26:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-aspire-a15-51m-56e2-intel-core-5-laptop-steel-gray.json
+2026-03-05 07:26:01 [debug]: [PcExpressScraper] JSON success: ACER Aspire A15-51M-56E2 Intel® Core™ 5 Laptop (Steel Gray)
+2026-03-05 07:26:01 [debug]: [PcExpressScraper] JSON success: ASUS VIVOBOOK S14 S3407VA-LY088WSM Intel® Core™ 5 Laptop (Cool Silver)
+2026-03-05 07:26:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-vivobook-s14-s3407va-ly088wsm-intel%C2%AE-core%E2%84%A2-5-laptop-cool-silver.json
+2026-03-05 07:26:01 [debug]: [PcExpressScraper] JSON success: ACER Aspire A15-51M-56E2 Intel® Core™ 5 Laptop (Steel Gray)
+2026-03-05 07:26:01 [debug]: [PcExpressScraper] JSON success: ASUS VIVOBOOK S14 S3407VA-LY088WSM Intel® Core™ 5 Laptop (Cool Silver)
+2026-03-05 07:26:02 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-05 07:26:02 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:26:02 [info]: [SearchService] Raw products: 1
+2026-03-05 07:26:02 [info]: [SearchService] Unique products after dedup: 1
+2026-03-05 07:26:02 [debug]: [SearchService] ✗ REJECTED: "Fantech GS205 Hellscream RGB LED 360 Speaker Black" (PCWorx)
+2026-03-05 07:26:02 [info]: [SearchService] Relevance filter: 0/1 products kept
+2026-03-05 07:26:02 [info]: [SearchService] Sample rejected products for query "hello.":
+2026-03-05 07:26:02 [info]:   - Fantech GS205 Hellscream RGB LED 360 Speaker Black
+2026-03-05 07:26:02 [info]: [SearchService] Saved 0 products for search #cdfd8b5a-3c38-4d7c-b254-9d51c8678473
+2026-03-05 07:26:05 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-11inch-wuxga-ips-400nits-90hz-touch-mediatek-helio-g88-8gb-128gb-arm-mali-g52-mc2-gpu-android-13.json
+2026-03-05 07:26:05 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-zadb0149ph-11inch-wuxga-ips-400nits-90hz-mediatek-helio-g88-8gb-128gb-mali-g52-mc2-gpu-android-13.json
+2026-03-05 07:26:06 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11 ZADB0149PH 11inch WUXGA IPS 400nits 90Hz | MediaTek Helio G88 | 8GB | 128GB | Mali-G52 MC2 GPU | Android 13
+2026-03-05 07:26:06 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11  11inch WUXGA IPS 400nits 90Hz Touch | MediaTek Helio G88 | 8GB | 128GB | ARM Mali-G52 MC2 GPU | Android 13
+2026-03-05 07:26:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-f16-fx608jhr-rv179wsm-90nr0na1-m009k0-geforce-rtx-5050-intel-core-i7-laptop-jaeger-gray.json
+2026-03-05 07:26:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-ideapad-5-2-in-1-14ial10-83kr0025ph-intel-core-ultra-5-laptop-cosmic-blue.json
+2026-03-05 07:26:11 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming F16 FX608JHR-RV179WSM (90NR0NA1-M009K0) GeForce RTX™ 5050 Intel® Core™ i7 Laptop (Jaeger Gray)
+2026-03-05 07:26:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-f16-fx608jhr-rv179wsm-90nr0na1-m009k0-geforce-rtx-5050-intel-core-i7-laptop-jaeger-gray.json
+2026-03-05 07:26:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-ideapad-5-2-in-1-14ial10-83kr0025ph-intel-core-ultra-5-laptop-cosmic-blue.json
+2026-03-05 07:26:12 [debug]: [PcExpressScraper] JSON success: LENOVO IdeaPad 5 2-in-1 14IAL10 (83KR0025PH) Intel® Core™ Ultra 5 Laptop (Cosmic Blue)
+2026-03-05 07:26:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-helios-neo-16-phn16-73-93y5.json
+2026-03-05 07:26:12 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming F16 FX608JHR-RV179WSM (90NR0NA1-M009K0) GeForce RTX™ 5050 Intel® Core™ i7 Laptop (Jaeger Gray)
+2026-03-05 07:26:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-helios-16-ph16-72-73kk-16inch-wqxga-240hz-intel-core-i7-14700hx-16gb-ram-512gb-ssd-nvidia-gf-rtx-4070-win11.json
+2026-03-05 07:26:13 [debug]: [PcExpressScraper] JSON success: LENOVO IdeaPad 5 2-in-1 14IAL10 (83KR0025PH) Intel® Core™ Ultra 5 Laptop (Cosmic Blue)
+2026-03-05 07:26:13 [debug]: [VillmanScraper] JSON success: Acer Predator Helios Neo 16 PHN16-73-93Y5 | 16in WQXGA 240Hz | Intel Ultra 9 275HX | 32GB RAM | 1TB SSD | NVIDIA GeForce RTX 5070 Ti | Windows 11
+2026-03-05 07:26:13 [debug]: [VillmanScraper] JSON success: Acer Predator Helios 16 PH16-72-73KK | 16inch WQXGA 240Hz | Intel Core i7-14700HX | 16GB RAM | 512GB SSD | NVIDIA GF RTX 4070 | WIN11
+2026-03-05 07:26:19 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m9-4g-lte-zac50035ph.json
+2026-03-05 07:26:21 [debug]: [VillmanScraper] JSON success: Lenovo Tab M9 4G LTE ZAC50035PH (Arctic Grey) 9inch HD IPS | MediaTek Helio G80 | 4GB RAM | 64GB SSD | Arm Mali-G52 MC2 GPU | Android 12
+2026-03-05 07:26:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-helios-neo-16-phn16-73-93y5.json
+2026-03-05 07:26:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-f16-fx608jm-rv038wsm-geforce-rtx-5060-intel-core-i5-laptop-jaeger-gray.json
+2026-03-05 07:26:22 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-helios-16-ph16-72-73kk-16inch-wqxga-240hz-intel-core-i7-14700hx-16gb-ram-512gb-ssd-nvidia-gf-rtx-4070-win11.json
+2026-03-05 07:26:23 [debug]: [VillmanScraper] JSON success: Acer Predator Helios 16 PH16-72-73KK | 16inch WQXGA 240Hz | Intel Core i7-14700HX | 16GB RAM | 512GB SSD | NVIDIA GF RTX 4070 | WIN11
+2026-03-05 07:26:23 [debug]: [VillmanScraper] JSON success: Acer Predator Helios Neo 16 PHN16-73-93Y5 | 16in WQXGA 240Hz | Intel Ultra 9 275HX | 32GB RAM | 1TB SSD | NVIDIA GeForce RTX 5070 Ti | Windows 11
+2026-03-05 07:26:23 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming F16 FX608JM-RV038WSM GeForce RTX™ 5060 Intel® Core™ i5 Laptop (Jaeger Gray)
+2026-03-05 07:26:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-f16-fx608jm-rv038wsm-geforce-rtx-5060-intel-core-i5-laptop-jaeger-gray.json
+2026-03-05 07:26:24 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming F16 FX608JM-RV038WSM GeForce RTX™ 5060 Intel® Core™ i5 Laptop (Jaeger Gray)
+2026-03-05 07:26:28 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m9-4g-lte-zac50035ph.json
+2026-03-05 07:26:29 [debug]: [VillmanScraper] JSON success: Lenovo Tab M9 4G LTE ZAC50035PH (Arctic Grey) 9inch HD IPS | MediaTek Helio G80 | 4GB RAM | 64GB SSD | Arm Mali-G52 MC2 GPU | Android 12
+2026-03-05 07:26:39 [debug]: → GET /api/search/stores
+2026-03-05 07:26:39 [debug]: → GET /api/search/stores
+2026-03-05 07:26:50 [debug]: → GET /api/search/stores
+2026-03-05 07:26:50 [debug]: → GET /api/search
+2026-03-05 07:26:50 [debug]: → GET /api/search/stores
+2026-03-05 07:26:51 [info]: [SearchService] Search #7c309e76-b314-4334-b1b7-afe522adfa71 - "pc."
+2026-03-05 07:26:51 [info]: [Backend Cache HIT] Query: "pc."
+2026-03-05 07:26:51 [info]: [SearchService] Raw products: 15
+2026-03-05 07:26:51 [info]: [SearchService] Unique products after dedup: 15
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Microsoft 365 Personal (12 Months Subscription For PC, Mac, iOS, and Android | For 1 person)" (PCExpress)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Microsoft 365 Family (12 Months Subscription For PC, Mac, iOS, and Android | up to 6 people)" (PCExpress)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "ANTEC NX292 Elite Series-Mid Tower Gaming PC Case (With Free Mousepad) - White" (PCExpress)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "OVATION Hypergate Mesh 3.1 RGB Micro-ATX Gaming PC Case - Black" (PCExpress)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "TRENDSONIC ERIS Tempered Glass RGB Micro-ATX Gaming Case" (PCExpress)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "MONTECH AIR 903 MAX E-ATX W/4 PWM FANS PC CASE (Black)" (VillMan)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Microsoft Surface Pro 11 Copilot+ PC (Black) 13inch Touchscreen PixelSense Flow Wi-Fi 7 | Snapdragon X Plus (10 Core) LCD  | 16GB LPDDR5X | 1TB Gen 4 SSD | Qualcomm Adreno  | Windows 11 Copilot+ PC" (VillMan)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "GMKtec AMD Ryzen Al 9 HX 370 EVO-X1 AI Mini PC | 32GB RAM | 1TB SSD | AMD Radeon 890M | Windows 11 Pro" (VillMan)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Microsoft Surface Pro 11 Copilot+ PC (Platinum) 13inch Touchscreen PixelSense Flow Wi-Fi 7 | Snapdragon X Plus (10 Core) LCD  | 16GB LPDDR5X | 256GB Gen 4 SSD | Qualcomm Adreno  | Windows 11 Copilot+ PC" (VillMan)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Cisco SPA 303 G2 3-Line IP Phone with Display and PC Port" (VillMan)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Gigabyte GP-G440E250G 250GB M.2 NVME GEN4 4000E PCIe 4.0x4 SSD" (PCWorx)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Darkflash C285MP V2 EXQUISITE M-atx PC CASE White" (PCWorx)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Coolman Spectra M-ATX  Gaming PC Chassis - White" (PCWorx)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Coolman REYNA M-ATX ITX PC Case Black" (PCWorx)
+2026-03-05 07:26:51 [debug]: [SearchService] ✗ REJECTED: "Coolman Spectra M-ATX  Gaming PC Chassis - Black" (PCWorx)
+2026-03-05 07:26:51 [info]: [SearchService] Relevance filter: 0/15 products kept
+2026-03-05 07:26:51 [info]: [SearchService] Saved 0 products for search #7c309e76-b314-4334-b1b7-afe522adfa71
+2026-03-05 07:26:51 [debug]: → GET /api/search
+2026-03-05 07:26:52 [info]: [SearchService] Search #7bd5dc49-6048-41d8-aab2-2696937a7baa - "pc."
+2026-03-05 07:26:52 [info]: [Backend Cache HIT] Query: "pc."
+2026-03-05 07:26:52 [info]: [SearchService] Raw products: 15
+2026-03-05 07:26:52 [info]: [SearchService] Unique products after dedup: 15
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Microsoft 365 Personal (12 Months Subscription For PC, Mac, iOS, and Android | For 1 person)" (PCExpress)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Microsoft 365 Family (12 Months Subscription For PC, Mac, iOS, and Android | up to 6 people)" (PCExpress)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "ANTEC NX292 Elite Series-Mid Tower Gaming PC Case (With Free Mousepad) - White" (PCExpress)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "OVATION Hypergate Mesh 3.1 RGB Micro-ATX Gaming PC Case - Black" (PCExpress)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "TRENDSONIC ERIS Tempered Glass RGB Micro-ATX Gaming Case" (PCExpress)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "MONTECH AIR 903 MAX E-ATX W/4 PWM FANS PC CASE (Black)" (VillMan)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Microsoft Surface Pro 11 Copilot+ PC (Black) 13inch Touchscreen PixelSense Flow Wi-Fi 7 | Snapdragon X Plus (10 Core) LCD  | 16GB LPDDR5X | 1TB Gen 4 SSD | Qualcomm Adreno  | Windows 11 Copilot+ PC" (VillMan)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "GMKtec AMD Ryzen Al 9 HX 370 EVO-X1 AI Mini PC | 32GB RAM | 1TB SSD | AMD Radeon 890M | Windows 11 Pro" (VillMan)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Microsoft Surface Pro 11 Copilot+ PC (Platinum) 13inch Touchscreen PixelSense Flow Wi-Fi 7 | Snapdragon X Plus (10 Core) LCD  | 16GB LPDDR5X | 256GB Gen 4 SSD | Qualcomm Adreno  | Windows 11 Copilot+ PC" (VillMan)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Cisco SPA 303 G2 3-Line IP Phone with Display and PC Port" (VillMan)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Gigabyte GP-G440E250G 250GB M.2 NVME GEN4 4000E PCIe 4.0x4 SSD" (PCWorx)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Darkflash C285MP V2 EXQUISITE M-atx PC CASE White" (PCWorx)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Coolman Spectra M-ATX  Gaming PC Chassis - White" (PCWorx)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Coolman REYNA M-ATX ITX PC Case Black" (PCWorx)
+2026-03-05 07:26:52 [debug]: [SearchService] ✗ REJECTED: "Coolman Spectra M-ATX  Gaming PC Chassis - Black" (PCWorx)
+2026-03-05 07:26:52 [info]: [SearchService] Relevance filter: 0/15 products kept
+2026-03-05 07:26:52 [info]: [SearchService] Saved 0 products for search #7bd5dc49-6048-41d8-aab2-2696937a7baa
+2026-03-05 07:27:05 [debug]: → GET /api/search/stores
+2026-03-05 07:27:05 [debug]: → GET /api/search
+2026-03-05 07:27:05 [debug]: → GET /api/search/stores
+2026-03-05 07:27:05 [info]: [SearchService] Search #a96513d0-002b-4726-9200-8e74cbb15ce4 - "cpu."
+2026-03-05 07:27:05 [info]: [Backend Cache MISS] Scraping: "cpu."...
+2026-03-05 07:27:07 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu.&resources[type]=product&resources[limit]=10
+2026-03-05 07:27:07 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu.&resources[type]=product&resources[limit]=10
+2026-03-05 07:27:08 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu.&resources[type]=product&resources[limit]=10
+2026-03-05 07:27:08 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-05 07:27:08 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:27:08 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:27:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-05 07:27:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-03-05 07:27:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-05 07:27:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-05 07:27:12 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-05 07:27:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-05 07:27:13 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-05 07:27:13 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-05 07:27:13 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-05 07:27:13 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-03-05 07:27:13 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-05 07:27:14 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-03-05 07:27:18 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-05 07:27:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-05 07:27:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-03-05 07:27:19 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-05 07:27:19 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-05 07:27:19 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-03-05 07:27:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-03-05 07:27:20 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-05 07:27:20 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-05 07:27:20 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-03-05 07:27:21 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-05 07:27:21 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-05 07:27:25 [debug]: → GET /api/search
+2026-03-05 07:27:25 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-240r-v2.json
+2026-03-05 07:27:26 [info]: [SearchService] Search #8ed2bca2-57da-4c9c-9d9b-e81cf62c7482 - "cpu."
+2026-03-05 07:27:26 [info]: [Backend Cache MISS] Scraping: "cpu."...
+2026-03-05 07:27:26 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-05 07:27:26 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID 240R V2 CPU Cooler
+2026-03-05 07:27:27 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-05 07:27:27 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-05 07:27:28 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu.&resources[type]=product&resources[limit]=10
+2026-03-05 07:27:28 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu.&resources[type]=product&resources[limit]=10
+2026-03-05 07:27:29 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu.&resources[type]=product&resources[limit]=10
+2026-03-05 07:27:29 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-05 07:27:29 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:27:30 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:27:30 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-05 07:27:32 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-05 07:27:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-05 07:27:32 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-05 07:27:33 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-05 07:27:33 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-03-05 07:27:33 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-05 07:27:34 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-05 07:27:34 [info]: [SearchService] Raw products: 15
+2026-03-05 07:27:34 [info]: [SearchService] Unique products after dedup: 15
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "MSI MAG CORELIQUID 240R V2 CPU Cooler" (VillMan)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-03-05 07:27:34 [debug]: [SearchService] ✗ REJECTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-05 07:27:34 [info]: [SearchService] Relevance filter: 0/15 products kept
+2026-03-05 07:27:34 [info]: [SearchService] Saved 0 products for search #a96513d0-002b-4726-9200-8e74cbb15ce4
+2026-03-05 07:27:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-03-05 07:27:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-05 07:27:34 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-03-05 07:27:35 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-05 07:27:35 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-05 07:27:38 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-05 07:27:38 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-03-05 07:27:39 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-03-05 07:27:39 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-05 07:27:40 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-05 07:27:41 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-05 07:27:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-03-05 07:27:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-05 07:27:41 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-05 07:27:42 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-05 07:27:42 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-03-05 07:27:42 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-05 07:27:46 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-05 07:27:47 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-05 07:27:47 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-05 07:27:47 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-240r-v2.json
+2026-03-05 07:27:47 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-05 07:27:47 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID 240R V2 CPU Cooler
+2026-03-05 07:27:51 [info]: [SearchService] Raw products: 15
+2026-03-05 07:27:51 [info]: [SearchService] Unique products after dedup: 15
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "MSI MAG CORELIQUID 240R V2 CPU Cooler" (VillMan)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-03-05 07:27:51 [debug]: [SearchService] ✗ REJECTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-05 07:27:51 [info]: [SearchService] Relevance filter: 0/15 products kept
+2026-03-05 07:27:51 [info]: [SearchService] Saved 0 products for search #8ed2bca2-57da-4c9c-9d9b-e81cf62c7482
+2026-03-05 07:28:16 [debug]: → GET /api/search
+2026-03-05 07:28:18 [info]: [SearchService] Search #14e8cfe6-a19a-4e0d-84b8-611f6a6f868b - "brassiere."
+2026-03-05 07:28:18 [info]: [Backend Cache MISS] Scraping: "brassiere."...
+2026-03-05 07:28:21 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:21 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:22 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:22 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:28:22 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=brassiere.
+2026-03-05 07:28:23 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:28:23 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=brassiere.
+2026-03-05 07:28:23 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:28:23 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=brassiere.
+2026-03-05 07:28:30 [debug]: → GET /api/search
+2026-03-05 07:28:35 [info]: [SearchService] Search #54e3dd23-2978-45ab-bb47-3a5cf0b91a6b - "processor"
+2026-03-05 07:28:36 [info]: [Backend Cache MISS] Scraping: "processor"...
+2026-03-05 07:28:41 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:42 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:42 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:44 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2029ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:28:47 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:53 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2155ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=brassiere.", waiting until "load"[22m
+
+2026-03-05 07:28:56 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:28:57 [info]: [PcExpressScraper] API found 1 product URLs
+2026-03-05 07:28:57 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:28:57 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:28:57 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:28:57 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=brassiere.
+2026-03-05 07:28:57 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:28:57 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=brassiere.
+2026-03-05 07:28:58 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2422ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/search?type=product&q=brassiere.", waiting until "load"[22m
+
+2026-03-05 07:28:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i5-13400-processor.json
+2026-03-05 07:29:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i3-12100-processor.json
+2026-03-05 07:29:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/intel-core-i7-14700f-desktop-processor.json
+2026-03-05 07:29:01 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700g-3-8ghz-65w-am4-processor.json
+2026-03-05 07:29:01 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-05 07:29:02 [debug]: [VillmanScraper] JSON success: Intel Core i5-13400 Processor
+2026-03-05 07:29:02 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:29:03 [debug]: [VillmanScraper] JSON success: Intel Core i3-12100 Processor
+2026-03-05 07:29:03 [debug]: [PcExpressScraper] JSON success: Intel® Core™ I7-14700F Desktop Processor
+2026-03-05 07:29:03 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-05 07:29:03 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:29:03 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-05 07:29:03 [info]: [SearchService] Raw products: 0
+2026-03-05 07:29:03 [info]: [SearchService] Unique products after dedup: 0
+2026-03-05 07:29:03 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-05 07:29:03 [info]: [SearchService] Saved 0 products for search #14e8cfe6-a19a-4e0d-84b8-611f6a6f868b
+2026-03-05 07:29:04 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-05 07:29:04 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=brassiere.
+2026-03-05 07:29:04 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 7 5700G 3.8GHz 65W AM4 Processor
+2026-03-05 07:29:04 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-05 07:29:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i7-13700k-processor.json
+2026-03-05 07:29:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i9-13900k-processor.json
+2026-03-05 07:29:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i7-12700-2-1ghz-12-core-20-threads-25m-cache-lga1700-processor.json
+2026-03-05 07:29:20 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-5600-3-5ghz-65w-am4-processor-no-built-in-graphics.json
+2026-03-05 07:29:21 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:29:21 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-05 07:29:21 [info]: [SearchService] Raw products: 1
+2026-03-05 07:29:21 [info]: [SearchService] Unique products after dedup: 1
+2026-03-05 07:29:21 [debug]: [SearchService] ✓ ACCEPTED: "Intel® Core™ I7-14700F Desktop Processor" (PCExpress)
+2026-03-05 07:29:21 [info]: [SearchService] Relevance filter: 1/1 products kept
+2026-03-05 07:29:21 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:29:22 [debug]: [VillmanScraper] JSON success: Intel Core i9-13900K Processor
+2026-03-05 07:29:22 [debug]: [PcWorxScraper] JSON success: Intel i7-12700 2.1GHZ 12 Core 20 Threads 25M Cache LGA1700 Processor
+2026-03-05 07:29:22 [debug]: [VillmanScraper] JSON success: Intel Core i7-13700K Processor
+2026-03-05 07:29:22 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 5 5600 3.5GHz 65W AM4 Processor (no built in graphics)
+2026-03-05 07:29:23 [info]: [SearchService] Saved 1 products for search #54e3dd23-2978-45ab-bb47-3a5cf0b91a6b
+2026-03-05 07:29:26 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4207ms. Error: page.goto: Timeout 20000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/", waiting until "domcontentloaded"[22m
+
+2026-03-05 07:29:28 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4349ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=brassiere.", waiting until "load"[22m
+
+2026-03-05 07:29:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700x-3-4ghz-65w-am4-processor-no-built-in-graphics-fan.json
+2026-03-05 07:29:32 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:29:32 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/product.json
+2026-03-05 07:29:32 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-05 07:29:32 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 7 5700X 3.4GHz 65W AM4 Processor (no built in graphics/fan)
+2026-03-05 07:29:33 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-05 07:29:33 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=brassiere.
+2026-03-05 07:29:33 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=brassiere.&resources[type]=product&resources[limit]=10
+2026-03-05 07:29:33 [debug]: [VillmanScraper] JSON success: Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)
+2026-03-05 07:29:34 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-05 07:29:34 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=brassiere.
+2026-03-05 07:30:11 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-05 07:30:13 [debug]: → GET /api/search/stores
+2026-03-05 07:30:13 [debug]: → GET /api/search/stores
+2026-03-05 07:30:13 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-05 07:30:13 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-05 07:30:13 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-05 07:30:14 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-05 07:30:14 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-05 07:30:16 [debug]: → GET /api/search
+2026-03-05 07:30:17 [info]: [SearchService] Search #ef81a86b-269f-49bc-ac7d-b246601d08db - "processor"
+2026-03-05 07:30:17 [info]: [Backend Cache HIT] Query: "processor"
+2026-03-05 07:30:17 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-05 07:30:17 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-05 07:30:17 [info]: [SearchService] Raw products: 1
+2026-03-05 07:30:17 [info]: [SearchService] Unique products after dedup: 1
+2026-03-05 07:30:17 [debug]: [SearchService] ✓ ACCEPTED: "Intel® Core™ I7-14700F Desktop Processor" (PCExpress)
+2026-03-05 07:30:17 [info]: [SearchService] Relevance filter: 1/1 products kept
+2026-03-05 07:30:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:30:17 [info]: [SearchService] Saved 1 products for search #ef81a86b-269f-49bc-ac7d-b246601d08db
+2026-03-05 07:30:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-05 07:30:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-05 07:30:20 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-05 07:30:20 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-05 07:30:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-05 07:30:23 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-05 07:46:35 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-03-05 07:46:49 [info]: [DB] Supabase connection verified.
+2026-03-05 07:46:49 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-05 07:46:49 [info]: 🚀 Bakàl backend running on port 3000 [development]

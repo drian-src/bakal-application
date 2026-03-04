@@ -112,13 +112,16 @@ const HomeHeader = ({ hideSearch = false }) => {
 
       // Show live interim text in the search bar as the user speaks
       if (interimTranscript) {
-        setSearchQuery(interimTranscript);
+        // FIX: Strip trailing punctuation that Chrome speech recognition adds automatically
+        setSearchQuery(interimTranscript.replace(/[.,!?;:]+$/, ''));
       }
 
       // When a final result comes in, submit the search
       if (finalTranscript.trim()) {
-        const cleaned = finalTranscript.trim();
-        console.log(`[VoiceSearch] Final: "${cleaned}"`);
+        // FIX: Strip trailing punctuation that Chrome speech recognition adds automatically
+        // e.g. "CPU." → "CPU", "gaming mouse," → "gaming mouse"
+        const cleaned = finalTranscript.trim().replace(/[.,!?;:]+$/, '');
+        console.log(`[VoiceSearch] Final: "${cleaned}" (original: "${finalTranscript.trim()}")`);
         setSearchQuery(cleaned);
         setIsListening(false);
         recognitionRef.current = null;

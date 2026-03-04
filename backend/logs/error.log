@@ -463,3 +463,7 @@ Call log:
     at bootstrap (C:\Users\L. L490\OneDrive\Desktop\BAKAL-APP\bakal-application\backend\src\server.js:13:22)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2026-03-01 00:36:14 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:21:46 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:21:53 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:24:13 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:24:14 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.

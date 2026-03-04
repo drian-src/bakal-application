@@ -63,7 +63,7 @@ class PcExpressScraper extends BaseScraper {
         }
 
         await browser.close();
-        return await this.scrapeMany(productUrls.slice(0, maxResults), 2);
+        return await this.scrapeMany(productUrls.slice(0, maxResults), 3);
       } finally {
         if (browser) await browser.close().catch(() => {});
       }

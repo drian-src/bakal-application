@@ -43,11 +43,9 @@ class PcWorxScraper extends BaseScraper {
           const searchUrl = `${BASE_URL}/search?type=product&q=${encodeURIComponent(query)}`;
           logger.debug(`[PcWorxScraper] Fallback to search page: ${searchUrl}`);
 
-          // Visit homepage first for cookies
-          await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
-          await randomDelay(1000, 2000);
-
-          await page.goto(searchUrl, { waitUntil: 'load', timeout: 30000 });
+          // FIX: Removed homepage pre-visit — same reason as VillMan fix.
+          // Use domcontentloaded instead of load for faster link extraction.
+          await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 25000 });
           await randomDelay(2000, 3000);
           await this.humanScroll(page, 3);
 
@@ -68,7 +66,7 @@ class PcWorxScraper extends BaseScraper {
         }
 
         await browser.close();
-        return await this.scrapeMany(productUrls.slice(0, maxResults), 2);
+        return await this.scrapeMany(productUrls.slice(0, maxResults), 3);
       } finally {
         if (browser) await browser.close().catch(() => {});
       }
