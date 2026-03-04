@@ -15,7 +15,26 @@ const { getEnabledStores, getStoreByName } = require('../config/stores');
 // ============================================================
 const scrapeCache = new Map();
 const BACKEND_CACHE_MS = 15 * 60 * 1000; // 15 minutes
-const SCRAPER_TIMEOUT_MS = 45000; // 45 second timeout per scraper (scraping is slow)
+
+// Auto-purge stale cache entries every 5 minutes to prevent memory buildup
+// and to ensure partial results don't linger past TTL
+setInterval(() => {
+  const now = Date.now();
+  let purged = 0;
+  for (const [key, val] of scrapeCache.entries()) {
+    if (now - val.timestamp > BACKEND_CACHE_MS) {
+      scrapeCache.delete(key);
+      purged++;
+    }
+  }
+  if (purged > 0) {
+    logger.debug(`[Backend Cache] Purged ${purged} stale entries`);
+  }
+}, 5 * 60 * 1000);
+const SCRAPER_TIMEOUT_MS = 90000; // FIX: Increased from 45s to 90s.
+// PcExpressScraper.search() flow: API call (~5s) → fallback page load (~35s) →
+// scrapeMany 5 products at concurrency 2 (~45s) = ~85s total.
+// 45s was cutting off scrapeMany before it could return any products.
 
 // Map store IDs to their scrapers
 const scraperMap = {
@@ -39,15 +58,36 @@ const withTimeout = (promise, ms = SCRAPER_TIMEOUT_MS, storeName = 'Store') =>
 const getCachedOrScrape = async (query, scrapeFn) => {
   const key = query.toLowerCase().trim();
   const cached = scrapeCache.get(key);
-  
+
   if (cached && Date.now() - cached.timestamp < BACKEND_CACHE_MS) {
-    logger.info(`[Backend Cache HIT] Query: "${key}"`);
-    return cached.data;
+    // FIX: Only serve cache if it actually has products.
+    // A previous search where all stores timed out would have cached 0 products —
+    // serving that forever defeats the purpose of caching.
+    const cachedProductCount = (cached.data || []).reduce(
+      (sum, store) => sum + (store.items?.length || 0), 0
+    );
+    if (cachedProductCount > 0) {
+      logger.info(`[Backend Cache HIT] Query: "${key}" (${cachedProductCount} cached products)`);
+      return cached.data;
+    }
+    logger.info(`[Backend Cache STALE] Query: "${key}" had 0 products — re-scraping`);
   }
 
   logger.info(`[Backend Cache MISS] Scraping: "${key}"...`);
   const result = await scrapeFn();
-  scrapeCache.set(key, { data: result, timestamp: Date.now() });
+
+  // FIX: Only cache if at least one store returned at least one product.
+  // Do not cache empty results — they may be caused by timeouts, not a real "no results".
+  const totalProducts = (result || []).reduce(
+    (sum, store) => sum + (store.items?.length || 0), 0
+  );
+  if (totalProducts > 0) {
+    scrapeCache.set(key, { data: result, timestamp: Date.now() });
+    logger.info(`[Backend Cache SET] "${key}" — ${totalProducts} products cached`);
+  } else {
+    logger.warn(`[Backend Cache SKIP] "${key}" — 0 products returned, not caching`);
+  }
+
   return result;
 };
 
@@ -108,11 +148,20 @@ function isRelevantProduct(product, query) {
 async function search(query, userId = null, maxPerPlatform = 5) {
   if (!Object.keys(PLATFORM_IDS).length) await loadPlatformIds();
 
-  const searchRecord = await searchRepo.create(userId, query);
-  logger.info(`[SearchService] Search #${searchRecord.id} - "${query}"`);
+  // FIX: Strip trailing punctuation added by voice recognition (e.g. "CPU." → "CPU")
+  // Chrome's Web Speech API appends periods, commas, and question marks automatically.
+  // These break the relevance filter's includes() check and store search APIs.
+  const normalizedQuery = query.trim().replace(/[.,!?;:]+$/, '');
+
+  if (normalizedQuery !== query) {
+    logger.info(`[SearchService] Query normalized: "${query}" → "${normalizedQuery}"`);
+  }
+
+  const searchRecord = await searchRepo.create(userId, normalizedQuery);
+  logger.info(`[SearchService] Search #${searchRecord.id} - "${normalizedQuery}"`);
 
   // Scrape all stores in parallel with timeouts
-  const storeResults = await getCachedOrScrape(query, async () => {
+  const storeResults = await getCachedOrScrape(normalizedQuery, async () => {
     const enabledStores = getEnabledStores();
     
     // Fire all scrappers simultaneously
@@ -127,7 +176,7 @@ async function search(query, userId = null, maxPerPlatform = 5) {
       }
 
       return withTimeout(
-        scraper.search(query, maxPerPlatform),
+        scraper.search(normalizedQuery, maxPerPlatform),
         SCRAPER_TIMEOUT_MS,
         store.name
       )
@@ -185,7 +234,7 @@ async function search(query, userId = null, maxPerPlatform = 5) {
   const rejectedProducts = [];
   
   for (const product of uniqueProducts) {
-    if (isRelevantProduct(product, query)) {
+    if (isRelevantProduct(product, normalizedQuery)) {
       relevantProducts.push(product);
       logger.debug(`[SearchService] ✓ ACCEPTED: "${product.title}" (${product.platform})`);
     } else {
@@ -199,7 +248,7 @@ async function search(query, userId = null, maxPerPlatform = 5) {
   );
 
   if (rejectedProducts.length > 0 && rejectedProducts.length <= 3) {
-    logger.info(`[SearchService] Sample rejected products for query "${query}":`);
+    logger.info(`[SearchService] Sample rejected products for query "${normalizedQuery}":`);
     rejectedProducts.slice(0, 3).forEach(p => {
       logger.info(`  - ${p.title}`);
     });
@@ -271,7 +320,7 @@ async function search(query, userId = null, maxPerPlatform = 5) {
 
   return {
     search_id: searchRecord.id,
-    query,
+    query: normalizedQuery,
     total: savedProducts.length,
     stores: storesResponse,
     products: savedProducts, // Keep this for backward compatibility
