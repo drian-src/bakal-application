@@ -16,7 +16,7 @@ export const validateEmail = (email) => {
 // Validate password strength
 export const validatePassword = (password) => {
   return {
-    isValid: password.length >= 6,
+    isValid: password.length >= 8,
     strength: getPasswordStrength(password),
     hasUpperCase: /[A-Z]/.test(password),
     hasLowerCase: /[a-z]/.test(password),
@@ -135,9 +135,8 @@ export const registerUser = async (fullName, email, password) => {
       success: true,
       message: 'Account created successfully! Welcome to Bakàl.',
       code: 'REGISTRATION_SUCCESS',
-    user: userToStore,
-    authToken
-  };
+      user,
+    };
   } catch (error) {
     console.error('Registration error:', error);
     return {

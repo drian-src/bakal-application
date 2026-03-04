@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import AuthLayout from '../layouts/AuthLayout'
 import { Logo, Input, Button, Divider } from '../shared'
 import GoogleButton from './GoogleButton'
-import PasswordStrength from './PasswordStrength'
+import PasswordRequirements from './PasswordStrength'
 import { registerUser, validateEmail, validatePassword } from '../../core/services/authService';
 import './Auth.css';
 
@@ -52,8 +52,8 @@ const Signup = () => {
 
     // Validate password strength
     const passwordValidation = validatePassword(password);
-    if (!passwordValidation.isValid) {
-      const errorMsg = 'Password must be at least 6 characters long.';
+    if (!passwordValidation.isValid || password.length < 8) {
+      const errorMsg = 'Password must be at least 8 characters and meet 3 requirements.';
       setError(errorMsg);
       setIsLoading(false);
       return;
@@ -133,7 +133,7 @@ const Signup = () => {
             onChange={handleChange}
             required
           />
-          <PasswordStrength password={formData.password} />
+          <PasswordRequirements password={formData.password} />
         </div>
 
         <Input
