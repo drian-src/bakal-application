@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { Logo } from '../../../shared';
 import { useCart } from '../../../../core/hooks/useCart';
@@ -10,6 +10,7 @@ const HomeHeader = ({ hideSearch = false }) => {
   const [isListening, setIsListening] = useState(false);
   const [voiceError, setVoiceError] = useState('');
   const [imageSearchLabel, setImageSearchLabel] = useState('');
+  const recognitionRef = useRef(null);
   const navigate = useNavigate();
   const location = useLocation();
   const isSearchPage = location.pathname === '/search';
@@ -47,31 +48,47 @@ const HomeHeader = ({ hideSearch = false }) => {
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;
 
+    // Browser support check
     if (!SpeechRecognition) {
-      setVoiceError('Voice search is not supported in this browser. Try Chrome or Edge.');
-      setTimeout(() => setVoiceError(''), 4000);
+      setVoiceError(
+        'Voice search is not supported in this browser. Please use Chrome or Edge.'
+      );
+      setTimeout(() => setVoiceError(''), 5000);
       return;
     }
 
-    // Secure context check — Web Speech API requires HTTPS (or localhost)
-    if (location.protocol !== 'https:' && location.hostname !== 'localhost' && location.hostname !== '127.0.0.1') {
+    // FIX: use window.location — NOT React Router's useLocation()
+    // React Router's location object has no .protocol or .hostname properties
+    const isSecureContext =
+      window.location.protocol === 'https:' ||
+      window.location.hostname === 'localhost' ||
+      window.location.hostname === '127.0.0.1';
+
+    if (!isSecureContext) {
       setVoiceError('Voice search requires a secure connection (HTTPS).');
       setTimeout(() => setVoiceError(''), 5000);
       return;
     }
 
-    if (isListening) return;
+    // ── TOGGLE: if already listening, STOP ──────────────────────────────────
+    if (isListening && recognitionRef.current) {
+      console.log('[VoiceSearch] Stopping by user request');
+      recognitionRef.current.stop();
+      recognitionRef.current = null;
+      setIsListening(false);
+      // Keep whatever partial text was in the search bar
+      return;
+    }
 
+    // ── START listening ─────────────────────────────────────────────────────
     const recognition = new SpeechRecognition();
-
-    // FIX 1: Use 'en-US' instead of 'en-PH' — universally supported across all browsers
-    // 'en-PH' is not in Chrome's supported language list and causes a generic error
-    recognition.lang = 'en-US';
-
-    // FIX 2: Set continuous to false and interimResults to false for reliability
-    recognition.continuous = false;
-    recognition.interimResults = false;
+    recognition.lang = 'en-US';          // en-US is universally supported
+    recognition.continuous = false;       // stop after first pause in speech
+    recognition.interimResults = true;    // ← KEY: fire onresult during speech
     recognition.maxAlternatives = 1;
+
+    // Store instance in ref so we can stop it from outside this function
+    recognitionRef.current = recognition;
 
     recognition.onstart = () => {
       setIsListening(true);
@@ -80,51 +97,81 @@ const HomeHeader = ({ hideSearch = false }) => {
     };
 
     recognition.onresult = (event) => {
-      const transcript = event.results[0][0].transcript.trim();
-      const confidence = event.results[0][0].confidence;
-      console.log(`[VoiceSearch] Heard: "${transcript}" (confidence: ${confidence.toFixed(2)})`);
+      let interimTranscript = '';
+      let finalTranscript = '';
 
-      if (transcript) {
-        setSearchQuery(transcript);
-        navigate(`/search?q=${encodeURIComponent(transcript)}`);
+      // Loop through all results to build interim and final strings
+      for (let i = event.resultIndex; i < event.results.length; i++) {
+        const transcript = event.results[i][0].transcript;
+        if (event.results[i].isFinal) {
+          finalTranscript += transcript;
+        } else {
+          interimTranscript += transcript;
+        }
       }
-      setIsListening(false);
+
+      // Show live interim text in the search bar as the user speaks
+      if (interimTranscript) {
+        setSearchQuery(interimTranscript);
+      }
+
+      // When a final result comes in, submit the search
+      if (finalTranscript.trim()) {
+        const cleaned = finalTranscript.trim();
+        console.log(`[VoiceSearch] Final: "${cleaned}"`);
+        setSearchQuery(cleaned);
+        setIsListening(false);
+        recognitionRef.current = null;
+        navigate(`/search?q=${encodeURIComponent(cleaned)}`);
+      }
     };
 
     recognition.onerror = (event) => {
       setIsListening(false);
+      recognitionRef.current = null;
       console.error('[VoiceSearch] Error code:', event.error, '| Message:', event.message);
 
-      // FIX 3: Map every known error code to a clear user message
       const errorMessages = {
-        'not-allowed':      'Microphone access denied. Click the 🔒 icon in your browser bar and allow microphone.',
-        'no-speech':        'No speech detected. Please speak closer to the microphone and try again.',
-        'audio-capture':    'No microphone found. Please connect a microphone and try again.',
-        'network':          'Network error. Voice search requires an internet connection.',
-        'aborted':          'Voice search was cancelled.',
-        'language-not-supported': 'Language not supported. Please try again.',
-        'service-not-allowed':    'Voice search is blocked. Please allow microphone access in your browser settings.',
-        'bad-grammar':      'Could not understand. Please try again.',
+        'not-allowed':
+          'Microphone access denied. Click the 🔒 icon in your address bar and allow microphone.',
+        'no-speech':
+          'No speech detected. Please speak clearly and try again.',
+        'audio-capture':
+          'No microphone found. Please connect a microphone and try again.',
+        'network':
+          'Network error. Voice search requires an internet connection (audio is processed online).',
+        'aborted':
+          '', // user stopped — show nothing
+        'language-not-supported':
+          'Language not supported. Please try again.',
+        'service-not-allowed':
+          'Voice search blocked. Please allow microphone access in browser settings.',
       };
 
-      const message = errorMessages[event.error]
-        || `Voice search error (${event.error}). Please try again.`;
+      const message =
+        errorMessages[event.error] !== undefined
+          ? errorMessages[event.error]
+          : `Voice search error (${event.error}). Please try again.`;
 
-      setVoiceError(message);
-      setTimeout(() => setVoiceError(''), 5000);
+      if (message) {
+        setVoiceError(message);
+        setTimeout(() => setVoiceError(''), 5000);
+      }
     };
 
     recognition.onend = () => {
       console.log('[VoiceSearch] Recognition ended');
       setIsListening(false);
+      recognitionRef.current = null;
     };
 
-    // FIX 4: Wrap start() in try-catch — some browsers throw synchronously
+    // Start — wrapped in try/catch for browsers that throw synchronously
     try {
       recognition.start();
     } catch (err) {
       console.error('[VoiceSearch] Failed to start:', err);
       setIsListening(false);
+      recognitionRef.current = null;
       setVoiceError('Could not start voice search. Please check microphone permissions.');
       setTimeout(() => setVoiceError(''), 5000);
     }
@@ -196,7 +243,7 @@ const HomeHeader = ({ hideSearch = false }) => {
               type="text"
               placeholder={
                 isListening
-                  ? 'Listening...'
+                  ? 'Listening... (click mic to stop)'
                   : 'Search products across all platforms...'
               }
               className="search-input"
@@ -209,8 +256,8 @@ const HomeHeader = ({ hideSearch = false }) => {
             <button
               type="button"
               onClick={handleVoiceSearch}
-              title={isListening ? 'Listening...' : 'Search by voice'}
-              aria-label="Voice search"
+              title={isListening ? 'Click to stop listening' : 'Search by voice (click to start)'}
+              aria-label={isListening ? 'Stop voice search' : 'Start voice search'}
               style={{
                 position: 'absolute',
                 right: '74px',           // sits left of the photo button
