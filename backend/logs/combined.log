@@ -10290,3 +10290,379 @@ Call log:
 2026-03-01 08:25:16 [debug]: → GET /api/products/PCWorx/4e17d615-ab27-400b-9eb9-614d0c7dc47b
 2026-03-01 08:28:52 [debug]: → GET /api/search/history
 2026-03-01 08:33:18 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-03-04 21:01:41 [info]: [DB] Supabase connection verified.
+2026-03-04 21:01:41 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-04 21:01:41 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-04 21:02:54 [debug]: → POST /api/auth/login
+2026-03-04 21:02:56 [warn]: [ErrorHandler] 401 POST /api/auth/login - Invalid email or password.
+2026-03-04 21:03:28 [debug]: → POST /api/auth/register
+2026-03-04 21:03:49 [debug]: → GET /api/search/stores
+2026-03-04 21:03:49 [debug]: → GET /api/search
+2026-03-04 21:03:49 [debug]: → GET /api/search/stores
+2026-03-04 21:03:50 [info]: [SearchService] Search #fd360521-0380-4c8d-9bfd-51185bda5a26 - "xnvxvx"
+2026-03-04 21:03:50 [info]: [Backend Cache MISS] Scraping: "xnvxvx"...
+2026-03-04 21:03:51 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:03:51 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:03:51 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:03:54 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:03:54 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=xnvxvx
+2026-03-04 21:03:54 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:03:54 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=xnvxvx
+2026-03-04 21:03:54 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:03:54 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=xnvxvx
+2026-03-04 21:04:09 [debug]: → GET /api/search
+2026-03-04 21:04:13 [info]: [SearchService] Search #05c4727e-fce5-49fa-bc11-0abbd1d991e2 - "xnvxvx"
+2026-03-04 21:04:13 [info]: [Backend Cache MISS] Scraping: "xnvxvx"...
+2026-03-04 21:04:15 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:04:16 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:04:16 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:04:19 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-04 21:04:19 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:04:19 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=xnvxvx
+2026-03-04 21:04:19 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:04:19 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=xnvxvx
+2026-03-04 21:04:19 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:04:19 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=xnvxvx
+2026-03-04 21:04:20 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-04 21:04:30 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-04 21:04:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-04 21:04:35 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:04:35 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-04 21:04:35 [info]: [SearchService] Raw products: 0
+2026-03-04 21:04:35 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:04:35 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:04:35 [info]: [SearchService] Saved 0 products for search #fd360521-0380-4c8d-9bfd-51185bda5a26
+2026-03-04 21:04:35 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-04 21:04:36 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-04 21:04:37 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-04 21:04:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-04 21:04:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-04 21:04:46 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-04 21:04:47 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-04 21:04:50 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-04 21:04:54 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-04 21:04:58 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-04 21:04:58 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:04:58 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-04 21:04:58 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-04 21:04:58 [info]: [SearchService] Raw products: 0
+2026-03-04 21:04:58 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:04:58 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:04:58 [info]: [SearchService] Saved 0 products for search #05c4727e-fce5-49fa-bc11-0abbd1d991e2
+2026-03-04 21:05:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-04 21:05:04 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-04 21:05:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-04 21:05:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-04 21:05:06 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-04 21:05:06 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-04 21:05:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-04 21:05:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-04 21:05:11 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-04 21:05:11 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-04 21:05:14 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-04 21:05:14 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-04 21:22:51 [debug]: → GET /api/search/stores
+2026-03-04 21:22:51 [debug]: → GET /api/search
+2026-03-04 21:22:51 [debug]: → GET /api/search/stores
+2026-03-04 21:22:51 [debug]: → GET /api/cart
+2026-03-04 21:22:52 [info]: [CartController] Getting cart for user: b3ac2d60-dbe7-4924-9d9d-4c21f88c01c2
+2026-03-04 21:22:52 [info]: [Cart] Fetching cart for user: b3ac2d60-dbe7-4924-9d9d-4c21f88c01c2
+2026-03-04 21:22:53 [info]: [Cart] No cart found for user: b3ac2d60-dbe7-4924-9d9d-4c21f88c01c2
+2026-03-04 21:22:53 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:22:53 [info]: [SearchService] Search #b8c62a36-56cb-4711-a7e4-da692f90959d - "xnvxvx"
+2026-03-04 21:22:53 [info]: [Backend Cache MISS] Scraping: "xnvxvx"...
+2026-03-04 21:22:54 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:22:54 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:22:54 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:23:01 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:23:01 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=xnvxvx
+2026-03-04 21:23:01 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:23:01 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=xnvxvx
+2026-03-04 21:23:01 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:23:01 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=xnvxvx
+2026-03-04 21:23:07 [debug]: → GET /api/auth/me
+2026-03-04 21:23:10 [debug]: → GET /api/auth/me
+2026-03-04 21:23:10 [debug]: → GET /api/search/stores
+2026-03-04 21:23:10 [debug]: → GET /api/search/stores
+2026-03-04 21:23:11 [debug]: → GET /api/search
+2026-03-04 21:23:19 [info]: [SearchService] Search #6fb8ab0e-e3cf-4896-b639-dbaea430a7dd - "xnvxvx"
+2026-03-04 21:23:19 [info]: [Backend Cache MISS] Scraping: "xnvxvx"...
+2026-03-04 21:23:22 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:23:22 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:23:22 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:23:23 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:23:23 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=xnvxvx
+2026-03-04 21:23:23 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:23:23 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=xnvxvx
+2026-03-04 21:23:23 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:23:23 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=xnvxvx
+2026-03-04 21:23:33 [debug]: → GET /api/search
+2026-03-04 21:23:34 [debug]: → GET /api/search
+2026-03-04 21:23:35 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-04 21:23:36 [debug]: → GET /api/auth/me
+2026-03-04 21:23:37 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2020ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=xnvxvx", waiting until "load"[22m
+
+2026-03-04 21:23:38 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:23:38 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-04 21:23:38 [info]: [SearchService] Raw products: 0
+2026-03-04 21:23:38 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:23:38 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:23:38 [info]: [SearchService] Saved 0 products for search #b8c62a36-56cb-4711-a7e4-da692f90959d
+2026-03-04 21:23:39 [info]: [SearchService] Search #a54cb950-4761-4a9d-91b0-c8a099c06b9d - "xnvxvx"
+2026-03-04 21:23:39 [info]: [Backend Cache HIT] Query: "xnvxvx"
+2026-03-04 21:23:39 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:23:39 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-04 21:23:39 [info]: [SearchService] Raw products: 0
+2026-03-04 21:23:39 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:23:39 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:23:39 [info]: [SearchService] Saved 0 products for search #a54cb950-4761-4a9d-91b0-c8a099c06b9d
+2026-03-04 21:23:40 [info]: [SearchService] Search #7055d9af-f960-4f4f-b252-a6841f3000b3 - "xnvxvx"
+2026-03-04 21:23:40 [info]: [Backend Cache HIT] Query: "xnvxvx"
+2026-03-04 21:23:40 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:23:40 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-04 21:23:40 [info]: [SearchService] Raw products: 0
+2026-03-04 21:23:40 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:23:40 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:23:40 [info]: [SearchService] Saved 0 products for search #7055d9af-f960-4f4f-b252-a6841f3000b3
+2026-03-04 21:23:41 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:23:42 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-04 21:23:44 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:23:44 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=xnvxvx
+2026-03-04 21:23:56 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2317ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=xnvxvx", waiting until "load"[22m
+
+2026-03-04 21:23:58 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-04 21:23:59 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=xnvxvx&resources[type]=product&resources[limit]=10
+2026-03-04 21:24:00 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:24:00 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=xnvxvx
+2026-03-04 21:24:02 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-04 21:24:04 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-04 21:24:04 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:24:04 [info]: [SearchService] Raw products: 0
+2026-03-04 21:24:04 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:24:04 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:24:04 [info]: [SearchService] Saved 0 products for search #6fb8ab0e-e3cf-4896-b639-dbaea430a7dd
+2026-03-04 21:24:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-04 21:24:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-04 21:24:06 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-04 21:24:06 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-04 21:24:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-04 21:24:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-04 21:24:10 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-04 21:24:11 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-04 21:24:13 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-04 21:24:14 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-04 21:24:14 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-04 21:24:15 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-04 21:24:15 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-04 21:24:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-04 21:24:15 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-04 21:24:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-04 21:24:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-04 21:24:20 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-04 21:24:20 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-04 21:24:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-04 21:24:24 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-04 21:25:52 [debug]: → POST /api/auth/login
+2026-03-04 21:25:53 [warn]: [ErrorHandler] 401 POST /api/auth/login - Invalid email or password.
+2026-03-04 21:27:13 [debug]: → POST /api/auth/register
+2026-03-04 21:27:13 [warn]: [ErrorHandler] 409 POST /api/auth/register - Email already in use.
+2026-03-04 21:27:41 [debug]: → POST /api/auth/register
+2026-03-04 21:28:08 [debug]: → POST /api/auth/login
+2026-03-04 21:28:41 [debug]: → POST /api/auth/login
+2026-03-04 21:28:52 [debug]: → GET /api/auth/me
+2026-03-04 21:28:52 [debug]: → GET /api/cart
+2026-03-04 21:28:53 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:28:53 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:28:53 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:28:53 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:28:53 [debug]: → GET /api/cart
+2026-03-04 21:28:53 [debug]: → GET /api/auth/me
+2026-03-04 21:28:53 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:28:53 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:28:53 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:28:53 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:29:23 [debug]: → POST /api/auth/login
+2026-03-04 21:29:45 [debug]: → GET /api/auth/me
+2026-03-04 21:29:45 [debug]: → GET /api/cart
+2026-03-04 21:29:45 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:29:45 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:29:46 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:29:46 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:29:46 [debug]: → GET /api/cart
+2026-03-04 21:29:46 [debug]: → GET /api/auth/me
+2026-03-04 21:29:46 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:29:46 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:29:46 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:29:46 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:40:32 [debug]: → GET /api/search
+2026-03-04 21:40:32 [debug]: → GET /api/search/stores
+2026-03-04 21:40:32 [debug]: → GET /api/search/stores
+2026-03-04 21:40:33 [info]: [SearchService] Search #54a92783-c48f-44a3-894b-fa7e7cad0a71 - "zxcvxv"
+2026-03-04 21:40:33 [info]: [Backend Cache MISS] Scraping: "zxcvxv"...
+2026-03-04 21:40:34 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxcvxv&resources[type]=product&resources[limit]=10
+2026-03-04 21:40:34 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zxcvxv&resources[type]=product&resources[limit]=10
+2026-03-04 21:40:34 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=zxcvxv&resources[type]=product&resources[limit]=10
+2026-03-04 21:40:37 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:40:37 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zxcvxv
+2026-03-04 21:40:37 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:40:37 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxcvxv
+2026-03-04 21:40:37 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:40:37 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=zxcvxv
+2026-03-04 21:40:52 [debug]: → GET /api/search
+2026-03-04 21:40:53 [info]: [SearchService] Search #0f6b75be-be51-45c4-ac21-f2e0f4bf1e0f - "zxcvxv"
+2026-03-04 21:40:53 [info]: [Backend Cache MISS] Scraping: "zxcvxv"...
+2026-03-04 21:40:56 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-04 21:40:57 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=zxcvxv&resources[type]=product&resources[limit]=10
+2026-03-04 21:40:57 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=zxcvxv&resources[type]=product&resources[limit]=10
+2026-03-04 21:40:57 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=zxcvxv&resources[type]=product&resources[limit]=10
+2026-03-04 21:40:57 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:40:57 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=zxcvxv
+2026-03-04 21:40:57 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:40:57 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=zxcvxv
+2026-03-04 21:40:57 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:40:57 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=zxcvxv
+2026-03-04 21:41:08 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-04 21:41:14 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-04 21:41:15 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-04 21:41:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-04 21:41:18 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-04 21:41:18 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-04 21:41:18 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:41:18 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-04 21:41:18 [info]: [SearchService] Raw products: 0
+2026-03-04 21:41:18 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:41:18 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:41:18 [info]: [SearchService] Saved 0 products for search #54a92783-c48f-44a3-894b-fa7e7cad0a71
+2026-03-04 21:41:25 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-04 21:41:25 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-04 21:41:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-04 21:41:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-04 21:41:29 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-04 21:41:29 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-04 21:41:29 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-04 21:41:29 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-04 21:41:29 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-04 21:41:30 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-04 21:41:33 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-04 21:41:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-04 21:41:34 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-04 21:41:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-04 21:41:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-04 21:41:35 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-04 21:41:35 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-04 21:41:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-04 21:41:38 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:41:38 [info]: [SearchService] Raw products: 0
+2026-03-04 21:41:38 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:41:38 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:41:38 [info]: [SearchService] Saved 0 products for search #0f6b75be-be51-45c4-ac21-f2e0f4bf1e0f
+2026-03-04 21:41:38 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-04 21:41:54 [debug]: → GET /api/auth/me
+2026-03-04 21:41:54 [debug]: → GET /api/cart
+2026-03-04 21:41:55 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:41:55 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:41:55 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:41:55 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:41:55 [debug]: → GET /api/cart
+2026-03-04 21:41:55 [debug]: → GET /api/auth/me
+2026-03-04 21:41:55 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:41:55 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:41:56 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:41:56 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:50:46 [debug]: → GET /api/auth/me
+2026-03-04 21:50:46 [debug]: → GET /api/cart
+2026-03-04 21:50:47 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:50:47 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:50:47 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:50:47 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:50:47 [debug]: → GET /api/cart
+2026-03-04 21:50:47 [debug]: → GET /api/auth/me
+2026-03-04 21:50:47 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:50:47 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:50:47 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:50:47 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:51:26 [debug]: → POST /api/auth/login
+2026-03-04 21:51:32 [debug]: → GET /api/auth/me
+2026-03-04 21:51:32 [debug]: → GET /api/cart
+2026-03-04 21:51:32 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:51:32 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:51:32 [debug]: → GET /api/auth/me
+2026-03-04 21:51:32 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:51:32 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:51:32 [debug]: → GET /api/cart
+2026-03-04 21:51:32 [info]: [CartController] Getting cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:51:32 [info]: [Cart] Fetching cart for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:51:33 [info]: [Cart] No cart found for user: 45c82d1f-15f9-43db-9fd3-6a06b5f5f316
+2026-03-04 21:51:33 [info]: [CartController] Cart retrieved: null
+2026-03-04 21:51:40 [debug]: → GET /api/search/stores
+2026-03-04 21:51:40 [debug]: → GET /api/search
+2026-03-04 21:51:40 [debug]: → GET /api/search/stores
+2026-03-04 21:51:40 [info]: [SearchService] Search #6d725afd-d718-4939-9e36-d01574aa1709 - "egg"
+2026-03-04 21:51:40 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-04 21:51:41 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-04 21:51:41 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-04 21:51:41 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-04 21:51:44 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:51:44 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-04 21:51:44 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:51:44 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-04 21:51:44 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:51:44 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-04 21:51:56 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-04 21:51:57 [debug]: → GET /api/search
+2026-03-04 21:51:57 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-03-04 21:51:57 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-03-04 21:51:57 [info]: [SearchService] Search #263f9ba2-303e-4309-85b1-dc3b2d68b26c - "csadasd"
+2026-03-04 21:51:57 [info]: [Backend Cache MISS] Scraping: "csadasd"...
+2026-03-04 21:51:58 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-04 21:51:58 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-04 21:51:58 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=csadasd&resources[type]=product&resources[limit]=10
+2026-03-04 21:51:59 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=csadasd&resources[type]=product&resources[limit]=10
+2026-03-04 21:51:59 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=csadasd&resources[type]=product&resources[limit]=10
+2026-03-04 21:51:59 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:51:59 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=csadasd
+2026-03-04 21:51:59 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:51:59 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=csadasd
+2026-03-04 21:51:59 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:51:59 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=csadasd
+2026-03-04 21:51:59 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-04 21:52:00 [debug]: → GET /api/search
+2026-03-04 21:52:01 [info]: [SearchService] Search #2ba334e5-3390-4869-90e4-67be946eadc2 - "egg"
+2026-03-04 21:52:01 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-04 21:52:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json
+2026-03-04 21:52:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-04 21:52:08 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-04 21:52:08 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-04 21:52:08 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-03-04 21:52:09 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-04 21:52:09 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-04 21:52:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-03-04 21:52:10 [debug]: [PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset
+2026-03-04 21:52:10 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-04 21:52:10 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-04 21:52:10 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-04 21:52:10 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-04 21:52:10 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-04 21:52:11 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-04 21:52:11 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-04 21:52:11 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-03-04 21:52:12 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-04 21:52:16 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-03-04 21:52:25 [warn]: [SearchService] PCExpress: PCExpress timed out after 45000ms
+2026-03-04 21:52:25 [warn]: [SearchService] VillMan: VillMan timed out after 45000ms
+2026-03-04 21:52:25 [warn]: [SearchService] PCWorx: PCWorx timed out after 45000ms
+2026-03-04 21:52:25 [info]: [SearchService] Raw products: 0
+2026-03-04 21:52:25 [info]: [SearchService] Unique products after dedup: 0
+2026-03-04 21:52:25 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-04 21:52:25 [info]: [SearchService] Saved 0 products for search #6d725afd-d718-4939-9e36-d01574aa1709
+2026-03-04 21:52:26 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-04 21:52:27 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-03-04 21:52:31 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-04 21:52:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-04 21:52:32 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-04 21:52:32 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-04 21:52:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
