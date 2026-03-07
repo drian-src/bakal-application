@@ -504,4 +504,8 @@ Call log:
 2026-03-05 01:08:48 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
 2026-03-05 01:08:48 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
 2026-03-05 01:08:48 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:21:46 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:21:53 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:24:13 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 07:24:14 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
 2026-03-07 10:07:02 [error]: [DB] Supabase connection failed:

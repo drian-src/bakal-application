@@ -43,11 +43,10 @@ class VillmanScraper extends BaseScraper {
           const searchUrl = `${BASE_URL}/search?type=product&q=${encodeURIComponent(query)}`;
           logger.debug(`[VillmanScraper] Fallback to search page: ${searchUrl}`);
 
-          // Visit homepage first for cookies — reduces bot detection
-          await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
-          await randomDelay(1000, 2000);
-
-          await page.goto(searchUrl, { waitUntil: 'load', timeout: 30000 });
+          // FIX: Removed homepage pre-visit — it cost up to 20s and pushed VillMan over
+          // the 90s service timeout. The search page works directly for URL discovery.
+          // The Shopify JSON API (/search/suggest.json) does not require cookie pre-loading.
+          await page.goto(searchUrl, { waitUntil: 'domcontentloaded', timeout: 25000 });
           await randomDelay(2000, 3000);
           await this.humanScroll(page, 3);
 
@@ -68,7 +67,7 @@ class VillmanScraper extends BaseScraper {
         }
 
         await browser.close();
-        return await this.scrapeMany(productUrls.slice(0, maxResults), 2);
+        return await this.scrapeMany(productUrls.slice(0, maxResults), 3);
       } finally {
         if (browser) await browser.close().catch(() => {});
       }
