@@ -463,3 +463,45 @@ Call log:
     at bootstrap (C:\Users\L. L490\OneDrive\Desktop\BAKAL-APP\bakal-application\backend\src\server.js:13:22)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
 2026-03-01 00:36:14 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-02 09:57:53 [error]: [DB] Supabase connection failed:
+2026-03-05 00:37:59 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:37:59 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:37:59 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:39:00 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:39:01 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:39:01 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:43:02 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:43:02 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:43:03 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:45:06 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:45:06 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:45:06 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:51:42 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:51:42 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:51:42 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:54:43 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:54:43 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:54:44 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:55:06 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:55:06 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:55:07 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:55:46 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:55:47 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 00:55:47 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:57:39 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 00:57:39 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 00:57:39 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 01:04:05 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-05 01:08:28 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 01:08:28 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 01:08:28 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-05 01:08:48 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-05 01:08:48 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-05 01:08:48 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-07 10:07:02 [error]: [DB] Supabase connection failed:

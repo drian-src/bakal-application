@@ -17,7 +17,7 @@ router.get('/history', requireAuth, searchController.getSearchHistory);
 router.delete('/history', requireAuth, searchController.deleteSearchHistory);
 
 // POST /api/search?q=...  — search is expensive so use POST-style with query param
-router.get('/', searchLimiter, requireAuth, searchController.search);
+router.get('/', searchLimiter, optionalAuth, searchController.search);
 router.get('/:searchId/results', optionalAuth, searchController.getSearchResults);
 
 module.exports = router;
