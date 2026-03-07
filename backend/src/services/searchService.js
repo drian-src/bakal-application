@@ -54,6 +54,12 @@ const getCachedOrScrape = async (query, scrapeFn) => {
 let PLATFORM_IDS = {};
 
 async function loadPlatformIds() {
+  if (!supabase) {
+    PLATFORM_IDS = {};
+    logger.warn('[SearchService] Supabase not configured; skipping platform ID load.');
+    return;
+  }
+
   const { data, error } = await supabase.from('platforms').select('id, name');
   if (error) throw error;
   for (const p of data) PLATFORM_IDS[p.name.toLowerCase().trim()] = p.id;
@@ -108,8 +114,19 @@ function isRelevantProduct(product, query) {
 async function search(query, userId = null, maxPerPlatform = 5) {
   if (!Object.keys(PLATFORM_IDS).length) await loadPlatformIds();
 
-  const searchRecord = await searchRepo.create(userId, query);
-  logger.info(`[SearchService] Search #${searchRecord.id} - "${query}"`);
+  const dbEnabled = !!supabase;
+
+  let searchRecord = { id: null };
+  if (dbEnabled) {
+    try {
+      searchRecord = await searchRepo.create(userId, query);
+      logger.info(`[SearchService] Search #${searchRecord.id} - "${query}"`);
+    } catch (err) {
+      logger.warn('[SearchService] Failed to create search record; continuing without persistence', err.message);
+    }
+  } else {
+    logger.info(`[SearchService] DB disabled — running search in memory for: "${query}"`);
+  }
 
   // Scrape all stores in parallel with timeouts
   const storeResults = await getCachedOrScrape(query, async () => {
@@ -205,58 +222,69 @@ async function search(query, userId = null, maxPerPlatform = 5) {
     });
   }
 
-  // Step 3 — Save relevant products to DB grouped by store
+  // Step 3 — Save relevant products to DB grouped by store (if DB enabled)
   const savedProducts = [];
   const sources = [];
   const groupedByStore = {};
 
-  for (let i = 0; i < relevantProducts.length; i++) {
-    const p = relevantProducts[i];
-    try {
-      // Normalize platform name to lowercase for lookup (e.g., "PCExpress" → "pcexpress")
-      const platformKey = p.platform?.toLowerCase().trim();
-      const platformId = PLATFORM_IDS[platformKey];
-      if (!platformId) {
-        logger.warn(`[SearchService] Unknown platform key: "${platformKey}" (original: "${p.platform}")`);
-        continue;
+  if (dbEnabled) {
+    for (let i = 0; i < relevantProducts.length; i++) {
+      const p = relevantProducts[i];
+      try {
+        // Normalize platform name to lowercase for lookup (e.g., "PCExpress" → "pcexpress")
+        const platformKey = p.platform?.toLowerCase().trim();
+        const platformId = PLATFORM_IDS[platformKey];
+        if (!platformId) {
+          logger.warn(`[SearchService] Unknown platform key: "${platformKey}" (original: "${p.platform}")`);
+          continue;
+        }
+
+        // Log successful platform resolution
+        logger.debug(`[SearchService] Platform resolved: "${p.platform}" → ID: ${platformId}`);
+
+        const saved = await productRepo.upsertProduct({
+          title: p.title,
+          price: p.price,
+          rating: p.rating,
+          reviews_count: p.reviews_count,
+          seller_name: p.seller_name,
+          product_url: p.product_url,
+          image_url: p.image_url,
+          platform_id: platformId,
+        });
+
+        const productWithMeta = { ...saved, platform: p.platform, storeId: p.storeId };
+        savedProducts.push(productWithMeta);
+
+        // Group by store for response
+        if (!groupedByStore[p.storeId]) {
+          groupedByStore[p.storeId] = [];
+        }
+        groupedByStore[p.storeId].push(productWithMeta);
+
+        sources.push({
+          search_id: searchRecord.id,
+          product_id: saved.id,
+          rank: i + 1,
+        });
+      } catch (err) {
+        logger.error(`[SearchService] Failed to save product ${p.product_url}: ${err.message}`);
       }
+    }
 
-      // Log successful platform resolution
-      logger.debug(`[SearchService] Platform resolved: "${p.platform}" → ID: ${platformId}`);
+    if (sources.length) await productSourceRepo.createMany(sources);
 
-      const saved = await productRepo.upsertProduct({
-        title: p.title,
-        price: p.price,
-        rating: p.rating,
-        reviews_count: p.reviews_count,
-        seller_name: p.seller_name,
-        product_url: p.product_url,
-        image_url: p.image_url,
-        platform_id: platformId,
-      });
-
-      const productWithMeta = { ...saved, platform: p.platform, storeId: p.storeId };
-      savedProducts.push(productWithMeta);
-
-      // Group by store for response
-      if (!groupedByStore[p.storeId]) {
-        groupedByStore[p.storeId] = [];
-      }
-      groupedByStore[p.storeId].push(productWithMeta);
-
-      sources.push({
-        search_id: searchRecord.id,
-        product_id: saved.id,
-        rank: i + 1,
-      });
-    } catch (err) {
-      logger.error(`[SearchService] Failed to save product ${p.product_url}: ${err.message}`);
+    logger.info(`[SearchService] Saved ${savedProducts.length} products for search #${searchRecord.id}`);
+  } else {
+    // DB disabled — return scraped products directly (no persistence)
+    logger.info('[SearchService] DB disabled — returning scraped products without saving');
+    // Group relevant products by store
+    for (const p of relevantProducts) {
+      if (!groupedByStore[p.storeId]) groupedByStore[p.storeId] = [];
+      groupedByStore[p.storeId].push({ ...p, platform: p.platform });
+      savedProducts.push({ ...p, platform: p.platform });
     }
   }
-
-  if (sources.length) await productSourceRepo.createMany(sources);
-
-  logger.info(`[SearchService] Saved ${savedProducts.length} products for search #${searchRecord.id}`);
 
   // Format response with store metadata
   const storesResponse = storeResults.map((storeResult) => ({
