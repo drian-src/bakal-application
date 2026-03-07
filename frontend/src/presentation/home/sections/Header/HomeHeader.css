@@ -292,3 +292,16 @@
     display: none;
   }
 }
+
+/* Subtle vertical divider between icon buttons and the Search button */
+/* This is the ONLY new CSS added — all existing rules stay unchanged */
+.search-icon-divider {
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 16px;
+  background: #e5e7eb;
+  pointer-events: none;
+}
