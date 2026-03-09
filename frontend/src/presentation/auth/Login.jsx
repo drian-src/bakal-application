@@ -39,21 +39,24 @@ const Login = () => {
       return;
     }
 
-    // Validate password
-    if (!password || password.length < 6) {
-      const errorMsg = 'Password must be at least 6 characters long.';
+    // Validate password — at least 8 chars as per backend requirement
+    if (!password || password.length < 8) {
+      const errorMsg = 'Password must be at least 8 characters long.';
       setError(errorMsg);
       setIsLoading(false);
       return;
     }
 
     // Attempt login via backend
+    console.log(`[Login] Attempting login for: ${email}`);
     const result = await loginUser(email, password);
 
     if (result.success) {
+      console.log('[Login] Login successful, redirecting to home...');
       setError('');
       setTimeout(() => navigate('/home'), 800);
     } else {
+      console.warn('[Login] Login failed:', result.message);
       setError(result.message);
       setIsLoading(false);
     }

@@ -509,3 +509,29 @@ Call log:
 2026-03-05 07:24:13 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
 2026-03-05 07:24:14 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
 2026-03-07 10:07:02 [error]: [DB] Supabase connection failed:
+2026-03-07 10:33:43 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-07 10:33:44 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-07 10:33:44 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-07 10:34:01 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-07 10:34:02 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-07 10:34:02 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-07 10:34:07 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-07 10:34:07 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-07 10:34:08 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-07 10:34:13 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-07 10:34:13 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-07 10:34:13 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-07 10:34:22 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-07 10:34:22 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-07 10:34:22 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-07 10:35:09 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-07 10:35:09 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-07 10:35:09 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-07 11:46:53 [error]: [ErrorHandler] 500 POST /api/auth/login - TypeError: fetch failed
+2026-03-08 00:32:32 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
