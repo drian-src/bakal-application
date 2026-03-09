@@ -43,6 +43,7 @@ const getPasswordStrength = (password) => {
 // Call backend API for login
 export const loginUser = async (email, password) => {
   try {
+    console.log('[loginUser] Attempting login for:', email);
     const response = await fetch(`${API_BASE_URL}/auth/login`, {
       method: 'POST',
       headers: {
@@ -52,8 +53,10 @@ export const loginUser = async (email, password) => {
     });
 
     const result = await response.json();
+    console.log('[loginUser] Response status:', response.status);
 
     if (!response.ok) {
+      console.error('[loginUser] Login failed:', result.message);
       return {
         success: false,
         message: result.message || 'Login failed',
@@ -62,8 +65,17 @@ export const loginUser = async (email, password) => {
 
     // Store JWT token and user info from backend response
     const { user, token } = result.data;
+    if (!token || !user) {
+      console.error('[loginUser] Response missing token or user:', result);
+      return {
+        success: false,
+        message: 'Invalid response from server',
+      };
+    }
+
     localStorage.setItem(AUTH_TOKEN_KEY, token);
     localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(user));
+    console.log('[loginUser] Login successful, token stored');
 
     return {
       success: true,
@@ -71,7 +83,7 @@ export const loginUser = async (email, password) => {
       user,
     };
   } catch (error) {
-    console.error('Login error:', error);
+    console.error('[loginUser] Network error:', error.message);
     return {
       success: false,
       message: 'Connection error. Please check if backend is running.',
@@ -108,6 +120,7 @@ export const registerUser = async (fullName, email, password) => {
   }
 
   try {
+    console.log('[registerUser] Attempting registration for:', email);
     const response = await fetch(`${API_BASE_URL}/auth/register`, {
       method: 'POST',
       headers: {
@@ -117,8 +130,10 @@ export const registerUser = async (fullName, email, password) => {
     });
 
     const result = await response.json();
+    console.log('[registerUser] Response status:', response.status);
 
     if (!response.ok) {
+      console.error('[registerUser] Registration failed:', result.message);
       return {
         success: false,
         message: result.message || 'Registration failed',
@@ -128,8 +143,18 @@ export const registerUser = async (fullName, email, password) => {
 
     // Store JWT token and user info from backend response
     const { user, token } = result.data;
+    if (!token || !user) {
+      console.error('[registerUser] Response missing token or user:', result);
+      return {
+        success: false,
+        message: 'Invalid response from server',
+        code: 'REGISTRATION_FAILED'
+      };
+    }
+
     localStorage.setItem(AUTH_TOKEN_KEY, token);
     localStorage.setItem(CURRENT_USER_KEY, JSON.stringify(user));
+    console.log('[registerUser] Registration successful, token stored');
 
     return {
       success: true,
@@ -138,7 +163,7 @@ export const registerUser = async (fullName, email, password) => {
       user,
     };
   } catch (error) {
-    console.error('Registration error:', error);
+    console.error('[registerUser] Network error:', error.message);
     return {
       success: false,
       message: 'Connection error. Please check if backend is running.',

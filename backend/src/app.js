@@ -29,6 +29,7 @@ app.use(helmet());
 const ALLOWED_ORIGINS = [
   process.env.FRONTEND_URL || 'http://localhost:5173',
   'http://localhost:5173',  // Vite default — always allow in dev
+  'http://localhost:5174',  // Vite alternative port (when 5173 is in use)
   'http://localhost:4173',  // Vite preview
 ].filter(Boolean);
 
@@ -37,6 +38,11 @@ app.use(cors({
     // Allow requests with no origin (mobile apps, Postman, curl)
     if (!origin) return callback(null, true);
     if (ALLOWED_ORIGINS.includes(origin)) return callback(null, true);
+    // Allow any localhost in development
+    if (process.env.NODE_ENV === 'development' && origin.startsWith('http://localhost:')) {
+      logger.debug(`[CORS] Allowing development localhost origin: ${origin}`);
+      return callback(null, true);
+    }
     logger.warn(`[CORS] Blocked origin: ${origin}`);
     callback(new Error(`CORS: origin ${origin} not allowed`));
   },

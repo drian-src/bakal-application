@@ -12,6 +12,7 @@ async function register(req, res, next) {
       return res.status(400).json({ success: false, message: 'Password must be at least 8 characters.' });
     }
     const result = await authService.register({ email, name, password });
+    // Database already excludes password_hash via select(), so result.user is safe to send
     return res.status(201).json({ success: true, data: result });
   } catch (err) {
     next(err);
