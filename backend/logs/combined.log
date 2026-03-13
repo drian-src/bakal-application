@@ -12717,3 +12717,189 @@ Call log:
 2026-03-13 21:27:08 [debug]: → GET /api/auth/me
 2026-03-13 21:27:11 [debug]: → GET /api/auth/me
 2026-03-13 21:27:17 [debug]: → GET /api/auth/me
+2026-03-13 21:28:02 [debug]: → GET /api/search/stores
+2026-03-13 21:28:03 [debug]: → GET /api/search
+2026-03-13 21:28:03 [debug]: → GET /api/search/stores
+2026-03-13 21:28:04 [info]: [SearchService] Search #ceb4573a-9425-45fc-9071-63746ab78706 - "amd ryzen"
+2026-03-13 21:28:04 [info]: [Backend Cache MISS] Scraping: "amd ryzen"...
+2026-03-13 21:28:04 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2305ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:04 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2336ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:04 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2282ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:06 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4173ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:06 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4499ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:06 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4164ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:10 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 21:28:10 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 21:28:11 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 21:28:11 [warn]: [Backend Cache SKIP] "amd ryzen" — 0 products returned, not caching
+2026-03-13 21:28:11 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:11 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:11 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:11 [info]: [SearchService] Raw products: 0
+2026-03-13 21:28:11 [info]: [SearchService] Unique products after dedup: 0
+2026-03-13 21:28:11 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-13 21:28:11 [info]: [SearchService] Saved 0 products for search #ceb4573a-9425-45fc-9071-63746ab78706
+2026-03-13 21:28:11 [debug]: → GET /api/search
+2026-03-13 21:28:12 [info]: [SearchService] Search #684d5946-4d5c-474f-a34a-453bc58cfacb - "amd ryzen"
+2026-03-13 21:28:12 [info]: [Backend Cache MISS] Scraping: "amd ryzen"...
+2026-03-13 21:28:12 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2190ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:12 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2151ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:12 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2029ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:14 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4395ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:14 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4284ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:14 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4327ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:18 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 21:28:18 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 21:28:18 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 21:28:18 [warn]: [Backend Cache SKIP] "amd ryzen" — 0 products returned, not caching
+2026-03-13 21:28:18 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:18 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:18 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 21:28:18 [info]: [SearchService] Raw products: 0
+2026-03-13 21:28:18 [info]: [SearchService] Unique products after dedup: 0
+2026-03-13 21:28:18 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-13 21:28:18 [info]: [SearchService] Saved 0 products for search #684d5946-4d5c-474f-a34a-453bc58cfacb
