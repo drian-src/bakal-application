@@ -16,7 +16,6 @@ const HomeHeader = ({ hideSearch = false }) => {
   const isSearchPage = location.pathname === '/search';
   const { cartCount } = useCart();
 
-  // Get current user and derive display name
   const user = getCurrentUser();
   const displayName = user?.name
     ?? user?.displayName
@@ -48,7 +47,6 @@ const HomeHeader = ({ hideSearch = false }) => {
     const SpeechRecognition =
       window.SpeechRecognition || window.webkitSpeechRecognition;
 
-    // Browser support check
     if (!SpeechRecognition) {
       setVoiceError(
         'Voice search is not supported in this browser. Please use Chrome or Edge.'
@@ -57,8 +55,6 @@ const HomeHeader = ({ hideSearch = false }) => {
       return;
     }
 
-    // FIX: use window.location — NOT React Router's useLocation()
-    // React Router's location object has no .protocol or .hostname properties
     const isSecureContext =
       window.location.protocol === 'https:' ||
       window.location.hostname === 'localhost' ||
@@ -70,24 +66,20 @@ const HomeHeader = ({ hideSearch = false }) => {
       return;
     }
 
-    // ── TOGGLE: if already listening, STOP ──────────────────────────────────
     if (isListening && recognitionRef.current) {
       console.log('[VoiceSearch] Stopping by user request');
       recognitionRef.current.stop();
       recognitionRef.current = null;
       setIsListening(false);
-      // Keep whatever partial text was in the search bar
       return;
     }
 
-    // ── START listening ─────────────────────────────────────────────────────
     const recognition = new SpeechRecognition();
-    recognition.lang = 'en-US';          // en-US is universally supported
-    recognition.continuous = false;       // stop after first pause in speech
-    recognition.interimResults = true;    // ← KEY: fire onresult during speech
+    recognition.lang = 'en-US';
+    recognition.continuous = false;
+    recognition.interimResults = true;
     recognition.maxAlternatives = 1;
 
-    // Store instance in ref so we can stop it from outside this function
     recognitionRef.current = recognition;
 
     recognition.onstart = () => {
@@ -100,7 +92,6 @@ const HomeHeader = ({ hideSearch = false }) => {
       let interimTranscript = '';
       let finalTranscript = '';
 
-      // Loop through all results to build interim and final strings
       for (let i = event.resultIndex; i < event.results.length; i++) {
         const transcript = event.results[i][0].transcript;
         if (event.results[i].isFinal) {
@@ -110,18 +101,13 @@ const HomeHeader = ({ hideSearch = false }) => {
         }
       }
 
-      // Show live interim text in the search bar as the user speaks
       if (interimTranscript) {
-        // FIX: Strip trailing punctuation that Chrome speech recognition adds automatically
         setSearchQuery(interimTranscript.replace(/[.,!?;:]+$/, ''));
       }
 
-      // When a final result comes in, submit the search
       if (finalTranscript.trim()) {
-        // FIX: Strip trailing punctuation that Chrome speech recognition adds automatically
-        // e.g. "CPU." → "CPU", "gaming mouse," → "gaming mouse"
         const cleaned = finalTranscript.trim().replace(/[.,!?;:]+$/, '');
-        console.log(`[VoiceSearch] Final: "${cleaned}" (original: "${finalTranscript.trim()}")`);
+        console.log('[VoiceSearch] Final:', cleaned);
         setSearchQuery(cleaned);
         setIsListening(false);
         recognitionRef.current = null;
@@ -132,29 +118,19 @@ const HomeHeader = ({ hideSearch = false }) => {
     recognition.onerror = (event) => {
       setIsListening(false);
       recognitionRef.current = null;
-      console.error('[VoiceSearch] Error code:', event.error, '| Message:', event.message);
+      console.error('[VoiceSearch] Error:', event.error);
 
       const errorMessages = {
-        'not-allowed':
-          'Microphone access denied. Click the 🔒 icon in your address bar and allow microphone.',
-        'no-speech':
-          'No speech detected. Please speak clearly and try again.',
-        'audio-capture':
-          'No microphone found. Please connect a microphone and try again.',
-        'network':
-          'Network error. Voice search requires an internet connection (audio is processed online).',
-        'aborted':
-          '', // user stopped — show nothing
-        'language-not-supported':
-          'Language not supported. Please try again.',
-        'service-not-allowed':
-          'Voice search blocked. Please allow microphone access in browser settings.',
+        'not-allowed': 'Microphone access denied. Click the lock icon and allow microphone.',
+        'no-speech': 'No speech detected. Please speak clearly and try again.',
+        'audio-capture': 'No microphone found. Please connect a microphone.',
+        'network': 'Network error. Voice search requires internet.',
+        'aborted': '',
+        'language-not-supported': 'Language not supported. Please try again.',
+        'service-not-allowed': 'Voice search blocked. Allow microphone in settings.',
       };
 
-      const message =
-        errorMessages[event.error] !== undefined
-          ? errorMessages[event.error]
-          : `Voice search error (${event.error}). Please try again.`;
+      const message = errorMessages[event.error] ?? 'Voice search error occurred.';
 
       if (message) {
         setVoiceError(message);
@@ -168,29 +144,18 @@ const HomeHeader = ({ hideSearch = false }) => {
       recognitionRef.current = null;
     };
 
-    // Start — wrapped in try/catch for browsers that throw synchronously
     try {
       recognition.start();
     } catch (err) {
       console.error('[VoiceSearch] Failed to start:', err);
       setIsListening(false);
       recognitionRef.current = null;
-      setVoiceError('Could not start voice search. Please check microphone permissions.');
+      setVoiceError('Could not start voice search.');
       setTimeout(() => setVoiceError(''), 5000);
     }
   };
 
-  /**
-   * handleImageSearch — opens a file picker, reads the selected image filename,
-   * cleans it into a product search query, and navigates to search results.
-   * Uses only the browser FileReader API — no package, no server upload.
-   *
-   * Strategy: extract meaningful words from the filename.
-   * e.g. "MSI-GeForce-RTX4090-Gaming-X.jpg" → "MSI GeForce RTX4090 Gaming X"
-   * This works well for product photos saved from store pages.
-   */
   const handleImageSearch = () => {
-    // Create a hidden file input and trigger it
     const input = document.createElement('input');
     input.type = 'file';
     input.accept = 'image/*';
@@ -200,15 +165,14 @@ const HomeHeader = ({ hideSearch = false }) => {
       const file = e.target.files?.[0];
       if (!file) return;
 
-      // Extract search query from filename
       const rawName = file.name
-        .replace(/\.[^/.]+$/, '')      // remove extension (.jpg, .png, etc.)
-        .replace(/[-_]/g, ' ')         // replace dashes/underscores with spaces
-        .replace(/\s+/g, ' ')          // collapse multiple spaces
+        .replace(/\.[^/.]+$/, '')
+        .replace(/[-_]/g, ' ')
+        .replace(/\s+/g, ' ')
         .trim();
 
       if (!rawName) {
-        setVoiceError('Could not extract a search term from this image filename.');
+        setVoiceError('Could not extract search term from filename.');
         setTimeout(() => setVoiceError(''), 4000);
         return;
       }
@@ -217,7 +181,6 @@ const HomeHeader = ({ hideSearch = false }) => {
       setSearchQuery(rawName);
       navigate(`/search?q=${encodeURIComponent(rawName)}`);
 
-      // Cleanup
       document.body.removeChild(input);
     };
 
@@ -250,20 +213,19 @@ const HomeHeader = ({ hideSearch = false }) => {
                   : 'Search products across all platforms...'
               }
               className="search-input"
-              style={{ paddingRight: '88px' }} // make room for mic + photo + search button
+              style={{ paddingRight: '125px' }}
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
             />
 
-            {/* ── Mic button ── */}
             <button
               type="button"
               onClick={handleVoiceSearch}
-              title={isListening ? 'Click to stop listening' : 'Search by voice (click to start)'}
+              title={isListening ? 'Click to stop listening' : 'Search by voice'}
               aria-label={isListening ? 'Stop voice search' : 'Start voice search'}
               style={{
                 position: 'absolute',
-                right: '74px',           // sits left of the photo button
+                right: '74px',
                 top: '50%',
                 transform: 'translateY(-50%)',
                 width: '28px',
@@ -284,9 +246,7 @@ const HomeHeader = ({ hideSearch = false }) => {
                 if (!isListening) e.currentTarget.style.color = '#9ca3af';
               }}
             >
-              {/* Mic SVG — animates to pulsing dot when listening */}
               {isListening ? (
-                // Recording indicator — filled gold circle
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="var(--accent-gold, #d4af37)">
                   <circle cx="12" cy="12" r="8">
                     <animate attributeName="r" values="8;10;8" dur="1s" repeatCount="indefinite" />
@@ -294,7 +254,6 @@ const HomeHeader = ({ hideSearch = false }) => {
                   </circle>
                 </svg>
               ) : (
-                // Static mic icon
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <rect x="9" y="2" width="6" height="11" rx="3" />
                   <path d="M5 10a7 7 0 0 0 14 0" />
@@ -304,7 +263,6 @@ const HomeHeader = ({ hideSearch = false }) => {
               )}
             </button>
 
-            {/* ── Photo / Image button ── */}
             <button
               type="button"
               onClick={handleImageSearch}
@@ -312,7 +270,7 @@ const HomeHeader = ({ hideSearch = false }) => {
               aria-label="Image search"
               style={{
                 position: 'absolute',
-                right: '46px',           // sits left of the gold Search button
+                right: '64px',
                 top: '50%',
                 transform: 'translateY(-50%)',
                 width: '28px',
@@ -331,7 +289,6 @@ const HomeHeader = ({ hideSearch = false }) => {
               onMouseEnter={e => { e.currentTarget.style.color = 'var(--accent-gold, #d4af37)'; }}
               onMouseLeave={e => { e.currentTarget.style.color = '#9ca3af'; }}
             >
-              {/* Minimalist camera/image SVG */}
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="6" width="18" height="14" rx="2" />
                 <circle cx="12" cy="13" r="3" />
@@ -339,15 +296,12 @@ const HomeHeader = ({ hideSearch = false }) => {
               </svg>
             </button>
 
-            {/* ── Subtle vertical divider ── */}
             <span className="search-icon-divider" aria-hidden="true" />
 
-            {/* ── Existing Search button — DO NOT CHANGE its className or styles ── */}
             <button type="submit" className="search-button" title="Search">
               Search
             </button>
 
-            {/* ── Voice/image error tooltip ── */}
             {voiceError && (
               <div
                 role="alert"
@@ -369,7 +323,6 @@ const HomeHeader = ({ hideSearch = false }) => {
                   gap: '6px',
                 }}
               >
-                {/* Warning icon */}
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f59e0b"
                   strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
                   style={{ flexShrink: 0, marginTop: '1px' }}>
@@ -391,34 +344,42 @@ const HomeHeader = ({ hideSearch = false }) => {
               <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>
             </svg>
             {cartCount > 0 && (
-              <span className="cart-badge">
-                {cartCount > 99 ? '99+' : cartCount}
-              </span>
+              <span className="cart-badge">{cartCount}</span>
             )}
           </div>
-
-          {/* Profile pill — avatar + name */}
-          <div className="profile-pill" onClick={handleProfileClick} title={displayName ? `${displayName} - View Profile` : 'View Profile'}>
-            <div className="profile-avatar">
-              <span className="profile-avatar-letter">
-                {firstName ? firstName.charAt(0).toUpperCase() : '?'}
-              </span>
-            </div>
-            {firstName && (
-              <span className="profile-name">{firstName}</span>
+          <button
+            className="profile-icon"
+            onClick={handleProfileClick}
+            aria-label="Profile"
+            title="Go to profile"
+            style={{
+              backgroundImage: user?.profilePhoto ? `url(${user.profilePhoto})` : 'none',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              color: user?.profilePhoto ? 'transparent' : 'inherit'
+            }}
+          >
+            {user?.profilePhoto ? '' : (
+              user ? (
+                user.name ? (
+                  user.name
+                    .split(' ')
+                    .slice(0, 2)
+                    .map(n => n[0])
+                    .join('')
+                    .toUpperCase()
+                ) : user.email ? (
+                  user.email[0].toUpperCase()
+                ) : (
+                  '?'
+                )
+              ) : (
+                '?'
+              )
             )}
-          </div>
+          </button>
         </div>
       </div>
-
-      {/* Screen-reader announcement for voice search state */}
-      <span
-        role="status"
-        aria-live="polite"
-        style={{ position: 'absolute', width: '1px', height: '1px', overflow: 'hidden', clip: 'rect(0,0,0,0)' }}
-      >
-        {isListening ? 'Listening for your search. Please speak now.' : ''}
-      </span>
     </header>
   );
 };

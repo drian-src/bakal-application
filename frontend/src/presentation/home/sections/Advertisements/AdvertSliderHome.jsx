@@ -2,30 +2,24 @@ import React, { useState } from 'react';
 import { useEffect } from 'react';
 import './AdvertSliderHome.css';
 
-const getStoreIconLarge = (text, color = '#666') => (
-  <svg width="120" height="120" viewBox="0 0 120 120" style={{ background: color, borderRadius: '8px' }}>
-    <rect width="120" height="120" fill={color}/>
-    <text x="60" y="70" textAnchor="middle" fontSize="56" fontWeight="700" fill="white" fontFamily="sans-serif">
-      {text.charAt(0).toUpperCase()}
-    </text>
-  </svg>
-);
-
 const slides = [
   {
     id: 'pcexpress',
+    logo: 'https://pcx.com.ph/cdn/shop/files/PC_Express_Logo_Web.png?v=1764316761&width=450',
     title: 'PCExpress',
     desc: 'Electronics deals at unbeatable prices',
     bgColor: '#004080'
   },
   {
     id: 'villman',
+    logo: 'https://villman.com/images/villman_logo_2020.png',
     title: 'VillMan',
     desc: 'Trusted source for gadgets & devices',
     bgColor: '#008000'
   },
   {
     id: 'pcworx',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsqTyJUT_LKOCiVslsKdzdEoMMu4U9yxk8ZQ&s',
     title: 'PCWorx',
     desc: 'Your computer and accessory hub',
     bgColor: '#800080'
@@ -48,9 +42,9 @@ const AdvertSliderHome = () => {
 
   const handleSlideClick = (slideId) => {
     const platformUrls = {
-      'pcexpress': 'https://pcexpress.com',
+      'pcexpress': 'https://pcx.com.ph',
       'villman': 'https://villman.com.ph',
-      'pcworx': 'https://pcworx.com'
+      'pcworx': 'https://pcworx.ph'
     };
     
     const url = platformUrls[slideId];
@@ -64,7 +58,7 @@ const AdvertSliderHome = () => {
       <div className="advert-track-home" style={{ transform: `translateX(-${index * 100}%)` }}>
         {slides.map((s) => (
           <div className="advert-slide-home" key={s.id} style={{ backgroundColor: s.bgColor }} onClick={() => handleSlideClick(s.id)}>
-            {getStoreIconLarge(s.id, s.bgColor)}
+            <img src={s.logo} alt={s.title} className="advert-logo-home" />
             <h3 className="advert-title-home">{s.title}</h3>
             <p className="advert-desc-home">{s.desc}</p>
           </div>

@@ -94,7 +94,7 @@ const Signup = () => {
       </div>
 
       <Link to="/" className="auth-back-button">
-        ←
+        {'<'}
       </Link>
 
       <form onSubmit={handleSubmit} className="auth-form">

@@ -4,9 +4,9 @@ const AdvertisementCard = ({ ad }) => {
   const handleAdClick = () => {
     // Navigate to platform home pages (same behavior as adding to cart)
     const platformUrls = {
-      'pcexpress': 'https://pcexpress.com',
+      'pcexpress': 'https://pcx.com.ph',
       'villman': 'https://villman.com.ph',
-      'pcworx': 'https://pcworx.com'
+      'pcworx': 'https://pcworx.ph'
     };
     
     const url = platformUrls[ad.platform];

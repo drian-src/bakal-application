@@ -79,48 +79,33 @@ const LandingPage = () => {
                 <div className="showcase-container">
                   {/* PCExpress */}
                   <div className="platform-card-hero pcexpress">
-                    <div className="platform-badge-top">PCExpress</div>
                     <div className="platform-header-hero">
-                      <svg width="60" height="60" viewBox="0 0 60 60" className="platform-icon-hero" style={{ background: '#004080', borderRadius: '6px' }}>
-                        <rect width="60" height="60" fill="#004080"/>
-                        <text x="30" y="38" textAnchor="middle" fontSize="28" fontWeight="700" fill="white" fontFamily="sans-serif">P</text>
-                      </svg>
+                      <img src="https://pcx.com.ph/cdn/shop/articles/PCX-Branches-Square_1ab4c7b1-b18e-42d6-8f4e-c1dd65aa0664.jpg?v=1738804652&width=1000" alt="PCExpress" className="platform-icon-hero" />
                     </div>
                     <div className="platform-info-hero">
                       <h3>PCExpress</h3>
-                      <p>Electronics deals at unbeatable prices</p>
                       <div className="platform-feature">Top Electronics Store</div>
                     </div>
                   </div>
 
                   {/* VillMan */}
                   <div className="platform-card-hero villman">
-                    <div className="platform-badge-top">VillMan</div>
                     <div className="platform-header-hero">
-                      <svg width="60" height="60" viewBox="0 0 60 60" className="platform-icon-hero" style={{ background: '#008000', borderRadius: '6px' }}>
-                        <rect width="60" height="60" fill="#008000"/>
-                        <text x="30" y="38" textAnchor="middle" fontSize="28" fontWeight="700" fill="white" fontFamily="sans-serif">V</text>
-                      </svg>
+                      <img src="https://villman.com/favicon.png" alt="VillMan" className="platform-icon-hero" />
                     </div>
                     <div className="platform-info-hero">
                       <h3>VillMan</h3>
-                      <p>Reliable gadgets & devices</p>
                       <div className="platform-feature">Trusted & Verified</div>
                     </div>
                   </div>
 
                   {/* PCWorx */}
                   <div className="platform-card-hero pcworx">
-                    <div className="platform-badge-top">PCWorx</div>
                     <div className="platform-header-hero">
-                      <svg width="60" height="60" viewBox="0 0 60 60" className="platform-icon-hero" style={{ background: '#800080', borderRadius: '6px' }}>
-                        <rect width="60" height="60" fill="#800080"/>
-                        <text x="30" y="38" textAnchor="middle" fontSize="28" fontWeight="700" fill="white" fontFamily="sans-serif">P</text>
-                      </svg>
+                      <img src="https://pbs.twimg.com/profile_images/1351362241098989568/AiM-A331_400x400.jpg" alt="PCWorx" className="platform-icon-hero" />
                     </div>
                     <div className="platform-info-hero">
                       <h3>PCWorx</h3>
-                      <p>Your computer & accessory hub</p>
                       <div className="platform-feature">Quality & Value</div>
                     </div>
                   </div>

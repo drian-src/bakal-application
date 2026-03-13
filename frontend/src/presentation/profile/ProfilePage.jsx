@@ -61,6 +61,11 @@ const ProfilePage = () => {
       const reader = new FileReader();
       reader.onloadend = () => {
         setProfileImage(reader.result);
+        // Immediately save to localStorage for real-time sync
+        const currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}');
+        currentUser.profilePhoto = reader.result;
+        localStorage.setItem('currentUser', JSON.stringify(currentUser));
+        console.log('[ProfilePage] Profile photo saved to localStorage');
       };
       reader.readAsDataURL(file);
     }
@@ -69,6 +74,16 @@ const ProfilePage = () => {
   const handleSaveProfile = () => {
     setAccountInfo(editForm);
     setIsEditing(false);
+    
+    // Save profile info and photo to localStorage
+    const currentUser = JSON.parse(localStorage.getItem('currentUser') || '{}');
+    currentUser.name = editForm.name;
+    currentUser.email = editForm.email;
+    if (profileImage) {
+      currentUser.profilePhoto = profileImage;
+    }
+    localStorage.setItem('currentUser', JSON.stringify(currentUser));
+    
     alert('Profile updated successfully');
   };
 

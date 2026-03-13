@@ -36,8 +36,8 @@
 }
 
 .advert-logo-home {
-  width: 100px;
-  height: 100px;
+  width: 400px;
+  height: auto;
   margin-bottom: 1rem;
   object-fit: contain;
   filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));

@@ -1,32 +1,26 @@
 import React from 'react';
 import './PlatformShowcase.css';
 
-const getStoreIconBadge = (text, color = '#666') => (
-  <svg width="80" height="80" viewBox="0 0 80 80" style={{ background: color, borderRadius: '6px' }}>
-    <rect width="80" height="80" fill={color}/>
-    <text x="40" y="48" textAnchor="middle" fontSize="40" fontWeight="700" fill="white" fontFamily="sans-serif">
-      {text.charAt(0).toUpperCase()}
-    </text>
-  </svg>
-);
-
 const PlatformShowcase = () => {
   const platforms = [
     {
       id: 'pcexpress',
       name: 'PCExpress',
+      logo: 'https://via.placeholder.com/80?text=PCExpress',
       color: '#004080',
       description: 'Top destination for electronics'
     },
     {
       id: 'villman',
       name: 'VillMan',
+      logo: 'https://via.placeholder.com/80?text=VillMan',
       color: '#008000',
       description: 'Reliable gadgets & devices'
     },
     {
       id: 'pcworx',
       name: 'PCWorx',
+      logo: 'https://via.placeholder.com/80?text=PCWorx',
       color: '#800080',
       description: 'Computers and accessories hub'
     }
@@ -49,7 +43,11 @@ const PlatformShowcase = () => {
                 className="platform-card-header"
                 style={{ backgroundColor: platform.color }}
               >
-                {getStoreIconBadge(platform.id, platform.color)}
+                <img 
+                  src={platform.image}
+                  alt={platform.name}
+                  className="platform-icon-hero"
+                />
               </div>
               <div className="platform-card-body">
                 <h3 className="platform-name">{platform.name}</h3>

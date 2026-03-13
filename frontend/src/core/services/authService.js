@@ -5,12 +5,47 @@ const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3000/api'
 const AUTH_TOKEN_KEY = 'authToken';
 const CURRENT_USER_KEY = 'currentUser';
 
-// Email validation regex (RFC 5322 simplified)
-const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+// Whitelist of valid email domains (known providers only)
+const VALID_EMAIL_DOMAINS = new Set([
+  'gmail.com',
+  'yahoo.com',
+  'outlook.com',
+  'hotmail.com',
+  'aol.com',
+  'icloud.com',
+  'mail.com',
+  'protonmail.com',
+  'ymail.com',
+  'zoho.com',
+  'mailinator.com'
+]);
 
-// Validate email format
+// Email validation - whitelist of known domains only
 export const validateEmail = (email) => {
-  return EMAIL_REGEX.test(email) && email.length <= 254;
+  // Must be a string
+  if (typeof email !== 'string') return false;
+  
+  email = email.trim().toLowerCase();
+  
+  // Basic format check
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) return false;
+  
+  // Check length constraints
+  if (email.length > 254) return false;
+  
+  // Extract domain
+  const [localPart, domain] = email.split('@');
+  
+  // Local part must not exceed 64 chars
+  if (localPart.length > 64) return false;
+  
+  // Domain must be in whitelist
+  if (!VALID_EMAIL_DOMAINS.has(domain)) {
+    return false;
+  }
+  
+  return true;
 };
 
 // Validate password strength
@@ -185,6 +220,28 @@ export const getCurrentUser = () => {
   } catch (error) {
     console.error('Error getting current user:', error);
     return null;
+  }
+};
+
+// Clear invalid user credentials (for migration - remove users with invalid email domains)
+export const clearInvalidUsers = () => {
+  try {
+    const userStr = localStorage.getItem(CURRENT_USER_KEY);
+    const token = localStorage.getItem(AUTH_TOKEN_KEY);
+    
+    if (userStr && token) {
+      const user = JSON.parse(userStr);
+      if (user.email && !validateEmail(user.email)) {
+        console.log('[authService] Clearing user with invalid email:', user.email);
+        localStorage.removeItem(AUTH_TOKEN_KEY);
+        localStorage.removeItem(CURRENT_USER_KEY);
+        return true; // Cleared invalid user
+      }
+    }
+    return false; // No invalid user to clear
+  } catch (error) {
+    console.error('Error clearing invalid users:', error);
+    return false;
   }
 };
 
