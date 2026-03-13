@@ -10917,3 +10917,1791 @@ Call log:
 2026-03-08 01:20:43 [info]: [DB] Supabase connection verified.
 2026-03-08 01:20:43 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
 2026-03-08 01:20:43 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-09 10:02:11 [info]: [DB] Supabase client created.
+2026-03-09 10:02:15 [info]: [DB] Supabase connection verified.
+2026-03-09 10:02:16 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-09 10:02:16 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-09 10:02:44 [debug]: → GET /api/cart
+2026-03-09 10:02:45 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:02:45 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:02:45 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:02:45 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:02:45 [debug]: → GET /api/cart
+2026-03-09 10:02:45 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:02:45 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:02:46 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:02:46 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:03:07 [debug]: → GET /api/auth/me
+2026-03-09 10:03:08 [debug]: → GET /api/auth/me
+2026-03-09 10:03:10 [debug]: → GET /api/auth/me
+2026-03-09 10:03:10 [debug]: → GET /api/cart
+2026-03-09 10:03:10 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:03:10 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:03:11 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:03:11 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:03:11 [debug]: → GET /api/cart
+2026-03-09 10:03:11 [debug]: → GET /api/auth/me
+2026-03-09 10:03:11 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:03:11 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:03:11 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-09 10:03:11 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:03:21 [debug]: → GET /api/search/stores
+2026-03-09 10:03:21 [debug]: → GET /api/search
+2026-03-09 10:03:21 [debug]: → GET /api/search/stores
+2026-03-09 10:03:23 [info]: [SearchService] Search #5c275162-4155-4a1d-8fa6-a68acb48607d - "keyboard"
+2026-03-09 10:03:23 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-09 10:03:23 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2076ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:23 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2244ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:23 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2179ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:25 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4435ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:25 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4481ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:25 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4194ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:29 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:29 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:29 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:03:29 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-09 10:03:29 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:29 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:29 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:29 [info]: [SearchService] Raw products: 0
+2026-03-09 10:03:29 [info]: [SearchService] Unique products after dedup: 0
+2026-03-09 10:03:29 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-09 10:03:29 [info]: [SearchService] Saved 0 products for search #5c275162-4155-4a1d-8fa6-a68acb48607d
+2026-03-09 10:03:29 [debug]: → GET /api/search
+2026-03-09 10:03:31 [info]: [SearchService] Search #7a04ee21-836a-4372-a6ef-886bd636d653 - "keyboard"
+2026-03-09 10:03:31 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-09 10:03:31 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2055ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:31 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2195ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:31 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2103ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:32 [debug]: → GET /api/search
+2026-03-09 10:03:33 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4443ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:33 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4368ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:33 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4410ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:33 [info]: [SearchService] Search #0d8c6fa9-65b6-4e51-b3db-094b30911480 - "keyboard"
+2026-03-09 10:03:33 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-09 10:03:33 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2049ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:33 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2430ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:33 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2192ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:35 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4072ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:35 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4319ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:36 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4073ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:37 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:03:37 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:37 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:37 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-09 10:03:37 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:37 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:37 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:37 [info]: [SearchService] Raw products: 0
+2026-03-09 10:03:37 [info]: [SearchService] Unique products after dedup: 0
+2026-03-09 10:03:37 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-09 10:03:37 [info]: [SearchService] Saved 0 products for search #7a04ee21-836a-4372-a6ef-886bd636d653
+2026-03-09 10:03:39 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:40 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:40 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:03:40 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-09 10:03:40 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:40 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:40 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:40 [info]: [SearchService] Raw products: 0
+2026-03-09 10:03:40 [info]: [SearchService] Unique products after dedup: 0
+2026-03-09 10:03:40 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-09 10:03:40 [info]: [SearchService] Saved 0 products for search #0d8c6fa9-65b6-4e51-b3db-094b30911480
+2026-03-09 10:03:44 [debug]: → GET /api/search
+2026-03-09 10:03:45 [info]: [SearchService] Search #8891f84b-b175-4b9c-a98b-271d62081cd7 - "keyboard"
+2026-03-09 10:03:45 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-09 10:03:45 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2199ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:45 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2211ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:45 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2101ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:47 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4439ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:47 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4097ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:47 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4283ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:51 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:51 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:51 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:03:51 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-09 10:03:51 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:51 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:51 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:03:51 [info]: [SearchService] Raw products: 0
+2026-03-09 10:03:51 [info]: [SearchService] Unique products after dedup: 0
+2026-03-09 10:03:51 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-09 10:03:51 [info]: [SearchService] Saved 0 products for search #8891f84b-b175-4b9c-a98b-271d62081cd7
+2026-03-09 10:04:55 [debug]: → POST /api/auth/login
+2026-03-09 10:05:52 [debug]: → POST /api/auth/register
+2026-03-09 10:05:53 [warn]: [ErrorHandler] 409 POST /api/auth/register - Email already in use.
+2026-03-09 10:06:10 [debug]: → POST /api/auth/login
+2026-03-09 10:08:45 [debug]: → POST /api/auth/register
+2026-03-09 10:11:08 [debug]: → GET /api/auth/me
+2026-03-09 10:11:10 [debug]: → GET /api/auth/me
+2026-03-09 10:15:13 [debug]: → GET /api/auth/me
+2026-03-09 10:15:13 [debug]: → GET /api/cart
+2026-03-09 10:15:14 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:15:14 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:15:15 [debug]: → GET /api/auth/me
+2026-03-09 10:15:15 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:15:15 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:15:15 [debug]: → GET /api/cart
+2026-03-09 10:15:15 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:15:15 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:15:15 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:15:15 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:18:25 [debug]: → POST /api/auth/register
+2026-03-09 10:18:25 [warn]: [ErrorHandler] 409 POST /api/auth/register - Email already in use.
+2026-03-09 10:18:42 [debug]: → POST /api/auth/login
+2026-03-09 10:18:45 [debug]: → GET /api/auth/me
+2026-03-09 10:18:46 [debug]: → GET /api/auth/me
+2026-03-09 10:18:46 [debug]: → GET /api/auth/me
+2026-03-09 10:19:15 [debug]: → GET /api/auth/me
+2026-03-09 10:19:15 [debug]: → GET /api/cart
+2026-03-09 10:19:16 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:19:16 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:19:16 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:19:16 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:19:16 [debug]: → GET /api/cart
+2026-03-09 10:19:16 [debug]: → GET /api/auth/me
+2026-03-09 10:19:17 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:19:17 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:19:17 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-09 10:19:17 [info]: [CartController] Cart retrieved: null
+2026-03-09 10:19:27 [debug]: → GET /api/search/history
+2026-03-09 10:19:32 [debug]: → GET /api/search/history
+2026-03-09 10:19:40 [debug]: → GET /api/search/stores
+2026-03-09 10:19:40 [debug]: → GET /api/search
+2026-03-09 10:19:40 [debug]: → GET /api/search/stores
+2026-03-09 10:19:41 [info]: [SearchService] Search #e983f3ad-906c-4ea0-9f90-bfb04b486d56 - "keyboard"
+2026-03-09 10:19:41 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-09 10:19:41 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2115ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:41 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2119ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:41 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2093ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:43 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4010ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:43 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4065ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:43 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4009ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:47 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:19:47 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:19:47 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:19:47 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-09 10:19:47 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:47 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:47 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:47 [info]: [SearchService] Raw products: 0
+2026-03-09 10:19:47 [info]: [SearchService] Unique products after dedup: 0
+2026-03-09 10:19:47 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-09 10:19:47 [info]: [SearchService] Saved 0 products for search #e983f3ad-906c-4ea0-9f90-bfb04b486d56
+2026-03-09 10:19:47 [debug]: → GET /api/search
+2026-03-09 10:19:48 [info]: [SearchService] Search #1a489022-0531-4e58-b42a-50612ef444f4 - "keyboard"
+2026-03-09 10:19:48 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-09 10:19:48 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2388ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:48 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2374ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:48 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2137ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:50 [debug]: → GET /api/search
+2026-03-09 10:19:50 [info]: [SearchService] Search #19bf130c-4a74-487f-8267-1aab83e183fc - "keyboard"
+2026-03-09 10:19:50 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-09 10:19:50 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2213ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:50 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2279ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:50 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2100ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:50 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4017ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:51 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4000ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:51 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4248ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:52 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4479ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:52 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4379ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:52 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4011ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:54 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:19:55 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:19:55 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:19:55 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-09 10:19:55 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:55 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:55 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:55 [info]: [SearchService] Raw products: 0
+2026-03-09 10:19:55 [info]: [SearchService] Unique products after dedup: 0
+2026-03-09 10:19:55 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-09 10:19:55 [info]: [SearchService] Saved 0 products for search #1a489022-0531-4e58-b42a-50612ef444f4
+2026-03-09 10:19:56 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:19:57 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:19:57 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:19:57 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-09 10:19:57 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:57 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:57 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-09 10:19:57 [info]: [SearchService] Raw products: 0
+2026-03-09 10:19:57 [info]: [SearchService] Unique products after dedup: 0
+2026-03-09 10:19:57 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-09 10:19:57 [info]: [SearchService] Saved 0 products for search #19bf130c-4a74-487f-8267-1aab83e183fc
+2026-03-10 10:29:05 [info]: [DB] Supabase client created.
+2026-03-10 10:29:09 [info]: [DB] Supabase connection verified.
+2026-03-10 10:29:11 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-10 10:29:11 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-10 10:38:34 [debug]: → POST /api/auth/login
+2026-03-10 10:38:38 [debug]: → GET /api/auth/me
+2026-03-10 10:38:39 [debug]: → GET /api/auth/me
+2026-03-10 10:38:39 [debug]: → GET /api/auth/me
+2026-03-10 10:39:52 [debug]: → GET /api/search/stores
+2026-03-10 10:39:52 [debug]: → GET /api/search
+2026-03-10 10:39:52 [debug]: → GET /api/search/stores
+2026-03-10 10:39:53 [info]: [SearchService] Search #b3a3a322-9544-41fa-b99f-b140491b29f4 - "keyboard"
+2026-03-10 10:39:53 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-10 10:39:53 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2255ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:39:53 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2415ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:39:53 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2404ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:39:56 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4069ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:39:56 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4492ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:39:56 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4065ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:00 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-10 10:40:00 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-10 10:40:00 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-10 10:40:00 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-10 10:40:00 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:00 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:00 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:00 [info]: [SearchService] Raw products: 0
+2026-03-10 10:40:00 [info]: [SearchService] Unique products after dedup: 0
+2026-03-10 10:40:00 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-10 10:40:00 [info]: [SearchService] Saved 0 products for search #b3a3a322-9544-41fa-b99f-b140491b29f4
+2026-03-10 10:40:00 [debug]: → GET /api/search
+2026-03-10 10:40:01 [info]: [SearchService] Search #9ac800a8-fc1a-4c43-a3a5-198b4f1a2851 - "keyboard"
+2026-03-10 10:40:01 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-10 10:40:01 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2190ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:01 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2375ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:01 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2044ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:04 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4148ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:04 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4221ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:04 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4065ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:05 [debug]: → GET /api/search
+2026-03-10 10:40:05 [info]: [SearchService] Search #d3c4e6fa-bcf9-4804-9b18-072b949272ed - "keyboard"
+2026-03-10 10:40:05 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-10 10:40:05 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2354ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:05 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2168ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:05 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2086ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:08 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4115ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:08 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4065ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:08 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-10 10:40:08 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4118ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:08 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-10 10:40:08 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-10 10:40:08 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-10 10:40:08 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:08 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:08 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:08 [info]: [SearchService] Raw products: 0
+2026-03-10 10:40:08 [info]: [SearchService] Unique products after dedup: 0
+2026-03-10 10:40:08 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-10 10:40:08 [info]: [SearchService] Saved 0 products for search #9ac800a8-fc1a-4c43-a3a5-198b4f1a2851
+2026-03-10 10:40:12 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-10 10:40:12 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-10 10:40:12 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-10 10:40:12 [warn]: [Backend Cache SKIP] "keyboard" — 0 products returned, not caching
+2026-03-10 10:40:12 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:12 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:12 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-10 10:40:12 [info]: [SearchService] Raw products: 0
+2026-03-10 10:40:12 [info]: [SearchService] Unique products after dedup: 0
+2026-03-10 10:40:12 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-10 10:40:12 [info]: [SearchService] Saved 0 products for search #d3c4e6fa-bcf9-4804-9b18-072b949272ed
+2026-03-10 10:41:33 [debug]: → POST /api/auth/login
+2026-03-10 10:41:37 [debug]: → GET /api/auth/me
+2026-03-10 10:41:37 [debug]: → GET /api/auth/me
+2026-03-10 10:41:37 [debug]: → GET /api/auth/me
+2026-03-10 11:07:41 [debug]: → POST /api/auth/login
+2026-03-10 11:07:46 [debug]: → GET /api/auth/me
+2026-03-10 11:07:46 [debug]: → GET /api/auth/me
+2026-03-10 11:07:47 [debug]: → GET /api/auth/me
+2026-03-10 11:08:33 [debug]: → POST /api/auth/login
+2026-03-10 11:08:36 [debug]: → GET /api/auth/me
+2026-03-10 11:08:37 [debug]: → GET /api/auth/me
+2026-03-10 11:08:37 [debug]: → GET /api/auth/me
+2026-03-10 11:11:36 [debug]: → GET /api/auth/me
+2026-03-10 11:11:36 [debug]: → GET /api/cart
+2026-03-10 11:11:37 [debug]: → GET /api/auth/me
+2026-03-10 11:11:37 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-10 11:11:37 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-10 11:11:37 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-10 11:11:37 [info]: [CartController] Cart retrieved: null
+2026-03-10 11:11:37 [debug]: → GET /api/cart
+2026-03-10 11:11:38 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-10 11:11:38 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-10 11:11:38 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-10 11:11:38 [info]: [CartController] Cart retrieved: null
+2026-03-11 23:01:26 [info]: [DB] Supabase client created.
+2026-03-11 23:01:31 [info]: [DB] Supabase connection verified.
+2026-03-11 23:01:32 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-11 23:01:32 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-11 23:02:52 [debug]: → GET /api/cart
+2026-03-11 23:02:54 [debug]: → GET /api/auth/me
+2026-03-11 23:02:56 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-11 23:02:56 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-11 23:02:56 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-11 23:02:56 [info]: [CartController] Cart retrieved: null
+2026-03-11 23:02:56 [debug]: → GET /api/cart
+2026-03-11 23:02:56 [debug]: → GET /api/auth/me
+2026-03-11 23:02:56 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-11 23:02:56 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-11 23:02:56 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-11 23:02:56 [info]: [CartController] Cart retrieved: null
+2026-03-11 23:02:56 [debug]: → GET /api/auth/me
+2026-03-12 03:07:49 [debug]: → GET /api/auth/me
+2026-03-12 03:07:49 [debug]: → GET /api/cart
+2026-03-12 03:07:49 [debug]: → GET /api/auth/me
+2026-03-12 03:07:49 [debug]: → GET /api/cart
+2026-03-12 23:51:19 [info]: [DB] Supabase client created.
+2026-03-12 23:51:27 [info]: [DB] Supabase connection verified.
+2026-03-12 23:51:27 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-12 23:51:27 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-12 23:52:24 [debug]: → POST /api/auth/register
+2026-03-12 23:52:33 [error]: [ErrorHandler] 500 POST /api/auth/register - TypeError: fetch failed
+2026-03-12 23:52:44 [debug]: → POST /api/auth/register
+2026-03-12 23:52:57 [warn]: [ErrorHandler] 409 POST /api/auth/register - Email already in use.
+2026-03-12 23:53:16 [debug]: → POST /api/auth/login
+2026-03-12 23:53:18 [warn]: [ErrorHandler] 401 POST /api/auth/login - Invalid email or password.
+2026-03-12 23:53:34 [debug]: → POST /api/auth/login
+2026-03-12 23:53:37 [debug]: → GET /api/auth/me
+2026-03-12 23:53:37 [debug]: → GET /api/auth/me
+2026-03-12 23:53:40 [debug]: → GET /api/auth/me
+2026-03-12 23:54:05 [debug]: → GET /api/auth/me
+2026-03-12 23:54:05 [debug]: → GET /api/cart
+2026-03-12 23:54:09 [debug]: → GET /api/auth/me
+2026-03-12 23:54:09 [debug]: → GET /api/auth/me
+2026-03-12 23:54:09 [debug]: → GET /api/cart
+2026-03-12 23:54:13 [debug]: → GET /api/cart
+2026-03-12 23:54:13 [debug]: → GET /api/cart
+2026-03-12 23:54:15 [debug]: → GET /api/auth/me
+2026-03-12 23:54:17 [debug]: → GET /api/auth/me
+2026-03-12 23:54:17 [debug]: → GET /api/auth/me
+2026-03-12 23:54:17 [debug]: → GET /api/cart
+2026-03-12 23:54:21 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:21 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:23 [debug]: → GET /api/cart
+2026-03-12 23:54:23 [debug]: → GET /api/auth/me
+2026-03-12 23:54:23 [debug]: → GET /api/auth/me
+2026-03-12 23:54:23 [debug]: → GET /api/cart
+2026-03-12 23:54:25 [debug]: → GET /api/auth/me
+2026-03-12 23:54:25 [debug]: → GET /api/cart
+2026-03-12 23:54:29 [debug]: → GET /api/auth/me
+2026-03-12 23:54:29 [debug]: → GET /api/auth/me
+2026-03-12 23:54:29 [debug]: → GET /api/cart
+2026-03-12 23:54:29 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:29 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:31 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:31 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:31 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:31 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:31 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:31 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:31 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:31 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:33 [debug]: → GET /api/auth/me
+2026-03-12 23:54:33 [debug]: → GET /api/cart
+2026-03-12 23:54:35 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:35 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:36 [debug]: → GET /api/auth/me
+2026-03-12 23:54:36 [debug]: → GET /api/cart
+2026-03-12 23:54:36 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:36 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:37 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:37 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:37 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:37 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:39 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:39 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:39 [debug]: → GET /api/auth/me
+2026-03-12 23:54:39 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:39 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:39 [debug]: → GET /api/auth/me
+2026-03-12 23:54:39 [debug]: → GET /api/cart
+2026-03-12 23:54:40 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:40 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:40 [debug]: → GET /api/auth/me
+2026-03-12 23:54:40 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:40 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:40 [debug]: → GET /api/cart
+2026-03-12 23:54:41 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:41 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:41 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-12 23:54:41 [info]: [CartController] Cart retrieved: null
+2026-03-12 23:54:51 [debug]: → GET /api/search/history
+2026-03-12 23:55:03 [debug]: → DELETE /api/search/history
+2026-03-12 23:56:27 [debug]: → POST /api/auth/register
+2026-03-12 23:56:31 [debug]: → GET /api/auth/me
+2026-03-12 23:56:32 [debug]: → GET /api/auth/me
+2026-03-12 23:56:33 [debug]: → GET /api/auth/me
+2026-03-12 23:57:02 [debug]: → POST /api/auth/login
+2026-03-12 23:57:05 [debug]: → GET /api/auth/me
+2026-03-12 23:57:05 [debug]: → GET /api/auth/me
+2026-03-12 23:57:06 [debug]: → GET /api/auth/me
+2026-03-13 00:06:36 [info]: [DB] Supabase client created.
+2026-03-13 00:09:40 [info]: [DB] Supabase client created.
+2026-03-13 00:09:44 [info]: [DB] Supabase connection verified.
+2026-03-13 00:09:45 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-13 00:09:45 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-13 00:10:43 [debug]: → POST /api/auth/login
+2026-03-13 00:10:47 [debug]: → GET /api/auth/me
+2026-03-13 00:10:47 [debug]: → GET /api/auth/me
+2026-03-13 00:10:48 [debug]: → GET /api/auth/me
+2026-03-13 00:15:13 [debug]: → GET /api/auth/me
+2026-03-13 00:15:13 [debug]: → GET /api/cart
+2026-03-13 00:15:14 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:15:14 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:15:15 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:15:15 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:15:15 [debug]: → GET /api/cart
+2026-03-13 00:15:15 [debug]: → GET /api/auth/me
+2026-03-13 00:15:15 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:15:15 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:15:15 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:15:15 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:17:50 [debug]: → GET /api/auth/me
+2026-03-13 00:17:50 [debug]: → GET /api/cart
+2026-03-13 00:17:51 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:17:51 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:17:51 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:17:51 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:17:51 [debug]: → GET /api/cart
+2026-03-13 00:17:51 [debug]: → GET /api/auth/me
+2026-03-13 00:17:51 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:17:51 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:17:51 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:17:51 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:23:20 [debug]: → GET /api/search/stores
+2026-03-13 00:23:20 [debug]: → GET /api/search
+2026-03-13 00:23:20 [debug]: → GET /api/search/stores
+2026-03-13 00:23:21 [info]: [SearchService] Search #8160ee49-3642-4a2b-a5cc-1209ac78d9a6 - "egg"
+2026-03-13 00:23:21 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-13 00:23:21 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2275ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:21 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2427ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:21 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2318ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:23 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4440ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:23 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4321ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:23 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4336ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:28 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 00:23:28 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 00:23:28 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 00:23:28 [warn]: [Backend Cache SKIP] "egg" — 0 products returned, not caching
+2026-03-13 00:23:28 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:28 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:28 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:28 [info]: [SearchService] Raw products: 0
+2026-03-13 00:23:28 [info]: [SearchService] Unique products after dedup: 0
+2026-03-13 00:23:28 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-13 00:23:28 [info]: [SearchService] Saved 0 products for search #8160ee49-3642-4a2b-a5cc-1209ac78d9a6
+2026-03-13 00:23:28 [debug]: → GET /api/search
+2026-03-13 00:23:28 [info]: [SearchService] Search #7fedf564-ef7c-4852-adb7-bd39e6636c92 - "egg"
+2026-03-13 00:23:28 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-13 00:23:28 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2395ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:28 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2042ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:28 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2435ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:30 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4105ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:31 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4118ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:31 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4246ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:35 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 00:23:35 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 00:23:35 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 00:23:35 [warn]: [Backend Cache SKIP] "egg" — 0 products returned, not caching
+2026-03-13 00:23:35 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:35 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:35 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 00:23:35 [info]: [SearchService] Raw products: 0
+2026-03-13 00:23:35 [info]: [SearchService] Unique products after dedup: 0
+2026-03-13 00:23:35 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-13 00:23:35 [info]: [SearchService] Saved 0 products for search #7fedf564-ef7c-4852-adb7-bd39e6636c92
+2026-03-13 00:28:34 [debug]: → GET /api/auth/me
+2026-03-13 00:28:34 [debug]: → GET /api/cart
+2026-03-13 00:28:35 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:28:35 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:28:35 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:28:35 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:28:35 [debug]: → GET /api/auth/me
+2026-03-13 00:30:11 [debug]: → GET /api/cart
+2026-03-13 00:30:12 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:30:12 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:30:12 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:30:12 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:30:12 [debug]: → GET /api/cart
+2026-03-13 00:30:12 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:30:12 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:30:12 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:30:12 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:30:17 [debug]: → GET /api/auth/me
+2026-03-13 00:30:17 [debug]: → GET /api/auth/me
+2026-03-13 00:30:18 [debug]: → GET /api/auth/me
+2026-03-13 00:30:45 [debug]: → POST /api/auth/login
+2026-03-13 00:30:48 [debug]: → GET /api/auth/me
+2026-03-13 00:30:49 [debug]: → GET /api/auth/me
+2026-03-13 00:30:50 [debug]: → GET /api/auth/me
+2026-03-13 00:31:52 [debug]: → GET /api/auth/me
+2026-03-13 00:31:53 [debug]: → GET /api/cart
+2026-03-13 00:31:53 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:31:53 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:31:53 [debug]: → GET /api/auth/me
+2026-03-13 00:31:53 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:31:53 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:31:53 [debug]: → GET /api/cart
+2026-03-13 00:31:54 [info]: [CartController] Getting cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:31:54 [info]: [Cart] Fetching cart for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:31:54 [info]: [Cart] No cart found for user: 902816b6-dae4-49a2-b0b4-dbc2155c919b
+2026-03-13 00:31:54 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:32:12 [debug]: → GET /api/search/stores
+2026-03-13 00:32:12 [debug]: → GET /api/search/stores
+2026-03-13 00:34:06 [debug]: → POST /api/auth/register
+2026-03-13 00:34:10 [debug]: → GET /api/auth/me
+2026-03-13 00:34:11 [debug]: → GET /api/auth/me
+2026-03-13 00:34:12 [debug]: → GET /api/auth/me
+2026-03-13 00:43:37 [debug]: → GET /api/auth/me
+2026-03-13 00:43:37 [debug]: → GET /api/cart
+2026-03-13 00:43:38 [info]: [CartController] Getting cart for user: d246132d-e290-426a-85e1-966e7180dba9
+2026-03-13 00:43:38 [info]: [Cart] Fetching cart for user: d246132d-e290-426a-85e1-966e7180dba9
+2026-03-13 00:43:38 [info]: [Cart] No cart found for user: d246132d-e290-426a-85e1-966e7180dba9
+2026-03-13 00:43:38 [info]: [CartController] Cart retrieved: null
+2026-03-13 00:43:38 [debug]: → GET /api/auth/me
+2026-03-13 02:01:42 [info]: [DB] Supabase client created.
+2026-03-13 02:01:46 [info]: [DB] Supabase connection verified.
+2026-03-13 02:01:46 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-13 02:01:46 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-13 02:05:55 [debug]: → GET /api/cart
+2026-03-13 02:05:56 [info]: [CartController] Getting cart for user: d246132d-e290-426a-85e1-966e7180dba9
+2026-03-13 02:05:56 [info]: [Cart] Fetching cart for user: d246132d-e290-426a-85e1-966e7180dba9
+2026-03-13 02:05:56 [info]: [Cart] No cart found for user: d246132d-e290-426a-85e1-966e7180dba9
+2026-03-13 02:05:56 [info]: [CartController] Cart retrieved: null
+2026-03-13 02:06:46 [debug]: → POST /api/auth/login
+2026-03-13 02:06:50 [debug]: → GET /api/auth/me
+2026-03-13 02:06:50 [debug]: → GET /api/auth/me
+2026-03-13 02:06:51 [debug]: → GET /api/auth/me
+2026-03-13 02:07:37 [debug]: → GET /api/search/stores
+2026-03-13 02:07:37 [debug]: → GET /api/search/stores
+2026-03-13 02:07:37 [debug]: → GET /api/search
+2026-03-13 02:07:38 [info]: [SearchService] Search #30946b9a-dff9-4ccb-97d7-21da0412f168 - "egg"
+2026-03-13 02:07:38 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-13 02:07:38 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2293ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:38 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2459ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:38 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2173ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:40 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4113ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:40 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4237ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:41 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4058ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:44 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 02:07:45 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 02:07:45 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 02:07:45 [warn]: [Backend Cache SKIP] "egg" — 0 products returned, not caching
+2026-03-13 02:07:45 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:45 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:45 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:45 [info]: [SearchService] Raw products: 0
+2026-03-13 02:07:45 [info]: [SearchService] Unique products after dedup: 0
+2026-03-13 02:07:45 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-13 02:07:45 [info]: [SearchService] Saved 0 products for search #30946b9a-dff9-4ccb-97d7-21da0412f168
+2026-03-13 02:07:45 [debug]: → GET /api/search
+2026-03-13 02:07:46 [info]: [SearchService] Search #68441bcb-4568-45da-a0ad-3730b1870c0d - "egg"
+2026-03-13 02:07:46 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-13 02:07:46 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2075ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:46 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2245ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:46 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2175ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:47 [debug]: → GET /api/search
+2026-03-13 02:07:48 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4374ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:48 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4227ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:48 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4207ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:48 [info]: [SearchService] Search #6f5163b9-060c-498e-a621-d13804a04b17 - "egg"
+2026-03-13 02:07:48 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-13 02:07:48 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2204ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:48 [warn]: [Retry] VillmanScraper.search failed (attempt 1/3). Retrying in 2107ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:48 [warn]: [Retry] PcWorxScraper.search failed (attempt 1/3). Retrying in 2454ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:50 [warn]: [Retry] VillmanScraper.search failed (attempt 2/3). Retrying in 4211ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:50 [warn]: [Retry] PcExpressScraper.search failed (attempt 2/3). Retrying in 4359ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:51 [warn]: [Retry] PcWorxScraper.search failed (attempt 2/3). Retrying in 4034ms. Error: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:52 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 02:07:52 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 02:07:52 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 02:07:52 [warn]: [Backend Cache SKIP] "egg" — 0 products returned, not caching
+2026-03-13 02:07:52 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:52 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:52 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:52 [info]: [SearchService] Raw products: 0
+2026-03-13 02:07:52 [info]: [SearchService] Unique products after dedup: 0
+2026-03-13 02:07:52 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-13 02:07:52 [info]: [SearchService] Saved 0 products for search #68441bcb-4568-45da-a0ad-3730b1870c0d
+2026-03-13 02:07:54 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 02:07:55 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 02:07:55 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 02:07:55 [warn]: [Backend Cache SKIP] "egg" — 0 products returned, not caching
+2026-03-13 02:07:55 [warn]: [SearchService] PCExpress: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:55 [warn]: [SearchService] VillMan: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:55 [warn]: [SearchService] PCWorx: browserType.launch: Executable doesn't exist at C:\Users\Dell\bakal-app\bakal-application\backend\~\.cache\ms-playwright\chromium_headless_shell-1208\chrome-headless-shell-win64\chrome-headless-shell.exe
+╔═════════════════════════════════════════════════════════════════════════╗
+║ Looks like Playwright Test or Playwright was just installed or updated. ║
+║ Please run the following command to download new browsers:              ║
+║                                                                         ║
+║     npx playwright install                                              ║
+║                                                                         ║
+║ <3 Playwright Team                                                      ║
+╚═════════════════════════════════════════════════════════════════════════╝
+2026-03-13 02:07:55 [info]: [SearchService] Raw products: 0
+2026-03-13 02:07:55 [info]: [SearchService] Unique products after dedup: 0
+2026-03-13 02:07:55 [info]: [SearchService] Relevance filter: 0/0 products kept
+2026-03-13 02:07:55 [info]: [SearchService] Saved 0 products for search #6f5163b9-060c-498e-a621-d13804a04b17
+2026-03-13 09:49:13 [info]: [DB] Supabase client created.
+2026-03-13 09:49:18 [info]: [DB] Supabase connection verified.
+2026-03-13 09:49:19 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-13 09:49:19 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-13 09:49:44 [debug]: → GET /api/cart
+2026-03-13 09:49:44 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:49:44 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:49:44 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:49:44 [info]: [CartController] Cart retrieved: null
+2026-03-13 09:49:44 [debug]: → GET /api/cart
+2026-03-13 09:49:45 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:49:45 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:49:45 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:49:45 [info]: [CartController] Cart retrieved: null
+2026-03-13 09:50:50 [debug]: → GET /api/auth/me
+2026-03-13 09:50:51 [debug]: → GET /api/auth/me
+2026-03-13 09:50:52 [debug]: → GET /api/auth/me
+2026-03-13 09:57:15 [debug]: → GET /api/auth/me
+2026-03-13 09:57:15 [debug]: → GET /api/cart
+2026-03-13 09:57:16 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:57:16 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:57:17 [debug]: → GET /api/auth/me
+2026-03-13 09:57:17 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:57:17 [info]: [CartController] Cart retrieved: null
+2026-03-13 09:57:17 [debug]: → GET /api/cart
+2026-03-13 09:57:17 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:57:17 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:57:17 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 09:57:17 [info]: [CartController] Cart retrieved: null
+2026-03-13 10:00:54 [debug]: → GET /api/auth/me
+2026-03-13 10:00:54 [debug]: → GET /api/cart
+2026-03-13 10:00:55 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:00:55 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:00:55 [debug]: → GET /api/auth/me
+2026-03-13 10:00:55 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:00:55 [info]: [CartController] Cart retrieved: null
+2026-03-13 10:00:55 [debug]: → GET /api/cart
+2026-03-13 10:00:55 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:00:55 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:00:55 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:00:55 [info]: [CartController] Cart retrieved: null
+2026-03-13 10:03:16 [debug]: → GET /api/auth/me
+2026-03-13 10:03:16 [debug]: → GET /api/cart
+2026-03-13 10:03:18 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:03:18 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:03:18 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:03:18 [info]: [CartController] Cart retrieved: null
+2026-03-13 10:03:18 [debug]: → GET /api/cart
+2026-03-13 10:03:18 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:03:18 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:03:18 [debug]: → GET /api/auth/me
+2026-03-13 10:03:18 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:03:18 [info]: [CartController] Cart retrieved: null
+2026-03-13 10:10:30 [debug]: → GET /api/cart
+2026-03-13 10:10:32 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:10:32 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:10:32 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:10:32 [info]: [CartController] Cart retrieved: null
+2026-03-13 10:10:32 [debug]: → GET /api/cart
+2026-03-13 10:10:32 [info]: [CartController] Getting cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:10:32 [info]: [Cart] Fetching cart for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:10:32 [info]: [Cart] No cart found for user: 86792ae8-7d94-42eb-b754-43d5b5bcbee3
+2026-03-13 10:10:32 [info]: [CartController] Cart retrieved: null
+2026-03-13 10:10:34 [debug]: → GET /api/auth/me
+2026-03-13 10:10:35 [debug]: → GET /api/auth/me
+2026-03-13 10:10:35 [debug]: → GET /api/auth/me
+2026-03-13 10:12:11 [debug]: → POST /api/auth/login
+2026-03-13 10:12:14 [debug]: → GET /api/auth/me
+2026-03-13 10:12:15 [debug]: → GET /api/auth/me
+2026-03-13 10:12:15 [debug]: → GET /api/auth/me
+2026-03-13 10:41:45 [debug]: → POST /api/auth/login
+2026-03-13 10:41:48 [debug]: → GET /api/auth/me
+2026-03-13 10:41:48 [debug]: → GET /api/auth/me
+2026-03-13 10:41:49 [debug]: → GET /api/auth/me
+2026-03-13 11:34:54 [debug]: → GET /api/auth/me
+2026-03-13 11:34:54 [debug]: → GET /api/cart
+2026-03-13 11:34:57 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:57 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:57 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:57 [info]: [CartController] Cart retrieved: null
+2026-03-13 11:34:57 [debug]: → GET /api/cart
+2026-03-13 11:34:57 [debug]: → GET /api/auth/me
+2026-03-13 11:34:57 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:57 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:57 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:57 [info]: [CartController] Cart retrieved: null
+2026-03-13 11:34:58 [debug]: → GET /api/auth/me
+2026-03-13 11:34:58 [debug]: → GET /api/cart
+2026-03-13 11:34:58 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:58 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:58 [debug]: → GET /api/auth/me
+2026-03-13 11:34:58 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:58 [info]: [CartController] Cart retrieved: null
+2026-03-13 11:34:58 [debug]: → GET /api/cart
+2026-03-13 11:34:59 [info]: [CartController] Getting cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:59 [info]: [Cart] Fetching cart for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:59 [info]: [Cart] No cart found for user: 1d2ad75b-1de0-4c04-b160-3fb0ade9245b
+2026-03-13 11:34:59 [info]: [CartController] Cart retrieved: null

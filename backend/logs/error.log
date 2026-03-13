@@ -535,3 +535,50 @@ Call log:
     at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
     at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
     at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-09 10:03:29 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:29 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:29 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:03:37 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:03:37 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:37 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:39 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:40 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:40 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:03:51 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:03:51 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:03:51 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:19:47 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:19:47 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:19:47 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:19:54 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:19:55 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:19:55 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-09 10:19:56 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-09 10:19:57 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-09 10:19:57 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-10 10:40:00 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-10 10:40:00 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-10 10:40:00 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-10 10:40:08 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-10 10:40:08 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-10 10:40:08 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-10 10:40:12 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-10 10:40:12 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-10 10:40:12 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-12 23:52:33 [error]: [ErrorHandler] 500 POST /api/auth/register - TypeError: fetch failed
+2026-03-13 00:06:37 [error]: [DB] Supabase connection failed:
+2026-03-13 00:23:28 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 00:23:28 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 00:23:28 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 00:23:35 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 00:23:35 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 00:23:35 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 02:07:44 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 02:07:45 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 02:07:45 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 02:07:52 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 02:07:52 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 02:07:52 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-13 02:07:54 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-13 02:07:55 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-13 02:07:55 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
