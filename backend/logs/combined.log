@@ -11435,3 +11435,824 @@ Call log:
 2026-03-05 07:46:49 [info]: [DB] Supabase connection verified.
 2026-03-05 07:46:49 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
 2026-03-05 07:46:49 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-05 07:48:15 [debug]: → GET /api/auth/me
+2026-03-05 07:48:15 [debug]: → GET /api/cart
+2026-03-05 07:48:15 [debug]: → GET /api/auth/me
+2026-03-05 07:48:16 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:48:16 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:48:16 [debug]: → GET /api/search/stores
+2026-03-05 07:48:16 [debug]: → GET /api/search
+2026-03-05 07:48:16 [info]: [Cart] No cart found for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:48:16 [info]: [CartController] Cart retrieved: null
+2026-03-05 07:48:16 [debug]: → GET /api/search/stores
+2026-03-05 07:48:16 [debug]: → GET /api/cart
+2026-03-05 07:48:16 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:48:16 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:48:16 [info]: [Cart] No cart found for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:48:16 [info]: [CartController] Cart retrieved: null
+2026-03-05 07:48:17 [info]: [SearchService] Search #e2478258-ccbd-4830-aaa0-c29a458caecf - "processor"
+2026-03-05 07:48:17 [info]: [Backend Cache MISS] Scraping: "processor"...
+2026-03-05 07:48:20 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:48:20 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:48:20 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:48:24 [info]: [PcExpressScraper] API found 1 product URLs
+2026-03-05 07:48:24 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:48:25 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:48:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i7-13700k-processor.json
+2026-03-05 07:48:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i3-12100-processor.json
+2026-03-05 07:48:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i5-13400-processor.json
+2026-03-05 07:48:31 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-05 07:48:32 [debug]: [VillmanScraper] JSON success: Intel Core i5-13400 Processor
+2026-03-05 07:48:32 [debug]: [VillmanScraper] JSON success: Intel Core i7-13700K Processor
+2026-03-05 07:48:32 [debug]: [VillmanScraper] JSON success: Intel Core i3-12100 Processor
+2026-03-05 07:48:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/intel-core-i7-14700f-desktop-processor.json
+2026-03-05 07:48:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700g-3-8ghz-65w-am4-processor.json
+2026-03-05 07:48:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i7-12700-2-1ghz-12-core-20-threads-25m-cache-lga1700-processor.json
+2026-03-05 07:48:33 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 7 5700G 3.8GHz 65W AM4 Processor
+2026-03-05 07:48:33 [debug]: [PcExpressScraper] JSON success: Intel® Core™ I7-14700F Desktop Processor
+2026-03-05 07:48:33 [debug]: [PcWorxScraper] JSON success: Intel i7-12700 2.1GHZ 12 Core 20 Threads 25M Cache LGA1700 Processor
+2026-03-05 07:48:34 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-05 07:48:36 [debug]: → GET /api/search
+2026-03-05 07:48:36 [info]: [SearchService] Search #6d79d811-d3c7-4b6f-a885-cb9075fe40e6 - "processor"
+2026-03-05 07:48:36 [info]: [Backend Cache MISS] Scraping: "processor"...
+2026-03-05 07:48:39 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:48:40 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:48:41 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:48:42 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:48:44 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/product.json
+2026-03-05 07:48:44 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700x-3-4ghz-65w-am4-processor-no-built-in-graphics-fan.json
+2026-03-05 07:48:45 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-5600-3-5ghz-65w-am4-processor-no-built-in-graphics.json
+2026-03-05 07:48:45 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i9-13900k-processor.json
+2026-03-05 07:48:45 [debug]: [VillmanScraper] JSON success: Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)
+2026-03-05 07:48:46 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 7 5700X 3.4GHz 65W AM4 Processor (no built in graphics/fan)
+2026-03-05 07:48:46 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 5 5600 3.5GHz 65W AM4 Processor (no built in graphics)
+2026-03-05 07:48:47 [debug]: [VillmanScraper] JSON success: Intel Core i9-13900K Processor
+2026-03-05 07:48:47 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=processor&resources[type]=product&resources[limit]=10
+2026-03-05 07:48:48 [info]: [PcExpressScraper] API found 1 product URLs
+2026-03-05 07:48:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/intel-core-i7-14700f-desktop-processor.json
+2026-03-05 07:48:54 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i7-12700-2-1ghz-12-core-20-threads-25m-cache-lga1700-processor.json
+2026-03-05 07:48:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700g-3-8ghz-65w-am4-processor.json
+2026-03-05 07:48:55 [info]: [Backend Cache SET] "processor" — 11 products cached
+2026-03-05 07:48:55 [info]: [SearchService] Raw products: 11
+2026-03-05 07:48:56 [info]: [SearchService] Unique products after dedup: 11
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "Intel® Core™ I7-14700F Desktop Processor" (PCExpress)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13400 Processor" (VillMan)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i3-12100 Processor" (VillMan)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i7-13700K Processor" (VillMan)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i9-13900K Processor" (VillMan)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)" (VillMan)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 7 5700G 3.8GHz 65W AM4 Processor" (PCWorx)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "Intel i7-12700 2.1GHZ 12 Core 20 Threads 25M Cache LGA1700 Processor" (PCWorx)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "AMD RYZEN 5 5600 3.5GHz 65W AM4 Processor (no built in graphics)" (PCWorx)
+2026-03-05 07:48:56 [debug]: [SearchService] ✓ ACCEPTED: "AMD RYZEN 7 5700X 3.4GHz 65W AM4 Processor (no built in graphics/fan)" (PCWorx)
+2026-03-05 07:48:57 [info]: [SearchService] Relevance filter: 11/11 products kept
+2026-03-05 07:48:57 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:48:57 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-05 07:48:57 [debug]: [PcExpressScraper] JSON success: Intel® Core™ I7-14700F Desktop Processor
+2026-03-05 07:48:57 [debug]: [PcWorxScraper] JSON success: Intel i7-12700 2.1GHZ 12 Core 20 Threads 25M Cache LGA1700 Processor
+2026-03-05 07:48:57 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:48:57 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-05 07:48:57 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:48:58 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:48:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i5-13400-processor.json
+2026-03-05 07:48:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i7-13700k-processor.json
+2026-03-05 07:48:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i3-12100-processor.json
+2026-03-05 07:48:59 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:48:59 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:48:59 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:48:59 [debug]: [VillmanScraper] JSON success: Intel Core i5-13400 Processor
+2026-03-05 07:48:59 [debug]: [VillmanScraper] JSON success: Intel Core i7-13700K Processor
+2026-03-05 07:48:59 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:48:59 [debug]: [VillmanScraper] JSON success: Intel Core i3-12100 Processor
+2026-03-05 07:49:00 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:00 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:00 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 7 5700G 3.8GHz 65W AM4 Processor
+2026-03-05 07:49:00 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:01 [info]: [SearchService] Saved 11 products for search #e2478258-ccbd-4830-aaa0-c29a458caecf
+2026-03-05 07:49:06 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i9-13900k-processor.json
+2026-03-05 07:49:06 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/product.json
+2026-03-05 07:49:06 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-5600-3-5ghz-65w-am4-processor-no-built-in-graphics.json
+2026-03-05 07:49:07 [debug]: [VillmanScraper] JSON success: Intel Core i9-13900K Processor
+2026-03-05 07:49:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-7-5700x-3-4ghz-65w-am4-processor-no-built-in-graphics-fan.json
+2026-03-05 07:49:07 [debug]: [VillmanScraper] JSON success: Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)
+2026-03-05 07:49:07 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 5 5600 3.5GHz 65W AM4 Processor (no built in graphics)
+2026-03-05 07:49:07 [debug]: [PcWorxScraper] JSON success: AMD RYZEN 7 5700X 3.4GHz 65W AM4 Processor (no built in graphics/fan)
+2026-03-05 07:49:10 [info]: [Backend Cache SET] "processor" — 11 products cached
+2026-03-05 07:49:10 [info]: [SearchService] Raw products: 11
+2026-03-05 07:49:10 [info]: [SearchService] Unique products after dedup: 11
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "Intel® Core™ I7-14700F Desktop Processor" (PCExpress)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13400 Processor" (VillMan)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i3-12100 Processor" (VillMan)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i7-13700K Processor" (VillMan)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i9-13900K Processor" (VillMan)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)" (VillMan)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 7 5700G 3.8GHz 65W AM4 Processor" (PCWorx)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "Intel i7-12700 2.1GHZ 12 Core 20 Threads 25M Cache LGA1700 Processor" (PCWorx)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "AMD RYZEN 5 5600 3.5GHz 65W AM4 Processor (no built in graphics)" (PCWorx)
+2026-03-05 07:49:10 [debug]: [SearchService] ✓ ACCEPTED: "AMD RYZEN 7 5700X 3.4GHz 65W AM4 Processor (no built in graphics/fan)" (PCWorx)
+2026-03-05 07:49:10 [info]: [SearchService] Relevance filter: 11/11 products kept
+2026-03-05 07:49:10 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:49:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:11 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:12 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:12 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:13 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:13 [info]: [SearchService] Saved 11 products for search #6d79d811-d3c7-4b6f-a885-cb9075fe40e6
+2026-03-05 07:49:19 [debug]: → GET /api/search
+2026-03-05 07:49:19 [info]: [SearchService] Search #283e66c6-59d0-42cf-af17-802e76018fcc - "intel i5"
+2026-03-05 07:49:19 [info]: [Backend Cache MISS] Scraping: "intel i5"...
+2026-03-05 07:49:21 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=intel%20i5&resources[type]=product&resources[limit]=10
+2026-03-05 07:49:22 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=intel%20i5&resources[type]=product&resources[limit]=10
+2026-03-05 07:49:22 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=intel%20i5&resources[type]=product&resources[limit]=10
+2026-03-05 07:49:22 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-05 07:49:22 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:49:22 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:49:26 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-vivobook-15-x1504va-nj1622wsm-intel-core-i5-laptop-8gb-quiet-blue.json
+2026-03-05 07:49:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i5-13400-2-50ghz-10-core-20mb-cache-lga1700-processor.json
+2026-03-05 07:49:27 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-ideapad-3-14irh10-slim-3-83k100h5ph-intelcore-i5-laptop-luna-grey.json
+2026-03-05 07:49:27 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-aspire-ag15-51p-55tg-intel-core-i5-laptop-steel-gray.json
+2026-03-05 07:49:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i5-12400-2-5ghz-6-core-12-thread-18m-cache-lga1700-cpu.json
+2026-03-05 07:49:28 [debug]: [PcExpressScraper] JSON success: ASUS Vivobook 15 X1504VA-NJ1622WSM Intel® Core™ i5 Laptop - 8GB (Quiet Blue)
+2026-03-05 07:49:28 [debug]: [PcWorxScraper] JSON success: Intel i5-13400 2.50GHz 10-core 20MB Cache LGA1700 Processor
+2026-03-05 07:49:28 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i5-14400f-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-c.json
+2026-03-05 07:49:29 [debug]: [PcWorxScraper] JSON success: INTEL i5-12400 2.5GHz 6-core 12 Thread 18M Cache LGA1700 CPU
+2026-03-05 07:49:29 [debug]: [PcExpressScraper] JSON success: ACER Aspire AG15-51P-55TG Intel® Core™ i5 Laptop (Steel Gray)
+2026-03-05 07:49:29 [debug]: [PcExpressScraper] JSON success: LENOVO IdeaPad 3 14IRH10 Slim 3 (83K100H5PH) Intel® Core™ i5 Laptop (Luna Grey)
+2026-03-05 07:49:29 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/core-i5-13400-processor.json
+2026-03-05 07:49:29 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/product.json
+2026-03-05 07:49:29 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/fffffffffffffffff.json
+2026-03-05 07:49:30 [debug]: [VillmanScraper] JSON success: Intel Core i5-13400 Processor
+2026-03-05 07:49:30 [debug]: [VillmanScraper] JSON success: Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)
+2026-03-05 07:49:30 [debug]: [VillmanScraper] JSON success: Intel Core i5-10400 Processor (12M Cache, up to 4.30 GHz)
+2026-03-05 07:49:30 [debug]: [PcWorxScraper] JSON success: Intel I5-14400F 3.5GHz 10-Cores 16 Threads 20MB Cache LGA1700 C
+2026-03-05 07:49:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel%C2%AE-core%E2%84%A2-i5-10400-processor-12m-cache-up-to-4-30-ghz.json
+2026-03-05 07:49:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/intel-i5-12400f-2-5ghz-6-core-12-thread-18m-cache-lga1700-cpu.json
+2026-03-05 07:49:34 [debug]: [PcWorxScraper] JSON success: Intel® Core™ i5-10400 Processor 12M Cache, up to 4.30 GHz
+2026-03-05 07:49:34 [debug]: [PcWorxScraper] JSON success: INTEL i5-12400F 2.5GHz 6-core 12 Thread 18M Cache LGA1700 CPU
+2026-03-05 07:49:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-loq-15iax9e-83lk00a1ph-geforce-rtx-3050-intel-core-i5-laptop-luna-grey.json
+2026-03-05 07:49:36 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hp-victus-15-fa1463tx-b8ah9pa-geforce-rtx-4050-intel-core-i5-laptop-mica-silver.json
+2026-03-05 07:49:36 [debug]: [PcExpressScraper] JSON success: LENOVO LOQ 15IAX9E (83LK00A1PH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)
+2026-03-05 07:49:37 [debug]: [PcExpressScraper] JSON success: HP Victus 15-FA1463TX (B8AH9PA) GeForce RTX™ 4050 Intel® Core™ i5 Laptop (Mica Silver)
+2026-03-05 07:49:37 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/copy-2.json
+2026-03-05 07:49:37 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/intel.json
+2026-03-05 07:49:38 [debug]: [VillmanScraper] JSON success: Intel Core i5-12600K Processor (20M Cache, up to 4.90 GHz)
+2026-03-05 07:49:38 [debug]: [VillmanScraper] JSON success: Intel Core i5-13400 Processor (20M Cache, up to 4.60 GHz)
+2026-03-05 07:49:40 [info]: [Backend Cache SET] "intel i5" — 15 products cached
+2026-03-05 07:49:40 [info]: [SearchService] Raw products: 15
+2026-03-05 07:49:40 [info]: [SearchService] Unique products after dedup: 15
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "LENOVO IdeaPad 3 14IRH10 Slim 3 (83K100H5PH) Intel® Core™ i5 Laptop (Luna Grey)" (PCExpress)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "ACER Aspire AG15-51P-55TG Intel® Core™ i5 Laptop (Steel Gray)" (PCExpress)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "ASUS Vivobook 15 X1504VA-NJ1622WSM Intel® Core™ i5 Laptop - 8GB (Quiet Blue)" (PCExpress)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "LENOVO LOQ 15IAX9E (83LK00A1PH) GeForce RTX™ 3050 Intel® Core™ i5 Laptop (Luna Grey)" (PCExpress)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "HP Victus 15-FA1463TX (B8AH9PA) GeForce RTX™ 4050 Intel® Core™ i5 Laptop (Mica Silver)" (PCExpress)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13400 Processor" (VillMan)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13600K Processor (24M Cache, up to 5.10 GHz)" (VillMan)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-10400 Processor (12M Cache, up to 4.30 GHz)" (VillMan)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-12600K Processor (20M Cache, up to 4.90 GHz)" (VillMan)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel Core i5-13400 Processor (20M Cache, up to 4.60 GHz)" (VillMan)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel i5-13400 2.50GHz 10-core 20MB Cache LGA1700 Processor" (PCWorx)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel I5-14400F 3.5GHz 10-Cores 16 Threads 20MB Cache LGA1700 C" (PCWorx)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "INTEL i5-12400 2.5GHz 6-core 12 Thread 18M Cache LGA1700 CPU" (PCWorx)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "Intel® Core™ i5-10400 Processor 12M Cache, up to 4.30 GHz" (PCWorx)
+2026-03-05 07:49:40 [debug]: [SearchService] ✓ ACCEPTED: "INTEL i5-12400F 2.5GHz 6-core 12 Thread 18M Cache LGA1700 CPU" (PCWorx)
+2026-03-05 07:49:40 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-05 07:49:40 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:49:41 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:49:41 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:49:41 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:49:41 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:49:42 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:42 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:42 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:42 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:42 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:49:42 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:43 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:49:44 [info]: [SearchService] Saved 15 products for search #283e66c6-59d0-42cf-af17-802e76018fcc
+2026-03-05 07:49:54 [debug]: → GET /api/search/stores
+2026-03-05 07:49:54 [debug]: → GET /api/search/stores
+2026-03-05 07:53:44 [debug]: → GET /api/search/stores
+2026-03-05 07:53:45 [debug]: → GET /api/search
+2026-03-05 07:53:45 [debug]: → GET /api/search/stores
+2026-03-05 07:53:46 [info]: [SearchService] Search #5c913521-f622-4a53-9901-8c842b5dfe60 - "monitor"
+2026-03-05 07:53:46 [info]: [Backend Cache MISS] Scraping: "monitor"...
+2026-03-05 07:53:48 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-03-05 07:53:48 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-03-05 07:53:49 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-03-05 07:53:50 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-05 07:53:50 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:53:50 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:53:56 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-ka252q-g0bi.json
+2026-03-05 07:53:57 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-va24ehf-monitor.json
+2026-03-05 07:53:57 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-x34-x-34inch-uwqhd-oled-240hz-0-01ms-curved-gaming-monitor.json
+2026-03-05 07:53:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-27-xg27acs-rog-strix-ips-gaming-monitor.json
+2026-03-05 07:53:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-05 07:53:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hp-23-8-524sf-94c18aa-ips-monitor.json
+2026-03-05 07:54:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-27g42e-27-ips-180hz-fhd-adaptive-sync-gaming-monitor.json
+2026-03-05 07:54:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-vg259q5a-24-5-ips-200hz-fhd-tuf-gaming-monitor.json
+2026-03-05 07:54:00 [debug]: [VillmanScraper] JSON success: Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor
+2026-03-05 07:54:00 [debug]: [VillmanScraper] JSON success: Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor
+2026-03-05 07:54:00 [debug]: [VillmanScraper] JSON success: Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor
+2026-03-05 07:54:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-22b15hn-21-45-va-100hz-fhd-vga-hdmi-monitor.json
+2026-03-05 07:54:00 [debug]: [PcExpressScraper] JSON success: HP 23.8" 524SF (94C18AA) IPS Monitor
+2026-03-05 07:54:00 [debug]: [PcExpressScraper] JSON success: ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor
+2026-03-05 07:54:01 [debug]: [PcWorxScraper] JSON success: AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor
+2026-03-05 07:54:01 [debug]: [PcWorxScraper] JSON success: AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor
+2026-03-05 07:54:01 [debug]: [PcWorxScraper] JSON success: Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor
+2026-03-05 07:54:02 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-05 07:54:05 [debug]: → GET /api/search
+2026-03-05 07:54:05 [info]: [SearchService] Search #8ed764e9-6d02-45db-8dd2-0e6ad3738d2e - "monitor"
+2026-03-05 07:54:05 [info]: [Backend Cache MISS] Scraping: "monitor"...
+2026-03-05 07:54:08 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-03-05 07:54:09 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-24b3ca2-23-8-ips-100hz-fhd-monitor.json
+2026-03-05 07:54:09 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aopen-20e0q-bi-19-5-75hz-hdmi-vga-monitor.json
+2026-03-05 07:54:10 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-03-05 07:54:10 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=monitor&resources[type]=product&resources[limit]=10
+2026-03-05 07:54:11 [debug]: [PcWorxScraper] JSON success: AOPEN 20E0Q Bi 19.5" 75Hz HDMI/VGA Monitor
+2026-03-05 07:54:11 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-05 07:54:12 [debug]: [PcWorxScraper] JSON success: AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor
+2026-03-05 07:54:13 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aopen-24cl1y-g-monitor.json
+2026-03-05 07:54:13 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-modern-md272qpw-wqhd-ips-75hz-4ms-monitor.json
+2026-03-05 07:54:13 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aopen-27-27sa3-g0bi-ips-monitor.json
+2026-03-05 07:54:14 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-05 07:54:14 [debug]: [VillmanScraper] JSON success: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor
+2026-03-05 07:54:14 [debug]: [PcExpressScraper] JSON success: AOPEN 27" 27SA3 G0BI IPS Monitor
+2026-03-05 07:54:14 [debug]: [VillmanScraper] JSON success: MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor
+2026-03-05 07:54:15 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-05 07:54:15 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 07:54:17 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 07:54:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-27-xg27acs-rog-strix-ips-gaming-monitor.json
+2026-03-05 07:54:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-05 07:54:21 [debug]: [PcExpressScraper] JSON success: ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor
+2026-03-05 07:54:21 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-05 07:54:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hp-23-8-524sf-94c18aa-ips-monitor.json
+2026-03-05 07:54:23 [debug]: [PcExpressScraper] JSON success: HP 23.8" 524SF (94C18AA) IPS Monitor
+2026-03-05 07:54:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-predator-x34-x-34inch-uwqhd-oled-240hz-0-01ms-curved-gaming-monitor.json
+2026-03-05 07:54:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/acer-ka252q-g0bi.json
+2026-03-05 07:54:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-va24ehf-monitor.json
+2026-03-05 07:54:28 [debug]: [VillmanScraper] JSON success: Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor
+2026-03-05 07:54:28 [debug]: [VillmanScraper] JSON success: Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor
+2026-03-05 07:54:28 [debug]: [VillmanScraper] JSON success: Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor
+2026-03-05 07:54:32 [info]: [Backend Cache SET] "monitor" — 15 products cached
+2026-03-05 07:54:32 [info]: [SearchService] Raw products: 15
+2026-03-05 07:54:33 [info]: [SearchService] Unique products after dedup: 15
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor" (PCExpress)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "HP 23.8" 524SF (94C18AA) IPS Monitor" (PCExpress)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 27" 27SA3 G0BI IPS Monitor" (PCExpress)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "MSI 21.5" MP225V PRO Monitor" (PCExpress)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor" (VillMan)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor" (VillMan)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor" (VillMan)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor" (VillMan)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor" (VillMan)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor" (PCWorx)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor" (PCWorx)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor" (PCWorx)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 20E0Q Bi 19.5" 75Hz HDMI/VGA Monitor" (PCWorx)
+2026-03-05 07:54:33 [debug]: [SearchService] ✓ ACCEPTED: "AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor" (PCWorx)
+2026-03-05 07:54:33 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-05 07:54:33 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-vg259q5a-24-5-ips-200hz-fhd-tuf-gaming-monitor.json
+2026-03-05 07:54:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-27g42e-27-ips-180hz-fhd-adaptive-sync-gaming-monitor.json
+2026-03-05 07:54:34 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-22b15hn-21-45-va-100hz-fhd-vga-hdmi-monitor.json
+2026-03-05 07:54:35 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:36 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:36 [debug]: [PcWorxScraper] JSON success: AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor
+2026-03-05 07:54:36 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:36 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:37 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:54:37 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:54:37 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:54:38 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:54:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aopen-27-27sa3-g0bi-ips-monitor.json
+2026-03-05 07:54:38 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:54:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-modern-md272qpw-wqhd-ips-75hz-4ms-monitor.json
+2026-03-05 07:54:39 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-21-5-mp225v-pro-monitor.json
+2026-03-05 07:54:39 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:54:39 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:54:39 [debug]: [PcExpressScraper] JSON success: AOPEN 27" 27SA3 G0BI IPS Monitor
+2026-03-05 07:54:39 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:54:40 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aopen-24cl1y-g-monitor.json
+2026-03-05 07:54:40 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:54:40 [debug]: [VillmanScraper] JSON success: MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor
+2026-03-05 07:54:40 [debug]: [PcExpressScraper] JSON success: MSI 21.5" MP225V PRO Monitor
+2026-03-05 07:54:40 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:54:41 [info]: [SearchService] Saved 15 products for search #5c913521-f622-4a53-9901-8c842b5dfe60
+2026-03-05 07:54:41 [debug]: [VillmanScraper] JSON success: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor
+2026-03-05 07:54:41 [debug]: [PcWorxScraper] JSON success: Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor
+2026-03-05 07:54:43 [debug]: [PcWorxScraper] JSON success: AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor
+2026-03-05 07:54:54 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aopen-20e0q-bi-19-5-75hz-hdmi-vga-monitor.json
+2026-03-05 07:54:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aoc-24b3ca2-23-8-ips-100hz-fhd-monitor.json
+2026-03-05 07:54:55 [debug]: [PcWorxScraper] JSON success: AOPEN 20E0Q Bi 19.5" 75Hz HDMI/VGA Monitor
+2026-03-05 07:54:55 [debug]: [PcWorxScraper] JSON success: AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor
+2026-03-05 07:54:58 [info]: [Backend Cache SET] "monitor" — 15 products cached
+2026-03-05 07:54:58 [info]: [SearchService] Raw products: 15
+2026-03-05 07:54:58 [info]: [SearchService] Unique products after dedup: 15
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "ASUS 27" XG27ACS ROG Strix IPS Gaming Monitor" (PCExpress)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "HP 23.8" 524SF (94C18AA) IPS Monitor" (PCExpress)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 27" 27SA3 G0BI IPS Monitor" (PCExpress)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "MSI 21.5" MP225V PRO Monitor" (PCExpress)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "Acer Predator X34 X XBMIIPHUZX 34inch UWQHD OLED 240Hz 0.01ms Curved Gaming Monitor" (VillMan)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "Acer KA252Q G0bi 24.5inch FHD (1920x1080) IPS 120Hz Freesync 1ms VRB LED Monitor" (VillMan)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "Asus VA24EHF 23.8inch FHD IPS 100Hz Monitor" (VillMan)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor" (VillMan)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "MSI Modern MD272QPW WQHD IPS 75Hz 4ms Monitor" (VillMan)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "Asus VG259Q5A 24.5" IPS 200Hz FHD TUF Gaming Monitor" (PCWorx)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "AOC 27G42E 27" IPS 180Hz FHD Adaptive-Sync Gaming Monitor" (PCWorx)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "AOC 22B15HN 21.45" VA 100Hz FHD VGA/HDMI Monitor" (PCWorx)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "AOPEN 20E0Q Bi 19.5" 75Hz HDMI/VGA Monitor" (PCWorx)
+2026-03-05 07:54:58 [debug]: [SearchService] ✓ ACCEPTED: "AOC 24B3CA2 23.8" IPS 100Hz FHD Monitor" (PCWorx)
+2026-03-05 07:54:58 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-05 07:54:58 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:54:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-05 07:55:00 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:55:00 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:55:00 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:55:00 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:55:00 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 07:55:01 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:55:01 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:55:01 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:55:01 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:55:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 07:55:02 [info]: [SearchService] Saved 15 products for search #8ed764e9-6d02-45db-8dd2-0e6ad3738d2e
+2026-03-05 07:55:23 [debug]: → GET /api/products/VillMan/4a4024ac-249b-48a0-83ff-743b3cb74d3e
+2026-03-05 07:55:24 [debug]: → GET /api/products/VillMan/4a4024ac-249b-48a0-83ff-743b3cb74d3e
+2026-03-05 07:55:26 [debug]: → POST /api/cart
+2026-03-05 07:55:26 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:55:26 [info]: [Cart] No cart found for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:55:27 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:55:27 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-05 07:55:27 [info]: [Cart] Found 1 items in cart
+2026-03-05 07:55:27 [info]: [Cart] Fetching products: 4a4024ac-249b-48a0-83ff-743b3cb74d3e
+2026-03-05 07:55:28 [info]: [Cart] Found 1 products
+2026-03-05 07:55:28 [debug]: [Cart] Mapped product 4a4024ac-249b-48a0-83ff-743b3cb74d3e: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor, platform: VillMan
+2026-03-05 07:55:28 [info]: [Cart] Returning cart with 1 items
+2026-03-05 07:55:28 [debug]: → GET /api/cart
+2026-03-05 07:55:28 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:55:28 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 07:55:28 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-05 07:55:28 [info]: [Cart] Found 1 items in cart
+2026-03-05 07:55:28 [info]: [Cart] Fetching products: 4a4024ac-249b-48a0-83ff-743b3cb74d3e
+2026-03-05 07:55:28 [info]: [Cart] Found 1 products
+2026-03-05 07:55:28 [debug]: [Cart] Mapped product 4a4024ac-249b-48a0-83ff-743b3cb74d3e: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor, platform: VillMan
+2026-03-05 07:55:28 [info]: [Cart] Returning cart with 1 items
+2026-03-05 07:55:28 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-05 07:55:28 [info]: [CartController] Processing 1 cart items
+2026-03-05 07:55:28 [debug]: [CartController] Processing item 42052331-e369-4c5f-aef3-79f531966bd5, products array length: 1
+2026-03-05 07:55:28 [debug]: [CartController] Item 42052331-e369-4c5f-aef3-79f531966bd5 has product: AOPEN 24CL1Y G 23.8inch FHD IPS 1ms Monitor
+2026-03-05 07:55:28 [info]: [CartController] Returning 1 items with total price: 4499
+2026-03-05 08:01:01 [debug]: → DELETE /api/cart/42052331-e369-4c5f-aef3-79f531966bd5
+2026-03-05 08:01:02 [debug]: → GET /api/products/VillMan/4a4024ac-249b-48a0-83ff-743b3cb74d3e
+2026-03-05 08:01:03 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 08:01:03 [debug]: → GET /api/products/VillMan/4a4024ac-249b-48a0-83ff-743b3cb74d3e
+2026-03-05 08:01:03 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-05 08:01:03 [info]: [Cart] Found 0 items in cart
+2026-03-05 08:01:03 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-05 08:01:03 [debug]: → GET /api/cart
+2026-03-05 08:01:04 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 08:01:04 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-05 08:01:04 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-05 08:01:04 [info]: [Cart] Found 0 items in cart
+2026-03-05 08:01:04 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-05 08:01:04 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-05 08:01:04 [info]: [CartController] Processing 0 cart items
+2026-03-05 08:01:04 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-05 08:01:06 [debug]: → GET /api/search/stores
+2026-03-05 08:01:06 [debug]: → GET /api/search/stores
+2026-03-05 08:01:27 [debug]: → GET /api/search
+2026-03-05 08:01:27 [info]: [SearchService] Search #bce94836-c69c-4345-9895-73bb2e3e07c0 - "gpu"
+2026-03-05 08:01:27 [info]: [Backend Cache MISS] Scraping: "gpu"...
+2026-03-05 08:01:31 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=gpu&resources[type]=product&resources[limit]=10
+2026-03-05 08:01:31 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=gpu&resources[type]=product&resources[limit]=10
+2026-03-05 08:01:31 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=gpu&resources[type]=product&resources[limit]=10
+2026-03-05 08:01:32 [info]: [PcExpressScraper] API found 1 product URLs
+2026-03-05 08:01:32 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-05 08:01:32 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-05 08:01:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-geforce-rtx-3050-dual-oc-v2-8gb-gddr6-128-bit-graphics-card.json
+2026-03-05 08:01:36 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/apple-macbook-m4-pro-mw2u3-space-black-14-2-inch-liquid-retina-xdr-display-10-core-cpu-10-core-gpu-16gb-ram-512gb-ssd-macos.json
+2026-03-05 08:01:36 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/gigabyte-geforce-rtx-5070-gaming-oc-12g-gpu.json
+2026-03-05 08:01:37 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/gigabyte-aorus-geforce-rtx-5070-ti-master-16g-gpu.json
+2026-03-05 08:01:37 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gv-n3050wf2ocv2-8gd-rtx3050-windforce-oc-8gd-gdrr6-dp-hdmi-dvi-gpu.json
+2026-03-05 08:01:37 [debug]: [PcExpressScraper] JSON success: ASUS GeForce RTX™  3050 DUAL OC V2 8GB GDDR6 128-bit Graphics Card
+2026-03-05 08:01:37 [debug]: [VillmanScraper] JSON success: Gigabyte GeForce RTX 5070 GAMING OC 12G GPU
+2026-03-05 08:01:38 [debug]: [VillmanScraper] JSON success: Apple MacBook M4 Pro MW2U3 (Space Black) 14inch Liquid Retina XDR Display | 10 core CPU/10 core GPU | 16GB RAM | 512GB SSD | macOS
+2026-03-05 08:01:38 [debug]: [PcWorxScraper] JSON success: Gigabyte NVIDIA® GeForce RTX™ 3050 WindForce OC 8GD GDDR6
+2026-03-05 08:01:38 [debug]: [VillmanScraper] JSON success: Gigabyte AORUS GeForce RTX 5070 Ti MASTER 16G GPU
+2026-03-05 08:01:38 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-dual-rtx5050-o8g-rtx5050-dual-oc-8gb-gddr6-128-bit-gpu.json
+2026-03-05 08:01:38 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-nvidia%C2%AE-geforce-rtx%E2%84%A2-5060-ti-windforce-max-oc-16gb-gddr7-graphics-card.json
+2026-03-05 08:01:39 [debug]: [PcWorxScraper] JSON success: Asus  NVIDIA® GeForce RTX™ 5050 DUAL-O8G RTX5050 Dual OC 8GB GDDR6 128-bit GPU
+2026-03-05 08:01:39 [debug]: [PcWorxScraper] JSON success: Gigabyte NVIDIA® GeForce RTX™ 5060 Ti WindForce Max OC 16GB GDDR7 Graphics Card
+2026-03-05 08:01:46 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-surface-laptop-7-copilot-pc-sapphire-13.json
+2026-03-05 08:01:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gv-n5080aorusx-w-16gd-rtx5080-xtreme-waterforce-16gb-gddr7-gpu.json
+2026-03-05 08:01:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/msi-rtx5050-ventus-2x-oc-8g-gddr6-128-bit-gpu.json
+2026-03-05 08:01:47 [debug]: [VillmanScraper] JSON success: Microsoft Surface Laptop 7 Copilot+ PC (Sapphire) 13inch Touch PixelSense Flow | Snapdragon X Plus | 16GB RAM | 1TB SSD | Qualcomm Adreno GPU | Windows 11
+2026-03-05 08:01:47 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/apple-macbook-pro-16-m4-pro-space-black-24gb.json
+2026-03-05 08:01:47 [debug]: [PcWorxScraper] JSON success: MSI  NVIDIA® GeForce RTX™ 5050 VENTUS 2X OC 8G GDDR6 128-bit GPU
+2026-03-05 08:01:47 [debug]: [PcWorxScraper] JSON success: Gigabyte GV-N5080AORUSX-W-16GD RTX5080 XTREME WATERFORCE 16GB GDDR7 GPU
+2026-03-05 08:01:48 [debug]: [VillmanScraper] JSON success: Apple MacBook Pro 16 M4 Pro (Space Black) 16.2inch Liquid Retina XDR | 14 core CPU/20 core GPU | 24GB RAM | 512GB SSD | macOS
+2026-03-05 08:01:50 [info]: [Backend Cache SET] "gpu" — 11 products cached
+2026-03-05 08:01:50 [info]: [SearchService] Raw products: 11
+2026-03-05 08:01:50 [info]: [SearchService] Unique products after dedup: 11
+2026-03-05 08:01:50 [debug]: [SearchService] ✗ REJECTED: "ASUS GeForce RTX™  3050 DUAL OC V2 8GB GDDR6 128-bit Graphics Card" (PCExpress)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GeForce RTX 5070 GAMING OC 12G GPU" (VillMan)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte AORUS GeForce RTX 5070 Ti MASTER 16G GPU" (VillMan)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Apple MacBook M4 Pro MW2U3 (Space Black) 14inch Liquid Retina XDR Display | 10 core CPU/10 core GPU | 16GB RAM | 512GB SSD | macOS" (VillMan)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Apple MacBook Pro 16 M4 Pro (Space Black) 16.2inch Liquid Retina XDR | 14 core CPU/20 core GPU | 24GB RAM | 512GB SSD | macOS" (VillMan)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Surface Laptop 7 Copilot+ PC (Sapphire) 13inch Touch PixelSense Flow | Snapdragon X Plus | 16GB RAM | 1TB SSD | Qualcomm Adreno GPU | Windows 11" (VillMan)
+2026-03-05 08:01:50 [debug]: [SearchService] ✗ REJECTED: "Gigabyte NVIDIA® GeForce RTX™ 5060 Ti WindForce Max OC 16GB GDDR7 Graphics Card" (PCWorx)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte NVIDIA® GeForce RTX™ 3050 WindForce OC 8GD GDDR6" (PCWorx)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Asus  NVIDIA® GeForce RTX™ 5050 DUAL-O8G RTX5050 Dual OC 8GB GDDR6 128-bit GPU" (PCWorx)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GV-N5080AORUSX-W-16GD RTX5080 XTREME WATERFORCE 16GB GDDR7 GPU" (PCWorx)
+2026-03-05 08:01:50 [debug]: [SearchService] ✓ ACCEPTED: "MSI  NVIDIA® GeForce RTX™ 5050 VENTUS 2X OC 8G GDDR6 128-bit GPU" (PCWorx)
+2026-03-05 08:01:50 [info]: [SearchService] Relevance filter: 9/11 products kept
+2026-03-05 08:01:50 [info]: [SearchService] Sample rejected products for query "gpu":
+2026-03-05 08:01:50 [info]:   - ASUS GeForce RTX™  3050 DUAL OC V2 8GB GDDR6 128-bit Graphics Card
+2026-03-05 08:01:50 [info]:   - Gigabyte NVIDIA® GeForce RTX™ 5060 Ti WindForce Max OC 16GB GDDR7 Graphics Card
+2026-03-05 08:01:50 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:01:50 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:01:50 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:01:51 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:01:51 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:01:51 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:01:51 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:01:51 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:01:52 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:01:52 [info]: [SearchService] Saved 9 products for search #bce94836-c69c-4345-9895-73bb2e3e07c0
+2026-03-05 08:02:13 [debug]: → GET /api/search
+2026-03-05 08:02:14 [info]: [SearchService] Search #0e77ab85-367e-42f9-862f-76dfa79fc366 - "gpu"
+2026-03-05 08:02:14 [info]: [Backend Cache HIT] Query: "gpu" (11 cached products)
+2026-03-05 08:02:14 [info]: [SearchService] Raw products: 11
+2026-03-05 08:02:14 [info]: [SearchService] Unique products after dedup: 11
+2026-03-05 08:02:14 [debug]: [SearchService] ✗ REJECTED: "ASUS GeForce RTX™  3050 DUAL OC V2 8GB GDDR6 128-bit Graphics Card" (PCExpress)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GeForce RTX 5070 GAMING OC 12G GPU" (VillMan)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte AORUS GeForce RTX 5070 Ti MASTER 16G GPU" (VillMan)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Apple MacBook M4 Pro MW2U3 (Space Black) 14inch Liquid Retina XDR Display | 10 core CPU/10 core GPU | 16GB RAM | 512GB SSD | macOS" (VillMan)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Apple MacBook Pro 16 M4 Pro (Space Black) 16.2inch Liquid Retina XDR | 14 core CPU/20 core GPU | 24GB RAM | 512GB SSD | macOS" (VillMan)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Surface Laptop 7 Copilot+ PC (Sapphire) 13inch Touch PixelSense Flow | Snapdragon X Plus | 16GB RAM | 1TB SSD | Qualcomm Adreno GPU | Windows 11" (VillMan)
+2026-03-05 08:02:14 [debug]: [SearchService] ✗ REJECTED: "Gigabyte NVIDIA® GeForce RTX™ 5060 Ti WindForce Max OC 16GB GDDR7 Graphics Card" (PCWorx)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte NVIDIA® GeForce RTX™ 3050 WindForce OC 8GD GDDR6" (PCWorx)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Asus  NVIDIA® GeForce RTX™ 5050 DUAL-O8G RTX5050 Dual OC 8GB GDDR6 128-bit GPU" (PCWorx)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GV-N5080AORUSX-W-16GD RTX5080 XTREME WATERFORCE 16GB GDDR7 GPU" (PCWorx)
+2026-03-05 08:02:14 [debug]: [SearchService] ✓ ACCEPTED: "MSI  NVIDIA® GeForce RTX™ 5050 VENTUS 2X OC 8G GDDR6 128-bit GPU" (PCWorx)
+2026-03-05 08:02:14 [info]: [SearchService] Relevance filter: 9/11 products kept
+2026-03-05 08:02:14 [info]: [SearchService] Sample rejected products for query "gpu":
+2026-03-05 08:02:14 [info]:   - ASUS GeForce RTX™  3050 DUAL OC V2 8GB GDDR6 128-bit Graphics Card
+2026-03-05 08:02:14 [info]:   - Gigabyte NVIDIA® GeForce RTX™ 5060 Ti WindForce Max OC 16GB GDDR7 Graphics Card
+2026-03-05 08:02:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:02:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:02:15 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:02:15 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:02:15 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-05 08:02:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:02:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:02:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:02:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-05 08:02:16 [info]: [SearchService] Saved 9 products for search #0e77ab85-367e-42f9-862f-76dfa79fc366
+2026-03-14 08:41:53 [info]: [DB] Supabase connection verified.
+2026-03-14 08:41:54 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-14 08:41:54 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-14 08:43:23 [debug]: → GET /api/cart
+2026-03-14 08:43:23 [debug]: → GET /api/cart
+2026-03-14 08:43:29 [debug]: → GET /api/auth/me
+2026-03-14 08:43:29 [debug]: → GET /api/auth/me
+2026-03-14 08:43:31 [debug]: → POST /api/auth/login
+2026-03-14 08:43:36 [debug]: → GET /api/auth/me
+2026-03-14 08:43:36 [debug]: → GET /api/cart
+2026-03-14 08:43:36 [debug]: → GET /api/auth/me
+2026-03-14 08:43:36 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:43:36 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:43:37 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:43:37 [info]: [Cart] Found 0 items in cart
+2026-03-14 08:43:37 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 08:43:37 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:43:37 [info]: [CartController] Processing 0 cart items
+2026-03-14 08:43:37 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-14 08:43:37 [debug]: → GET /api/cart
+2026-03-14 08:43:37 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:43:37 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:43:37 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:43:38 [info]: [Cart] Found 0 items in cart
+2026-03-14 08:43:38 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 08:43:38 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:43:38 [info]: [CartController] Processing 0 cart items
+2026-03-14 08:43:38 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-14 08:43:48 [debug]: → GET /api/search/stores
+2026-03-14 08:43:48 [debug]: → GET /api/search
+2026-03-14 08:43:48 [debug]: → GET /api/search/stores
+2026-03-14 08:43:48 [info]: [SearchService] Search #a00e0c61-d2ca-437a-94a5-b5acbda6c5d7 - "egg"
+2026-03-14 08:43:48 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-14 08:43:51 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:43:51 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:43:51 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:43:54 [debug]: → GET /api/search/stores
+2026-03-14 08:43:54 [debug]: → GET /api/search
+2026-03-14 08:43:54 [debug]: → GET /api/search/stores
+2026-03-14 08:43:54 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 08:43:54 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-14 08:43:54 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 08:43:54 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-14 08:43:54 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 08:43:54 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-14 08:43:55 [info]: [SearchService] Search #144882c2-9a44-40c6-b5ac-ffee6d8c63dd - "cpu"
+2026-03-14 08:43:55 [info]: [Backend Cache MISS] Scraping: "cpu"...
+2026-03-14 08:43:56 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:43:56 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:43:57 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:43:57 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 08:43:58 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 08:43:59 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 08:44:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-14 08:44:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-03-14 08:44:08 [debug]: → GET /api/search
+2026-03-14 08:44:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-14 08:44:09 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-14 08:44:09 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-14 08:44:10 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-14 08:44:10 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-14 08:44:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-14 08:44:11 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-14 08:44:11 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-14 08:44:11 [info]: [SearchService] Search #5e666653-29d5-477e-b257-86f75a385672 - "egg"
+2026-03-14 08:44:11 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-14 08:44:12 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-03-14 08:44:12 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-14 08:44:13 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:44:13 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-03-14 08:44:14 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:44:14 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:44:14 [debug]: → GET /api/search
+2026-03-14 08:44:15 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 08:44:15 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-14 08:44:15 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 08:44:15 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-14 08:44:15 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 08:44:15 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-14 08:44:15 [info]: [SearchService] Search #78b081c2-85fd-4242-a35b-f2a822565683 - "cpu"
+2026-03-14 08:44:16 [info]: [Backend Cache MISS] Scraping: "cpu"...
+2026-03-14 08:44:27 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-03-14 08:44:28 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:44:29 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:44:29 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:44:31 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 08:44:31 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 08:44:31 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 08:44:32 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 08:44:32 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-14 08:44:33 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-14 08:44:33 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-14 08:44:33 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-14 08:44:34 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-14 08:44:35 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-03-14 08:44:35 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-03-14 08:44:35 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-14 08:44:35 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-14 08:44:35 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-03-14 08:44:35 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:44:35 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:44:36 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:44:36 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:44:36 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-03-14 08:44:36 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-14 08:44:37 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 08:44:37 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-14 08:44:37 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-03-14 08:44:38 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-03-14 08:44:39 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-03-14 08:44:40 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-03-14 08:44:40 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:44:40 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-03-14 08:44:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-03-14 08:44:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 08:44:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-14 08:44:41 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:44:41 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:44:41 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:44:42 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-03-14 08:44:42 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 08:44:42 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-03-14 08:44:42 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-14 08:44:42 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-14 08:44:43 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-14 08:44:43 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-03-14 08:44:44 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-14 08:44:44 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/deepcool-gammaxx-ag400-bk-argb-cpu-air-cooler.json
+2026-03-14 08:44:44 [debug]: [VillmanScraper] JSON success: DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER
+2026-03-14 08:44:45 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-14 08:44:46 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-14 08:44:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-03-14 08:44:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-14 08:44:48 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-14 08:44:48 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-03-14 08:44:48 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:44:48 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-14 08:44:48 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-14 08:44:49 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:44:50 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-14 08:44:50 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-03-14 08:44:50 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-14 08:44:50 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-03-14 08:44:50 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-03-14 08:44:50 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-14 08:44:51 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-14 08:44:51 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-14 08:44:51 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-14 08:44:52 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-14 08:44:53 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-14 08:44:53 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-14 08:44:53 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-14 08:44:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-03-14 08:44:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-03-14 08:44:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-14 08:44:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 08:44:54 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 08:44:54 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-03-14 08:44:55 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-03-14 08:44:55 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-14 08:44:56 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-14 08:44:56 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-14 08:44:56 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:44:56 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-03-14 08:44:56 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-14 08:44:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-03-14 08:44:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-14 08:44:57 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-14 08:44:57 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:44:57 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-03-14 08:44:58 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-14 08:44:58 [info]: [Backend Cache SET] "cpu" — 15 products cached
+2026-03-14 08:44:58 [info]: [SearchService] Raw products: 15
+2026-03-14 08:44:58 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER" (VillMan)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-14 08:44:58 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-03-14 08:44:58 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 08:44:58 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:44:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-14 08:44:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/deepcool-gammaxx-ag400-bk-argb-cpu-air-cooler.json
+2026-03-14 08:44:59 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-14 08:44:59 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-03-14 08:44:59 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-14 08:44:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:44:59 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-14 08:44:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:44:59 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-03-14 08:44:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:45:00 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:45:00 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:01 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:01 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-03-14 08:45:01 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:01 [debug]: [VillmanScraper] JSON success: DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER
+2026-03-14 08:45:01 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:01 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:03 [info]: [Backend Cache SET] "cpu" — 15 products cached
+2026-03-14 08:45:03 [info]: [SearchService] Raw products: 15
+2026-03-14 08:45:03 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER" (VillMan)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-14 08:45:03 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-14 08:45:04 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-14 08:45:04 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-03-14 08:45:04 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 08:45:04 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:45:04 [info]: [SearchService] Saved 15 products for search #144882c2-9a44-40c6-b5ac-ffee6d8c63dd
+2026-03-14 08:45:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-14 08:45:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-14 08:45:04 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:45:04 [info]: [Backend Cache SET] "egg" — 11 products cached
+2026-03-14 08:45:04 [info]: [SearchService] Raw products: 11
+2026-03-14 08:45:04 [info]: [SearchService] Unique products after dedup: 11
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win" (VillMan)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:45:04 [debug]: [SearchService] ✗ REJECTED: "Simplus Air Fryer 4L Electric Fryer 2 Knobs Black" (PCWorx)
+2026-03-14 08:45:04 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-03-14 08:45:04 [info]: [SearchService] Saved 0 products for search #5e666653-29d5-477e-b257-86f75a385672
+2026-03-14 08:45:04 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:45:05 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:45:05 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:45:05 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-14 08:45:05 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:05 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-14 08:45:05 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:06 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:06 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:06 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:45:06 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:07 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:07 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:07 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:07 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:45:08 [info]: [SearchService] Saved 15 products for search #78b081c2-85fd-4242-a35b-f2a822565683
+2026-03-14 08:45:09 [info]: [Backend Cache SET] "egg" — 11 products cached
+2026-03-14 08:45:09 [info]: [SearchService] Raw products: 11
+2026-03-14 08:45:09 [info]: [SearchService] Unique products after dedup: 11
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win" (VillMan)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:45:09 [debug]: [SearchService] ✗ REJECTED: "Simplus Air Fryer 4L Electric Fryer 2 Knobs Black" (PCWorx)
+2026-03-14 08:45:09 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-03-14 08:45:09 [info]: [SearchService] Saved 0 products for search #a00e0c61-d2ca-437a-94a5-b5acbda6c5d7
+2026-03-14 08:45:27 [debug]: → GET /api/products/PCExpress/d0affc9b-9f11-4839-8248-6bb2438d70b1
+2026-03-14 08:45:28 [debug]: → GET /api/products/PCExpress/d0affc9b-9f11-4839-8248-6bb2438d70b1
+2026-03-14 08:45:30 [debug]: → POST /api/cart
+2026-03-14 08:45:31 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:45:31 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:45:31 [info]: [Cart] Found 0 items in cart
+2026-03-14 08:45:31 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 08:45:32 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:45:32 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:45:32 [info]: [Cart] Found 1 items in cart
+2026-03-14 08:45:32 [info]: [Cart] Fetching products: d0affc9b-9f11-4839-8248-6bb2438d70b1
+2026-03-14 08:45:33 [info]: [Cart] Found 1 products
+2026-03-14 08:45:33 [debug]: [Cart] Mapped product d0affc9b-9f11-4839-8248-6bb2438d70b1: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan, platform: PCExpress
+2026-03-14 08:45:33 [info]: [Cart] Returning cart with 1 items
+2026-03-14 08:45:33 [debug]: → GET /api/cart
+2026-03-14 08:45:33 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:45:33 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:45:33 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:45:34 [info]: [Cart] Found 1 items in cart
+2026-03-14 08:45:34 [info]: [Cart] Fetching products: d0affc9b-9f11-4839-8248-6bb2438d70b1
+2026-03-14 08:45:34 [info]: [Cart] Found 1 products
+2026-03-14 08:45:34 [debug]: [Cart] Mapped product d0affc9b-9f11-4839-8248-6bb2438d70b1: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan, platform: PCExpress
+2026-03-14 08:45:34 [info]: [Cart] Returning cart with 1 items
+2026-03-14 08:45:34 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:45:34 [info]: [CartController] Processing 1 cart items
+2026-03-14 08:45:34 [debug]: [CartController] Processing item ff7ddae3-9d39-463c-9c93-3e6397b0fdb2, products array length: 1
+2026-03-14 08:45:34 [debug]: [CartController] Item ff7ddae3-9d39-463c-9c93-3e6397b0fdb2 has product: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-14 08:45:34 [info]: [CartController] Returning 1 items with total price: 3479
+2026-03-14 08:45:37 [debug]: → DELETE /api/cart/ff7ddae3-9d39-463c-9c93-3e6397b0fdb2
+2026-03-14 08:45:38 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:45:38 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:45:38 [info]: [Cart] Found 0 items in cart
+2026-03-14 08:45:38 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 08:45:38 [debug]: → GET /api/cart
+2026-03-14 08:45:39 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:45:39 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:45:39 [debug]: → GET /api/products/PCExpress/d0affc9b-9f11-4839-8248-6bb2438d70b1
+2026-03-14 08:45:39 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:45:39 [info]: [Cart] Found 0 items in cart
+2026-03-14 08:45:39 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 08:45:39 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:45:39 [info]: [CartController] Processing 0 cart items
+2026-03-14 08:45:39 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-14 08:45:39 [debug]: → GET /api/products/PCExpress/d0affc9b-9f11-4839-8248-6bb2438d70b1
+2026-03-14 08:45:40 [debug]: → GET /api/search/stores
+2026-03-14 08:45:40 [debug]: → GET /api/search/stores
