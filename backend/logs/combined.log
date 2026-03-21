@@ -14387,3 +14387,57 @@ Call log:
 2026-03-21 20:22:48 [info]: [DB] Supabase connection verified.
 2026-03-21 20:22:48 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
 2026-03-21 20:22:48 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-21 20:41:04 [info]: [DB] Supabase client created.
+2026-03-21 20:41:07 [info]: [DB] Supabase connection verified.
+2026-03-21 20:41:07 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-21 20:41:07 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-21 20:44:08 [debug]: → GET /api/auth/google
+2026-03-21 20:44:37 [debug]: → GET /api/auth/google
+2026-03-21 20:45:10 [debug]: → GET /api/auth/google/callback
+2026-03-21 20:45:13 [debug]: → GET /api/cart
+2026-03-21 20:45:13 [debug]: → GET /api/auth/me
+2026-03-21 20:45:13 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:45:13 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:45:13 [debug]: → GET /api/auth/me
+2026-03-21 20:45:13 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:45:13 [info]: [CartController] Cart retrieved: null
+2026-03-21 20:45:13 [debug]: → GET /api/cart
+2026-03-21 20:45:13 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:45:13 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:45:14 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:45:14 [info]: [CartController] Cart retrieved: null
+2026-03-21 20:50:08 [debug]: → GET /api/auth/google
+2026-03-21 20:50:16 [debug]: → GET /api/auth/google/callback
+2026-03-21 20:50:18 [debug]: → GET /api/cart
+2026-03-21 20:50:18 [debug]: → GET /api/auth/me
+2026-03-21 20:50:18 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:50:18 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:50:18 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:50:18 [info]: [CartController] Cart retrieved: null
+2026-03-21 20:50:19 [debug]: → GET /api/cart
+2026-03-21 20:50:19 [debug]: → GET /api/auth/me
+2026-03-21 20:50:19 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:50:19 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:50:19 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:50:19 [info]: [CartController] Cart retrieved: null
+2026-03-21 20:53:25 [debug]: → GET /api/auth/google
+2026-03-21 20:53:29 [debug]: → GET /api/auth/google/callback
+2026-03-21 20:53:31 [debug]: → GET /api/cart
+2026-03-21 20:53:31 [debug]: → GET /api/auth/me
+2026-03-21 20:53:32 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:53:32 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:53:32 [debug]: → GET /api/auth/me
+2026-03-21 20:53:32 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:53:32 [info]: [CartController] Cart retrieved: null
+2026-03-21 20:53:32 [debug]: → GET /api/cart
+2026-03-21 20:53:32 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:53:32 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:53:33 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:53:33 [info]: [CartController] Cart retrieved: null
+2026-03-21 20:54:32 [debug]: → GET /api/auth/me
+2026-03-21 20:54:32 [debug]: → GET /api/cart
+2026-03-21 20:54:33 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:54:33 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:54:33 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 20:54:33 [info]: [CartController] Cart retrieved: null
+2026-03-21 20:54:33 [debug]: → GET /api/auth/me
