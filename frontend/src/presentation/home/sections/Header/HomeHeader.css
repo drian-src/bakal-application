@@ -1,0 +1,308 @@
+.home-header {
+  background: var(--bg-gradient);
+  border-bottom: 1px solid var(--card-border);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.header-container {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px var(--spacing-md);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  justify-content: space-between;
+}
+
+.back-button {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  color: var(--accent-gold);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.05);
+}
+
+.back-button:hover {
+  background: rgba(212, 175, 55, 0.08);
+  border-color: var(--accent-gold);
+  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.1), 0 2px 8px rgba(212, 175, 55, 0.15);
+  transform: translateX(-2px);
+}
+
+.header-logo {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  gap: 0;
+}
+
+.logo-text {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  letter-spacing: 0px;
+  text-shadow: 0 2px 8px rgba(212, 175, 55, 0.2);
+  font-family: var(--font-display);
+}
+
+.logo-subtitle {
+  font-size: 9px;
+  color: var(--text-muted);
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-family: var(--font-body);
+}
+
+.header-search {
+  flex: 1;
+  display: flex;
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+
+.header-search.large-search {
+  max-width: 1000px;
+  margin: var(--spacing-lg) auto;
+  font-size: 1.25rem;
+}
+
+
+
+.search-input {
+  width: 100%;
+  padding: 12px 44px 12px 18px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--card-border);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0.2px;
+  font-family: var(--font-body);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--accent-gold);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 0 16px rgba(212, 175, 55, 0.15);
+}
+
+.search-button {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 8px;
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  border-radius: calc(var(--radius-md) - 2px);
+  transition: all 0.3s ease;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-button:hover {
+  background: var(--accent-gold-hover);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+  transform: translateY(-50%) scale(1.05);
+}
+
+.header-profile {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.cart-icon-wrapper {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  background: transparent;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFD700;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.cart-icon-wrapper:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #FFE55C;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--accent-gold);
+  color: var(--bg-primary);
+  border-radius: 50%;
+  font-size: 11px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(212, 175, 55, 0.3);
+}
+
+.profile-icon {
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--card-border);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-gold);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.05);
+}
+
+.profile-icon:hover {
+  background: rgba(212, 175, 55, 0.08);
+  border-color: var(--accent-gold);
+  box-shadow: inset 0 1px 2px rgba(212, 175, 55, 0.1), 0 2px 8px rgba(212, 175, 55, 0.15);
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+  }
+
+  .header-search {
+    order: 3;
+    flex-basis: 100%;
+    max-width: 100%;
+    margin: var(--spacing-xs) auto 0;
+  }
+
+  .logo-text {
+    font-size: 24px;
+  }
+
+  .back-button {
+    order: 1;
+  }
+
+  .header-logo {
+    order: 2;
+  }
+
+  .header-profile {
+    order: 4;
+  }
+}
+
+/* Profile pill — avatar + name */
+.profile-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1.5px solid rgba(212, 175, 55, 0.6);
+  background: rgba(255, 255, 255, 0.15);
+  user-select: none;
+  backdrop-filter: blur(4px);
+}
+
+.profile-pill:hover {
+  background: rgba(255, 255, 255, 0.25);
+  border-color: var(--accent-gold);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.profile-avatar {
+  width: 24px !important;
+  height: 24px !important;
+  border-radius: 50%;
+  background: var(--accent-gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  min-width: 24px;
+  min-height: 24px;
+}
+
+.profile-avatar-letter {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1;
+}
+
+.profile-name {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  white-space: nowrap;
+  max-width: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Hide name text on small screens, show avatar only */
+@media (max-width: 640px) {
+  .profile-pill {
+    padding: 2px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(212, 175, 55, 0.6);
+    background: rgba(255, 255, 255, 0.15);
+  }
+  .profile-name {
+    display: none;
+  }
+}
+
+/* Subtle vertical divider between icon buttons and the Search button */
+/* This is the ONLY new CSS added — all existing rules stay unchanged */
+.search-icon-divider {
+  position: absolute;
+  right: 42px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 16px;
+  background: #e5e7eb;
+  pointer-events: none;
+}

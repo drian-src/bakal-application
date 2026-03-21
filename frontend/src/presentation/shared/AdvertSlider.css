@@ -1,0 +1,78 @@
+.advert-slider {
+  width: 100%;
+  max-width: 420px;
+  height: 320px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(255,255,255,0.02));
+  box-shadow: 0 10px 30px rgba(2,6,23,0.15);
+}
+
+.advert-track {
+  display: flex;
+  height: 100%;
+  transition: transform 450ms cubic-bezier(.2,.9,.2,1);
+  width: 300%;
+}
+
+.advert-slide {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-light);
+}
+
+.advert-logo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+}
+
+.advert-title {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #fff;
+}
+
+.advert-desc {
+  margin-top: 0.5rem;
+  color: rgba(255,255,255,0.8);
+  font-size: 1.1rem;
+}
+
+.advert-dots {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.advert-dots .dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.3);
+  transition: all 220ms ease;
+}
+
+.advert-dots .dot.active {
+  width: 14px;
+  background: #D4AF37;
+}
+
+@media (max-width: 640px) {
+  .advert-slider { height: 220px; max-width: 320px; }
+  .advert-emoji { font-size: 2.5rem; }
+}

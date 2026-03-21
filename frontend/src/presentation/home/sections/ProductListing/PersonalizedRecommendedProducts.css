@@ -1,0 +1,11 @@
+.personalized-recommended-products-section {
+  margin: 32px 0 0 0;
+  padding: 0 16px;
+}
+
+.personalized-recommended-products-section .section-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: var(--accent-gold);
+}
