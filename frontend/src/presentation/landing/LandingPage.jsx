@@ -50,10 +50,7 @@ const LandingPage = () => {
           </div>
           <div className="navbar-actions">
             <Link to="/login">
-              <Button variant="ghost" size="medium">Log In</Button>
-            </Link>
-            <Link to="/signup">
-              <Button variant="primary" size="medium">Sign Up</Button>
+              <Button variant="primary" size="medium">Sign In</Button>
             </Link>
           </div>
         </div>
@@ -148,9 +145,9 @@ const LandingPage = () => {
             <p className="cta-description">
               Join thousands of Filipino shoppers who save time and money with Bakàl
             </p>
-            <Link to="/signup">
+            <Link to="/login">
               <Button variant="secondary" size="large">
-                Create Your Free Account
+                Sign In with Google
               </Button>
             </Link>
           </div>

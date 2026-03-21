@@ -212,9 +212,18 @@ export const getCurrentUser = () => {
   try {
     const userStr = localStorage.getItem(CURRENT_USER_KEY);
     const token = localStorage.getItem(AUTH_TOKEN_KEY);
-    
+
     if (userStr && token) {
-      return JSON.parse(userStr);
+      const user = JSON.parse(userStr);
+
+      // Normalize avatar field across two possible formats:
+      // - 'avatarUrl'   (camelCase) — set by AuthCallback.jsx from Google OAuth
+      // - 'avatar_url'  (snake_case) — may exist in older localStorage entries
+      // Components always read user.avatarUrl — never user.avatar_url directly
+      return {
+        ...user,
+        avatarUrl: user.avatarUrl ?? user.avatar_url ?? null,
+      };
     }
     return null;
   } catch (error) {

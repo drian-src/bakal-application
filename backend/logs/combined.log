@@ -12903,3 +12903,1487 @@ Call log:
 2026-03-13 21:28:18 [info]: [SearchService] Unique products after dedup: 0
 2026-03-13 21:28:18 [info]: [SearchService] Relevance filter: 0/0 products kept
 2026-03-13 21:28:18 [info]: [SearchService] Saved 0 products for search #684d5946-4d5c-474f-a34a-453bc58cfacb
+2026-03-14 08:56:29 [info]: [DB] Supabase client created.
+2026-03-14 08:56:32 [info]: [DB] Supabase connection verified.
+2026-03-14 08:56:32 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-14 08:56:32 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-14 08:57:49 [debug]: → GET /api/cart
+2026-03-14 08:57:50 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:57:50 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:57:50 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:57:50 [info]: [Cart] Found 0 items in cart
+2026-03-14 08:57:50 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 08:57:50 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:57:50 [info]: [CartController] Processing 0 cart items
+2026-03-14 08:57:50 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-14 08:57:50 [debug]: → GET /api/cart
+2026-03-14 08:57:50 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:57:50 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 08:57:50 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:57:51 [info]: [Cart] Found 0 items in cart
+2026-03-14 08:57:51 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 08:57:51 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 08:57:51 [info]: [CartController] Processing 0 cart items
+2026-03-14 08:57:51 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-14 08:58:02 [debug]: → GET /api/auth/me
+2026-03-14 08:58:03 [debug]: → GET /api/auth/me
+2026-03-14 08:58:03 [debug]: → GET /api/auth/me
+2026-03-14 08:58:18 [debug]: → GET /api/search/stores
+2026-03-14 08:58:18 [debug]: → GET /api/search
+2026-03-14 08:58:18 [debug]: → GET /api/search/stores
+2026-03-14 08:58:18 [info]: [SearchService] Search #1fc431fc-be3e-415d-9281-2adb67e208ea - "egg"
+2026-03-14 08:58:18 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-14 08:58:20 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:20 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:20 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:23 [debug]: → GET /api/search/stores
+2026-03-14 08:58:23 [debug]: → GET /api/search
+2026-03-14 08:58:23 [debug]: → GET /api/search/stores
+2026-03-14 08:58:24 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 08:58:24 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-14 08:58:24 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 08:58:24 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-14 08:58:24 [info]: [SearchService] Search #cebb7c42-f1a1-4a79-9296-3feedc7a6fd9 - "cpu"
+2026-03-14 08:58:24 [info]: [Backend Cache MISS] Scraping: "cpu"...
+2026-03-14 08:58:24 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 08:58:24 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-14 08:58:28 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:32 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:32 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 08:58:32 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:33 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 08:58:33 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 08:58:34 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-14 08:58:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-14 08:58:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-03-14 08:58:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-14 08:58:35 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-14 08:58:35 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-14 08:58:35 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-14 08:58:38 [debug]: → GET /api/search
+2026-03-14 08:58:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-14 08:58:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-14 08:58:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-14 08:58:39 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-14 08:58:39 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-14 08:58:39 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-03-14 08:58:39 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-14 08:58:39 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-14 08:58:40 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-14 08:58:40 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-14 08:58:40 [info]: [SearchService] Search #4b502ad9-3cd1-4e75-a7af-cc7aa9817d7a - "egg"
+2026-03-14 08:58:40 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-14 08:58:40 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-03-14 08:58:40 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-14 08:58:42 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:42 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:42 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-14 08:58:42 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 08:58:42 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-14 08:58:42 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 08:58:42 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-14 08:58:43 [debug]: → GET /api/search
+2026-03-14 08:58:43 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 08:58:44 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 08:58:44 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-14 08:58:45 [info]: [SearchService] Search #53929ee7-69c6-4fb5-9f31-cba3c93b6880 - "cpu"
+2026-03-14 08:58:45 [info]: [Backend Cache MISS] Scraping: "cpu"...
+2026-03-14 08:58:58 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-03-14 08:59:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-03-14 08:59:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-03-14 08:59:00 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:59:00 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:59:00 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:59:00 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:59:01 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:59:01 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 08:59:01 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:59:01 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 08:59:01 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 08:59:02 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 08:59:03 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-14 08:59:04 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-03-14 08:59:08 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 08:59:08 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/deepcool-gammaxx-ag400-bk-argb-cpu-air-cooler.json
+2026-03-14 08:59:08 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-14 08:59:09 [debug]: [VillmanScraper] JSON success: DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER
+2026-03-14 08:59:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-03-14 08:59:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-14 08:59:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-14 08:59:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-03-14 08:59:10 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-14 08:59:10 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-14 08:59:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-14 08:59:11 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-14 08:59:11 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-14 08:59:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-14 08:59:11 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-03-14 08:59:11 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-14 08:59:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-03-14 08:59:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 08:59:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-03-14 08:59:11 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-14 08:59:11 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-14 08:59:11 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:59:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-03-14 08:59:12 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-03-14 08:59:12 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-03-14 08:59:12 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-14 08:59:12 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-14 08:59:12 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-14 08:59:12 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-14 08:59:12 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-03-14 08:59:12 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-14 08:59:12 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-14 08:59:12 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-14 08:59:12 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-14 08:59:12 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-14 08:59:12 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-03-14 08:59:13 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:59:13 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-03-14 08:59:13 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 08:59:13 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-14 08:59:13 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-03-14 08:59:13 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-14 08:59:13 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-03-14 08:59:17 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-03-14 08:59:17 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-03-14 08:59:17 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-03-14 08:59:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:59:18 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-03-14 08:59:18 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:59:18 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:59:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-14 08:59:19 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-14 08:59:19 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-03-14 08:59:19 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-03-14 08:59:20 [info]: [Backend Cache SET] "cpu" — 15 products cached
+2026-03-14 08:59:20 [info]: [SearchService] Raw products: 15
+2026-03-14 08:59:20 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER" (VillMan)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-14 08:59:20 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-03-14 08:59:21 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 08:59:21 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-14 08:59:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-03-14 08:59:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-14 08:59:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-14 08:59:21 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-14 08:59:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/deepcool-gammaxx-ag400-bk-argb-cpu-air-cooler.json
+2026-03-14 08:59:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-14 08:59:21 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:22 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-14 08:59:22 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:22 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-03-14 08:59:22 [debug]: [VillmanScraper] JSON success: DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER
+2026-03-14 08:59:22 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-14 08:59:22 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-14 08:59:22 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-14 08:59:22 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:23 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:23 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-14 08:59:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-03-14 08:59:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 08:59:24 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:24 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 08:59:24 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:24 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-03-14 08:59:24 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-14 08:59:24 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:25 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:25 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:25 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:25 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:26 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:26 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:27 [info]: [SearchService] Saved 15 products for search #cebb7c42-f1a1-4a79-9296-3feedc7a6fd9
+2026-03-14 08:59:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-03-14 08:59:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-14 08:59:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-14 08:59:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-14 08:59:28 [info]: [Backend Cache SET] "egg" — 11 products cached
+2026-03-14 08:59:28 [info]: [SearchService] Raw products: 11
+2026-03-14 08:59:28 [info]: [SearchService] Unique products after dedup: 11
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✗ REJECTED: "Simplus Air Fryer 4L Electric Fryer 2 Knobs Black" (PCWorx)
+2026-03-14 08:59:28 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-03-14 08:59:28 [info]: [SearchService] Saved 0 products for search #1fc431fc-be3e-415d-9281-2adb67e208ea
+2026-03-14 08:59:28 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-14 08:59:28 [info]: [Backend Cache SET] "cpu" — 15 products cached
+2026-03-14 08:59:28 [info]: [SearchService] Raw products: 15
+2026-03-14 08:59:28 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER" (VillMan)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-14 08:59:28 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-03-14 08:59:28 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 08:59:28 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:29 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-14 08:59:29 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:29 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-14 08:59:29 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:29 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-03-14 08:59:29 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 08:59:30 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:30 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:30 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:31 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:31 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 08:59:31 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:32 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:32 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:32 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:32 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 08:59:33 [info]: [Backend Cache SET] "egg" — 11 products cached
+2026-03-14 08:59:33 [info]: [SearchService] Raw products: 11
+2026-03-14 08:59:33 [info]: [SearchService] Unique products after dedup: 11
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win" (VillMan)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-14 08:59:33 [debug]: [SearchService] ✗ REJECTED: "Simplus Air Fryer 4L Electric Fryer 2 Knobs Black" (PCWorx)
+2026-03-14 08:59:33 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-03-14 08:59:33 [info]: [SearchService] Saved 0 products for search #4b502ad9-3cd1-4e75-a7af-cc7aa9817d7a
+2026-03-14 08:59:33 [info]: [SearchService] Saved 15 products for search #53929ee7-69c6-4fb5-9f31-cba3c93b6880
+2026-03-14 08:59:52 [debug]: → GET /api/products/PCExpress/913c91ce-8774-40b5-b87f-6320a5fcbb85
+2026-03-14 08:59:53 [debug]: → GET /api/products/PCExpress/913c91ce-8774-40b5-b87f-6320a5fcbb85
+2026-03-14 08:59:57 [debug]: → GET /api/search/stores
+2026-03-14 08:59:57 [debug]: → GET /api/search/stores
+2026-03-14 10:38:51 [info]: [DB] Supabase client created.
+2026-03-14 10:38:56 [info]: [DB] Supabase connection verified.
+2026-03-14 10:38:57 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-14 10:38:57 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-14 10:39:32 [debug]: → GET /api/cart
+2026-03-14 10:39:33 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:39:33 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:39:33 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:39:33 [info]: [Cart] Found 0 items in cart
+2026-03-14 10:39:33 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 10:39:33 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:39:33 [info]: [CartController] Processing 0 cart items
+2026-03-14 10:39:33 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-14 10:39:33 [debug]: → GET /api/cart
+2026-03-14 10:39:34 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:39:34 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:39:34 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:39:34 [info]: [Cart] Found 0 items in cart
+2026-03-14 10:39:34 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 10:39:34 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:39:34 [info]: [CartController] Processing 0 cart items
+2026-03-14 10:39:34 [info]: [CartController] Returning 0 items with total price: 0
+2026-03-14 10:39:35 [debug]: → GET /api/auth/me
+2026-03-14 10:39:35 [debug]: → GET /api/auth/me
+2026-03-14 10:39:36 [debug]: → GET /api/auth/me
+2026-03-14 10:39:46 [debug]: → GET /api/search/stores
+2026-03-14 10:39:46 [debug]: → GET /api/search
+2026-03-14 10:39:46 [debug]: → GET /api/search/stores
+2026-03-14 10:39:47 [info]: [SearchService] Search #2d7964d2-1aab-47cf-9080-4dfa77d045a3 - "keyboard"
+2026-03-14 10:39:47 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-14 10:39:48 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 10:39:48 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 10:39:48 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 10:39:51 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 10:39:51 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 10:39:51 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 10:39:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-03-14 10:39:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json
+2026-03-14 10:39:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-03-14 10:39:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-03-14 10:39:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-03-14 10:39:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-03-14 10:39:53 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k606-lakshmi-mechanical-keyboard.json
+2026-03-14 10:39:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-03-14 10:39:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 10:39:54 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-03-14 10:39:54 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard
+2026-03-14 10:39:54 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-03-14 10:39:54 [debug]: [PcWorxScraper] JSON success: Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch
+2026-03-14 10:39:54 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 10:39:54 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-03-14 10:39:54 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-03-14 10:39:54 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 10:39:55 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-14 10:39:57 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk220-wireless-combo-keyboard-and-mouse.json
+2026-03-14 10:39:57 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-03-14 10:39:57 [debug]: [PcWorxScraper] JSON success: Logitech Mk220 Wireless Combo Keyboard And Mouse
+2026-03-14 10:39:57 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-03-14 10:39:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json
+2026-03-14 10:39:58 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-03-14 10:39:59 [debug]: [VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard
+2026-03-14 10:39:59 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-03-14 10:39:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nk2600-usb-wired-keyboard-black.json
+2026-03-14 10:39:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-mk240-wireless-keyboard-and-mouse-combo-black.json
+2026-03-14 10:40:00 [debug]: [PcExpressScraper] JSON success: LOGITECH MK240 Wireless Keyboard and Mouse Combo (Black)
+2026-03-14 10:40:00 [debug]: [PcExpressScraper] JSON success: RAPOO NK2600 USB WIRED Keyboard (Black)
+2026-03-14 10:40:04 [info]: [Backend Cache SET] "keyboard" — 15 products cached
+2026-03-14 10:40:04 [info]: [SearchService] Raw products: 15
+2026-03-14 10:40:04 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)" (PCExpress)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "RAPOO NK2600 USB WIRED Keyboard (Black)" (PCExpress)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK240 Wireless Keyboard and Mouse Combo (Black)" (PCExpress)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "Logitech Mk220 Wireless Combo Keyboard And Mouse" (PCWorx)
+2026-03-14 10:40:04 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-14 10:40:04 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 10:40:04 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:04 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:05 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:05 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:05 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:06 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:06 [debug]: → GET /api/search
+2026-03-14 10:40:06 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:06 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:07 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:07 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:07 [info]: [SearchService] Search #4b61f51b-edd7-45f0-aa9e-7c1a64343e06 - "keyboard"
+2026-03-14 10:40:07 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-14 10:40:07 [info]: [SearchService] Raw products: 15
+2026-03-14 10:40:07 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)" (PCExpress)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "RAPOO NK2600 USB WIRED Keyboard (Black)" (PCExpress)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK240 Wireless Keyboard and Mouse Combo (Black)" (PCExpress)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "Logitech Mk220 Wireless Combo Keyboard And Mouse" (PCWorx)
+2026-03-14 10:40:07 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-14 10:40:07 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 10:40:07 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:07 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:07 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:08 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:08 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:08 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:08 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:08 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:40:08 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:08 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:09 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:09 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:09 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:09 [info]: [SearchService] Saved 15 products for search #2d7964d2-1aab-47cf-9080-4dfa77d045a3
+2026-03-14 10:40:09 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:10 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:40:10 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:10 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:11 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:11 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:11 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:40:12 [info]: [SearchService] Saved 15 products for search #4b61f51b-edd7-45f0-aa9e-7c1a64343e06
+2026-03-14 10:43:40 [debug]: → GET /api/products/PCExpress/a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc
+2026-03-14 10:43:42 [debug]: → GET /api/products/PCExpress/a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc
+2026-03-14 10:43:46 [debug]: → POST /api/cart
+2026-03-14 10:43:46 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:43:46 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:43:47 [info]: [Cart] Found 0 items in cart
+2026-03-14 10:43:47 [info]: [Cart] Cart is empty, returning empty items array
+2026-03-14 10:43:48 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:43:48 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:43:48 [info]: [Cart] Found 1 items in cart
+2026-03-14 10:43:48 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc
+2026-03-14 10:43:49 [info]: [Cart] Found 1 products
+2026-03-14 10:43:49 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 10:43:49 [info]: [Cart] Returning cart with 1 items
+2026-03-14 10:43:49 [debug]: → GET /api/cart
+2026-03-14 10:43:49 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:43:49 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:43:49 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:43:49 [info]: [Cart] Found 1 items in cart
+2026-03-14 10:43:49 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc
+2026-03-14 10:43:50 [info]: [Cart] Found 1 products
+2026-03-14 10:43:50 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 10:43:50 [info]: [Cart] Returning cart with 1 items
+2026-03-14 10:43:50 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:43:50 [info]: [CartController] Processing 1 cart items
+2026-03-14 10:43:50 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-14 10:43:50 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 10:43:50 [info]: [CartController] Returning 1 items with total price: 2480
+2026-03-14 10:45:08 [debug]: → GET /api/search/stores
+2026-03-14 10:45:08 [debug]: → GET /api/search/stores
+2026-03-14 10:45:32 [debug]: → GET /api/search/stores
+2026-03-14 10:45:32 [debug]: → GET /api/search
+2026-03-14 10:45:32 [debug]: → GET /api/search/stores
+2026-03-14 10:45:33 [info]: [SearchService] Search #9e21c649-7dd7-4b57-b3f7-daf89b4d1bf8 - "hjks"
+2026-03-14 10:45:33 [info]: [Backend Cache MISS] Scraping: "hjks"...
+2026-03-14 10:45:33 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=hjks&resources[type]=product&resources[limit]=10
+2026-03-14 10:45:33 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=hjks&resources[type]=product&resources[limit]=10
+2026-03-14 10:45:33 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=hjks&resources[type]=product&resources[limit]=10
+2026-03-14 10:45:34 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 10:45:34 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=hjks
+2026-03-14 10:45:34 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 10:45:34 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=hjks
+2026-03-14 10:45:34 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 10:45:34 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=hjks
+2026-03-14 10:45:41 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-14 10:45:43 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-14 10:45:45 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 10:45:46 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-03-14 10:45:46 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 10:45:46 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-14 10:45:46 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 10:45:46 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-03-14 10:45:46 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-14 10:45:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-14 10:45:49 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-14 10:45:49 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-14 10:45:50 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-14 10:45:52 [debug]: → GET /api/search
+2026-03-14 10:45:53 [info]: [SearchService] Search #0c364d8b-82a7-44a4-9378-83b30962b139 - "hjks"
+2026-03-14 10:45:53 [info]: [Backend Cache MISS] Scraping: "hjks"...
+2026-03-14 10:45:53 [info]: [Backend Cache SET] "hjks" — 5 products cached
+2026-03-14 10:45:53 [info]: [SearchService] Raw products: 5
+2026-03-14 10:45:53 [info]: [SearchService] Unique products after dedup: 5
+2026-03-14 10:45:53 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-03-14 10:45:53 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-14 10:45:53 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 10:45:53 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-14 10:45:53 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-14 10:45:53 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-03-14 10:45:53 [info]: [SearchService] Saved 0 products for search #9e21c649-7dd7-4b57-b3f7-daf89b4d1bf8
+2026-03-14 10:45:54 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=hjks&resources[type]=product&resources[limit]=10
+2026-03-14 10:45:54 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=hjks&resources[type]=product&resources[limit]=10
+2026-03-14 10:45:54 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=hjks&resources[type]=product&resources[limit]=10
+2026-03-14 10:45:54 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 10:45:54 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=hjks
+2026-03-14 10:45:54 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 10:45:54 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=hjks
+2026-03-14 10:45:54 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 10:45:54 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=hjks
+2026-03-14 10:46:04 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-14 10:46:09 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-14 10:46:24 [warn]: [Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2427ms. Error: page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/search?type=product&q=hjks", waiting until "load"[22m
+
+2026-03-14 10:46:27 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=hjks&resources[type]=product&resources[limit]=10
+2026-03-14 10:46:27 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 10:46:27 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=hjks
+2026-03-14 10:46:39 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 10:46:39 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-14 10:46:39 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-03-14 10:46:39 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 10:46:40 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 10:46:40 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-14 10:46:40 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-03-14 10:46:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-14 10:46:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-14 10:46:44 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-14 10:46:45 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-14 10:46:47 [info]: [Backend Cache SET] "hjks" — 5 products cached
+2026-03-14 10:46:47 [info]: [SearchService] Raw products: 5
+2026-03-14 10:46:47 [info]: [SearchService] Unique products after dedup: 5
+2026-03-14 10:46:47 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-03-14 10:46:47 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-14 10:46:47 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 10:46:47 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-14 10:46:47 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-14 10:46:47 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-03-14 10:46:47 [info]: [SearchService] Saved 0 products for search #0c364d8b-82a7-44a4-9378-83b30962b139
+2026-03-14 10:54:09 [debug]: → GET /api/search/stores
+2026-03-14 10:54:09 [debug]: → GET /api/search
+2026-03-14 10:54:09 [debug]: → GET /api/search/stores
+2026-03-14 10:54:11 [info]: [SearchService] Search #45d79f2c-7bc4-477a-aaf9-ceeef180039d - "cpu"
+2026-03-14 10:54:11 [info]: [Backend Cache MISS] Scraping: "cpu"...
+2026-03-14 10:54:11 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 10:54:11 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 10:54:12 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-14 10:54:15 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 10:54:15 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 10:54:15 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 10:54:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-14 10:54:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-14 10:54:16 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-14 10:54:16 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-5-3400g-3-7ghz-am4-4-core-4mb-cpu.json
+2026-03-14 10:54:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-14 10:54:16 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-14 10:54:16 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-14 10:54:16 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-14 10:54:16 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-14 10:54:16 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU
+2026-03-14 10:54:16 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-14 10:54:17 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-14 10:54:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-14 10:54:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-14 10:54:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/cooler-master-masterliquid-240l-core-argb-cpu-cooler-fan.json
+2026-03-14 10:54:17 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-14 10:54:17 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-14 10:54:17 [debug]: [PcExpressScraper] JSON success: COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan
+2026-03-14 10:54:20 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/deepcool-gammaxx-ag400-bk-argb-cpu-air-cooler.json
+2026-03-14 10:54:20 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-14 10:54:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-14 10:54:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-mystique-240-argb-black-w-lcd-screen-cpu-cooler-fan.json
+2026-03-14 10:54:20 [debug]: [VillmanScraper] JSON success: DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER
+2026-03-14 10:54:20 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-14 10:54:21 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-14 10:54:21 [debug]: [PcExpressScraper] JSON success: DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black
+2026-03-14 10:54:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-14 10:54:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-single-fan-120mm-cpu-black.json
+2026-03-14 10:54:21 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-14 10:54:22 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F Single Fan 120mm CPU Black
+2026-03-14 10:54:26 [info]: [Backend Cache SET] "cpu" — 15 products cached
+2026-03-14 10:54:26 [info]: [SearchService] Raw products: 15
+2026-03-14 10:54:26 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER" (VillMan)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-14 10:54:26 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F Single Fan 120mm CPU Black" (PCWorx)
+2026-03-14 10:54:26 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 10:54:26 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:27 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:28 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:28 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:28 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:28 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:29 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:29 [debug]: → GET /api/search
+2026-03-14 10:54:29 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:29 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:29 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:30 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:30 [info]: [SearchService] Search #c3699346-991e-493c-ae66-f6b61a5009f0 - "cpu"
+2026-03-14 10:54:30 [info]: [Backend Cache HIT] Query: "cpu" (15 cached products)
+2026-03-14 10:54:30 [info]: [SearchService] Raw products: 15
+2026-03-14 10:54:30 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "COOLER MASTER MasterLiquid 240L Core ARGB CPU Cooler Fan" (PCExpress)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL MYSTIQUE 240 ARGB W/ LCD SCREEN CPU Cooler Fan - Black" (PCExpress)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL GAMMAXX AG400 BK ARGB CPU AIR COOLER" (VillMan)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 5 3400g 3.7GHz AM4 4-Core 4MB CPU" (PCWorx)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-14 10:54:30 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F Single Fan 120mm CPU Black" (PCWorx)
+2026-03-14 10:54:30 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 10:54:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:30 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:30 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:30 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:31 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:31 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:31 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 10:54:31 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:31 [info]: [SearchService] Saved 15 products for search #45d79f2c-7bc4-477a-aaf9-ceeef180039d
+2026-03-14 10:54:31 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 10:54:32 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 10:54:34 [info]: [SearchService] Saved 15 products for search #c3699346-991e-493c-ae66-f6b61a5009f0
+2026-03-14 10:56:47 [debug]: → GET /api/auth/me
+2026-03-14 10:56:47 [debug]: → GET /api/cart
+2026-03-14 10:56:48 [debug]: → GET /api/auth/me
+2026-03-14 10:56:49 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:56:49 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:56:49 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:56:49 [info]: [Cart] Found 1 items in cart
+2026-03-14 10:56:49 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc
+2026-03-14 10:56:49 [info]: [Cart] Found 1 products
+2026-03-14 10:56:49 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 10:56:49 [info]: [Cart] Returning cart with 1 items
+2026-03-14 10:56:49 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:56:49 [info]: [CartController] Processing 1 cart items
+2026-03-14 10:56:49 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-14 10:56:49 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 10:56:49 [info]: [CartController] Returning 1 items with total price: 2480
+2026-03-14 10:56:49 [debug]: → GET /api/cart
+2026-03-14 10:56:50 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:56:50 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 10:56:50 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:56:50 [info]: [Cart] Found 1 items in cart
+2026-03-14 10:56:50 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc
+2026-03-14 10:56:51 [info]: [Cart] Found 1 products
+2026-03-14 10:56:51 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 10:56:51 [info]: [Cart] Returning cart with 1 items
+2026-03-14 10:56:51 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 10:56:51 [info]: [CartController] Processing 1 cart items
+2026-03-14 10:56:51 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-14 10:56:51 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 10:56:51 [info]: [CartController] Returning 1 items with total price: 2480
+2026-03-14 10:58:52 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-14 11:01:38 [debug]: → GET /api/search/stores
+2026-03-14 11:01:38 [debug]: → GET /api/search
+2026-03-14 11:01:38 [debug]: → GET /api/search/stores
+2026-03-14 11:01:40 [info]: [SearchService] Search #06842f38-3b63-4c8c-bf2a-c53b6213a800 - "mic"
+2026-03-14 11:01:40 [info]: [Backend Cache MISS] Scraping: "mic"...
+2026-03-14 11:01:41 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=mic&resources[type]=product&resources[limit]=10
+2026-03-14 11:01:41 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=mic&resources[type]=product&resources[limit]=10
+2026-03-14 11:01:41 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=mic&resources[type]=product&resources[limit]=10
+2026-03-14 11:01:41 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 11:01:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-h650e-usb-headset-with-noise-cancelling-mic.json
+2026-03-14 11:01:42 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-h390-stereo-headset-usb-with-mic.json
+2026-03-14 11:01:42 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/hyperx-705l8aa-cloud-ii-wired-earbuds-with-built-in-mic-red.json
+2026-03-14 11:01:42 [debug]: [PcWorxScraper] JSON success: Logitech H650E USB Headset with Noise Cancelling Mic
+2026-03-14 11:01:42 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 11:01:42 [debug]: [PcWorxScraper] JSON success: Logitech H390 Stereo Headset USB with Mic
+2026-03-14 11:01:42 [debug]: [PcWorxScraper] JSON success: HyperX 705L8AA Cloud II Wired Earbuds With Built-in MIC Red
+2026-03-14 11:01:42 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 11:01:43 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/microsoft-365-family-12-months-subscription-for-pc-mac-ios-and-android-up-to-6-people.json
+2026-03-14 11:01:43 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-ai-noise-cancelling-type-c-to-3-5mm-mic-adapter.json
+2026-03-14 11:01:43 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/a4tech-pk-925h-fhd-w-mic-full-hd-webcam.json
+2026-03-14 11:01:43 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/logitech-h151-stereo-headset-with-noise-cancelling-mic-multi-device-headset-with-in-line-controls-3-5mm-audio-jack-rotating-mic.json
+2026-03-14 11:01:43 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-surface-pro-9-green-13inch-pixelsense-flow-120hz-multitouch-intel-core-i7-1255u-16gb-ram-256gb-ssd-intel-iris-xe-graphics-windows-11-home.json
+2026-03-14 11:01:43 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/jbl-partybox-wireless-mic.json
+2026-03-14 11:01:43 [debug]: [PcExpressScraper] JSON success: Microsoft 365 Family (12 Months Subscription For PC, Mac, iOS, and Android | up to 6 people)
+2026-03-14 11:01:43 [debug]: [PcExpressScraper] JSON success: A4TECH PK-925H FHD W/Mic Full HD Webcam
+2026-03-14 11:01:43 [debug]: [VillmanScraper] JSON success: Logitech H151 Stereo Headset with Noise Cancelling Mic, Multi-device headset with in-line controls, 3.5mm audio jack,Rotating Mic
+2026-03-14 11:01:43 [debug]: [PcExpressScraper] JSON success: ASUS AI NOISE CANCELLING (TYPE C TO 3.5MM) Mic Adapter
+2026-03-14 11:01:43 [debug]: [VillmanScraper] JSON success: Microsoft Surface Pro 9 (Green) 13inch PixelSense Flow 120Hz MultiTouch | Intel Core i7-1255U | 16GB RAM | 256GB SSD | Intel Iris Xe Graphics | Windows 11 Home
+2026-03-14 11:01:44 [debug]: [VillmanScraper] JSON success: JBL PartyBox Wireless Mic
+2026-03-14 11:01:45 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/edifier-p180-usb-c-earphone-with-remote-and-mic-white.json
+2026-03-14 11:01:45 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-c270-720p-res-3-with-mic-webcam.json
+2026-03-14 11:01:45 [debug]: [PcWorxScraper] JSON success: Edifier P180 USB-C Earphone With Remote and Mic White
+2026-03-14 11:01:45 [debug]: [PcWorxScraper] JSON success: Logitech C270 720p Res 3 with Mic Webcam
+2026-03-14 11:01:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/microsoft-365-personal-12-months-subscription-for-pc-mac-ios-and-android-for-1-person.json
+2026-03-14 11:01:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/edifier-p180-plus-earbuds-with-remote-mic-white.json
+2026-03-14 11:01:47 [debug]: [PcExpressScraper] JSON success: Microsoft 365 Personal (12 Months Subscription For PC, Mac, iOS, and Android | For 1 person)
+2026-03-14 11:01:48 [debug]: [PcExpressScraper] JSON success: EDIFIER P180 Plus Earbuds With Remote & Mic - White
+2026-03-14 11:01:48 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-surface-thunderbolt-4-dock.json
+2026-03-14 11:01:48 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-audio-dock.json
+2026-03-14 11:01:48 [debug]: [VillmanScraper] JSON success: Microsoft Audio Dock - Compact hub design able to connect up to 2 monitors
+2026-03-14 11:01:49 [debug]: [VillmanScraper] JSON success: Microsoft Surface Thunderbolt 4 Dock
+2026-03-14 11:01:52 [info]: [Backend Cache SET] "mic" — 15 products cached
+2026-03-14 11:01:52 [info]: [SearchService] Raw products: 15
+2026-03-14 11:01:52 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "A4TECH PK-925H FHD W/Mic Full HD Webcam" (PCExpress)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft 365 Family (12 Months Subscription For PC, Mac, iOS, and Android | up to 6 people)" (PCExpress)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "ASUS AI NOISE CANCELLING (TYPE C TO 3.5MM) Mic Adapter" (PCExpress)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft 365 Personal (12 Months Subscription For PC, Mac, iOS, and Android | For 1 person)" (PCExpress)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "EDIFIER P180 Plus Earbuds With Remote & Mic - White" (PCExpress)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "JBL PartyBox Wireless Mic" (VillMan)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H151 Stereo Headset with Noise Cancelling Mic, Multi-device headset with in-line controls, 3.5mm audio jack,Rotating Mic" (VillMan)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Surface Pro 9 (Green) 13inch PixelSense Flow 120Hz MultiTouch | Intel Core i7-1255U | 16GB RAM | 256GB SSD | Intel Iris Xe Graphics | Windows 11 Home" (VillMan)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Surface Thunderbolt 4 Dock" (VillMan)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Audio Dock - Compact hub design able to connect up to 2 monitors" (VillMan)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H650E USB Headset with Noise Cancelling Mic" (PCWorx)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H390 Stereo Headset USB with Mic" (PCWorx)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "HyperX 705L8AA Cloud II Wired Earbuds With Built-in MIC Red" (PCWorx)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Edifier P180 USB-C Earphone With Remote and Mic White" (PCWorx)
+2026-03-14 11:01:52 [debug]: [SearchService] ✓ ACCEPTED: "Logitech C270 720p Res 3 with Mic Webcam" (PCWorx)
+2026-03-14 11:01:52 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 11:01:52 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:01:53 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:01:54 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:01:54 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:01:54 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:01:55 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:01:55 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:01:55 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:01:56 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:01:56 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:01:56 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:01:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:01:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:01:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:01:58 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:01:58 [info]: [SearchService] Saved 15 products for search #06842f38-3b63-4c8c-bf2a-c53b6213a800
+2026-03-14 11:01:58 [debug]: → GET /api/search
+2026-03-14 11:01:59 [info]: [SearchService] Search #554a0dde-5812-4dc9-975c-6ef1346f2341 - "mic"
+2026-03-14 11:01:59 [info]: [Backend Cache HIT] Query: "mic" (15 cached products)
+2026-03-14 11:01:59 [info]: [SearchService] Raw products: 15
+2026-03-14 11:01:59 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "A4TECH PK-925H FHD W/Mic Full HD Webcam" (PCExpress)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft 365 Family (12 Months Subscription For PC, Mac, iOS, and Android | up to 6 people)" (PCExpress)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "ASUS AI NOISE CANCELLING (TYPE C TO 3.5MM) Mic Adapter" (PCExpress)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft 365 Personal (12 Months Subscription For PC, Mac, iOS, and Android | For 1 person)" (PCExpress)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "EDIFIER P180 Plus Earbuds With Remote & Mic - White" (PCExpress)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "JBL PartyBox Wireless Mic" (VillMan)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H151 Stereo Headset with Noise Cancelling Mic, Multi-device headset with in-line controls, 3.5mm audio jack,Rotating Mic" (VillMan)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Surface Pro 9 (Green) 13inch PixelSense Flow 120Hz MultiTouch | Intel Core i7-1255U | 16GB RAM | 256GB SSD | Intel Iris Xe Graphics | Windows 11 Home" (VillMan)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Surface Thunderbolt 4 Dock" (VillMan)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Audio Dock - Compact hub design able to connect up to 2 monitors" (VillMan)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H650E USB Headset with Noise Cancelling Mic" (PCWorx)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H390 Stereo Headset USB with Mic" (PCWorx)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "HyperX 705L8AA Cloud II Wired Earbuds With Built-in MIC Red" (PCWorx)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Edifier P180 USB-C Earphone With Remote and Mic White" (PCWorx)
+2026-03-14 11:01:59 [debug]: [SearchService] ✓ ACCEPTED: "Logitech C270 720p Res 3 with Mic Webcam" (PCWorx)
+2026-03-14 11:01:59 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 11:01:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:01:59 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:02:00 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:02:00 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:02:00 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 11:02:00 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:02:01 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:02:01 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:02:01 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:02:02 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:02:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:02:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:02:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:02:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:02:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:02:04 [info]: [SearchService] Saved 15 products for search #554a0dde-5812-4dc9-975c-6ef1346f2341
+2026-03-14 11:02:40 [debug]: → GET /api/search
+2026-03-14 11:02:41 [info]: [SearchService] Search #ab76237a-8608-4dd3-bfae-56eb51c6c3ff - "rj45"
+2026-03-14 11:02:41 [info]: [Backend Cache MISS] Scraping: "rj45"...
+2026-03-14 11:02:41 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-14 11:02:42 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-14 11:02:42 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=rj45&resources[type]=product&resources[limit]=10
+2026-03-14 11:02:42 [info]: [VillmanScraper] API found 1 product URLs
+2026-03-14 11:02:42 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 11:02:42 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=rj45
+2026-03-14 11:02:42 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 11:02:42 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-to-2xusb-3-0-hdmi-rj45-sd-tf-pd-converter-7-in-1-multifunction-adapter-cm512-60515.json
+2026-03-14 11:02:43 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm498-15600-usb-c-9-in-1-multifunction-adapter-15cm.json
+2026-03-14 11:02:43 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adlink-rj45-connector-classic-for-cat6.json
+2026-03-14 11:02:43 [debug]: [VillmanScraper] JSON success: UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)
+2026-03-14 11:02:43 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amp-rj45-connector-for-cat6.json
+2026-03-14 11:02:43 [debug]: [PcWorxScraper] JSON success: Ugreen CM498/15600 9in1 USB-C 3.0+HDM+VGA+RJ45+SD&TF+PD100W Multifunction 15cm
+2026-03-14 11:02:43 [debug]: [PcWorxScraper] JSON success: AMP RJ45 Connector for Cat6 / PER PIECE
+2026-03-14 11:02:44 [debug]: [PcWorxScraper] JSON success: Adlink RJ45 Connector Classic for Cat6 (100/box)
+2026-03-14 11:02:48 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adlink-rj45-connector-shielded-for-cat6-100pcs-per-jar-box.json
+2026-03-14 11:02:48 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cr111-20256-usb-3-0a-to-rj45-gigabit-ethernet-adapter-10cm-black.json
+2026-03-14 11:02:49 [debug]: [PcWorxScraper] JSON success: Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)
+2026-03-14 11:02:49 [debug]: [PcWorxScraper] JSON success: Ugreen CR111 20256 USB 3.0A to RJ45 Gigabit Ethernet Adapter 10CM Black
+2026-03-14 11:02:52 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 11:02:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-tl-ue300-usb-3-0-to-gigabit-ethernet-network-adapter.json
+2026-03-14 11:02:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-tl-wa855re-300mbps-wi-fi-range-extender.json
+2026-03-14 11:02:53 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-rt-ax1800hp-ax1800-dual-band-wifi-6-router.json
+2026-03-14 11:02:53 [debug]: [PcExpressScraper] JSON success: TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender
+2026-03-14 11:02:53 [debug]: [PcExpressScraper] JSON success: ASUS RT-AX1800HP AX1800 Dual Band WIFI 6 Router
+2026-03-14 11:02:53 [debug]: [PcExpressScraper] JSON success: TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter
+2026-03-14 11:02:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-re215-ac750-mesh-wi-fi-range-extender.json
+2026-03-14 11:02:58 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-a15-fa506ncg-hn187wsm-geforce-rtx-3050-amd-ryzen-7-laptop-graphite-black.json
+2026-03-14 11:02:58 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming A15 FA506NCG-HN187WSM GeForce RTX™ 3050 AMD Ryzen™ 7 Laptop (Graphite Black)
+2026-03-14 11:02:58 [debug]: [PcExpressScraper] JSON success: TP-LINK RE215 AC750 Mesh Wi-Fi Range Extender
+2026-03-14 11:03:02 [info]: [Backend Cache SET] "rj45" — 11 products cached
+2026-03-14 11:03:02 [info]: [SearchService] Raw products: 11
+2026-03-14 11:03:02 [info]: [SearchService] Unique products after dedup: 11
+2026-03-14 11:03:02 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-UE300 USB 3.0 to Gigabit Ethernet Network Adapter" (PCExpress)
+2026-03-14 11:03:02 [debug]: [SearchService] ✗ REJECTED: "TP-LINK TL-WA855RE 300Mbps Wi-Fi Range Extender" (PCExpress)
+2026-03-14 11:03:02 [debug]: [SearchService] ✗ REJECTED: "ASUS RT-AX1800HP AX1800 Dual Band WIFI 6 Router" (PCExpress)
+2026-03-14 11:03:02 [debug]: [SearchService] ✗ REJECTED: "ASUS TUF Gaming A15 FA506NCG-HN187WSM GeForce RTX™ 3050 AMD Ryzen™ 7 Laptop (Graphite Black)" (PCExpress)
+2026-03-14 11:03:02 [debug]: [SearchService] ✗ REJECTED: "TP-LINK RE215 AC750 Mesh Wi-Fi Range Extender" (PCExpress)
+2026-03-14 11:03:02 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)" (VillMan)
+2026-03-14 11:03:02 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM498/15600 9in1 USB-C 3.0+HDM+VGA+RJ45+SD&TF+PD100W Multifunction 15cm" (PCWorx)
+2026-03-14 11:03:02 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Classic for Cat6 (100/box)" (PCWorx)
+2026-03-14 11:03:02 [debug]: [SearchService] ✓ ACCEPTED: "AMP RJ45 Connector for Cat6 / PER PIECE" (PCWorx)
+2026-03-14 11:03:02 [debug]: [SearchService] ✓ ACCEPTED: "Adlink RJ45 Connector Shielded for CAT6 (100pcs per Jar/box)" (PCWorx)
+2026-03-14 11:03:02 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CR111 20256 USB 3.0A to RJ45 Gigabit Ethernet Adapter 10CM Black" (PCWorx)
+2026-03-14 11:03:02 [info]: [SearchService] Relevance filter: 6/11 products kept
+2026-03-14 11:03:02 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:03:02 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:03:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:03:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:03:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:03:03 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:03:04 [info]: [SearchService] Saved 6 products for search #ab76237a-8608-4dd3-bfae-56eb51c6c3ff
+2026-03-14 11:03:40 [debug]: → GET /api/search
+2026-03-14 11:03:41 [info]: [SearchService] Search #dd205e78-fcb3-40de-84bf-57a03aa3d740 - "fiber optics"
+2026-03-14 11:03:41 [info]: [Backend Cache MISS] Scraping: "fiber optics"...
+2026-03-14 11:03:41 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=fiber%20optics&resources[type]=product&resources[limit]=10
+2026-03-14 11:03:41 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=fiber%20optics&resources[type]=product&resources[limit]=10
+2026-03-14 11:03:41 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=fiber%20optics&resources[type]=product&resources[limit]=10
+2026-03-14 11:03:42 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 11:03:42 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=fiber%20optics
+2026-03-14 11:03:43 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 11:03:43 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=fiber%20optics
+2026-03-14 11:03:43 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 11:03:43 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=fiber%20optics
+2026-03-14 11:03:52 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-14 11:03:54 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-03-14 11:03:54 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 11:03:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/datwyler-duplex-patch-cord-st-lc-e09-125-pn-390076-yellow.json
+2026-03-14 11:03:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/datwyler-duplex-patch-cord-st-st-e09-125-3meters-pn-390086-yellow.json
+2026-03-14 11:03:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/datwyler-duplex-patch-cord-lc-lc-e09-125-3meters-pn-390226-yellow.json
+2026-03-14 11:03:56 [debug]: [PcWorxScraper] JSON success: Datwyler Duplex Patch Cord ST-LC E09/125 PN: 390076 Yellow
+2026-03-14 11:03:56 [debug]: [PcWorxScraper] JSON success: Datwyler Duplex Patch Cord ST-ST E09/125 3meters PN: 390086 Yellow
+2026-03-14 11:03:56 [debug]: [PcWorxScraper] JSON success: Datwyler Duplex Patch Cord LC-LC E09/125 3meters PN: 390226 Yellow
+2026-03-14 11:03:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/apc-easy-ups-bvx-650va-avr-230v-bvx650i-ph.json
+2026-03-14 11:03:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/acer-32-nitro-ed320qr-s3-curved-gaming-monitor.json
+2026-03-14 11:03:57 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 11:03:57 [debug]: [PcExpressScraper] JSON success: APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)
+2026-03-14 11:03:57 [debug]: [PcExpressScraper] JSON success: ACER 32" Nitro ED320QR S3 Curved Gaming Monitor
+2026-03-14 11:03:57 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 11:03:59 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-03390300-r3m1-huntsman-mini-mercury-gaming-keyboard-clickypurple-frml.json
+2026-03-14 11:03:59 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-cobra-m711-gaming-mouse.json
+2026-03-14 11:04:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-14 11:04:00 [debug]: [PcWorxScraper] JSON success: Redragon Cobra M711-2 Gaming Mouse
+2026-03-14 11:04:00 [debug]: [PcWorxScraper] JSON success: Razer RZ03-03390300-R3M1 Huntsman Mini Mercury Gaming Keyboard ClickyPurple FRML
+2026-03-14 11:04:00 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-14 11:04:00 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-14 11:04:00 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-14 11:04:12 [info]: [VillmanScraper] Fallback found 1 product URLs
+2026-03-14 11:04:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/cisco-cbs110-8t-d-eu-unmanaged-8-port-ge-ext-ps-desktop-switch-hub.json
+2026-03-14 11:04:13 [debug]: [VillmanScraper] JSON success: Cisco CBS110-8T-D-EU Unmanaged 8-Port GE EXT PS Desktop Switch Hub
+2026-03-14 11:04:15 [info]: [Backend Cache SET] "fiber optics" — 11 products cached
+2026-03-14 11:04:15 [info]: [SearchService] Raw products: 11
+2026-03-14 11:04:15 [info]: [SearchService] Unique products after dedup: 11
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "APC EASY UPS BVX 650VA, AVR, 230V (BVX650I-PH)" (PCExpress)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "ACER 32" Nitro ED320QR S3 Curved Gaming Monitor" (PCExpress)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "Cisco CBS110-8T-D-EU Unmanaged 8-Port GE EXT PS Desktop Switch Hub" (VillMan)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "Datwyler Duplex Patch Cord ST-ST E09/125 3meters PN: 390086 Yellow" (PCWorx)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "Datwyler Duplex Patch Cord LC-LC E09/125 3meters PN: 390226 Yellow" (PCWorx)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "Datwyler Duplex Patch Cord ST-LC E09/125 PN: 390076 Yellow" (PCWorx)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "Razer RZ03-03390300-R3M1 Huntsman Mini Mercury Gaming Keyboard ClickyPurple FRML" (PCWorx)
+2026-03-14 11:04:15 [debug]: [SearchService] ✗ REJECTED: "Redragon Cobra M711-2 Gaming Mouse" (PCWorx)
+2026-03-14 11:04:15 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-03-14 11:04:15 [info]: [SearchService] Saved 0 products for search #dd205e78-fcb3-40de-84bf-57a03aa3d740
+2026-03-14 11:04:50 [debug]: → GET /api/search
+2026-03-14 11:04:50 [info]: [SearchService] Search #97f5140a-7708-473d-8149-9d6f01233845 - "cmos"
+2026-03-14 11:04:50 [info]: [Backend Cache MISS] Scraping: "cmos"...
+2026-03-14 11:04:51 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cmos&resources[type]=product&resources[limit]=10
+2026-03-14 11:04:51 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cmos&resources[type]=product&resources[limit]=10
+2026-03-14 11:04:51 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cmos&resources[type]=product&resources[limit]=10
+2026-03-14 11:04:51 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-14 11:04:51 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=cmos
+2026-03-14 11:04:51 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-14 11:04:51 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=cmos
+2026-03-14 11:04:52 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-14 11:04:52 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=cmos
+2026-03-14 11:05:00 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-14 11:05:01 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-prime-a520m-k-motherboard-copy.json
+2026-03-14 11:05:01 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-prime-h610m-k-d4-motherboard-copy.json
+2026-03-14 11:05:01 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/epson-co-fh02-smart-full-hd-projector-full-hd-1080p-projector-keystone-correction-built-in-android-and-hdmi-3-000-lumen.json
+2026-03-14 11:05:01 [debug]: [VillmanScraper] JSON success: Epson CO-FH02 Smart Full HD projector | Full HD 1080p projector | Keystone correction, built-in Android and HDMI | 3,000 lumen
+2026-03-14 11:05:01 [debug]: [VillmanScraper] JSON success: Asus Prime H510M-K LGA 1200 mATX Motherboard
+2026-03-14 11:05:01 [debug]: [VillmanScraper] JSON success: Asus Prime H610M-D D4 Motherboard
+2026-03-14 11:05:02 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-03-14 11:05:03 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/dahua-m3-pro-2k-front-recording-high-collision-detection-and-video-lock.json
+2026-03-14 11:05:03 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/dahua-dhi-dae-hc3511gw-s8-wifi-dash-camera.json
+2026-03-14 11:05:03 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/dahua-dhi-dae-hc1301w-m1pro-wifi-dashboard-camera.json
+2026-03-14 11:05:03 [debug]: [PcWorxScraper] JSON success: Dahua M3 PRO 2K Front Recording High Collision Detection And Video Lock
+2026-03-14 11:05:03 [debug]: [PcWorxScraper] JSON success: Dahua DHI-DAE-HC1301W-M1pro WiFi Dashboard Camera
+2026-03-14 11:05:03 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-14 11:05:03 [debug]: [PcWorxScraper] JSON success: Dahua DHI-DAE-HC3511GW-S8 WiFi Dash Camera
+2026-03-14 11:05:04 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-prime-h610m-k-d4-motherboard.json
+2026-03-14 11:05:04 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/canon-eos-r50-rf-s18-45mm-f-4-5-6-3-is-stm.json
+2026-03-14 11:05:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hikvision-tvi-4ch2d2b-2mp-eco-4ch-hdtvi-combo-kit.json
+2026-03-14 11:05:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hikvision-tvi-8ch4d4b-2mp-eco-8ch-hdtvi-combo-kit.json
+2026-03-14 11:05:05 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hikvision-tvi-lite-4ch2d2b-2mp-colorvu-kit.json
+2026-03-14 11:05:05 [debug]: [PcExpressScraper] JSON success: HIKVISION TVI-8CH4D4B-2MP ECO 8CH HDTVI Combo Kit
+2026-03-14 11:05:05 [debug]: [VillmanScraper] JSON success: Canon EOS R50 (RF-S18-45mm f/4.5-6.3 IS STM)
+2026-03-14 11:05:05 [debug]: [PcExpressScraper] JSON success: HIKVISION TVI-4CH2D2B-2MP ECO 4CH HDTVI Combo Kit
+2026-03-14 11:05:06 [debug]: [PcExpressScraper] JSON success: HIKVISION TVI Lite-4CH2D2B-2MP ColorVu KIT
+2026-03-14 11:05:06 [debug]: [VillmanScraper] JSON success: Asus Prime H610M-K D4 Motherboard
+2026-03-14 11:05:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tapo-c200c-pan-tilt-home-security-wi-fi-camera.json
+2026-03-14 11:05:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tapo-c320ws-outdoor-security-wi-fi-camera.json
+2026-03-14 11:05:08 [debug]: [PcWorxScraper] JSON success: TP-Link Tapo C200C Pan/Tilt Home Security Wi-Fi Camera
+2026-03-14 11:05:08 [debug]: [PcWorxScraper] JSON success: TP-LINK Tapo C320WS Outdoor Security Wi-Fi Camera CCTV
+2026-03-14 11:05:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-c500-af-4k-2160p-webcam.json
+2026-03-14 11:05:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-tapo-c545d-outdoor-dual-lens-pan-tilt-security-wi-fi-camera.json
+2026-03-14 11:05:10 [debug]: [PcExpressScraper] JSON success: RAPOO C500 AF 4K 2160P Webcam
+2026-03-14 11:05:10 [debug]: [PcExpressScraper] JSON success: TP-LINK Tapo C545D Outdoor Dual Lens Pan/Tilt Security Wi-fi Camera
+2026-03-14 11:05:12 [info]: [Backend Cache SET] "cmos" — 15 products cached
+2026-03-14 11:05:12 [info]: [SearchService] Raw products: 15
+2026-03-14 11:05:12 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "HIKVISION TVI-4CH2D2B-2MP ECO 4CH HDTVI Combo Kit" (PCExpress)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "HIKVISION TVI-8CH4D4B-2MP ECO 8CH HDTVI Combo Kit" (PCExpress)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "HIKVISION TVI Lite-4CH2D2B-2MP ColorVu KIT" (PCExpress)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "RAPOO C500 AF 4K 2160P Webcam" (PCExpress)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "TP-LINK Tapo C545D Outdoor Dual Lens Pan/Tilt Security Wi-fi Camera" (PCExpress)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Epson CO-FH02 Smart Full HD projector | Full HD 1080p projector | Keystone correction, built-in Android and HDMI | 3,000 lumen" (VillMan)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Asus Prime H510M-K LGA 1200 mATX Motherboard" (VillMan)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Asus Prime H610M-D D4 Motherboard" (VillMan)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Asus Prime H610M-K D4 Motherboard" (VillMan)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Canon EOS R50 (RF-S18-45mm f/4.5-6.3 IS STM)" (VillMan)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Dahua M3 PRO 2K Front Recording High Collision Detection And Video Lock" (PCWorx)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Dahua DHI-DAE-HC3511GW-S8 WiFi Dash Camera" (PCWorx)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "Dahua DHI-DAE-HC1301W-M1pro WiFi Dashboard Camera" (PCWorx)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "TP-Link Tapo C200C Pan/Tilt Home Security Wi-Fi Camera" (PCWorx)
+2026-03-14 11:05:12 [debug]: [SearchService] ✗ REJECTED: "TP-LINK Tapo C320WS Outdoor Security Wi-Fi Camera CCTV" (PCWorx)
+2026-03-14 11:05:12 [info]: [SearchService] Relevance filter: 0/15 products kept
+2026-03-14 11:05:12 [info]: [SearchService] Saved 0 products for search #97f5140a-7708-473d-8149-9d6f01233845
+2026-03-14 11:05:20 [debug]: → GET /api/search
+2026-03-14 11:05:21 [info]: [SearchService] Search #f021d061-1a5f-4942-b3a2-acf168b8ba98 - "ram"
+2026-03-14 11:05:21 [info]: [Backend Cache MISS] Scraping: "ram"...
+2026-03-14 11:05:22 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=ram&resources[type]=product&resources[limit]=10
+2026-03-14 11:05:22 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=ram&resources[type]=product&resources[limit]=10
+2026-03-14 11:05:22 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=ram&resources[type]=product&resources[limit]=10
+2026-03-14 11:05:22 [info]: [PcExpressScraper] API found 1 product URLs
+2026-03-14 11:05:22 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 11:05:22 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 11:05:23 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/gmktec-nucbox-m5-amd-ryzen-7-mini-desktop.json
+2026-03-14 11:05:23 [debug]: [PcExpressScraper] JSON success: GMKTEC NUCBOX M5 AMD Ryzen™ 7 Mini Desktop
+2026-03-14 11:05:23 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adata-8gb-16gb-ddr4-3200mhz-desktop-memory-dimm.json
+2026-03-14 11:05:23 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adata-ad-ad4u320032g22-sgn-32gb-3200mhz-dimm.json
+2026-03-14 11:05:23 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adata-ad-ad5u56008g-s-8gb-5600mhz-ddr5-memory-dimm-ram-memory-card.json
+2026-03-14 11:05:24 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-15-fc0205au.json
+2026-03-14 11:05:24 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-pavilion-15-eh3052au.json
+2026-03-14 11:05:24 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hiksemi-hiker-16gb-ddr4-3200mhz-dimm-desktop-memory-copy.json
+2026-03-14 11:05:24 [debug]: [PcWorxScraper] JSON success: Adata AD-AD5U56008G-S 8GB 5600Mhz DDR5 Memory Dimm RAM Memory Card
+2026-03-14 11:05:24 [debug]: [PcWorxScraper] JSON success: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM
+2026-03-14 11:05:24 [debug]: [PcWorxScraper] JSON success: Adata AD-AD4U320016G22-SGN 16GB DDR4 3200Mhz  Memory Dimm | RAM
+2026-03-14 11:05:24 [debug]: [VillmanScraper] JSON success: HP Pavilion 15-EH3052AU (Warm Gold) 15.6inch FHD | AMD Ryzen 5-7530U | 16GB RAM | 512GB SSD | AMD Radeon Graphics | Windows 11 Home
+2026-03-14 11:05:24 [debug]: [VillmanScraper] JSON success: Kingston ValueRAM 4GB RAM DDR4 2400MHz 288-Pin DIMM (KVR24N17S8/4) Desktop Memory
+2026-03-14 11:05:25 [debug]: [VillmanScraper] JSON success: HP 15-fc0205AU (Natural Silver) 15.6inch FHD | AMD Ryzen 7 7730U | 16GB RAM | 512GB SSD | AMD Radeon Graphics | Windows 11
+2026-03-14 11:05:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-14-ep0263tu.json
+2026-03-14 11:05:27 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-surface-laptop-7-copilot-pc-sapphire-13.json
+2026-03-14 11:05:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adata-xpg-spectrix-d50-rgb-16gb-2x8gb-ddr4-3200mhz-ram-tungstem-gray-white.json
+2026-03-14 11:05:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/adata-ad-ad4s320016g22-sgn-ddr4-3200-16gb-sodimm-adata-16gb-ram-ddr4-sodimm.json
+2026-03-14 11:05:27 [debug]: [VillmanScraper] JSON success: HP 14-EP0263TU (Natural Silver) 14inch | Intel Core i3-1315U | 8GB RAM | 512GB SSD | Intel UHD Graphics | Windows 11
+2026-03-14 11:05:28 [debug]: [PcWorxScraper] JSON success: Adata XPG SPECTRIX D50 RGB 16GB (2X8GB) DDR4 3200Mhz RAM - Tungstem Gray & White
+2026-03-14 11:05:28 [debug]: [PcWorxScraper] JSON success: Adata AD-AD4S320016G22-SGN DDR4-3200 16GB SODIMM ADATA 16GB RAM DDR4 - SODIMM
+2026-03-14 11:05:29 [debug]: [VillmanScraper] JSON success: Microsoft Surface Laptop 7 Copilot+ PC (Sapphire) 13inch Touch PixelSense Flow | Snapdragon X Plus | 16GB RAM | 1TB SSD | Qualcomm Adreno GPU | Windows 11
+2026-03-14 11:05:31 [info]: [Backend Cache SET] "ram" — 11 products cached
+2026-03-14 11:05:31 [info]: [SearchService] Raw products: 11
+2026-03-14 11:05:31 [info]: [SearchService] Unique products after dedup: 11
+2026-03-14 11:05:31 [debug]: [SearchService] ✗ REJECTED: "GMKTEC NUCBOX M5 AMD Ryzen™ 7 Mini Desktop" (PCExpress)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "HP Pavilion 15-EH3052AU (Warm Gold) 15.6inch FHD | AMD Ryzen 5-7530U | 16GB RAM | 512GB SSD | AMD Radeon Graphics | Windows 11 Home" (VillMan)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "HP 15-fc0205AU (Natural Silver) 15.6inch FHD | AMD Ryzen 7 7730U | 16GB RAM | 512GB SSD | AMD Radeon Graphics | Windows 11" (VillMan)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "Kingston ValueRAM 4GB RAM DDR4 2400MHz 288-Pin DIMM (KVR24N17S8/4) Desktop Memory" (VillMan)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "HP 14-EP0263TU (Natural Silver) 14inch | Intel Core i3-1315U | 8GB RAM | 512GB SSD | Intel UHD Graphics | Windows 11" (VillMan)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "Microsoft Surface Laptop 7 Copilot+ PC (Sapphire) 13inch Touch PixelSense Flow | Snapdragon X Plus | 16GB RAM | 1TB SSD | Qualcomm Adreno GPU | Windows 11" (VillMan)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "Adata AD-AD4U320016G22-SGN 16GB DDR4 3200Mhz  Memory Dimm | RAM" (PCWorx)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "Adata AD-AD5U56008G-S 8GB 5600Mhz DDR5 Memory Dimm RAM Memory Card" (PCWorx)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM" (PCWorx)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "Adata XPG SPECTRIX D50 RGB 16GB (2X8GB) DDR4 3200Mhz RAM - Tungstem Gray & White" (PCWorx)
+2026-03-14 11:05:31 [debug]: [SearchService] ✓ ACCEPTED: "Adata AD-AD4S320016G22-SGN DDR4-3200 16GB SODIMM ADATA 16GB RAM DDR4 - SODIMM" (PCWorx)
+2026-03-14 11:05:31 [info]: [SearchService] Relevance filter: 10/11 products kept
+2026-03-14 11:05:31 [info]: [SearchService] Sample rejected products for query "ram":
+2026-03-14 11:05:31 [info]:   - GMKTEC NUCBOX M5 AMD Ryzen™ 7 Mini Desktop
+2026-03-14 11:05:31 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:05:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:05:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:05:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:05:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 11:05:34 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:05:34 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:05:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:05:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:05:36 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 11:05:37 [info]: [SearchService] Saved 10 products for search #f021d061-1a5f-4942-b3a2-acf168b8ba98
+2026-03-14 11:05:55 [debug]: → GET /api/products/PCWorx/486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 11:05:56 [debug]: → GET /api/products/PCWorx/486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 11:06:52 [debug]: → POST /api/cart
+2026-03-14 11:06:53 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 11:06:53 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 11:06:53 [info]: [Cart] Found 1 items in cart
+2026-03-14 11:06:53 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc
+2026-03-14 11:06:54 [info]: [Cart] Found 1 products
+2026-03-14 11:06:54 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 11:06:54 [info]: [Cart] Returning cart with 1 items
+2026-03-14 11:06:55 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 11:06:55 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 11:06:55 [info]: [Cart] Found 2 items in cart
+2026-03-14 11:06:55 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 11:06:55 [info]: [Cart] Found 2 products
+2026-03-14 11:06:55 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 11:06:55 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-14 11:06:55 [info]: [Cart] Returning cart with 2 items
+2026-03-14 11:06:55 [debug]: → GET /api/cart
+2026-03-14 11:06:56 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 11:06:56 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 11:06:56 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 11:06:56 [info]: [Cart] Found 2 items in cart
+2026-03-14 11:06:56 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 11:06:56 [info]: [Cart] Found 2 products
+2026-03-14 11:06:56 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 11:06:56 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-14 11:06:56 [info]: [Cart] Returning cart with 2 items
+2026-03-14 11:06:56 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 11:06:56 [info]: [CartController] Processing 2 cart items
+2026-03-14 11:06:56 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-14 11:06:56 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 11:06:56 [debug]: [CartController] Processing item ca0065e7-505c-4efa-a8b8-b3f0038686b4, products array length: 1
+2026-03-14 11:06:56 [debug]: [CartController] Item ca0065e7-505c-4efa-a8b8-b3f0038686b4 has product: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM
+2026-03-14 11:06:56 [info]: [CartController] Returning 2 items with total price: 20628
+2026-03-14 11:08:06 [debug]: → GET /api/products/PCWorx/486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 11:08:07 [debug]: → GET /api/products/PCWorx/486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 11:08:10 [debug]: → GET /api/search/stores
+2026-03-14 11:08:10 [debug]: → GET /api/search/stores
+2026-03-14 15:03:05 [info]: [DB] Supabase client created.
+2026-03-14 15:03:09 [info]: [DB] Supabase connection verified.
+2026-03-14 15:03:10 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-14 15:03:10 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-14 15:03:31 [debug]: → GET /api/cart
+2026-03-14 15:03:32 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:03:32 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:03:32 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:03:32 [info]: [Cart] Found 2 items in cart
+2026-03-14 15:03:32 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 15:03:33 [info]: [Cart] Found 2 products
+2026-03-14 15:03:33 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 15:03:33 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-14 15:03:33 [info]: [Cart] Returning cart with 2 items
+2026-03-14 15:03:33 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:03:33 [info]: [CartController] Processing 2 cart items
+2026-03-14 15:03:33 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-14 15:03:33 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 15:03:33 [debug]: [CartController] Processing item ca0065e7-505c-4efa-a8b8-b3f0038686b4, products array length: 1
+2026-03-14 15:03:33 [debug]: [CartController] Item ca0065e7-505c-4efa-a8b8-b3f0038686b4 has product: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM
+2026-03-14 15:03:33 [info]: [CartController] Returning 2 items with total price: 20628
+2026-03-14 15:03:33 [debug]: → GET /api/cart
+2026-03-14 15:03:33 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:03:33 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:03:33 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:03:34 [info]: [Cart] Found 2 items in cart
+2026-03-14 15:03:34 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 15:03:34 [info]: [Cart] Found 2 products
+2026-03-14 15:03:34 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 15:03:34 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-14 15:03:34 [info]: [Cart] Returning cart with 2 items
+2026-03-14 15:03:34 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:03:34 [info]: [CartController] Processing 2 cart items
+2026-03-14 15:03:34 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-14 15:03:34 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 15:03:34 [debug]: [CartController] Processing item ca0065e7-505c-4efa-a8b8-b3f0038686b4, products array length: 1
+2026-03-14 15:03:34 [debug]: [CartController] Item ca0065e7-505c-4efa-a8b8-b3f0038686b4 has product: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM
+2026-03-14 15:03:34 [info]: [CartController] Returning 2 items with total price: 20628
+2026-03-14 15:03:56 [debug]: → GET /api/auth/me
+2026-03-14 15:03:58 [debug]: → GET /api/auth/me
+2026-03-14 15:03:58 [debug]: → GET /api/auth/me
+2026-03-14 15:04:19 [debug]: → GET /api/auth/me
+2026-03-14 15:04:21 [debug]: → GET /api/auth/me
+2026-03-14 15:04:22 [debug]: → GET /api/auth/me
+2026-03-14 15:08:33 [debug]: → POST /api/auth/login
+2026-03-14 15:08:36 [debug]: → GET /api/auth/me
+2026-03-14 15:08:36 [debug]: → GET /api/auth/me
+2026-03-14 15:08:37 [debug]: → GET /api/auth/me
+2026-03-14 15:09:52 [debug]: → GET /api/search/stores
+2026-03-14 15:09:52 [debug]: → GET /api/search
+2026-03-14 15:09:52 [debug]: → GET /api/search/stores
+2026-03-14 15:09:54 [info]: [SearchService] Search #2e34f0b7-1508-4eeb-843d-fd21871484e3 - "keyboard"
+2026-03-14 15:09:54 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-14 15:09:55 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 15:09:55 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 15:09:55 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 15:09:58 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 15:09:58 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 15:09:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-03-14 15:09:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-03-14 15:09:59 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 15:09:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-03-14 15:09:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 15:09:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-03-14 15:09:59 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nk2600-usb-wired-keyboard-black.json
+2026-03-14 15:09:59 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-03-14 15:10:00 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-03-14 15:10:00 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-03-14 15:10:00 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-14 15:10:00 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 15:10:00 [debug]: [PcExpressScraper] JSON success: RAPOO NK2600 USB WIRED Keyboard (Black)
+2026-03-14 15:10:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k606-lakshmi-mechanical-keyboard.json
+2026-03-14 15:10:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json
+2026-03-14 15:10:00 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-03-14 15:10:01 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard
+2026-03-14 15:10:01 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-03-14 15:10:01 [debug]: [PcWorxScraper] JSON success: Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch
+2026-03-14 15:10:04 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk220-wireless-combo-keyboard-and-mouse.json
+2026-03-14 15:10:04 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-03-14 15:10:04 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-03-14 15:10:04 [debug]: [PcWorxScraper] JSON success: Logitech Mk220 Wireless Combo Keyboard And Mouse
+2026-03-14 15:10:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-03-14 15:10:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-03-14 15:10:05 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-03-14 15:10:05 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-03-14 15:10:05 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json
+2026-03-14 15:10:05 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 15:10:05 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-03-14 15:10:11 [debug]: [VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard
+2026-03-14 15:10:12 [debug]: → GET /api/search
+2026-03-14 15:10:14 [info]: [SearchService] Search #b54f36ec-314e-4608-b6cd-ae14f93d1880 - "keyboard"
+2026-03-14 15:10:14 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-14 15:10:14 [info]: [Backend Cache SET] "keyboard" — 15 products cached
+2026-03-14 15:10:14 [info]: [SearchService] Raw products: 15
+2026-03-14 15:10:14 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "RAPOO NK2600 USB WIRED Keyboard (Black)" (PCExpress)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)" (PCExpress)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "Logitech Mk220 Wireless Combo Keyboard And Mouse" (PCWorx)
+2026-03-14 15:10:14 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-14 15:10:14 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 15:10:14 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:14 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 15:10:14 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 15:10:14 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-14 15:10:14 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:15 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-14 15:10:15 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:15 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-14 15:10:15 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-03-14 15:10:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-03-14 15:10:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-03-14 15:10:15 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:15 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-03-14 15:10:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-03-14 15:10:16 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:16 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-03-14 15:10:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-14 15:10:16 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-03-14 15:10:16 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/rapoo-nk2600-usb-wired-keyboard-black.json
+2026-03-14 15:10:16 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:16 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-14 15:10:16 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-14 15:10:16 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-14 15:10:16 [debug]: [PcExpressScraper] JSON success: RAPOO NK2600 USB WIRED Keyboard (Black)
+2026-03-14 15:10:16 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:17 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:17 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json
+2026-03-14 15:10:17 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-03-14 15:10:17 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k606-lakshmi-mechanical-keyboard.json
+2026-03-14 15:10:17 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:17 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-03-14 15:10:17 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard
+2026-03-14 15:10:17 [debug]: [PcWorxScraper] JSON success: Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch
+2026-03-14 15:10:17 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:18 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:18 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:18 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:18 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:19 [info]: [SearchService] Saved 15 products for search #2e34f0b7-1508-4eeb-843d-fd21871484e3
+2026-03-14 15:10:19 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-03-14 15:10:19 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json
+2026-03-14 15:10:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k650-signature-multi-device-wireless-keyboard-off-white.json
+2026-03-14 15:10:20 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-03-14 15:10:20 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk220-wireless-combo-keyboard-and-mouse.json
+2026-03-14 15:10:20 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-03-14 15:10:21 [debug]: [VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard
+2026-03-14 15:10:21 [debug]: [PcWorxScraper] JSON success: Logitech Mk220 Wireless Combo Keyboard And Mouse
+2026-03-14 15:10:21 [debug]: [PcExpressScraper] JSON success: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 15:10:21 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-03-14 15:10:21 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-03-14 15:10:32 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-03-14 15:10:35 [info]: [Backend Cache SET] "keyboard" — 15 products cached
+2026-03-14 15:10:35 [info]: [SearchService] Raw products: 15
+2026-03-14 15:10:35 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "RAPOO NK2600 USB WIRED Keyboard (Black)" (PCExpress)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)" (PCExpress)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "Logitech Mk220 Wireless Combo Keyboard And Mouse" (PCWorx)
+2026-03-14 15:10:35 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-14 15:10:35 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 15:10:35 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:35 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:36 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:36 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:36 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:10:37 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:37 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:37 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:37 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:38 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:10:38 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:38 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:39 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:39 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:39 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:10:40 [info]: [SearchService] Saved 15 products for search #b54f36ec-314e-4608-b6cd-ae14f93d1880
+2026-03-14 15:11:37 [debug]: → GET /api/search
+2026-03-14 15:11:38 [info]: [SearchService] Search #f7de0482-14f4-420f-acb5-c4c380d7fcb8 - "keyboard"
+2026-03-14 15:11:38 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-14 15:11:38 [info]: [SearchService] Raw products: 15
+2026-03-14 15:11:38 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "RAPOO NK2600 USB WIRED Keyboard (Black)" (PCExpress)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)" (PCExpress)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "Logitech Mk220 Wireless Combo Keyboard And Mouse" (PCWorx)
+2026-03-14 15:11:38 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-14 15:11:38 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 15:11:38 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:11:38 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:11:38 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:11:38 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:11:39 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:11:39 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:11:39 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:11:40 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:11:40 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:11:40 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:11:41 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:11:41 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:11:41 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:11:41 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:11:42 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:11:42 [info]: [SearchService] Saved 15 products for search #f7de0482-14f4-420f-acb5-c4c380d7fcb8
+2026-03-14 15:11:56 [debug]: → GET /api/products/PCExpress/e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-14 15:11:56 [debug]: → GET /api/products/PCExpress/e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-14 15:12:50 [debug]: → POST /api/cart
+2026-03-14 15:12:51 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:12:51 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:12:51 [info]: [Cart] Found 2 items in cart
+2026-03-14 15:12:51 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3
+2026-03-14 15:12:52 [info]: [Cart] Found 2 products
+2026-03-14 15:12:52 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 15:12:52 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-14 15:12:52 [info]: [Cart] Returning cart with 2 items
+2026-03-14 15:12:52 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:12:53 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:12:53 [info]: [Cart] Found 3 items in cart
+2026-03-14 15:12:53 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3,e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-14 15:12:53 [info]: [Cart] Found 3 products
+2026-03-14 15:12:53 [debug]: [Cart] Mapped product e16a732e-938d-4000-b1f9-4035502e80cb: ASUS TUF Gaming K1 RGB Gaming Keyboard, platform: PCExpress
+2026-03-14 15:12:53 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 15:12:53 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-14 15:12:53 [info]: [Cart] Returning cart with 3 items
+2026-03-14 15:12:53 [debug]: → GET /api/cart
+2026-03-14 15:12:54 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:12:54 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-14 15:12:54 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:12:54 [info]: [Cart] Found 3 items in cart
+2026-03-14 15:12:54 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3,e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-14 15:12:54 [info]: [Cart] Found 3 products
+2026-03-14 15:12:54 [debug]: [Cart] Mapped product e16a732e-938d-4000-b1f9-4035502e80cb: ASUS TUF Gaming K1 RGB Gaming Keyboard, platform: PCExpress
+2026-03-14 15:12:54 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-14 15:12:54 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-14 15:12:54 [info]: [Cart] Returning cart with 3 items
+2026-03-14 15:12:54 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-14 15:12:54 [info]: [CartController] Processing 3 cart items
+2026-03-14 15:12:54 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-14 15:12:54 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-14 15:12:54 [debug]: [CartController] Processing item ca0065e7-505c-4efa-a8b8-b3f0038686b4, products array length: 1
+2026-03-14 15:12:54 [debug]: [CartController] Item ca0065e7-505c-4efa-a8b8-b3f0038686b4 has product: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM
+2026-03-14 15:12:54 [debug]: [CartController] Processing item 72fb7923-f72e-4559-a85f-b123a1c1f2b3, products array length: 1
+2026-03-14 15:12:54 [debug]: [CartController] Item 72fb7923-f72e-4559-a85f-b123a1c1f2b3 has product: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-14 15:12:54 [info]: [CartController] Returning 3 items with total price: 22588
+2026-03-14 15:16:12 [debug]: → GET /api/products/PCExpress/e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-14 15:16:13 [debug]: → GET /api/products/PCExpress/e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-14 15:16:15 [debug]: → GET /api/search/stores
+2026-03-14 15:16:15 [debug]: → GET /api/search/stores
+2026-03-14 15:24:23 [debug]: → GET /api/search/stores
+2026-03-14 15:24:23 [debug]: → GET /api/search
+2026-03-14 15:24:23 [debug]: → GET /api/search/stores
+2026-03-14 15:24:25 [info]: [SearchService] Search #1f1abf84-f1ec-4ed5-8060-2f6c327ed028 - "keyboard"
+2026-03-14 15:24:25 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-14 15:24:25 [info]: [SearchService] Raw products: 15
+2026-03-14 15:24:25 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "RAPOO NK2600 USB WIRED Keyboard (Black)" (PCExpress)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)" (PCExpress)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "Logitech Mk220 Wireless Combo Keyboard And Mouse" (PCWorx)
+2026-03-14 15:24:25 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-14 15:24:25 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 15:24:25 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:25 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:25 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:26 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:26 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:26 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:26 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:27 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:27 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:27 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:27 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:28 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:28 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:30 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:30 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:31 [info]: [SearchService] Saved 15 products for search #1f1abf84-f1ec-4ed5-8060-2f6c327ed028
+2026-03-14 15:24:31 [debug]: → GET /api/search
+2026-03-14 15:24:32 [info]: [SearchService] Search #5f2e15b3-0ce3-4761-9953-9acc7a98c5c1 - "keyboard"
+2026-03-14 15:24:32 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-14 15:24:32 [info]: [SearchService] Raw products: 15
+2026-03-14 15:24:32 [info]: [SearchService] Unique products after dedup: 15
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "RAPOO NK2600 USB WIRED Keyboard (Black)" (PCExpress)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)" (PCExpress)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "Logitech Mk220 Wireless Combo Keyboard And Mouse" (PCWorx)
+2026-03-14 15:24:32 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-14 15:24:32 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-14 15:24:32 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:32 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:32 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:32 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:33 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-14 15:24:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-14 15:24:34 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-14 15:24:36 [info]: [SearchService] Saved 15 products for search #5f2e15b3-0ce3-4761-9953-9acc7a98c5c1
+2026-03-14 15:28:08 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-21 19:36:32 [info]: [DB] Supabase client created.
+2026-03-21 19:36:33 [error]: [DB] Supabase connection failed:
+2026-03-21 19:38:46 [info]: [DB] Supabase client created.
+2026-03-21 19:38:47 [error]: [DB] Supabase connection failed:
+2026-03-21 19:43:52 [info]: [DB] Supabase client created.
+2026-03-21 19:43:55 [info]: [DB] Supabase connection verified.
+2026-03-21 19:43:55 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-21 19:43:55 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-21 19:46:34 [debug]: → POST /api/auth/login
+2026-03-21 19:46:36 [debug]: → GET /api/auth/me
+2026-03-21 19:46:37 [debug]: → GET /api/auth/me
+2026-03-21 19:46:37 [debug]: → GET /api/auth/me
+2026-03-21 19:46:48 [debug]: → GET /api/search/stores
+2026-03-21 19:46:48 [debug]: → GET /api/search/stores
+2026-03-21 20:03:27 [debug]: → GET /api/auth/me
+2026-03-21 20:03:27 [debug]: → GET /api/cart
+2026-03-21 20:03:28 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-21 20:03:28 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-21 20:03:29 [debug]: → GET /api/auth/me
+2026-03-21 20:03:29 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-21 20:03:29 [info]: [Cart] Found 3 items in cart
+2026-03-21 20:03:29 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3,e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-21 20:03:29 [info]: [Cart] Found 3 products
+2026-03-21 20:03:29 [debug]: [Cart] Mapped product e16a732e-938d-4000-b1f9-4035502e80cb: ASUS TUF Gaming K1 RGB Gaming Keyboard, platform: PCExpress
+2026-03-21 20:03:29 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-21 20:03:29 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-21 20:03:29 [info]: [Cart] Returning cart with 3 items
+2026-03-21 20:03:29 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-21 20:03:29 [info]: [CartController] Processing 3 cart items
+2026-03-21 20:03:29 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-21 20:03:29 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-21 20:03:29 [debug]: [CartController] Processing item ca0065e7-505c-4efa-a8b8-b3f0038686b4, products array length: 1
+2026-03-21 20:03:29 [debug]: [CartController] Item ca0065e7-505c-4efa-a8b8-b3f0038686b4 has product: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM
+2026-03-21 20:03:29 [debug]: [CartController] Processing item 72fb7923-f72e-4559-a85f-b123a1c1f2b3, products array length: 1
+2026-03-21 20:03:29 [debug]: [CartController] Item 72fb7923-f72e-4559-a85f-b123a1c1f2b3 has product: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-21 20:03:29 [info]: [CartController] Returning 3 items with total price: 22588
+2026-03-21 20:03:29 [debug]: → GET /api/cart
+2026-03-21 20:03:29 [info]: [CartController] Getting cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-21 20:03:29 [info]: [Cart] Fetching cart for user: a022c1b9-3597-4ea9-bbdb-39925215f735
+2026-03-21 20:03:30 [info]: [Cart] Found cart: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-21 20:03:30 [info]: [Cart] Found 3 items in cart
+2026-03-21 20:03:30 [info]: [Cart] Fetching products: a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc,486bd3f9-7a22-4d60-9742-a192dfde41b3,e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-21 20:03:30 [info]: [Cart] Found 3 products
+2026-03-21 20:03:30 [debug]: [Cart] Mapped product e16a732e-938d-4000-b1f9-4035502e80cb: ASUS TUF Gaming K1 RGB Gaming Keyboard, platform: PCExpress
+2026-03-21 20:03:30 [debug]: [Cart] Mapped product a3dbea5c-b5b9-4aae-918b-cc336ec9fbfc: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White), platform: PCExpress
+2026-03-21 20:03:30 [debug]: [Cart] Mapped product 486bd3f9-7a22-4d60-9742-a192dfde41b3: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM, platform: PCWorx
+2026-03-21 20:03:30 [info]: [Cart] Returning cart with 3 items
+2026-03-21 20:03:30 [info]: [CartController] Cart retrieved: 3d206b28-3604-4f47-a686-10c3421831c9
+2026-03-21 20:03:30 [info]: [CartController] Processing 3 cart items
+2026-03-21 20:03:30 [debug]: [CartController] Processing item efabdbb6-e19d-4f68-929e-d7ee3cc38389, products array length: 1
+2026-03-21 20:03:30 [debug]: [CartController] Item efabdbb6-e19d-4f68-929e-d7ee3cc38389 has product: LOGITECH K650 SIGNATURE Multi-Device Wireless Keyboard (Off White)
+2026-03-21 20:03:30 [debug]: [CartController] Processing item ca0065e7-505c-4efa-a8b8-b3f0038686b4, products array length: 1
+2026-03-21 20:03:30 [debug]: [CartController] Item ca0065e7-505c-4efa-a8b8-b3f0038686b4 has product: Adata AD-AD4U320032G22-SGN 32GB  DDR4  3200Mhz Dimm | Memory Card | RAM
+2026-03-21 20:03:30 [debug]: [CartController] Processing item 72fb7923-f72e-4559-a85f-b123a1c1f2b3, products array length: 1
+2026-03-21 20:03:30 [debug]: [CartController] Item 72fb7923-f72e-4559-a85f-b123a1c1f2b3 has product: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-21 20:03:30 [info]: [CartController] Returning 3 items with total price: 22588
+2026-03-21 20:07:18 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-03-21 20:17:41 [info]: [DB] Supabase client created.
+2026-03-21 20:17:44 [info]: [DB] Supabase connection verified.
+2026-03-21 20:17:45 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-21 20:17:45 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-21 20:22:45 [info]: [DB] Supabase client created.
+2026-03-21 20:22:48 [info]: [DB] Supabase connection verified.
+2026-03-21 20:22:48 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-21 20:22:48 [info]: 🚀 Bakàl backend running on port 3000 [development]

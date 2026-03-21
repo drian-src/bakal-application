@@ -52,7 +52,7 @@ async function updateLastLogin(id) {
   if (error) throw error;
 }
 
-async function upsertGoogleUser({ googleId, email, name }) {
+async function upsertGoogleUser({ googleId, email, name, avatarUrl = null }) {
   const existing = await findByGoogleId(googleId);
   if (existing) {
     await updateLastLogin(existing.id);
@@ -64,14 +64,14 @@ async function upsertGoogleUser({ googleId, email, name }) {
     // Link Google ID to existing account
     const { data, error } = await supabase
       .from(TABLE)
-      .update({ google_id: googleId, updated_at: new Date().toISOString() })
+      .update({ google_id: googleId, avatar_url: avatarUrl, updated_at: new Date().toISOString() })
       .eq('id', byEmail.id)
       .select()
       .single();
     if (error) throw error;
     return data;
   }
-  return create({ email, name, google_id: googleId, auth_provider: 'google' });
+  return create({ email, name, google_id: googleId, auth_provider: 'google', avatar_url: avatarUrl });
 }
 
 module.exports = { findByEmail, findById, findByGoogleId, create, updateLastLogin, upsertGoogleUser };

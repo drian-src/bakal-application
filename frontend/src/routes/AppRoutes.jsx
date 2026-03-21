@@ -4,7 +4,7 @@ import { Routes, Route } from 'react-router-dom';
 // Pages - Presentation Layer
 import LandingPage from '../presentation/landing/LandingPage';
 import Login from '../presentation/auth/Login';
-import Signup from '../presentation/auth/Signup';
+import AuthCallback from '../presentation/auth/AuthCallback';
 import ForgotPassword from '../presentation/auth/ForgotPassword';
 import VerifyCode from '../presentation/auth/VerifyCode';
 import ResetPassword from '../presentation/auth/ResetPassword';
@@ -25,7 +25,12 @@ const AppRoutes = () => {
       
       {/* Auth Routes */}
       <Route path="/login" element={<ProtectedRoute requiredAuth={false}><Login /></ProtectedRoute>} />
-      <Route path="/signup" element={<ProtectedRoute requiredAuth={false}><Signup /></ProtectedRoute>} />
+
+      {/* Google OAuth callback — NO ProtectedRoute wrapper.
+          Token is not in localStorage yet when this page loads.
+          Wrapping in ProtectedRoute would cause an infinite redirect loop. */}
+      <Route path="/auth/callback" element={<AuthCallback />} />
+
       <Route path="/forgot-password" element={<ForgotPassword />} />
       <Route path="/verify-code" element={<VerifyCode />} />
       <Route path="/reset-password" element={<ResetPassword />} />
