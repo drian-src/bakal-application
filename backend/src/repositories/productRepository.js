@@ -85,6 +85,31 @@ async function findTopRated(limit = 10) {
   return data || [];
 }
 
+/**
+ * Find products whose title contains the keyword (case-insensitive).
+ * Used by the category grid to show pre-loaded products without scraping.
+ *
+ * @param {string} keyword - e.g. 'laptop', 'smartphone', 'desktop'
+ * @param {number} limit   - max results to return (default 10)
+ * @param {string} platformId - optional: filter by platform UUID
+ */
+async function findByKeyword(keyword, limit = 10, platformId = null) {
+  let query = supabase
+    .from(TABLE)
+    .select('*, platforms(name)')
+    .ilike('title', `%${keyword}%`)
+    .order('updated_at', { ascending: false })
+    .limit(limit);
+
+  if (platformId) {
+    query = query.eq('platform_id', platformId);
+  }
+
+  const { data, error } = await query;
+  if (error) throw error;
+  return data || [];
+}
+
 module.exports = { 
   upsertProduct, 
   findByUrl, 
@@ -93,5 +118,6 @@ module.exports = {
   updateEmbedding,
   findAll,
   findRecent,
-  findTopRated
+  findTopRated,
+  findByKeyword
 };

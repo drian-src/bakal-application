@@ -5,7 +5,7 @@ import FilterPanel from './Filters/FilterPanel';
 import PlatformTabs from './PlatformSelector/PlatformTabs';
 import RecommendedSection from './RecommendedProducts/RecommendedSection';
 import ScrapingLoader from '../../shared/ScrapingLoader';
-import { searchProducts, getStores } from '@/core/services/apiService';
+import { searchProducts, getStores, trackInteraction } from '@/core/services/apiService';
 import { searchCache } from '@/core/services/searchCache';
 import './SearchResultPage.css';
 
@@ -76,6 +76,8 @@ const SearchResultPage = () => {
           }, {});
           console.log('[SearchResultPage] Grouped by platform:', groupedByPlatform);
           setFilteredProducts(groupedByPlatform);
+          // Track the search query for the recommendation engine — fire and forget
+          trackInteraction('search', { query });
         } else {
           console.warn('[SearchResultPage] No products in response or invalid format');
           setFilteredProducts({});

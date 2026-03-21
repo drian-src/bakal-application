@@ -151,25 +151,24 @@ export const clearSearchHistory = async () => {
 
 // ─── RECOMMENDATION ENDPOINTS ───────────────────────────────────────────────
 
-export const getRecommendations = async (searchId) => {
+export const trackInteraction = async (eventType, options = {}) => {
   try {
-    const response = await apiCall(`/recommendations/${searchId}`);
-    return response.data || [];
+    await apiCall('/recommendations/track', {
+      method: 'POST',
+      body: JSON.stringify({ eventType, ...options }),
+    });
   } catch (error) {
-    console.error('Fetch recommendations failed:', error);
-    return [];
+    console.warn('[Rec] trackInteraction failed (ignored):', error.message);
   }
 };
 
-export const generateRecommendations = async (searchId) => {
+export const getPersonalizedRecommendations = async (limit = 10) => {
   try {
-    const response = await apiCall(`/recommendations/${searchId}`, {
-      method: 'POST',
-    });
-    return response.data || [];
+    const response = await apiCall(`/recommendations?limit=${limit}`);
+    return response?.data || { recommendations: [], count: 0, strategy: 'none' };
   } catch (error) {
-    console.error('Generate recommendations failed:', error);
-    return [];
+    console.error('[Rec] getPersonalizedRecommendations failed:', error.message);
+    return { recommendations: [], count: 0, strategy: 'none' };
   }
 };
 
@@ -272,6 +271,26 @@ export const getProductsByCategory = async (categoryId, page = 1, limit = 20) =>
   }
 };
 
+/**
+ * Fetch products from the database matching a keyword.
+ * Used by CategoriesGrid — no scraping, instant results from DB.
+ *
+ * @param {string} keyword - e.g. 'laptop', 'smartphone'
+ * @param {number} limit   - max results (default 8)
+ * @returns {{ keyword, count, products: Array }} or { products: [] } on error
+ */
+export const getCategoryProducts = async (keyword, limit = 8) => {
+  try {
+    const response = await apiCall(
+      `/categories/products?keyword=${encodeURIComponent(keyword)}&limit=${limit}`
+    );
+    return response.data || { keyword, count: 0, products: [] };
+  } catch (error) {
+    console.error(`[apiService] getCategoryProducts failed for "${keyword}":`, error);
+    return { keyword, count: 0, products: [] };
+  }
+};
+
 // ─── FEATURED/RECOMMENDED ENDPOINTS ────────────────────────────────────────
 
 export const getRecentProducts = async (limit = 10) => {
@@ -299,8 +318,8 @@ export default {
   getSearchResults,
   getSearchHistory,
   clearSearchHistory,
-  getRecommendations,
-  generateRecommendations,
+  trackInteraction,
+  getPersonalizedRecommendations,
   registerUser,
   loginUser,
   getCurrentUser,
@@ -309,6 +328,7 @@ export default {
   getAllProducts,
   getCategories,
   getProductsByCategory,
+  getCategoryProducts,
   getRecentProducts,
   getTopRatedProducts,
 };
