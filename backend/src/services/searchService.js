@@ -264,6 +264,13 @@ async function search(query, userId = null, maxPerPlatform = 5) {
     `[SearchService] Relevance filter: ${relevantProducts.length}/${uniqueProducts.length} products kept`
   );
 
+  // ── Multi-factor ranking ─────────────────────────────────────────────────
+  // Annotates each product with _score, _reasons, _rankingMeta.
+  // Sorts by _score DESC. Falls back to original order on any error.
+  const { rankProducts } = require('./rankingEngine');
+  const rankedProducts = await rankProducts(relevantProducts, userId, normalizedQuery);
+  logger.info(`[SearchService] Products ranked by multi-factor score (${rankedProducts.length} products)`);
+
   if (rejectedProducts.length > 0 && rejectedProducts.length <= 3) {
     logger.info(`[SearchService] Sample rejected products for query "${normalizedQuery}":`);
     rejectedProducts.slice(0, 3).forEach(p => {
@@ -277,8 +284,8 @@ async function search(query, userId = null, maxPerPlatform = 5) {
   const groupedByStore = {};
 
   if (dbEnabled) {
-    for (let i = 0; i < relevantProducts.length; i++) {
-      const p = relevantProducts[i];
+    for (let i = 0; i < rankedProducts.length; i++) {
+      const p = rankedProducts[i];
       try {
         // Normalize platform name to lowercase for lookup (e.g., "PCExpress" → "pcexpress")
         const platformKey = p.platform?.toLowerCase().trim();
@@ -302,7 +309,14 @@ async function search(query, userId = null, maxPerPlatform = 5) {
           platform_id: platformId,
         });
 
-        const productWithMeta = { ...saved, platform: p.platform, storeId: p.storeId };
+        const productWithMeta = {
+          ...saved,
+          platform:     p.platform,
+          storeId:      p.storeId,
+          _score:       p._score    ?? 0,
+          _reasons:     p._reasons  ?? ["Matches your search"],
+          _rankingMeta: p._rankingMeta ?? null,
+        };
         savedProducts.push(productWithMeta);
 
         // Group by store for response
