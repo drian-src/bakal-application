@@ -3,9 +3,8 @@ import HomeHeader from './sections/Header/HomeHeader';
 import AdvertSliderHome from './sections/Advertisements/AdvertSliderHome';
 import CategoriesGrid from './sections/CategoryProducts/CategoriesGrid';
 import TopRatedProducts from './sections/ProductListing/TopRatedProducts';
-import FrequentlySearchProducts from './sections/ProductListing/FrequentlySearchProducts';
-import PersonalizedRecommendedProducts from './sections/ProductListing/PersonalizedRecommendedProducts';
 import SearchBar from './sections/Header/SearchBar';
+import RecommendationSection from './recommendations/RecommendationSection';
 import './HomePage.css';
 
 const HomePage = () => {
@@ -16,9 +15,8 @@ const HomePage = () => {
         <AdvertSliderHome />
         {/* prominent search bar below adverts */}
         <SearchBar />
+        <RecommendationSection />
         <CategoriesGrid />
-        <FrequentlySearchProducts />
-        <PersonalizedRecommendedProducts />
         <TopRatedProducts />
       </main>
     </div>

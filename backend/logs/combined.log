@@ -14441,3 +14441,1910 @@ Call log:
 2026-03-21 20:54:33 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
 2026-03-21 20:54:33 [info]: [CartController] Cart retrieved: null
 2026-03-21 20:54:33 [debug]: → GET /api/auth/me
+2026-03-21 21:34:31 [debug]: → GET /api/search/stores
+2026-03-21 21:34:31 [debug]: → GET /api/search
+2026-03-21 21:34:31 [debug]: → GET /api/search/stores
+2026-03-21 21:34:32 [info]: [SearchService] Search #71100ed0-42bc-4699-820d-37538590a92c - "smartphone"
+2026-03-21 21:34:32 [info]: [Backend Cache MISS] Scraping: "smartphone"...
+2026-03-21 21:34:35 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-21 21:34:35 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-21 21:34:35 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-21 21:34:38 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-21 21:34:38 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=smartphone
+2026-03-21 21:34:38 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-21 21:34:38 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=smartphone
+2026-03-21 21:34:39 [info]: [PcExpressScraper] API found 2 product URLs
+2026-03-21 21:34:40 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-12-pro-plus-5g-12gb-512gb-submarine-blue.json
+2026-03-21 21:34:40 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-13-pro-5g-12gb-256gb-emerald-green-cellular-phone-1.json
+2026-03-21 21:34:41 [debug]: [PcExpressScraper] JSON success: REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone
+2026-03-21 21:34:41 [debug]: [PcExpressScraper] JSON success: REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue
+2026-03-21 21:34:50 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-21 21:34:51 [debug]: → GET /api/search
+2026-03-21 21:34:51 [debug]: → GET /api/search/stores
+2026-03-21 21:34:51 [debug]: → GET /api/search/stores
+2026-03-21 21:34:52 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-03-21 21:34:52 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/redmi-note-12s-8gb-256gb.json
+2026-03-21 21:34:52 [info]: [SearchService] Search #b8a88d2d-ab3c-4fc9-ab84-845d8b41b518 - "smartphone"
+2026-03-21 21:34:52 [info]: [Backend Cache MISS] Scraping: "smartphone"...
+2026-03-21 21:34:52 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7.json
+2026-03-21 21:34:52 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-8-12gb-256gb-phantom-black-pp.json
+2026-03-21 21:34:53 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7
+2026-03-21 21:34:53 [debug]: [VillmanScraper] JSON success: Xiaomi Redmi Note 12s (8GB, 256GB)
+2026-03-21 21:34:54 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 8 12GB/256GB (Rebel Grey)
+2026-03-21 21:34:55 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-21 21:34:56 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdsqxcd-128g-256gg512g-gn6ma-extreme-pro-micro-sd-200mb-s-c10.json
+2026-03-21 21:34:56 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-21 21:34:56 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-21 21:34:56 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc3-064g-g46ag-64gb-ultra-dual-drive-go-usb-3-1-type-c-a.json
+2026-03-21 21:34:56 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandsk-sdsqxav-1t00-gn6mn-1tb-extreme-micro-sd-160mbs-class-10-no-adapter.json
+2026-03-21 21:34:56 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-21 21:34:56 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=smartphone
+2026-03-21 21:34:56 [debug]: [PcWorxScraper] JSON success: Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10
+2026-03-21 21:34:56 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-21 21:34:56 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=smartphone
+2026-03-21 21:34:57 [info]: [PcExpressScraper] API found 2 product URLs
+2026-03-21 21:34:57 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A
+2026-03-21 21:34:57 [debug]: [PcWorxScraper] JSON success: Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter
+2026-03-21 21:35:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-13-pro-5g-12gb-256gb-emerald-green-cellular-phone-1.json
+2026-03-21 21:35:01 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-12-pro-plus-5g-12gb-512gb-submarine-blue.json
+2026-03-21 21:35:02 [debug]: [PcExpressScraper] JSON success: REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue
+2026-03-21 21:35:02 [debug]: [PcExpressScraper] JSON success: REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone
+2026-03-21 21:35:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc4-512g-g46gd-512gb-otg-luxe-type-c-3-1-gold.json
+2026-03-21 21:35:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc4-g46-otg-luxe-type-c-3-1.json
+2026-03-21 21:35:06 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold
+2026-03-21 21:35:06 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1
+2026-03-21 21:35:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7-ultimate.json
+2026-03-21 21:35:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/motorola-mote-e40.json
+2026-03-21 21:35:07 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7 Ultimate 16GB | 512GB
+2026-03-21 21:35:07 [debug]: [VillmanScraper] JSON success: Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11
+2026-03-21 21:35:08 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-21 21:35:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/redmi-note-12s-8gb-256gb.json
+2026-03-21 21:35:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-8-12gb-256gb-phantom-black-pp.json
+2026-03-21 21:35:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7.json
+2026-03-21 21:35:10 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 8 12GB/256GB (Rebel Grey)
+2026-03-21 21:35:11 [debug]: [VillmanScraper] JSON success: Xiaomi Redmi Note 12s (8GB, 256GB)
+2026-03-21 21:35:11 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7
+2026-03-21 21:35:11 [info]: [Backend Cache SET] "smartphone" — 12 products cached
+2026-03-21 21:35:11 [info]: [SearchService] Raw products: 12
+2026-03-21 21:35:11 [info]: [SearchService] Unique products after dedup: 12
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-21 21:35:11 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1" (PCWorx)
+2026-03-21 21:35:11 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-21 21:35:11 [info]: [SearchService] Saved 0 products for search #71100ed0-42bc-4699-820d-37538590a92c
+2026-03-21 21:35:11 [debug]: → GET /api/search
+2026-03-21 21:35:11 [debug]: → GET /api/search
+2026-03-21 21:35:12 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-03-21 21:35:12 [info]: [SearchService] Search #905c0b28-6063-4dc0-8398-4344306a5b31 - "smartphone"
+2026-03-21 21:35:12 [info]: [Backend Cache HIT] Query: "smartphone" (12 cached products)
+2026-03-21 21:35:12 [info]: [SearchService] Raw products: 12
+2026-03-21 21:35:12 [info]: [SearchService] Unique products after dedup: 12
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1" (PCWorx)
+2026-03-21 21:35:12 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-21 21:35:12 [info]: [SearchService] Saved 0 products for search #905c0b28-6063-4dc0-8398-4344306a5b31
+2026-03-21 21:35:12 [info]: [SearchService] Search #e857515b-b4ef-49ad-b358-496515e50612 - "smartphone"
+2026-03-21 21:35:12 [info]: [Backend Cache HIT] Query: "smartphone" (12 cached products)
+2026-03-21 21:35:12 [info]: [SearchService] Raw products: 12
+2026-03-21 21:35:12 [info]: [SearchService] Unique products after dedup: 12
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-21 21:35:12 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1" (PCWorx)
+2026-03-21 21:35:12 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-21 21:35:12 [info]: [SearchService] Saved 0 products for search #e857515b-b4ef-49ad-b358-496515e50612
+2026-03-21 21:35:14 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdsqxcd-128g-256gg512g-gn6ma-extreme-pro-micro-sd-200mb-s-c10.json
+2026-03-21 21:35:14 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc3-064g-g46ag-64gb-ultra-dual-drive-go-usb-3-1-type-c-a.json
+2026-03-21 21:35:14 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandsk-sdsqxav-1t00-gn6mn-1tb-extreme-micro-sd-160mbs-class-10-no-adapter.json
+2026-03-21 21:35:14 [debug]: [PcWorxScraper] JSON success: Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10
+2026-03-21 21:35:14 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A
+2026-03-21 21:35:14 [debug]: [PcWorxScraper] JSON success: Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter
+2026-03-21 21:35:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7-ultimate.json
+2026-03-21 21:35:16 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/motorola-mote-e40.json
+2026-03-21 21:35:16 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7 Ultimate 16GB | 512GB
+2026-03-21 21:35:16 [debug]: [VillmanScraper] JSON success: Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11
+2026-03-21 21:35:18 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc4-512g-g46gd-512gb-otg-luxe-type-c-3-1-gold.json
+2026-03-21 21:35:18 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc4-g46-otg-luxe-type-c-3-1.json
+2026-03-21 21:35:19 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold
+2026-03-21 21:35:19 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1
+2026-03-21 21:35:21 [info]: [Backend Cache SET] "smartphone" — 12 products cached
+2026-03-21 21:35:21 [info]: [SearchService] Raw products: 12
+2026-03-21 21:35:21 [info]: [SearchService] Unique products after dedup: 12
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-21 21:35:21 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1" (PCWorx)
+2026-03-21 21:35:21 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-21 21:35:21 [info]: [SearchService] Saved 0 products for search #b8a88d2d-ab3c-4fc9-ab84-845d8b41b518
+2026-03-21 21:37:12 [debug]: → GET /api/search/stores
+2026-03-21 21:37:12 [debug]: → GET /api/search
+2026-03-21 21:37:12 [debug]: → GET /api/search/stores
+2026-03-21 21:37:13 [info]: [SearchService] Search #515913f3-b132-454c-a525-775d0c96f128 - "usb"
+2026-03-21 21:37:13 [info]: [Backend Cache MISS] Scraping: "usb"...
+2026-03-21 21:37:13 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=usb&resources[type]=product&resources[limit]=10
+2026-03-21 21:37:13 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=usb&resources[type]=product&resources[limit]=10
+2026-03-21 21:37:13 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=usb&resources[type]=product&resources[limit]=10
+2026-03-21 21:37:14 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-21 21:37:14 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-21 21:37:14 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-21 21:37:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/tp-link-archer-t3u-plus-ac1300-high-gain-wireless-dual-band-usb-adapter.json
+2026-03-21 21:37:17 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/ugreen-us270-50283-usb-c-3-1-male-to-usb-a-3-0-female-otg-adapter-space-gray.json
+2026-03-21 21:37:18 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-usb-ac53-nano-ac1200-dual-band-usb-wi-fi-adapter.json
+2026-03-21 21:37:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/logitech-h340-usb-computer-headset.json
+2026-03-21 21:37:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-to-2xusb-3-0-hdmi-rj45-sd-tf-pd-converter-7-in-1-multifunction-adapter-cm512-60515.json
+2026-03-21 21:37:18 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/kingston-xs1000-2tb-external-ssd-red.json
+2026-03-21 21:37:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json
+2026-03-21 21:37:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/ugreen-cm498-15600-usb-c-9-in-1-multifunction-adapter-15cm.json
+2026-03-21 21:37:19 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-32gb-64gb-128gb-256gb-512gb-ultra-luxe%E2%84%A2-usb-3-1-gen-1-flash-drive-sdcz74.json
+2026-03-21 21:37:19 [debug]: [PcExpressScraper] JSON success: ASUS USB-AC53 Nano AC1200 Dual-band USB Wi-Fi Adapter
+2026-03-21 21:37:19 [debug]: [PcExpressScraper] JSON success: TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter
+2026-03-21 21:37:19 [debug]: [PcExpressScraper] JSON success: UGREEN (US270/50283) USB-C 3.1 Male To USB-A 3.0 Female OTG Adapter (Space Gray)
+2026-03-21 21:37:19 [debug]: [VillmanScraper] JSON success: Logitech H340 USB Computer Headset
+2026-03-21 21:37:19 [debug]: [VillmanScraper] JSON success: UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)
+2026-03-21 21:37:19 [debug]: [VillmanScraper] JSON success: Kingston XS1000 2TB External SSD USB 3.2 Gen 2 USB Type-C SXS1000/2000G Pocket-Sized Drive (Red)
+2026-03-21 21:37:20 [debug]: [PcWorxScraper] JSON success: Ugreen CM498/15600 9in1 USB-C 3.0+HDM+VGA+RJ45+SD&TF+PD100W Multifunction 15cm
+2026-03-21 21:37:20 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard
+2026-03-21 21:37:20 [debug]: [PcWorxScraper] JSON success: SanDisk 32GB/64GB/128GB/256GB/512GB Ultra Luxe™ USB 3.1 Gen 1 Flash Drive (SDCZ74)
+2026-03-21 21:37:24 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/kingston-xs1000-2tb-external-ssd-black.json
+2026-03-21 21:37:25 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/hiksemi-hs-usb-e307c-32g-u3-drive-usb-c-3-2-usb-a-and-usb-c-port-flashdrive-hiksemi-32gb-64gb-flashdrive.json
+2026-03-21 21:37:25 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/hikvision-hiksemi-hs-usb-m200-16gb-32gb-64gb-128gb-usb-flash-drive.json
+2026-03-21 21:37:25 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/ugreen-usb-c-6-in-1-multifunction-adapter-15cm-cm512-15598.json
+2026-03-21 21:37:25 [debug]: [VillmanScraper] JSON success: Kingston XS1000 2TB External SSD USB 3.2 Gen 2 USB Type-C SXS1000/2000G Pocket-Sized Drive (Black)
+2026-03-21 21:37:25 [debug]: [PcWorxScraper] JSON success: Hiksemi HS-USB-E307C 32G U3 DRIVE USB-C 3.2 USB-A AND USB-C PORT Flashdrive | Hiksemi | 32GB | 64GB | Flashdrive
+2026-03-21 21:37:25 [debug]: [PcWorxScraper] JSON success: HikVision/HikSemi HS-USB-M200 16GB/32GB/64GB/128GB USB Flash Drive
+2026-03-21 21:37:25 [debug]: [VillmanScraper] JSON success: UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)
+2026-03-21 21:37:26 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/hiksemi-64gb-hs-usb-m200r-usb-2-0-flash-drive.json
+2026-03-21 21:37:26 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/dahua-128gb-dhi-usb-u106-30-flash-drive.json
+2026-03-21 21:37:26 [debug]: [PcExpressScraper] JSON success: HIKSEMI 64GB HS-USB-M200R USB 2.0 Flash Drive
+2026-03-21 21:37:26 [debug]: [PcExpressScraper] JSON success: DAHUA 128GB DHI-USB U106-30 Flash Drive
+2026-03-21 21:37:30 [info]: [Backend Cache SET] "usb" — 15 products cached
+2026-03-21 21:37:30 [info]: [SearchService] Raw products: 15
+2026-03-21 21:37:30 [info]: [SearchService] Unique products after dedup: 15
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "ASUS USB-AC53 Nano AC1200 Dual-band USB Wi-Fi Adapter" (PCExpress)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN (US270/50283) USB-C 3.1 Male To USB-A 3.0 Female OTG Adapter (Space Gray)" (PCExpress)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter" (PCExpress)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "HIKSEMI 64GB HS-USB-M200R USB 2.0 Flash Drive" (PCExpress)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "DAHUA 128GB DHI-USB U106-30 Flash Drive" (PCExpress)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)" (VillMan)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H340 USB Computer Headset" (VillMan)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "Kingston XS1000 2TB External SSD USB 3.2 Gen 2 USB Type-C SXS1000/2000G Pocket-Sized Drive (Red)" (VillMan)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "Kingston XS1000 2TB External SSD USB 3.2 Gen 2 USB Type-C SXS1000/2000G Pocket-Sized Drive (Black)" (VillMan)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)" (VillMan)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "SanDisk 32GB/64GB/128GB/256GB/512GB Ultra Luxe™ USB 3.1 Gen 1 Flash Drive (SDCZ74)" (PCWorx)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM498/15600 9in1 USB-C 3.0+HDM+VGA+RJ45+SD&TF+PD100W Multifunction 15cm" (PCWorx)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "Hiksemi HS-USB-E307C 32G U3 DRIVE USB-C 3.2 USB-A AND USB-C PORT Flashdrive | Hiksemi | 32GB | 64GB | Flashdrive" (PCWorx)
+2026-03-21 21:37:30 [debug]: [SearchService] ✓ ACCEPTED: "HikVision/HikSemi HS-USB-M200 16GB/32GB/64GB/128GB USB Flash Drive" (PCWorx)
+2026-03-21 21:37:30 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-21 21:37:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:30 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:31 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:31 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:32 [debug]: → GET /api/search
+2026-03-21 21:37:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:33 [info]: [SearchService] Search #f6c9141e-e8b6-453a-8337-d0fcc6163460 - "usb"
+2026-03-21 21:37:33 [info]: [Backend Cache HIT] Query: "usb" (15 cached products)
+2026-03-21 21:37:33 [info]: [SearchService] Raw products: 15
+2026-03-21 21:37:33 [info]: [SearchService] Unique products after dedup: 15
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "ASUS USB-AC53 Nano AC1200 Dual-band USB Wi-Fi Adapter" (PCExpress)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN (US270/50283) USB-C 3.1 Male To USB-A 3.0 Female OTG Adapter (Space Gray)" (PCExpress)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "TP-LINK Archer T3U Plus AC1300 High Gain Wireless Dual Band USB Adapter" (PCExpress)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "HIKSEMI 64GB HS-USB-M200R USB 2.0 Flash Drive" (PCExpress)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "DAHUA 128GB DHI-USB U106-30 Flash Drive" (PCExpress)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C to 2xUSB 3.0 + HDMI + RJ45 + SD&TF + PD Converter (7-in-1) Multifunction Adapter (CM512/60515)" (VillMan)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "Logitech H340 USB Computer Headset" (VillMan)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "Kingston XS1000 2TB External SSD USB 3.2 Gen 2 USB Type-C SXS1000/2000G Pocket-Sized Drive (Red)" (VillMan)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "Kingston XS1000 2TB External SSD USB 3.2 Gen 2 USB Type-C SXS1000/2000G Pocket-Sized Drive (Black)" (VillMan)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "UGREEN USB-C 6-In-1 Multifunction Adapter - 15cm (CM512/15598)" (VillMan)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "SanDisk 32GB/64GB/128GB/256GB/512GB Ultra Luxe™ USB 3.1 Gen 1 Flash Drive (SDCZ74)" (PCWorx)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "Ugreen CM498/15600 9in1 USB-C 3.0+HDM+VGA+RJ45+SD&TF+PD100W Multifunction 15cm" (PCWorx)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "Hiksemi HS-USB-E307C 32G U3 DRIVE USB-C 3.2 USB-A AND USB-C PORT Flashdrive | Hiksemi | 32GB | 64GB | Flashdrive" (PCWorx)
+2026-03-21 21:37:33 [debug]: [SearchService] ✓ ACCEPTED: "HikVision/HikSemi HS-USB-M200 16GB/32GB/64GB/128GB USB Flash Drive" (PCWorx)
+2026-03-21 21:37:33 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:37:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:34 [info]: [SearchService] Saved 15 products for search #515913f3-b132-454c-a525-775d0c96f128
+2026-03-21 21:37:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:34 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:37:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:35 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:37:36 [info]: [SearchService] Saved 15 products for search #f6c9141e-e8b6-453a-8337-d0fcc6163460
+2026-03-21 21:38:00 [debug]: → GET /api/search/stores
+2026-03-21 21:38:00 [debug]: → GET /api/search/stores
+2026-03-21 21:38:01 [debug]: → GET /api/search
+2026-03-21 21:38:02 [info]: [SearchService] Search #1b2ef035-0820-4336-8885-6894e49b2389 - "smartphone"
+2026-03-21 21:38:02 [info]: [Backend Cache HIT] Query: "smartphone" (12 cached products)
+2026-03-21 21:38:02 [info]: [SearchService] Raw products: 12
+2026-03-21 21:38:02 [info]: [SearchService] Unique products after dedup: 12
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-21 21:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1" (PCWorx)
+2026-03-21 21:38:02 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-21 21:38:02 [info]: [SearchService] Saved 0 products for search #1b2ef035-0820-4336-8885-6894e49b2389
+2026-03-21 21:47:04 [debug]: → GET /api/auth/me
+2026-03-21 21:47:04 [debug]: → GET /api/cart
+2026-03-21 21:47:06 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:06 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:06 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:06 [info]: [CartController] Cart retrieved: null
+2026-03-21 21:47:06 [debug]: → GET /api/cart
+2026-03-21 21:47:06 [debug]: → GET /api/auth/me
+2026-03-21 21:47:06 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:06 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:06 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:06 [info]: [CartController] Cart retrieved: null
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:13 [debug]: → GET /api/categories/products
+2026-03-21 21:47:44 [debug]: → GET /api/categories/products
+2026-03-21 21:47:44 [debug]: → GET /api/categories/products
+2026-03-21 21:47:44 [debug]: → GET /api/categories/products
+2026-03-21 21:47:44 [debug]: → GET /api/categories/products
+2026-03-21 21:47:44 [debug]: → GET /api/categories/products
+2026-03-21 21:47:52 [debug]: → GET /api/auth/me
+2026-03-21 21:47:52 [debug]: → GET /api/cart
+2026-03-21 21:47:53 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:53 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:53 [debug]: → GET /api/auth/me
+2026-03-21 21:47:53 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:53 [info]: [CartController] Cart retrieved: null
+2026-03-21 21:47:53 [debug]: → GET /api/cart
+2026-03-21 21:47:53 [debug]: → GET /api/categories/products
+2026-03-21 21:47:53 [debug]: → GET /api/categories/products
+2026-03-21 21:47:53 [debug]: → GET /api/categories/products
+2026-03-21 21:47:53 [debug]: → GET /api/categories/products
+2026-03-21 21:47:53 [debug]: → GET /api/categories/products
+2026-03-21 21:47:53 [debug]: → GET /api/categories/products
+2026-03-21 21:47:53 [debug]: → GET /api/categories/products
+2026-03-21 21:47:53 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:53 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:53 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 21:47:53 [info]: [CartController] Cart retrieved: null
+2026-03-21 21:48:09 [debug]: → GET /api/search
+2026-03-21 21:48:10 [info]: [SearchService] Search #468dbd1b-f4e9-43fd-80d5-c1a7cb1dcb8c - "smartphone"
+2026-03-21 21:48:10 [info]: [Backend Cache HIT] Query: "smartphone" (12 cached products)
+2026-03-21 21:48:10 [info]: [SearchService] Raw products: 12
+2026-03-21 21:48:10 [info]: [SearchService] Unique products after dedup: 12
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-21 21:48:10 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4 G46 OTG Luxe Type-C 3.1" (PCWorx)
+2026-03-21 21:48:10 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-21 21:48:10 [info]: [SearchService] Saved 0 products for search #468dbd1b-f4e9-43fd-80d5-c1a7cb1dcb8c
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:12 [debug]: → GET /api/categories/products
+2026-03-21 21:48:13 [debug]: → GET /api/search/stores
+2026-03-21 21:48:13 [debug]: → GET /api/search/stores
+2026-03-21 21:48:13 [debug]: → GET /api/search
+2026-03-21 21:48:14 [info]: [SearchService] Search #9ce8e45c-cbd1-46bb-9ca9-b674a55a8274 - "keyboard"
+2026-03-21 21:48:14 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-21 21:48:15 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-21 21:48:15 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-21 21:48:15 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-21 21:48:18 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-21 21:48:18 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-21 21:48:19 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-21 21:48:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-03-21 21:48:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json
+2026-03-21 21:48:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-03-21 21:48:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-03-21 21:48:21 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/razer-ornata-v3-x-low-profile-keyboard.json
+2026-03-21 21:48:21 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-03-21 21:48:22 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-03-21 21:48:22 [debug]: [VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard
+2026-03-21 21:48:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-03-21 21:48:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k606-lakshmi-mechanical-keyboard.json
+2026-03-21 21:48:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json
+2026-03-21 21:48:22 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-03-21 21:48:22 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-21 21:48:22 [debug]: [PcExpressScraper] JSON success: RAZER ORNATA V3 X Low Profile Keyboard
+2026-03-21 21:48:22 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-03-21 21:48:22 [debug]: [PcWorxScraper] JSON success: Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch
+2026-03-21 21:48:22 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-03-21 21:48:22 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:24 [debug]: → GET /api/categories/products
+2026-03-21 21:48:25 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-03-21 21:48:26 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-03-21 21:48:26 [debug]: → GET /api/search/stores
+2026-03-21 21:48:26 [debug]: → GET /api/search/stores
+2026-03-21 21:48:26 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-03-21 21:48:26 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-03-21 21:48:27 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aula-ak205-usb-full-sized-wired-keyboard-black.json
+2026-03-21 21:48:27 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-mk215-920-007444-wireless-keyboard-mouse-combo-black-pcx-exclusive.json
+2026-03-21 21:48:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-03-21 21:48:27 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-mitra-k551-1-single-black-mechanical-keyboard.json
+2026-03-21 21:48:27 [debug]: [PcExpressScraper] JSON success: LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)
+2026-03-21 21:48:27 [debug]: [PcExpressScraper] JSON success: AULA AK205 USB Full-Sized Wired Keyboard - Black
+2026-03-21 21:48:27 [debug]: → GET /api/categories/products
+2026-03-21 21:48:27 [debug]: → GET /api/categories/products
+2026-03-21 21:48:28 [debug]: → GET /api/categories/products
+2026-03-21 21:48:28 [debug]: → GET /api/categories/products
+2026-03-21 21:48:28 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-03-21 21:48:28 [debug]: [PcWorxScraper] JSON success: Redragon Mitra K551-1 Single Black Mechanical Keyboard
+2026-03-21 21:48:31 [info]: [Backend Cache SET] "keyboard" — 15 products cached
+2026-03-21 21:48:31 [info]: [SearchService] Raw products: 15
+2026-03-21 21:48:31 [info]: [SearchService] Unique products after dedup: 15
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "RAZER ORNATA V3 X Low Profile Keyboard" (PCExpress)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)" (PCExpress)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "AULA AK205 USB Full-Sized Wired Keyboard - Black" (PCExpress)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-21 21:48:31 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Mitra K551-1 Single Black Mechanical Keyboard" (PCWorx)
+2026-03-21 21:48:31 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-21 21:48:31 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:48:31 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:48:31 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:48:32 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:48:32 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 21:48:32 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:48:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:48:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:48:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:48:33 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 21:48:33 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:48:34 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:48:34 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:48:34 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:48:34 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 21:48:34 [info]: [SearchService] Saved 15 products for search #9ce8e45c-cbd1-46bb-9ca9-b674a55a8274
+2026-03-21 21:51:05 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-21 21:56:05 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-21 22:06:05 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-21 23:40:26 [debug]: → GET /api/auth/me
+2026-03-21 23:40:26 [debug]: → GET /api/cart
+2026-03-21 23:40:28 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:40:28 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:40:28 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:40:28 [info]: [CartController] Cart retrieved: null
+2026-03-21 23:40:28 [debug]: → GET /api/cart
+2026-03-21 23:40:28 [debug]: → GET /api/auth/me
+2026-03-21 23:40:28 [debug]: → GET /api/categories/products
+2026-03-21 23:40:28 [debug]: → GET /api/categories/products
+2026-03-21 23:40:28 [debug]: → GET /api/categories/products
+2026-03-21 23:40:28 [debug]: → GET /api/categories/products
+2026-03-21 23:40:28 [debug]: → GET /api/categories/products
+2026-03-21 23:40:28 [debug]: → GET /api/categories/products
+2026-03-21 23:40:28 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:40:28 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:40:29 [debug]: → GET /api/categories/products
+2026-03-21 23:40:29 [debug]: → GET /api/categories/products
+2026-03-21 23:40:29 [debug]: → GET /api/categories/products
+2026-03-21 23:40:29 [debug]: → GET /api/categories/products
+2026-03-21 23:40:29 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:40:29 [info]: [CartController] Cart retrieved: null
+2026-03-21 23:42:10 [debug]: → GET /api/search/stores
+2026-03-21 23:42:10 [debug]: → GET /api/search/stores
+2026-03-21 23:42:19 [debug]: → GET /api/search
+2026-03-21 23:42:20 [info]: [SearchService] Search #6d6c1720-9b82-48e3-8034-af56e4a2da10 - "cpu"
+2026-03-21 23:42:20 [info]: [Backend Cache MISS] Scraping: "cpu"...
+2026-03-21 23:42:21 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-21 23:42:21 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-21 23:42:21 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=cpu&resources[type]=product&resources[limit]=10
+2026-03-21 23:42:27 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-21 23:42:27 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-21 23:42:27 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-21 23:42:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-360r-v2-cpu-cooler-copy.json
+2026-03-21 23:42:30 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-c240-cpu-cooler.json
+2026-03-21 23:42:31 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xigmatek-air-killer-arctic-cpu-cooler.json
+2026-03-21 23:42:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/be-quiet-dark-rock-pro-4-cpu-air-cooler-fan.json
+2026-03-21 23:42:31 [debug]: [VillmanScraper] JSON success: MSI MPG CORE LIQUID K240 CPU Cooler
+2026-03-21 23:42:31 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+2026-03-21 23:42:31 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/thermaltake-ux100-argb-lighting-cpu-cooler.json
+2026-03-21 23:42:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/gigabyte-gp-aorus-waterforce-x-ii-240-aorus-waterforce-240mm-aio-liquid-cpu-cool.json
+2026-03-21 23:42:32 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/antec-a30-neo-cpu-cooler-fan.json
+2026-03-21 23:42:32 [debug]: [VillmanScraper] JSON success: Xigmatek Air Killer Arctic CPU Cooler
+2026-03-21 23:42:32 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID C240 CPU Cooler
+2026-03-21 23:42:32 [debug]: [PcExpressScraper] JSON success: BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan
+2026-03-21 23:42:32 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-3in1-combo-120mm-cpu-cooler-white.json
+2026-03-21 23:42:32 [debug]: [PcWorxScraper] JSON success: AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor
+2026-03-21 23:42:32 [debug]: [PcExpressScraper] JSON success: THERMALTAKE UX100 ARGB Lighting CPU Cooler
+2026-03-21 23:42:32 [debug]: [PcWorxScraper] JSON success: Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool
+2026-03-21 23:42:33 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F 3in1 Combo 120mm CPU Cooler White
+2026-03-21 23:42:33 [debug]: [PcExpressScraper] JSON success: ANTEC A30 NEO CPU Cooler Fan
+2026-03-21 23:42:37 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-mag-coreliquid-i240-aio-lc-argb-cpu-liquid-cooler-fan-black.json
+2026-03-21 23:42:37 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/deepcool-lq360-argb-w-lcd-screen-all-in-one-cpu-cooler-fan-black.json
+2026-03-21 23:42:37 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-m240-cpu-cooler.json
+2026-03-21 23:42:37 [debug]: [PcExpressScraper] JSON success: DEEPCOOL LQ360 ARGB W/ LCD SCREEN All-In-One CPU Cooler Fan - Black
+2026-03-21 23:42:37 [debug]: [PcExpressScraper] JSON success: MSI MAG CORELIQUID I240 AIO LC ARGB CPU Liquid Cooler Fan (Black)
+2026-03-21 23:42:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/msi-mag-coreliquid-240r-v2.json
+2026-03-21 23:42:38 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID M240 CPU Cooler
+2026-03-21 23:42:39 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-radiant-dc360-aio-argb-liquid-cpu-cooler-black.json
+2026-03-21 23:42:39 [debug]: [VillmanScraper] JSON success: MSI MAG CORELIQUID 240R V2 CPU Cooler
+2026-03-21 23:42:39 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-dm12f-single-fan-120mm-cpu-black.json
+2026-03-21 23:42:39 [debug]: [PcWorxScraper] JSON success: DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black
+2026-03-21 23:42:39 [debug]: [PcWorxScraper] JSON success: Darkflash DM12F Single Fan 120mm CPU Black
+2026-03-21 23:42:43 [info]: [Backend Cache SET] "cpu" — 15 products cached
+2026-03-21 23:42:43 [info]: [SearchService] Raw products: 15
+2026-03-21 23:42:43 [info]: [SearchService] Unique products after dedup: 15
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "THERMALTAKE UX100 ARGB Lighting CPU Cooler" (PCExpress)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "BE QUIET DARK ROCK PRO 4 CPU Air Cooler Fan" (PCExpress)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "ANTEC A30 NEO CPU Cooler Fan" (PCExpress)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "DEEPCOOL LQ360 ARGB W/ LCD SCREEN All-In-One CPU Cooler Fan - Black" (PCExpress)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID I240 AIO LC ARGB CPU Liquid Cooler Fan (Black)" (PCExpress)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID C240 CPU Cooler" (VillMan)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "Xigmatek Air Killer Arctic CPU Cooler" (VillMan)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG CORE LIQUID K240 CPU Cooler" (VillMan)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID M240 CPU Cooler" (VillMan)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "MSI MAG CORELIQUID 240R V2 CPU Cooler" (VillMan)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F 3in1 Combo 120mm CPU Cooler White" (PCWorx)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "Gigabyte GP-AORUS-WATERFORCE-X-II-240 Aorus WaterForce 240mm AIO Liquid CPU Cool" (PCWorx)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "AMD Ryzen 3 3200g 3.6GHz AM4 4-Core 4MB CPU Processor" (PCWorx)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash Radiant DC360 AIO ARGB Liquid CPU Cooler Black" (PCWorx)
+2026-03-21 23:42:43 [debug]: [SearchService] ✓ ACCEPTED: "Darkflash DM12F Single Fan 120mm CPU Black" (PCWorx)
+2026-03-21 23:42:43 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-21 23:42:43 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 23:42:43 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 23:42:44 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 23:42:44 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 23:42:44 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-21 23:42:44 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 23:42:44 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 23:42:45 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 23:42:45 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 23:42:45 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-21 23:42:45 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 23:42:45 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 23:42:46 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 23:42:46 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 23:42:46 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-21 23:42:46 [info]: [SearchService] Saved 15 products for search #6d6c1720-9b82-48e3-8034-af56e4a2da10
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:42 [debug]: → GET /api/categories/products
+2026-03-21 23:43:48 [debug]: → GET /api/auth/google
+2026-03-21 23:43:52 [debug]: → GET /api/auth/google/callback
+2026-03-21 23:43:53 [debug]: → GET /api/cart
+2026-03-21 23:43:53 [debug]: → GET /api/auth/me
+2026-03-21 23:43:53 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:43:53 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:43:54 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:43:54 [info]: [CartController] Cart retrieved: null
+2026-03-21 23:43:54 [debug]: → GET /api/cart
+2026-03-21 23:43:54 [debug]: → GET /api/auth/me
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [debug]: → GET /api/categories/products
+2026-03-21 23:43:54 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:43:54 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:43:54 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:43:54 [info]: [CartController] Cart retrieved: null
+2026-03-21 23:54:52 [debug]: → GET /api/auth/me
+2026-03-21 23:54:52 [debug]: → GET /api/cart
+2026-03-21 23:54:53 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:54:53 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:54:53 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:54:53 [info]: [CartController] Cart retrieved: null
+2026-03-21 23:54:53 [debug]: → GET /api/cart
+2026-03-21 23:54:53 [debug]: → GET /api/auth/me
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [debug]: → GET /api/categories/products
+2026-03-21 23:54:53 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:54:53 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:54:54 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-21 23:54:54 [info]: [CartController] Cart retrieved: null
+2026-03-21 23:58:12 [info]: [DB] Supabase client created.
+2026-03-21 23:58:19 [info]: [DB] Supabase client created.
+2026-03-21 23:58:27 [info]: [DB] Supabase client created.
+2026-03-21 23:58:33 [info]: [DB] Supabase client created.
+2026-03-21 23:58:46 [info]: [DB] Supabase client created.
+2026-03-21 23:58:56 [info]: [DB] Supabase client created.
+2026-03-21 23:59:13 [info]: [DB] Supabase client created.
+2026-03-22 00:00:07 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-22 00:04:19 [debug]: → GET /api/categories/products
+2026-03-22 00:04:19 [debug]: → GET /api/categories/products
+2026-03-22 00:04:19 [debug]: → GET /api/categories/products
+2026-03-22 00:04:19 [debug]: → GET /api/categories/products
+2026-03-22 00:04:19 [debug]: → GET /api/categories/products
+2026-03-22 00:06:59 [debug]: → GET /api/auth/me
+2026-03-22 00:06:59 [debug]: → GET /api/cart
+2026-03-22 00:07:00 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:07:00 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:07:01 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:07:01 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:07:01 [debug]: → GET /api/cart
+2026-03-22 00:07:01 [debug]: → GET /api/auth/me
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [debug]: → GET /api/categories/products
+2026-03-22 00:07:01 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:07:01 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:07:01 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:07:01 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:07:08 [debug]: → GET /api/search/stores
+2026-03-22 00:07:08 [debug]: → GET /api/search
+2026-03-22 00:07:08 [debug]: → GET /api/search/stores
+2026-03-22 00:07:09 [info]: [SearchService] Search #90045491-2b41-48b6-bbe9-c8dfd4b02494 - "dgsgsg"
+2026-03-22 00:07:09 [info]: [Backend Cache MISS] Scraping: "dgsgsg"...
+2026-03-22 00:07:10 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=dgsgsg&resources[type]=product&resources[limit]=10
+2026-03-22 00:07:10 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=dgsgsg&resources[type]=product&resources[limit]=10
+2026-03-22 00:07:10 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=dgsgsg&resources[type]=product&resources[limit]=10
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:11 [debug]: → GET /api/categories/products
+2026-03-22 00:07:13 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-22 00:07:13 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=dgsgsg
+2026-03-22 00:07:13 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-22 00:07:13 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=dgsgsg
+2026-03-22 00:07:13 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-22 00:07:13 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=dgsgsg
+2026-03-22 00:07:22 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-22 00:07:25 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-22 00:07:28 [debug]: → GET /api/search
+2026-03-22 00:07:29 [info]: [SearchService] Search #83b0656c-5f65-4894-9100-599321a057f6 - "dgsgsg"
+2026-03-22 00:07:29 [info]: [Backend Cache MISS] Scraping: "dgsgsg"...
+2026-03-22 00:07:30 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=dgsgsg&resources[type]=product&resources[limit]=10
+2026-03-22 00:07:30 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=dgsgsg&resources[type]=product&resources[limit]=10
+2026-03-22 00:07:30 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=dgsgsg&resources[type]=product&resources[limit]=10
+2026-03-22 00:07:31 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-22 00:07:31 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=dgsgsg
+2026-03-22 00:07:31 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-22 00:07:31 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=dgsgsg
+2026-03-22 00:07:31 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-22 00:07:31 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=dgsgsg
+2026-03-22 00:07:32 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-22 00:07:41 [info]: [VillmanScraper] Fallback found 0 product URLs
+2026-03-22 00:07:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-22 00:07:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/huntkey-szm404-4-4-socket-surge-protect-power-strip.json
+2026-03-22 00:07:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-b175-usb-wireless-mouse.json
+2026-03-22 00:07:42 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-22 00:07:42 [debug]: [PcExpressScraper] JSON success: LOGITECH B175 USB Wireless Mouse
+2026-03-22 00:07:42 [debug]: [PcExpressScraper] JSON success: HUNTKEY SZM404-4 4-Socket Surge Protect Power Strip
+2026-03-22 00:07:42 [info]: [PcWorxScraper] Fallback found 0 product URLs
+2026-03-22 00:07:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-22 00:07:47 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-22 00:07:47 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-22 00:07:47 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-22 00:07:49 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-22 00:07:50 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-22 00:07:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/huntkey-szm404-4-4-socket-surge-protect-power-strip.json
+2026-03-22 00:07:51 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-b175-usb-wireless-mouse.json
+2026-03-22 00:07:51 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-22 00:07:51 [debug]: [PcExpressScraper] JSON success: LOGITECH B175 USB Wireless Mouse
+2026-03-22 00:07:51 [debug]: [PcExpressScraper] JSON success: HUNTKEY SZM404-4 4-Socket Surge Protect Power Strip
+2026-03-22 00:07:51 [info]: [Backend Cache SET] "dgsgsg" — 5 products cached
+2026-03-22 00:07:51 [info]: [SearchService] Raw products: 5
+2026-03-22 00:07:51 [info]: [SearchService] Unique products after dedup: 5
+2026-03-22 00:07:51 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-22 00:07:51 [debug]: [SearchService] ✗ REJECTED: "HUNTKEY SZM404-4 4-Socket Surge Protect Power Strip" (PCExpress)
+2026-03-22 00:07:51 [debug]: [SearchService] ✗ REJECTED: "LOGITECH B175 USB Wireless Mouse" (PCExpress)
+2026-03-22 00:07:51 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-22 00:07:51 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-22 00:07:51 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-03-22 00:07:51 [info]: [SearchService] Saved 0 products for search #90045491-2b41-48b6-bbe9-c8dfd4b02494
+2026-03-22 00:07:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-22 00:07:54 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-22 00:07:54 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-22 00:07:55 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-22 00:07:58 [info]: [Backend Cache SET] "dgsgsg" — 5 products cached
+2026-03-22 00:07:58 [info]: [SearchService] Raw products: 5
+2026-03-22 00:07:58 [info]: [SearchService] Unique products after dedup: 5
+2026-03-22 00:07:58 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-22 00:07:58 [debug]: [SearchService] ✗ REJECTED: "HUNTKEY SZM404-4 4-Socket Surge Protect Power Strip" (PCExpress)
+2026-03-22 00:07:58 [debug]: [SearchService] ✗ REJECTED: "LOGITECH B175 USB Wireless Mouse" (PCExpress)
+2026-03-22 00:07:58 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-22 00:07:58 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-22 00:07:58 [info]: [SearchService] Relevance filter: 0/5 products kept
+2026-03-22 00:07:58 [info]: [SearchService] Saved 0 products for search #83b0656c-5f65-4894-9100-599321a057f6
+2026-03-22 00:09:15 [debug]: → GET /api/recommendations
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/recommendations
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:15 [debug]: → GET /api/categories/products
+2026-03-22 00:09:42 [debug]: → GET /api/auth/me
+2026-03-22 00:09:42 [debug]: → GET /api/cart
+2026-03-22 00:09:43 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:09:43 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:09:43 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:09:43 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:09:43 [debug]: → GET /api/cart
+2026-03-22 00:09:43 [debug]: → GET /api/auth/me
+2026-03-22 00:09:43 [debug]: → GET /api/recommendations
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/recommendations
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [debug]: → GET /api/categories/products
+2026-03-22 00:09:43 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:09:43 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:09:43 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:09:43 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:09:58 [debug]: → GET /api/search/stores
+2026-03-22 00:09:58 [debug]: → GET /api/search
+2026-03-22 00:09:58 [info]: [SearchService] Search #d5fb7fdd-b99c-42b2-9a4a-ac863cd9f565 - "keyboard"
+2026-03-22 00:09:58 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-22 00:09:59 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-22 00:09:59 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-22 00:10:00 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-22 00:10:00 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-22 00:10:00 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-22 00:10:00 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-22 00:10:02 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-03-22 00:10:02 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-03-22 00:10:02 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json
+2026-03-22 00:10:02 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/razer-ornata-v3-x-low-profile-keyboard.json
+2026-03-22 00:10:02 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-03-22 00:10:02 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-03-22 00:10:02 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-03-22 00:10:03 [debug]: [PcExpressScraper] JSON success: RAZER ORNATA V3 X Low Profile Keyboard
+2026-03-22 00:10:03 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-03-22 00:10:03 [debug]: [VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard
+2026-03-22 00:10:03 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-22 00:10:03 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-03-22 00:10:04 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k606-lakshmi-mechanical-keyboard.json
+2026-03-22 00:10:04 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json
+2026-03-22 00:10:04 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-03-22 00:10:04 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard
+2026-03-22 00:10:04 [debug]: [PcWorxScraper] JSON success: Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch
+2026-03-22 00:10:04 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-03-22 00:10:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-03-22 00:10:07 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-03-22 00:10:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-03-22 00:10:07 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-mitra-k551-1-single-black-mechanical-keyboard.json
+2026-03-22 00:10:07 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-03-22 00:10:07 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-03-22 00:10:07 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-03-22 00:10:07 [debug]: [PcWorxScraper] JSON success: Redragon Mitra K551-1 Single Black Mechanical Keyboard
+2026-03-22 00:10:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aula-ak205-usb-full-sized-wired-keyboard-black.json
+2026-03-22 00:10:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-mk215-920-007444-wireless-keyboard-mouse-combo-black-pcx-exclusive.json
+2026-03-22 00:10:09 [debug]: [PcExpressScraper] JSON success: LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)
+2026-03-22 00:10:09 [debug]: [PcExpressScraper] JSON success: AULA AK205 USB Full-Sized Wired Keyboard - Black
+2026-03-22 00:10:11 [info]: [Backend Cache SET] "keyboard" — 15 products cached
+2026-03-22 00:10:11 [info]: [SearchService] Raw products: 15
+2026-03-22 00:10:11 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "RAZER ORNATA V3 X Low Profile Keyboard" (PCExpress)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)" (PCExpress)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "AULA AK205 USB Full-Sized Wired Keyboard - Black" (PCExpress)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-22 00:10:11 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Mitra K551-1 Single Black Mechanical Keyboard" (PCWorx)
+2026-03-22 00:10:11 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-22 00:10:11 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:12 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:15 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:16 [info]: [SearchService] Saved 15 products for search #d5fb7fdd-b99c-42b2-9a4a-ac863cd9f565
+2026-03-22 00:10:16 [debug]: → GET /api/search
+2026-03-22 00:10:16 [debug]: → POST /api/recommendations/track
+2026-03-22 00:10:17 [info]: [SearchService] Search #33644b9a-5e92-4bc6-a08c-521f4218df26 - "keyboard"
+2026-03-22 00:10:17 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-22 00:10:17 [info]: [SearchService] Raw products: 15
+2026-03-22 00:10:17 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "RAZER ORNATA V3 X Low Profile Keyboard" (PCExpress)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)" (PCExpress)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "AULA AK205 USB Full-Sized Wired Keyboard - Black" (PCExpress)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-22 00:10:17 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Mitra K551-1 Single Black Mechanical Keyboard" (PCWorx)
+2026-03-22 00:10:17 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-22 00:10:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:17 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
+2026-03-22 00:10:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:18 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:18 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:18 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:18 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:19 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:19 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:20 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:20 [info]: [SearchService] Saved 15 products for search #33644b9a-5e92-4bc6-a08c-521f4218df26
+2026-03-22 00:10:20 [debug]: → GET /api/search
+2026-03-22 00:10:20 [debug]: → POST /api/recommendations/track
+2026-03-22 00:10:21 [info]: [SearchService] Search #25428867-a3cd-4a45-a561-95a97db5682b - "keyboard"
+2026-03-22 00:10:21 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-22 00:10:21 [info]: [SearchService] Raw products: 15
+2026-03-22 00:10:21 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "RAZER ORNATA V3 X Low Profile Keyboard" (PCExpress)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)" (PCExpress)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "AULA AK205 USB Full-Sized Wired Keyboard - Black" (PCExpress)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-22 00:10:21 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Mitra K551-1 Single Black Mechanical Keyboard" (PCWorx)
+2026-03-22 00:10:21 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-22 00:10:21 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:21 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
+2026-03-22 00:10:21 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:21 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:21 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:22 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:22 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:22 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:22 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:22 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:23 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:23 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:23 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:23 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:23 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:24 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:25 [info]: [SearchService] Saved 15 products for search #25428867-a3cd-4a45-a561-95a97db5682b
+2026-03-22 00:10:25 [debug]: → GET /api/search
+2026-03-22 00:10:25 [debug]: → POST /api/recommendations/track
+2026-03-22 00:10:25 [info]: [SearchService] Search #51770059-fe9c-42e2-ba36-089d7dbd49c0 - "keyboard"
+2026-03-22 00:10:25 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-22 00:10:25 [info]: [SearchService] Raw products: 15
+2026-03-22 00:10:25 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "RAZER ORNATA V3 X Low Profile Keyboard" (PCExpress)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)" (PCExpress)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "AULA AK205 USB Full-Sized Wired Keyboard - Black" (PCExpress)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-22 00:10:25 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Mitra K551-1 Single Black Mechanical Keyboard" (PCWorx)
+2026-03-22 00:10:25 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-22 00:10:25 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:25 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
+2026-03-22 00:10:25 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:25 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:26 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:26 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:10:26 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:26 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:26 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:27 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:27 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:10:27 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:27 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:28 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:28 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:28 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:10:28 [info]: [SearchService] Saved 15 products for search #51770059-fe9c-42e2-ba36-089d7dbd49c0
+2026-03-22 00:10:28 [debug]: → POST /api/recommendations/track
+2026-03-22 00:10:29 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
+2026-03-22 00:10:30 [debug]: → GET /api/products/PCWorx/b0683ff4-5d7d-4f82-a133-1d7371cbe36f
+2026-03-22 00:10:30 [debug]: → GET /api/products/PCWorx/b0683ff4-5d7d-4f82-a133-1d7371cbe36f
+2026-03-22 00:10:31 [debug]: → GET /api/search/stores
+2026-03-22 00:10:31 [debug]: → POST /api/recommendations/track
+2026-03-22 00:10:31 [debug]: → POST /api/recommendations/track
+2026-03-22 00:10:31 [debug]: → GET /api/search/stores
+2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
+2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
+2026-03-22 00:10:33 [debug]: → GET /api/recommendations
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/recommendations
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:33 [debug]: → GET /api/categories/products
+2026-03-22 00:10:38 [debug]: → GET /api/auth/me
+2026-03-22 00:10:38 [debug]: → GET /api/cart
+2026-03-22 00:10:38 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:10:38 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:10:38 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:10:38 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:10:38 [debug]: → GET /api/cart
+2026-03-22 00:10:38 [debug]: → GET /api/auth/me
+2026-03-22 00:10:39 [debug]: → GET /api/recommendations
+2026-03-22 00:10:39 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:10:39 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:10:39 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:10:39 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:11:33 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-03-22 00:11:44 [info]: [DB] Supabase client created.
+2026-03-22 00:11:46 [info]: [DB] Supabase connection verified.
+2026-03-22 00:11:46 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-22 00:11:46 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-22 00:12:07 [debug]: → GET /api/cart
+2026-03-22 00:12:08 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:12:08 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:12:08 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:12:08 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:12:08 [debug]: → GET /api/cart
+2026-03-22 00:12:08 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:12:08 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:12:09 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:12:09 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:12:09 [debug]: → GET /api/auth/me
+2026-03-22 00:12:09 [debug]: → GET /api/auth/me
+2026-03-22 00:12:09 [debug]: → GET /api/recommendations
+2026-03-22 00:12:09 [debug]: → GET /api/categories/products
+2026-03-22 00:12:09 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:12:09 [debug]: → GET /api/categories/products
+2026-03-22 00:12:09 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:12:09 [debug]: → GET /api/categories/products
+2026-03-22 00:12:09 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:12:09 [debug]: → GET /api/categories/products
+2026-03-22 00:12:09 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:12:09 [debug]: → GET /api/categories/products
+2026-03-22 00:12:09 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:12:10 [debug]: → GET /api/auth/me
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 0 products for "tablet"
+2026-03-22 00:12:10 [debug]: → GET /api/categories/products
+2026-03-22 00:12:10 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 0 products for "tablet"
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:12:10 [debug]: → GET /api/categories/products
+2026-03-22 00:12:10 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 2 products for "desktop"
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:12:10 [debug]: → GET /api/categories/products
+2026-03-22 00:12:10 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:12:10 [debug]: → GET /api/categories/products
+2026-03-22 00:12:10 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:12:10 [debug]: → GET /api/categories/products
+2026-03-22 00:12:10 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 2 products for "desktop"
+2026-03-22 00:12:10 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:12:10 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (0 interactions) — serving trending
+2026-03-22 00:12:11 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:12:11 [debug]: → GET /api/recommendations
+2026-03-22 00:12:11 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (0 interactions) — serving trending
+2026-03-22 00:12:11 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:26:02 [debug]: → GET /api/recommendations
+2026-03-22 00:26:03 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (0 interactions) — serving trending
+2026-03-22 00:26:04 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:26:04 [debug]: → GET /api/recommendations
+2026-03-22 00:26:04 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (0 interactions) — serving trending
+2026-03-22 00:26:04 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:32:47 [debug]: → GET /api/search/stores
+2026-03-22 00:32:47 [debug]: → GET /api/search/stores
+2026-03-22 00:32:47 [debug]: → GET /api/search
+2026-03-22 00:32:50 [debug]: → GET /api/recommendations
+2026-03-22 00:32:50 [debug]: → GET /api/categories/products
+2026-03-22 00:32:50 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:32:50 [debug]: → GET /api/categories/products
+2026-03-22 00:32:50 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:32:51 [debug]: → GET /api/categories/products
+2026-03-22 00:32:51 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:32:51 [debug]: → GET /api/categories/products
+2026-03-22 00:32:51 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:32:51 [info]: [SearchService] Search #be0fe639-3e04-4c4d-9fb6-ab384dd92223 - "tablet"
+2026-03-22 00:32:51 [info]: [Backend Cache MISS] Scraping: "tablet"...
+2026-03-22 00:32:54 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:32:54 [info]: [CategoryRoute] Found 0 products for "tablet"
+2026-03-22 00:32:54 [debug]: → GET /api/categories/products
+2026-03-22 00:32:54 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:32:55 [debug]: → GET /api/categories/products
+2026-03-22 00:32:55 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:32:56 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:32:56 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:32:56 [info]: [CategoryRoute] Found 2 products for "desktop"
+2026-03-22 00:32:56 [debug]: → GET /api/categories/products
+2026-03-22 00:32:56 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:32:57 [debug]: → GET /api/categories/products
+2026-03-22 00:32:57 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:32:57 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:32:57 [debug]: → GET /api/categories/products
+2026-03-22 00:32:57 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:32:57 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (0 interactions) — serving trending
+2026-03-22 00:32:57 [info]: [CategoryRoute] Found 0 products for "tablet"
+2026-03-22 00:32:57 [debug]: → GET /api/categories/products
+2026-03-22 00:32:57 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:32:58 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:32:58 [info]: [CategoryRoute] Found 2 products for "desktop"
+2026-03-22 00:32:58 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:32:58 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:32:58 [debug]: → GET /api/recommendations
+2026-03-22 00:32:59 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (0 interactions) — serving trending
+2026-03-22 00:32:59 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:33:00 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=tablet&resources[type]=product&resources[limit]=10
+2026-03-22 00:33:00 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=tablet&resources[type]=product&resources[limit]=10
+2026-03-22 00:33:00 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=tablet&resources[type]=product&resources[limit]=10
+2026-03-22 00:33:04 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-22 00:33:04 [info]: [PcExpressScraper] API found 4 product URLs
+2026-03-22 00:33:07 [debug]: → GET /api/search
+2026-03-22 00:33:07 [info]: [SearchService] Search #3b443b91-98da-4db8-8a20-077e345e1ff1 - "tablet"
+2026-03-22 00:33:07 [info]: [Backend Cache MISS] Scraping: "tablet"...
+2026-03-22 00:33:08 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-22 00:33:10 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=tablet&resources[type]=product&resources[limit]=10
+2026-03-22 00:33:10 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=tablet&resources[type]=product&resources[limit]=10
+2026-03-22 00:33:10 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=tablet&resources[type]=product&resources[limit]=10
+2026-03-22 00:33:10 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-22 00:33:11 [info]: [PcExpressScraper] API found 4 product URLs
+2026-03-22 00:33:11 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-22 00:33:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-11inch-wuxga-ips-400nits-90hz-touch-mediatek-helio-g88-8gb-128gb-arm-mali-g52-mc2-gpu-android-13.json
+2026-03-22 00:33:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xiaomi-pad-5-11inch-wqhd-120hz-qualcomm-snapdragon-860-6gb-ram-256gb-ssd-adreno-640-android-11.json
+2026-03-22 00:33:15 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-zadb0149ph-11inch-wuxga-ips-400nits-90hz-mediatek-helio-g88-8gb-128gb-mali-g52-mc2-gpu-android-13.json
+2026-03-22 00:33:16 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11  11inch WUXGA IPS 400nits 90Hz Touch | MediaTek Helio G88 | 8GB | 128GB | ARM Mali-G52 MC2 GPU | Android 13
+2026-03-22 00:33:16 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11 ZADB0149PH 11inch WUXGA IPS 400nits 90Hz | MediaTek Helio G88 | 8GB | 128GB | Mali-G52 MC2 GPU | Android 13
+2026-03-22 00:33:16 [debug]: [VillmanScraper] JSON success: Xiaomi Pad 5 11inch WQHD 120Hz | Qualcomm Snapdragon 860 | 6GB RAM | 256GB SSD | Adreno 640 | Android 11
+2026-03-22 00:33:20 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/wacom-ctl-4100-k0-cx-intuos-small-black-graphic-drawing-pen-tablet.json
+2026-03-22 00:33:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/xencelabs-drawing-tablet-small-portable-wireless-graphic-tablets-ultrathin-pen-tablet.json
+2026-03-22 00:33:22 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/wacom-ctl-6100wl-k0-cx-intuos-black-medium-with-bluetooth-creative-pen-tablet.json
+2026-03-22 00:33:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-tab-8-8-zaef0080ph-12-256gb-eclipse-black.json
+2026-03-22 00:33:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-pad2-6gb-128gb-imagination-gray-tablet.json
+2026-03-22 00:33:22 [debug]: [PcWorxScraper] JSON success: Wacom Ctl-4100/K0-Cx Intuos Small Black Graphic Drawing Pen Tablet
+2026-03-22 00:33:22 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-idea-tab-pro-zae40152ph-8-256gb-grey.json
+2026-03-22 00:33:23 [debug]: [PcWorxScraper] JSON success: Xencelabs Drawing Tablet Small, Portable Wireless Graphic Tablets, Ultrathin Pen Tablet
+2026-03-22 00:33:23 [debug]: [PcWorxScraper] JSON success: Wacom Ctl-6100wl/K0-Cx Intuos Black Medium With Bluetooth Creative Pen Tablet
+2026-03-22 00:33:23 [debug]: [PcExpressScraper] JSON success: REALME Pad 2 (6GB+128GB) Imagination Gray Tablet
+2026-03-22 00:33:23 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Tab 8.8 ZAEF0080PH (12+256GB) - Eclipse Black
+2026-03-22 00:33:23 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/xiaomi-pad-5-11inch-wqhd-120hz-qualcomm-snapdragon-860-6gb-ram-256gb-ssd-adreno-640-android-11.json
+2026-03-22 00:33:23 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-zadb0149ph-11inch-wuxga-ips-400nits-90hz-mediatek-helio-g88-8gb-128gb-mali-g52-mc2-gpu-android-13.json
+2026-03-22 00:33:24 [debug]: [PcExpressScraper] JSON success: LENOVO Idea Tab Pro ZAE40152PH (8+256GB) - Grey
+2026-03-22 00:33:24 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/lenovo-tab-m11-11inch-wuxga-ips-400nits-90hz-touch-mediatek-helio-g88-8gb-128gb-arm-mali-g52-mc2-gpu-android-13.json
+2026-03-22 00:33:24 [debug]: [VillmanScraper] JSON success: Xiaomi Pad 5 11inch WQHD 120Hz | Qualcomm Snapdragon 860 | 6GB RAM | 256GB SSD | Adreno 640 | Android 11
+2026-03-22 00:33:24 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11 ZADB0149PH 11inch WUXGA IPS 400nits 90Hz | MediaTek Helio G88 | 8GB | 128GB | Mali-G52 MC2 GPU | Android 13
+2026-03-22 00:33:24 [debug]: [VillmanScraper] JSON success: Lenovo Tab M11  11inch WUXGA IPS 400nits 90Hz Touch | MediaTek Helio G88 | 8GB | 128GB | ARM Mali-G52 MC2 GPU | Android 13
+2026-03-22 00:33:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-idea-tab-pro-zae40152ph-8-256gb-grey.json
+2026-03-22 00:33:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-pad2-6gb-128gb-imagination-gray-tablet.json
+2026-03-22 00:33:28 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-legion-tab-8-8-zaef0080ph-12-256gb-eclipse-black.json
+2026-03-22 00:33:28 [debug]: [PcExpressScraper] JSON success: LENOVO Idea Tab Pro ZAE40152PH (8+256GB) - Grey
+2026-03-22 00:33:28 [debug]: [PcExpressScraper] JSON success: REALME Pad 2 (6GB+128GB) Imagination Gray Tablet
+2026-03-22 00:33:28 [debug]: [PcExpressScraper] JSON success: LENOVO Legion Tab 8.8 ZAEF0080PH (12+256GB) - Eclipse Black
+2026-03-22 00:33:30 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/wacom-ctl-4100-k0-cx-intuos-small-black-graphic-drawing-pen-tablet.json
+2026-03-22 00:33:30 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/wacom-ctl-6100wl-k0-cx-intuos-black-medium-with-bluetooth-creative-pen-tablet.json
+2026-03-22 00:33:30 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/xencelabs-drawing-tablet-small-portable-wireless-graphic-tablets-ultrathin-pen-tablet.json
+2026-03-22 00:33:31 [debug]: [PcWorxScraper] JSON success: Wacom Ctl-4100/K0-Cx Intuos Small Black Graphic Drawing Pen Tablet
+2026-03-22 00:33:31 [debug]: [PcWorxScraper] JSON success: Wacom Ctl-6100wl/K0-Cx Intuos Black Medium With Bluetooth Creative Pen Tablet
+2026-03-22 00:33:31 [debug]: [PcWorxScraper] JSON success: Xencelabs Drawing Tablet Small, Portable Wireless Graphic Tablets, Ultrathin Pen Tablet
+2026-03-22 00:33:37 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/mi-pad-5-6gb-256gb-cosmic-gray.json
+2026-03-22 00:33:38 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-tab-zaej0064ph-4gb-128gb-luna-grey.json
+2026-03-22 00:33:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/tab-m7-za570081ph.json
+2026-03-22 00:33:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/tab-m7-za570081ph.json
+2026-03-22 00:33:38 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/mi-pad-5-6gb-256gb-cosmic-gray.json
+2026-03-22 00:33:38 [debug]: [VillmanScraper] JSON success: Xiaomi Mi Pad 5 6GB/256GB
+2026-03-22 00:33:39 [debug]: [PcExpressScraper] JSON success: LENOVO Tab ZAEJ0064PH (4GB+128GB) - Luna Grey
+2026-03-22 00:33:39 [debug]: [VillmanScraper] JSON success: Lenovo TAB M7 ZA570081PH 2GB/32GB 4G/LTE (Onyx Black)
+2026-03-22 00:33:39 [debug]: [VillmanScraper] JSON success: Lenovo TAB M7 ZA570081PH 2GB/32GB 4G/LTE (Onyx Black)
+2026-03-22 00:33:39 [debug]: [VillmanScraper] JSON success: Xiaomi Mi Pad 5 6GB/256GB
+2026-03-22 00:33:40 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/xencelabs-graphic-tablet-medium-wireless-drawing-tablet-with-2-battery-free-digital-pen.json
+2026-03-22 00:33:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/xencelabs-graphic-tablet-medium-wireless-drawing-tablet-with-2-battery-free-digital-pen.json
+2026-03-22 00:33:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-tab-zaej0064ph-4gb-128gb-luna-grey.json
+2026-03-22 00:33:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/wacom-ctl-472-k0-c-small-pen-tablet.json
+2026-03-22 00:33:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/wacom-ctl-472-k0-c-small-pen-tablet.json
+2026-03-22 00:33:42 [debug]: [PcWorxScraper] JSON success: Xencelabs Graphic Tablet Medium, Wireless Drawing Tablet with 2 Battery-Free Digital Pen
+2026-03-22 00:33:42 [debug]: [PcWorxScraper] JSON success: Wacom CTL-472/K0-C Small Pen Tablet
+2026-03-22 00:33:42 [debug]: [PcWorxScraper] JSON success: Wacom CTL-472/K0-C Small Pen Tablet
+2026-03-22 00:33:42 [debug]: [PcWorxScraper] JSON success: Xencelabs Graphic Tablet Medium, Wireless Drawing Tablet with 2 Battery-Free Digital Pen
+2026-03-22 00:33:42 [debug]: [PcExpressScraper] JSON success: LENOVO Tab ZAEJ0064PH (4GB+128GB) - Luna Grey
+2026-03-22 00:33:47 [info]: [Backend Cache SET] "tablet" — 14 products cached
+2026-03-22 00:33:47 [info]: [SearchService] Raw products: 14
+2026-03-22 00:33:47 [info]: [SearchService] Unique products after dedup: 14
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "REALME Pad 2 (6GB+128GB) Imagination Gray Tablet" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "LENOVO Idea Tab Pro ZAE40152PH (8+256GB) - Grey" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "LENOVO Legion Tab 8.8 ZAEF0080PH (12+256GB) - Eclipse Black" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "LENOVO Tab ZAEJ0064PH (4GB+128GB) - Luna Grey" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Pad 5 11inch WQHD 120Hz | Qualcomm Snapdragon 860 | 6GB RAM | 256GB SSD | Adreno 640 | Android 11" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Lenovo Tab M11  11inch WUXGA IPS 400nits 90Hz Touch | MediaTek Helio G88 | 8GB | 128GB | ARM Mali-G52 MC2 GPU | Android 13" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Lenovo Tab M11 ZADB0149PH 11inch WUXGA IPS 400nits 90Hz | MediaTek Helio G88 | 8GB | 128GB | Mali-G52 MC2 GPU | Android 13" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Lenovo TAB M7 ZA570081PH 2GB/32GB 4G/LTE (Onyx Black)" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Mi Pad 5 6GB/256GB" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Wacom Ctl-4100/K0-Cx Intuos Small Black Graphic Drawing Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Wacom Ctl-6100wl/K0-Cx Intuos Black Medium With Bluetooth Creative Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Xencelabs Drawing Tablet Small, Portable Wireless Graphic Tablets, Ultrathin Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Xencelabs Graphic Tablet Medium, Wireless Drawing Tablet with 2 Battery-Free Digital Pen" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Wacom CTL-472/K0-C Small Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [info]: [SearchService] Relevance filter: 6/14 products kept
+2026-03-22 00:33:47 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:33:47 [info]: [Backend Cache SET] "tablet" — 14 products cached
+2026-03-22 00:33:47 [info]: [SearchService] Raw products: 14
+2026-03-22 00:33:47 [info]: [SearchService] Unique products after dedup: 14
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "REALME Pad 2 (6GB+128GB) Imagination Gray Tablet" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "LENOVO Idea Tab Pro ZAE40152PH (8+256GB) - Grey" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "LENOVO Legion Tab 8.8 ZAEF0080PH (12+256GB) - Eclipse Black" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "LENOVO Tab ZAEJ0064PH (4GB+128GB) - Luna Grey" (PCExpress)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Pad 5 11inch WQHD 120Hz | Qualcomm Snapdragon 860 | 6GB RAM | 256GB SSD | Adreno 640 | Android 11" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Lenovo Tab M11  11inch WUXGA IPS 400nits 90Hz Touch | MediaTek Helio G88 | 8GB | 128GB | ARM Mali-G52 MC2 GPU | Android 13" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Lenovo Tab M11 ZADB0149PH 11inch WUXGA IPS 400nits 90Hz | MediaTek Helio G88 | 8GB | 128GB | Mali-G52 MC2 GPU | Android 13" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Lenovo TAB M7 ZA570081PH 2GB/32GB 4G/LTE (Onyx Black)" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Mi Pad 5 6GB/256GB" (VillMan)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Wacom Ctl-4100/K0-Cx Intuos Small Black Graphic Drawing Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Wacom Ctl-6100wl/K0-Cx Intuos Black Medium With Bluetooth Creative Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Xencelabs Drawing Tablet Small, Portable Wireless Graphic Tablets, Ultrathin Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Xencelabs Graphic Tablet Medium, Wireless Drawing Tablet with 2 Battery-Free Digital Pen" (PCWorx)
+2026-03-22 00:33:47 [debug]: [SearchService] ✓ ACCEPTED: "Wacom CTL-472/K0-C Small Pen Tablet" (PCWorx)
+2026-03-22 00:33:47 [info]: [SearchService] Relevance filter: 6/14 products kept
+2026-03-22 00:33:47 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:33:47 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:47 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:48 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:48 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:48 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:48 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:48 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:48 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:49 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:49 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:33:50 [info]: [SearchService] Saved 6 products for search #be0fe639-3e04-4c4d-9fb6-ab384dd92223
+2026-03-22 00:33:50 [info]: [SearchService] Saved 6 products for search #3b443b91-98da-4db8-8a20-077e345e1ff1
+2026-03-22 00:33:50 [debug]: → POST /api/recommendations/track
+2026-03-22 00:33:50 [debug]: → POST /api/recommendations/track
+2026-03-22 00:33:50 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:33:50 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:35:57 [debug]: → GET /api/search/stores
+2026-03-22 00:35:57 [debug]: → GET /api/search
+2026-03-22 00:35:58 [debug]: → GET /api/search/stores
+2026-03-22 00:35:59 [info]: [SearchService] Search #d4fc8a51-c7c2-46bf-8fb6-69ac5ca6f47d - "desktop"
+2026-03-22 00:35:59 [info]: [Backend Cache MISS] Scraping: "desktop"...
+2026-03-22 00:35:59 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=desktop&resources[type]=product&resources[limit]=10
+2026-03-22 00:36:00 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=desktop&resources[type]=product&resources[limit]=10
+2026-03-22 00:36:00 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=desktop&resources[type]=product&resources[limit]=10
+2026-03-22 00:36:00 [debug]: → GET /api/recommendations
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:36:00 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-22 00:36:00 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-22 00:36:00 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-22 00:36:00 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:36:00 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:36:00 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:36:00 [info]: [CategoryRoute] Found 2 products for "desktop"
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:36:00 [debug]: → GET /api/categories/products
+2026-03-22 00:36:00 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:36:01 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:36:01 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (2 interactions) — serving trending
+2026-03-22 00:36:01 [debug]: → GET /api/categories/products
+2026-03-22 00:36:01 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:36:01 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:36:01 [debug]: → GET /api/categories/products
+2026-03-22 00:36:01 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:36:01 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:36:01 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:36:01 [info]: [CategoryRoute] Found 2 products for "desktop"
+2026-03-22 00:36:01 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:36:01 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:36:01 [debug]: → GET /api/recommendations
+2026-03-22 00:36:02 [info]: [Rec] Cold start for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (2 interactions) — serving trending
+2026-03-22 00:36:03 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: trending)
+2026-03-22 00:36:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/adata-4gb-ddr4-2666mhz-dimm-desktop-memory.json
+2026-03-22 00:36:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/kingston-16gb-ddr5-1rx8-5600mt-s-non-ecc-unbuffered-dimm-cl46-kvr56u46bs8-16.json
+2026-03-22 00:36:03 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aula-n-521-rgb-desktop-speaker-2-0.json
+2026-03-22 00:36:03 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/tp-link-tl-sg1005d-5-port-gigabit-desktop-switch.json
+2026-03-22 00:36:03 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/lenovo-ideacentre-tower-08irr9-90xs0067ph-desktop.json
+2026-03-22 00:36:04 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/seagate-stlc16000402-16tb-one-touch-desktop-w-hub-usb3-0.json
+2026-03-22 00:36:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/dell-inspiron-5430-c7-all-in-one-desktop-dark-shadow-gray.json
+2026-03-22 00:36:04 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/team-group-vulcan-tuf-32gb-ddr4-3600mhz-gaming-alliance-desktop-memory.json
+2026-03-22 00:36:04 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/dell-24-ec24250-intel-core-7-all-in-one-desktop.json
+2026-03-22 00:36:04 [debug]: [VillmanScraper] JSON success: Adata 4GB DDR4 2666MHz DIMM Desktop Memory
+2026-03-22 00:36:04 [debug]: [PcWorxScraper] JSON success: Aula N-521 RGB Desktop Speaker 2.0
+2026-03-22 00:36:04 [debug]: [PcWorxScraper] JSON success: TP-Link TL-SG1005D  5-Port Gigabit Desktop Switch
+2026-03-22 00:36:04 [debug]: [VillmanScraper] JSON success: Kingston 16GB DDR5 (1RX8) 5600MT/s Non-ECC Unbuffered DIMM CL46 (KVR56U46BS8-16)
+2026-03-22 00:36:04 [debug]: [PcWorxScraper] JSON success: Seagate STLC16000402 16TB One Touch Desktop w/ Hub USB3.0
+2026-03-22 00:36:04 [debug]: [PcExpressScraper] JSON success: DELL Inspiron 5430 C7 All-in-One Desktop (Dark Shadow Gray)
+2026-03-22 00:36:04 [debug]: [VillmanScraper] JSON success: Team Group VULCAN TUF 32GB DDR4 3600MHz Gaming Alliance Desktop Memory
+2026-03-22 00:36:04 [debug]: [PcExpressScraper] JSON success: LENOVO IdeaCentre Tower 08iRR9 - (90XS0067PH) Desktop
+2026-03-22 00:36:04 [debug]: [PcExpressScraper] JSON success: DELL 24" EC24250 Intel® Core™ 7 All-in-One Desktop
+2026-03-22 00:36:08 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/dell-tower-ect1250-intel-core-i5-desktop.json
+2026-03-22 00:36:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/msi-mpg-infinite-x3-ai-geforce-rtx-5070-ti-intel%C2%AE-core-ultra-7-gaming-desktop.json
+2026-03-22 00:36:09 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/seagate-stlc4000400-4tb-one-touch-desktop-w-hub-usb3-0.json
+2026-03-22 00:36:09 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/aula-wind-n-69-gaming-rgb-2-0-desktop-speaker.json
+2026-03-22 00:36:09 [debug]: [PcExpressScraper] JSON success: DELL TOWER ECT1250 Intel® Core™ i5 Desktop
+2026-03-22 00:36:10 [debug]: [PcWorxScraper] JSON success: Seagate STLC4000400  One Touch Desktop w/ Hub USB3.0 (4TB TO 20TB)
+2026-03-22 00:36:10 [debug]: [PcWorxScraper] JSON success: Aula Wind N-69 Gaming Rgb 2.0 Desktop Speaker
+2026-03-22 00:36:10 [debug]: [PcExpressScraper] JSON success: MSI MPG INFINITE X3 AI GeForce RTX™ 5070 Ti Intel® Core™ Ultra 7 Gaming Desktop
+2026-03-22 00:36:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-wind-n-69-gaming-rgb-2-0-desktop-speaker.json
+2026-03-22 00:36:10 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-n-189-rgb-desktop-speaker-2-1.json
+2026-03-22 00:36:10 [debug]: [VillmanScraper] JSON success: Aula N-189 RGB Desktop Speaker 2.1
+2026-03-22 00:36:10 [debug]: [VillmanScraper] JSON success: Aula Wind N-69 Gaming RGB 2.0 Desktop Speaker
+2026-03-22 00:36:13 [info]: [Backend Cache SET] "desktop" — 15 products cached
+2026-03-22 00:36:13 [info]: [SearchService] Raw products: 15
+2026-03-22 00:36:13 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "LENOVO IdeaCentre Tower 08iRR9 - (90XS0067PH) Desktop" (PCExpress)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "DELL Inspiron 5430 C7 All-in-One Desktop (Dark Shadow Gray)" (PCExpress)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "DELL 24" EC24250 Intel® Core™ 7 All-in-One Desktop" (PCExpress)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "DELL TOWER ECT1250 Intel® Core™ i5 Desktop" (PCExpress)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG INFINITE X3 AI GeForce RTX™ 5070 Ti Intel® Core™ Ultra 7 Gaming Desktop" (PCExpress)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Team Group VULCAN TUF 32GB DDR4 3600MHz Gaming Alliance Desktop Memory" (VillMan)
+2026-03-22 00:36:13 [debug]: [SearchService] ✗ REJECTED: "Kingston 16GB DDR5 (1RX8) 5600MT/s Non-ECC Unbuffered DIMM CL46 (KVR56U46BS8-16)" (VillMan)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Adata 4GB DDR4 2666MHz DIMM Desktop Memory" (VillMan)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Aula N-189 RGB Desktop Speaker 2.1" (VillMan)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Aula Wind N-69 Gaming RGB 2.0 Desktop Speaker" (VillMan)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Seagate STLC16000402 16TB One Touch Desktop w/ Hub USB3.0" (PCWorx)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link TL-SG1005D  5-Port Gigabit Desktop Switch" (PCWorx)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Aula N-521 RGB Desktop Speaker 2.0" (PCWorx)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Seagate STLC4000400  One Touch Desktop w/ Hub USB3.0 (4TB TO 20TB)" (PCWorx)
+2026-03-22 00:36:13 [debug]: [SearchService] ✓ ACCEPTED: "Aula Wind N-69 Gaming Rgb 2.0 Desktop Speaker" (PCWorx)
+2026-03-22 00:36:13 [info]: [SearchService] Relevance filter: 14/15 products kept
+2026-03-22 00:36:13 [info]: [SearchService] Sample rejected products for query "desktop":
+2026-03-22 00:36:13 [info]:   - Kingston 16GB DDR5 (1RX8) 5600MT/s Non-ECC Unbuffered DIMM CL46 (KVR56U46BS8-16)
+2026-03-22 00:36:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:13 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:14 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:14 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:15 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:16 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:16 [info]: [SearchService] Saved 14 products for search #d4fc8a51-c7c2-46bf-8fb6-69ac5ca6f47d
+2026-03-22 00:36:17 [debug]: → GET /api/search
+2026-03-22 00:36:17 [debug]: → POST /api/recommendations/track
+2026-03-22 00:36:17 [info]: [SearchService] Search #273feb6b-e706-4272-8c35-55d138522d5f - "desktop"
+2026-03-22 00:36:17 [info]: [Backend Cache HIT] Query: "desktop" (15 cached products)
+2026-03-22 00:36:17 [info]: [SearchService] Raw products: 15
+2026-03-22 00:36:17 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "LENOVO IdeaCentre Tower 08iRR9 - (90XS0067PH) Desktop" (PCExpress)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "DELL Inspiron 5430 C7 All-in-One Desktop (Dark Shadow Gray)" (PCExpress)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "DELL 24" EC24250 Intel® Core™ 7 All-in-One Desktop" (PCExpress)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "DELL TOWER ECT1250 Intel® Core™ i5 Desktop" (PCExpress)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "MSI MPG INFINITE X3 AI GeForce RTX™ 5070 Ti Intel® Core™ Ultra 7 Gaming Desktop" (PCExpress)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Team Group VULCAN TUF 32GB DDR4 3600MHz Gaming Alliance Desktop Memory" (VillMan)
+2026-03-22 00:36:17 [debug]: [SearchService] ✗ REJECTED: "Kingston 16GB DDR5 (1RX8) 5600MT/s Non-ECC Unbuffered DIMM CL46 (KVR56U46BS8-16)" (VillMan)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Adata 4GB DDR4 2666MHz DIMM Desktop Memory" (VillMan)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula N-189 RGB Desktop Speaker 2.1" (VillMan)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula Wind N-69 Gaming RGB 2.0 Desktop Speaker" (VillMan)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Seagate STLC16000402 16TB One Touch Desktop w/ Hub USB3.0" (PCWorx)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "TP-Link TL-SG1005D  5-Port Gigabit Desktop Switch" (PCWorx)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula N-521 RGB Desktop Speaker 2.0" (PCWorx)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Seagate STLC4000400  One Touch Desktop w/ Hub USB3.0 (4TB TO 20TB)" (PCWorx)
+2026-03-22 00:36:17 [debug]: [SearchService] ✓ ACCEPTED: "Aula Wind N-69 Gaming Rgb 2.0 Desktop Speaker" (PCWorx)
+2026-03-22 00:36:17 [info]: [SearchService] Relevance filter: 14/15 products kept
+2026-03-22 00:36:17 [info]: [SearchService] Sample rejected products for query "desktop":
+2026-03-22 00:36:17 [info]:   - Kingston 16GB DDR5 (1RX8) 5600MT/s Non-ECC Unbuffered DIMM CL46 (KVR56U46BS8-16)
+2026-03-22 00:36:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:17 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:36:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:17 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:18 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:18 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:36:18 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:18 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:18 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:19 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:36:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:19 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:20 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:36:20 [info]: [SearchService] Saved 14 products for search #273feb6b-e706-4272-8c35-55d138522d5f
+2026-03-22 00:36:20 [debug]: → POST /api/recommendations/track
+2026-03-22 00:36:20 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:37:41 [debug]: → GET /api/search/stores
+2026-03-22 00:37:41 [debug]: → GET /api/search
+2026-03-22 00:37:41 [debug]: → GET /api/search/stores
+2026-03-22 00:37:42 [info]: [SearchService] Search #7768fb4f-1c3c-47f0-8cb3-4cd7fa27ccbe - "smartphone"
+2026-03-22 00:37:42 [info]: [Backend Cache MISS] Scraping: "smartphone"...
+2026-03-22 00:37:43 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-22 00:37:43 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-22 00:37:43 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-22 00:37:43 [info]: [PcExpressScraper] API found 2 product URLs
+2026-03-22 00:37:43 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-22 00:37:43 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=smartphone
+2026-03-22 00:37:43 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-22 00:37:43 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=smartphone
+2026-03-22 00:37:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-13-pro-5g-12gb-256gb-emerald-green-cellular-phone-1.json
+2026-03-22 00:37:44 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-12-pro-plus-5g-12gb-512gb-submarine-blue.json
+2026-03-22 00:37:44 [debug]: [PcExpressScraper] JSON success: REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone
+2026-03-22 00:37:44 [debug]: [PcExpressScraper] JSON success: REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue
+2026-03-22 00:37:51 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-22 00:37:53 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-03-22 00:37:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-8-12gb-256gb-phantom-black-pp.json
+2026-03-22 00:37:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/redmi-note-12s-8gb-256gb.json
+2026-03-22 00:37:53 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7.json
+2026-03-22 00:37:53 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 8 12GB/256GB (Rebel Grey)
+2026-03-22 00:37:53 [debug]: [VillmanScraper] JSON success: Xiaomi Redmi Note 12s (8GB, 256GB)
+2026-03-22 00:37:53 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7
+2026-03-22 00:37:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdsqxcd-128g-256gg512g-gn6ma-extreme-pro-micro-sd-200mb-s-c10.json
+2026-03-22 00:37:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc3-064g-g46ag-64gb-ultra-dual-drive-go-usb-3-1-type-c-a.json
+2026-03-22 00:37:55 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc6-128g-g46-128gb-type-c-otg-usb-3-2-swivel-design-black-nasturtium-oran-yellow-daffodi.json
+2026-03-22 00:37:55 [debug]: [PcWorxScraper] JSON success: Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10
+2026-03-22 00:37:56 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A
+2026-03-22 00:37:56 [debug]: [PcWorxScraper] JSON success: SanDisk SDDDC6-128G-G46 128GB Type-C OTG USB 3.2 Swivel Design Black/Nasturtium Oran/Yellow Daffodi
+2026-03-22 00:37:58 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandsk-sdsqxav-1t00-gn6mn-1tb-extreme-micro-sd-160mbs-class-10-no-adapter.json
+2026-03-22 00:37:58 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc4-512g-g46gd-512gb-otg-luxe-type-c-3-1-gold.json
+2026-03-22 00:37:59 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold
+2026-03-22 00:37:59 [debug]: [PcWorxScraper] JSON success: Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter
+2026-03-22 00:37:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/motorola-mote-e40.json
+2026-03-22 00:37:59 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7-ultimate.json
+2026-03-22 00:37:59 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7 Ultimate 16GB | 512GB
+2026-03-22 00:37:59 [debug]: [VillmanScraper] JSON success: Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11
+2026-03-22 00:38:01 [debug]: → GET /api/search
+2026-03-22 00:38:01 [info]: [SearchService] Search #956514f2-3d7f-4082-9e4a-967262ddb170 - "smartphone"
+2026-03-22 00:38:01 [info]: [Backend Cache MISS] Scraping: "smartphone"...
+2026-03-22 00:38:02 [info]: [Backend Cache SET] "smartphone" — 12 products cached
+2026-03-22 00:38:02 [info]: [SearchService] Raw products: 12
+2026-03-22 00:38:02 [info]: [SearchService] Unique products after dedup: 12
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "SanDisk SDDDC6-128G-G46 128GB Type-C OTG USB 3.2 Swivel Design Black/Nasturtium Oran/Yellow Daffodi" (PCWorx)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-22 00:38:02 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-22 00:38:02 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-22 00:38:02 [info]: [SearchService] Saved 0 products for search #7768fb4f-1c3c-47f0-8cb3-4cd7fa27ccbe
+2026-03-22 00:38:02 [debug]: → POST /api/recommendations/track
+2026-03-22 00:38:02 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-22 00:38:02 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-22 00:38:02 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=smartphone&resources[type]=product&resources[limit]=10
+2026-03-22 00:38:03 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:38:03 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-22 00:38:03 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=smartphone
+2026-03-22 00:38:03 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-22 00:38:03 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=smartphone
+2026-03-22 00:38:03 [info]: [PcExpressScraper] API found 2 product URLs
+2026-03-22 00:38:05 [debug]: → GET /api/recommendations
+2026-03-22 00:38:05 [debug]: → GET /api/categories/products
+2026-03-22 00:38:05 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:38:05 [debug]: → GET /api/categories/products
+2026-03-22 00:38:05 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:38:05 [debug]: → GET /api/categories/products
+2026-03-22 00:38:05 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:38:05 [debug]: → GET /api/categories/products
+2026-03-22 00:38:05 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:38:06 [debug]: → GET /api/categories/products
+2026-03-22 00:38:06 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:38:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-12-pro-plus-5g-12gb-512gb-submarine-blue.json
+2026-03-22 00:38:06 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/realme-13-pro-5g-12gb-256gb-emerald-green-cellular-phone-1.json
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:38:06 [debug]: → GET /api/categories/products
+2026-03-22 00:38:06 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:38:06 [debug]: → GET /api/categories/products
+2026-03-22 00:38:06 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:38:06 [debug]: → GET /api/categories/products
+2026-03-22 00:38:06 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:38:06 [debug]: → GET /api/categories/products
+2026-03-22 00:38:06 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:38:06 [debug]: → GET /api/categories/products
+2026-03-22 00:38:06 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:38:06 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:38:06 [debug]: [PcExpressScraper] JSON success: REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone
+2026-03-22 00:38:06 [debug]: [PcExpressScraper] JSON success: REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue
+2026-03-22 00:38:07 [debug]: [Rec] No cart found for user — skipping cart strategy
+2026-03-22 00:38:07 [info]: [Rec] Candidates: 10 content, 0 collaborative
+2026-03-22 00:38:07 [info]: [Rec] Built 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (hybrid)
+2026-03-22 00:38:07 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:38:07 [debug]: → GET /api/recommendations
+2026-03-22 00:38:08 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:38:08 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:38:10 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-22 00:38:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/redmi-note-12s-8gb-256gb.json
+2026-03-22 00:38:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-8-12gb-256gb-phantom-black-pp.json
+2026-03-22 00:38:12 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7.json
+2026-03-22 00:38:13 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 8 12GB/256GB (Rebel Grey)
+2026-03-22 00:38:13 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7
+2026-03-22 00:38:13 [debug]: [VillmanScraper] JSON success: Xiaomi Redmi Note 12s (8GB, 256GB)
+2026-03-22 00:38:14 [info]: [PcWorxScraper] Fallback found 10 product URLs
+2026-03-22 00:38:15 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc6-128g-g46-128gb-type-c-otg-usb-3-2-swivel-design-black-nasturtium-oran-yellow-daffodi.json
+2026-03-22 00:38:15 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdsqxcd-128g-256gg512g-gn6ma-extreme-pro-micro-sd-200mb-s-c10.json
+2026-03-22 00:38:15 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc3-064g-g46ag-64gb-ultra-dual-drive-go-usb-3-1-type-c-a.json
+2026-03-22 00:38:16 [debug]: [PcWorxScraper] JSON success: SanDisk SDDDC6-128G-G46 128GB Type-C OTG USB 3.2 Swivel Design Black/Nasturtium Oran/Yellow Daffodi
+2026-03-22 00:38:16 [debug]: [PcWorxScraper] JSON success: Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10
+2026-03-22 00:38:16 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A
+2026-03-22 00:38:17 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/motorola-mote-e40.json
+2026-03-22 00:38:17 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/asus-rog-phone-7-ultimate.json
+2026-03-22 00:38:17 [debug]: [VillmanScraper] JSON success: Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11
+2026-03-22 00:38:17 [debug]: [VillmanScraper] JSON success: Asus ROG Phone 7 Ultimate 16GB | 512GB
+2026-03-22 00:38:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandisk-sdddc4-512g-g46gd-512gb-otg-luxe-type-c-3-1-gold.json
+2026-03-22 00:38:21 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/sandsk-sdsqxav-1t00-gn6mn-1tb-extreme-micro-sd-160mbs-class-10-no-adapter.json
+2026-03-22 00:38:22 [debug]: [PcWorxScraper] JSON success: Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter
+2026-03-22 00:38:22 [debug]: [PcWorxScraper] JSON success: Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold
+2026-03-22 00:38:23 [info]: [Backend Cache SET] "smartphone" — 12 products cached
+2026-03-22 00:38:23 [info]: [SearchService] Raw products: 12
+2026-03-22 00:38:23 [info]: [SearchService] Unique products after dedup: 12
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "REALME 13 Pro+5G (12GB+256GB) Emerald Green Cellular Phone" (PCExpress)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "REALME 12 Pro Plus 5G (12GB+512GB) Submarine Blue" (PCExpress)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Xiaomi Redmi Note 12s (8GB, 256GB)" (VillMan)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7" (VillMan)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 8 12GB/256GB (Rebel Grey)" (VillMan)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Asus ROG Phone 7 Ultimate 16GB | 512GB" (VillMan)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Motorola Mote E40 | 6.5inch IPS 90Hz | Octa core 1.8 GHz | 6GB RAM | 64GB ROM | Unisoc T700 | Mali G52 | 5000 mAh | Android 11" (VillMan)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "SanDisk SDDDC6-128G-G46 128GB Type-C OTG USB 3.2 Swivel Design Black/Nasturtium Oran/Yellow Daffodi" (PCWorx)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDSQXCD-128G/256gG512G-GN6MA Extreme Pro Micro SD 200MB/S / C10" (PCWorx)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC3-064G-G46AG 64GB Ultra Dual Drive Go USB 3.1 Type C/A" (PCWorx)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Sandsk SDSQXAV-1T00-GN6MN 1TB Extreme Micro SD 160MBs Class 10 No Adapter" (PCWorx)
+2026-03-22 00:38:23 [debug]: [SearchService] ✗ REJECTED: "Sandisk SDDDC4-512G-G46GD 512GB OTG Luxe Type-C 3.1 Gold" (PCWorx)
+2026-03-22 00:38:23 [info]: [SearchService] Relevance filter: 0/12 products kept
+2026-03-22 00:38:23 [info]: [SearchService] Saved 0 products for search #956514f2-3d7f-4082-9e4a-967262ddb170
+2026-03-22 00:38:23 [debug]: → POST /api/recommendations/track
+2026-03-22 00:38:24 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:38:36 [debug]: → GET /api/search/stores
+2026-03-22 00:38:36 [debug]: → GET /api/search
+2026-03-22 00:38:36 [debug]: → GET /api/search/stores
+2026-03-22 00:38:36 [info]: [SearchService] Search #1a06dc0b-b0d1-42a2-8e95-31914a900644 - "keyboard"
+2026-03-22 00:38:36 [info]: [Backend Cache MISS] Scraping: "keyboard"...
+2026-03-22 00:38:37 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-22 00:38:37 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-22 00:38:37 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=10
+2026-03-22 00:38:38 [info]: [VillmanScraper] API found 5 product URLs
+2026-03-22 00:38:38 [info]: [PcExpressScraper] API found 5 product URLs
+2026-03-22 00:38:38 [info]: [PcWorxScraper] API found 5 product URLs
+2026-03-22 00:38:39 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json
+2026-03-22 00:38:39 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json
+2026-03-22 00:38:39 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json
+2026-03-22 00:38:39 [debug]: [VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard
+2026-03-22 00:38:39 [debug]: [VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard
+2026-03-22 00:38:40 [debug]: [VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard
+2026-03-22 00:38:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/asus-tuf-gaming-k1-rgb-gaming-keyboard.json
+2026-03-22 00:38:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/razer-ornata-v3-x-low-profile-keyboard.json
+2026-03-22 00:38:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/razer-rz03-04460100-r3m1-ornata-v3-low-profile-gaming-keyboard.json
+2026-03-22 00:38:41 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-g713-wired-tactile-gaming-keyboard.json
+2026-03-22 00:38:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k606-lakshmi-mechanical-keyboard.json
+2026-03-22 00:38:41 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json
+2026-03-22 00:38:41 [debug]: [PcExpressScraper] JSON success: ASUS TUF Gaming K1 RGB Gaming Keyboard
+2026-03-22 00:38:41 [debug]: [PcExpressScraper] JSON success: RAZER ORNATA V3 X Low Profile Keyboard
+2026-03-22 00:38:42 [debug]: [PcWorxScraper] JSON success: Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch
+2026-03-22 00:38:42 [debug]: [PcExpressScraper] JSON success: LOGITECH G713 Wired (Tactile) Gaming Keyboard
+2026-03-22 00:38:42 [debug]: [PcWorxScraper] JSON success: Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard
+2026-03-22 00:38:42 [debug]: [PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard
+2026-03-22 00:38:44 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json
+2026-03-22 00:38:44 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json
+2026-03-22 00:38:44 [debug]: [VillmanScraper] JSON success: Aula F87 Mechanical Keyboard
+2026-03-22 00:38:44 [debug]: [VillmanScraper] JSON success: Aula F75 Mechanical Keyboard
+2026-03-22 00:38:45 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-mk215-920-007444-wireless-keyboard-mouse-combo-black-pcx-exclusive.json
+2026-03-22 00:38:45 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/aula-ak205-usb-full-sized-wired-keyboard-black.json
+2026-03-22 00:38:46 [debug]: [PcExpressScraper] JSON success: LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)
+2026-03-22 00:38:46 [debug]: [PcExpressScraper] JSON success: AULA AK205 USB Full-Sized Wired Keyboard - Black
+2026-03-22 00:38:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd108-mechanical-keyboard-brown-sugar-blue-milk-brown.json
+2026-03-22 00:38:46 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-mitra-k551-1-single-black-mechanical-keyboard.json
+2026-03-22 00:38:46 [debug]: [PcWorxScraper] JSON success: DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue
+2026-03-22 00:38:46 [debug]: [PcWorxScraper] JSON success: Redragon Mitra K551-1 Single Black Mechanical Keyboard
+2026-03-22 00:38:49 [info]: [Backend Cache SET] "keyboard" — 15 products cached
+2026-03-22 00:38:49 [info]: [SearchService] Raw products: 15
+2026-03-22 00:38:49 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "RAZER ORNATA V3 X Low Profile Keyboard" (PCExpress)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)" (PCExpress)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "AULA AK205 USB Full-Sized Wired Keyboard - Black" (PCExpress)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-22 00:38:49 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Mitra K551-1 Single Black Mechanical Keyboard" (PCWorx)
+2026-03-22 00:38:49 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-22 00:38:49 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:49 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:49 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:50 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:50 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:50 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:50 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:51 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:51 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:51 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:52 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:52 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:52 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:52 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:53 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:53 [info]: [SearchService] Saved 15 products for search #1a06dc0b-b0d1-42a2-8e95-31914a900644
+2026-03-22 00:38:53 [debug]: → GET /api/search
+2026-03-22 00:38:53 [debug]: → POST /api/recommendations/track
+2026-03-22 00:38:54 [info]: [SearchService] Search #c7b6651b-e88d-46fb-9c23-ca42bac30ffd - "keyboard"
+2026-03-22 00:38:54 [info]: [Backend Cache HIT] Query: "keyboard" (15 cached products)
+2026-03-22 00:38:54 [info]: [SearchService] Raw products: 15
+2026-03-22 00:38:54 [info]: [SearchService] Unique products after dedup: 15
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "ASUS TUF Gaming K1 RGB Gaming Keyboard" (PCExpress)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "RAZER ORNATA V3 X Low Profile Keyboard" (PCExpress)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH G713 Wired (Tactile) Gaming Keyboard" (PCExpress)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "LOGITECH MK215 (920-007444) Wireless (Keyboard+Mouse) Combo - Black (PCX Exclusive)" (PCExpress)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "AULA AK205 USB Full-Sized Wired Keyboard - Black" (PCExpress)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Aula F2058 Wired Mechanical Gaming Keyboard" (VillMan)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Aula AWK310 Bluetooth Keyboard" (VillMan)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Aula F3061 (Black) Membrane Keyboard" (VillMan)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Aula F87 Mechanical Keyboard" (VillMan)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Aula F75 Mechanical Keyboard" (VillMan)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard" (PCWorx)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Lakshmi K606 Detachable Wire Mechanical Keyboard Red Switch" (PCWorx)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Razer RZ03-04460100-R3M1 Ornata V3 Low Profile Gaming Keyboard" (PCWorx)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "DarkFlash GD108 Mechanical Keyboard Brown Sugar / Milk & Brown/ Blue" (PCWorx)
+2026-03-22 00:38:54 [debug]: [SearchService] ✓ ACCEPTED: "Redragon Mitra K551-1 Single Black Mechanical Keyboard" (PCWorx)
+2026-03-22 00:38:54 [info]: [SearchService] Relevance filter: 15/15 products kept
+2026-03-22 00:38:54 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:54 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:38:54 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:54 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:55 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:55 [debug]: [SearchService] Platform resolved: "PCExpress" → ID: b1ebdcf4-e478-4940-a8cc-074b777db0df
+2026-03-22 00:38:55 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:56 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:56 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:56 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:56 [debug]: [SearchService] Platform resolved: "VillMan" → ID: 13a93343-26ab-4e7c-ba20-2f38e7649d19
+2026-03-22 00:38:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:57 [debug]: [SearchService] Platform resolved: "PCWorx" → ID: 12096578-17a6-40ad-b71e-6179367faa33
+2026-03-22 00:38:58 [info]: [SearchService] Saved 15 products for search #c7b6651b-e88d-46fb-9c23-ca42bac30ffd
+2026-03-22 00:38:58 [debug]: → POST /api/recommendations/track
+2026-03-22 00:38:58 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:43 [debug]: → GET /api/recommendations
+2026-03-22 00:39:43 [debug]: → GET /api/categories/products
+2026-03-22 00:39:43 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:39:43 [debug]: → GET /api/categories/products
+2026-03-22 00:39:43 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:39:43 [debug]: → GET /api/categories/products
+2026-03-22 00:39:43 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:39:43 [debug]: → GET /api/categories/products
+2026-03-22 00:39:43 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:39:43 [debug]: → GET /api/categories/products
+2026-03-22 00:39:43 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:39:44 [debug]: → GET /api/categories/products
+2026-03-22 00:39:44 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:39:44 [debug]: → GET /api/categories/products
+2026-03-22 00:39:44 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:39:44 [debug]: → GET /api/categories/products
+2026-03-22 00:39:44 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:39:44 [debug]: → GET /api/categories/products
+2026-03-22 00:39:44 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:39:44 [debug]: → GET /api/categories/products
+2026-03-22 00:39:44 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:39:44 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:39:44 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:39:44 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:39:44 [debug]: → GET /api/recommendations
+2026-03-22 00:39:44 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:45 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:39:53 [debug]: → GET /api/search/stores
+2026-03-22 00:39:53 [debug]: → POST /api/recommendations/track
+2026-03-22 00:39:53 [debug]: → GET /api/search/stores
+2026-03-22 00:39:53 [debug]: → POST /api/recommendations/track
+2026-03-22 00:39:53 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:53 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:55 [debug]: → GET /api/products/PCExpress/e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-22 00:39:56 [debug]: → GET /api/products/PCExpress/e16a732e-938d-4000-b1f9-4035502e80cb
+2026-03-22 00:39:57 [debug]: → POST /api/recommendations/track
+2026-03-22 00:39:57 [debug]: → GET /api/search/stores
+2026-03-22 00:39:57 [debug]: → POST /api/recommendations/track
+2026-03-22 00:39:57 [debug]: → GET /api/search/stores
+2026-03-22 00:39:57 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:57 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:58 [debug]: → GET /api/recommendations
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:39:58 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:39:58 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:39:58 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:39:58 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:39:58 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:39:58 [debug]: → GET /api/categories/products
+2026-03-22 00:39:58 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:39:58 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:39:59 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:39:59 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:39:59 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:39:59 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:39:59 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:39:59 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:39:59 [debug]: → GET /api/recommendations
+2026-03-22 00:39:59 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:00 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:40:02 [debug]: → GET /api/auth/me
+2026-03-22 00:40:02 [debug]: → GET /api/cart
+2026-03-22 00:40:02 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:02 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:03 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:03 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:40:03 [debug]: → GET /api/cart
+2026-03-22 00:40:03 [debug]: → GET /api/auth/me
+2026-03-22 00:40:03 [debug]: → GET /api/recommendations
+2026-03-22 00:40:03 [debug]: → GET /api/categories/products
+2026-03-22 00:40:03 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:40:03 [debug]: → GET /api/categories/products
+2026-03-22 00:40:03 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:40:03 [debug]: → GET /api/categories/products
+2026-03-22 00:40:03 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:40:03 [debug]: → GET /api/categories/products
+2026-03-22 00:40:03 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:40:03 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:03 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:03 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:40:03 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:40:03 [debug]: → GET /api/categories/products
+2026-03-22 00:40:03 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:40:03 [debug]: → GET /api/categories/products
+2026-03-22 00:40:03 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:40:03 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:40:03 [debug]: → GET /api/categories/products
+2026-03-22 00:40:03 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:40:03 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:40:03 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:03 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:40:03 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:40:03 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:40:03 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:40:03 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:40:03 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:41:44 [info]: [Server] SIGINT received. Shutting down gracefully...
+2026-03-22 00:41:52 [info]: [DB] Supabase client created.
+2026-03-22 00:41:54 [info]: [DB] Supabase connection verified.
+2026-03-22 00:41:54 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-22 00:41:54 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-22 00:42:16 [debug]: → GET /api/auth/google
+2026-03-22 00:42:19 [debug]: → GET /api/auth/google/callback
+2026-03-22 00:42:22 [debug]: → GET /api/cart
+2026-03-22 00:42:22 [debug]: → GET /api/auth/me
+2026-03-22 00:42:22 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:22 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:22 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:22 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:42:22 [debug]: → GET /api/cart
+2026-03-22 00:42:22 [debug]: → GET /api/auth/me
+2026-03-22 00:42:22 [debug]: → GET /api/recommendations
+2026-03-22 00:42:22 [debug]: → GET /api/categories/products
+2026-03-22 00:42:22 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:42:22 [debug]: → GET /api/categories/products
+2026-03-22 00:42:22 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:42:22 [debug]: → GET /api/categories/products
+2026-03-22 00:42:22 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:42:22 [debug]: → GET /api/categories/products
+2026-03-22 00:42:22 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:42:22 [info]: [CartController] Getting cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:22 [info]: [Cart] Fetching cart for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:23 [info]: [Cart] No cart found for user: 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:23 [info]: [CartController] Cart retrieved: null
+2026-03-22 00:42:23 [debug]: → GET /api/categories/products
+2026-03-22 00:42:23 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:42:23 [debug]: → GET /api/categories/products
+2026-03-22 00:42:23 [debug]: [CategoryRoute] Fetching products for keyword: "smartphone" (limit: 8)
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:42:23 [debug]: → GET /api/categories/products
+2026-03-22 00:42:23 [debug]: [CategoryRoute] Fetching products for keyword: "laptop" (limit: 8)
+2026-03-22 00:42:23 [debug]: → GET /api/categories/products
+2026-03-22 00:42:23 [debug]: [CategoryRoute] Fetching products for keyword: "desktop" (limit: 8)
+2026-03-22 00:42:23 [debug]: → GET /api/categories/products
+2026-03-22 00:42:23 [debug]: [CategoryRoute] Fetching products for keyword: "tablet" (limit: 8)
+2026-03-22 00:42:23 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:42:23 [debug]: → GET /api/categories/products
+2026-03-22 00:42:23 [debug]: [CategoryRoute] Fetching products for keyword: "keyboard" (limit: 8)
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 0 products for "smartphone"
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 6 products for "laptop"
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 8 products for "desktop"
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 6 products for "tablet"
+2026-03-22 00:42:23 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:42:23 [debug]: → GET /api/recommendations
+2026-03-22 00:42:23 [info]: [CategoryRoute] Found 8 products for "keyboard"
+2026-03-22 00:42:24 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:42:24 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-22 00:42:51 [debug]: → GET /api/search/stores
+2026-03-22 00:42:51 [debug]: → GET /api/search/stores
+2026-03-22 00:42:51 [debug]: → GET /api/search
+2026-03-22 00:42:51 [info]: [SearchService] Search #decc7bad-ce22-4cf0-a3df-9bc32914fcbc - "egg"
+2026-03-22 00:42:51 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-22 00:42:52 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-22 00:42:52 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-22 00:42:52 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-22 00:42:53 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-22 00:42:53 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-22 00:42:53 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-22 00:42:53 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-22 00:42:53 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-22 00:42:53 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-22 00:43:00 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-22 00:43:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-03-22 00:43:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-22 00:43:03 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-03-22 00:43:03 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-03-22 00:43:03 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-22 00:43:03 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-22 00:43:04 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-22 00:43:05 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-03-22 00:43:05 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-03-22 00:43:06 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-22 00:43:06 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-03-22 00:43:07 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-22 00:43:07 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win
+2026-03-22 00:43:08 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-22 00:43:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-22 00:43:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-b175-usb-wireless-mouse.json
+2026-03-22 00:43:09 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/huntkey-szm404-4-4-socket-surge-protect-power-strip.json
+2026-03-22 00:43:09 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-22 00:43:09 [debug]: [PcExpressScraper] JSON success: HUNTKEY SZM404-4 4-Socket Surge Protect Power Strip
+2026-03-22 00:43:09 [debug]: [PcExpressScraper] JSON success: LOGITECH B175 USB Wireless Mouse
+2026-03-22 00:43:11 [debug]: → GET /api/search
+2026-03-22 00:43:11 [info]: [SearchService] Search #99e92a68-70cc-4121-84b5-9a622a7099bb - "egg"
+2026-03-22 00:43:11 [info]: [Backend Cache MISS] Scraping: "egg"...
+2026-03-22 00:43:12 [debug]: [PcExpressScraper] Calling API: https://pcx.com.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-22 00:43:12 [debug]: [VillmanScraper] Calling API: https://shop.villman.com/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-22 00:43:13 [debug]: [PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=egg&resources[type]=product&resources[limit]=10
+2026-03-22 00:43:13 [info]: [PcExpressScraper] API found 0 product URLs
+2026-03-22 00:43:13 [debug]: [PcExpressScraper] Fallback to search page: https://pcx.com.ph/search?type=product&q=egg
+2026-03-22 00:43:13 [info]: [VillmanScraper] API found 0 product URLs
+2026-03-22 00:43:13 [debug]: [VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=egg
+2026-03-22 00:43:13 [info]: [PcWorxScraper] API found 0 product URLs
+2026-03-22 00:43:13 [debug]: [PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=egg
+2026-03-22 00:43:13 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json
+2026-03-22 00:43:13 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json
+2026-03-22 00:43:14 [debug]: [PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop
+2026-03-22 00:43:14 [debug]: [PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop
+2026-03-22 00:43:24 [info]: [VillmanScraper] Fallback found 10 product URLs
+2026-03-22 00:43:26 [info]: [PcWorxScraper] Fallback found 1 product URLs
+2026-03-22 00:43:26 [info]: [Backend Cache SET] "egg" — 11 products cached
+2026-03-22 00:43:26 [info]: [SearchService] Raw products: 11
+2026-03-22 00:43:26 [info]: [SearchService] Unique products after dedup: 11
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "LOGITECH K120+B100 Keyboard and Mouse Combo" (PCExpress)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "HUNTKEY SZM404-4 4-Socket Surge Protect Power Strip" (PCExpress)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "LOGITECH B175 USB Wireless Mouse" (PCExpress)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop" (PCExpress)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop" (PCExpress)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD" (VillMan)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0075AU (Glacier Silver) 14-in Touch | Ryzen 5 8640HS | 16GB | 512 GB SSD|AMD Radeon Graphics | Win" (VillMan)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "HP Envy x360 14-fa0079AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11" (VillMan)
+2026-03-22 00:43:26 [debug]: [SearchService] ✗ REJECTED: "Simplus Air Fryer 4L Electric Fryer 2 Knobs Black" (PCWorx)
+2026-03-22 00:43:26 [info]: [SearchService] Relevance filter: 0/11 products kept
+2026-03-22 00:43:26 [info]: [SearchService] Saved 0 products for search #decc7bad-ce22-4cf0-a3df-9bc32914fcbc
+2026-03-22 00:43:26 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd.json
+2026-03-22 00:43:26 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0078au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-22 00:43:26 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/microsoft-windows-11-pro-64bit-eng-intl-1pk-dsp-oei-dvd-1.json
+2026-03-22 00:43:27 [debug]: → POST /api/recommendations/track
+2026-03-22 00:43:27 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-22 00:43:27 [debug]: [VillmanScraper] JSON success: HP Envy x360 14-fa0078AU (Glacier Silver) 14-in Touch | Ryzen 7 8840HS | 16GB | 1 TB SSD|AMD Radeon Graphics | Win 11
+2026-03-22 00:43:27 [debug]: [VillmanScraper] JSON success: Microsoft Windows 11 Pro 64Bit Eng Intl 1pk DSP OEI DVD
+2026-03-22 00:43:27 [debug]: [Rec] Tracked search for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
+2026-03-22 00:43:28 [debug]: [PcWorxScraper] Scraping JSON: https://pcworx.ph/products/simplus-air-fryer-4l-electric-fryer-2-knobs-black.json
+2026-03-22 00:43:29 [debug]: [PcWorxScraper] JSON success: Simplus Air Fryer 4L Electric Fryer 2 Knobs Black
+2026-03-22 00:43:31 [info]: [PcExpressScraper] Fallback found 10 product URLs
+2026-03-22 00:43:32 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json
+2026-03-22 00:43:33 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-22 00:43:33 [warn]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11) failed (attempt 1/3). Retrying in 2185ms. Error: page.goto: Target page, context or browser has been closed
+2026-03-22 00:43:33 [warn]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win) failed (attempt 1/3). Retrying in 2472ms. Error: page.evaluate: Target page, context or browser has been closed
+2026-03-22 00:43:34 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-k120-b100-keyboard-and-mouse-combo.json
+2026-03-22 00:43:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/huntkey-szm404-4-4-socket-surge-protect-power-strip.json
+2026-03-22 00:43:35 [debug]: [PcExpressScraper] Scraping JSON: https://pcx.com.ph/products/logitech-b175-usb-wireless-mouse.json
+2026-03-22 00:43:35 [debug]: [PcExpressScraper] JSON success: LOGITECH K120+B100 Keyboard and Mouse Combo
+2026-03-22 00:43:35 [debug]: [PcExpressScraper] JSON success: HUNTKEY SZM404-4 4-Socket Surge Protect Power Strip
+2026-03-22 00:43:35 [debug]: [PcExpressScraper] JSON success: LOGITECH B175 USB Wireless Mouse
+2026-03-22 00:43:36 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0079au-glacier-silver-14-in-touch-ryzen-7-8840hs-16gb-1-tb-ssd-amd-radeon-graphics-win-11.json
+2026-03-22 00:43:37 [debug]: [VillmanScraper] Scraping JSON: https://shop.villman.com/products/hp-envy-x360-14-fa0075au-glacier-silver-14-in-touch-ryzen-5-8640hs-16gb-512-gb-ssd-amd-radeon-graphics-win.json

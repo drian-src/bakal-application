@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { trackInteraction } from '../../core/services/apiService';
 import HomeHeader from '../home/sections/Header/HomeHeader';
 import { useCart } from '../../core/hooks/useCart';
 import { ConfirmDialog } from '../shared';
@@ -515,6 +516,12 @@ const CartPage = () => {
                         href={checkoutUrl}
                         target="_blank"
                         rel="noopener noreferrer"
+                        onClick={() => {
+                          // Track checkout click for recommendation engine — fire and forget
+                          if (item.productId) {
+                            trackInteraction('click', { productId: item.productId });
+                          }
+                        }}
                         style={{
                           display: 'inline-flex',
                           alignItems: 'center',
