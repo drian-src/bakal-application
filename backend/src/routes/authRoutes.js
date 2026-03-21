@@ -1,7 +1,6 @@
 'use strict';
 
 const express = require('express');
-const passport = require('passport');
 const authController = require('../controllers/authController');
 const { requireAuth } = require('../middleware/authMiddleware');
 const { authLimiter } = require('../middleware/rateLimiter');
@@ -13,15 +12,13 @@ router.post('/register', authLimiter, authController.register);
 router.post('/login', authLimiter, authController.login);
 
 // Google OAuth
-router.get('/google', passport.authenticate('google', { scope: ['profile', 'email'] }));
-router.get(
-  '/google/callback',
-  passport.authenticate('google', { session: false, failureRedirect: '/api/auth/google/failure' }),
-  authController.googleCallback
-);
-router.get('/google/failure', (req, res) => {
-  res.status(401).json({ success: false, message: 'Google authentication failed.' });
-});
+// GET /api/auth/google — initiates Google OAuth flow
+// No auth middleware — user is not logged in
+router.get('/google', authController.googleAuthRedirect);
+
+// GET /api/auth/google/callback — Google redirects here after consent
+// No auth middleware — user is not logged in yet
+router.get('/google/callback', authController.googleAuthCallback);
 
 // Protected
 router.get('/me', requireAuth, authController.getProfile);

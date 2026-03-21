@@ -353,30 +353,59 @@ const HomeHeader = ({ hideSearch = false }) => {
             aria-label="Profile"
             title="Go to profile"
             style={{
-              backgroundImage: user?.profilePhoto ? `url(${user.profilePhoto})` : 'none',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center',
-              color: user?.profilePhoto ? 'transparent' : 'inherit'
+              overflow: 'hidden',
+              position: 'relative',
+              background: 'transparent',
+              border: 'none',
+              cursor: 'pointer',
+              width: '40px',
+              height: '40px',
+              borderRadius: '50%',
+              padding: 0,
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
             }}
           >
-            {user?.profilePhoto ? '' : (
-              user ? (
-                user.name ? (
-                  user.name
-                    .split(' ')
-                    .slice(0, 2)
-                    .map(n => n[0])
-                    .join('')
-                    .toUpperCase()
-                ) : user.email ? (
-                  user.email[0].toUpperCase()
-                ) : (
-                  '?'
-                )
-              ) : (
-                '?'
-              )
-            )}
+            {/* Google profile picture — shown when avatarUrl exists */}
+            {user?.avatarUrl ? (
+              <img
+                src={user.avatarUrl}
+                alt={firstName ?? 'Profile'}
+                style={{
+                  width:        '100%',
+                  height:       '100%',
+                  objectFit:    'cover',
+                  borderRadius: '50%',
+                  display:      'block',
+                }}
+                onError={e => {
+                  // Google profile picture failed to load (expired URL, network error, etc.)
+                  // Hide the broken image and show the initial letter fallback instead
+                  e.currentTarget.style.display = 'none';
+                  const fallback = e.currentTarget.nextSibling;
+                  if (fallback) fallback.style.display = 'flex';
+                }}
+              />
+            ) : null}
+
+            {/* Initial letter fallback — shown when no avatarUrl OR image fails to load */}
+            <span
+              style={{
+                display: user?.avatarUrl ? 'none' : 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                width: '100%',
+                height: '100%',
+                background: 'var(--bg-secondary, #f3f4f6)',
+                borderRadius: '50%',
+                fontSize: '16px',
+                fontWeight: '600',
+                color: '#374151',
+              }}
+            >
+              {firstName ? firstName.charAt(0).toUpperCase() : '?'}
+            </span>
           </button>
         </div>
       </div>

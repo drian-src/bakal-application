@@ -582,3 +582,5 @@ Call log:
 2026-03-13 02:07:54 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
 2026-03-13 02:07:55 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
 2026-03-13 02:07:55 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-21 19:36:33 [error]: [DB] Supabase connection failed:
+2026-03-21 19:38:47 [error]: [DB] Supabase connection failed:

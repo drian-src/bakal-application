@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import AuthLayout from '../layouts/AuthLayout';
 import { Logo, Input, Button } from '../shared';
-import PasswordStrength from './PasswordStrength';
 import './Auth.css';
 
 const ResetPassword = () => {
@@ -52,7 +51,6 @@ const ResetPassword = () => {
             onChange={handleChange}
             required
           />
-          <PasswordStrength password={formData.newPassword} />
         </div>
 
         <Input
