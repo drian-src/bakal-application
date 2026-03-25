@@ -20,7 +20,7 @@ const CATEGORIES = [
   {
     id:         1,
     name:       'Phones',
-    searchTerm: 'smartphone',
+    searchTerm: 'phone',
     image:      'https://cdn.thewirecutter.com/wp-content/media/2025/08/BEST-ANDROID-PHONES-00864.jpg?auto=webp&quality=75&width=1024',
   },
   {

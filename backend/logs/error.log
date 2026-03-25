@@ -590,3 +590,4 @@ Call log:
 2026-03-22 00:10:29 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
 2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
 2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
+2026-03-22 08:28:58 [error]: [DB] Supabase connection failed:
