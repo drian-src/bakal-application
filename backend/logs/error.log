@@ -591,3 +591,197 @@ Call log:
 2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
 2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
 2026-03-22 08:28:58 [error]: [DB] Supabase connection failed:
+2026-03-28 11:27:19 [error]: [DB] Supabase connection failed:
+2026-03-28 11:27:48 [error]: [DB] Supabase connection failed:
+2026-03-28 11:29:17 [error]: [DB] Supabase connection failed:
+2026-03-28 11:29:58 [error]: [DB] Supabase connection failed:
+2026-03-28 11:30:20 [error]: [DB] Supabase connection failed:
+2026-03-28 11:40:43 [error]: [DB] Supabase connection failed:
+2026-03-28 11:43:26 [error]: [DB] Supabase connection failed:
+2026-03-28 11:45:29 [error]: [DB] Supabase connection failed:
+2026-03-28 11:46:35 [error]: [DB] Supabase connection failed:
+2026-03-28 12:31:20 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 12:31:20 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 12:31:20 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 12:31:27 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 12:31:27 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 12:31:27 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 12:59:22 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 12:59:22 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 12:59:22 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 12:59:42 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 12:59:42 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 12:59:42 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 13:02:30 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 13:02:30 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 13:02:30 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 13:02:40 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 13:02:41 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 13:02:41 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 13:02:50 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 13:02:50 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 13:02:50 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 13:03:16 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 13:03:16 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 13:03:16 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 13:03:28 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 13:03:28 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 13:03:28 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 13:42:05 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:42:05 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:42:05 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:42:05 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:42:05 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:42:20 [error]: [Rec] getRecommendations error: TypeError: fetch failed
+2026-03-28 13:42:24 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:04 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:04 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:04 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:04 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:04 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:34 [error]: [Rec] getRecommendations error: TypeError: fetch failed
+2026-03-28 13:46:39 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:39 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:46:39 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-28 13:47:13 [error]: [Rec] getTrendingProducts error: TypeError: fetch failed
+2026-03-28 13:48:24 [error]: [Rec] getRecommendations error: TypeError: fetch failed
+2026-03-28 14:22:37 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 14:22:37 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 14:22:37 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 14:22:46 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 14:22:46 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 14:22:46 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 14:44:50 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-28 14:46:07 [error]: [DB] Supabase connection failed:
+2026-03-28 15:02:04 [error]: [ErrorHandler] 500 GET /api/auth/google/callback - fetch failed
+2026-03-28 15:03:27 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 15:03:28 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 15:03:28 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 15:03:47 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-28 15:03:48 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 15:03:48 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 15:04:04 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-28 15:04:04 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-28 15:04:04 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 14:16:54 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 14:16:55 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 14:16:55 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 14:17:03 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 14:17:03 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 14:17:03 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 14:24:50 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 14:27:34 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 14:37:13 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 14:37:52 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 14:41:25 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 14:41:25 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 14:41:25 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 14:41:32 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 14:41:32 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 14:41:32 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 14:42:11 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 14:42:12 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 14:42:12 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 14:55:28 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 14:57:15 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 14:58:02 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 15:01:46 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 15:08:07 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 15:08:20 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 15:24:02 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 15:24:02 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 15:24:03 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 15:24:09 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 15:24:10 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 15:24:10 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 15:44:43 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 15:44:43 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 15:44:43 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 15:44:50 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 15:44:51 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 15:44:51 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 16:01:29 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 16:02:28 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 16:02:28 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 16:02:28 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 16:02:35 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-03-29 16:02:35 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 16:02:35 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 16:21:43 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+2026-03-29 16:29:24 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-03-29 16:29:32 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-03-29 16:30:12 [error]: [ErrorHandler] 500 GET /api/search - null value in column "search_id" of relation "product_sources" violates not-null constraint
+2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-04-03 21:50:38 [error]: [DB] Supabase connection failed:

@@ -1,5 +1,9 @@
 'use strict';
 
+// Set local browsers path for Playwright
+const path = require('path');
+process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(__dirname, '../../browsers');
+
 const { chromium } = require('playwright');
 const config = require('../config/dotenv');
 const logger = require('../config/logger');
@@ -47,6 +51,7 @@ class BaseScraper {
     const proxyUrl = proxyHelper.getNextProxy();
     const launchOptions = {
       headless: config.scraping.headless,
+      executablePath: chromium.executablePath(),
       args: [
         '--no-sandbox',
         '--disable-setuid-sandbox',

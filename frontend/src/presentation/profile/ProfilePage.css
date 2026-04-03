@@ -205,7 +205,7 @@
 
 .profile-avatar {
   width: 160px;
-  height: 160px;
+  height: auto;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--accent-gold);
