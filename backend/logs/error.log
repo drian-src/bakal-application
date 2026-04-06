@@ -785,3 +785,254 @@ Call log:
 2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
 2026-03-29 22:38:06 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
 2026-04-03 21:50:38 [error]: [DB] Supabase connection failed:
+2026-04-06 09:04:33 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-06 09:05:07 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-06 09:07:40 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-06 09:07:43 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-04-06 09:08:28 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-04-06 09:08:33 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-06 10:27:52 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i5-13400-2-50ghz-10-core-20mb-cache-lga1700-processor) failed after 3 attempts.
+2026-04-06 10:27:52 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i5-12400-2-5ghz-6-core-12-thread-18m-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:27:52 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/lenovo-ideapad-3-15irh10-slim-3-83k100h7ph-intel-core-i7-laptop-luna-grey) failed after 3 attempts.
+2026-04-06 10:27:53 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/inte) failed after 3 attempts.
+2026-04-06 10:27:54 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i7-14700-4-2ghz-20-cores-28-threads-33mb-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:27:54 [error]: [PcWorxScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i5-13400-2-50ghz-10-core-20mb-cache-lga1700-processor.json", waiting until "load"[22m
+
+2026-04-06 10:27:54 [error]: [PcWorxScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i7-14700-4-2ghz-20-cores-28-threads-33mb-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:27:54 [error]: [PcWorxScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i5-12400-2-5ghz-6-core-12-thread-18m-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:27:57 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/fffffffffffffffff) failed after 3 attempts.
+2026-04-06 10:27:58 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/acer-aspire-lite-15-al15-72p-59ym-intel-core-i5-laptop-light-silver) failed after 3 attempts.
+2026-04-06 10:27:58 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/intel-core-i5-14400-processor-20m-cache-up-to-4-70-ghz) failed after 3 attempts.
+2026-04-06 10:28:01 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/intel-core-i7-14700-processor-33m-cache-up-to-5-40-ghz) failed after 3 attempts.
+2026-04-06 10:28:01 [error]: [PcExpressScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/intel-core-i5-14400-processor-20m-cache-up-to-4-70-ghz.json", waiting until "load"[22m
+
+2026-04-06 10:28:01 [error]: [PcExpressScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/intel-core-i7-14700-processor-33m-cache-up-to-5-40-ghz.json", waiting until "load"[22m
+
+2026-04-06 10:28:01 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/lenovo-ideapad-3-14irh10-slim-3-83k100h5ph-intelcore-i5-laptop-luna-grey) failed after 3 attempts.
+2026-04-06 10:28:01 [error]: [PcExpressScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/lenovo-ideapad-3-14irh10-slim-3-83k100h5ph-intelcore-i5-laptop-luna-grey.json", waiting until "load"[22m
+
+2026-04-06 10:28:01 [error]: [PcExpressScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/lenovo-ideapad-3-15irh10-slim-3-83k100h7ph-intel-core-i7-laptop-luna-grey.json", waiting until "load"[22m
+
+2026-04-06 10:28:01 [error]: [PcExpressScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/acer-aspire-lite-15-al15-72p-59ym-intel-core-i5-laptop-light-silver.json", waiting until "load"[22m
+
+2026-04-06 10:28:01 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/intel-core-i7-14700-up-to-5-40ghz-33m-cache-processor-copy) failed after 3 attempts.
+2026-04-06 10:28:01 [error]: [VillmanScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/inte.json", waiting until "load"[22m
+
+2026-04-06 10:28:01 [error]: [VillmanScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/intel-core-i7-14700-up-to-5-40ghz-33m-cache-processor-copy.json", waiting until "load"[22m
+
+2026-04-06 10:28:01 [error]: [VillmanScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/fffffffffffffffff.json", waiting until "load"[22m
+
+2026-04-06 10:28:12 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/product) failed after 3 attempts.
+2026-04-06 10:28:15 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/intel-core-i3-7100-processor-3m-cache-3-90-ghz) failed after 3 attempts.
+2026-04-06 10:28:15 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i5-14400f-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-c) failed after 3 attempts.
+2026-04-06 10:28:16 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i9-14900k-6ghz-24-core-32-threads-36mb-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:28:16 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel%C2%AE-core%E2%84%A2-i5-10400-processor-12m-cache-up-to-4-30-ghz) failed after 3 attempts.
+2026-04-06 10:28:16 [error]: [PcWorxScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i5-14400f-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-c.json", waiting until "load"[22m
+
+2026-04-06 10:28:16 [error]: [PcWorxScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel%C2%AE-core%E2%84%A2-i5-10400-processor-12m-cache-up-to-4-30-ghz.json", waiting until "load"[22m
+
+2026-04-06 10:28:16 [error]: [PcWorxScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i9-14900k-6ghz-24-core-32-threads-36mb-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:28:16 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i9-13900k-processor) failed after 3 attempts.
+2026-04-06 10:28:16 [error]: [VillmanScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i9-13900k-processor.json", waiting until "load"[22m
+
+2026-04-06 10:28:16 [error]: [VillmanScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/product.json", waiting until "load"[22m
+
+2026-04-06 10:28:16 [error]: [VillmanScraper] page.goto: Timeout 30000ms exceeded.
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/intel-core-i3-7100-processor-3m-cache-3-90-ghz.json", waiting until "load"[22m
+
+2026-04-06 10:34:35 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-06 10:34:35 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-04-06 10:34:36 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-04-06 10:38:22 [error]: [SearchService] Failed to save product https://pcx.com.ph/products/lenovo-ideapad-3-14irh10-slim-3-83k100h5ph-intelcore-i5-laptop-luna-grey: TypeError: fetch failed
+2026-04-06 10:38:33 [error]: [SearchService] Failed to save product https://pcx.com.ph/products/lenovo-ideapad-3-15irh10-slim-3-83k100h7ph-intel-core-i7-laptop-luna-grey: TypeError: fetch failed
+2026-04-06 10:38:39 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i5-13400-processor) failed after 3 attempts.
+2026-04-06 10:38:39 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i3-12100-processor) failed after 3 attempts.
+2026-04-06 10:38:39 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/core-i5-13400-processor.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i5-13400-processor.json", waiting until "load"[22m
+
+2026-04-06 10:38:39 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/core-i3-12100-processor.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i3-12100-processor.json", waiting until "load"[22m
+
+2026-04-06 10:38:44 [error]: [SearchService] Failed to save product https://pcx.com.ph/products/acer-aspire-lite-15-al15-72p-59ym-intel-core-i5-laptop-light-silver: TypeError: fetch failed
+2026-04-06 10:38:49 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i7-14700-4-2ghz-20-cores-28-threads-33mb-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:38:49 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i5-13400-2-50ghz-10-core-20mb-cache-lga1700-processor) failed after 3 attempts.
+2026-04-06 10:38:49 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/intel-i5-13400-2-50ghz-10-core-20mb-cache-lga1700-processor.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i5-13400-2-50ghz-10-core-20mb-cache-lga1700-processor.json", waiting until "load"[22m
+
+2026-04-06 10:38:49 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/intel-i7-14700-4-2ghz-20-cores-28-threads-33mb-cache-lga1700-cpu.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i7-14700-4-2ghz-20-cores-28-threads-33mb-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:38:55 [error]: [SearchService] Failed to save product https://pcx.com.ph/products/dell-24-ec24250-intel-core-i5-all-in-one-desktop: TypeError: fetch failed
+2026-04-06 10:38:57 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/lenovo-ideapad-3-14irh10-slim-3-83k100h5ph-intelcore-i5-laptop-luna-grey) failed after 3 attempts.
+2026-04-06 10:38:58 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i7-13700k-processor) failed after 3 attempts.
+2026-04-06 10:38:58 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/acer-aspire-lite-15-al15-72p-59ym-intel-core-i5-laptop-light-silver) failed after 3 attempts.
+2026-04-06 10:38:58 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i3-12100-processor) failed after 3 attempts.
+2026-04-06 10:38:58 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/lenovo-ideapad-3-15irh10-slim-3-83k100h7ph-intel-core-i7-laptop-luna-grey) failed after 3 attempts.
+2026-04-06 10:38:58 [error]: [PcExpressScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcx.com.ph/products/lenovo-ideapad-3-14irh10-slim-3-83k100h5ph-intelcore-i5-laptop-luna-grey.json
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/lenovo-ideapad-3-14irh10-slim-3-83k100h5ph-intelcore-i5-laptop-luna-grey.json", waiting until "load"[22m
+
+2026-04-06 10:38:58 [error]: [PcExpressScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcx.com.ph/products/lenovo-ideapad-3-15irh10-slim-3-83k100h7ph-intel-core-i7-laptop-luna-grey.json
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/lenovo-ideapad-3-15irh10-slim-3-83k100h7ph-intel-core-i7-laptop-luna-grey.json", waiting until "load"[22m
+
+2026-04-06 10:38:58 [error]: [PcExpressScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcx.com.ph/products/acer-aspire-lite-15-al15-72p-59ym-intel-core-i5-laptop-light-silver.json
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/acer-aspire-lite-15-al15-72p-59ym-intel-core-i5-laptop-light-silver.json", waiting until "load"[22m
+
+2026-04-06 10:38:59 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i5-13400-processor) failed after 3 attempts.
+2026-04-06 10:38:59 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/core-i5-13400-processor.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i5-13400-processor.json", waiting until "load"[22m
+
+2026-04-06 10:38:59 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/core-i3-12100-processor.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i3-12100-processor.json", waiting until "load"[22m
+
+2026-04-06 10:38:59 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/core-i7-13700k-processor.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i7-13700k-processor.json", waiting until "load"[22m
+
+2026-04-06 10:39:06 [error]: [SearchService] Failed to save product https://pcx.com.ph/products/dell-tower-ect1250-intel-core-i7-desktop: TypeError: fetch failed
+2026-04-06 10:39:10 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i3-14100-3-5ghz-4-cores-8-threads-12mb-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:39:17 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i5-14400-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:39:17 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/intel-i5-14400-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-cpu.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i5-14400-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:39:17 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/intel-i3-14100-3-5ghz-4-cores-8-threads-12mb-cache-lga1700-cpu.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i3-14100-3-5ghz-4-cores-8-threads-12mb-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:40:09 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/product) failed after 3 attempts.
+2026-04-06 10:40:10 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i9-13900k-processor) failed after 3 attempts.
+2026-04-06 10:40:10 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/core-i9-13900k-processor.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i9-13900k-processor.json", waiting until "load"[22m
+
+2026-04-06 10:40:10 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/product.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/product.json", waiting until "load"[22m
+
+2026-04-06 10:40:16 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i5-14400-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:40:18 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/intel-i3-14100-3-5ghz-4-cores-8-threads-12mb-cache-lga1700-cpu) failed after 3 attempts.
+2026-04-06 10:40:18 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/intel-i5-14400-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-cpu.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i5-14400-3-5ghz-10-cores-16-threads-20mb-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:40:18 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/intel-i3-14100-3-5ghz-4-cores-8-threads-12mb-cache-lga1700-cpu.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/intel-i3-14100-3-5ghz-4-cores-8-threads-12mb-cache-lga1700-cpu.json", waiting until "load"[22m
+
+2026-04-06 10:40:24 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/core-i9-13900k-processor) failed after 3 attempts.
+2026-04-06 10:40:26 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/product) failed after 3 attempts.
+2026-04-06 10:40:26 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/core-i9-13900k-processor.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/core-i9-13900k-processor.json", waiting until "load"[22m
+
+2026-04-06 10:40:26 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/product.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/product.json", waiting until "load"[22m
+
+2026-04-06 10:50:41 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/gmktec-nucbox-k11) failed after 3 attempts.
+2026-04-06 10:50:41 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/amd-ryzen-3-3200g-3-6ghz-unlocked-processor) failed after 3 attempts.
+2026-04-06 10:50:41 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/amd-ryzen-5-5600x-3-7ghz-processor) failed after 3 attempts.
+2026-04-06 10:50:43 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/hp-15-fc0205au) failed after 3 attempts.
+2026-04-06 10:50:43 [error]: [Retry] PcExpressScraper.scrape(https://pcx.com.ph/products/amd-ryzen-5-5600gt-desktop-processor-3-6-up-to-4-6ghz) failed after 3 attempts.
+2026-04-06 10:50:43 [error]: [PcExpressScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcx.com.ph/products/amd-ryzen-5-5600x-3-7ghz-processor.json
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/amd-ryzen-5-5600x-3-7ghz-processor.json", waiting until "load"[22m
+
+2026-04-06 10:50:43 [error]: [PcExpressScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcx.com.ph/products/amd-ryzen-5-5600gt-desktop-processor-3-6-up-to-4-6ghz.json
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/amd-ryzen-5-5600gt-desktop-processor-3-6-up-to-4-6ghz.json", waiting until "load"[22m
+
+2026-04-06 10:50:43 [error]: [PcExpressScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcx.com.ph/products/amd-ryzen-3-3200g-3-6ghz-unlocked-processor.json
+Call log:
+[2m  - navigating to "https://pcx.com.ph/products/amd-ryzen-3-3200g-3-6ghz-unlocked-processor.json", waiting until "load"[22m
+
+2026-04-06 10:50:43 [error]: [Retry] VillmanScraper.scrape(https://shop.villman.com/products/amd-ryzen-7-5800x-8-cores-16-threads-3-8-ghz-up-to-4-7ghz-am4-processor-copy) failed after 3 attempts.
+2026-04-06 10:50:43 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/hp-15-fc0205au.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/hp-15-fc0205au.json", waiting until "load"[22m
+
+2026-04-06 10:50:43 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/gmktec-nucbox-k11.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/gmktec-nucbox-k11.json", waiting until "load"[22m
+
+2026-04-06 10:50:43 [error]: [VillmanScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://shop.villman.com/products/amd-ryzen-7-5800x-8-cores-16-threads-3-8-ghz-up-to-4-7ghz-am4-processor-copy.json
+Call log:
+[2m  - navigating to "https://shop.villman.com/products/amd-ryzen-7-5800x-8-cores-16-threads-3-8-ghz-up-to-4-7ghz-am4-processor-copy.json", waiting until "load"[22m
+
+2026-04-06 10:50:45 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor) failed after 3 attempts.
+2026-04-06 10:50:45 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/amd-ryzen-7-5700g-3-8ghz-65w-am4-processor) failed after 3 attempts.
+2026-04-06 10:50:45 [error]: [Retry] PcWorxScraper.scrape(https://pcworx.ph/products/amd-ryzen%E2%84%A2-3-3200g-processor-with-amd-radeon%E2%84%A2-vega-8-graphics-tray-type) failed after 3 attempts.
+2026-04-06 10:50:45 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/amd-ryzen-7-5700g-3-8ghz-65w-am4-processor.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/amd-ryzen-7-5700g-3-8ghz-65w-am4-processor.json", waiting until "load"[22m
+
+2026-04-06 10:50:45 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/amd-ryzen-3-3200g-3-6ghz-am4-4-core-4mb-cpu-processor.json", waiting until "load"[22m
+
+2026-04-06 10:50:45 [error]: [PcWorxScraper] page.goto: net::ERR_CONNECTION_TIMED_OUT at https://pcworx.ph/products/amd-ryzen%E2%84%A2-3-3200g-processor-with-amd-radeon%E2%84%A2-vega-8-graphics-tray-type.json
+Call log:
+[2m  - navigating to "https://pcworx.ph/products/amd-ryzen%E2%84%A2-3-3200g-processor-with-amd-radeon%E2%84%A2-vega-8-graphics-tray-type.json", waiting until "load"[22m
+
+2026-04-06 10:50:52 [error]: [Retry] VillmanScraper.search failed after 3 attempts.
+2026-04-06 10:50:53 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-04-06 10:50:53 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-04-06 10:50:53 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-04-06 10:50:53 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-04-06 10:50:53 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-06 10:50:53 [error]: [Retry] PcWorxScraper.search failed after 3 attempts.
+2026-04-06 10:50:55 [error]: [ErrorHandler] 500 GET /api/categories/products - TypeError: fetch failed
+2026-04-06 10:54:44 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-06 10:56:20 [error]: [Retry] PcExpressScraper.search failed after 3 attempts.
+2026-04-07 01:28:52 [error]: Error: listen EADDRINUSE: address already in use :::3000
+    at Server.setupListenHandle [as _listen2] (node:net:1912:16)
+    at listenInCluster (node:net:1969:12)
+    at Server.listen (node:net:2074:7)
+    at Function.listen (C:\Users\Dell\bakal-app\bakal-application\backend\node_modules\express\lib\application.js:635:24)
+    at bootstrap (C:\Users\Dell\bakal-app\bakal-application\backend\src\server.js:13:22)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)

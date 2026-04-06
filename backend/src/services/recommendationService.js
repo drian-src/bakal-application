@@ -387,7 +387,8 @@ async function getCollaborativeRecommendations(productId, limit = 10) {
  * - Cold start (< 5 interactions): Return trending products
  * - Warm (≥ 5 interactions): Blend content-based (60%) + collaborative (40%)
  *
- * Caches results in user_recommendations table with 6-hour TTL.
+ * Returns fresh recommendations for every authenticated request.
+ * The cache is no longer used for user-facing recommendation refresh.
  * Never throws — always returns array (possibly empty).
  *
  * @param {string} userId - UUID of the authenticated user
@@ -396,41 +397,9 @@ async function getCollaborativeRecommendations(productId, limit = 10) {
  */
 async function getRecommendations(userId, limit = 10) {
   try {
-    // ── STEP 1: Check cache ──────────────────────────────────────────────────
-    const { data: cached, error: cacheError } = await supabase
-      .from('user_recommendations')
-      .select('product_id, score, explanation, reason_type')
-      .eq('user_id', userId)
-      .gt('expires_at', new Date().toISOString())
-      .order('score', { ascending: false })
-      .limit(limit);
-
-    if (!cacheError && cached && cached.length >= Math.floor(limit / 2)) {
-      logger.debug(`[Rec] Serving ${cached.length} cached recommendations for user ${userId}`);
-
-      const productIds = cached.map(r => r.product_id);
-      const { data: products } = await supabase
-        .from('products')
-        .select('*, platforms(name)')
-        .in('id', productIds);
-
-      const productMap = {};
-      for (const p of products || []) {
-        productMap[p.id] = p;
-      }
-
-      return cached
-        .map(r => ({
-          product: {
-            ...productMap[r.product_id],
-            platform: productMap[r.product_id]?.platforms?.name || null,
-          },
-          score: r.score,
-          explanation: r.explanation,
-          reasonType: r.reason_type,
-        }))
-        .filter(r => r.product?.id);
-    }
+    // ── STEP 1: Fresh recommendation policy ─────────────────────────────────
+    // Do not serve stale cached recommendations; compute fresh results for each
+    // sign-in and page reload request.
 
     // ── STEP 2: Fetch user interaction history ───────────────────────────────
     const { data: interactions, error: interError } = await supabase
@@ -541,27 +510,6 @@ async function getRecommendations(userId, limit = 10) {
         };
       })
       .sort((a, b) => b.score - a.score);
-
-    // ── STEP 9: Cache results in user_recommendations table ───────────────────
-    if (results.length > 0) {
-      const upsertData = results.map(r => ({
-        user_id: userId,
-        product_id: r.product.id,
-        score: r.score,
-        explanation: r.explanation,
-        reason_type: r.reasonType,
-        computed_at: new Date().toISOString(),
-        expires_at: new Date(Date.now() + 6 * 60 * 60 * 1000).toISOString(),
-      }));
-
-      const { error: upsertError } = await supabase
-        .from('user_recommendations')
-        .upsert(upsertData, { onConflict: 'user_id,product_id' });
-
-      if (upsertError) {
-        logger.warn(`[Rec] Failed to cache recommendations: ${upsertError.message}`);
-      }
-    }
 
     logger.info(`[Rec] Built ${results.length} recommendations for user ${userId} (hybrid)`);
     return results;

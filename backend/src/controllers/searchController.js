@@ -13,7 +13,7 @@ async function search(req, res, next) {
     const userId = req.user?.id || null;
     const maxPerPlatform = parseInt(max_per_platform, 10) || 5;
 
-    const result = await searchService.search(q.trim(), userId, Math.min(maxPerPlatform, 10));
+    const result = await searchService.search(q.trim(), userId, Math.min(maxPerPlatform, 20));
     return res.status(200).json({ success: true, data: result });
   } catch (err) {
     next(err);

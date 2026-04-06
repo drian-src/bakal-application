@@ -43,6 +43,7 @@ const RecommendedSection = ({ products, query, activePlatform }) => {
               platformId={platformId}
               products={platformProducts} 
               color={platformColors[platformId]}
+              query={query}
             />
           );
         })}

@@ -217,49 +217,49 @@ const HomeHeader = ({ hideSearch = false }) => {
               onChange={(e) => setSearchQuery(e.target.value)}
             />
 
-            <button
-              type="button"
-              className={`voice-search ${isListening ? 'listening' : ''}`}
-              onClick={handleVoiceSearch}
-              title={isListening ? 'Click to stop listening' : 'Search by voice'}
-              aria-label={isListening ? 'Stop voice search' : 'Start voice search'}
-            >
-              {isListening ? (
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent-gold, #d4af37)">
-                  <circle cx="12" cy="12" r="8">
-                    <animate attributeName="r" values="8;10;8" dur="1s" repeatCount="indefinite" />
-                    <animate attributeName="opacity" values="1;0.6;1" dur="1s" repeatCount="indefinite" />
-                  </circle>
-                </svg>
-              ) : (
+            <div className="search-actions">
+              <button
+                type="button"
+                className={`voice-search ${isListening ? 'listening' : ''}`}
+                onClick={handleVoiceSearch}
+                title={isListening ? 'Click to stop listening' : 'Search by voice'}
+                aria-label={isListening ? 'Stop voice search' : 'Start voice search'}
+              >
+                {isListening ? (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="var(--accent-gold, #d4af37)">
+                    <circle cx="12" cy="12" r="8">
+                      <animate attributeName="r" values="8;10;8" dur="1s" repeatCount="indefinite" />
+                      <animate attributeName="opacity" values="1;0.6;1" dur="1s" repeatCount="indefinite" />
+                    </circle>
+                  </svg>
+                ) : (
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="9" y="2" width="6" height="11" rx="3" />
+                    <path d="M5 10a7 7 0 0 0 14 0" />
+                    <line x1="12" y1="19" x2="12" y2="22" />
+                    <line x1="9" y1="22" x2="15" y2="22" />
+                  </svg>
+                )}
+              </button>
+
+              <button
+                type="button"
+                className="image-search"
+                onClick={handleImageSearch}
+                title="Search by image"
+                aria-label="Image search"
+              >
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="9" y="2" width="6" height="11" rx="3" />
-                  <path d="M5 10a7 7 0 0 0 14 0" />
-                  <line x1="12" y1="19" x2="12" y2="22" />
-                  <line x1="9" y1="22" x2="15" y2="22" />
+                  <rect x="3" y="6" width="18" height="14" rx="2" />
+                  <circle cx="12" cy="13" r="3" />
+                  <path d="M8 6l1.5-2h5L16 6" />
                 </svg>
-              )}
-            </button>
+              </button>
 
-            <button
-              type="button"
-              className="image-search"
-              onClick={handleImageSearch}
-              title="Search by image"
-              aria-label="Image search"
-            >
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <rect x="3" y="6" width="18" height="14" rx="2" />
-                <circle cx="12" cy="13" r="3" />
-                <path d="M8 6l1.5-2h5L16 6" />
-              </svg>
-            </button>
-
-            <span className="search-icon-divider" aria-hidden="true" />
-
-            <button type="submit" className="search-button" title="Search">
-              Search
-            </button>
+              <button type="submit" className="search-button" title="Search">
+                Search
+              </button>
+            </div>
 
             {voiceError && (
               <div

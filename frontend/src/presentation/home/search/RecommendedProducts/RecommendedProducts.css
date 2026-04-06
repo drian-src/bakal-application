@@ -61,6 +61,27 @@
   border-radius: 0;
 }
 
+.see-all-button {
+  background: transparent;
+  border: 1px solid var(--card-border);
+  color: var(--text-primary);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 8px;
+}
+
+.see-all-button:hover {
+  border-color: var(--accent-gold);
+  color: var(--accent-gold);
+  background: rgba(212, 175, 55, 0.12);
+}
+
 .platform-products {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

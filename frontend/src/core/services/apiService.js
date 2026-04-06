@@ -67,21 +67,21 @@ export const getStores = async () => {
   }
 };
 
-export const searchProducts = async (query, platform = 'all') => {
+export const searchProducts = async (query, platform = 'all', maxPerPlatform = 5) => {
   try {
     const normalizedQuery = query.toLowerCase().trim();
     
     // ✅ Check if results are already cached
-    const cached = searchCache.get(normalizedQuery, platform);
+    const cached = searchCache.get(normalizedQuery, platform, maxPerPlatform);
     if (cached) {
-      console.log(`[Cache HIT] Returning cached results for: "${normalizedQuery}" (platform: "${platform}")`);
+      console.log(`[Cache HIT] Returning cached results for: "${normalizedQuery}" (platform: "${platform}", maxPerPlatform: ${maxPerPlatform})`);
       return cached;
     }
 
     // 🔄 No cache — fetch from backend (triggers scraping)
-    console.log(`[Cache MISS] Fetching fresh results for: "${normalizedQuery}" (platform: "${platform}")`);
+    console.log(`[Cache MISS] Fetching fresh results for: "${normalizedQuery}" (platform: "${platform}", maxPerPlatform: ${maxPerPlatform})`);
     const response = await apiCall(
-      `/search?q=${encodeURIComponent(normalizedQuery)}${platform !== 'all' ? `&platform=${platform}` : ''}`
+      `/search?q=${encodeURIComponent(normalizedQuery)}${platform !== 'all' ? `&platform=${platform}` : ''}&max_per_platform=${maxPerPlatform}`
     );
     
     console.log('[apiService] Full API Response object:', response);
@@ -99,7 +99,7 @@ export const searchProducts = async (query, platform = 'all') => {
     console.log('[apiService] data.stores length:', data?.stores?.length);
     
     // ✅ Store result in cache before returning
-    searchCache.set(normalizedQuery, platform, data);
+    searchCache.set(normalizedQuery, platform, maxPerPlatform, data);
     
     // ✅ Persist cache to sessionStorage
     searchCache.saveToSession();

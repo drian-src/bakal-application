@@ -12,10 +12,11 @@ export const searchCache = {
    * Get cached results for a query
    * @param {string} query - The search term (lowercased + trimmed)
    * @param {string} platform - The platform filter ('all' or specific platform)
+   * @param {number} maxPerPlatform - Maximum results per platform
    * @returns {object|null} cached results or null if expired/missing
    */
-  get(query, platform = 'all') {
-    const key = this._getKey(query, platform);
+  get(query, platform = 'all', maxPerPlatform = 5) {
+    const key = this._getKey(query, platform, maxPerPlatform);
     const entry = cache.get(key);
     
     if (!entry) {
@@ -36,10 +37,11 @@ export const searchCache = {
    * Store results for a query
    * @param {string} query
    * @param {string} platform
+   * @param {number} maxPerPlatform
    * @param {object} data - The full API response to cache
    */
-  set(query, platform = 'all', data) {
-    const key = this._getKey(query, platform);
+  set(query, platform = 'all', maxPerPlatform = 5, data) {
+    const key = this._getKey(query, platform, maxPerPlatform);
     cache.set(key, { data, timestamp: Date.now() });
     console.log(`[Cache SET] "${key}" - ${Date.now()}`);
   },
@@ -47,15 +49,15 @@ export const searchCache = {
   /**
    * Check if a query has valid cached data
    */
-  has(query, platform = 'all') {
-    return this.get(query, platform) !== null;
+  has(query, platform = 'all', maxPerPlatform = 5) {
+    return this.get(query, platform, maxPerPlatform) !== null;
   },
 
   /**
    * Manually invalidate a specific query's cache
    */
-  invalidate(query, platform = 'all') {
-    const key = this._getKey(query, platform);
+  invalidate(query, platform = 'all', maxPerPlatform = 5) {
+    const key = this._getKey(query, platform, maxPerPlatform);
     cache.delete(key);
     console.log(`[Cache INVALIDATED] "${key}"`);
   },
@@ -91,11 +93,11 @@ export const searchCache = {
   },
 
   /**
-   * Internal: Generate cache key from query + platform
+   * Internal: Generate cache key from query + platform + maxPerPlatform
    */
-  _getKey(query, platform = 'all') {
+  _getKey(query, platform = 'all', maxPerPlatform = 5) {
     const normalized = query.toLowerCase().trim();
-    return `${normalized}__${platform}`;
+    return `${normalized}__${platform}__${maxPerPlatform}`;
   },
 
   /**

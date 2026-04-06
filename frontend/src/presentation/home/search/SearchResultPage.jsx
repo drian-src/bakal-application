@@ -1,7 +1,6 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
 import SearchSummaryHeader from './SearchSummary/SearchSummaryHeader';
-import FilterPanel from './Filters/FilterPanel';
 import PlatformTabs from './PlatformSelector/PlatformTabs';
 import RecommendedSection from './RecommendedProducts/RecommendedSection';
 import ScrapingLoader from '../../shared/ScrapingLoader';
@@ -26,6 +25,9 @@ const SearchResultPage = () => {
     shipping: [],
     availability: []
   });
+  const [priceSortOption, setPriceSortOption] = useState('All options');
+  const [priceSortOpen, setPriceSortOpen] = useState(false);
+  const priceSortOptions = ['Highest to Lowest', 'Lowest to Highest', 'All options'];
 
   // Fetch available stores on component mount
   useEffect(() => {
@@ -99,6 +101,41 @@ const SearchResultPage = () => {
     }));
   };
 
+  const parsePriceValue = (value) => {
+    if (value == null) return 0;
+    const normalized = String(value)
+      .replace(/[^0-9.,]/g, '')
+      .replace(/,/g, '');
+    const number = parseFloat(normalized);
+    return Number.isNaN(number) ? 0 : number;
+  };
+
+  const sortedProducts = useMemo(() => {
+    if (!filteredProducts || priceSortOption === 'All options') {
+      return filteredProducts;
+    }
+
+    const determineDirection = priceSortOption === 'Highest to Lowest' ? -1 : 1;
+
+    return Object.keys(filteredProducts).reduce((acc, platformKey) => {
+      const rawList = Array.isArray(filteredProducts[platformKey]) ? filteredProducts[platformKey] : [];
+      const sorted = [...rawList].sort((a, b) => {
+        const priceA = parsePriceValue(a.price);
+        const priceB = parsePriceValue(b.price);
+        return (priceA - priceB) * determineDirection;
+      });
+      acc[platformKey] = sorted;
+      return acc;
+    }, {});
+  }, [filteredProducts, priceSortOption]);
+
+  const togglePriceSort = () => setPriceSortOpen(prev => !prev);
+
+  const choosePriceSort = (option) => {
+    setPriceSortOption(option);
+    setPriceSortOpen(false);
+  };
+
   return (
     <div className="search-result-page">
       <SearchSummaryHeader query={query} stores={stores} />
@@ -159,14 +196,50 @@ const SearchResultPage = () => {
       {/* Show search results when loading is done */}
       {!loading && (
       <div className="search-content">
-        <aside className="search-sidebar">
-          <FilterPanel onFilterChange={handleFilterChange} />
-        </aside>
-        
+        <div className="search-options-row">
+          <div className="search-options-spacer" />
+          <div className="price-sort-wrapper">
+            <button
+              type="button"
+              className="price-sort-btn"
+              onClick={togglePriceSort}
+              aria-expanded={priceSortOpen}
+              aria-haspopup="true"
+              title="Select price sort order"
+            >
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M4 12h16" />
+                <path d="M4 6h12" />
+                <path d="M4 18h8" />
+                <path d="M20 12l-3-3" />
+                <path d="M20 12l-3 3" />
+              </svg>
+              <span className="sr-only">Price sort order</span>
+              <span>{priceSortOption}</span>
+            </button>
+
+            {priceSortOpen && (
+              <div className="price-sort-dropdown" role="menu">
+                {priceSortOptions.map((option) => (
+                  <button
+                    key={option}
+                    type="button"
+                    className={`price-sort-option ${priceSortOption === option ? 'active' : ''}`}
+                    onClick={() => choosePriceSort(option)}
+                    title={`Sort by ${option}`}
+                  >
+                    {option}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        </div>
+
         <main className="search-main">
           <PlatformTabs activePlatform={activePlatform} onPlatformChange={setActivePlatform} />
           <RecommendedSection 
-            products={filteredProducts} 
+            products={sortedProducts} 
             query={query}
             activePlatform={activePlatform}
           />
