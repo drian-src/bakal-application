@@ -591,3 +591,5 @@ Call log:
 2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
 2026-03-22 00:10:32 [error]: [ErrorHandler] 500 POST /api/recommendations/track - invalid input syntax for type uuid: "track"
 2026-03-22 08:28:58 [error]: [DB] Supabase connection failed:
+2026-03-29 07:27:51 [error]: [DB] Supabase connection failed:
+2026-03-29 12:11:58 [error]: [ErrorHandler] 500 GET /api/auth/google/callback - Expiration time too far in future: {"iss":"https://accounts.google.com","azp":"373123404040-av0t0lmt7qejb91av800cbvob6o8q2ca.apps.googleusercontent.com","aud":"373123404040-av0t0lmt7qejb91av800cbvob6o8q2ca.apps.googleusercontent.com","sub":"115384679252871030570","email":"adrianbarayoga78@gmail.com","email_verified":true,"at_hash":"PwSHG1JX1r6WkQFSr5vmWg","name":"ADRIAN JOSEPH BARAYOGA","picture":"https://lh3.googleusercontent.com/a/ACg8ocL9jmdJdJUML3IIlwTPbO4dX7ybVVm2oNHuIAVtmYkdN6kcebo=s96-c","given_name":"ADRIAN JOSEPH","family_name":"BARAYOGA","iat":1774875832,"exp":1774879432}

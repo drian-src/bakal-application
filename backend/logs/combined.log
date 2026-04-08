@@ -20868,3 +20868,14 @@ Call log:
 2026-03-25 18:03:37 [debug]: → GET /api/recommendations
 2026-03-25 18:03:37 [debug]: [Rec] Serving 10 cached recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840
 2026-03-25 18:03:38 [info]: [RecController] Returning 10 recommendations for user 933cde3e-c7a5-4328-86e9-1ef07d11e840 (strategy: content_only)
+2026-03-25 18:04:46 [debug]: [Backend Cache] Purged 1 stale entries
+2026-03-29 07:27:38 [info]: [DB] Supabase client created.
+2026-03-29 07:27:51 [error]: [DB] Supabase connection failed:
+2026-03-29 12:10:54 [info]: [DB] Supabase client created.
+2026-03-29 12:10:59 [info]: [DB] Supabase connection verified.
+2026-03-29 12:11:01 [info]: [SearchService] Platform IDs loaded: {"pcexpress":"b1ebdcf4-e478-4940-a8cc-074b777db0df","villman":"13a93343-26ab-4e7c-ba20-2f38e7649d19","pcworx":"12096578-17a6-40ad-b71e-6179367faa33"}
+2026-03-29 12:11:01 [info]: 🚀 Bakàl backend running on port 3000 [development]
+2026-03-29 12:11:29 [debug]: → GET /api/auth/google
+2026-03-29 12:11:55 [debug]: → GET /api/auth/google/callback
+2026-03-29 12:11:58 [error]: [ErrorHandler] 500 GET /api/auth/google/callback - Expiration time too far in future: {"iss":"https://accounts.google.com","azp":"373123404040-av0t0lmt7qejb91av800cbvob6o8q2ca.apps.googleusercontent.com","aud":"373123404040-av0t0lmt7qejb91av800cbvob6o8q2ca.apps.googleusercontent.com","sub":"115384679252871030570","email":"adrianbarayoga78@gmail.com","email_verified":true,"at_hash":"PwSHG1JX1r6WkQFSr5vmWg","name":"ADRIAN JOSEPH BARAYOGA","picture":"https://lh3.googleusercontent.com/a/ACg8ocL9jmdJdJUML3IIlwTPbO4dX7ybVVm2oNHuIAVtmYkdN6kcebo=s96-c","given_name":"ADRIAN JOSEPH","family_name":"BARAYOGA","iat":1774875832,"exp":1774879432}
+2026-03-29 12:11:58 [debug]: → GET /favicon.ico
