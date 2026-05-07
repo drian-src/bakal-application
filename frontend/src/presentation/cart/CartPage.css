@@ -1,0 +1,119 @@
+.cart-page {
+  min-height: 100vh;
+  background: var(--bg-light, #f9fafb);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Back Button — minimalist design */
+.back-button {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #f3f4f6;
+  border: none;
+  border-radius: 6px;
+  color: #4b5563;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  padding: 0;
+  min-width: 32px;
+  line-height: 1;
+}
+
+.back-button:hover {
+  background: #e5e7eb;
+  color: var(--accent-gold, #D4AF37);
+}
+
+.back-button:active {
+  background: #d1d5db;
+  transform: scale(0.95);
+}
+
+.cart-content {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-xl, 2rem) var(--spacing-md, 1rem);
+  flex: 1;
+}
+
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl, 2rem);
+}
+
+/* ── Responsive Design ──────────────────────────────────────────────────────── */
+
+/* ✨ Card Hover & Transition Animations */
+.cart-item-card {
+  animation: slideInUp 0.3s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile Layout */
+@media (max-width: 640px) {
+  .cart-item-card {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+
+  .cart-item-actions {
+    flex-direction: row !important;
+    align-items: stretch !important;
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  .cart-content {
+    padding: var(--spacing-lg, 1.5rem) var(--spacing-md, 1rem);
+  }
+
+  /* Reduce product image size on mobile */
+  .cart-item-card > div:first-child {
+    width: 56px !important;
+    height: 56px !important;
+  }
+
+  /* Stack price and actions vertically on mobile */
+  .compare-link-btn {
+    flex: 1 !important;
+    padding: 8px 12px !important;
+    font-size: 12px !important;
+  }
+
+  /* Hide button text, show icon only on very small screens */
+  @media (max-width: 480px) {
+    .compare-link-btn {
+      min-width: 40px !important;
+      padding: 8px !important;
+    }
+
+    /* Show icon-only appearance */
+    .compare-link-btn span:last-child {
+      display: none;
+    }
+  }
+}
+
+/* Tablet & Desktop */
+@media (min-width: 641px) {
+  .cart-content {
+    padding: var(--spacing-xl, 2rem) var(--spacing-md, 1rem);
+  }
+}

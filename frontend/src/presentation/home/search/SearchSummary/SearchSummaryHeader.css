@@ -1,0 +1,219 @@
+.search-summary-header {
+  position: relative;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 32px 0 24px 0;
+  margin-bottom: 28px;
+  overflow: hidden;
+}
+
+.summary-container {
+  position: relative;
+  z-index: 1;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* ─── AI Curated Badge (Minimal Style) ──────────────────────────────────── */
+.sparkle-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 13px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.08) 0%,
+    rgba(212, 175, 55, 0.04) 100%
+  );
+  color: var(--accent-gold);
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  border-radius: 18px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  align-self: center;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.sparkle-badge:hover {
+  border-color: rgba(212, 175, 55, 0.35);
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.12) 0%,
+    rgba(212, 175, 55, 0.06) 100%
+  );
+}
+
+.sparkle-badge svg {
+  animation: sparkleFloat 2.5s ease-in-out infinite;
+  flex-shrink: 0;
+}
+
+@keyframes sparkleFloat {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-2px) rotate(8deg); }
+}
+
+/* ─── Main Search Title (Clean & Modern) ────────────────────────────────── */
+.search-query-title {
+  font-size: 38px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.2;
+  letter-spacing: -0.6px;
+}
+
+.search-query-title strong {
+  background: linear-gradient(135deg, var(--accent-gold) 0%, #e8c547 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 800;
+  letter-spacing: -0.3px;
+}
+
+/* ─── Subtitle (Secondary Text) ─────────────────────────────────────────── */
+.search-subtitle {
+  font-size: 14px;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+  font-weight: 400;
+}
+
+/* ─── Store Chips (Improved Layout) ─────────────────────────────────────── */
+.store-chips {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 6px;
+}
+
+.store-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 13px;
+  border: 1px solid;
+  border-radius: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: pointer;
+  user-select: none;
+}
+
+.store-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  border-color: currentColor;
+}
+
+.store-chip:active {
+  transform: translateY(-1px);
+}
+
+.store-dot {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: inline-block;
+  flex-shrink: 0;
+  opacity: 0.9;
+}
+
+.store-name {
+  display: inline;
+}
+
+/* ─── Responsive Design ──────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .search-summary-header {
+    padding: 24px 0 18px 0;
+    margin-bottom: 20px;
+  }
+
+  .summary-container {
+    gap: 12px;
+  }
+
+  .search-query-title {
+    font-size: 28px;
+    letter-spacing: -0.4px;
+  }
+
+  .search-subtitle {
+    font-size: 13px;
+  }
+
+  .store-chips {
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .store-chip {
+    padding: 6px 11px;
+    font-size: 11px;
+  }
+
+  .store-dot {
+    width: 4px;
+    height: 4px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-summary-header {
+    padding: 18px 0 14px 0;
+    margin-bottom: 16px;
+  }
+
+  .summary-container {
+    gap: 10px;
+  }
+
+  .search-query-title {
+    font-size: 22px;
+  }
+
+  .sparkle-badge {
+    font-size: 10px;
+    padding: 5px 11px;
+  }
+
+  .sparkle-badge svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  .search-subtitle {
+    font-size: 12px;
+  }
+
+  .store-chips {
+    gap: 6px;
+  }
+
+  .store-chip {
+    padding: 5px 9px;
+    font-size: 10px;
+  }
+
+  .store-dot {
+    width: 3px;
+    height: 3px;
+  }
+}

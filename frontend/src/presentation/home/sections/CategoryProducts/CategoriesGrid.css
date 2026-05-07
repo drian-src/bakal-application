@@ -1,0 +1,60 @@
+.categories-section {
+  padding: var(--spacing-xl) var(--spacing-lg);
+}
+
+/* Category tabs container — flex scrollable layout */
+.categories-grid {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-behavior: smooth;
+}
+
+/* Smooth scrollbar styling for webkit browsers */
+.categories-grid::-webkit-scrollbar {
+  height: 4px;
+}
+
+.categories-grid::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+.categories-grid::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 2px;
+}
+
+.categories-grid::-webkit-scrollbar-thumb:hover {
+  background: #9ca3af;
+}
+
+/* Responsive design for product grid */
+@media (max-width: 1024px) {
+  .categories-section {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .categories-section {
+    padding: var(--spacing-lg) var(--spacing-md);
+  }
+
+  .categories-grid {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .categories-section {
+    padding: var(--spacing-md) var(--spacing-sm);
+  }
+
+  .categories-grid {
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+}
+

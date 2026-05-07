@@ -1,0 +1,226 @@
+.delete-account-section {
+  margin-top: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.delete-card {
+  border-radius: var(--radius-xl);
+  padding: var(--spacing-lg);
+  transition: all var(--transition-base);
+  border: 1px solid var(--border);
+}
+
+.delete-card--initial {
+  background-color: rgba(220, 38, 38, 0.05);
+  border-color: rgba(220, 38, 38, 0.2);
+}
+
+html.dark .delete-card--initial {
+  background-color: rgba(127, 29, 29, 0.1);
+  border-color: rgba(220, 38, 38, 0.3);
+}
+
+.delete-card--warning {
+  background-color: rgba(251, 191, 36, 0.05);
+  border-color: rgba(251, 191, 36, 0.2);
+}
+
+html.dark .delete-card--warning {
+  background-color: rgba(120, 53, 15, 0.1);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.delete-card--danger {
+  background-color: rgba(220, 38, 38, 0.08);
+  border-color: rgba(220, 38, 38, 0.25);
+  border-width: 2px;
+}
+
+html.dark .delete-card--danger {
+  background-color: rgba(127, 29, 29, 0.15);
+  border-color: rgba(220, 38, 38, 0.4);
+}
+
+.delete-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
+}
+
+.delete-card-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+}
+
+.delete-icon {
+  color: var(--error);
+  flex-shrink: 0;
+}
+
+.delete-icon--warning {
+  color: var(--warning);
+}
+
+.delete-icon--danger {
+  color: var(--error);
+}
+
+.delete-card-title {
+  font-size: var(--text-lg);
+  font-weight: var(--font-semibold);
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.delete-card-description {
+  font-size: var(--text-sm);
+  color: var(--text-medium);
+  line-height: var(--leading-relaxed);
+  margin: 0;
+}
+
+.delete-warning-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--text-medium);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.delete-warning-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.delete-error-box {
+  padding: var(--spacing-md);
+  background-color: var(--error-light);
+  border-left: 4px solid var(--error);
+  border-radius: var(--radius-md);
+  color: var(--error);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+}
+
+html.dark .delete-error-box {
+  background-color: rgba(220, 38, 38, 0.15);
+  border-left-color: var(--error);
+  color: #FCA5A5;
+}
+
+.delete-button-group {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.delete-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border: none;
+  border-radius: var(--radius-lg);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+  position: relative;
+}
+
+.delete-button--primary {
+  background-color: var(--error);
+  color: var(--bg-white);
+}
+
+.delete-button--primary:hover:not(:disabled) {
+  background-color: #B91C1C;
+  transform: translateY(-2px);
+}
+
+.delete-button--warning {
+  background-color: var(--warning);
+  color: var(--bg-white);
+}
+
+.delete-button--warning:hover:not(:disabled) {
+  background-color: #D97706;
+  transform: translateY(-2px);
+}
+
+.delete-button--danger {
+  background-color: var(--error);
+  color: var(--bg-white);
+  flex: 1;
+  min-width: 150px;
+}
+
+.delete-button--danger:hover:not(:disabled) {
+  background-color: #B91C1C;
+  transform: translateY(-2px);
+}
+
+.delete-button--danger:disabled,
+.delete-button--primary:disabled,
+.delete-button--warning:disabled,
+.delete-button--secondary:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.delete-button--danger.is-loading {
+  opacity: 0.8;
+}
+
+.delete-button--secondary {
+  background-color: var(--bg-gray);
+  color: var(--text-dark);
+  flex: 1;
+  min-width: 150px;
+}
+
+.delete-button--secondary:hover:not(:disabled) {
+  background-color: var(--border);
+  transform: translateY(-2px);
+}
+
+html.dark .delete-button--secondary {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+html.dark .delete-button--secondary:hover:not(:disabled) {
+  background-color: #374151;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.delete-helper-text {
+  font-size: var(--text-xs);
+  color: var(--text-light);
+  margin: 0;
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
