@@ -246,8 +246,8 @@
 }
 
 .profile-avatar {
-  width: 240px;
-  height: 240px;
+  width: 240px !important;
+  height: 240px !important;
   border-radius: 50%;
   overflow: hidden;
   border: 3px solid var(--accent-gold);
@@ -692,6 +692,15 @@
   .profile-main {
     padding: var(--spacing-lg);
   }
+
+  .profile-avatar {
+    width: 180px !important;
+    height: 180px !important;
+  }
+
+  .avatar-placeholder {
+    font-size: 58px;
+  }
 }
 
 /* Saved Searches */
@@ -828,16 +837,6 @@
   font-size: 0.85rem;
   color: var(--text-secondary);
   max-width: 300px;
-}
-
-  .profile-avatar {
-    width: 150px;
-    height: 150px;
-  }
-
-  .avatar-placeholder {
-    font-size: 48px;
-  }
 }
 
 /* ── Google auth badge below avatar ──────────────────────────────────── */

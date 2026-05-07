@@ -92168,3 +92168,1426 @@ Call log:
 {"level":"info","timestamp":"2026-05-07 18:18:32","message":"[DB] Supabase client created."}
 {"level":"info","timestamp":"2026-05-07 18:18:34","message":"[DB] Supabase connection verified."}
 {"level":"info","timestamp":"2026-05-07 18:18:34","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"debug","timestamp":"2026-05-07 18:18:43","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:18:43","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:18:43","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[CartController] Getting cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[Cart] No cart found for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:18:43","message":"→ GET /api/cart"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[CartController] Getting cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[Cart] No cart found for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:18:43","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:44","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"→ GET /api/auth/me"}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:45","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:18:45","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:18:46","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:18:46","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:46","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:18:46","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:18:46","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:18:47","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:18:47","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:47","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:18:48","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:48","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:18:49","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:18:49","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:18:49","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:18:49","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:18:59","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 18:19:00","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-07 18:19:04","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 18:19:05","message":"[UserRoutes] Theme updated for user 3fe511d5-04c0-4821-9ecd-45900a055b0d: dark"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 18:19:06","message":"[UserRoutes] Theme updated for user 3fe511d5-04c0-4821-9ecd-45900a055b0d: system"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:06","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:19:07","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:19:07","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:19:08","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:19:08","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:19:09","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:19:09","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:20:27","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:20:28","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:20:28","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:20:28","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:20:28","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:20:28","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:20:28","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:20:28","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:20:29","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:20:29","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:20:29","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:20:30","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:20:30","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:20:30","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:20:30","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"info","timestamp":"2026-05-07 18:29:11","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-07 18:29:14","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-07 18:29:14","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-07 18:29:14","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-07 18:29:14","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-07 18:29:14","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-07 18:29:14","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-07 18:29:15","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 18:29:15","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 18:29:16","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-07 18:29:16","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"info","timestamp":"2026-05-07 18:29:16","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"debug","timestamp":"2026-05-07 18:29:38","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:29:38","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:29:38","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 18:29:38","message":"[CartController] Getting cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:38","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:38","message":"[Cart] No cart found for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:38","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:29:38","message":"→ GET /api/cart"}
+{"level":"info","timestamp":"2026-05-07 18:29:39","message":"[CartController] Getting cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:39","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:39","message":"[Cart] No cart found for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:39","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:29:39","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/auth/me"}
+{"level":"info","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:40","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:41","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:29:41","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:41","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:29:42","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:29:42","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:29:42","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:29:42","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:43","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:44","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:29:44","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:29:45","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:29:45","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:45","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:29:46","message":"[Rec] No cart found for user — skipping cart strategy"}
+{"level":"info","timestamp":"2026-05-07 18:29:46","message":"[Rec] Candidates: 10 content, 0 collaborative"}
+{"level":"debug","timestamp":"2026-05-07 18:29:46","message":"→ GET /api/search/stores"}
+{"level":"debug","timestamp":"2026-05-07 18:29:46","message":"→ GET /api/search"}
+{"level":"debug","timestamp":"2026-05-07 18:29:46","message":"→ GET /api/search/stores"}
+{"level":"info","timestamp":"2026-05-07 18:29:46","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:29:46","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"info","timestamp":"2026-05-07 18:29:46","message":"[SearchHybrid] Starting hybrid search for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:29:47","message":"[SearchService] searchWithFallback: Fresh cache hit (30 products)"}
+{"level":"info","timestamp":"2026-05-07 18:29:47","message":"[SearchHybrid] Query \"keyboard\" is 30/30 stale. Queuing refresh."}
+{"level":"info","timestamp":"2026-05-07 18:29:47","message":"[JobQueue] Enqueued job: 1c4e8a86-e721-443c-b8dc-62316b6a5e98 (type: scrape_query, priority: 5)"}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[Pagination] Page 1/2, PageSize 20, TotalCount 30, Returned 20"}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[SearchController] ✅ Response contains 20 products with valid IDs | PCExpress=0 VillMan=10 PCWorx=10"}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[SearchController] Saved search to history: user=3fe511d5-04c0-4821-9ecd-45900a055b0d, query=\"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:48","message":"→ GET /api/search"}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[BackgroundWorker] Processing 1 jobs..."}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[BackgroundWorker] Processing job 1c4e8a86-e721-443c-b8dc-62316b6a5e98 (scrape_query) attempt 1/3"}
+{"level":"debug","timestamp":"2026-05-07 18:29:48","message":"→ POST /api/recommendations/track"}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[SearchHybrid] Starting hybrid search for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[BackgroundWorker] Re-scraping query: \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:48","message":"[BackgroundWorker] Scraping pcexpress for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:29:48","message":"[BaseScraper] Launching shared browser pool..."}
+{"level":"debug","timestamp":"2026-05-07 18:29:48","message":"[Rec] Tracked search for user 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:49","message":"[SearchService] searchWithFallback: Fresh cache hit (30 products)"}
+{"level":"info","timestamp":"2026-05-07 18:29:49","message":"[SearchHybrid] Query \"keyboard\" is 30/30 stale. Queuing refresh."}
+{"level":"info","timestamp":"2026-05-07 18:29:49","message":"[BaseScraper] Browser pool ready"}
+{"level":"info","timestamp":"2026-05-07 18:29:49","message":"[JobQueue] Enqueued job: e945adb6-7a56-4a2d-94c9-320e007ce2a4 (type: scrape_query, priority: 5)"}
+{"level":"info","timestamp":"2026-05-07 18:29:49","message":"[Pagination] Page 1/2, PageSize 20, TotalCount 30, Returned 20"}
+{"level":"info","timestamp":"2026-05-07 18:29:49","message":"[SearchController] ✅ Response contains 20 products with valid IDs | PCExpress=0 VillMan=10 PCWorx=10"}
+{"level":"info","timestamp":"2026-05-07 18:29:49","message":"[SearchController] Saved search to history: user=3fe511d5-04c0-4821-9ecd-45900a055b0d, query=\"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:50","message":"→ POST /api/recommendations/track"}
+{"level":"info","timestamp":"2026-05-07 18:29:50","message":"[PcExpressScraper] Search API: \"keyboard\" → https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 18:29:50","message":"[Rec] Tracked search for user 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:29:51","message":"[PcExpressScraper] API found 3 product URLs"}
+{"level":"info","timestamp":"2026-05-07 18:29:51","message":"[PcExpressScraper] Scraping 3 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 18:29:52","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk270r-wireless-keyboard-and-mouse-combo.json"}
+{"level":"debug","timestamp":"2026-05-07 18:29:52","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk295-silent-wireless-keyboard-and-mouse-combo.json"}
+{"level":"debug","timestamp":"2026-05-07 18:29:52","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk345-comfort-wireless-keyboard-and-mouse-combo-black.json"}
+{"level":"debug","timestamp":"2026-05-07 18:29:53","message":"[PcExpressScraper] JSON success: LOGITECH MK295 Silent Wireless Keyboard and Mouse Combo"}
+{"level":"debug","timestamp":"2026-05-07 18:29:54","message":"[PcExpressScraper] JSON success: LOGITECH MK270r Wireless Keyboard and Mouse Combo"}
+{"level":"debug","timestamp":"2026-05-07 18:29:54","message":"[PcExpressScraper] JSON success: LOGITECH MK345 COMFORT Wireless Keyboard and Mouse Combo (Black)"}
+{"level":"debug","timestamp":"2026-05-07 18:29:56","message":"[BackgroundWorker] pcexpress platform_id: b1ebdcf4-e478-4940-a8cc-074b777db0df"}
+{"level":"debug","timestamp":"2026-05-07 18:29:58","message":"→ GET /api/products/77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"debug","timestamp":"2026-05-07 18:29:58","message":"→ GET /api/products/77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"debug","timestamp":"2026-05-07 18:29:59","message":"[BackgroundWorker] Scraping villman for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:29:59","message":"[VillmanScraper] Calling Shopify API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 18:30:00","message":"[VillmanScraper] API found 10 product URLs for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:30:01","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:01","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:01","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:01","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:01","message":"[VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:02","message":"[VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:02","message":"[VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:02","message":"[VillmanScraper] JSON success: Aula F87 Mechanical Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:03","message":"→ POST /api/cart"}
+{"level":"info","timestamp":"2026-05-07 18:30:03","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:30:04","message":"[Cart] No cart found for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:30:04","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:30:04","message":"[Cart] Found cart: 64e4c761-8d68-42a0-8cb3-40aa96832412"}
+{"level":"info","timestamp":"2026-05-07 18:30:04","message":"[Cart] Found 1 items in cart"}
+{"level":"info","timestamp":"2026-05-07 18:30:04","message":"[Cart] Fetching products: 77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"info","timestamp":"2026-05-07 18:30:05","message":"[Cart] Found 1 products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:05","message":"[Cart] Mapped product 77645686-e49f-4f0b-9765-5dd2c67288b2: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal, platform: PCWorx"}
+{"level":"info","timestamp":"2026-05-07 18:30:05","message":"[Cart] Returning cart with 1 items"}
+{"level":"debug","timestamp":"2026-05-07 18:30:05","message":"→ GET /api/cart"}
+{"level":"info","timestamp":"2026-05-07 18:30:05","message":"[CartController] Getting cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:30:05","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-07 18:30:05","message":"[Cart] Found cart: 64e4c761-8d68-42a0-8cb3-40aa96832412"}
+{"level":"info","timestamp":"2026-05-07 18:30:06","message":"[Cart] Found 1 items in cart"}
+{"level":"info","timestamp":"2026-05-07 18:30:06","message":"[Cart] Fetching products: 77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"info","timestamp":"2026-05-07 18:30:06","message":"[Cart] Found 1 products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:06","message":"[Cart] Mapped product 77645686-e49f-4f0b-9765-5dd2c67288b2: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal, platform: PCWorx"}
+{"level":"info","timestamp":"2026-05-07 18:30:06","message":"[Cart] Returning cart with 1 items"}
+{"level":"info","timestamp":"2026-05-07 18:30:06","message":"[CartController] Cart retrieved: 64e4c761-8d68-42a0-8cb3-40aa96832412"}
+{"level":"info","timestamp":"2026-05-07 18:30:06","message":"[CartController] Processing 1 cart items"}
+{"level":"debug","timestamp":"2026-05-07 18:30:06","message":"[CartController] Processing item dec1a770-01cb-4dbf-b7a4-a3154f0a45f3, products array length: 1"}
+{"level":"debug","timestamp":"2026-05-07 18:30:06","message":"[CartController] Item dec1a770-01cb-4dbf-b7a4-a3154f0a45f3 has product: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal"}
+{"level":"info","timestamp":"2026-05-07 18:30:06","message":"[CartController] Returning 1 items with total price: 3277.5"}
+{"level":"debug","timestamp":"2026-05-07 18:30:07","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:07","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f3050-2-in-1-gaming-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:07","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f2066-ii-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:07","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-awk310-bluetooth-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:07","message":"[VillmanScraper] JSON success: Aula F75 Mechanical Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:08","message":"[VillmanScraper] JSON success: Aula S2022 Wired Mechanical Gaming Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:08","message":"[VillmanScraper] JSON success: Aula F2088 (Black) Wired Mechanical Gaming Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:08","message":"[VillmanScraper] JSON success: Aula AK205 USB Wired Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:11","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f98-pro-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:11","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f68-green-3-in-1-gaming-mechanical-hot-swappable-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:12","message":"[VillmanScraper] JSON success: Aula F98 3-in-1 RGB Gaming Mechanical Hot Swappable Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:12","message":"[VillmanScraper] JSON success: Aula F98 Pro Mechanical Keyboard"}
+{"level":"info","timestamp":"2026-05-07 18:30:15","message":"[VillmanScraper] Scraped 10/10 products successfully"}
+{"level":"debug","timestamp":"2026-05-07 18:30:15","message":"[BackgroundWorker] villman platform_id: 13a93343-26ab-4e7c-ba20-2f38e7649d19"}
+{"level":"debug","timestamp":"2026-05-07 18:30:19","message":"[BackgroundWorker] Scraping pcworx for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:30:19","message":"[PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 18:30:20","message":"[PcWorxScraper] API found 10 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 18:30:21","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk120-usb-keyboard-and-mouse.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:21","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:21","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk345-wireless-keyboard-and-mouse-black.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:21","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3330-usb-keyboard-and-mouse.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:21","message":"[PcWorxScraper] JSON success: Logitech MK120 USB Keyboard and Mouse"}
+{"level":"debug","timestamp":"2026-05-07 18:30:21","message":"[PcWorxScraper] JSON success: A4tech KK-3330 USB Keyboard and Mouse"}
+{"level":"debug","timestamp":"2026-05-07 18:30:22","message":"[PcWorxScraper] JSON success: Logitech MK345 Wireless Keyboard and Mouse Black"}
+{"level":"debug","timestamp":"2026-05-07 18:30:22","message":"[PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:23","message":"→ GET /api/products/77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"debug","timestamp":"2026-05-07 18:30:24","message":"→ GET /api/products/77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"debug","timestamp":"2026-05-07 18:30:25","message":"→ GET /api/search/stores"}
+{"level":"debug","timestamp":"2026-05-07 18:30:25","message":"→ POST /api/recommendations/track"}
+{"level":"debug","timestamp":"2026-05-07 18:30:25","message":"→ POST /api/recommendations/track"}
+{"level":"debug","timestamp":"2026-05-07 18:30:25","message":"→ GET /api/search/stores"}
+{"level":"debug","timestamp":"2026-05-07 18:30:26","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k641g-gw-rgb-shaco-mechanical-keyboard-grey-white.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:26","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd100-mechanical-keyboard-wired-2-4g-wireless-milky-brown-k-yellow.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:26","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-tuf-k3-gaming-keyboard-brown-switch.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:26","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k649-elf-pro-wireless-crystal-75-gasket-hot-swappable-mechanical-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:26","message":"[Rec] Tracked search for user 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"debug","timestamp":"2026-05-07 18:30:26","message":"[Rec] Tracked search for user 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"debug","timestamp":"2026-05-07 18:30:27","message":"[PcWorxScraper] JSON success: Redragon K641G-GW-RGB Shaco Mechanical Keyboard Grey White"}
+{"level":"debug","timestamp":"2026-05-07 18:30:27","message":"[PcWorxScraper] JSON success: Darkflash GD100 Mechanical Keyboard Wired+2.4G Wireless Milky & Brown K. Yellow"}
+{"level":"debug","timestamp":"2026-05-07 18:30:27","message":"[PcWorxScraper] JSON success: Asus TUF K3 Gaming Keyboard Brown Switch"}
+{"level":"debug","timestamp":"2026-05-07 18:30:27","message":"[PcWorxScraper] JSON success: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:28","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:30:29","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:30:30","message":"[Rec] Candidates: 9 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:30:31","message":"[Rec] Built 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:30:31","message":"[RecController] Returning 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:30:31","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:30:31","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-fbk25-fstyler-wireless-keyboad.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:31","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/hp-230-wireless-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 18:30:31","message":"[PcWorxScraper] JSON success: A4tech FBK25 Fstyler Wireless Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 18:30:32","message":"[PcWorxScraper] JSON success: HP 230 Wireless Keyboard"}
+{"level":"info","timestamp":"2026-05-07 18:30:32","message":"[Rec] Candidates: 9 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-07 18:30:32","message":"[Rec] Built 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-07 18:30:32","message":"[RecController] Returning 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-07 18:30:34","message":"[BackgroundWorker] pcworx platform_id: 12096578-17a6-40ad-b71e-6179367faa33"}
+{"level":"info","timestamp":"2026-05-07 18:30:37","message":"[BackgroundWorker] scrape_query \"keyboard\" done — 23 products across 3 stores"}
+{"level":"info","timestamp":"2026-05-07 18:30:38","message":"[BackgroundWorker] Job 1c4e8a86-e721-443c-b8dc-62316b6a5e98 completed successfully"}
+{"level":"info","timestamp":"2026-05-07 18:30:38","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 18:30:43","message":"[BackgroundWorker] Processing 1 jobs..."}
+{"level":"info","timestamp":"2026-05-07 18:30:43","message":"[BackgroundWorker] Processing job e945adb6-7a56-4a2d-94c9-320e007ce2a4 (scrape_query) attempt 1/3"}
+{"level":"info","timestamp":"2026-05-07 18:30:43","message":"[BackgroundWorker] Re-scraping query: \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:30:43","message":"[BackgroundWorker] Scraping pcexpress for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:30:44","message":"[PcExpressScraper] Search API: \"keyboard\" → https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"warn","timestamp":"2026-05-07 18:30:45","message":"[Retry] PcExpressScraper.search failed (attempt 1/3). Retrying in 2471ms. Error: page.evaluate: Target page, context or browser has been closed"}
+{"level":"warn","timestamp":"2026-05-07 18:30:47","message":"[BaseScraper] Browser disconnected, relaunching..."}
+{"level":"info","timestamp":"2026-05-07 18:30:47","message":"[BaseScraper] Launching shared browser pool..."}
+{"level":"info","timestamp":"2026-05-07 18:30:48","message":"[BaseScraper] Browser pool ready"}
+{"level":"info","timestamp":"2026-05-07 18:30:48","message":"[PcExpressScraper] Search API: \"keyboard\" → https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 18:30:49","message":"[PcExpressScraper] API found 3 product URLs"}
+{"level":"info","timestamp":"2026-05-07 18:30:49","message":"[PcExpressScraper] Scraping 3 product URLs"}
+{"level":"info","timestamp":"2026-05-07 18:30:51","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-07 18:30:54","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-07 18:30:54","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-07 18:30:54","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-07 18:30:54","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-07 18:30:54","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-07 18:30:54","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-07 18:33:17","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-07 18:33:20","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-07 18:33:20","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-07 18:33:20","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-07 18:33:20","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-07 18:33:20","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-07 18:33:20","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-07 18:33:21","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 18:33:21","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 18:33:21","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-07 18:33:21","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"info","timestamp":"2026-05-07 18:33:21","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"debug","timestamp":"2026-05-07 18:33:38","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:33:38","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:33:41","message":"→ GET /api/auth/google"}
+{"level":"debug","timestamp":"2026-05-07 18:33:46","message":"→ GET /api/auth/google/callback"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 18:33:48","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:33:48","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:33:48","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:33:48","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:48","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:33:48","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:33:48","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:33:49","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:33:49","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:33:50","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:33:50","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:33:56","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 18:33:57","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-07 18:33:59","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 18:34:00","message":"[UserRoutes] Theme updated for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf: light"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:01","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:01","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:02","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:34:02","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:34:03","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:08","message":"→ GET /api/auth/google"}
+{"level":"debug","timestamp":"2026-05-07 18:34:13","message":"→ GET /api/auth/google/callback"}
+{"level":"debug","timestamp":"2026-05-07 18:34:14","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:34:14","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:34:14","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:34:14","message":"→ GET /api/auth/me"}
+{"level":"info","timestamp":"2026-05-07 18:34:14","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:34:14","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:15","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:16","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:16","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:16","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:34:16","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:34:21","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:34:21","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 18:34:22","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:34:22","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:35:01","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:35:01","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:35:01","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 18:35:01","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 18:35:01","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:35:01","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 18:35:02","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 18:35:02","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 18:35:03","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 18:35:03","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 18:35:03","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 18:35:44","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 18:35:45","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-07 18:35:47","message":"→ GET /api/user/saved-searches"}
+{"level":"info","timestamp":"2026-05-07 18:35:55","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 18:35:58","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 19:51:41","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-07 19:51:49","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-07 19:51:49","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-07 19:51:49","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-07 19:51:49","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-07 19:51:49","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-07 19:51:49","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-07 19:51:50","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 19:51:50","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 19:51:50","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-07 19:51:50","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"info","timestamp":"2026-05-07 19:51:50","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"debug","timestamp":"2026-05-07 19:52:07","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 19:52:07","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 19:52:07","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 19:52:07","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:07","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:07","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:07","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 19:52:07","message":"→ GET /api/cart"}
+{"level":"info","timestamp":"2026-05-07 19:52:07","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:07","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:08","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:08","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:15","message":"→ GET /api/auth/me"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:16","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 19:52:16","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 19:52:17","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:52:17","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:20","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 19:52:21","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-07 19:52:24","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-07 19:52:26","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:29","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 19:52:30","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:30","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 19:52:31","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:52:31","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:33","message":"→ GET /api/search/stores"}
+{"level":"debug","timestamp":"2026-05-07 19:52:33","message":"→ GET /api/search"}
+{"level":"debug","timestamp":"2026-05-07 19:52:33","message":"→ GET /api/search/stores"}
+{"level":"info","timestamp":"2026-05-07 19:52:33","message":"[SearchHybrid] Starting hybrid search for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:52:34","message":"[SearchService] searchWithFallback: Fresh cache hit (30 products)"}
+{"level":"info","timestamp":"2026-05-07 19:52:34","message":"[SearchHybrid] Query \"keyboard\" is 30/30 stale. Queuing refresh."}
+{"level":"info","timestamp":"2026-05-07 19:52:34","message":"[JobQueue] Enqueued job: 36105716-aa9c-4a35-8038-244960f40136 (type: scrape_query, priority: 5)"}
+{"level":"info","timestamp":"2026-05-07 19:52:34","message":"[Pagination] Page 1/2, PageSize 20, TotalCount 30, Returned 20"}
+{"level":"info","timestamp":"2026-05-07 19:52:34","message":"[SearchController] ✅ Response contains 20 products with valid IDs | PCExpress=0 VillMan=10 PCWorx=10"}
+{"level":"info","timestamp":"2026-05-07 19:52:34","message":"[SearchController] Saved search to history: user=8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf, query=\"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:34","message":"→ GET /api/search"}
+{"level":"debug","timestamp":"2026-05-07 19:52:34","message":"→ POST /api/recommendations/track"}
+{"level":"info","timestamp":"2026-05-07 19:52:35","message":"[SearchHybrid] Starting hybrid search for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:52:35","message":"[SearchService] searchWithFallback: Fresh cache hit (30 products)"}
+{"level":"info","timestamp":"2026-05-07 19:52:35","message":"[SearchHybrid] Query \"keyboard\" is 30/30 stale. Queuing refresh."}
+{"level":"debug","timestamp":"2026-05-07 19:52:35","message":"[Rec] Tracked search for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:35","message":"[JobQueue] Enqueued job: 0ce5a6da-bd55-4adf-bbac-ed56f848c22c (type: scrape_query, priority: 5)"}
+{"level":"info","timestamp":"2026-05-07 19:52:36","message":"[Pagination] Page 1/2, PageSize 20, TotalCount 30, Returned 20"}
+{"level":"info","timestamp":"2026-05-07 19:52:36","message":"[SearchController] ✅ Response contains 20 products with valid IDs | PCExpress=0 VillMan=10 PCWorx=10"}
+{"level":"info","timestamp":"2026-05-07 19:52:36","message":"[SearchController] Saved search to history: user=8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf, query=\"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:36","message":"→ POST /api/recommendations/track"}
+{"level":"debug","timestamp":"2026-05-07 19:52:36","message":"[Rec] Tracked search for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:39","message":"[BackgroundWorker] Processing 2 jobs..."}
+{"level":"info","timestamp":"2026-05-07 19:52:39","message":"[BackgroundWorker] Processing job 36105716-aa9c-4a35-8038-244960f40136 (scrape_query) attempt 1/3"}
+{"level":"info","timestamp":"2026-05-07 19:52:39","message":"[BackgroundWorker] Re-scraping query: \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:39","message":"[BackgroundWorker] Scraping pcexpress for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:52:39","message":"[BaseScraper] Launching shared browser pool..."}
+{"level":"info","timestamp":"2026-05-07 19:52:40","message":"[BaseScraper] Browser pool ready"}
+{"level":"info","timestamp":"2026-05-07 19:52:41","message":"[PcExpressScraper] Search API: \"keyboard\" → https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 19:52:41","message":"[PcExpressScraper] API found 3 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:52:41","message":"[PcExpressScraper] Scraping 3 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:52:41","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk270r-wireless-keyboard-and-mouse-combo.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:41","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk295-silent-wireless-keyboard-and-mouse-combo.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:41","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk345-comfort-wireless-keyboard-and-mouse-combo-black.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:42","message":"[PcExpressScraper] JSON success: LOGITECH MK295 Silent Wireless Keyboard and Mouse Combo"}
+{"level":"debug","timestamp":"2026-05-07 19:52:42","message":"[PcExpressScraper] JSON success: LOGITECH MK345 COMFORT Wireless Keyboard and Mouse Combo (Black)"}
+{"level":"debug","timestamp":"2026-05-07 19:52:42","message":"[PcExpressScraper] JSON success: LOGITECH MK270r Wireless Keyboard and Mouse Combo"}
+{"level":"debug","timestamp":"2026-05-07 19:52:45","message":"[BackgroundWorker] pcexpress platform_id: b1ebdcf4-e478-4940-a8cc-074b777db0df"}
+{"level":"debug","timestamp":"2026-05-07 19:52:47","message":"→ GET /api/products/9bd21815-dd2f-4ffa-abba-be4abad5bd13"}
+{"level":"debug","timestamp":"2026-05-07 19:52:48","message":"[BackgroundWorker] Scraping villman for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:48","message":"[VillmanScraper] Calling Shopify API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:52:49","message":"→ GET /api/products/9bd21815-dd2f-4ffa-abba-be4abad5bd13"}
+{"level":"info","timestamp":"2026-05-07 19:52:50","message":"[VillmanScraper] API found 10 product URLs for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-awk310-bluetooth-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] JSON success: Aula AK205 USB Wired Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:52:51","message":"[VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:52:54","message":"→ POST /api/cart"}
+{"level":"info","timestamp":"2026-05-07 19:52:54","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:55","message":"[Cart] No cart found for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:55","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:55","message":"[Cart] Found cart: 458721a4-2de0-48be-8ca7-a3f4548093bb"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f3050-2-in-1-gaming-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f2183-3-in-1-tkl-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Found 1 items in cart"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Fetching products: 9bd21815-dd2f-4ffa-abba-be4abad5bd13"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Found 1 products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[Cart] Mapped product 9bd21815-dd2f-4ffa-abba-be4abad5bd13: HP 230 Wireless Keyboard, platform: PCWorx"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Returning cart with 1 items"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] JSON success: Aula F87 Mechanical Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] JSON success: Aula F75 Mechanical Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] JSON success: Aula F2088 (Black) Wired Mechanical Gaming Keyboard"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[CartController] Getting cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Fetching cart for user: 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"debug","timestamp":"2026-05-07 19:52:56","message":"[VillmanScraper] JSON success: Aula F3050 2-in-1 Gaming Mechanical Keyboard"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Found cart: 458721a4-2de0-48be-8ca7-a3f4548093bb"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Found 1 items in cart"}
+{"level":"info","timestamp":"2026-05-07 19:52:56","message":"[Cart] Fetching products: 9bd21815-dd2f-4ffa-abba-be4abad5bd13"}
+{"level":"info","timestamp":"2026-05-07 19:52:57","message":"[Cart] Found 1 products"}
+{"level":"debug","timestamp":"2026-05-07 19:52:57","message":"[Cart] Mapped product 9bd21815-dd2f-4ffa-abba-be4abad5bd13: HP 230 Wireless Keyboard, platform: PCWorx"}
+{"level":"info","timestamp":"2026-05-07 19:52:57","message":"[Cart] Returning cart with 1 items"}
+{"level":"info","timestamp":"2026-05-07 19:52:57","message":"[CartController] Cart retrieved: 458721a4-2de0-48be-8ca7-a3f4548093bb"}
+{"level":"info","timestamp":"2026-05-07 19:52:57","message":"[CartController] Processing 1 cart items"}
+{"level":"debug","timestamp":"2026-05-07 19:52:57","message":"[CartController] Processing item 9d2d5921-133a-4ae9-93dd-8fa27ce0426a, products array length: 1"}
+{"level":"debug","timestamp":"2026-05-07 19:52:57","message":"[CartController] Item 9d2d5921-133a-4ae9-93dd-8fa27ce0426a has product: HP 230 Wireless Keyboard"}
+{"level":"info","timestamp":"2026-05-07 19:52:57","message":"[CartController] Returning 1 items with total price: 954"}
+{"level":"debug","timestamp":"2026-05-07 19:53:00","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f2066-ii-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:00","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f98-pro-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:01","message":"[VillmanScraper] JSON success: Aula F98 3-in-1 RGB Gaming Mechanical Hot Swappable Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:01","message":"[VillmanScraper] JSON success: Aula S2022 Wired Mechanical Gaming Keyboard"}
+{"level":"info","timestamp":"2026-05-07 19:53:03","message":"[VillmanScraper] Scraped 10/10 products successfully"}
+{"level":"debug","timestamp":"2026-05-07 19:53:03","message":"[BackgroundWorker] villman platform_id: 13a93343-26ab-4e7c-ba20-2f38e7649d19"}
+{"level":"debug","timestamp":"2026-05-07 19:53:06","message":"[BackgroundWorker] Scraping pcworx for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:07","message":"[PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 19:53:07","message":"[PcWorxScraper] API found 10 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:53:08","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk120-usb-keyboard-and-mouse.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:08","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:08","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk345-wireless-keyboard-and-mouse-black.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:08","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3330-usb-keyboard-and-mouse.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:08","message":"[PcWorxScraper] JSON success: Logitech MK120 USB Keyboard and Mouse"}
+{"level":"debug","timestamp":"2026-05-07 19:53:08","message":"[PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:08","message":"[PcWorxScraper] JSON success: Logitech MK345 Wireless Keyboard and Mouse Black"}
+{"level":"debug","timestamp":"2026-05-07 19:53:09","message":"[PcWorxScraper] JSON success: A4tech KK-3330 USB Keyboard and Mouse"}
+{"level":"debug","timestamp":"2026-05-07 19:53:11","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k641g-gw-rgb-shaco-mechanical-keyboard-grey-white.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:11","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd100-mechanical-keyboard-wired-2-4g-wireless-milky-brown-k-yellow.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:11","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-tuf-k3-gaming-keyboard-brown-switch.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:11","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k649-elf-pro-wireless-crystal-75-gasket-hot-swappable-mechanical-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:11","message":"[PcWorxScraper] JSON success: Darkflash GD100 Mechanical Keyboard Wired+2.4G Wireless Milky & Brown K. Yellow"}
+{"level":"debug","timestamp":"2026-05-07 19:53:11","message":"[PcWorxScraper] JSON success: Redragon K641G-GW-RGB Shaco Mechanical Keyboard Grey White"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[PcWorxScraper] JSON success: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[PcWorxScraper] JSON success: Asus TUF K3 Gaming Keyboard Brown Switch"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:12","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (2 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:13","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:13","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:13","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 19:53:13","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (2 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:53:14","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:14","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-fbk25-fstyler-wireless-keyboad.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:14","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/hp-230-wireless-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:14","message":"[PcWorxScraper] JSON success: A4tech FBK25 Fstyler Wireless Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:15","message":"[PcWorxScraper] JSON success: HP 230 Wireless Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:17","message":"[BackgroundWorker] pcworx platform_id: 12096578-17a6-40ad-b71e-6179367faa33"}
+{"level":"info","timestamp":"2026-05-07 19:53:19","message":"[BackgroundWorker] scrape_query \"keyboard\" done — 23 products across 3 stores"}
+{"level":"debug","timestamp":"2026-05-07 19:53:20","message":"→ GET /api/user/saved-searches"}
+{"level":"info","timestamp":"2026-05-07 19:53:20","message":"[BackgroundWorker] Job 36105716-aa9c-4a35-8038-244960f40136 completed successfully"}
+{"level":"info","timestamp":"2026-05-07 19:53:20","message":"[BackgroundWorker] Processing job 0ce5a6da-bd55-4adf-bbac-ed56f848c22c (scrape_query) attempt 1/3"}
+{"level":"info","timestamp":"2026-05-07 19:53:20","message":"[BackgroundWorker] Re-scraping query: \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:20","message":"[BackgroundWorker] Scraping pcexpress for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:53:20","message":"[PcExpressScraper] Search API: \"keyboard\" → https://pcx.com.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] API found 3 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] Scraping 3 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk270r-wireless-keyboard-and-mouse-combo.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk295-silent-wireless-keyboard-and-mouse-combo.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk345-comfort-wireless-keyboard-and-mouse-combo-black.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] JSON success: LOGITECH MK270r Wireless Keyboard and Mouse Combo"}
+{"level":"debug","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] JSON success: LOGITECH MK345 COMFORT Wireless Keyboard and Mouse Combo (Black)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:21","message":"[PcExpressScraper] JSON success: LOGITECH MK295 Silent Wireless Keyboard and Mouse Combo"}
+{"level":"debug","timestamp":"2026-05-07 19:53:22","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 19:53:25","message":"[BackgroundWorker] pcexpress platform_id: b1ebdcf4-e478-4940-a8cc-074b777db0df"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"[BackgroundWorker] Scraping villman for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"[VillmanScraper] Calling Shopify API: https://shop.villman.com/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:26","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:26","message":"[VillmanScraper] API found 10 product URLs for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:53:26","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (2 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f2088-pro-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-ac101-usb-wired-keyboard-mouse-combo-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-s2022-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f75-mechanical-keyboard-copy.json"}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:53:27","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (2 interactions) — serving trending"}
+{"level":"debug","timestamp":"2026-05-07 19:53:27","message":"[VillmanScraper] JSON success: Aula AWK310 Bluetooth Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:28","message":"[VillmanScraper] JSON success: Aula F2058 Wired Mechanical Gaming Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:28","message":"[VillmanScraper] JSON success: Aula F87 Mechanical Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:28","message":"[VillmanScraper] JSON success: Aula F3061 (Black) Membrane Keyboard"}
+{"level":"info","timestamp":"2026-05-07 19:53:28","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:53:31","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f99-3-in-1-rgb-gaming-mechanical-hot-swappable-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:31","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f3050-2-in-1-gaming-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:31","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f2066-ii-wired-mechanical-gaming-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:31","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-awk310-bluetooth-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:32","message":"[VillmanScraper] JSON success: Aula F75 Mechanical Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:34","message":"[VillmanScraper] JSON success: Aula S2022 Wired Mechanical Gaming Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:34","message":"[VillmanScraper] JSON success: Aula F2088 (Black) Wired Mechanical Gaming Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:35","message":"[VillmanScraper] JSON success: Aula AK205 USB Wired Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:38","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f98-pro-mechanical-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:38","message":"[VillmanScraper] Trying Shopify JSON: https://shop.villman.com/products/aula-f68-green-3-in-1-gaming-mechanical-hot-swappable-keyboard-copy.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:41","message":"[VillmanScraper] JSON success: Aula F98 Pro Mechanical Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:41","message":"[VillmanScraper] JSON success: Aula F98 3-in-1 RGB Gaming Mechanical Hot Swappable Keyboard"}
+{"level":"info","timestamp":"2026-05-07 19:53:44","message":"[VillmanScraper] Scraped 10/10 products successfully"}
+{"level":"debug","timestamp":"2026-05-07 19:53:45","message":"[BackgroundWorker] villman platform_id: 13a93343-26ab-4e7c-ba20-2f38e7649d19"}
+{"level":"debug","timestamp":"2026-05-07 19:53:47","message":"[BackgroundWorker] Scraping pcworx for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:53:48","message":"[PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=keyboard&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 19:53:48","message":"[PcWorxScraper] API found 10 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk120-usb-keyboard-and-mouse.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-krs-83-comfortable-a-shape-spill-resistant-usb-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/logitech-mk345-wireless-keyboard-and-mouse-black.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-kk-3330-usb-keyboard-and-mouse.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] JSON success: Logitech MK120 USB Keyboard and Mouse"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] JSON success: A4Tech KRS-83 Comfortable A Shape Spill Resistant USB Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] JSON success: Logitech MK345 Wireless Keyboard and Mouse Black"}
+{"level":"debug","timestamp":"2026-05-07 19:53:49","message":"[PcWorxScraper] JSON success: A4tech KK-3330 USB Keyboard and Mouse"}
+{"level":"debug","timestamp":"2026-05-07 19:53:52","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k641g-gw-rgb-shaco-mechanical-keyboard-grey-white.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:52","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/darkflash-gd100-mechanical-keyboard-wired-2-4g-wireless-milky-brown-k-yellow.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:52","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/asus-tuf-k3-gaming-keyboard-brown-switch.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:52","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/redragon-k649-elf-pro-wireless-crystal-75-gasket-hot-swappable-mechanical-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:53","message":"[PcWorxScraper] JSON success: Darkflash GD100 Mechanical Keyboard Wired+2.4G Wireless Milky & Brown K. Yellow"}
+{"level":"debug","timestamp":"2026-05-07 19:53:53","message":"[PcWorxScraper] JSON success: Asus TUF K3 Gaming Keyboard Brown Switch"}
+{"level":"debug","timestamp":"2026-05-07 19:53:53","message":"[PcWorxScraper] JSON success: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal"}
+{"level":"debug","timestamp":"2026-05-07 19:53:53","message":"[PcWorxScraper] JSON success: Redragon K641G-GW-RGB Shaco Mechanical Keyboard Grey White"}
+{"level":"debug","timestamp":"2026-05-07 19:53:57","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/hp-230-wireless-keyboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:57","message":"[PcWorxScraper] Scraping JSON: https://pcworx.ph/products/a4tech-fbk25-fstyler-wireless-keyboad.json"}
+{"level":"debug","timestamp":"2026-05-07 19:53:57","message":"[PcWorxScraper] JSON success: HP 230 Wireless Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:53:57","message":"[PcWorxScraper] JSON success: A4tech FBK25 Fstyler Wireless Keyboard"}
+{"level":"debug","timestamp":"2026-05-07 19:54:00","message":"[BackgroundWorker] pcworx platform_id: 12096578-17a6-40ad-b71e-6179367faa33"}
+{"level":"info","timestamp":"2026-05-07 19:54:03","message":"[BackgroundWorker] scrape_query \"keyboard\" done — 23 products across 3 stores"}
+{"level":"info","timestamp":"2026-05-07 19:54:03","message":"[BackgroundWorker] Job 0ce5a6da-bd55-4adf-bbac-ed56f848c22c completed successfully"}
+{"level":"info","timestamp":"2026-05-07 19:54:04","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:56:18","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (2 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:18","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 19:56:19","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 19:56:19","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:56:19","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 19:56:19","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (2 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 19:56:20","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 19:58:33","message":"→ GET /api/search/stores"}
+{"level":"debug","timestamp":"2026-05-07 19:58:33","message":"→ GET /api/search"}
+{"level":"debug","timestamp":"2026-05-07 19:58:33","message":"→ GET /api/search/stores"}
+{"level":"info","timestamp":"2026-05-07 19:58:33","message":"[SearchHybrid] Starting hybrid search for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"info","timestamp":"2026-05-07 19:58:34","message":"[SearchService] Scraper called: stores=PCExpress, VillMan, PCWorx query=\"ph 11134207 81ztn mipc76a0g3ya22 tn\" count=3"}
+{"level":"info","timestamp":"2026-05-07 19:58:34","message":"[PcExpressScraper] Search API: \"ph 11134207 81ztn mipc76a0g3ya22 tn\" → https://pcx.com.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:58:34","message":"[VillmanScraper] Calling Shopify API: https://shop.villman.com/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:58:34","message":"[PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 19:58:35","message":"[PcWorxScraper] API found 0 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:58:35","message":"[PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 19:58:35","message":"[VillmanScraper] API found 0 product URLs for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 19:58:35","message":"[VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 19:58:35","message":"[PcExpressScraper] API found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:58:35","message":"[PcExpressScraper] API returned 0 — falling back to HTML search"}
+{"level":"debug","timestamp":"2026-05-07 19:58:35","message":"[PcExpressScraper] HTML fallback: https://pcx.com.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 19:58:44","message":"[VillmanScraper] Fallback found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:58:44","message":"[VillmanScraper] Scraped 0/0 products successfully"}
+{"level":"info","timestamp":"2026-05-07 19:58:44","message":"[SearchService] Scraper result: store=\"VillMan\" count=0 durationMs=9970"}
+{"level":"info","timestamp":"2026-05-07 19:58:47","message":"[PcExpressScraper] HTML fallback found 19 URLs"}
+{"level":"info","timestamp":"2026-05-07 19:58:47","message":"[PcExpressScraper] Scraping 19 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:58:48","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk345-comfort-wireless-keyboard-and-mouse-combo-black.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:48","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:48","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/dell-inspiron-15-3520-i71255u-16gb-512gb-intel-core-i7-laptop-platinum-silver.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:48","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-1000-air-ups-portable-power-station.json"}
+{"level":"info","timestamp":"2026-05-07 19:58:49","message":"[PcWorxScraper] Fallback found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:58:49","message":"[SearchService] Scraper result: store=\"PCWorx\" count=0 durationMs=15565"}
+{"level":"debug","timestamp":"2026-05-07 19:58:50","message":"[PcExpressScraper] JSON success: LOGITECH MK345 COMFORT Wireless Keyboard and Mouse Combo (Black)"}
+{"level":"debug","timestamp":"2026-05-07 19:58:50","message":"[PcExpressScraper] JSON success: DELL Inspiron 15 3520-I71255U 16GB/512GB Intel®  Core™ i7 Laptop (Platinum Silver)"}
+{"level":"info","timestamp":"2026-05-07 19:58:50","message":"[normalizeProduct] Deal: \"DELL Inspiron 15 3520-I71255U 16GB/512GB Intel®  C\" | store=pcexpress | price=48990 | original=49990 | discount=2.0% | promo=\"none\" | specs=1 keys"}
+{"level":"debug","timestamp":"2026-05-07 19:58:50","message":"[PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset"}
+{"level":"debug","timestamp":"2026-05-07 19:58:50","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 1000 Air UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:58:53","message":"→ GET /api/search"}
+{"level":"info","timestamp":"2026-05-07 19:58:53","message":"[SearchHybrid] Starting hybrid search for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 19:58:54","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-max-portable-power-station-2048wh.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:54","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-ultra-portable-power-station-3072wh.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:54","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-max-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:54","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-plus-portable-power-station.json"}
+{"level":"info","timestamp":"2026-05-07 19:58:54","message":"[SearchService] Scraper called: stores=PCExpress, VillMan, PCWorx query=\"ph 11134207 81ztn mipc76a0g3ya22 tn\" count=3"}
+{"level":"info","timestamp":"2026-05-07 19:58:54","message":"[PcExpressScraper] Search API: \"ph 11134207 81ztn mipc76a0g3ya22 tn\" → https://pcx.com.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:58:54","message":"[VillmanScraper] Calling Shopify API: https://shop.villman.com/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:58:54","message":"[PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:58:55","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Max Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:58:55","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 Ultra Portable Power Station (3072Wh)"}
+{"level":"debug","timestamp":"2026-05-07 19:58:55","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Plus Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:58:55","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 MAX Portable Power Station (2048Wh)"}
+{"level":"info","timestamp":"2026-05-07 19:58:55","message":"[PcExpressScraper] API found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:58:55","message":"[PcExpressScraper] API returned 0 — falling back to HTML search"}
+{"level":"debug","timestamp":"2026-05-07 19:58:55","message":"[PcExpressScraper] HTML fallback: https://pcx.com.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 19:58:55","message":"[PcWorxScraper] API found 0 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:58:55","message":"[PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 19:58:55","message":"[VillmanScraper] API found 0 product URLs for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 19:58:55","message":"[VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"debug","timestamp":"2026-05-07 19:58:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-ups-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m3-plus-intel-core-i9-portable-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m5-amd-ryzen-7-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:58:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-g10-amd-ryzen-5-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:00","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:59:00","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M3 Plus Intel® Core™ i9 Portable Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:00","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX G10 AMD Ryzen™ 5 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:00","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M5 AMD Ryzen™ 7 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:03","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:03","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:03","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5080-rnuc15jnk9x289a4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:03","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-whiz-gi312100-d5-intel-core-i3-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:05","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:05","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5080 (RNUC15JNK9X289A4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:05","message":"[PcExpressScraper] JSON success: PCX LFH WHIZ (GI312100) D5 Intel® Core™ i3 Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:05","message":"[PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop"}
+{"level":"info","timestamp":"2026-05-07 19:59:06","message":"[VillmanScraper] Fallback found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:59:06","message":"[VillmanScraper] Scraped 0/0 products successfully"}
+{"level":"info","timestamp":"2026-05-07 19:59:06","message":"[SearchService] Scraper result: store=\"VillMan\" count=0 durationMs=12256"}
+{"level":"info","timestamp":"2026-05-07 19:59:08","message":"[PcExpressScraper] HTML fallback found 19 URLs"}
+{"level":"info","timestamp":"2026-05-07 19:59:08","message":"[PcExpressScraper] Scraping 19 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:59:08","message":"[PcWorxScraper] Fallback found 0 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:59:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk345-comfort-wireless-keyboard-and-mouse-combo-black.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/dell-inspiron-15-3520-i71255u-16gb-512gb-intel-core-i7-laptop-platinum-silver.json"}
+{"level":"info","timestamp":"2026-05-07 19:59:09","message":"[SearchService] Scraper result: store=\"PCWorx\" count=0 durationMs=14810"}
+{"level":"debug","timestamp":"2026-05-07 19:59:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-1000-air-ups-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-virtouso-gi512400-d5-intel-core-i5-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-b650m-ayw-wifi-micro-atx-motherboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-project-s-geforce-rtx-5090-oc-intel-core-ultra-9-gaming-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:11","message":"[PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset"}
+{"level":"debug","timestamp":"2026-05-07 19:59:11","message":"[PcExpressScraper] JSON success: LOGITECH MK345 COMFORT Wireless Keyboard and Mouse Combo (Black)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:11","message":"[PcExpressScraper] JSON success: DELL Inspiron 15 3520-I71255U 16GB/512GB Intel®  Core™ i7 Laptop (Platinum Silver)"}
+{"level":"info","timestamp":"2026-05-07 19:59:11","message":"[normalizeProduct] Deal: \"DELL Inspiron 15 3520-I71255U 16GB/512GB Intel®  C\" | store=pcexpress | price=48990 | original=49990 | discount=2.0% | promo=\"none\" | specs=1 keys"}
+{"level":"debug","timestamp":"2026-05-07 19:59:11","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 1000 Air UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:59:11","message":"[PcExpressScraper] JSON success: PCX LFH VIRTOUSO (GI512400) D5 - Intel® Core™ i5 Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:11","message":"[PcExpressScraper] JSON success: PCX PROJECT S GeForce RTX™ 5090 OC Intel® Core™ Ultra 9 Gaming & Studio Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:11","message":"[PcExpressScraper] JSON success: ASUS B650M-AYW WIFI Micro-ATX Motherboard"}
+{"level":"info","timestamp":"2026-05-07 19:59:13","message":"[SearchService] Scraper result: store=\"PCExpress\" count=19 durationMs=39860"}
+{"level":"debug","timestamp":"2026-05-07 19:59:13","message":"[SearchService] Injecting platform_id \"b1ebdcf4-e478-4940-a8cc-074b777db0df\" into 19 products from \"PCExpress\""}
+{"level":"info","timestamp":"2026-05-07 19:59:13","message":"[SearchService] searchWithFallback: Live scrape successful (19 products)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:13","message":"[ProductRepository] Cleaned 19 products (removed internal fields, omitted id for safe upsert)"}
+{"level":"info","timestamp":"2026-05-07 19:59:14","message":"[ProductRepository] Successfully upserted 19 products to database"}
+{"level":"info","timestamp":"2026-05-07 19:59:14","message":"[SearchService] Upserted products have IDs assigned (19 products)"}
+{"level":"info","timestamp":"2026-05-07 19:59:14","message":"[SearchService] Sample upserted product ID: 99554fc6-4cbc-43df-91fc-1ff0aafd5886"}
+{"level":"info","timestamp":"2026-05-07 19:59:14","message":"[SearchHybrid] Query \"ph 11134207 81ztn mipc76a0g3ya22 tn\" is 19/19 stale. Queuing refresh."}
+{"level":"info","timestamp":"2026-05-07 19:59:14","message":"[JobQueue] Enqueued job: 20621752-2fa0-40cc-91ab-dd1d5dcafeff (type: scrape_query, priority: 5)"}
+{"level":"info","timestamp":"2026-05-07 19:59:15","message":"[Pagination] Page 1/1, PageSize 20, TotalCount 19, Returned 19"}
+{"level":"info","timestamp":"2026-05-07 19:59:15","message":"[SearchController] ✅ Response contains 19 products with valid IDs | PCExpress=0 VillMan=0 PCWorx=0"}
+{"level":"info","timestamp":"2026-05-07 19:59:15","message":"[SearchController] Saved search to history: user=8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf, query=\"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 19:59:15","message":"→ POST /api/recommendations/track"}
+{"level":"debug","timestamp":"2026-05-07 19:59:15","message":"[Rec] Tracked search for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"debug","timestamp":"2026-05-07 19:59:15","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-max-portable-power-station-2048wh.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:15","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-ultra-portable-power-station-3072wh.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:15","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-max-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:15","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-plus-portable-power-station.json"}
+{"level":"info","timestamp":"2026-05-07 19:59:15","message":"[BackgroundWorker] Processing 1 jobs..."}
+{"level":"info","timestamp":"2026-05-07 19:59:15","message":"[BackgroundWorker] Processing job 20621752-2fa0-40cc-91ab-dd1d5dcafeff (scrape_query) attempt 1/3"}
+{"level":"info","timestamp":"2026-05-07 19:59:16","message":"[BackgroundWorker] Re-scraping query: \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 19:59:16","message":"[BackgroundWorker] Scraping pcexpress for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"info","timestamp":"2026-05-07 19:59:16","message":"[PcExpressScraper] Search API: \"ph 11134207 81ztn mipc76a0g3ya22 tn\" → https://pcx.com.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"debug","timestamp":"2026-05-07 19:59:18","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 MAX Portable Power Station (2048Wh)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:18","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 Ultra Portable Power Station (3072Wh)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:18","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Max Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:59:18","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Plus Portable Power Station"}
+{"level":"info","timestamp":"2026-05-07 19:59:18","message":"[PcExpressScraper] API found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 19:59:18","message":"[PcExpressScraper] API returned 0 — falling back to HTML search"}
+{"level":"debug","timestamp":"2026-05-07 19:59:18","message":"[PcExpressScraper] HTML fallback: https://pcx.com.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"debug","timestamp":"2026-05-07 19:59:22","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-ups-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:22","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m3-plus-intel-core-i9-portable-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:22","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-g10-amd-ryzen-5-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:22","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m5-amd-ryzen-7-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:24","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M3 Plus Intel® Core™ i9 Portable Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:24","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:59:24","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX G10 AMD Ryzen™ 5 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:24","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M5 AMD Ryzen™ 7 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:28","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:28","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:28","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5080-rnuc15jnk9x289a4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:28","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-whiz-gi312100-d5-intel-core-i3-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:28","message":"[PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:28","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:29","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5080 (RNUC15JNK9X289A4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:29","message":"[PcExpressScraper] JSON success: PCX LFH WHIZ (GI312100) D5 Intel® Core™ i3 Desktop - Powered By ASUS"}
+{"level":"info","timestamp":"2026-05-07 19:59:31","message":"[PcExpressScraper] HTML fallback found 19 URLs"}
+{"level":"info","timestamp":"2026-05-07 19:59:31","message":"[PcExpressScraper] Scraping 19 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 19:59:31","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-h390-usb-w-mic-headset.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:31","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/logitech-mk345-comfort-wireless-keyboard-and-mouse-combo-black.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:31","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/products/dell-inspiron-15-3520-i71255u-16gb-512gb-intel-core-i7-laptop-platinum-silver.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:31","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-1000-air-ups-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:32","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-virtouso-gi512400-d5-intel-core-i5-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:32","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-b650m-ayw-wifi-micro-atx-motherboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:32","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-project-s-geforce-rtx-5090-oc-intel-core-ultra-9-gaming-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:32","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 1000 Air UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:59:32","message":"[PcExpressScraper] JSON success: LOGITECH H390 USB W/ Mic Headset"}
+{"level":"debug","timestamp":"2026-05-07 19:59:32","message":"[PcExpressScraper] JSON success: LOGITECH MK345 COMFORT Wireless Keyboard and Mouse Combo (Black)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:32","message":"[PcExpressScraper] JSON success: DELL Inspiron 15 3520-I71255U 16GB/512GB Intel®  Core™ i7 Laptop (Platinum Silver)"}
+{"level":"info","timestamp":"2026-05-07 19:59:32","message":"[normalizeProduct] Deal: \"DELL Inspiron 15 3520-I71255U 16GB/512GB Intel®  C\" | store=pcexpress | price=48990 | original=49990 | discount=2.0% | promo=\"none\" | specs=1 keys"}
+{"level":"debug","timestamp":"2026-05-07 19:59:33","message":"[PcExpressScraper] JSON success: PCX LFH VIRTOUSO (GI512400) D5 - Intel® Core™ i5 Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:33","message":"[PcExpressScraper] JSON success: ASUS B650M-AYW WIFI Micro-ATX Motherboard"}
+{"level":"debug","timestamp":"2026-05-07 19:59:33","message":"[PcExpressScraper] JSON success: PCX PROJECT S GeForce RTX™ 5090 OC Intel® Core™ Ultra 9 Gaming & Studio Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:35","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-max-portable-power-station-2048wh.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:35","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-ultra-portable-power-station-3072wh.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:35","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-max-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:35","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-plus-portable-power-station.json"}
+{"level":"info","timestamp":"2026-05-07 19:59:36","message":"[SearchService] Scraper result: store=\"PCExpress\" count=19 durationMs=41849"}
+{"level":"debug","timestamp":"2026-05-07 19:59:36","message":"[SearchService] Injecting platform_id \"b1ebdcf4-e478-4940-a8cc-074b777db0df\" into 19 products from \"PCExpress\""}
+{"level":"info","timestamp":"2026-05-07 19:59:36","message":"[SearchService] searchWithFallback: Live scrape successful (19 products)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:36","message":"[ProductRepository] Cleaned 19 products (removed internal fields, omitted id for safe upsert)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:36","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 MAX Portable Power Station (2048Wh)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:36","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 Ultra Portable Power Station (3072Wh)"}
+{"level":"debug","timestamp":"2026-05-07 19:59:36","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Plus Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:59:36","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Max Portable Power Station"}
+{"level":"info","timestamp":"2026-05-07 19:59:36","message":"[ProductRepository] Successfully upserted 19 products to database"}
+{"level":"info","timestamp":"2026-05-07 19:59:36","message":"[SearchService] Upserted products have IDs assigned (19 products)"}
+{"level":"info","timestamp":"2026-05-07 19:59:36","message":"[SearchService] Sample upserted product ID: 99554fc6-4cbc-43df-91fc-1ff0aafd5886"}
+{"level":"info","timestamp":"2026-05-07 19:59:36","message":"[SearchHybrid] Query \"ph 11134207 81ztn mipc76a0g3ya22 tn\" is 19/19 stale. Queuing refresh."}
+{"level":"info","timestamp":"2026-05-07 19:59:36","message":"[JobQueue] Enqueued job: 232e1382-8d4d-4f2d-9933-59afebb6932d (type: scrape_query, priority: 5)"}
+{"level":"info","timestamp":"2026-05-07 19:59:37","message":"[Pagination] Page 1/1, PageSize 20, TotalCount 19, Returned 19"}
+{"level":"info","timestamp":"2026-05-07 19:59:37","message":"[SearchController] ✅ Response contains 19 products with valid IDs | PCExpress=0 VillMan=0 PCWorx=0"}
+{"level":"info","timestamp":"2026-05-07 19:59:37","message":"[SearchController] Saved search to history: user=8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf, query=\"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 19:59:37","message":"→ POST /api/recommendations/track"}
+{"level":"debug","timestamp":"2026-05-07 19:59:37","message":"[Rec] Tracked search for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf"}
+{"level":"debug","timestamp":"2026-05-07 19:59:40","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-ups-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:40","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m3-plus-intel-core-i9-portable-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:40","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m5-amd-ryzen-7-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:40","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-g10-amd-ryzen-5-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:41","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M3 Plus Intel® Core™ i9 Portable Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:41","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 19:59:41","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M5 AMD Ryzen™ 7 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:41","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX G10 AMD Ryzen™ 5 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:45","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:45","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:45","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5080-rnuc15jnk9x289a4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:45","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-whiz-gi312100-d5-intel-core-i3-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:46","message":"[PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:46","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:46","message":"[PcExpressScraper] JSON success: PCX LFH WHIZ (GI312100) D5 Intel® Core™ i3 Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:46","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5080 (RNUC15JNK9X289A4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 19:59:48","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-virtouso-gi512400-d5-intel-core-i5-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:48","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-b650m-ayw-wifi-micro-atx-motherboard.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:48","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-project-s-geforce-rtx-5090-oc-intel-core-ultra-9-gaming-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 19:59:49","message":"[PcExpressScraper] JSON success: ASUS B650M-AYW WIFI Micro-ATX Motherboard"}
+{"level":"debug","timestamp":"2026-05-07 19:59:49","message":"[PcExpressScraper] JSON success: PCX LFH VIRTOUSO (GI512400) D5 - Intel® Core™ i5 Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:49","message":"[PcExpressScraper] JSON success: PCX PROJECT S GeForce RTX™ 5090 OC Intel® Core™ Ultra 9 Gaming & Studio Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 19:59:53","message":"[BackgroundWorker] pcexpress platform_id: b1ebdcf4-e478-4940-a8cc-074b777db0df"}
+{"level":"debug","timestamp":"2026-05-07 20:00:02","message":"[BackgroundWorker] Scraping villman for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 20:00:02","message":"[VillmanScraper] Calling Shopify API: https://shop.villman.com/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 20:00:03","message":"[VillmanScraper] API found 0 product URLs for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 20:00:03","message":"[VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 20:00:11","message":"[VillmanScraper] Fallback found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 20:00:11","message":"[VillmanScraper] Scraped 0/0 products successfully"}
+{"level":"debug","timestamp":"2026-05-07 20:00:11","message":"[BackgroundWorker] Scraping pcworx for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 20:00:12","message":"[PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 20:00:13","message":"[PcWorxScraper] API found 0 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 20:00:13","message":"[PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 20:00:27","message":"[PcWorxScraper] Fallback found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 20:00:27","message":"[BackgroundWorker] scrape_query \"ph 11134207 81ztn mipc76a0g3ya22 tn\" done — 19 products across 3 stores"}
+{"level":"info","timestamp":"2026-05-07 20:00:30","message":"[BackgroundWorker] Job 20621752-2fa0-40cc-91ab-dd1d5dcafeff completed successfully"}
+{"level":"info","timestamp":"2026-05-07 20:00:30","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 20:00:36","message":"[BackgroundWorker] Processing 1 jobs..."}
+{"level":"info","timestamp":"2026-05-07 20:00:36","message":"[BackgroundWorker] Processing job 232e1382-8d4d-4f2d-9933-59afebb6932d (scrape_query) attempt 1/3"}
+{"level":"info","timestamp":"2026-05-07 20:00:36","message":"[BackgroundWorker] Re-scraping query: \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 20:00:36","message":"[BackgroundWorker] Scraping pcexpress for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"info","timestamp":"2026-05-07 20:00:36","message":"[PcExpressScraper] Search API: \"ph 11134207 81ztn mipc76a0g3ya22 tn\" → https://pcx.com.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 20:00:38","message":"[PcExpressScraper] API found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 20:00:38","message":"[PcExpressScraper] API returned 0 — falling back to HTML search"}
+{"level":"debug","timestamp":"2026-05-07 20:00:38","message":"[PcExpressScraper] HTML fallback: https://pcx.com.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 20:00:55","message":"[PcExpressScraper] HTML fallback found 16 URLs"}
+{"level":"info","timestamp":"2026-05-07 20:00:55","message":"[PcExpressScraper] Scraping 16 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 20:00:55","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-1000-air-ups-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 20:00:55","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-max-portable-power-station-2048wh.json"}
+{"level":"debug","timestamp":"2026-05-07 20:00:55","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-delta-3-ultra-portable-power-station-3072wh.json"}
+{"level":"debug","timestamp":"2026-05-07 20:00:55","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-max-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 20:00:56","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 Ultra Portable Power Station (3072Wh)"}
+{"level":"debug","timestamp":"2026-05-07 20:00:56","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 1000 Air UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 20:00:56","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Max Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 20:00:56","message":"[PcExpressScraper] JSON success: ECOFLOW DELTA 3 MAX Portable Power Station (2048Wh)"}
+{"level":"debug","timestamp":"2026-05-07 20:00:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-plus-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 20:00:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/ecoflow-river-3-ups-portable-power-station.json"}
+{"level":"debug","timestamp":"2026-05-07 20:00:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m3-plus-intel-core-i9-portable-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 20:00:59","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-m5-amd-ryzen-7-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:00","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 UPS Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 20:01:00","message":"[PcExpressScraper] JSON success: ECOFLOW River 3 Plus Portable Power Station"}
+{"level":"debug","timestamp":"2026-05-07 20:01:00","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M5 AMD Ryzen™ 7 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 20:01:00","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX M3 Plus Intel® Core™ i9 Portable Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 20:01:05","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-evo-x2-amd-radeon-8060-graphics-amd-ryzen-ai-max-395-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:05","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/gmktec-nucbox-g10-amd-ryzen-5-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:05","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5070-ti-rnuc15jnk9x38aa4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:05","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-rog-nuc-15-2025-geforce-rtx-5080-rnuc15jnk9x289a4-mini-desktop.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:06","message":"[PcExpressScraper] JSON success: GMKTEC EVO X2 AMD Radeon™  8060 Graphics AMD Ryzen™ Ai MAX +395 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 20:01:06","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5070 Ti (RNUC15JNK9X38AA4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 20:01:06","message":"[PcExpressScraper] JSON success: GMKTEC NUCBOX G10 AMD Ryzen™ 5 Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 20:01:06","message":"[PcExpressScraper] JSON success: ASUS ROG NUC 15 2025 GeForce RTX™ 5080 (RNUC15JNK9X289A4) Mini Desktop"}
+{"level":"debug","timestamp":"2026-05-07 20:01:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-whiz-gi312100-d5-intel-core-i3-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/asus-b650m-ayw-wifi-micro-atx-motherboard.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-lfh-virtouso-gi512400-d5-intel-core-i5-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:09","message":"[PcExpressScraper] Trying JSON: https://pcx.com.ph/collections/featured-products/products/pcx-project-s-geforce-rtx-5090-oc-intel-core-ultra-9-gaming-desktop-powered-by-asus.json"}
+{"level":"debug","timestamp":"2026-05-07 20:01:10","message":"[PcExpressScraper] JSON success: PCX LFH WHIZ (GI312100) D5 Intel® Core™ i3 Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 20:01:10","message":"[PcExpressScraper] JSON success: PCX LFH VIRTOUSO (GI512400) D5 - Intel® Core™ i5 Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 20:01:10","message":"[PcExpressScraper] JSON success: PCX PROJECT S GeForce RTX™ 5090 OC Intel® Core™ Ultra 9 Gaming & Studio Desktop - Powered By ASUS"}
+{"level":"debug","timestamp":"2026-05-07 20:01:10","message":"[PcExpressScraper] JSON success: ASUS B650M-AYW WIFI Micro-ATX Motherboard"}
+{"level":"debug","timestamp":"2026-05-07 20:01:13","message":"[BackgroundWorker] pcexpress platform_id: b1ebdcf4-e478-4940-a8cc-074b777db0df"}
+{"level":"debug","timestamp":"2026-05-07 20:01:20","message":"[BackgroundWorker] Scraping villman for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 20:01:21","message":"[VillmanScraper] Calling Shopify API: https://shop.villman.com/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 20:01:22","message":"[VillmanScraper] API found 0 product URLs for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 20:01:22","message":"[VillmanScraper] Fallback to search page: https://shop.villman.com/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 20:01:30","message":"[VillmanScraper] Fallback found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 20:01:30","message":"[VillmanScraper] Scraped 0/0 products successfully"}
+{"level":"debug","timestamp":"2026-05-07 20:01:30","message":"[BackgroundWorker] Scraping pcworx for \"ph 11134207 81ztn mipc76a0g3ya22 tn\""}
+{"level":"debug","timestamp":"2026-05-07 20:01:30","message":"[PcWorxScraper] Calling API: https://pcworx.ph/search/suggest.json?q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn&resources[type]=product&resources[limit]=50"}
+{"level":"info","timestamp":"2026-05-07 20:01:31","message":"[PcWorxScraper] API found 0 product URLs"}
+{"level":"debug","timestamp":"2026-05-07 20:01:31","message":"[PcWorxScraper] Fallback to search page: https://pcworx.ph/search?type=product&q=ph%2011134207%2081ztn%20mipc76a0g3ya22%20tn"}
+{"level":"info","timestamp":"2026-05-07 20:01:42","message":"[PcWorxScraper] Fallback found 0 product URLs"}
+{"level":"info","timestamp":"2026-05-07 20:01:42","message":"[BackgroundWorker] scrape_query \"ph 11134207 81ztn mipc76a0g3ya22 tn\" done — 16 products across 3 stores"}
+{"level":"info","timestamp":"2026-05-07 20:01:43","message":"[BackgroundWorker] Job 232e1382-8d4d-4f2d-9933-59afebb6932d completed successfully"}
+{"level":"info","timestamp":"2026-05-07 20:01:44","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:31","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:06:31","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (4 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:06:32","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:06:33","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 20:06:33","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 20:06:33","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 20:06:33","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 20:06:33","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 20:06:33","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 20:06:33","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 20:06:34","message":"[Rec] Cold start for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (4 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 20:06:34","message":"[RecController] Returning 10 recommendations for user 8b7a3e9b-943d-49ed-a8f8-e4a490b9c4cf (strategy: trending)"}
