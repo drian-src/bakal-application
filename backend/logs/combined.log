@@ -92165,3 +92165,6 @@ Call log:
 {"level":"info","timestamp":"2026-05-07 17:59:30","message":"[Rec] Candidates: 10 content, 0 collaborative"}
 {"level":"info","timestamp":"2026-05-07 17:59:30","message":"[Rec] Built 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
 {"level":"info","timestamp":"2026-05-07 17:59:30","message":"[RecController] Returning 10 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"info","timestamp":"2026-05-07 18:18:32","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-07 18:18:34","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-07 18:18:34","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
