@@ -102,6 +102,8 @@ class RetailerSessionRepository {
         .from('linked_retailer_sessions')
         .update({
           last_accessed: new Date().toISOString(),
+          is_active: true,  // Ensure session is active when accessed
+          updated_at: new Date().toISOString(),
         })
         .eq('id', sessionId)
         .select('*');
@@ -218,6 +220,32 @@ class RetailerSessionRepository {
       };
     } catch (error) {
       console.error('Error checking session active status:', error);
+      return {
+        success: false,
+        error: error.message,
+      };
+    }
+  }
+
+  /**
+   * Get platform UUID by platform name/id
+   */
+  async getPlatformUUID(platformName) {
+    try {
+      const { data, error } = await supabase
+        .from('platforms')
+        .select('id')
+        .ilike('name', platformName)
+        .single();
+
+      if (error && error.code !== 'PGRST116') throw error;
+
+      return {
+        success: true,
+        data: data?.id || null,
+      };
+    } catch (error) {
+      console.error('Error getting platform UUID:', error);
       return {
         success: false,
         error: error.message,

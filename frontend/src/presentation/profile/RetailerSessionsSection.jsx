@@ -50,28 +50,34 @@ const RetailerSessionsSection = ({ userId }) => {
 
   const handleOpenRetailer = async (retailerId, retailerUrl) => {
     try {
-      // Check if Electron API is available
-      if (window.electron?.retailer) {
-        // Create session if it doesn't exist
-        const sessionId = `persist:${retailerId}_${userId}`;
-        const session = sessions.find(
-          (s) => s.platform === retailerId || s.id === retailerId
-        );
+      // Create session in database FIRST (for both web and Electron modes)
+      const session = sessions.find(
+        (s) => s.platform === retailerId || s.platform_id === retailerId
+      );
 
-        if (!session) {
-          const result = await fetch('/api/retailer-sessions', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-              Authorization: `Bearer ${localStorage.getItem('authToken')}`,
-            },
-            body: JSON.stringify({ platformId: retailerId }),
-          });
+      if (!session) {
+        // Session doesn't exist, create one
+        const createResult = await fetch('/api/retailer-sessions', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            Authorization: `Bearer ${localStorage.getItem('authToken')}`,
+          },
+          body: JSON.stringify({ platformId: retailerId }),
+        });
 
-          if (!result.ok) throw new Error('Failed to create session');
+        if (!createResult.ok) {
+          throw new Error('Failed to create session');
         }
 
-        // Open webview with persistent session
+        // Refresh sessions list to show the new session
+        await fetchSessions();
+      }
+
+      // Check if Electron API is available
+      if (window.electron?.retailer) {
+        // Electron mode: Open webview with persistent session
+        const sessionId = `persist:${retailerId}_${userId}`;
         const webviewResult = await window.electron.retailer.openWebview(
           sessionId,
           retailerUrl
@@ -82,8 +88,13 @@ const RetailerSessionsSection = ({ userId }) => {
           await fetchSessions();
         }
       } else {
-        // Fallback: open in new tab if Electron not available
+        // Web mode: Open in new tab
         window.open(retailerUrl, '_blank');
+        
+        // Refresh sessions list after a short delay to show the session
+        setTimeout(() => {
+          fetchSessions();
+        }, 1000);
       }
     } catch (err) {
       console.error('Error opening retailer:', err);

@@ -96811,3 +96811,257 @@ Call log:
 {"level":"info","timestamp":"2026-05-08 07:33:22","message":"[RecController] Returning 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
 {"level":"debug","timestamp":"2026-05-08 07:33:45","message":"→ GET /api/retailer-sessions"}
 {"level":"debug","timestamp":"2026-05-08 07:33:45","message":"→ GET /api/retailer-sessions"}
+{"level":"info","timestamp":"2026-05-08 07:35:32","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-08 07:35:38","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-08 07:35:38","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-08 07:35:38","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-08 07:35:38","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-08 07:35:38","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-08 07:35:39","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-08 07:35:39","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:35:39","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:35:39","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"info","timestamp":"2026-05-08 07:35:41","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-08 07:35:41","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"debug","timestamp":"2026-05-08 07:36:09","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-08 07:36:09","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:36:10","message":"→ GET /api/retailer-sessions"}
+{"level":"info","timestamp":"2026-05-08 07:36:12","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-08 07:36:17","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-08 07:36:17","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-08 07:36:17","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-08 07:36:17","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-08 07:36:17","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-08 07:36:17","message":"[BackgroundWorker] Starting..."}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:17","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:36:18","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:36:18","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:36:19","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"info","timestamp":"2026-05-08 07:36:22","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-08 07:36:27","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-08 07:36:28","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-08 07:36:28","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-08 07:36:28","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-08 07:36:28","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-08 07:36:28","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-08 07:36:28","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:36:28","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:36:29","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"info","timestamp":"2026-05-08 07:36:30","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-08 07:36:30","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:31","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:32","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-08 07:36:32","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-08 07:36:33","message":"→ GET /api/products/featured"}
+{"level":"info","timestamp":"2026-05-08 07:36:33","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-08 07:36:33","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-08 07:36:33","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-08 07:36:33","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-08 07:36:33","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-08 07:36:33","message":"[Rec] Candidates: 9 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-08 07:36:33","message":"[Rec] Built 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-08 07:36:33","message":"[RecController] Returning 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-08 07:36:33","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-08 07:36:34","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-08 07:36:34","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"info","timestamp":"2026-05-08 07:36:35","message":"[Rec] Candidates: 9 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-08 07:36:35","message":"[Rec] Built 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-08 07:36:35","message":"[RecController] Returning 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"info","timestamp":"2026-05-08 07:36:57","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-08 07:37:04","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-08 07:37:05","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-08 07:37:05","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-08 07:37:05","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-08 07:37:05","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-08 07:37:05","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-08 07:37:05","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:37:05","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"debug","timestamp":"2026-05-08 07:37:06","message":"→ GET /api/retailer-sessions"}
+{"level":"info","timestamp":"2026-05-08 07:37:06","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"info","timestamp":"2026-05-08 07:37:07","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-08 07:37:07","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"debug","timestamp":"2026-05-08 07:37:07","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:37:16","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:37:20","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:37:20","message":"→ POST /api/retailer-sessions"}
+{"level":"info","timestamp":"2026-05-08 07:38:39","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:38:47","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:38:48","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"info","timestamp":"2026-05-08 07:38:49","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-08 07:38:50","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"info","timestamp":"2026-05-08 07:39:01","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-08 07:39:04","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-08 07:39:05","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-08 07:39:05","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-08 07:39:05","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-08 07:39:05","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-08 07:39:05","message":"[BackgroundWorker] Starting..."}
+{"level":"info","timestamp":"2026-05-08 07:39:05","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:39:05","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-08 07:39:06","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-08 07:39:06","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"info","timestamp":"2026-05-08 07:39:06","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"debug","timestamp":"2026-05-08 07:39:49","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-08 07:39:49","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-08 07:39:49","message":"→ GET /api/cart"}
+{"level":"info","timestamp":"2026-05-08 07:39:49","message":"[CartController] Getting cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-08 07:39:49","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Found cart: 64e4c761-8d68-42a0-8cb3-40aa96832412"}
+{"level":"debug","timestamp":"2026-05-08 07:39:50","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-08 07:39:50","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Found 1 items in cart"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Fetching products: 77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Found 1 products"}
+{"level":"debug","timestamp":"2026-05-08 07:39:50","message":"[Cart] Mapped product 77645686-e49f-4f0b-9765-5dd2c67288b2: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal, platform: PCWorx"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Returning cart with 1 items"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[CartController] Cart retrieved: 64e4c761-8d68-42a0-8cb3-40aa96832412"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[CartController] Processing 1 cart items"}
+{"level":"debug","timestamp":"2026-05-08 07:39:50","message":"[CartController] Processing item dec1a770-01cb-4dbf-b7a4-a3154f0a45f3, products array length: 1"}
+{"level":"debug","timestamp":"2026-05-08 07:39:50","message":"[CartController] Item dec1a770-01cb-4dbf-b7a4-a3154f0a45f3 has product: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[CartController] Returning 1 items with total price: 3277.5"}
+{"level":"debug","timestamp":"2026-05-08 07:39:50","message":"→ GET /api/cart"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[CartController] Getting cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Fetching cart for user: 3fe511d5-04c0-4821-9ecd-45900a055b0d"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Found cart: 64e4c761-8d68-42a0-8cb3-40aa96832412"}
+{"level":"info","timestamp":"2026-05-08 07:39:50","message":"[Cart] Found 1 items in cart"}
+{"level":"info","timestamp":"2026-05-08 07:39:51","message":"[Cart] Fetching products: 77645686-e49f-4f0b-9765-5dd2c67288b2"}
+{"level":"info","timestamp":"2026-05-08 07:39:51","message":"[Cart] Found 1 products"}
+{"level":"debug","timestamp":"2026-05-08 07:39:51","message":"[Cart] Mapped product 77645686-e49f-4f0b-9765-5dd2c67288b2: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal, platform: PCWorx"}
+{"level":"info","timestamp":"2026-05-08 07:39:51","message":"[Cart] Returning cart with 1 items"}
+{"level":"info","timestamp":"2026-05-08 07:39:51","message":"[CartController] Cart retrieved: 64e4c761-8d68-42a0-8cb3-40aa96832412"}
+{"level":"info","timestamp":"2026-05-08 07:39:51","message":"[CartController] Processing 1 cart items"}
+{"level":"debug","timestamp":"2026-05-08 07:39:51","message":"[CartController] Processing item dec1a770-01cb-4dbf-b7a4-a3154f0a45f3, products array length: 1"}
+{"level":"debug","timestamp":"2026-05-08 07:39:51","message":"[CartController] Item dec1a770-01cb-4dbf-b7a4-a3154f0a45f3 has product: Redragon K649CT RGB ELF PRO Mechanical Keyboard Crystal"}
+{"level":"info","timestamp":"2026-05-08 07:39:51","message":"[CartController] Returning 1 items with total price: 3277.5"}
+{"level":"debug","timestamp":"2026-05-08 07:39:55","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:39:55","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:40:04","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:40:05","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:40:05","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:40:06","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:40:07","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:40:08","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:07","message":"→ DELETE /api/retailer-sessions/f12ceb8c-0fee-4d4d-a62e-ef3b564adce7"}
+{"level":"debug","timestamp":"2026-05-08 07:42:07","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:13","message":"→ DELETE /api/retailer-sessions/f12ceb8c-0fee-4d4d-a62e-ef3b564adce7"}
+{"level":"debug","timestamp":"2026-05-08 07:42:14","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:16","message":"→ DELETE /api/retailer-sessions/f12ceb8c-0fee-4d4d-a62e-ef3b564adce7"}
+{"level":"debug","timestamp":"2026-05-08 07:42:16","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:19","message":"→ DELETE /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:19","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:31","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:31","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:32","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:32","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:34","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:34","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:42:49","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-08 07:42:50","message":"[UserRoutes] Theme updated for user 3fe511d5-04c0-4821-9ecd-45900a055b0d: dark"}
+{"level":"debug","timestamp":"2026-05-08 07:42:50","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-08 07:42:50","message":"[UserRoutes] Theme updated for user 3fe511d5-04c0-4821-9ecd-45900a055b0d: system"}
+{"level":"debug","timestamp":"2026-05-08 07:42:50","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-08 07:42:51","message":"[UserRoutes] Theme updated for user 3fe511d5-04c0-4821-9ecd-45900a055b0d: light"}
+{"level":"debug","timestamp":"2026-05-08 07:43:04","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:04","message":"→ POST /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:04","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:05","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:06","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:07","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:31","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-08 07:43:33","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-08 07:43:34","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:35","message":"→ GET /api/retailer-sessions"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-08 07:43:42","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-08 07:43:43","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-08 07:43:43","message":"→ GET /api/products/featured"}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[Rec] Candidates: 9 content, 0 collaborative"}
+{"level":"debug","timestamp":"2026-05-08 07:43:43","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[Rec] Built 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-08 07:43:43","message":"[RecController] Returning 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}
+{"level":"debug","timestamp":"2026-05-08 07:43:43","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-08 07:43:44","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-08 07:43:44","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"info","timestamp":"2026-05-08 07:43:45","message":"[Rec] Candidates: 9 content, 0 collaborative"}
+{"level":"info","timestamp":"2026-05-08 07:43:45","message":"[Rec] Built 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (hybrid)"}
+{"level":"info","timestamp":"2026-05-08 07:43:45","message":"[RecController] Returning 9 recommendations for user 3fe511d5-04c0-4821-9ecd-45900a055b0d (strategy: content_only)"}

@@ -22,12 +22,42 @@ class RetailerSessionController {
         });
       }
 
+      // Look up platform UUID by platform name
+      const platformResult = await retailerSessionRepository.getPlatformUUID(platformId);
+      if (!platformResult.data) {
+        return res.status(400).json({
+          success: false,
+          error: `Platform not found: ${platformId}`,
+        });
+      }
+
+      const actualPlatformId = platformResult.data;
+
+      // Check if session already exists
+      const existingResult = await retailerSessionRepository.getSessionByUserAndPlatform(
+        userId,
+        actualPlatformId
+      );
+
+      if (existingResult.data) {
+        // Session already exists, just update last_accessed and set as active
+        const updateResult = await retailerSessionRepository.updateLastAccessed(
+          existingResult.data.id
+        );
+        
+        return res.json({
+          success: true,
+          data: updateResult.data,
+          message: 'Retailer session already exists',
+        });
+      }
+
       // Create session partition key
       const sessionPartition = `persist:${platformId}_${userId}`;
 
       const result = await retailerSessionRepository.createSession(
         userId,
-        platformId,
+        actualPlatformId,
         sessionPartition
       );
 
@@ -66,9 +96,15 @@ class RetailerSessionController {
 
       const result = await retailerSessionRepository.getSessionsByUser(userId);
 
+      // Transform data to include both platform_id and platform field
+      const transformedData = (result.data || []).map(session => ({
+        ...session,
+        platform: session.platform_id,  // Add platform field for compatibility
+      }));
+
       res.json({
         success: true,
-        data: result.data,
+        data: transformedData,
       });
     } catch (error) {
       console.error('Error in getUserSessions:', error);
