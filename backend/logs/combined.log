@@ -94197,3 +94197,298 @@ Call log:
 {"level":"info","timestamp":"2026-05-07 20:39:27","message":"[Rec] Candidates: 10 content, 0 collaborative"}
 {"level":"info","timestamp":"2026-05-07 20:39:27","message":"[Rec] Built 10 recommendations for user f593a23a-91ba-402a-bae4-1608e04a7a25 (hybrid)"}
 {"level":"info","timestamp":"2026-05-07 20:39:27","message":"[RecController] Returning 10 recommendations for user f593a23a-91ba-402a-bae4-1608e04a7a25 (strategy: content_only)"}
+{"level":"info","timestamp":"2026-05-07 20:40:20","message":"[DB] Supabase client created."}
+{"level":"info","timestamp":"2026-05-07 20:40:23","message":"[DB] Supabase connection verified."}
+{"level":"info","timestamp":"2026-05-07 20:40:24","message":"[SearchService] Platform IDs loaded: {\"pcexpress\":\"b1ebdcf4-e478-4940-a8cc-074b777db0df\",\"villman\":\"13a93343-26ab-4e7c-ba20-2f38e7649d19\",\"pcworx\":\"12096578-17a6-40ad-b71e-6179367faa33\"}"}
+{"level":"info","timestamp":"2026-05-07 20:40:24","message":"[Embedding] Loading model: Xenova/all-MiniLM-L6-v2"}
+{"level":"info","timestamp":"2026-05-07 20:40:24","message":"[Embedding] First run downloads ~25MB. Subsequent runs use cache."}
+{"level":"info","timestamp":"2026-05-07 20:40:24","message":"🚀 Bakàl backend running on port 3000 [development]"}
+{"level":"info","timestamp":"2026-05-07 20:40:24","message":"[BackgroundWorker] Starting..."}
+{"level":"debug","timestamp":"2026-05-07 20:40:24","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:40:24","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:40:24","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 20:40:24","message":"[FreshnessEngine] Loaded 20 TTL settings"}
+{"level":"info","timestamp":"2026-05-07 20:40:25","message":"[ProductRepository] Platform IDs loaded: 3 platforms cached"}
+{"level":"info","timestamp":"2026-05-07 20:40:26","message":"[Embedding] Model loaded successfully"}
+{"level":"info","timestamp":"2026-05-07 20:40:26","message":"[Embedding] Model pre-warmed and ready"}
+{"level":"info","timestamp":"2026-05-07 20:40:26","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:09","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 20:49:09","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 20:49:09","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 20:49:09","message":"[CartController] Getting cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 20:49:09","message":"[Cart] Fetching cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 20:49:09","message":"[Cart] No cart found for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 20:49:09","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 20:49:09","message":"→ GET /api/cart"}
+{"level":"info","timestamp":"2026-05-07 20:49:09","message":"[CartController] Getting cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 20:49:09","message":"[Cart] Fetching cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 20:49:10","message":"[Cart] No cart found for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 20:49:10","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:11","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 20:49:12","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:13","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:13","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 20:49:13","message":"→ GET /api/products/featured"}
+{"level":"info","timestamp":"2026-05-07 20:49:13","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:13","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:13","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"debug","timestamp":"2026-05-07 20:49:15","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:15","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 20:49:16","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 20:49:19","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 20:49:19","message":"[UserRoutes] Theme updated for user e9d2e3cc-ec04-433e-aa06-a305711208df: dark"}
+{"level":"debug","timestamp":"2026-05-07 20:49:19","message":"→ PATCH /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 20:49:20","message":"[UserRoutes] Theme updated for user e9d2e3cc-ec04-433e-aa06-a305711208df: light"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:22","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 20:49:23","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 20:49:23","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 20:49:23","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"debug","timestamp":"2026-05-07 20:49:23","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:23","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 20:49:23","message":"→ GET /api/products/featured"}
+{"level":"info","timestamp":"2026-05-07 20:49:23","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:23","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:23","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"debug","timestamp":"2026-05-07 20:49:24","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:24","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 20:49:37","message":"→ GET /api/search/history"}
+{"level":"debug","timestamp":"2026-05-07 20:49:37","message":"→ GET /api/user/saved-searches"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:43","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:43","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:43","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:43","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:44","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 20:49:44","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 20:49:44","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 20:49:44","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:44","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 20:49:44","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-07 20:49:45","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:45","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"debug","timestamp":"2026-05-07 20:49:46","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 20:49:46","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 21:03:40","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 21:03:40","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 21:03:40","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 21:03:40","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 21:03:40","message":"[CartController] Getting cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:03:40","message":"[Cart] Fetching cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:03:40","message":"[Cart] No cart found for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:03:40","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 21:03:40","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 21:03:40","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 21:03:40","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CartController] Getting cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[Cart] Fetching cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[Cart] No cart found for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:03:41","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:03:42","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"info","timestamp":"2026-05-07 21:03:42","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 21:03:42","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 21:03:42","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"debug","timestamp":"2026-05-07 21:03:42","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 21:03:42","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 21:03:42","message":"→ GET /api/products/featured"}
+{"level":"info","timestamp":"2026-05-07 21:03:42","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 21:03:42","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 21:03:42","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"debug","timestamp":"2026-05-07 21:03:43","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 21:03:43","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/user/preferences"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/user/preferences"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[CartController] Getting cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[Cart] Fetching cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[Cart] No cart found for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/cart"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/auth/me"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/recommendations"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[CartController] Getting cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[Cart] Fetching cart for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[Cart] No cart found for user: e9d2e3cc-ec04-433e-aa06-a305711208df"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[CartController] Cart retrieved: null"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Fetching products for keyword: \"tablet\" (limit: 8)"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"info","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:49","message":"[CategoryRoute] Fetching products for keyword: \"phone\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Fetching products for keyword: \"laptop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Found 8 products for \"phone\""}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Found 8 products for \"tablet\""}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Fetching products for keyword: \"desktop\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"→ GET /api/categories/products"}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Fetching products for keyword: \"keyboard\" (limit: 8)"}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"→ GET /api/recommendations"}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Found 8 products for \"laptop\""}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Found 8 products for \"desktop\""}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[CategoryRoute] Found 8 products for \"keyboard\""}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[Rec] Cold start for user e9d2e3cc-ec04-433e-aa06-a305711208df (0 interactions) — serving trending"}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[RecController] Returning 10 recommendations for user e9d2e3cc-ec04-433e-aa06-a305711208df (strategy: trending)"}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 21:08:50","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
+{"level":"debug","timestamp":"2026-05-07 21:08:50","message":"→ GET /api/products/featured"}
+{"level":"debug","timestamp":"2026-05-07 21:08:51","message":"[ProductRepository] findFeaturedOnSale (on-sale) → 0 results"}
+{"level":"info","timestamp":"2026-05-07 21:08:51","message":"[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated"}
+{"level":"debug","timestamp":"2026-05-07 21:08:51","message":"[ProductRepository] findFeaturedOnSale (top-rated fallback) → 100 results"}
+{"level":"info","timestamp":"2026-05-07 21:08:51","message":"[ProductRepository] findFeaturedOnSale returning 3 platform representatives"}
