@@ -7,7 +7,7 @@ import {
   Settings,
   HelpCircle,
   LogOut,
-  ArrowLeft,
+  Home,
   Trash2,
   Mail,
   Shield,
@@ -19,10 +19,15 @@ import {
   RotateCcw,
   Trash2 as TrashIcon,
   TrendingUp,
+  Menu,
+  X,
+  Search,
 } from 'lucide-react';
 import ConfirmDialog from '../shared/ConfirmDialog';
 import { ThemeToggle } from '../shared/ThemeToggle';
-import { DeleteAccountSection } from './DeleteAccountSection';
+import PrivacyDataTab from './PrivacyDataTab';
+import RetailerSessionsSection from './RetailerSessionsSection';
+import { SkeletonHistoryItem, SkeletonSavedSearchItem, SkeletonContainer } from './SkeletonLoaders';
 import { getSearchHistory, clearSearchHistory } from '@/core/services/apiService';
 import { savedSearchesApi } from '@/core/services/apiService';
 import { getCurrentUser } from '@/core/services/authService';
@@ -44,6 +49,7 @@ const ProfilePage = () => {
   const [expandedSetting, setExpandedSetting] = useState(null);
   const [savedSearches, setSavedSearches] = useState([]);
   const [loadingSavedSearches, setLoadingSavedSearches] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   // Load user data from localStorage on component mount
   useEffect(() => {
@@ -90,6 +96,15 @@ const ProfilePage = () => {
     localStorage.removeItem('authToken');
     setShowLogoutDialog(false);
     navigate('/');
+  };
+
+  const handleAccountDeleted = () => {
+    // Clear auth state and redirect to landing page
+    localStorage.removeItem('authToken');
+    localStorage.removeItem('bakal_user');
+    localStorage.removeItem('bakal_theme');
+    localStorage.removeItem('currentUser');
+    window.location.href = '/';
   };
 
   const handleDeleteHistory = () => {
@@ -184,14 +199,28 @@ const ProfilePage = () => {
     <div className="profile-page">
       <main className="profile-content">
         <div className="profile-container">
-          <button onClick={() => navigate('/home')} className="profile-back-btn">
-            <ArrowLeft size={16} strokeWidth={1.5} />
-            Back to Home
-          </button>
+          <div className="profile-header-mobile">
+            <button 
+              onClick={() => navigate('/home')} 
+              className="profile-back-btn"
+              title="Back to Home"
+              aria-label="Back to Home"
+            >
+              <Home size={20} strokeWidth={1.5} />
+            </button>
+            <button 
+              className="mobile-menu-toggle" 
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+              title={mobileMenuOpen ? 'Close menu' : 'Open menu'}
+            >
+              {mobileMenuOpen ? <X size={20} strokeWidth={2} /> : <Menu size={20} strokeWidth={2} />}
+            </button>
+          </div>
 
           <div className="profile-wrapper">
-            {/* Sidebar Menu */}
-            <aside className="profile-sidebar">
+            {/* Sidebar Menu - Hidden on mobile unless toggled */}
+            <aside className={`profile-sidebar ${mobileMenuOpen ? 'mobile-open' : ''}`}>
               <div className="sidebar-menu">
                 <button
                   className={`sidebar-tab-item ${activeTab === 'profile' ? 'active' : ''}`}
@@ -232,6 +261,15 @@ const ProfilePage = () => {
                 >
                   <HelpCircle size={18} strokeWidth={1.5} />
                   <span>Help & Support</span>
+                </button>
+
+                <button
+                  className={`sidebar-tab-item ${activeTab === 'privacy' ? 'active' : ''}`}
+                  onClick={() => setActiveTab('privacy')}
+                  title="Privacy & Data"
+                >
+                  <Shield size={18} strokeWidth={1.5} />
+                  <span>Privacy & Data</span>
                 </button>
 
                 <div className="sidebar-divider"></div>
@@ -379,9 +417,6 @@ const ProfilePage = () => {
 
                     </div>
                   </div>
-
-                  {/* ✨ NEW: Delete Account Section */}
-                  <DeleteAccountSection />
                 </section>
               )}
 
@@ -395,10 +430,9 @@ const ProfilePage = () => {
                     </button>
                   </div>
                   {loadingHistory ? (
-                    <div className="history-empty-state">
-                      <Clock size={36} strokeWidth={1} className="history-empty-icon" />
-                      <p className="history-empty-title">Loading...</p>
-                    </div>
+                    <SkeletonContainer count={4}>
+                      <SkeletonHistoryItem />
+                    </SkeletonContainer>
                   ) : searchHistory.length === 0 ? (
                     <div className="history-empty-state">
                       <Clock size={36} strokeWidth={1} className="history-empty-icon" />
@@ -442,7 +476,9 @@ const ProfilePage = () => {
                   <h2 className="section-title">Saved Searches</h2>
 
                   {loadingSavedSearches ? (
-                    <div className="history-empty">Loading saved searches...</div>
+                    <SkeletonContainer count={3}>
+                      <SkeletonSavedSearchItem />
+                    </SkeletonContainer>
                   ) : savedSearches.length === 0 ? (
                     <div className="history-empty-state">
                       <Bookmark size={36} strokeWidth={1} className="history-empty-icon" />
@@ -499,6 +535,11 @@ const ProfilePage = () => {
               {activeTab === 'settings' && (
                 <section className="profile-section">
                   <h2 className="section-title">Settings</h2>
+
+                  {/* ✨ NEW: Retailer Sessions Management */}
+                  <RetailerSessionsSection userId={getCurrentUser()?.id} />
+
+                  <hr style={{  margin: '2rem 0', borderColor: 'var(--border-color)', border: 'none', borderTop: '1px solid var(--border-color)' }} />
 
                   {/* ✨ NEW: Appearance Settings */}
                   <div className="settings-appearance">
@@ -736,6 +777,16 @@ const ProfilePage = () => {
                       )}
                     </div>
                   </div>
+                </section>
+              )}
+
+              {/* Privacy & Data */}
+              {activeTab === 'privacy' && (
+                <section className="profile-section">
+                  <PrivacyDataTab 
+                    token={localStorage.getItem('authToken')}
+                    onAccountDeleted={handleAccountDeleted}
+                  />
                 </section>
               )}
             </div>

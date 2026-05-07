@@ -114,50 +114,49 @@
 
 /* Dark Mode Colors */
 html.dark {
-  /* Brand Colors - stay same in dark mode */
-  --primary: #0a1a3a;
-  --primary-dark: #806286;
-  --primary-light: #9b7fa0;
-  --primary-lighter: #efe8f1;
-  --primary-gradient: linear-gradient(135deg, #0a1a3a 0%, #806286 100%);
+  /* Brand Colors - Adjusted for dark theme */
+  --primary: #f0f0ff;
+  --primary-dark: #e0d5ff;
+  --primary-light: #d4c5ff;
+  --primary-lighter: #1a1530;
+  --primary-gradient: linear-gradient(135deg, #d4c5ff 0%, #e0d5ff 100%);
   
-  /* Text Colors - inverted */
-  --secondary: #E5E7EB;
-  --text-dark: #F3F4F6;
-  --text-medium: #D1D5DB;
-  --text-light: #9CA3AF;
-  --text-lighter: #6B7280;
+  /* Text Colors - Light text for dark background */
+  --secondary: #e5e7eb;
+  --text-dark: #f0f0ff;
+  --text-medium: #d1d5db;
+  --text-light: #9ca3af;
+  --text-lighter: #6b7280;
   
-  /* Background Colors - dark */
-  --bg-light: #1F2937;
-  --bg-white: #111827;
-  --bg-gray: #1F2937;
+  /* Background Colors - Dark backgrounds */
+  --bg-light: #1a1a2e;
+  --bg-white: #0d0d1a;
+  --bg-gray: #16213e;
   
-  /* Border Colors - dark */
-  --border: #374151;
-  --border-light: #1F2937;
-  --border-dark: #0F1419;
+  /* Border Colors - Subtle dark borders */
+  --border: #2a2a3e;
+  --border-light: #16213e;
+  --border-dark: #3a3a4e;
   
-  /* Status Colors - with adjusted brightness */
-  --error: #EF4444;
-  --error-light: #7F1D1D;
-  --success: #4ADE80;
-  --success-light: #166534;
-  --warning: #FBBF24;
-  --warning-light: #78350F;
-  --info: #60A5FA;
-  --info-light: #1E3A8A;
+  /* Status Colors - Adjusted for contrast on dark bg */
+  --error: #ff6b6b;
+  --error-light: #2d1b1b;
+  --success: #51cf66;
+  --success-light: #1b2d1b;
+  --warning: #ffa94d;
+  --warning-light: #2d2715;
+  --info: #74c0fc;
+  --info-light: #1a2540;
   
-  /* Shadows - dark mode */
-  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.5);
-  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.6), 0 1px 2px -1px rgba(0, 0, 0, 0.5);
-  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.4);
-  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -4px rgba(0, 0, 0, 0.4);
-  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.5), 0 8px 10px -6px rgba(0, 0, 0, 0.4);
-  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
-  --shadow-inner: inset 0 2px 4px 0 rgba(255, 255, 255, 0.05);
+  /* Shadows - Darker shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.4), 0 1px 2px -1px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.4), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4), 0 4px 6px -4px rgba(0, 0, 0, 0.3);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.4), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+  --shadow-2xl: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  --shadow-inner: inset 0 2px 4px 0 rgba(0, 0, 0, 0.3);
   
-  /* Scraping Loader variables for dark mode */
-  --scraping-badge-bg: rgba(156, 163, 175, 0.1);
-  --scraping-skeleton: #1F2937;
+  /* Gold accent adjusts slightly for visibility */
+  --accent-gold: #d4af37;
 }

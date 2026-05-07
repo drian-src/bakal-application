@@ -118,6 +118,53 @@ ul, ol {
   }
 }
 
+/* Dark Mode Global Styles */
+html.dark body {
+  color: var(--text-dark);
+  background-color: var(--bg-white);
+}
+
+html.dark h1,
+html.dark h2,
+html.dark h3,
+html.dark h4,
+html.dark h5,
+html.dark h6 {
+  color: var(--text-dark);
+}
+
+html.dark p {
+  color: var(--text-medium);
+}
+
+html.dark a {
+  color: #74c0fc;
+}
+
+html.dark a:hover {
+  color: #a5d8ff;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+  border-color: var(--border);
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color: var(--text-light);
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  border-color: var(--accent-gold);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+}
+
 /* Utility Classes */
 .text-center {
   text-align: center;

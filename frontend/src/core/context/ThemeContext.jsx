@@ -57,7 +57,15 @@ export const ThemeProvider = ({ children }) => {
   // Load theme preference from backend
   const loadUserTheme = async () => {
     try {
-      const response = await fetch('/api/user/preferences');
+      // Only fetch if user has an auth token (avoid 401 race condition)
+      const authToken = localStorage.getItem('authToken');
+      if (!authToken) return;
+
+      const response = await fetch('/api/user/preferences', {
+        headers: {
+          'Authorization': `Bearer ${authToken}`,
+        },
+      });
       if (!response.ok) return;
 
       const data = await response.json();

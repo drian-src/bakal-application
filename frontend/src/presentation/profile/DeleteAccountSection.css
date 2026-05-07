@@ -75,9 +75,13 @@ html.dark .delete-card--danger {
 
 .delete-card-description {
   font-size: var(--text-sm);
-  color: var(--text-medium);
+  color: var(--text-dark);
   line-height: var(--leading-relaxed);
   margin: 0;
+}
+
+html.dark .delete-card-description {
+  color: var(--text-secondary);
 }
 
 .delete-warning-list {
@@ -85,10 +89,14 @@ html.dark .delete-card--danger {
   padding: 0;
   margin: 0;
   font-size: var(--text-sm);
-  color: var(--text-medium);
+  color: var(--text-dark);
   display: flex;
   flex-direction: column;
   gap: var(--spacing-sm);
+}
+
+html.dark .delete-warning-list {
+  color: var(--text-secondary);
 }
 
 .delete-warning-list li {

@@ -70,3 +70,8 @@
 .logo-xlarge .logo-text {
   font-size: 1.75rem;
 }
+
+/* Dark Mode - Logo text visibility */
+html.dark .logo-text {
+  color: #f0f0ff;
+}

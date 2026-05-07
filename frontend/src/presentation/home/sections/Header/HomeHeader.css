@@ -248,6 +248,60 @@
   box-shadow: 0 2px 8px rgba(212, 175, 55, 0.1);
 }
 
+/* Dark Mode Header Styles */
+html.dark .search-input {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(212, 175, 55, 0.15);
+  color: var(--text-primary);
+}
+
+html.dark .search-input::placeholder {
+  color: var(--text-light);
+}
+
+html.dark .search-input:focus {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 16px rgba(212, 175, 55, 0.12);
+}
+
+html.dark .search-button {
+  background: var(--accent-gold);
+  color: #0d0d1a;
+}
+
+html.dark .search-button:hover {
+  background: #e8c547;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+html.dark .voice-search,
+html.dark .image-search {
+  background: transparent;
+  border-color: rgba(212, 175, 55, 0.1);
+  color: var(--text-secondary);
+}
+
+html.dark .voice-search:hover,
+html.dark .image-search:hover {
+  background: rgba(212, 175, 55, 0.08);
+  border-color: rgba(212, 175, 55, 0.25);
+  color: var(--accent-gold);
+}
+
+html.dark .cart-icon-wrapper,
+html.dark .profile-icon {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(212, 175, 55, 0.15);
+  color: var(--accent-gold);
+}
+
+html.dark .cart-icon-wrapper:hover,
+html.dark .profile-icon:hover {
+  background: rgba(212, 175, 55, 0.1);
+  border-color: rgba(212, 175, 55, 0.3);
+}
+
 @media (max-width: 768px) {
   .header-container {
     flex-wrap: wrap;

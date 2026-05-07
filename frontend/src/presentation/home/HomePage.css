@@ -7,6 +7,10 @@
   overflow: hidden;
 }
 
+html.dark .home-page {
+  background: linear-gradient(135deg, #1a1a2e 0%, #0d0d1a 100%);
+}
+
 .home-page::before {
   content: '';
   position: absolute;

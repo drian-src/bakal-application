@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
+import { Home } from 'lucide-react';
 import { Logo } from '../../../shared';
 import { useCart } from '../../../../core/hooks/useCart';
 import { getCurrentUser } from '../../../../core/services/authService';
@@ -192,10 +193,8 @@ const HomeHeader = ({ hideSearch = false }) => {
     <header className="home-header">
       <div className="header-container">
         {isSearchPage && (
-          <button className="back-button" onClick={handleBackClick} title="Back to Home">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-              <path d="M19 12H5M12 19l-7-7 7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-            </svg>
+          <button className="back-button" onClick={handleBackClick} title="Back to Home" aria-label="Back to Home">
+            <Home size={24} strokeWidth={1.5} />
           </button>
         )}
         

@@ -427,6 +427,70 @@ export const savedSearchesApi = {
   },
 };
 
+/**
+ * ── User Data Export & Account Management ────────────────────────────────
+ */
+
+/**
+ * Trigger a file download from a fetch response.
+ */
+async function downloadBlob(response, fallbackFilename) {
+  const blob = await response.blob();
+  const disposition = response.headers.get('Content-Disposition') || '';
+  const match = disposition.match(/filename="?([^"]+)"?/);
+  const filename = match ? match[1] : fallbackFilename;
+
+  const url = URL.createObjectURL(blob);
+  const a   = document.createElement('a');
+  a.href     = url;
+  a.download = filename;
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+
+/**
+ * Export user data as JSON
+ */
+export async function exportUserDataJson(token) {
+  const res = await fetch(`${API_BASE_URL}/user/export/json`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) throw new Error('Export failed');
+  await downloadBlob(res, 'bakal-export.json');
+}
+
+/**
+ * Export user data as CSV
+ */
+export async function exportUserDataCsv(token) {
+  const res = await fetch(`${API_BASE_URL}/user/export/csv`, {
+    headers: { Authorization: `Bearer ${token}` },
+  });
+  if (!res.ok) throw new Error('Export failed');
+  await downloadBlob(res, 'bakal-export.csv');
+}
+
+/**
+ * Delete user account permanently
+ */
+export async function deleteUserAccount(token) {
+  const res = await fetch(`${API_BASE_URL}/user/account`, {
+    method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      Authorization: `Bearer ${token}`,
+    },
+    body: JSON.stringify({ confirmText: 'DELETE' }),
+  });
+  if (!res.ok) {
+    const err = await res.json().catch(() => ({}));
+    throw new Error(err.message || 'Account deletion failed');
+  }
+  return res.json();
+}
+
 export default {
   searchProducts,
   getSearchResults,
@@ -446,4 +510,7 @@ export default {
   getRecentProducts,
   getTopRatedProducts,
   savedSearchesApi,
+  exportUserDataJson,
+  exportUserDataCsv,
+  deleteUserAccount,
 };

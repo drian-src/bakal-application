@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Home } from 'lucide-react';
 import { Button, Logo } from '.';
 import './NotFound.css';
 
@@ -14,8 +15,8 @@ const NotFound = () => {
           Oops! The page you're looking for doesn't exist or has been moved.
         </p>
         <Link to="/">
-          <Button variant="primary" size="large">
-            Go Back Home
+          <Button variant="primary" size="large" title="Back to Home" aria-label="Back to Home">
+            <Home size={20} strokeWidth={1.5} /> Go Home
           </Button>
         </Link>
       </div>

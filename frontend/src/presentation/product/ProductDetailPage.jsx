@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
+import { Home } from 'lucide-react';
 import HomeHeader from '../home/sections/Header/HomeHeader';
 import { getCurrentUser, isAuthenticated } from '../../core/services/authService';
 import { getProductDetail } from '@/core/services/apiService';
@@ -74,7 +75,14 @@ const ProductDetailPage = () => {
         <main className="product-detail-content">
           <div className="error-message">
             <p>{error ? `Error: ${error}` : 'Product not found'}</p>
-            <button onClick={() => navigate('/home')} className="back-btn">Back to Home</button>
+            <button 
+              onClick={() => navigate('/home')} 
+              className="back-btn"
+              title="Back to Home"
+              aria-label="Back to Home"
+            >
+              <Home size={20} strokeWidth={1.5} />
+            </button>
           </div>
         </main>
       </div>
