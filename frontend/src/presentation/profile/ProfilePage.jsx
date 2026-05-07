@@ -395,9 +395,18 @@ const ProfilePage = () => {
                     </button>
                   </div>
                   {loadingHistory ? (
-                    <div className="history-loading">Loading search history...</div>
+                    <div className="history-empty-state">
+                      <Clock size={36} strokeWidth={1} className="history-empty-icon" />
+                      <p className="history-empty-title">Loading...</p>
+                    </div>
                   ) : searchHistory.length === 0 ? (
-                    <div className="history-empty">No search history yet</div>
+                    <div className="history-empty-state">
+                      <Clock size={36} strokeWidth={1} className="history-empty-icon" />
+                      <p className="history-empty-title">No search history yet</p>
+                      <p className="history-empty-desc">
+                        Your recent searches will appear here.
+                      </p>
+                    </div>
                   ) : (
                     <div className="history-list">
                       {searchHistory.map((item) => (
@@ -500,15 +509,17 @@ const ProfilePage = () => {
                     <ThemeToggle showLabel={true} inline={false} />
                   </div>
 
-                  <hr style={{  margin: '2rem 0', borderColor: 'var(--border)', border: 'none', borderTop: '1px solid var(--border)' }} />
+                  <hr style={{  margin: '2rem 0', borderColor: 'var(--border-color)', border: 'none', borderTop: '1px solid var(--border-color)' }} />
 
-                  <p style={{ color: 'var(--text-medium)', marginBottom: '20px', fontSize: '14px' }}>
+                  <p style={{ color: 'var(--text-secondary)', marginBottom: '20px', fontSize: '14px' }}>
                     Your profile is managed by Google. Account settings cannot be changed here.
                   </p>
                   <div className="settings-list">
                     <div className="settings-item">
                       <div className="settings-header" style={{ cursor: 'default' }}>
-                        <div className="settings-icon">◉</div>
+                        <div className="settings-icon">
+                          <User size={20} strokeWidth={1.5} />
+                        </div>
                         <div className="settings-content">
                           <h3>Account Information</h3>
                           <p>Your account details (managed by Google)</p>
@@ -517,7 +528,7 @@ const ProfilePage = () => {
                       <div className="settings-expanded">
                         <div className="setting-detail">Username: {accountInfo.name}</div>
                         <div className="setting-detail">Email: {accountInfo.email}</div>
-                        <p style={{ fontSize: '12px', color: 'var(--text-light)', marginTop: '8px' }}>
+                        <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '8px' }}>
                           To update your information, visit your <a href="https://myaccount.google.com" target="_blank" rel="noopener noreferrer">Google Account</a>.
                         </p>
                       </div>
@@ -525,7 +536,9 @@ const ProfilePage = () => {
 
                     <div className="settings-item">
                       <div className="settings-header" style={{ cursor: 'default' }}>
-                        <div className="settings-icon">◆</div>
+                        <div className="settings-icon">
+                          <Shield size={20} strokeWidth={1.5} />
+                        </div>
                         <div className="settings-content">
                           <h3>Password Management</h3>
                           <p>Managed securely by Google</p>
@@ -533,7 +546,7 @@ const ProfilePage = () => {
                       </div>
                       <div className="settings-expanded">
                         <div className="setting-detail">Password: Managed by Google</div>
-                        <p style={{ fontSize: '12px', color: 'var(--text-light)', marginTop: '8px' }}>
+                        <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '8px' }}>
                           Your password is stored securely by Google. You can change it in your <a href="https://myaccount.google.com/security" target="_blank" rel="noopener noreferrer">Google Security Settings</a>.
                         </p>
                       </div>
@@ -541,7 +554,9 @@ const ProfilePage = () => {
 
                     <div className="settings-item">
                       <div className="settings-header" style={{ cursor: 'default' }}>
-                        <div className="settings-icon">▪</div>
+                        <div className="settings-icon">
+                          <Info size={20} strokeWidth={1.5} />
+                        </div>
                         <div className="settings-content">
                           <h3>Security and Privacy</h3>
                           <p>Managed by Google</p>
@@ -550,7 +565,7 @@ const ProfilePage = () => {
                       <div className="settings-expanded">
                         <div className="setting-detail">Two-factor authentication: Managed by Google</div>
                         <div className="setting-detail">Profile visibility: Managed by Google</div>
-                        <p style={{ fontSize: '12px', color: 'var(--text-light)', marginTop: '8px' }}>
+                        <p style={{ fontSize: '12px', color: 'var(--text-muted)', marginTop: '8px' }}>
                           Adjust your privacy and security settings in your <a href="https://myaccount.google.com/security" target="_blank" rel="noopener noreferrer">Google Account</a>.
                         </p>
                       </div>
@@ -563,22 +578,162 @@ const ProfilePage = () => {
               {activeTab === 'help' && (
                 <section className="profile-section">
                   <h2 className="section-title">Help & Support</h2>
-                  <div className="help-content">
-                    <div className="help-item">
-                      <h3>Frequently Asked Questions</h3>
-                      <p>Find answers to common questions about Bakàl</p>
+                  <div className="help-accordion">
+                    {/* FAQ Item */}
+                    <div className="help-accordion-item">
+                      <button
+                        className="help-accordion-header"
+                        onClick={() => setExpandedSetting(expandedSetting === 'faq' ? null : 'faq')}
+                      >
+                        <div className="help-accordion-icon">
+                          <HelpCircle size={18} strokeWidth={1.5} />
+                        </div>
+                        <div className="help-accordion-content">
+                          <h3>Frequently Asked Questions</h3>
+                          <p>Find answers to common questions about Bakàl</p>
+                        </div>
+                        <ChevronRight 
+                          size={18} 
+                          strokeWidth={1.5}
+                          className={`help-accordion-toggle ${expandedSetting === 'faq' ? 'expanded' : ''}`}
+                        />
+                      </button>
+                      {expandedSetting === 'faq' && (
+                        <div className="help-accordion-body">
+                          <div className="faq-item">
+                            <strong>How do I search for products?</strong>
+                            <p>Use the search bar at the top of the page to search across all platforms. You can filter results by platform using the sidebar.</p>
+                          </div>
+                          <div className="faq-item">
+                            <strong>Can I save my searches?</strong>
+                            <p>Yes! Click the bookmark icon on search results to save a search. You can view all saved searches in your profile under "Saved Searches".</p>
+                          </div>
+                          <div className="faq-item">
+                            <strong>What platforms do you support?</strong>
+                            <p>We currently search across PCExpress, VillMan, and PCWorx for the best prices and product availability.</p>
+                          </div>
+                          <div className="faq-item">
+                            <strong>How often is product data updated?</strong>
+                            <p>Product prices and availability are updated every 6-12 hours to ensure you get the most accurate information.</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                    <div className="help-item">
-                      <h3>Contact Support</h3>
-                      <p>Reach out to our support team at support@bakal.com</p>
+
+                    {/* Contact Support Item */}
+                    <div className="help-accordion-item">
+                      <button
+                        className="help-accordion-header"
+                        onClick={() => setExpandedSetting(expandedSetting === 'contact' ? null : 'contact')}
+                      >
+                        <div className="help-accordion-icon">
+                          <MessageCircle size={18} strokeWidth={1.5} />
+                        </div>
+                        <div className="help-accordion-content">
+                          <h3>Contact Support</h3>
+                          <p>Reach out to our support team for help</p>
+                        </div>
+                        <ChevronRight 
+                          size={18} 
+                          strokeWidth={1.5}
+                          className={`help-accordion-toggle ${expandedSetting === 'contact' ? 'expanded' : ''}`}
+                        />
+                      </button>
+                      {expandedSetting === 'contact' && (
+                        <div className="help-accordion-body">
+                          <div className="support-info">
+                            <p><strong>Email:</strong> <a href="mailto:support@bakal.com" className="support-email-link">support@bakal.com</a></p>
+                            <p>We typically respond to support emails within 24 hours during business days.</p>
+                            <div className="contact-tips">
+                              <p><strong>Tips for faster support:</strong></p>
+                              <ul>
+                                <li>Include a screenshot of the issue if possible</li>
+                                <li>Describe the platform where the issue occurred</li>
+                                <li>Mention the product or search query related to your issue</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                    <div className="help-item">
-                      <h3>How to Use</h3>
-                      <p>Learn how to search and find products across platforms</p>
+
+                    {/* How to Use Item */}
+                    <div className="help-accordion-item">
+                      <button
+                        className="help-accordion-header"
+                        onClick={() => setExpandedSetting(expandedSetting === 'howto' ? null : 'howto')}
+                      >
+                        <div className="help-accordion-icon">
+                          <BookOpen size={18} strokeWidth={1.5} />
+                        </div>
+                        <div className="help-accordion-content">
+                          <h3>How to Use</h3>
+                          <p>Learn how to search and find products effectively</p>
+                        </div>
+                        <ChevronRight 
+                          size={18} 
+                          strokeWidth={1.5}
+                          className={`help-accordion-toggle ${expandedSetting === 'howto' ? 'expanded' : ''}`}
+                        />
+                      </button>
+                      {expandedSetting === 'howto' && (
+                        <div className="help-accordion-body">
+                          <div className="tutorial-step">
+                            <strong>Step 1: Enter Your Search</strong>
+                            <p>Type a product name (e.g., "laptop", "smartphone") in the search bar and press Enter.</p>
+                          </div>
+                          <div className="tutorial-step">
+                            <strong>Step 2: Filter Results</strong>
+                            <p>Use the platform filters on the left to narrow results to specific stores. Look for deals and discounts highlighted in red.</p>
+                          </div>
+                          <div className="tutorial-step">
+                            <strong>Step 3: Compare Prices</strong>
+                            <p>Compare prices across platforms to find the best deal. Click "View on Store" to visit the product page.</p>
+                          </div>
+                          <div className="tutorial-step">
+                            <strong>Step 4: Save Searches</strong>
+                            <p>Click the bookmark icon to save searches you want to track. We'll notify you of new deals matching your search.</p>
+                          </div>
+                        </div>
+                      )}
                     </div>
-                    <div className="help-item">
-                      <h3>Report Issue</h3>
-                      <p>Report bugs or issues to help us improve</p>
+
+                    {/* Report Issue Item */}
+                    <div className="help-accordion-item">
+                      <button
+                        className="help-accordion-header"
+                        onClick={() => setExpandedSetting(expandedSetting === 'report' ? null : 'report')}
+                      >
+                        <div className="help-accordion-icon">
+                          <Flag size={18} strokeWidth={1.5} />
+                        </div>
+                        <div className="help-accordion-content">
+                          <h3>Report Issue</h3>
+                          <p>Report bugs or issues to help us improve</p>
+                        </div>
+                        <ChevronRight 
+                          size={18} 
+                          strokeWidth={1.5}
+                          className={`help-accordion-toggle ${expandedSetting === 'report' ? 'expanded' : ''}`}
+                        />
+                      </button>
+                      {expandedSetting === 'report' && (
+                        <div className="help-accordion-body">
+                          <div className="issue-types">
+                            <p><strong>Common issues we help with:</strong></p>
+                            <ul>
+                              <li><strong>Incorrect prices:</strong> Product prices don't match the actual store</li>
+                              <li><strong>Unavailable products:</strong> Products shown as available but not in stock</li>
+                              <li><strong>Broken links:</strong> Links leading to 404 or incorrect product pages</li>
+                              <li><strong>App errors:</strong> Page won't load, search not working, login issues</li>
+                              <li><strong>Missing products:</strong> Not finding a product that should be indexed</li>
+                            </ul>
+                          </div>
+                          <p style={{ marginTop: '1rem', fontSize: '14px', color: 'var(--text-secondary)' }}>
+                            Found a bug? Email <a href="mailto:support@bakal.com" className="support-email-link">support@bakal.com</a> with a detailed description.
+                          </p>
+                        </div>
+                      )}
                     </div>
                   </div>
                 </section>

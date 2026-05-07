@@ -17,6 +17,9 @@ router.get('/recent', optionalAuth, productController.getRecentProducts);
 // GET top-rated products
 router.get('/top-rated', optionalAuth, productController.getTopRatedProducts);
 
+// GET featured on-sale products for carousel (cached 24h)
+router.get('/featured', optionalAuth, productController.getFeaturedProducts);
+
 /**
  * GET /api/products/:id
  *

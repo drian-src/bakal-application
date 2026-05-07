@@ -582,6 +582,74 @@ async function upsertProductsBatch(products) {
   }
 }
 
+/**
+ * Find featured products for homepage carousel
+ * Tries on-sale products first; falls back to top-rated if none available
+ * Returns ONE best product per platform
+ * Carousel displays 3 slides: one per platform (PCExpress, VillMan, PCWorx)
+ * 
+ * @returns {Promise<Array>} Array of 3 featured products (1 per platform)
+ */
+async function findFeaturedOnSale() {
+  try {
+    // Try to get on-sale products first
+    let { data: products, error } = await supabase
+      .from(TABLE)
+      .select('*, platforms(id, name)')
+      .eq('is_on_sale', true)
+      .eq('is_available', true)
+      .order('discount_percent', { ascending: false })
+      .order('rating', { ascending: false })
+      .limit(100);
+
+    if (error) throw error;
+
+    logger.debug(`[ProductRepository] findFeaturedOnSale (on-sale) → ${(products || []).length} results`);
+    
+    // If no on-sale products, fall back to top-rated available products
+    if (!products || products.length === 0) {
+      logger.info('[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated');
+      
+      const { data: topRated, error: topError } = await supabase
+        .from(TABLE)
+        .select('*, platforms(id, name)')
+        .eq('is_available', true)
+        .order('rating', { ascending: false })
+        .order('updated_at', { ascending: false })
+        .limit(100);
+      
+      if (topError) throw topError;
+      products = topRated;
+      logger.debug(`[ProductRepository] findFeaturedOnSale (top-rated fallback) → ${(products || []).length} results`);
+    }
+    
+    // Group by platform and get the first (best) product from each
+    const platformMap = new Map();
+    
+    for (const p of (products || [])) {
+      const platformName = p.platforms?.name || 'Unknown';
+      
+      // Only add if we don't have this platform yet
+      if (!platformMap.has(platformName)) {
+        platformMap.set(platformName, {
+          ...p,
+          platform: platformName,
+          platforms: undefined,
+        });
+      }
+    }
+
+    // Return array of 3 products (one per platform)
+    const featured = Array.from(platformMap.values()).slice(0, 3);
+    logger.info(`[ProductRepository] findFeaturedOnSale returning ${featured.length} platform representatives`);
+    
+    return featured;
+  } catch (error) {
+    logger.error('[ProductRepository] findFeaturedOnSale error: ' + formatError(error));
+    return [];
+  }
+}
+
 module.exports = { 
   upsertProduct, 
   findByUrl, 
@@ -592,6 +660,7 @@ module.exports = {
   findRecent,
   findTopRated,
   findByKeyword,
+  findFeaturedOnSale,
   // 🆕 NEW EXPORTS
   searchByQueryFresh,
   searchByQuery,
@@ -601,5 +670,5 @@ module.exports = {
   upsertProductsBatch,
   getPlatformId,
   loadAllPlatformIds,
-  cleanProductForDatabase
+  cleanProductForDatabase,
 };

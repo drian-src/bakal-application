@@ -100,9 +100,19 @@ async function getTopRatedProducts(req, res, next) {
   }
 }
 
+async function getFeaturedProducts(req, res, next) {
+  try {
+    const products = await productRepo.findFeaturedOnSale();
+    return res.status(200).json({ success: true, data: products });
+  } catch (err) {
+    next(err);
+  }
+}
+
 module.exports = {
   getAllProducts,
   getProductDetail,
   getRecentProducts,
   getTopRatedProducts,
+  getFeaturedProducts,
 };

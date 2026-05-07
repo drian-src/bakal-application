@@ -199,6 +199,18 @@ export const trackInteraction = async (eventType, options = {}) => {
   }
 };
 
+// ─── PRODUCTS ENDPOINTS ────────────────────────────────────────────────────
+
+export const getFeaturedProducts = async () => {
+  try {
+    const response = await apiCall('/products/featured');
+    return response.data || [];
+  } catch (error) {
+    console.error('Fetch featured products failed:', error);
+    return [];
+  }
+};
+
 export const getPersonalizedRecommendations = async (limit = 10) => {
   try {
     const response = await apiCall(`/recommendations?limit=${limit}`);

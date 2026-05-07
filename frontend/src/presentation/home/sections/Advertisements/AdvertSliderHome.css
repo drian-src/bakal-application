@@ -1,21 +1,67 @@
 .advert-slider-home {
   width: 100%;
-  height: 280px;
+  height: auto;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   border-radius: 12px;
   margin: var(--spacing-xl) auto var(--spacing-2xl);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Loading state */
+.advert-slider-home.loading {
+  height: 500px;
+  background: var(--bg-secondary);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.loading-skeleton {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, var(--bg-secondary) 25%, var(--bg-hover) 50%, var(--bg-secondary) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+@keyframes shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+/* Empty state */
+.advert-slider-home.empty {
+  height: 250px;
+  background: var(--bg-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.empty-message {
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+/* Carousel container */
+.advert-carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 }
 
 .advert-track-home {
   display: flex;
-  height: 100%;
-  transition: transform 500ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  width: 300%;
+  height: 500px;
+  width: 100%;
+  transition: transform 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .advert-slide-home {
@@ -24,45 +70,189 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
-  text-align: center;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  background: linear-gradient(135deg, var(--bg-secondary) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.advert-slide-home:hover {
+  border-color: var(--accent-gold);
+  box-shadow: 0 8px 24px rgba(212, 175, 55, 0.2);
+}
+
+/* Product image wrapper - FULL SIZE BANNER */
+.product-image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.product-image-home {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.advert-slide-home:hover .product-image-home {
+  transform: scale(1.05);
+}
+
+/* Discount badge */
+.discount-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #ff6b6b, #ff8787);
   color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+  box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+}
+
+/* Compact discount badge for inline display */
+.discount-badge-compact {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  background: linear-gradient(135deg, #ff6b35, #f77f00);
+  padding: 6px 12px;
+  border-radius: 4px;
+  white-space: nowrap;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+/* Platform badge */
+.product-platform-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  z-index: 10;
+}
+
+/* Product info section - OVERLAID ON IMAGE */
+.product-info-home {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 24px 20px;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 60%);
+  text-align: left;
+  color: white;
+}
+
+.product-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.product-title-home {
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  flex: 1;
+  min-width: 200px;
+}
+
+/* Price section */
+.product-price-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 12px;
+  align-items: center;
+}
+
+.current-price {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--accent-gold);
+  letter-spacing: 0.5px;
+}
+
+.original-price {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: line-through;
+  opacity: 0.8;
+}
+
+/* Promo label */
+.promo-label {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 0.5rem 0 0 0;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+/* Navigation buttons */
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(212, 175, 55, 0.5);
+  color: var(--accent-gold);
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  flex-shrink: 0;
 }
 
-.advert-slide-home:active {
-  transform: scale(0.98);
+.carousel-nav-btn.prev {
+  left: 16px;
 }
 
-.advert-logo-home {
-  width: 400px;
-  height: auto;
-  margin-bottom: 1rem;
-  object-fit: contain;
-  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
+.carousel-nav-btn.next {
+  right: 16px;
 }
 
-.advert-title-home {
-  font-size: 2rem;
-  margin: 0;
-  color: white;
-  font-weight: 700;
+.carousel-nav-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-color: var(--accent-gold);
+  transform: translateY(-50%) scale(1.1);
 }
 
-.advert-desc-home {
-  margin-top: 0.5rem;
-  color: rgba(255, 255, 255, 0.85);
-  font-size: 1rem;
-}
-
+/* Dots container - positioned at bottom of carousel */
 .advert-dots-home {
   position: absolute;
   bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
+  right: 16px;
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  z-index: 15;
 }
 
 .dot-home {
@@ -81,20 +271,143 @@
 }
 
 .dot-home.active {
-  width: 16px;
-  background: white;
+  width: 28px;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .advert-slider-home.loading,
+  .advert-track-home {
+    height: 450px;
+  }
+
+  .product-title-home {
+    font-size: 16px;
+  }
+
+  .current-price {
+    font-size: 20px;
+  }
+
+  .carousel-nav-btn {
+    width: 44px;
+    height: 44px;
+  }
 }
 
 @media (max-width: 768px) {
-  .advert-slider-home {
-    height: 220px;
+  .advert-slider-home.loading,
+  .advert-track-home {
+    height: 380px;
   }
 
-  .advert-emoji-home {
-    font-size: 3rem;
+  .product-info-home {
+    padding: 20px 16px;
   }
 
-  .advert-title-home {
-    font-size: 1.5rem;
+  .product-title-home {
+    font-size: 14px;
   }
+
+  .current-price {
+    font-size: 18px;
+  }
+
+  .carousel-nav-btn {
+    width: 40px;
+    height: 40px;
+    left: 12px;
+    right: auto;
+  }
+
+  .carousel-nav-btn.next {
+    left: auto;
+    right: 12px;
+  }
+
+  .carousel-nav-btn svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .advert-dots-home {
+    bottom: 12px;
+    right: 12px;
+    gap: 6px;
+  }
+
+  .dot-home {
+    width: 8px;
+    height: 8px;
+  }
+
+  .dot-home.active {
+    width: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .advert-slider-home.loading,
+  .advert-track-home {
+    height: 300px;
+  }
+
+  .product-info-home {
+    padding: 16px 12px;
+  }
+
+  .product-title-home {
+    font-size: 13px;
+    -webkit-line-clamp: 2;
+  }
+
+  .current-price {
+    font-size: 16px;
+  }
+
+  .product-platform-badge {
+    bottom: 12px;
+    left: 12px;
+  }
+
+  .discount-badge-compact {
+    top: 12px;
+    right: 12px;
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+
+  .carousel-nav-btn {
+    width: 36px;
+    height: 36px;
+    left: 8px;
+    right: auto;
+  }
+
+  .carousel-nav-btn.next {
+    left: auto;
+    right: 8px;
+  }
+
+  .carousel-nav-btn svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .advert-dots-home {
+    bottom: 8px;
+    right: 8px;
+    gap: 4px;
+  }
+
+  .dot-home {
+    width: 7px;
+    height: 7px;
+  }
+
+  .dot-home.active {
+    width: 18px;
+  }
+}
 }
