@@ -140,6 +140,16 @@ async function search(req, res, next) {
       });
     }
 
+    // 🆕 SAVE SEARCH TO HISTORY (non-blocking)
+    if (userId) {
+      searchRepo.create(userId, q).catch(err => {
+        logger.warn('[SearchController] Failed to save search to history:', err.message);
+      });
+      logger.info(`[SearchController] Saved search to history: user=${userId}, query="${q}"`);
+    } else {
+      logger.debug(`[SearchController] Skipping history save: userId is null`);
+    }
+
     // 🆕 Add cache freshness metadata to response
     const cacheMetadata = {
       ...result.metadata,
@@ -188,7 +198,7 @@ async function getSearchHistory(req, res, next) {
 
     const limit = Math.min(parseInt(req.query.limit, 10) || 50, 500);
     const history = await searchRepo.findByUserId(userId, limit);
-    return res.status(200).json({ success: true, data: history });
+    return res.status(200).json({ success: true, searchHistory: history, count: history.length });
   } catch (err) {
     next(err);
   }

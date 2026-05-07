@@ -5,13 +5,15 @@ import {
   ChevronDown,
   Sliders,
   TrendingDown,
-  TrendingUp
+  TrendingUp,
+  Bookmark,
+  BookmarkCheck,
 } from 'lucide-react';
 import SearchSummaryHeader from './SearchSummary/SearchSummaryHeader';
 import PlatformTabs from './PlatformSelector/PlatformTabs';
 import RecommendedSection from './RecommendedProducts/RecommendedSection';
 import ScrapingLoader from '../../shared/ScrapingLoader';
-import { searchProducts, getStores, trackInteraction } from '@/core/services/apiService';
+import { searchProducts, getStores, trackInteraction, savedSearchesApi } from '@/core/services/apiService';
 import { searchCache } from '@/core/services/searchCache';
 import './SearchResultPage.css';
 
@@ -40,7 +42,11 @@ const SearchResultPage = () => {
   const [dealsOnly, setDealsOnly] = useState(false);
   const [minDiscount, setMinDiscount] = useState(0);
   const [dealsFilterOpen, setDealsFilterOpen] = useState(false);
-  const discountOptions = [0, 10, 20, 30, 50];
+  const [discountOptions, setDiscountOptions] = useState([0, 10, 20, 30, 50]);
+
+  const [isSaved, setIsSaved] = useState(false);
+  const [savingSearch, setSavingSearch] = useState(false);
+  const [saveError, setSaveError] = useState(null);
 
   // Fetch available stores on component mount
   useEffect(() => {
@@ -146,6 +152,32 @@ const SearchResultPage = () => {
     return Number.isNaN(number) ? 0 : number;
   };
 
+  const handleSaveSearch = async () => {
+    if (!query.trim()) return;
+    
+    setSavingSearch(true);
+    setSaveError(null);
+    
+    try {
+      const result = await savedSearchesApi.save(query);
+      if (result.success) {
+        setIsSaved(true);
+        // Revert after 2 seconds
+        setTimeout(() => setIsSaved(false), 2000);
+      } else {
+        setSaveError(result.error || 'Failed to save search');
+      }
+    } catch (error) {
+      if (error.status === 409) {
+        setSaveError('This search is already saved');
+      } else {
+        setSaveError('Failed to save search');
+      }
+    } finally {
+      setSavingSearch(false);
+    }
+  };
+
   const sortedProducts = useMemo(() => {
     if (!filteredProducts || priceSortOption === 'All options') {
       return filteredProducts;
@@ -175,6 +207,29 @@ const SearchResultPage = () => {
   return (
     <div className="search-result-page">
       <SearchSummaryHeader query={query} stores={stores} />
+      
+      {/* Save Search Button */}
+      <div className="save-search-container">
+        <button 
+          onClick={handleSaveSearch}
+          disabled={savingSearch || !query.trim()}
+          className={`save-search-btn ${isSaved ? 'saved' : ''}`}
+          title={isSaved ? 'Search saved!' : 'Save this search'}
+        >
+          {isSaved ? (
+            <>
+              <BookmarkCheck size={16} strokeWidth={1.5} />
+              <span>Saved</span>
+            </>
+          ) : (
+            <>
+              <Bookmark size={16} strokeWidth={1.5} />
+              <span>Save Search</span>
+            </>
+          )}
+        </button>
+        {saveError && <span className="save-search-error">{saveError}</span>}
+      </div>
       
       {/* 🆕 Freshness Indicator - Modern minimal design */}
       {searchMetadata && !loading && (

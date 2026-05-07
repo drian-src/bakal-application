@@ -20,6 +20,7 @@ const productRoutes = require('./routes/productRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const userRoutes = require('./routes/userRoutes');
+const savedSearchRoutes = require('./routes/savedSearchRoutes');
 
 const app = express();
 
@@ -86,6 +87,7 @@ app.use('/api/products', productRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/cart', requireAuth, cartRoutes);
 app.use('/api/user', requireAuth, userRoutes);
+app.use('/api/user', requireAuth, savedSearchRoutes);
 
 // Health check
 app.get('/health', (_req, res) => res.json({ status: 'ok', timestamp: new Date().toISOString() }));

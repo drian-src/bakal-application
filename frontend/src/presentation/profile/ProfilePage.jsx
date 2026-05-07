@@ -1,9 +1,30 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import {
+  User,
+  Clock,
+  Bookmark,
+  Settings,
+  HelpCircle,
+  LogOut,
+  ArrowLeft,
+  Trash2,
+  Mail,
+  Shield,
+  Info,
+  MessageCircle,
+  BookOpen,
+  Flag,
+  ChevronRight,
+  RotateCcw,
+  Trash2 as TrashIcon,
+  TrendingUp,
+} from 'lucide-react';
 import ConfirmDialog from '../shared/ConfirmDialog';
 import { ThemeToggle } from '../shared/ThemeToggle';
 import { DeleteAccountSection } from './DeleteAccountSection';
 import { getSearchHistory, clearSearchHistory } from '@/core/services/apiService';
+import { savedSearchesApi } from '@/core/services/apiService';
 import { getCurrentUser } from '@/core/services/authService';
 import './ProfilePage.css';
 
@@ -21,6 +42,8 @@ const ProfilePage = () => {
   });
   const [showPassword, setShowPassword] = useState(false);
   const [expandedSetting, setExpandedSetting] = useState(null);
+  const [savedSearches, setSavedSearches] = useState([]);
+  const [loadingSavedSearches, setLoadingSavedSearches] = useState(false);
 
   // Load user data from localStorage on component mount
   useEffect(() => {
@@ -37,6 +60,13 @@ const ProfilePage = () => {
   useEffect(() => {
     if (activeTab === 'history') {
       fetchSearchHistory();
+    }
+  }, [activeTab]);
+
+  // Fetch saved searches when tab changes to 'saved'
+  useEffect(() => {
+    if (activeTab === 'saved') {
+      fetchSavedSearches();
     }
   }, [activeTab]);
 
@@ -82,6 +112,54 @@ const ProfilePage = () => {
     // In a real app, you'd call an API to delete this specific item
   };
 
+  const fetchSavedSearches = async () => {
+    try {
+      setLoadingSavedSearches(true);
+      const searches = await savedSearchesApi.getAll();
+      setSavedSearches(Array.isArray(searches) ? searches : []);
+    } catch (error) {
+      console.error('Failed to fetch saved searches:', error);
+      setSavedSearches([]);
+    } finally {
+      setLoadingSavedSearches(false);
+    }
+  };
+
+  const handleDeleteSavedSearch = async (id) => {
+    try {
+      const result = await savedSearchesApi.remove(id);
+      if (result.success) {
+        setSavedSearches(prev => prev.filter(s => s.id !== id));
+      }
+    } catch (error) {
+      console.error('Failed to delete saved search:', error);
+    }
+  };
+
+  const handleRunSavedSearch = async (savedSearch) => {
+    try {
+      await savedSearchesApi.markRun(savedSearch.id);
+      navigate(`/search?q=${encodeURIComponent(savedSearch.query)}`);
+    } catch (error) {
+      console.error('Failed to run saved search:', error);
+    }
+  };
+
+  const formatRelativeTime = (dateStr) => {
+    if (!dateStr) return '';
+    const date = new Date(dateStr);
+    const now = new Date();
+    const diffMs = now - date;
+    const diffMins = Math.floor(diffMs / 60000);
+    if (diffMins < 1) return 'Just now';
+    if (diffMins < 60) return `${diffMins}m ago`;
+    const diffHrs = Math.floor(diffMins / 60);
+    if (diffHrs < 24) return `${diffHrs}h ago`;
+    const diffDays = Math.floor(diffHrs / 24);
+    if (diffDays < 7) return `${diffDays}d ago`;
+    return date.toLocaleDateString();
+  };
+
   const handleSettingClick = (setting) => {
     setExpandedSetting(expandedSetting === setting ? null : setting);
   };
@@ -106,8 +184,9 @@ const ProfilePage = () => {
     <div className="profile-page">
       <main className="profile-content">
         <div className="profile-container">
-          <button onClick={() => navigate('/home')} className="profile-back-button">
-            ← Back to Home
+          <button onClick={() => navigate('/home')} className="profile-back-btn">
+            <ArrowLeft size={16} strokeWidth={1.5} />
+            Back to Home
           </button>
 
           <div className="profile-wrapper">
@@ -115,31 +194,55 @@ const ProfilePage = () => {
             <aside className="profile-sidebar">
               <div className="sidebar-menu">
                 <button
-                  className={`menu-item ${activeTab === 'profile' ? 'active' : ''}`}
+                  className={`sidebar-tab-item ${activeTab === 'profile' ? 'active' : ''}`}
                   onClick={() => setActiveTab('profile')}
+                  title="Profile Details"
                 >
-                  Profile Details
+                  <User size={18} strokeWidth={1.5} />
+                  <span>Profile Details</span>
                 </button>
                 <button
-                  className={`menu-item ${activeTab === 'history' ? 'active' : ''}`}
+                  className={`sidebar-tab-item ${activeTab === 'history' ? 'active' : ''}`}
                   onClick={() => setActiveTab('history')}
+                  title="Search History"
                 >
-                  Search History
+                  <Clock size={18} strokeWidth={1.5} />
+                  <span>Search History</span>
                 </button>
                 <button
-                  className={`menu-item ${activeTab === 'settings' ? 'active' : ''}`}
+                  className={`sidebar-tab-item ${activeTab === 'saved' ? 'active' : ''}`}
+                  onClick={() => setActiveTab('saved')}
+                  title="Saved Searches"
+                >
+                  <Bookmark size={18} strokeWidth={1.5} />
+                  <span>Saved Searches</span>
+                </button>
+                <button
+                  className={`sidebar-tab-item ${activeTab === 'settings' ? 'active' : ''}`}
                   onClick={() => setActiveTab('settings')}
+                  title="Settings"
                 >
-                  Settings
+                  <Settings size={18} strokeWidth={1.5} />
+                  <span>Settings</span>
                 </button>
                 <button
-                  className={`menu-item ${activeTab === 'help' ? 'active' : ''}`}
+                  className={`sidebar-tab-item ${activeTab === 'help' ? 'active' : ''}`}
                   onClick={() => setActiveTab('help')}
+                  title="Help & Support"
                 >
-                  Help & Support
+                  <HelpCircle size={18} strokeWidth={1.5} />
+                  <span>Help & Support</span>
                 </button>
-                <button className="menu-item logout-btn" onClick={handleLogout}>
-                  Logout
+
+                <div className="sidebar-divider"></div>
+
+                <button 
+                  className="sidebar-tab-item logout-btn" 
+                  onClick={handleLogout}
+                  title="Logout"
+                >
+                  <LogOut size={18} strokeWidth={1.5} />
+                  <span>Logout</span>
                 </button>
               </div>
             </aside>
@@ -315,6 +418,65 @@ const ProfilePage = () => {
                               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M12 4L4 12M4 4L12 12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
                               </svg>
+                            </button>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+                  )}
+                </section>
+              )}
+
+              {/* Saved Searches */}
+              {activeTab === 'saved' && (
+                <section className="profile-section">
+                  <h2 className="section-title">Saved Searches</h2>
+
+                  {loadingSavedSearches ? (
+                    <div className="history-empty">Loading saved searches...</div>
+                  ) : savedSearches.length === 0 ? (
+                    <div className="history-empty-state">
+                      <Bookmark size={36} strokeWidth={1} className="history-empty-icon" />
+                      <p className="history-empty-title">No saved searches yet</p>
+                      <p className="history-empty-desc">
+                        Pin a search query from the results page to quickly re-run it anytime.
+                      </p>
+                    </div>
+                  ) : (
+                    <div className="saved-searches-list">
+                      {savedSearches.map((saved) => (
+                        <div key={saved.id} className="saved-search-item">
+                          <div className="saved-search-icon">
+                            <Bookmark size={16} strokeWidth={1.5} />
+                          </div>
+                          <div className="saved-search-content">
+                            <span className="saved-search-query">{saved.query}</span>
+                            <div className="saved-search-meta">
+                              <span className="saved-search-date">
+                                Saved {formatRelativeTime(saved.saved_at)}
+                              </span>
+                              {saved.new_count > 0 && (
+                                <span className="saved-search-new-badge">
+                                  <TrendingUp size={11} strokeWidth={1.5} />
+                                  {saved.new_count} new
+                                </span>
+                              )}
+                            </div>
+                          </div>
+                          <div className="saved-search-actions">
+                            <button
+                              onClick={() => handleRunSavedSearch(saved)}
+                              className="saved-search-run-btn"
+                              title="Run this search"
+                            >
+                              <RotateCcw size={14} strokeWidth={1.5} />
+                            </button>
+                            <button
+                              onClick={() => handleDeleteSavedSearch(saved.id)}
+                              className="saved-search-delete-btn"
+                              title="Remove saved search"
+                            >
+                              <TrashIcon size={14} strokeWidth={1.5} />
                             </button>
                           </div>
                         </div>

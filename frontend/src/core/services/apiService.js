@@ -167,7 +167,7 @@ export const getSearchResults = async (searchId, platform = 'all') => {
 export const getSearchHistory = async (limit = 50) => {
   try {
     const response = await apiCall(`/search/history?limit=${limit}`);
-    return response.data || [];
+    return response.searchHistory || [];
   } catch (error) {
     console.error('Fetch search history failed:', error);
     return [];
@@ -352,6 +352,69 @@ export const getTopRatedProducts = async (limit = 10) => {
   }
 };
 
+// ─── SAVED SEARCHES ENDPOINTS ───────────────────────────────────────────────
+
+export const savedSearchesApi = {
+  /**
+   * Fetch all saved searches for the current user
+   */
+  getAll: async (limit = 50) => {
+    try {
+      const response = await apiCall(`/user/saved-searches?limit=${limit}`);
+      return response.savedSearches || [];
+    } catch (error) {
+      console.error('Fetch saved searches failed:', error);
+      return [];
+    }
+  },
+
+  /**
+   * Save a new search query
+   */
+  save: async (query) => {
+    try {
+      const response = await apiCall('/user/saved-searches', {
+        method: 'POST',
+        body: JSON.stringify({ query }),
+      });
+      return { success: true, savedSearch: response.savedSearch };
+    } catch (error) {
+      console.error('Save search failed:', error);
+      return { success: false, error: error.message };
+    }
+  },
+
+  /**
+   * Remove a saved search
+   */
+  remove: async (id) => {
+    try {
+      const response = await apiCall(`/user/saved-searches/${id}`, {
+        method: 'DELETE',
+      });
+      return { success: true, message: response.message };
+    } catch (error) {
+      console.error('Remove saved search failed:', error);
+      return { success: false, error: error.message };
+    }
+  },
+
+  /**
+   * Mark a saved search as run (reset new_count)
+   */
+  markRun: async (id) => {
+    try {
+      const response = await apiCall(`/user/saved-searches/${id}/run`, {
+        method: 'PATCH',
+      });
+      return { success: true };
+    } catch (error) {
+      console.error('Mark saved search run failed:', error);
+      return { success: false, error: error.message };
+    }
+  },
+};
+
 export default {
   searchProducts,
   getSearchResults,
@@ -370,4 +433,5 @@ export default {
   getCategoryProducts,
   getRecentProducts,
   getTopRatedProducts,
+  savedSearchesApi,
 };
