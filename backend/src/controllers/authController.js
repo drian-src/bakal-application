@@ -240,12 +240,29 @@ logger.info('[AuthController] Token manually verified with clock skew tolerance'
 
     // Step 4 — Delegate upsert + JWT signing to authService
     // authService.googleLogin() handles: find-or-create user, sign JWT
-    const { user, token } = await authService.googleLogin({
+    const { user, token, isNewUser } = await authService.googleLogin({
       googleId:  payload.sub,        // unique Google user ID
       email:     payload.email,
       name:      payload.name,
       avatarUrl: payload.picture,
     });
+
+    // ✅ NEW: Send welcome email for new Google OAuth users (non-blocking)
+    if (isNewUser) {
+      sendWelcomeEmail(user.email, user.name)
+        .then(emailResult => {
+          if (emailResult.success) {
+            logger.info(`✅ Welcome email queued for new Google user ${user.email}`);
+          } else {
+            logger.warn(`⚠️ Email failed for new Google user ${user.email}:`, emailResult.error);
+            // Don't fail OAuth if email fails — user account is created successfully
+          }
+        })
+        .catch(err => {
+          logger.error('❌ Email service error (Google user):', err);
+          // Don't fail OAuth if email fails
+        });
+    }
 
     // Step 5 — Redirect to frontend callback page with token + user data
     // Frontend /auth/callback reads these params and stores them in localStorage

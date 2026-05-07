@@ -44,7 +44,7 @@ async function login({ email, password }) {
  * @param {string} profile.email     - Verified email from Google
  * @param {string} profile.name      - Full name from Google profile
  * @param {string} profile.avatarUrl - Profile picture URL from Google
- * @returns {{ user: object, token: string }}
+ * @returns {{ user: object, token: string, isNewUser: boolean }}
  */
 async function googleLogin({ googleId, email, name, avatarUrl }) {
   const { supabase } = require('../config/db');
@@ -71,6 +71,7 @@ async function googleLogin({ googleId, email, name, avatarUrl }) {
   }
 
   let user;
+  let isNewUser = false;
 
   if (existingUser) {
     // 3a — User exists — update with latest Google profile data
@@ -90,6 +91,7 @@ async function googleLogin({ googleId, email, name, avatarUrl }) {
 
     if (updateError) throw updateError;
     user = updated;
+    isNewUser = false;  // Existing user, not new
 
   } else {
     // 3b — New user — create from Google profile
@@ -109,6 +111,7 @@ async function googleLogin({ googleId, email, name, avatarUrl }) {
 
     if (createError) throw createError;
     user = created;
+    isNewUser = true;  // Brand new user created
   }
 
   // 4 — Sign JWT using the SAME config and payload structure as existing auth
@@ -119,7 +122,7 @@ async function googleLogin({ googleId, email, name, avatarUrl }) {
     { expiresIn: config.jwt.expiresIn || '7d' }
   );
 
-  return { user, token };
+  return { user, token, isNewUser };
 }
 
 async function getProfile(userId) {
