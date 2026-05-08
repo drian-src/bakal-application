@@ -153,207 +153,227 @@ class PcExpressScraper extends BaseScraper {
   // Scrape a single product page.
   // Strategy: Shopify .json endpoint (fast ~8s) → LD+JSON → CSS selectors
   // ══════════════════════════════════════════════════════════════════════════
-  async scrape(url) {
-    return withRetry(async () => {
-      let browser, context, page;
-      try {
-        browser = await this.getBrowser();
-        const result = await this.newContext(browser);
-        page = result.page;
-        context = result.context;
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRATEGY 1: JSON API (Shopify product endpoint — fastest)
+  // ══════════════════════════════════════════════════════════════════════════
+  async scrapeViaJson(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const jsonUrl = cleanUrl + '.json';
+      const html = await this.axiosFetch(jsonUrl, { timeout: 15000 });
+      if (!html) return null;
 
-        const cleanUrl = url.split('?')[0];
+      const productData = JSON.parse(html).product;
+      if (!productData?.title) return null;
 
-        // ─── STEP 1: SHOPIFY JSON ENDPOINT ───────────────────────────────────
-        // Fastest path — structured data, no DOM rendering needed.
-        // PCExpress JSON endpoints can be slow; 15s is enough without blocking.
-        const jsonUrl = cleanUrl + '.json';
-        logger.debug(`[PcExpressScraper] Trying JSON: ${jsonUrl}`);
+      return normalizeProduct(
+        this._extractFromShopifyJson(productData, cleanUrl),
+        'pcexpress',
+        0
+      );
+    } catch (err) {
+      logger.debug(`[PcExpressScraper] scrapeViaJson failed: ${err.message}`);
+      return null;
+    }
+  }
 
-        try {
-          await page.goto(jsonUrl, { waitUntil: 'domcontentloaded', timeout: 15000 });
-          const jsonText = await page.evaluate(() => document.body.innerText);
-          const productData = JSON.parse(jsonText)?.product;
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRATEGY 2: Axios + Cheerio (fast HTML parsing — no browser)
+  // ══════════════════════════════════════════════════════════════════════════
+  async scrapeViaAxios(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const html = await this.axiosFetch(cleanUrl, { timeout: 20000 });
+      if (!html) return null;
 
-          if (productData?.title) {
-            logger.debug(`[PcExpressScraper] JSON success: ${productData.title}`);
-            return normalizeProduct(
-              this._extractFromShopifyJson(productData, cleanUrl),
-              'pcexpress',
-              0
-            );
+      const $ = this.loadCheerio(html);
+      const title = $('h1.t4s-product_title, h1.product__title, h1.product-single__title, h1')
+        .first()
+        .text()
+        .trim() || null;
+
+      if (!title) return null;
+
+      const priceText = $('.t4s-product__price-review div, span.price-item--regular')
+        .first()
+        .text()
+        .trim() || '';
+      const originalPriceText = $('del, s, .old-price').first().text().trim() || '';
+      const promoLabel = $('.badge, .t4s-badge, .sale-tag').first().text().trim() || null;
+      const image = $('meta[property="og:image"]').attr('content') ||
+        $('.t4s-product__media img').attr('src') || null;
+
+      const rawProduct = {
+        title,
+        price: this._parsePrice(priceText),
+        originalPrice: this._parsePrice(originalPriceText) || null,
+        promoLabel,
+        rating: null,
+        reviews_count: null,
+        seller_name: 'PC Express',
+        image_url: image,
+        product_url: cleanUrl,
+        specs: {},
+        is_available: true,
+      };
+      return normalizeProduct(rawProduct, 'pcexpress', 0);
+    } catch (err) {
+      logger.debug(`[PcExpressScraper] scrapeViaAxios failed: ${err.message}`);
+      return null;
+    }
+  }
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // STRATEGY 3: Playwright (full rendering — slow but most compatible)
+  // ══════════════════════════════════════════════════════════════════════════
+  async scrapeViaPlaywright(url) {
+    let browser, context, page;
+    try {
+      browser = await this.getBrowser();
+      const result = await this.newContext(browser);
+      page = result.page;
+      context = result.context;
+
+      const cleanUrl = url.split('?')[0];
+      await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      await randomDelay(1000, 2000);
+      await page.goto(cleanUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await randomDelay(1500, 2500);
+      await this.humanScroll(page, 2);
+      await page.waitForSelector(['h1', '[class*="product"]', 'main'].join(', '), { timeout: 10000 }).catch(() => {});
+
+      const domData = await page.evaluate((SELS) => {
+        const getText = (selList) => {
+          for (const s of selList) {
+            try {
+              const el = document.querySelector(s);
+              if (el?.textContent?.trim()) return el.textContent.trim();
+            } catch {}
           }
-        } catch (jsonErr) {
-          // JSON 404/timeout/parse failure — continue to DOM fallback
-          logger.debug(`[PcExpressScraper] JSON failed (${jsonErr.message}), trying DOM`);
-        }
-
-        // ─── STEP 2: DOM EXTRACTION FALLBACK ─────────────────────────────────
-        // Pre-load homepage to get session cookies, then navigate to product.
-        // This mirrors the VillmanScraper / PcWorxScraper pattern exactly.
-        logger.debug(`[PcExpressScraper] DOM fallback: ${cleanUrl}`);
-        await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
-        await randomDelay(1000, 2000);
-
-        await page.goto(cleanUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-        await randomDelay(1500, 2500);
-        await this.humanScroll(page, 2);
-
-        // Wait for either the title or a generic product wrapper — fail fast (10s)
-        await page
-          .waitForSelector(
-            ['h1', '[class*="product"]', 'main'].join(', '),
-            { timeout: 10000 }
-          )
-          .catch(() => {});
-
-        // ─── STEP 2a: TRY JSON-LD FIRST (structured, reliable) ───────────────
-        const jsonLdProduct = await page.evaluate(() => {
-          try {
-            for (const script of document.querySelectorAll(
-              'script[type="application/ld+json"]'
-            )) {
-              const d = JSON.parse(script.textContent);
-              if (d['@type'] === 'Product') {
-                const offer = Array.isArray(d.offers) ? d.offers[0] : d.offers;
-                return {
-                  title: d.name || null,
-                  priceRaw: offer?.price?.toString() || null,
-                  image_url:
-                    Array.isArray(d.image) ? d.image[0] : d.image || null,
-                };
-              }
-            }
-          } catch {}
           return null;
-        });
-
-        // ─── STEP 2b: CSS SELECTOR EXTRACTION ────────────────────────────────
-        // One page.evaluate() call for all fields (faster than multiple calls).
-        const domData = await page.evaluate((SELS) => {
-          // Multi-selector safe getter — tries each selector in order
-          const getText = (selList) => {
-            for (const s of selList) {
-              try {
-                const el = document.querySelector(s);
-                if (el?.textContent?.trim()) return el.textContent.trim();
-              } catch {}
-            }
-            return null;
-          };
-
-          // Price from strikethrough elements
-          const getOriginalPrice = (selList) => {
-            for (const s of selList) {
-              try {
-                const el = document.querySelector(s);
-                const val = parseFloat(
-                  (el?.textContent || '').replace(/[^\d.]/g, '')
-                );
-                if (!isNaN(val) && val > 0) return val;
-              } catch {}
-            }
-            return null;
-          };
-
-          // Image: try src then OG meta
-          const getImage = () => {
-            for (const s of SELS.image) {
-              try {
-                const el = document.querySelector(s);
-                if (el) return el.src || el.content || null;
-              } catch {}
-            }
-            return null;
-          };
-
-          // Specs: parse <li> items and key:value pairs from description block
-          const getSpecs = () => {
-            const specs = {};
-            let idx = 0;
-
-            // Table-based specs (most reliable if present)
-            document
-              .querySelectorAll('table[class*="spec"] tr, .product-specs tr')
-              .forEach(row => {
-                const cells = row.querySelectorAll('td');
-                if (cells.length >= 2) {
-                  const key = cells[0].textContent.trim();
-                  const value = cells[1].textContent.trim();
-                  if (key && value && key.length < 80) specs[key] = value;
-                }
-              });
-
-            // List-based specs from description block
-            if (Object.keys(specs).length === 0) {
-              for (const s of SELS.specs) {
-                const container = document.querySelector(s);
-                if (!container) continue;
-
-                container.querySelectorAll('li').forEach(li => {
-                  const text = li.textContent.trim();
-                  if (!text || text.length > 200) return;
-
-                  if (text.includes(':')) {
-                    const colonIdx = text.indexOf(':');
-                    const key = text.slice(0, colonIdx).trim();
-                    const value = text.slice(colonIdx + 1).trim();
-                    if (key && value && key.length < 80) {
-                      specs[key.toLowerCase()] = value;
-                    }
-                  } else {
-                    specs[`detail_${idx++}`] = text;
-                  }
-                });
-
-                if (Object.keys(specs).length > 0) break; // stop at first match
-              }
-            }
-
-            return specs;
-          };
-
-          return {
-            title: getText(SELS.title),
-            priceRaw: getText(SELS.price),
-            originalPrice: getOriginalPrice(SELS.originalPrice),
-            promoLabel: getText(SELS.promoLabel),
-            image_url: getImage(),
-            specs: getSpecs(),
-          };
-        }, SELECTORS);
-
-        // Prefer JSON-LD title/price if available (more reliable), fall back to CSS
-        const title = jsonLdProduct?.title || domData.title;
-        const priceRaw = jsonLdProduct?.priceRaw || domData.priceRaw;
-        const image_url = jsonLdProduct?.image_url || domData.image_url;
-
-        if (!title) {
-          logger.warn(`[PcExpressScraper] Could not extract title from ${cleanUrl}`);
-          return null;
-        }
-
-        const rawProduct = {
-          title,
-          price: this._parsePrice(priceRaw),
-          originalPrice: domData.originalPrice,
-          promoLabel: domData.promoLabel,
-          rating: null,
-          reviews_count: null,
-          seller_name: 'PC Express',
-          image_url,
-          product_url: cleanUrl,
-          specs: domData.specs,
-          is_available: true,
         };
+        const getOriginalPrice = (selList) => {
+          for (const s of selList) {
+            try {
+              const el = document.querySelector(s);
+              const val = parseFloat((el?.textContent || '').replace(/[^\d.]/g, ''));
+              if (!isNaN(val) && val > 0) return val;
+            } catch {}
+          }
+          return null;
+        };
+        const getImage = () => {
+          for (const s of SELS.image) {
+            try {
+              const el = document.querySelector(s);
+              if (el) return el.src || el.content || null;
+            } catch {}
+          }
+          return null;
+        };
+        return {
+          title: getText(SELS.title),
+          priceRaw: getText(SELS.price),
+          originalPrice: getOriginalPrice(SELS.originalPrice),
+          promoLabel: getText(SELS.promoLabel),
+          image_url: getImage(),
+          specs: {},
+        };
+      }, SELECTORS);
 
-        return normalizeProduct(rawProduct, 'pcexpress', 0);
-      } finally {
-        if (context) {
-          try { await context.close(); } catch (_) { /* ignore */ }
-        }
+      if (!domData.title) return null;
+
+      const rawProduct = {
+        title: domData.title,
+        price: this._parsePrice(domData.priceRaw),
+        originalPrice: domData.originalPrice,
+        promoLabel: domData.promoLabel,
+        rating: null,
+        reviews_count: null,
+        seller_name: 'PC Express',
+        image_url: domData.image_url,
+        product_url: cleanUrl,
+        specs: domData.specs,
+        is_available: true,
+      };
+      return normalizeProduct(rawProduct, 'pcexpress', 0);
+    } finally {
+      if (context) {
+        try { await context.close(); } catch (_) { /* ignore */ }
       }
-    }, 3, 2000, `PcExpressScraper.scrape(${url})`);
+    }
+  }
+
+  async scrapeViaJson(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const jsonUrl = cleanUrl + '.json';
+      const html = await this.axiosFetch(jsonUrl, { timeout: 15000 });
+      if (!html) return null;
+      const productData = JSON.parse(html).product;
+      if (!productData?.title) return null;
+      return normalizeProduct(this._extractFromShopifyJson(productData, cleanUrl), 'pcexpress', 0);
+    } catch (err) {
+      logger.debug(`[PcExpressScraper] scrapeViaJson failed: ${err.message}`);
+      return null;
+    }
+  }
+
+  async scrapeViaAxios(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const html = await this.axiosFetch(cleanUrl, { timeout: 20000 });
+      if (!html) return null;
+      const $ = this.loadCheerio(html);
+      const title = $('h1.t4s-product_title, h1.product__title, h1').first().text().trim() || null;
+      if (!title) return null;
+      const priceText = $('.t4s-product__price-review div, span.price-item--regular').first().text().trim() || '';
+      const originalPriceText = $('del, s, .old-price').first().text().trim() || '';
+      const promoLabel = $('.badge, .t4s-badge, .sale-tag').first().text().trim() || null;
+      const image = $('meta[property="og:image"]').attr('content') || $('.t4s-product__media img').attr('src') || null;
+      const rawProduct = { title, price: this._parsePrice(priceText), originalPrice: this._parsePrice(originalPriceText), promoLabel, rating: null, reviews_count: null, seller_name: 'PC Express', image_url: image, product_url: cleanUrl, specs: {}, is_available: true };
+      return normalizeProduct(rawProduct, 'pcexpress', 0);
+    } catch (err) {
+      logger.debug(`[PcExpressScraper] scrapeViaAxios failed: ${err.message}`);
+      return null;
+    }
+  }
+
+  async scrapeViaPlaywright(url) {
+    let browser, context, page;
+    try {
+      browser = await this.getBrowser();
+      const result = await this.newContext(browser);
+      page = result.page;
+      context = result.context;
+      const cleanUrl = url.split('?')[0];
+      await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      await randomDelay(1000, 2000);
+      await page.goto(cleanUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await randomDelay(1500, 2500);
+      await this.humanScroll(page, 2);
+      await page.waitForSelector(['h1', '[class*="product"]', 'main'].join(', '), { timeout: 10000 }).catch(() => {});
+      const domData = await page.evaluate((SELS) => {
+        const getText = (selList) => { for (const s of selList) { try { const el = document.querySelector(s); if (el?.textContent?.trim()) return el.textContent.trim(); } catch {} } return null; };
+        const getOriginalPrice = (selList) => { for (const s of selList) { try { const el = document.querySelector(s); const val = parseFloat((el?.textContent || '').replace(/[^\d.]/g, '')); if (!isNaN(val) && val > 0) return val; } catch {} } return null; };
+        const getImage = () => { for (const s of SELS.image) { try { const el = document.querySelector(s); if (el) return el.src || el.content || null; } catch {} } return null; };
+        return { title: getText(SELS.title), priceRaw: getText(SELS.price), originalPrice: getOriginalPrice(SELS.originalPrice), promoLabel: getText(SELS.promoLabel), image_url: getImage(), specs: {} };
+      }, SELECTORS);
+      if (!domData.title) return null;
+      const rawProduct = { title: domData.title, price: this._parsePrice(domData.priceRaw), originalPrice: domData.originalPrice, promoLabel: domData.promoLabel, rating: null, reviews_count: null, seller_name: 'PC Express', image_url: domData.image_url, product_url: cleanUrl, specs: domData.specs, is_available: true };
+      return normalizeProduct(rawProduct, 'pcexpress', 0);
+    } finally {
+      if (context) { try { await context.close(); } catch (_) { /* ignore */ } }
+    }
+  }
+
+  async scrape(url) {
+    return withRetry(
+      async () => this.hybridScrape(url, ['json', 'axios', 'playwright']),
+      3,
+      2000,
+      `PcExpressScraper.scrape(${url})`
+    );
   }
 
   // ══════════════════════════════════════════════════════════════════════════

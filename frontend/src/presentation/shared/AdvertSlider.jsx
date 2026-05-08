@@ -10,7 +10,7 @@ const getStoreIcon = (text, color = '#666') => (
   </svg>
 );
 
-const slides = [
+const staticSlides = [
   {
     id: 'pcexpress',
     title: 'PCExpress',
@@ -33,13 +33,50 @@ const slides = [
 
 const AdvertSlider = ({ interval = 3000 }) => {
   const [index, setIndex] = useState(0);
+  const [slides, setSlides] = useState(staticSlides);
+  const [loading, setLoading] = useState(true);
+
+  // Try to fetch dynamic deals, fallback to static slides
+  useEffect(() => {
+    const loadDeals = async () => {
+      try {
+        const response = await fetch('/api/banners/featured-deals');
+        if (response.ok) {
+          const result = await response.json();
+          if (result.success && result.data && result.data.length > 0) {
+            // Transform deals to slide format with correct field mapping
+            const dealSlides = result.data.map(deal => ({
+              id: deal.id,
+              title: deal.productTitle || deal.title,
+              desc: `₱${deal.currentPrice?.toLocaleString() || deal.price?.toLocaleString()} - ${deal.discountPercent || deal.discount_percent}% off`,
+              color: '#1a1a1a',
+              image: deal.productImage || deal.image_url,
+              isReal: true,
+            }));
+            setSlides(dealSlides);
+          } else {
+            setSlides(staticSlides);
+          }
+        } else {
+          setSlides(staticSlides);
+        }
+      } catch (error) {
+        console.warn('[AdvertSlider] Failed to load deals, using static slides:', error);
+        setSlides(staticSlides);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadDeals();
+  }, []);
 
   useEffect(() => {
     const t = setInterval(() => {
       setIndex((i) => (i + 1) % slides.length);
     }, interval);
     return () => clearInterval(t);
-  }, [interval]);
+  }, [interval, slides.length]);
 
   return (
     <div className="advert-slider">

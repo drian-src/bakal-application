@@ -111,181 +111,97 @@ class VillmanScraper extends BaseScraper {
    * @param {string} url - Product URL to scrape
    * @returns {Promise<object|null>} Normalized product object or null on failure
    */
-  async scrape(url) {
-    return withRetry(async () => {
-      let browser, context, page;
-      try {
-        browser = await this.getBrowser();
-        const result = await this.newContext(browser);
-        page = result.page;
-        context = result.context;
+  async scrapeViaJson(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const jsonUrl = cleanUrl + '.json';
+      const html = await this.axiosFetch(jsonUrl, { timeout: 30000 });
+      if (!html) return null;
+      const productData = JSON.parse(html).product;
+      if (!productData?.title) return null;
+      return this._normalizeVillmanProduct(this._extractFromShopifyJson(productData), cleanUrl);
+    } catch (err) {
+      logger.debug(`[VillmanScraper] scrapeViaJson failed: ${err.message}`);
+      return null;
+    }
+  }
 
-        const cleanUrl = url.split('?')[0];
+  async scrapeViaAxios(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const html = await this.axiosFetch(cleanUrl, { timeout: 30000 });
+      if (!html) return null;
+      const $ = this.loadCheerio(html);
+      const title = $('body > section > h1, h1.product__title, h1').first().text().trim() || null;
+      if (!title) return null;
+      const priceText = $('[class*="price"]').first().text().trim() || '';
+      const originalPriceText = $('del, s, .old-price, [class*="original"]').first().text().trim() || '';
+      const image = $('meta[property="og:image"]').attr('content') || $('img').first().attr('src') || null;
+      const brand = $('[class*="brand"], [class*="vendor"]').first().text().trim() || null;
+      const isAvailable = !$('[class*="sold-out"], [class*="unavailable"]').length;
+      const extractedData = {
+        title, price: this._parsePrice(priceText), original_price: this._parsePrice(originalPriceText),
+        image_url: image, brand, is_available: isAvailable, specs: {}, free_items_raw: null, promo_raw: null
+      };
+      return this._normalizeVillmanProduct(extractedData, cleanUrl);
+    } catch (err) {
+      logger.debug(`[VillmanScraper] scrapeViaAxios failed: ${err.message}`);
+      return null;
+    }
+  }
 
-        // ─────────────────────────────────────────────────────────────
-        // STEP 1: TRY SHOPIFY JSON API (FASTEST — ~8s)
-        // ─────────────────────────────────────────────────────────────
-        const jsonUrl = cleanUrl + '.json';
-        logger.debug(`[VillmanScraper] Trying Shopify JSON: ${jsonUrl}`);
-        
-        try {
-          await page.goto(jsonUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-          const jsonText = await page.evaluate(() => document.body.innerText);
-          const productData = JSON.parse(jsonText)?.product;
-
-          if (productData && productData.title) {
-            logger.debug(`[VillmanScraper] JSON success: ${productData.title}`);
-            return this._normalizeVillmanProduct(
-              this._extractFromShopifyJson(productData),
-              cleanUrl
-            );
-          }
-        } catch (err) {
-          logger.debug(`[VillmanScraper] JSON failed: ${err.message}`);
-        }
-
-        // ─────────────────────────────────────────────────────────────
-        // STEP 2: DOM EXTRACTION WITH VILLMAN SELECTORS (~20s)
-        // ─────────────────────────────────────────────────────────────
-        logger.debug(`[VillmanScraper] Fallback to DOM extraction: ${cleanUrl}`);
-
-        // Pre-load homepage for cookies (optional but helps with page state)
-        await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
-        await randomDelay(1000, 2000);
-
-        // Load product page
-        await page.goto(cleanUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-        await randomDelay(2000, 3000);
-        await this.humanScroll(page, 2);
-
-        // Wait for product section to render
-        await page.waitForSelector('h1, body > section', { timeout: 15000 }).catch(() => {});
-
-        // Extract all data in one page.evaluate() call
-        const extractedData = await page.evaluate(() => {
-          // Safe selector helper with fallbacks
-          const safeText = (selector, fallbacks = []) => {
-            let sels = [selector, ...fallbacks];
-            for (const s of sels) {
-              try {
-                const el = document.querySelector(s);
-                if (el && el.textContent?.trim()) {
-                  return el.textContent.trim();
-                }
-              } catch {}
-            }
-            return null;
-          };
-
-          // Safe image source helper with scoping
-          const getSrc = (selector, primaryScope = null) => {
-            try {
-              let container = document.body;
-              if (primaryScope) {
-                const scope = document.querySelector(primaryScope);
-                if (scope) container = scope;
-              }
-              const img = container.querySelector(selector);
-              return img?.src || null;
-            } catch {}
-            return null;
-          };
-
-          return {
-            // ─── TITLE EXTRACTION ─────────────────────────────────────────
-            // Primary: body > section > h1
-            // Fallbacks: product title classes, generic h1
-            title: safeText('body > section > h1', [
-              'h1.product__title',
-              'h1.product-single__title',
-              '[class*="product"][class*="title"]',
-              'h1'
-            ]),
-
-            // ─── SPECS EXTRACTION ─────────────────────────────────────────
-            // Primary: body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_desc
-            // Fallbacks: common spec/detail/description classes
-            specs_raw: safeText(
-              'body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_desc',
-              ['[class*="spec"]', '[class*="detail"]', '[class*="description"]', '[class*="product-details"]']
-            ),
-
-            // ─── FREE ITEMS EXTRACTION ─────────────────────────────────────
-            // Primary: body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_free
-            // Fallbacks: free/bonus/gift classes
-            free_items_raw: safeText(
-              'body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_free',
-              ['[class*="free"]', '[class*="bonus"]', '[class*="gift"]', '[class*="includes"]']
-            ),
-
-            // ─── PROMO EXTRACTION ─────────────────────────────────────────
-            // Primary: body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_promo
-            // Fallbacks: promo/discount/sale classes
-            promo_raw: safeText(
-              'body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_promo',
-              ['[class*="promo"]', '[class*="discount"]', '[class*="sale"]', '.badge', '[class*="offer"]']
-            ),
-
-            // ─── IMAGE EXTRACTION (SCOPED) ────────────────────────────────
-            // Scope: product section container to avoid page-wide images
-            // Primary scope: body > section > div > div.div_mid > div.prod2_summ
-            // Fallback: meta[property="og:image"]
-            image_url: getSrc(
-              'img',
-              'body > section > div > div.div_mid > div.prod2_summ'
-            ) || (
-              () => {
-                try {
-                  return document.querySelector('meta[property="og:image"]')?.content || null;
-                } catch {
-                  return null;
-                }
-              }
-            )(),
-
-            // ─── ORIGINAL PRICE & DISCOUNT ─────────────────────────────────
-            // Extract strikethrough price and promo badges
-            original_price: (() => {
-              const strikethroughSelectors = ['del', 's', '.old-price', '.original-price', '.compare-price', '[class*="original"]'];
-              for (const sel of strikethroughSelectors) {
-                try {
-                  const el = document.querySelector(sel);
-                  if (el && el.textContent?.trim()) {
-                    const val = parseFloat(el.textContent.replace(/[^\d.]/g, ''));
-                    if (!isNaN(val) && val > 0) return val;
-                  }
-                } catch {}
-              }
-              return null;
-            })(),
-
-            // ─── BRAND EXTRACTION ──────────────────────────────────────────
-            brand: safeText('[class*="brand"]', ['[class*="vendor"]', '[class*="manufacturer"]']),
-
-            // ─── STOCK/AVAILABILITY ────────────────────────────────────────
-            is_available: !document.querySelector('[class*="sold-out"], [class*="unavailable"], [aria-disabled="true"]'),
-          };
-        });
-
-        // Validate title — required field
-        if (!extractedData.title) {
-          logger.warn(`[VillmanScraper] Could not extract title from ${cleanUrl}`);
+  async scrapeViaPlaywright(url) {
+    let browser, context, page;
+    try {
+      browser = await this.getBrowser();
+      const result = await this.newContext(browser);
+      page = result.page;
+      context = result.context;
+      const cleanUrl = url.split('?')[0];
+      await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      await randomDelay(1000, 2000);
+      await page.goto(cleanUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await randomDelay(2000, 3000);
+      await this.humanScroll(page, 2);
+      await page.waitForSelector('h1, body > section', { timeout: 15000 }).catch(() => {});
+      const extractedData = await page.evaluate(() => {
+        const safeText = (selector, fallbacks = []) => {
+          let sels = [selector, ...fallbacks];
+          for (const s of sels) { try { const el = document.querySelector(s); if (el && el.textContent?.trim()) return el.textContent.trim(); } catch {} }
           return null;
-        }
+        };
+        const getSrc = (selector, primaryScope = null) => { try { let container = document.body; if (primaryScope) { const scope = document.querySelector(primaryScope); if (scope) container = scope; } const img = container.querySelector(selector); return img?.src || null; } catch {} return null; };
+        return {
+          title: safeText('body > section > h1', ['h1.product__title', 'h1']),
+          specs_raw: safeText('body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_desc', ['[class*="spec"]', '[class*="detail"]']),
+          free_items_raw: safeText('body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_free', ['[class*="free"]', '[class*="bonus"]']),
+          promo_raw: safeText('body > section > div > div.div_mid > div.prod2_summ > div.prod2_info > div.prod2_promo', ['[class*="promo"]', '[class*="sale"]']),
+          image_url: getSrc('img', 'body > section > div > div.div_mid > div.prod2_summ') || (() => { try { return document.querySelector('meta[property="og:image"]')?.content || null; } catch { return null; } })(),
+          original_price: (() => { const strikethroughSelectors = ['del', 's', '.old-price', '.original-price']; for (const sel of strikethroughSelectors) { try { const el = document.querySelector(sel); if (el && el.textContent?.trim()) { const val = parseFloat(el.textContent.replace(/[^\d.]/g, '')); if (!isNaN(val) && val > 0) return val; } } catch {} } return null; })(),
+          brand: safeText('[class*="brand"]', ['[class*="vendor"]']),
+          is_available: !document.querySelector('[class*="sold-out"], [class*="unavailable"], [aria-disabled="true"]'),
+        };
+      });
+      if (!extractedData.title) return null;
+      return this._normalizeVillmanProduct(extractedData, cleanUrl);
+    } finally {
+      if (context) { try { await context.close(); } catch (_) { /* ignore */ } }
+    }
+  }
 
-        // Return normalized product
-        return this._normalizeVillmanProduct(extractedData, cleanUrl);
+  async scrape(url) {
+    return withRetry(
+      async () => this.hybridScrape(url, ['json', 'axios', 'playwright']),
+      3,
+      2000,
+      `VillmanScraper.scrape(${url})`
+    );
+  }
 
-      } finally {
-        if (context) {
-          try {
-            await context.close();
-          } catch (_closeErr) {
-            // Ignore close errors — browser may have crashed
-          }
-        }
-      }
-    }, 3, 2000, `VillmanScraper.scrape(${url})`);
+  _parsePrice(raw) {
+    if (!raw) return null;
+    const num = parseFloat(String(raw).replace(/[^\d.]/g, ''));
+    return isNaN(num) ? null : num;
   }
 
   /**

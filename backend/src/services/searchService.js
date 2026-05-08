@@ -65,8 +65,26 @@ const withTimeout = (promise, ms = SCRAPER_TIMEOUT_MS, storeName = 'Store') =>
     ),
   ]);
 
+// ─── SMARTER CACHE KEY NORMALIZATION ───────────────────────────────────────
+// Improves cache hit rate by normalizing query variations:
+// "best CPUs" and "CPU best" both normalize to "best|cpu" → same cache key
+// Removes common stopwords, lowercases, and sorts tokens alphabetically
+const STOPWORDS = new Set(['the', 'a', 'an', 'for', 'and', 'or', 'of', 'in', 'with', 'on', 'to', 'is', 'are', 'be', 'been', 'at', 'by', 'from']);
+
+function normalizeCacheKey(query) {
+  return query
+    .toLowerCase()
+    .trim()
+    .replace(/[^\w\s]/g, '') // Remove special characters
+    .split(/\s+/) // Split into tokens
+    .filter(t => t.length > 0 && !STOPWORDS.has(t)) // Remove empty and stopwords
+    .sort() // Sort alphabetically to handle word order variations
+    .join('|'); // Join with pipe for readability
+}
+
 const getCachedOrScrape = async (query, scrapeFn) => {
-  const key = query.toLowerCase().trim();
+  const key = normalizeCacheKey(query);
+
 
   // 1. Check cache first (instant return)
   const cached = scrapeCache.get(key);
@@ -802,16 +820,9 @@ async function search(query, userId = null, resultLimit = null, dealsOnly = fals
         // Log successful platform resolution
         logger.debug(`[SearchService] Platform resolved: "${p.platform}" → ID: ${platformId}`);
 
+        // Pass entire product with platform_id — upsertProduct will extract what's needed
         const saved = await productRepo.upsertProduct({
-          title: p.title,
-          price: p.price,
-          originalPrice: p.originalPrice,
-          promoLabel: p.promoLabel,
-          rating: p.rating,
-          reviews_count: p.reviews_count,
-          seller_name: p.seller_name,
-          product_url: p.product_url,
-          image_url: p.image_url,
+          ...p,
           platform_id: platformId,
         });
 
@@ -1447,4 +1458,4 @@ function calculateFreshness(products) {
   return Math.round((freshCount / products.length) * 100);
 }
 
-module.exports = { search, getSearchResults, loadPlatformIds, scrapeAllStores, scrapeByStore, paginateResults, semanticSearch, validateCacheFreshness, shouldRescrape, getCacheAge, searchWithFallback, searchHybrid, updateSearchMetadata };
+module.exports = { search, getSearchResults, loadPlatformIds, scrapeAllStores, scrapeByStore, paginateResults, semanticSearch, validateCacheFreshness, shouldRescrape, getCacheAge, searchWithFallback, searchHybrid, updateSearchMetadata, normalizeCacheKey };

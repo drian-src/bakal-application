@@ -5,6 +5,8 @@ const path = require('path');
 process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(__dirname, '../../browsers');
 
 const { chromium } = require('playwright');
+const pLimitModule = require('p-limit');
+const pLimit = typeof pLimitModule === 'function' ? pLimitModule : pLimitModule.default;
 const config = require('../config/dotenv');
 const logger = require('../config/logger');
 const proxyHelper = require('../utils/proxyHelper');
@@ -384,30 +386,35 @@ class BaseScraper {
    * @param {AbortSignal} signal    Optional cancellation signal from searchService
    * @returns {Promise<object[]>}  Array of normalised products (nulls filtered out)
    */
-  async scrapeMany(urls, concurrency = 4, signal = null) {
-    const results = [];
+  async scrapeMany(urls, concurrency = 8, signal = null) {
+    const limit = pLimit(concurrency);
+    logger.info(`[${this.name}] Scraping ${urls.length} URLs with concurrency=${concurrency}`);
 
-    for (let i = 0; i < urls.length; i += concurrency) {
-      if (signal?.aborted) {
-        logger.warn(`[${this.name}] scrapeMany aborted at batch ${Math.floor(i / concurrency)}`);
-        break;
-      }
-
-      const batch   = urls.slice(i, i + concurrency);
-      const settled = await Promise.allSettled(batch.map(url => this.scrape(url)));
-
-      for (const result of settled) {
-        if (result.status === 'fulfilled' && result.value) {
-          results.push(result.value);
-        } else if (result.status === 'rejected') {
-          logger.warn(`[${this.name}] scrape failed: ${result.reason?.message}`);
+    const tasks = urls.map((url, idx) =>
+      limit(async () => {
+        if (signal?.aborted) {
+          logger.warn(`[${this.name}] Scrape task aborted: ${url}`);
+          return null;
         }
-      }
+        try {
+          const result = await this.scrape(url);
+          if (result) {
+            logger.debug(`[${this.name}] [${idx + 1}/${urls.length}] ✓ ${url}`);
+          }
+          return result;
+        } catch (err) {
+          logger.warn(`[${this.name}] [${idx + 1}/${urls.length}] ✗ ${url}: ${err.message}`);
+          return null;
+        }
+      })
+    );
 
-      // Pace between batches — randomised to avoid rate-limit triggers
-      await this.pace();
-    }
+    const settled = await Promise.allSettled(tasks);
+    const results = settled
+      .filter((r) => r.status === 'fulfilled' && r.value)
+      .map((r) => r.value);
 
+    logger.info(`[${this.name}] Complete: ${results.length}/${urls.length} succeeded`);
     return results;
   }
 
@@ -428,6 +435,151 @@ class BaseScraper {
         await randomDelay(300, 600);
       }
     }
+  }
+
+  /**
+   * HTTP Fast-Path: Fetch raw HTML via Axios (no browser, no JS rendering).
+   * Returns HTML string or null if failed.
+   * @param {string} url
+   * @param {object} options
+   * @returns {string|null} HTML body or null
+   */
+  async axiosFetch(url, options = {}) {
+    const axios = require('axios');
+    const ROTATE_USER_AGENTS = [
+      'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/124.0.0.0 Safari/537.36',
+      'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 Version/17.3 Safari/605.1.15',
+      'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/123.0.0.0 Safari/537.36',
+    ];
+    const ua = ROTATE_USER_AGENTS[Math.floor(Math.random() * ROTATE_USER_AGENTS.length)];
+    try {
+      const response = await axios.get(url, {
+        timeout: options.timeout || 12000,
+        headers: {
+          'User-Agent': ua,
+          'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+          'Accept-Language': 'en-US,en;q=0.9',
+          'Accept-Encoding': 'gzip, deflate, br',
+          'Cache-Control': 'no-cache',
+          'Pragma': 'no-cache',
+          ...options.headers,
+        },
+        maxRedirects: 5,
+      });
+      return response.data;
+    } catch (err) {
+      logger.debug(`[${this.name}] axiosFetch failed for ${url}: ${err.message}`);
+      return null;
+    }
+  }
+
+  /**
+   * JSON Fast-Path: Fetch JSON via Axios (faster than browser for APIs).
+   * Returns parsed object or null if failed.
+   * @param {string} url
+   * @param {object} options
+   * @returns {object|null}
+   */
+  async axiosFetchJson(url, options = {}) {
+    const axios = require('axios');
+    try {
+      const response = await axios.get(url, {
+        timeout: options.timeout || 8000,
+        headers: {
+          'User-Agent': 'Mozilla/5.0 (compatible; BakalBot/1.0)',
+          'Accept': 'application/json',
+          ...options.headers,
+        },
+      });
+      return response.data;
+    } catch (err) {
+      logger.debug(`[${this.name}] axiosFetchJson failed for ${url}: ${err.message}`);
+      return null;
+    }
+  }
+
+  /**
+   * Load HTML into Cheerio for jQuery-like DOM parsing.
+   * @param {string} html
+   * @returns {CheerioAPI}
+   */
+  loadCheerio(html) {
+    const cheerio = require('cheerio');
+    return cheerio.load(html);
+  }
+
+  /**
+   * Hybrid Scrape Strategy: Try methods in order of speed.
+   * 1. JSON API (fastest)
+   * 2. Axios + Cheerio (fast)
+   * 3. Playwright (slow, full browser)
+   * @param {string} url
+   * @param {string[]} strategies
+   * @returns {object|null}
+   */
+  async hybridScrape(url, strategies = ['json', 'axios', 'playwright']) {
+    for (const strategy of strategies) {
+      try {
+        let result = null;
+        if (strategy === 'json') {
+          logger.debug(`[${this.name}] Strategy: JSON API → ${url}`);
+          result = await this.scrapeViaJson(url);
+        } else if (strategy === 'axios') {
+          logger.debug(`[${this.name}] Strategy: Axios+Cheerio → ${url}`);
+          result = await this.scrapeViaAxios(url);
+        } else if (strategy === 'playwright') {
+          logger.debug(`[${this.name}] Strategy: Playwright → ${url}`);
+          result = await this.scrapeViaPlaywright(url);
+        }
+        if (result && result.title) {
+          logger.info(`[${this.name}] ✓ ${strategy} succeeded`);
+          result._scrape_strategy = strategy;
+          return result;
+        }
+        logger.debug(`[${this.name}] ${strategy} returned no data, trying next`);
+      } catch (err) {
+        logger.warn(`[${this.name}] ${strategy} failed: ${err.message}`);
+      }
+    }
+    logger.warn(`[${this.name}] All strategies failed for: ${url}`);
+    return null;
+  }
+
+  // Strategy implementations — override in scrapers
+  async scrapeViaJson(url) { return null; }
+  async scrapeViaAxios(url) { return null; }
+  async scrapeViaPlaywright(url) { return null; }
+
+  /**
+   * Build timestamp fields based on what changed.
+   * @param {object} newData
+   * @param {object|null} existingData
+   * @returns {object} Timestamp fields to merge
+   */
+  buildTimestamps(newData, existingData = null) {
+    const now = new Date().toISOString();
+    const timestamps = {
+      last_scraped: now,
+      is_fresh: true,
+      needs_refresh: false,
+      scrape_attempt_count: (existingData?.scrape_attempt_count || 0) + 1,
+    };
+    if (!existingData || String(existingData.price) !== String(newData.price)) {
+      timestamps.price_updated_at = now;
+    }
+    if (!existingData || existingData.stock !== newData.stock ||
+        existingData.is_available !== newData.is_available) {
+      timestamps.stock_updated_at = now;
+    }
+    if (!existingData || String(existingData.rating) !== String(newData.rating) ||
+        existingData.reviews_count !== newData.reviews_count) {
+      timestamps.rating_updated_at = now;
+    }
+    if (!existingData ||
+        JSON.stringify(existingData.specs) !== JSON.stringify(newData.specs)) {
+      timestamps.specs_updated_at = now;
+    }
+    return timestamps;
   }
 
   /** Randomised inter-request delay — configured via dotenv. */

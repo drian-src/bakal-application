@@ -17,12 +17,14 @@ const authRoutes = require('./routes/authRoutes');
 const searchRoutes = require('./routes/searchRoutes');
 const recommendationRoutes = require('./routes/recommendationRoutes');
 const productRoutes = require('./routes/productRoutes');
+const bannerRoutes = require('./routes/bannerRoutes');
 const categoryRoutes = require('./routes/categoryRoutes');
 const cartRoutes = require('./routes/cartRoutes');
 const userRoutes = require('./routes/userRoutes');
 const savedSearchRoutes = require('./routes/savedSearchRoutes');
 const exportRoutes = require('./routes/exportRoutes');
 const retailerSessionRoutes = require('./routes/retailerSessions');
+const diagnosticRoutes = require('./routes/diagnosticRoutes');
 
 const app = express();
 
@@ -85,6 +87,8 @@ app.use((req, _res, next) => {
 app.use('/api/auth', authRoutes);
 app.use('/api/search', searchRoutes);
 app.use('/api/recommendations', recommendationRoutes);
+app.use('/api/banners', bannerRoutes);
+app.use('/api/diagnostic', diagnosticRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/categories', categoryRoutes);
 app.use('/api/cart', requireAuth, cartRoutes);

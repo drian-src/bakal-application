@@ -211,6 +211,20 @@ export const getFeaturedProducts = async () => {
   }
 };
 
+/**
+ * Fetch featured deals for homepage banner carousel
+ * Returns 1 top deal per platform with banner-specific data format
+ */
+export const getFeaturedDeals = async () => {
+  try {
+    const response = await apiCall('/banners/featured-deals');
+    return response.data || [];
+  } catch (error) {
+    console.error('Fetch featured deals failed:', error);
+    return [];
+  }
+};
+
 export const getPersonalizedRecommendations = async (limit = 10) => {
   try {
     const response = await apiCall(`/recommendations?limit=${limit}`);

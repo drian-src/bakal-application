@@ -4,6 +4,7 @@ const logger = require('../config/logger');
 const jobQueue = require('../repositories/jobQueue');
 const freshnessEngine = require('../services/freshnessEngine');
 const productRepo = require('../repositories/productRepository');
+const searchService = require('../services/searchService');
 const { supabase } = require('../config/db');
 const pcexpressScraper = require('../scrapers/pcexpressScraper');
 const villmanScraper = require('../scrapers/villmanScraper');
@@ -368,5 +369,119 @@ class BackgroundWorker {
     this.isRunning = false;
   }
 }
+
+// ─── SCHEDULED BACKGROUND JOBS ──────────────────────────────────────────────────────
+
+/**
+ * WARM CACHE JOB - Run every 6 hours
+ * Pre-scrapes the top 30 most frequently searched queries to keep cache hot
+ */
+async function warmCacheJob() {
+  logger.info('[BackgroundWorker] Starting warm_cache job...');
+  try {
+    // Get recent searches (last 200) and find top 30 by frequency
+    const { data: topQueries } = await supabase
+      .from('searches')
+      .select('query')
+      .order('created_at', { ascending: false })
+      .limit(200);
+
+    // Count frequency of each normalized query
+    const queryCounts = {};
+    (topQueries || []).forEach(({ query }) => {
+      const key = query.toLowerCase().trim();
+      queryCounts[key] = (queryCounts[key] || 0) + 1;
+    });
+
+    // Get top 30 most searched queries
+    const top30 = Object.entries(queryCounts)
+      .sort((a, b) => b[1] - a[1])
+      .slice(0, 30)
+      .map(([query]) => query);
+
+    let warmed = 0;
+    for (const query of top30) {
+      try {
+        // Use searchService.search() which caches automatically
+        await searchService.search(query, null, 20);
+        warmed++;
+        logger.info(`[BackgroundWorker] Cache warmed: "${query}"`);
+        // 3s delay between queries to avoid overwhelming scrapers
+        await new Promise(resolve => setTimeout(resolve, 3000));
+      } catch (err) {
+        logger.warn(`[BackgroundWorker] Failed to warm cache for "${query}": ${err.message}`);
+      }
+    }
+    logger.info(`[BackgroundWorker] warm_cache job complete (${warmed}/${top30.length} queries)`);
+  } catch (err) {
+    logger.error(`[BackgroundWorker] warm_cache job error: ${formatError(err)}`);
+  }
+}
+
+/**
+ * REFRESH STALE PRODUCTS JOB - Run every 2 hours
+ * Re-scrapes products marked as stale or not updated in 24+ hours
+ */
+async function refreshStaleProductsJob() {
+  logger.info('[BackgroundWorker] Starting refresh_stale_products job...');
+  try {
+    // Get products that need refreshing
+    const staleProducts = await productRepo.getProductsNeedingRefresh(30);
+    logger.info(`[BackgroundWorker] Found ${staleProducts.length} stale products to refresh`);
+
+    let refreshed = 0;
+    for (const product of staleProducts) {
+      try {
+        // Map platform_id UUID to store key for scraper lookup
+        // Look up the platform name from the platforms table
+        const { data: platform } = await supabase
+          .from('platforms')
+          .select('name')
+          .eq('id', product.platform_id)
+          .single();
+
+        if (!platform) {
+          logger.warn(`[BackgroundWorker] Platform not found for ID: ${product.platform_id}`);
+          continue;
+        }
+
+        const storeKey = platform.name.toLowerCase();
+        const scraper = scraperMap[storeKey];
+        if (!scraper) {
+          logger.warn(`[BackgroundWorker] No scraper for platform: ${platform.name}`);
+          continue;
+        }
+
+        // Re-scrape the product
+        const refreshedProduct = await scraper.scrape(product.product_url);
+        if (refreshedProduct) {
+          await productRepo.upsertProduct(refreshedProduct);
+          refreshed++;
+          logger.info(`[BackgroundWorker] Refreshed: "${product.title?.substring(0, 50)}"`);
+        }
+        // 5s delay between products to avoid overwhelming scrapers
+        await new Promise(resolve => setTimeout(resolve, 5000));
+      } catch (err) {
+        logger.warn(
+          `[BackgroundWorker] Failed to refresh product ${product.id} ` +
+          `("${(product.title || 'unknown').substring(0, 40)}"): ${formatError(err)}`
+        );
+      }
+    }
+    logger.info(`[BackgroundWorker] refresh_stale_products job complete (${refreshed}/${staleProducts.length} products)`);
+  } catch (err) {
+    logger.error(`[BackgroundWorker] refresh_stale_products job error: ${formatError(err)}`);
+  }
+}
+
+// Schedule warm_cache job: every 6 hours
+setInterval(warmCacheJob, 6 * 60 * 60 * 1000);
+// Run once on startup after 30s delay
+setTimeout(warmCacheJob, 30 * 1000);
+
+// Schedule refresh_stale_products job: every 2 hours
+setInterval(refreshStaleProductsJob, 2 * 60 * 60 * 1000);
+// Run once on startup after 60s delay
+setTimeout(refreshStaleProductsJob, 60 * 1000);
 
 module.exports = BackgroundWorker;

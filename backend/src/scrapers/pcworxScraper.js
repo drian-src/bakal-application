@@ -100,6 +100,92 @@ class PcWorxScraper extends BaseScraper {
    * @param {string} url - Product URL to scrape
    * @returns {Promise<Object>} Normalized product object or null
    */
+  async scrapeViaJson(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const html = await this.axiosFetch(cleanUrl + '.json', { timeout: 30000 });
+      if (!html) return null;
+      const productData = JSON.parse(html).product;
+      if (!productData?.title) return null;
+      const variant = productData.variants?.[0];
+      const specs = {};
+      if (productData.options && Array.isArray(productData.options)) {
+        productData.options.forEach(opt => {
+          if (opt.name && opt.values) specs[opt.name.toLowerCase()] = opt.values.join(', ');
+        });
+      }
+      const raw = { title: productData.title, price: variant?.price ? parseFloat(variant.price) : null, rating: null, reviews_count: null, seller_name: 'PCWorx', image_url: productData.images?.[0]?.src || null, product_url: cleanUrl, specs, is_available: true };
+      return normalizeProduct(raw, 'pcworx', 0);
+    } catch (err) {
+      logger.debug(`[PcWorxScraper] scrapeViaJson failed: ${err.message}`);
+      return null;
+    }
+  }
+
+  async scrapeViaAxios(url) {
+    try {
+      const cleanUrl = url.split('?')[0];
+      const html = await this.axiosFetch(cleanUrl, { timeout: 30000 });
+      if (!html) return null;
+      const $ = this.loadCheerio(html);
+      const title = $('h1.product__title, h1').first().text().trim() || null;
+      if (!title) return null;
+      const priceText = $('[class*="price"]').first().text().trim() || '';
+      const image = $('meta[property="og:image"]').attr('content') || $('.product__media img').attr('src') || null;
+      const raw = { title, price: this._parsePrice(priceText), rating: null, reviews_count: null, seller_name: 'PCWorx', image_url: image, product_url: cleanUrl, specs: {}, is_available: true };
+      return normalizeProduct(raw, 'pcworx', 0);
+    } catch (err) {
+      logger.debug(`[PcWorxScraper] scrapeViaAxios failed: ${err.message}`);
+      return null;
+    }
+  }
+
+  async scrapeViaPlaywright(url) {
+    let browser, context, page;
+    try {
+      browser = await this.getBrowser();
+      const result = await this.newContext(browser);
+      page = result.page;
+      context = result.context;
+      const cleanUrl = url.split('?')[0];
+      await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
+      await randomDelay(1000, 2000);
+      await page.goto(cleanUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+      await randomDelay(2000, 3000);
+      await this.humanScroll(page, 2);
+      await page.waitForSelector('h1, [class*="product"]', { timeout: 15000 }).catch(() => {});
+      const data = await page.evaluate(() => {
+        return { title: document.querySelector('h1.product__title, h1')?.textContent?.trim() || null, price: parseFloat(document.querySelector('[class*="price"]')?.textContent?.replace(/[^\d.]/g, '') || 0) || null, image: document.querySelector('meta[property="og:image"]')?.content || null, is_available: !document.querySelector('[class*="sold-out"]') };
+      });
+      if (!data.title) return null;
+      const raw = { title: data.title, price: data.price, rating: null, reviews_count: null, seller_name: 'PCWorx', image_url: data.image, product_url: cleanUrl, specs: {}, is_available: data.is_available };
+      return normalizeProduct(raw, 'pcworx', 0);
+    } finally {
+      if (context) { try { await context.close(); } catch (_) { /* ignore */ } }
+    }
+  }
+
+  _parsePrice(raw) {
+    if (!raw) return null;
+    const num = parseFloat(String(raw).replace(/[^\d.]/g, ''));
+    return isNaN(num) ? null : num;
+  }
+
+  async scrape(url) {
+    return withRetry(
+      async () => this.hybridScrape(url, ['json', 'axios', 'playwright']),
+      3,
+      2000,
+      `PcWorxScraper.scrape(${url})`
+    );
+  }
+
+  /**
+   * Scrape a single product URL.
+   * Flow: Shopify JSON endpoint → DOM Extraction with PCWorx selectors
+   * @param {string} url - Product URL to scrape
+   * @returns {Promise<Object>} Normalized product object or null
+   */
   async scrape(url) {
     return withRetry(async () => {
       let browser, context, page;

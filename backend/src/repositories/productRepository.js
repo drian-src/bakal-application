@@ -169,7 +169,8 @@ async function upsertProduct(productData) {
     '_reasons', '_rankingMeta', '_rankingExplanation', '_similarity',
     '_index', '_store',
     // Strip columns that don't exist yet — add back after running their migration
-    'price_updated_at', 'stock_updated_at', 'rating_updated_at', 'specs_updated_at',
+    // NOTE: These are now handled by buildTimestamps in baseScraper
+    // 'price_updated_at', 'stock_updated_at', 'rating_updated_at', 'specs_updated_at',
     // `platform` is derived in searchService and not a DB column
     'platform',
     // Legacy camelCase duplicates
@@ -210,6 +211,44 @@ async function upsertProduct(productData) {
     discountPercent = null;
   }
 
+  // ─── DELTA DETECTION: Fetch existing product to detect field changes ─────────────
+  // This enables smart timestamping: only update timestamp when the field actually changed
+  const { data: existing } = await supabase
+    .from(TABLE)
+    .select('price, stock, rating, reviews_count, specs, is_available, scrape_attempt_count')
+    .eq('product_url', productData.product_url)
+    .maybeSingle();
+
+  // ─── BUILD SMART TIMESTAMPS ────────────────────────────────────────────────────────
+  // Only set timestamp when field changes; track attempt count
+  const now = new Date().toISOString();
+  const timestamps = {
+    last_scraped: now,
+    is_fresh: true,
+    needs_refresh: false,
+    scrape_attempt_count: (existing?.scrape_attempt_count || 0) + 1,
+  };
+
+  // Price changed
+  if (!existing || String(existing.price) !== String(cleanData.price)) {
+    timestamps.price_updated_at = now;
+  }
+
+  // Stock or availability changed
+  if (!existing || existing.stock !== cleanData.stock || existing.is_available !== cleanData.is_available) {
+    timestamps.stock_updated_at = now;
+  }
+
+  // Rating changed
+  if (!existing || String(existing.rating) !== String(cleanData.rating) || existing.reviews_count !== cleanData.reviews_count) {
+    timestamps.rating_updated_at = now;
+  }
+
+  // Specs changed (deep comparison)
+  if (!existing || JSON.stringify(existing.specs) !== JSON.stringify(cleanData.specs)) {
+    timestamps.specs_updated_at = now;
+  }
+
   // Generate embedding from product title
   // Do this BEFORE the upsert so it's included in the same DB write
   let embedding = null;
@@ -221,7 +260,7 @@ async function upsertProduct(productData) {
     // The product saves without embedding, can be backfilled later
   }
 
-  // Prepare final data with validated discount fields
+  // Prepare final data with validated discount fields and smart timestamps
   // Convert camelCase to snake_case for Supabase
   const finalData = {
     ...cleanData,
@@ -231,6 +270,7 @@ async function upsertProduct(productData) {
     is_on_sale: isOnSale,
     promo_label: (promoLabelFromInput && promoLabelFromInput.trim()) ? promoLabelFromInput.trim() : null,
     embedding,
+    ...timestamps,
   };
   
   // Remove camelCase versions to avoid conflicts
@@ -241,9 +281,7 @@ async function upsertProduct(productData) {
 
   // DEBUG: Log before save
   if (isOnSale || discountPercent) {
-    const supabase = require('../config/db').supabase;
-    const logger = require('../config/logger');
-    logger.info(`[productRepository.upsertProduct] SAVING DEAL: title="${finalData.title?.substring(0, 50)}" | price=${price} | original_price=${originalPrice} | discount_percent=${discountPercent?.toFixed(1)}% | is_on_sale=${isOnSale} | promo_label="${finalData.promo_label || 'none'}"`);
+    logger.info(`[productRepository.upsertProduct] SAVING DEAL: title="${finalData.title?.substring(0, 50)}" | price=${price} | original_price=${originalPrice} | discount_percent=${discountPercent?.toFixed(1)}% | is_on_sale=${isOnSale} | promo_label="${finalData.promo_label || 'none'}" | price_updated="${timestamps.price_updated_at ? 'yes' : 'no'}"`);
   }
 
   // Upsert by product_url (unique)
@@ -592,11 +630,11 @@ async function upsertProductsBatch(products) {
  */
 async function findFeaturedOnSale() {
   try {
-    // Try to get on-sale products first
+    // Try to get products with discounts first (discount_percent > 0)
     let { data: products, error } = await supabase
       .from(TABLE)
       .select('*, platforms(id, name)')
-      .eq('is_on_sale', true)
+      .gt('discount_percent', 0)  // Products with discount > 0%
       .eq('is_available', true)
       .order('discount_percent', { ascending: false })
       .order('rating', { ascending: false })
@@ -604,11 +642,11 @@ async function findFeaturedOnSale() {
 
     if (error) throw error;
 
-    logger.debug(`[ProductRepository] findFeaturedOnSale (on-sale) → ${(products || []).length} results`);
+    logger.debug(`[ProductRepository] findFeaturedOnSale (discounted) → ${(products || []).length} results`);
     
-    // If no on-sale products, fall back to top-rated available products
+    // If no discounted products, fall back to top-rated available products
     if (!products || products.length === 0) {
-      logger.info('[ProductRepository] findFeaturedOnSale: no on-sale products, falling back to top-rated');
+      logger.info('[ProductRepository] findFeaturedOnSale: no discounted products, falling back to top-rated');
       
       const { data: topRated, error: topError } = await supabase
         .from(TABLE)
@@ -650,6 +688,36 @@ async function findFeaturedOnSale() {
   }
 }
 
+/**
+ * Get products that need refreshing due to staleness or explicit flag.
+ * Products are considered stale if:
+ * 1. needs_refresh = true (explicitly marked by scraper), OR
+ * 2. last_scraped was more than 24 hours ago
+ *
+ * Returns oldest first (ascending order by last_scraped) to refresh stale data first.
+ *
+ * @param {number} limit - Maximum number of products to return (default: 50)
+ * @returns {Promise<Array>} Array of products with id, title, product_url, platform_id, last_scraped, needs_refresh
+ */
+async function getProductsNeedingRefresh(limit = 50) {
+  const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000).toISOString();
+  
+  const { data, error } = await supabase
+    .from(TABLE)
+    .select('id, title, product_url, platform_id, last_scraped, needs_refresh')
+    .or(`needs_refresh.eq.true,last_scraped.lt.${twentyFourHoursAgo}`)
+    .order('last_scraped', { ascending: true })
+    .limit(limit);
+
+  if (error) {
+    logger.error(`[ProductRepository] getProductsNeedingRefresh error: ${formatError(error)}`);
+    return [];
+  }
+
+  logger.debug(`[ProductRepository] getProductsNeedingRefresh returning ${(data || []).length} products`);
+  return data || [];
+}
+
 module.exports = { 
   upsertProduct, 
   findByUrl, 
@@ -671,4 +739,5 @@ module.exports = {
   getPlatformId,
   loadAllPlatformIds,
   cleanProductForDatabase,
+  getProductsNeedingRefresh,
 };

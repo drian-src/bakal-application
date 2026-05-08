@@ -9,7 +9,9 @@ import { getStoreColor } from '@/core/config/storeConfig';
 import './ProductDetailPage.css';
 
 const ProductDetailPage = () => {
-  const { id: productId } = useParams();
+  const { id: productId, productId: paramProductId } = useParams();
+  // Handle both routes: /product/:id and /product/:platform/:productId
+  const resolvedProductId = productId || paramProductId;
   const navigate = useNavigate();
   const { addToCart, loading: cartLoading } = useCart();
   const [isLoading, setIsLoading] = useState(false);
@@ -22,7 +24,7 @@ const ProductDetailPage = () => {
   // Fetch product details from backend API
   useEffect(() => {
     const fetchProduct = async () => {
-      if (!productId) {
+      if (!resolvedProductId) {
         setError('No product ID provided.');
         setLoading(false);
         return;
@@ -30,7 +32,7 @@ const ProductDetailPage = () => {
       try {
         setLoading(true);
         // Pass productId only — platform is not needed for DB lookup by UUID
-        const response = await getProductDetail(productId);
+        const response = await getProductDetail(resolvedProductId);
         if (!response) {
           setError('Product not found.');
         } else {
@@ -53,7 +55,7 @@ const ProductDetailPage = () => {
       }
     };
     fetchProduct();
-  }, [productId]); // remove `platform` from dependency array
+  }, [resolvedProductId]); // remove `platform` from dependency array
 
   if (loading) {
     return (

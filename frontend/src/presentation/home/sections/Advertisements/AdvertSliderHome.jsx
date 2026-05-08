@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
-import { getFeaturedProducts } from '@/core/services/apiService';
+import { useNavigate } from 'react-router-dom';
+import { ChevronLeft, ChevronRight, Star, Zap, ShoppingCart } from 'lucide-react';
 import { getCurrentUser } from '@/core/services/authService';
 import PlatformBadge from '@/presentation/shared/PlatformBadge';
 import './AdvertSliderHome.css';
@@ -39,27 +39,57 @@ function getSessionSeed(userId) {
 }
 
 const AdvertSliderHome = () => {
+  const navigate = useNavigate();
   const [products, setProducts] = useState([]);
   const [shuffledProducts, setShuffledProducts] = useState([]);
   const [index, setIndex] = useState(0);
   const [loading, setLoading] = useState(true);
 
-  // Fetch featured products on mount
+  // Fetch featured deals on mount
   useEffect(() => {
-    const loadProducts = async () => {
+    const loadDeals = async () => {
       try {
         setLoading(true);
         const user = getCurrentUser();
-        const data = await getFeaturedProducts();
-        setProducts(data || []);
         
-        // Apply session-aware shuffle on data load
-        if (data && data.length > 0) {
+        // Fetch from new dedicated banner endpoint
+        console.log('[AdvertSliderHome] Fetching /api/banners/featured-deals...');
+        const response = await fetch('/api/banners/featured-deals');
+        
+        console.log('[AdvertSliderHome] Response status:', response.status);
+        
+        if (!response.ok) {
+          throw new Error(`Failed to fetch deals: ${response.status}`);
+        }
+        
+        const result = await response.json();
+        
+        console.log('[AdvertSliderHome] Response data:', JSON.stringify(result, null, 2));
+        console.log('[AdvertSliderHome] Data items:', result.data?.map((d, i) => ({
+          idx: i,
+          hasId: !!d.id,
+          id: d.id,
+          title: d.productTitle,
+        })));
+        
+        if (result.success && result.data && result.data.length > 0) {
+          console.log('[AdvertSliderHome] Setting products:', result.data.length);
+          setProducts(result.data);
+          
+          // Apply session-aware shuffle on data load
           const seed = getSessionSeed(user?.id);
-          setShuffledProducts(sessionShuffle(data, seed));
+          const shuffled = sessionShuffle(result.data, seed);
+          console.log('[AdvertSliderHome] Shuffled products:', shuffled.map(p => ({ id: p.id, title: p.productTitle })));
+          setShuffledProducts(shuffled);
+        } else {
+          // If no deals, set empty fallback
+          console.warn('[AdvertSliderHome] No data in response');
+          setProducts([]);
+          setShuffledProducts([]);
         }
       } catch (error) {
-        console.error('Failed to load featured products:', error);
+        console.error('[AdvertSliderHome] Failed to load deals:', error);
+        // Fallback: show empty state or retry message
         setProducts([]);
         setShuffledProducts([]);
       } finally {
@@ -67,7 +97,7 @@ const AdvertSliderHome = () => {
       }
     };
     
-    loadProducts();
+    loadDeals();
   }, []);
 
   // Auto-rotate carousel every 5 seconds
@@ -93,9 +123,48 @@ const AdvertSliderHome = () => {
     setIndex(i);
   };
 
-  const handleProductClick = (product) => {
-    if (product.product_url) {
-      window.open(product.product_url, '_blank');
+  const handleProductClick = (productIndex) => {
+    console.log('[AdvertSliderHome] handleProductClick - index:', productIndex, 'shuffledProducts length:', shuffledProducts.length);
+    console.log('[AdvertSliderHome] shuffledProducts:', shuffledProducts);
+    
+    const product = shuffledProducts[productIndex];
+    
+    console.log('[AdvertSliderHome] handleProductClick called with product:', {
+      productIndex,
+      productExists: !!product,
+      id: product?.id,
+      title: product?.productTitle,
+      hasId: !!product?.id,
+      productDetailUrl: product?.productDetailUrl,
+      keys: product ? Object.keys(product) : [],
+      fullProduct: product,
+    });
+
+    // Ensure we have a valid product
+    if (!product) {
+      console.error('Error: Product not found at index', productIndex);
+      alert('Error: Product data is missing');
+      return;
+    }
+
+    // Ensure we have an ID
+    if (!product.id) {
+      console.error('Error: No product ID provided. Product object:', product);
+      alert('Error: Cannot navigate - product ID is missing');
+      return;
+    }
+
+    // Navigate to product detail page
+    if (product.productDetailUrl) {
+      console.log('[AdvertSliderHome] Navigating to:', product.productDetailUrl);
+      // Use the URL from backend
+      window.location.href = product.productDetailUrl;
+    } else {
+      // Fallback: construct URL from product ID and platform
+      const platformSlug = (product.platformName || 'product').toLowerCase().replace(/\s+/g, '-');
+      const fallbackUrl = `/product/${platformSlug}/${product.id}`;
+      console.log('[AdvertSliderHome] Using fallback URL:', fallbackUrl);
+      window.location.href = fallbackUrl;
     }
   };
 
@@ -134,50 +203,93 @@ const AdvertSliderHome = () => {
         )}
 
         <div className="advert-track-home" style={{ transform: `translateX(-${index * 100}%)` }}>
-          {shuffledProducts.map((product) => (
+          {shuffledProducts.map((product, idx) => (
             <div 
               key={product.id} 
               className="advert-slide-home"
-              onClick={() => handleProductClick(product)}
             >
               {/* Product image */}
               <div className="product-image-wrapper">
                 <img 
-                  src={product.image_url || 'https://via.placeholder.com/400x250?text=Featured'} 
-                  alt={product.title} 
+                  src={product.productImage || 'https://via.placeholder.com/400x250?text=Featured'} 
+                  alt={product.productTitle} 
                   className="product-image-home"
                   onError={(e) => {
                     e.target.src = 'https://via.placeholder.com/400x250?text=Featured';
                   }}
                 />
 
+                {/* Hot Deal Badge */}
+                <div className="hot-deal-badge">
+                  <Zap size={16} className="zap-icon" />
+                  <span>HOT DEAL</span>
+                </div>
+
+                {/* Discount badge - Large and prominent */}
+                {product.discountPercent > 0 && (
+                  <div className="discount-badge-large">
+                    <div className="discount-percent">{Math.round(product.discountPercent)}%</div>
+                    <div className="discount-text">OFF</div>
+                  </div>
+                )}
+
                 {/* Platform badge overlay */}
                 <div className="product-platform-badge">
-                  <PlatformBadge platform={product.platform} variant="compact" />
+                  <PlatformBadge platform={product.platformName} variant="compact" />
                 </div>
               </div>
 
-              {/* Product info */}
+              {/* Product info - Overlaid on image */}
               <div className="product-info-home">
-                <div className="product-header">
-                  <h3 className="product-title-home">{product.title}</h3>
-                  {product.is_on_sale && product.discount_percent && (
-                    <span className="discount-badge-compact">
-                      -{Math.round(product.discount_percent)}%
-                    </span>
-                  )}
-                </div>
+                {/* Title */}
+                <h3 className="product-title-home">{product.productTitle}</h3>
                 
-                <div className="product-price-section">
-                  <span className="current-price">₱{product.price?.toLocaleString() || 'N/A'}</span>
-                  {product.original_price && product.original_price > product.price && (
-                    <span className="original-price">₱{product.original_price?.toLocaleString()}</span>
+                {/* Rating */}
+                {product.rating > 0 && (
+                  <div className="product-rating">
+                    <div className="stars">
+                      {Array.from({ length: 5 }).map((_, i) => (
+                        <Star
+                          key={i}
+                          size={14}
+                          className={`star ${i < Math.round(product.rating) ? 'filled' : 'empty'}`}
+                        />
+                      ))}
+                    </div>
+                    <span className="reviews-count">({product.reviewsCount || 0})</span>
+                  </div>
+                )}
+
+                {/* Price Section */}
+                <div className="price-section-modern">
+                  <div className="price-display">
+                    <span className="current-price">₱{product.currentPrice?.toLocaleString() || 'N/A'}</span>
+                    {product.originalPrice && product.originalPrice > product.currentPrice && (
+                      <span className="original-price">₱{product.originalPrice?.toLocaleString()}</span>
+                    )}
+                  </div>
+                  
+                  {/* Savings amount */}
+                  {product.originalPrice && product.originalPrice > product.currentPrice && (
+                    <div className="savings-amount">
+                      Save ₱{(product.originalPrice - product.currentPrice).toLocaleString()}
+                    </div>
                   )}
                 </div>
 
-                {product.promo_label && (
-                  <p className="promo-label">{product.promo_label}</p>
+                {/* Promo label if any */}
+                {product.promoLabel && (
+                  <p className="promo-label-modern">{product.promoLabel}</p>
                 )}
+
+                {/* Shop Now Button */}
+                <button 
+                  className="shop-now-btn"
+                  onClick={() => handleProductClick(idx)}
+                >
+                  <ShoppingCart size={18} />
+                  <span>Shop Now</span>
+                </button>
               </div>
             </div>
           ))}
@@ -202,8 +314,8 @@ const AdvertSliderHome = () => {
               key={i} 
               className={`dot-home ${i === index ? 'active' : ''}`} 
               onClick={() => goToSlide(i)}
-              title={product.platform}
-              aria-label={`Go to ${product.platform} deal`}
+              title={product.platformName}
+              aria-label={`Go to ${product.platformName} deal`}
             />
           ))}
         </div>
