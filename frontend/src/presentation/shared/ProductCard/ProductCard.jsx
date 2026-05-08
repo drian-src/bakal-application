@@ -74,11 +74,24 @@ const ProductCard = memo(
     } = product;
 
     // Calculate effective discount from original_price if available
+    // BUT ONLY if there's explicit evidence of a sale
     const effectiveDiscount = useMemo(() => {
-      return originalPrice && originalPrice > price
-        ? Math.round(((originalPrice - price) / originalPrice) * 100)
-        : discountPercent;
-    }, [originalPrice, price, discountPercent]);
+      // Show discount ONLY if:
+      // 1. is_on_sale is explicitly true
+      // 2. discount_percent is a number AND > 0
+      // 3. original_price exists AND is strictly > price
+      const hasRealDiscount = 
+        isOnSale === true &&
+        typeof discountPercent === 'number' &&
+        discountPercent > 0 &&
+        typeof originalPrice === 'number' &&
+        originalPrice > price;
+      
+      if (hasRealDiscount) {
+        return Math.round(((originalPrice - price) / originalPrice) * 100);
+      }
+      return 0;  // Return 0 instead of falsy to make comparisons clearer
+    }, [isOnSale, originalPrice, price, discountPercent]);
 
     // Extract top 3 specs for preview
     const specsPreview = useMemo(() => {

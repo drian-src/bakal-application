@@ -5,8 +5,7 @@ const path = require('path');
 process.env.PLAYWRIGHT_BROWSERS_PATH = path.join(__dirname, '../../browsers');
 
 const { chromium } = require('playwright');
-const pLimitModule = require('p-limit');
-const pLimit = typeof pLimitModule === 'function' ? pLimitModule : pLimitModule.default;
+const pLimit = require('p-limit').default;
 const config = require('../config/dotenv');
 const logger = require('../config/logger');
 const proxyHelper = require('../utils/proxyHelper');
@@ -178,6 +177,12 @@ function extractSpecs(raw) {
  * Convert raw scraper output into the exact shape expected by
  * productRepository.upsertProduct() / upsertMany().
  *
+ * STRICT DISCOUNT VALIDATION:
+ * - original_price is ONLY set if it's strictly > price by at least ₱1
+ * - discount_percent is ONLY set if original_price is valid
+ * - is_on_sale is ONLY true if evidence exists (discount OR promo label)
+ * - All inputs are strictly validated — null/undefined/NaN/0 rejected
+ *
  * COLUMN MAPPING (matches DATABASE_SETUP.sql exactly):
  *   title, price, original_price, discount_percent, is_on_sale,
  *   promo_label, rating, reviews_count, seller_name, product_url,
@@ -197,41 +202,78 @@ function extractSpecs(raw) {
  * @returns {object} DB-ready product row
  */
 function normalizeProduct(raw, store, index) {
-  // ── Price fields ──────────────────────────────────────────────────────────
-  const price = parseFloat(raw.price) || 0;
+  // ─── PRICE PARSING ─────────────────────────────────────────────────────────
+  // Always parse to float. If parsing fails, default to 0.
+  const price = (() => {
+    const p = parseFloat(String(raw.price || '').replace(/[^\d.]/g, ''));
+    return isNaN(p) || p < 0 ? 0 : p;
+  })();
 
-  // originalPrice must be a valid positive number — null otherwise
-  let originalPrice = null;
-  if (raw.originalPrice !== null && raw.originalPrice !== undefined) {
-    const parsed = parseFloat(raw.originalPrice);
-    if (!isNaN(parsed) && parsed > 0) originalPrice = parsed;
-  }
+  // ─── ORIGINAL PRICE — STRICT VALIDATION ────────────────────────────────────
+  // original_price is ONLY valid if ALL of the following are true:
+  //   1. The raw value exists (not null, not undefined, not "")
+  //   2. It parses to a valid positive number
+  //   3. It is STRICTLY GREATER THAN the current price (at least 1 PHP difference)
+  //   4. It is not the same as price (no "discount" of 0%)
+  //   5. It is not 0 (Shopify returns "0.00" for no compare price)
+  const originalPrice = (() => {
+    if (raw.originalPrice === null || raw.originalPrice === undefined) return null;
+    if (raw.originalPrice === '' || raw.originalPrice === 0 || raw.originalPrice === '0' || raw.originalPrice === '0.00') return null;
 
-  // Discount: only computed when original is valid AND strictly higher than price
-  let discountPercent = null;
-  let isOnSale = false;
+    const op = parseFloat(String(raw.originalPrice).replace(/[^\d.]/g, ''));
 
-  if (originalPrice && originalPrice > price) {
-    discountPercent = ((originalPrice - price) / originalPrice) * 100;
-    isOnSale = true;
-  } else if (typeof raw.promoLabel === 'string' && raw.promoLabel.trim()) {
-    // No price-based discount but a promo label exists — still mark as on-sale
-    isOnSale = true;
-  }
+    if (isNaN(op)) return null;        // Unparseable — not a real price
+    if (op <= 0) return null;           // Zero or negative — not a real price
+    if (op <= price) return null;       // Not a discount if original ≤ current
+    if (op - price < 1) return null;   // Difference less than ₱1 — not meaningful
 
-  // Guard: never store NaN in the DB
-  if (discountPercent !== null && isNaN(discountPercent)) {
-    discountPercent = null;
-  }
+    return op;
+  })();
+
+  // ─── DISCOUNT PERCENT — DERIVED ONLY FROM VALID ORIGINAL PRICE ─────────────
+  // ONLY compute if originalPrice passed ALL validations above.
+  // Never compute from null, never allow 0%, never allow negative.
+  const discountPercent = (() => {
+    if (!originalPrice) return null;          // No valid original price = no discount
+    if (price <= 0) return null;              // Can't compute meaningful discount
+    const pct = ((originalPrice - price) / originalPrice) * 100;
+    if (isNaN(pct) || pct <= 0) return null; // Computed 0 or negative = not a discount
+    if (pct > 99) return null;               // Over 99% discount = almost certainly bad data
+    return Math.round(pct * 100) / 100;      // Round to 2 decimal places
+  })();
+
+  // ─── PROMO LABEL — STRICT WHITESPACE + EMPTY STRING + GENERIC FILTER ──────
+  // Only set promo_label if it is a non-empty, non-whitespace string
+  // AND it's not a generic term that appears on many/all products.
+  const promoLabel = (() => {
+    if (!raw.promoLabel && !raw.promo_label) return null;
+    const label = String(raw.promoLabel || raw.promo_label || '').trim();
+    if (label.length === 0) return null;
+    
+    // Filter out generic terms that don't indicate a real promo/discount
+    const GENERIC_TERMS = [
+      'new', 'best seller', 'top pick', 'featured', 'recommended',
+      'hot', 'trending', 'popular', 'bestseller', 'best-seller',
+      'on sale', 'sale', 'promo', 'promotion', 'tag', 'label',
+      'out of stock', 'in stock', 'limited', 'coming soon',
+      'exclusive', 'limited edition', 'premium', 'special',
+    ];
+    
+    const lowerLabel = label.toLowerCase();
+    if (GENERIC_TERMS.includes(lowerLabel)) return null;
+    
+    return label;
+  })();
+
+  // ─── IS ON SALE — ONLY TRUE IF EVIDENCE EXISTS ─────────────────────────────
+  // is_on_sale is ONLY true if:
+  //   EITHER originalPrice is valid (passed all checks above) — a real price drop
+  //   OR promoLabel is a non-empty string — platform explicitly labels it as a promo
+  // NOT if originalPrice is null and promoLabel is null/empty.
+  const isOnSale = (originalPrice !== null) || (promoLabel !== null);
 
   // ── Specs ────────────────────────────────────────────────────────────────
   const specs = extractSpecs(raw);
-
-  // ── Promo label ──────────────────────────────────────────────────────────
-  const promoLabel =
-    typeof raw.promoLabel === 'string' && raw.promoLabel.trim()
-      ? raw.promoLabel.trim()
-      : null;
 
   // ── Deal logging ─────────────────────────────────────────────────────────
   if (isOnSale || discountPercent) {
@@ -240,7 +282,7 @@ function normalizeProduct(raw, store, index) {
       ` | store=${store}` +
       ` | price=${price}` +
       ` | original=${originalPrice}` +
-      ` | discount=${discountPercent?.toFixed(1) ?? 'n/a'}%` +
+      ` | discount=${discountPercent?.toFixed(2) ?? 'n/a'}%` +
       ` | promo="${promoLabel ?? 'none'}"` +
       ` | specs=${Object.keys(specs).length} keys`
     );
@@ -267,12 +309,12 @@ function normalizeProduct(raw, store, index) {
     sku:              raw.sku       || null,
     variation:        raw.variation || null,
 
-    // Pricing
+    // Pricing — correctly computed with strict validation
     price,
-    original_price:   originalPrice,
-    discount_percent: discountPercent,
-    is_on_sale:       isOnSale,
-    promo_label:      promoLabel,
+    original_price:   originalPrice,        // null if no real discount
+    discount_percent: discountPercent,       // null if no real discount
+    is_on_sale:       isOnSale,             // false if no evidence of discount
+    promo_label:      promoLabel,           // null if no real promo label
 
     // Ratings
     rating:           parseFloat(raw.rating) || null,

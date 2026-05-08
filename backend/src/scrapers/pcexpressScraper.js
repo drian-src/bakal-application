@@ -199,7 +199,18 @@ class PcExpressScraper extends BaseScraper {
         .text()
         .trim() || '';
       const originalPriceText = $('del, s, .old-price').first().text().trim() || '';
-      const promoLabel = $('.badge, .t4s-badge, .sale-tag').first().text().trim() || null;
+      
+      // ─── PROMO LABEL — ONLY PRODUCT-SPECIFIC PROMO BADGES ──────────────────────
+      // AVOID selectors that match store-wide banners, breadcrumbs, or navigation
+      const rawPromoText = $('.badge, .t4s-badge, .sale-tag').first().text().trim() || '';
+      const EXCLUDE_TERMS = [
+        'new', 'best seller', 'top pick', 'featured', 'recommended',
+        'hot', 'trending', 'popular', '', ' ',
+      ];
+      const promoLabel = (rawPromoText && !EXCLUDE_TERMS.includes(rawPromoText.toLowerCase()))
+        ? rawPromoText
+        : null;
+      
       const image = $('meta[property="og:image"]').attr('content') ||
         $('.t4s-product__media img').attr('src') || null;
 
@@ -301,69 +312,6 @@ class PcExpressScraper extends BaseScraper {
       if (context) {
         try { await context.close(); } catch (_) { /* ignore */ }
       }
-    }
-  }
-
-  async scrapeViaJson(url) {
-    try {
-      const cleanUrl = url.split('?')[0];
-      const jsonUrl = cleanUrl + '.json';
-      const html = await this.axiosFetch(jsonUrl, { timeout: 15000 });
-      if (!html) return null;
-      const productData = JSON.parse(html).product;
-      if (!productData?.title) return null;
-      return normalizeProduct(this._extractFromShopifyJson(productData, cleanUrl), 'pcexpress', 0);
-    } catch (err) {
-      logger.debug(`[PcExpressScraper] scrapeViaJson failed: ${err.message}`);
-      return null;
-    }
-  }
-
-  async scrapeViaAxios(url) {
-    try {
-      const cleanUrl = url.split('?')[0];
-      const html = await this.axiosFetch(cleanUrl, { timeout: 20000 });
-      if (!html) return null;
-      const $ = this.loadCheerio(html);
-      const title = $('h1.t4s-product_title, h1.product__title, h1').first().text().trim() || null;
-      if (!title) return null;
-      const priceText = $('.t4s-product__price-review div, span.price-item--regular').first().text().trim() || '';
-      const originalPriceText = $('del, s, .old-price').first().text().trim() || '';
-      const promoLabel = $('.badge, .t4s-badge, .sale-tag').first().text().trim() || null;
-      const image = $('meta[property="og:image"]').attr('content') || $('.t4s-product__media img').attr('src') || null;
-      const rawProduct = { title, price: this._parsePrice(priceText), originalPrice: this._parsePrice(originalPriceText), promoLabel, rating: null, reviews_count: null, seller_name: 'PC Express', image_url: image, product_url: cleanUrl, specs: {}, is_available: true };
-      return normalizeProduct(rawProduct, 'pcexpress', 0);
-    } catch (err) {
-      logger.debug(`[PcExpressScraper] scrapeViaAxios failed: ${err.message}`);
-      return null;
-    }
-  }
-
-  async scrapeViaPlaywright(url) {
-    let browser, context, page;
-    try {
-      browser = await this.getBrowser();
-      const result = await this.newContext(browser);
-      page = result.page;
-      context = result.context;
-      const cleanUrl = url.split('?')[0];
-      await page.goto(BASE_URL, { waitUntil: 'domcontentloaded', timeout: 20000 });
-      await randomDelay(1000, 2000);
-      await page.goto(cleanUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
-      await randomDelay(1500, 2500);
-      await this.humanScroll(page, 2);
-      await page.waitForSelector(['h1', '[class*="product"]', 'main'].join(', '), { timeout: 10000 }).catch(() => {});
-      const domData = await page.evaluate((SELS) => {
-        const getText = (selList) => { for (const s of selList) { try { const el = document.querySelector(s); if (el?.textContent?.trim()) return el.textContent.trim(); } catch {} } return null; };
-        const getOriginalPrice = (selList) => { for (const s of selList) { try { const el = document.querySelector(s); const val = parseFloat((el?.textContent || '').replace(/[^\d.]/g, '')); if (!isNaN(val) && val > 0) return val; } catch {} } return null; };
-        const getImage = () => { for (const s of SELS.image) { try { const el = document.querySelector(s); if (el) return el.src || el.content || null; } catch {} } return null; };
-        return { title: getText(SELS.title), priceRaw: getText(SELS.price), originalPrice: getOriginalPrice(SELS.originalPrice), promoLabel: getText(SELS.promoLabel), image_url: getImage(), specs: {} };
-      }, SELECTORS);
-      if (!domData.title) return null;
-      const rawProduct = { title: domData.title, price: this._parsePrice(domData.priceRaw), originalPrice: domData.originalPrice, promoLabel: domData.promoLabel, rating: null, reviews_count: null, seller_name: 'PC Express', image_url: domData.image_url, product_url: cleanUrl, specs: domData.specs, is_available: true };
-      return normalizeProduct(rawProduct, 'pcexpress', 0);
-    } finally {
-      if (context) { try { await context.close(); } catch (_) { /* ignore */ } }
     }
   }
 

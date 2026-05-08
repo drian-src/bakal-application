@@ -455,6 +455,8 @@ async function refreshStaleProductsJob() {
         // Re-scrape the product
         const refreshedProduct = await scraper.scrape(product.product_url);
         if (refreshedProduct) {
+          // Inject platform_id before upserting (required FK constraint)
+          refreshedProduct.platform_id = product.platform_id;
           await productRepo.upsertProduct(refreshedProduct);
           refreshed++;
           logger.info(`[BackgroundWorker] Refreshed: "${product.title?.substring(0, 50)}"`);

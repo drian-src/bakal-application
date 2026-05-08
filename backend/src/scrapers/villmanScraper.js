@@ -243,16 +243,47 @@ class VillmanScraper extends BaseScraper {
       }
     }
 
+    // ─── SHOPIFY COMPARE_AT_PRICE — STRICT HANDLING ─────────────────────
+    // Shopify returns:
+    //   null         → no compare price (most common for non-sale items)
+    //   "0.00"       → explicitly no compare price (same meaning)
+    //   "42000.00"   → real compare price (item is on sale)
+    // We must reject null, "0.00", and any value ≤ current price.
+    const rawComparePrice = variant?.compare_at_price;
+    const originalPrice = (() => {
+      if (!rawComparePrice) return null;                    // null → no discount
+      const parsed = parseFloat(String(rawComparePrice).replace(/[^\d.]/g, ''));
+      if (isNaN(parsed) || parsed <= 0) return null;        // "0.00" → no discount
+      // Will be validated further in normalizeProduct()
+      return parsed;
+    })();
+
+    // ─── PROMO LABEL — ONLY FROM PRODUCT-SPECIFIC METAFIELDS ─────────────
+    // Do NOT use generic tags like "sale", "new", "featured" as promo labels
+    // These appear on products regardless of whether they have a real discount
+    const rawPromoLabel = productData.metafields?.find(m => m.key === 'promo_label')?.value ||
+                          productData.metafields?.find(m => m.key === 'promo')?.value || null;
+
+    // Filter out generic non-discount labels
+    const GENERIC_LABELS = ['new', 'sale', 'featured', 'best seller', 'hot item', 'popular'];
+    const promoLabel = (rawPromoLabel && !GENERIC_LABELS.includes(rawPromoLabel.toLowerCase().trim()))
+      ? rawPromoLabel.trim()
+      : null;
+
     return {
       title: productData.title || null,
       price: variant?.price ? parseFloat(variant.price) : null,
-      image_url: productData.images?.[0]?.src || null,
+      originalPrice,   // null if Shopify has no compare price
+      promoLabel,      // null unless a specific product-level promo exists
+      rating: null,    // Shopify JSON rarely has rating in base response
+      reviews_count: null,
+      seller_name: productData.vendor || 'Villman',
+      image_url: productData.featured_image?.src ||
+                 productData.images?.[0]?.src || null,
       specs: specs,
-      free_items_raw: null,
-      promo_raw: null,
-      original_price: null,
-      brand: null,
-      is_available: true,
+      sku: variant?.sku || productData.variants?.[0]?.sku || null,
+      brand: productData.vendor || null,
+      variation: variant?.title !== 'Default Title' ? variant?.title : null,
     };
   }
 
