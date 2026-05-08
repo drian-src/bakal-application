@@ -1,4 +1,5 @@
 import React, { useMemo } from 'react';
+import { Star, ArrowRight } from 'lucide-react';
 import './CompareModal.css';
 import { useCompare } from '../../core/context/CompareContext';
 import { getStoreConfig } from '@/core/config/storeConfig';
@@ -189,8 +190,8 @@ const CompareModal = ({ isOpen, onClose }) => {
                         </span>
                       )}
 
-                      {/* Discount badge */}
-                      {(product.discount_percent ?? product.discountPercent) > 0 && (
+                      {/* Discount badge - only show if original_price is valid */}
+                      {(product.original_price ?? product.originalPrice) > product.price && (product.discount_percent ?? product.discountPercent) > 0 && (
                         <span className="compare-discount-badge">
                           -{Math.round(product.discount_percent ?? product.discountPercent)}%
                         </span>
@@ -261,10 +262,19 @@ const CompareModal = ({ isOpen, onClose }) => {
                     >
                       {product.rating ? (
                         <div className="compare-rating">
-                          <span className="compare-stars">
-                            {'★'.repeat(Math.floor(product.rating))}
-                            {product.rating % 1 >= 0.5 ? '½' : ''}
-                          </span>
+                          <div className="compare-stars" style={{ display: 'flex', gap: '2px', marginBottom: '4px' }}>
+                            {Array.from({ length: 5 }).map((_, i) => (
+                              <Star
+                                key={i}
+                                size={14}
+                                style={{
+                                  fill: i < Math.floor(product.rating) ? '#fbbf24' : (i - Math.floor(product.rating) < (product.rating % 1 >= 0.5 ? 0.5 : 0) ? '#fbbf24' : 'none'),
+                                  color: i < Math.floor(product.rating) ? '#fbbf24' : '#d1d5db',
+                                  strokeWidth: 1.5
+                                }}
+                              />
+                            ))}
+                          </div>
                           <span className="compare-rating-value">
                             {product.rating.toFixed(1)}
                           </span>
@@ -311,7 +321,9 @@ const CompareModal = ({ isOpen, onClose }) => {
                         className="compare-link-btn"
                         style={{ background: getStoreColor(product) }}
                       >
-                        View on {getStoreName(product)} →
+                        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+                          View on {getStoreName(product)} <ArrowRight size={16} strokeWidth={1.5} />
+                        </div>
                       </a>
                     ) : (
                       <span className="no-data">No link available</span>

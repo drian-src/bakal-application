@@ -45,7 +45,8 @@ const RecommendedProductCard = ({ product, platformId }) => {
   // Smart badge logic (page-scoped enhancements)
   const discount = product.discountPercent || product.discount_percent || 0;
   const rating = product.rating || 0;
-  const isHotDeal = discount > 20;
+  const isOnSale = product.is_on_sale === true;
+  const isHotDeal = isOnSale && discount > 20;
   const isTopRated = rating >= 4.5 && (product.reviews_count || 0) > 10;
 
   return (
@@ -56,7 +57,7 @@ const RecommendedProductCard = ({ product, platformId }) => {
       {/* Smart Badges */}
       {isHotDeal && <div className="search-badge search-badge-hot">🔥 HOT DEAL</div>}
       {isTopRated && !isHotDeal && <div className="search-badge search-badge-top">⭐ TOP RATED</div>}
-      {discount > 0 && <div className="search-discount-badge">-{discount}%</div>}
+      {isOnSale && discount > 0 && <div className="search-discount-badge">-{discount}%</div>}
       
       <div className="rec-product-image-container">
         <img src={imageUrl} alt={product.title} className="rec-product-image" onError={(e) => {e.target.src = `data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22150%22 height=%22150%22%3E%3Crect fill=%22${encodeURIComponent(color)}%22 width=%22150%22 height=%22150%22/%3E%3Ctext x=%2250%25%22 y=%2250%25%22 font-size=%2212%22 fill=%22%23FFF%22 text-anchor=%22middle%22 dy=%22.3em%22%3EImage not found%3C/text%3E%3C/svg%3E`;}} />

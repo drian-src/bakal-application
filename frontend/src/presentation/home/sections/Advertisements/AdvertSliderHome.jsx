@@ -219,19 +219,6 @@ const AdvertSliderHome = () => {
                   }}
                 />
 
-                {/* Hot Deal Badge */}
-                <div className="hot-deal-badge">
-                  <Zap size={16} className="zap-icon" />
-                  <span>HOT DEAL</span>
-                </div>
-
-                {/* Discount badge - Large and prominent */}
-                {product.discountPercent > 0 && (
-                  <div className="discount-badge-large">
-                    <div className="discount-percent">{Math.round(product.discountPercent)}%</div>
-                    <div className="discount-text">OFF</div>
-                  </div>
-                )}
 
                 {/* Platform badge overlay */}
                 <div className="product-platform-badge">
