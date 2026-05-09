@@ -13,10 +13,10 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: #f3f4f6;
+  background: #f3f4f61c;
   border: none;
   border-radius: 6px;
-  color: #4b5563;
+  color: #eeba2b;
   transition: all 0.2s ease;
   cursor: pointer;
   padding: 0;
