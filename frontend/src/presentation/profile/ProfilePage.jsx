@@ -208,14 +208,6 @@ const ProfilePage = () => {
             >
               <Home size={20} strokeWidth={1.5} />
             </button>
-            <button 
-              className="mobile-menu-toggle" 
-              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
-              title={mobileMenuOpen ? 'Close menu' : 'Open menu'}
-            >
-              {mobileMenuOpen ? <X size={20} strokeWidth={2} /> : <Menu size={20} strokeWidth={2} />}
-            </button>
           </div>
 
           <div className="profile-wrapper">

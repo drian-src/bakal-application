@@ -224,7 +224,7 @@ const SearchResultPage = () => {
           ) : (
             <>
               <Bookmark size={16} strokeWidth={1.5} />
-              <span>Save Search</span>
+          
             </>
           )}
         </button>
