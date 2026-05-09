@@ -13,10 +13,10 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  background: #f3f4f6;
+  background: #ffffff12;
   border: none;
   border-radius: 6px;
-  color: #4b5563;
+  color: #eeba2b;
   transition: all 0.2s ease;
   cursor: pointer;
   padding: 0;
@@ -25,7 +25,7 @@
 }
 
 .back-button:hover {
-  background: #e5e7eb;
+  background: #d4af3720;
   color: var(--accent-gold, #D4AF37);
 }
 

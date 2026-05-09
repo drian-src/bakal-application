@@ -243,7 +243,7 @@ export default function PrivacyDataTab({ token, onAccountDeleted }) {
           <div>
             <h3 className="privacy-section-title danger-title">Danger Zone</h3>
             <p className="privacy-section-desc">
-              Permanently delete your account and all associated data.
+              Permanently delete my Bakal account and all associated data.
               This action <strong>cannot be undone</strong>.
             </p>
           </div>
