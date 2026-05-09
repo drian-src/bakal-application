@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import {
   User,
   Clock,
@@ -195,6 +195,12 @@ const ProfilePage = () => {
     }
   };
 
+  const handleExitProfile = () => {
+    // Try to go back to the previous page
+    // If there's no previous page or it's not in history, go to home
+    window.history.back();
+  };
+
   return (
     <div className="profile-page">
       <main className="profile-content">
@@ -207,6 +213,14 @@ const ProfilePage = () => {
               aria-label="Back to Home"
             >
               <Home size={20} strokeWidth={1.5} />
+            </button>
+            <button 
+              onClick={handleExitProfile} 
+              className="profile-exit-btn"
+              title="Exit Profile"
+              aria-label="Exit Profile"
+            >
+              <X size={20} strokeWidth={1.5} />
             </button>
           </div>
 

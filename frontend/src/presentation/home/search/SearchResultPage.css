@@ -411,7 +411,6 @@
 .deals-btn.active:hover {
   background: linear-gradient(135deg, rgba(255, 64, 129, 0.3) 0%, rgba(255, 105, 180, 0.25) 100%);
   box-shadow: 0 8px 20px rgba(255, 64, 129, 0.3);
-}
   font-weight: 600;
 }
 

@@ -553,7 +553,7 @@
   font-family: var(--font-body);
 }
 
-/* CTA Section */
+/* CTA Section 
 .cta {
   padding: var(--spacing-3xl) 0;
   background: linear-gradient(135deg, #0a1a3a 0%, #806286 100%);
@@ -597,6 +597,7 @@
   line-height: var(--leading-relaxed);
   font-family: var(--font-body);
 }
+*/
 
 /* Footer */
 .footer {

@@ -137,7 +137,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section 
       <section className="cta">
         <div className="container">
           <div className="cta-content">
@@ -153,6 +153,7 @@ const LandingPage = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Footer */}
       <footer className="footer">
