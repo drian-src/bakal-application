@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Home } from 'lucide-react';
+import { Home, Star, Clipboard } from 'lucide-react';
 import HomeHeader from '../home/sections/Header/HomeHeader';
 import { getCurrentUser, isAuthenticated } from '../../core/services/authService';
 import { getProductDetail } from '@/core/services/apiService';
@@ -203,9 +203,19 @@ const ProductDetailPage = () => {
             <div className="detail-info-section">
               <h1 className="product-detail-title">{product.title}</h1>
               <div className="product-rating-detail">
-                <div className="stars-detail">
-                  {'★'.repeat(Math.floor(product.rating || 0))}
-                  {'☆'.repeat(5 - Math.floor(product.rating || 0))}
+                <div className="stars-detail" style={{ display: 'flex', gap: '2px' }}>
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star
+                      key={i}
+                      size={16}
+                      className={`star ${i < Math.floor(product.rating || 0) ? 'filled' : 'empty'}`}
+                      style={{
+                        fill: i < Math.floor(product.rating || 0) ? '#fbbf24' : 'none',
+                        color: i < Math.floor(product.rating || 0) ? '#fbbf24' : '#d1d5db',
+                        strokeWidth: 1.5
+                      }}
+                    />
+                  ))}
                 </div>
                 <span className="rating-value">{product.rating || 'N/A'}</span>
                 <span className="review-count">({product.reviews_count || 0} reviews)</span>
@@ -265,8 +275,9 @@ const ProductDetailPage = () => {
                   borderRadius: '8px',
                   border: '1px solid rgba(212, 175, 55, 0.15)',
                 }}>
-                  <h3 style={{ fontSize: '14px', fontWeight: '600', marginBottom: '14px', color: '#1f2937', letterSpacing: '0.3px' }}>
-                    📋 Product Details
+                  <h3 style={{ fontSize: '14px', fontWeight: '600', marginBottom: '14px', color: '#1f2937', letterSpacing: '0.3px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                    <Clipboard size={16} strokeWidth={1.5} />
+                    Product Details
                   </h3>
                   <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px' }}>
                     {product.brand && (

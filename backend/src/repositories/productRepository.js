@@ -167,7 +167,7 @@ async function upsertProduct(productData) {
   const RUNTIME_FIELDS = [
     '_source', '_score', '_rankingScore', '_rankingBreakdown',
     '_reasons', '_rankingMeta', '_rankingExplanation', '_similarity',
-    '_index', '_store',
+    '_index', '_store', '_scrape_strategy',
     // Strip columns that don't exist yet — add back after running their migration
     // NOTE: These are now handled by buildTimestamps in baseScraper
     // 'price_updated_at', 'stock_updated_at', 'rating_updated_at', 'specs_updated_at',
@@ -179,36 +179,54 @@ async function upsertProduct(productData) {
     'storeId', 'storeName', 'storeColor',
   ];
 
-  // Extract deal-related fields from productData BEFORE cleaning (before they get deleted)
-  const originalPriceFromInput = productData.originalPrice;
-  const promoLabelFromInput = productData.promoLabel;
-
   const cleanData = { ...productData };
   for (const field of RUNTIME_FIELDS) {
     delete cleanData[field];
   }
 
-  // Validate and normalize discount fields
+  // ─── TRUST normalizeProduct() ────────────────────────────────────────────────────────
+  // normalizeProduct() in baseScraper.js is the SINGLE SOURCE OF TRUTH for discount
+  // validation. All scrapers call normalizeProduct(), so productData already has:
+  // - correct original_price (null or validated float)
+  // - correct discount_percent (null or validated percentage)
+  // - correct is_on_sale (boolean based on evidence)
+  // - correct promo_label (null or non-generic string)
+  //
+  // We add a DEFENSIVE second-line-of-defense check only to catch unexpected data.
   const price = parseFloat(cleanData.price) || 0;
-  const originalPrice = (originalPriceFromInput !== null && originalPriceFromInput !== undefined)
-    ? (isNaN(parseFloat(originalPriceFromInput)) ? null : parseFloat(originalPriceFromInput))
+  const originalPrice = cleanData.original_price !== null && cleanData.original_price !== undefined
+    ? parseFloat(cleanData.original_price)
     : null;
   
-  let discountPercent = null;
-  let isOnSale = false;
-  
-  // Compute discount — only if original price is valid and higher than current price
-  if (originalPrice && originalPrice > price) {
-    discountPercent = ((originalPrice - price) / originalPrice) * 100;
-    isOnSale = true;
-  } else if (promoLabelFromInput && promoLabelFromInput.trim()) {
-    // Fallback: if no computed discount but promo label exists, mark as on-sale
-    isOnSale = true;
-  }
-  
-  // Ensure discountPercent is a number or null, never NaN
-  if (discountPercent !== null && isNaN(discountPercent)) {
+  let discountPercent = cleanData.discount_percent || null;
+  let isOnSale = cleanData.is_on_sale === true;  // Explicit true check
+  const promoLabel = cleanData.promo_label || null;
+
+  // DEFENSIVE CHECK: If originalPrice is invalid, clear all discount fields
+  if (originalPrice !== null && (isNaN(originalPrice) || originalPrice <= 0 || originalPrice <= price || (originalPrice - price) < 1)) {
+    cleanData.original_price = null;
+    cleanData.discount_percent = null;
+    cleanData.is_on_sale = false;
+    originalPrice = null;
     discountPercent = null;
+    isOnSale = false;
+  }
+
+  // DEFENSIVE CHECK: If no originalPrice, discount_percent must be null
+  if (originalPrice === null) {
+    cleanData.discount_percent = null;
+    discountPercent = null;
+  }
+
+  // DEFENSIVE CHECK: Validate is_on_sale matches evidence
+  if (!originalPrice && !promoLabel) {
+    // No discount evidence and no promo — cannot be on sale
+    cleanData.is_on_sale = false;
+    isOnSale = false;
+  } else if (originalPrice || promoLabel) {
+    // Evidence exists (discount or promo) — mark as on sale
+    cleanData.is_on_sale = true;
+    isOnSale = true;
   }
 
   // ─── DELTA DETECTION: Fetch existing product to detect field changes ─────────────
@@ -261,23 +279,16 @@ async function upsertProduct(productData) {
   }
 
   // Prepare final data with validated discount fields and smart timestamps
-  // Convert camelCase to snake_case for Supabase
   const finalData = {
     ...cleanData,
     price: price,
     original_price: originalPrice,
     discount_percent: discountPercent,
     is_on_sale: isOnSale,
-    promo_label: (promoLabelFromInput && promoLabelFromInput.trim()) ? promoLabelFromInput.trim() : null,
+    promo_label: promoLabel,
     embedding,
     ...timestamps,
   };
-  
-  // Remove camelCase versions to avoid conflicts
-  delete finalData.originalPrice;
-  delete finalData.discountPercent;
-  delete finalData.isOnSale;
-  delete finalData.promoLabel;
 
   // DEBUG: Log before save
   if (isOnSale || discountPercent) {

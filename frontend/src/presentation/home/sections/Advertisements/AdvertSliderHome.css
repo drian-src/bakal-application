@@ -219,7 +219,7 @@
 .current-price {
   font-size: 28px;
   font-weight: 800;
-  color: #4ade80;
+  color: #6366f1;
   letter-spacing: 0.5px;
   text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -256,7 +256,7 @@
   justify-content: center;
   gap: 8px;
   padding: 12px 24px;
-  background: linear-gradient(135deg, #4ade80, #22c55e);
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
   color: white;
   border: none;
   border-radius: 8px;
@@ -267,13 +267,13 @@
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  box-shadow: 0 4px 12px rgba(74, 222, 128, 0.3);
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
 }
 
 .shop-now-btn:hover {
-  background: linear-gradient(135deg, #22c55e, #16a34a);
+  background: linear-gradient(135deg, #8b5cf6, #7c3aed);
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(74, 222, 128, 0.4);
+  box-shadow: 0 6px 16px rgba(139, 92, 246, 0.4);
 }
 
 .shop-now-btn:active {

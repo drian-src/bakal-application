@@ -39,9 +39,11 @@ async function getFeaturedDeals(req, res, next) {
         id: deal.id,
         productTitle: deal.title,
         productImage: deal.image_url,
-        originalPrice: deal.original_price || deal.price,
+        // Only include originalPrice if it's valid (greater than current price)
+        originalPrice: (deal.original_price && deal.original_price > deal.price) ? deal.original_price : null,
         currentPrice: deal.price,
-        discountPercent: Math.round(deal.discount_percent || 0),
+        // Only include discount if original_price is valid
+        discountPercent: (deal.original_price && deal.original_price > deal.price && deal.discount_percent > 0) ? Math.round(deal.discount_percent) : 0,
         promoLabel: deal.promo_label || null,
         platformId: deal.platform_id,
         platformName: deal.platform || deal.platforms?.name || 'Unknown',
