@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { ChevronLeft, ChevronRight, Star, Zap, ShoppingCart } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Zap, ShoppingCart } from 'lucide-react';
 import { getCurrentUser } from '@/core/services/authService';
 import PlatformBadge from '@/presentation/shared/PlatformBadge';
 import './AdvertSliderHome.css';
@@ -234,15 +234,6 @@ const AdvertSliderHome = () => {
                 {/* Rating */}
                 {product.rating > 0 && (
                   <div className="product-rating">
-                    <div className="stars">
-                      {Array.from({ length: 5 }).map((_, i) => (
-                        <Star
-                          key={i}
-                          size={14}
-                          className={`star ${i < Math.round(product.rating) ? 'filled' : 'empty'}`}
-                        />
-                      ))}
-                    </div>
                     <span className="reviews-count">({product.reviewsCount || 0})</span>
                   </div>
                 )}

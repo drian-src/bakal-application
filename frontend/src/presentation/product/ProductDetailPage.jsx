@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { Home, Star, Clipboard } from 'lucide-react';
+import { Home, Clipboard } from 'lucide-react';
+// Star icon removed from product rating display
+
 import HomeHeader from '../home/sections/Header/HomeHeader';
 import { getCurrentUser, isAuthenticated } from '../../core/services/authService';
 import { getProductDetail } from '@/core/services/apiService';
@@ -202,21 +204,8 @@ const ProductDetailPage = () => {
             </div>
             <div className="detail-info-section">
               <h1 className="product-detail-title">{product.title}</h1>
-              <div className="product-rating-detail">
-                <div className="stars-detail" style={{ display: 'flex', gap: '2px' }}>
-                  {Array.from({ length: 5 }).map((_, i) => (
-                    <Star
-                      key={i}
-                      size={16}
-                      className={`star ${i < Math.floor(product.rating || 0) ? 'filled' : 'empty'}`}
-                      style={{
-                        fill: i < Math.floor(product.rating || 0) ? '#fbbf24' : 'none',
-                        color: i < Math.floor(product.rating || 0) ? '#fbbf24' : '#d1d5db',
-                        strokeWidth: 1.5
-                      }}
-                    />
-                  ))}
-                </div>
+<div className="product-rating-detail">
+                {/* Rating stars removed (keeping rating value + review count) */}
                 <span className="rating-value">{product.rating || 'N/A'}</span>
                 <span className="review-count">({product.reviews_count || 0} reviews)</span>
               </div>

@@ -146,8 +146,8 @@
 }
 
 /* ─── Voice & Image Search Icons ─────────────────────────────────────────– */
-.voice-search,
-.image-search {
+.voice-search {
+
   width: 36px;
   height: 36px;
   display: flex;
@@ -275,19 +275,19 @@ html.dark .search-button:hover {
   box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
 }
 
-html.dark .voice-search,
-html.dark .image-search {
+html.dark .voice-search {
   background: transparent;
   border-color: rgba(212, 175, 55, 0.1);
   color: var(--text-secondary);
 }
 
-html.dark .voice-search:hover,
-html.dark .image-search:hover {
+
+html.dark .voice-search:hover {
   background: rgba(212, 175, 55, 0.08);
   border-color: rgba(212, 175, 55, 0.25);
   color: var(--accent-gold);
 }
+
 
 html.dark .cart-icon-wrapper,
 html.dark .profile-icon {
@@ -363,8 +363,8 @@ html.dark .profile-icon:hover {
   }
 
   .voice-search,
-  .image-search,
   .cart-icon-wrapper,
+
   .profile-icon {
     width: 32px;
     height: 32px;
